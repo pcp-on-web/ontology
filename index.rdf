@@ -1,12 +1,12 @@
-@prefix : <http://catalogus-professorum.org/cpm#> .
+@prefix : <http://purl.org/pcp-on-web#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://catalogus-professorum.org/cpm#> .
+@base <http://purl.org/pcp-on-web#> .
 
-<http://catalogus-professorum.org/cpm#> rdf:type owl:Ontology ;
+<http://purl.org/pcp-on-web#> rdf:type owl:Ontology ;
                                            owl:imports <http://ns.aksw.org/spatialHierarchy/> ;
                                            <http://creativecommons.org/ns#attributionName> "AKSW"^^xsd:string ;
                                            <http://purl.org/dc/elements/1.1/title> "Catalogus Professorum Model - Version 2.1 (CPM)"^^xsd:string ;
@@ -18,7 +18,7 @@
                                                                                "2018-04-26"^^xsd:string ;
                                            <http://purl.org/vocab/vann/changes> <https://github.com/PCP-on-Web 1/catalogus-professorum-lipsiensium/model/commits/master/cpm-2/ontology.ttl> ;
                                            <http://purl.org/vocab/vann/preferredNamespacePrefix> "cpm"^^xsd:string ;
-                                           <http://purl.org/vocab/vann/preferredNamespaceUri> "http://catalogus-professorum.org/cpm#"^^xsd:string ;
+                                           <http://purl.org/vocab/vann/preferredNamespaceUri> "http://purl.org/pcp-on-web#"^^xsd:string ;
                                            <http://usefulinc.com/ns/doap#homepage> <https://catalogus-professorum.org/project/> ;
                                            <http://usefulinc.com/ns/doap#maintainer> <http://catalogus-professorum.org/team/ThomasRiechert> ;
                                            rdfs:comment "The Catalogus Professorum Model defines the Model of the Catalogus Professorum Lipsiensium, the professors catalog of the University of Leipzig, Germany."^^xsd:string ;
@@ -79,7 +79,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
-###  http://catalogus-professorum.org/cpm#bodyPlace
+###  http://purl.org/pcp-on-web#bodyPlace
 :bodyPlace rdf:type owl:ObjectProperty ,
                     owl:FunctionalProperty ;
            rdfs:domain :Body ;
@@ -92,7 +92,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                            "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#cognateBody
+###  http://purl.org/pcp-on-web#cognateBody
 :cognateBody rdf:type owl:ObjectProperty ;
              rdfs:domain :Body ;
              rdfs:range :Body ;
@@ -104,7 +104,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                              "2.0 stable changed from relatedBody"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#consistsOf
+###  http://purl.org/pcp-on-web#consistsOf
 :consistsOf rdf:type owl:ObjectProperty ;
             rdfs:domain :Body ;
             rdfs:range :Body ;
@@ -114,7 +114,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                             "2.0 stable  changed from consists-of on 09.09.2013"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#familyAdoptiveChild
+###  http://purl.org/pcp-on-web#familyAdoptiveChild
 :familyAdoptiveChild rdf:type owl:ObjectProperty ;
                      rdfs:domain :Family ;
                      rdfs:range :Person ;
@@ -126,7 +126,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                      "2.0 stable not often used so far"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#familyChild
+###  http://purl.org/pcp-on-web#familyChild
 :familyChild rdf:type owl:ObjectProperty ;
              rdfs:domain :Family ;
              rdfs:range :Person ;
@@ -138,7 +138,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                              "2.0 stable not often used so far"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#familyCohabitant
+###  http://purl.org/pcp-on-web#familyCohabitant
 :familyCohabitant rdf:type owl:ObjectProperty ;
                   rdfs:domain :Family ;
                   rdfs:range :Person ;
@@ -150,7 +150,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                   "2.0 stable not often used so far"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#familyFosterChild
+###  http://purl.org/pcp-on-web#familyFosterChild
 :familyFosterChild rdf:type owl:ObjectProperty ;
                    rdfs:domain :Family ;
                    rdfs:range :Person ;
@@ -162,7 +162,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                    "2.0 stable not often used so far"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#familyParent
+###  http://purl.org/pcp-on-web#familyParent
 :familyParent rdf:type owl:ObjectProperty ;
               rdfs:domain :Family ;
               rdfs:range :Person ;
@@ -174,7 +174,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                               "2.0 stable not often used so far"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#hasPeriod
+###  http://purl.org/pcp-on-web#hasPeriod
 :hasPeriod rdf:type owl:ObjectProperty ;
            rdfs:domain :Person ;
            rdfs:range :PeriodOfLife ;
@@ -188,7 +188,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                            "2.0 stable changed from has-periods to has-period on 09.09.2013"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#hasPicture
+###  http://purl.org/pcp-on-web#hasPicture
 :hasPicture rdf:type owl:ObjectProperty ,
                      owl:FunctionalProperty ;
             rdfs:domain :Person ;
@@ -202,7 +202,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                             "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#hasTutor
+###  http://purl.org/pcp-on-web#hasTutor
 :hasTutor rdf:type owl:ObjectProperty ;
           owl:inverseOf :isTutor ;
           rdf:type owl:FunctionalProperty ;
@@ -214,7 +214,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                           "2.0 stable changed from has-tutor on 09.09.2013"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#isPartOf
+###  http://purl.org/pcp-on-web#isPartOf
 :isPartOf rdf:type owl:ObjectProperty ;
           owl:inverseOf :consistsOf ;
           rdfs:domain :Body ;
@@ -225,7 +225,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                           "2.0 stable  changed from is-part-of on 09.09.2013"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#isTutor
+###  http://purl.org/pcp-on-web#isTutor
 :isTutor rdf:type owl:ObjectProperty ;
          rdfs:domain :Person ;
          rdfs:range :QualificationDocument ;
@@ -236,7 +236,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                          "2.0 stable changed from is-tutor on 09.09.2013"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#periodBody
+###  http://purl.org/pcp-on-web#periodBody
 :periodBody rdf:type owl:ObjectProperty ,
                      owl:FunctionalProperty ;
             rdfs:domain :PeriodOfLife ;
@@ -248,7 +248,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                             "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#periodDocument
+###  http://purl.org/pcp-on-web#periodDocument
 :periodDocument rdf:type owl:ObjectProperty ,
                          owl:FunctionalProperty ;
                 rdfs:domain :PeriodOfLife ;
@@ -258,7 +258,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                 owl:versionInfo "initial creation - 14.01.2015;"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#periodPlace
+###  http://purl.org/pcp-on-web#periodPlace
 :periodPlace rdf:type owl:ObjectProperty ,
                       owl:FunctionalProperty ;
              rdfs:domain :PeriodOfLife ;
@@ -270,7 +270,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
              owl:versionInfo "2.0 initial creation - 09.09.2013, stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#pictureArchive
+###  http://purl.org/pcp-on-web#pictureArchive
 :pictureArchive rdf:type owl:ObjectProperty ,
                          owl:FunctionalProperty ;
                 rdfs:domain :Picture ;
@@ -280,7 +280,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                 owl:versionInfo "13.01.2015 initial creation as replacement for pictureArchive"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#published
+###  http://purl.org/pcp-on-web#published
 :published rdf:type owl:ObjectProperty ;
            rdfs:domain :Person ;
            rdfs:range :Document ;
@@ -295,7 +295,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 #    Data properties
 #################################################################
 
-###  http://catalogus-professorum.org/cpm#academicalTitle
+###  http://purl.org/pcp-on-web#academicalTitle
 :academicalTitle rdf:type owl:DatatypeProperty ,
                           owl:FunctionalProperty ;
                  rdfs:domain :QualificationDocument ;
@@ -306,7 +306,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                  "2.0 stable changed from bodyPlaceom qualiPaperAcademicalTitle to qualificationPaperAcademicalTitle on 09.09.2013"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#academyType
+###  http://purl.org/pcp-on-web#academyType
 :academyType rdf:type owl:DatatypeProperty ;
              rdfs:domain :Academy ;
              rdfs:range xsd:string ;
@@ -316,7 +316,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                         "Hochschultyp"@de .
 
 
-###  http://catalogus-professorum.org/cpm#additionToSurname
+###  http://purl.org/pcp-on-web#additionToSurname
 :additionToSurname rdf:type owl:DatatypeProperty ,
                             owl:FunctionalProperty ;
                    rdfs:domain :Person ;
@@ -329,7 +329,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                    "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#alternativeWritingOfSurname
+###  http://purl.org/pcp-on-web#alternativeWritingOfSurname
 :alternativeWritingOfSurname rdf:type owl:DatatypeProperty ,
                                       owl:FunctionalProperty ;
                              rdfs:domain :Person ;
@@ -344,7 +344,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                              "2.0 under discussion"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#archiveCode
+###  http://purl.org/pcp-on-web#archiveCode
 :archiveCode rdf:type owl:DatatypeProperty ,
                       owl:FunctionalProperty ;
              rdfs:domain :Archive ;
@@ -357,7 +357,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                              "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#date
+###  http://purl.org/pcp-on-web#date
 :date rdf:type owl:DatatypeProperty ,
                owl:FunctionalProperty ;
       rdfs:domain :PeriodOfLife ;
@@ -375,7 +375,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
       owl:versionInfo "2.0 initial creation date: 09.09.2013"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#denomination
+###  http://purl.org/pcp-on-web#denomination
 :denomination rdf:type owl:DatatypeProperty ,
                        owl:FunctionalProperty ;
               rdfs:domain :Person ;
@@ -388,7 +388,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                               "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#dissolved
+###  http://purl.org/pcp-on-web#dissolved
 :dissolved rdf:type owl:DatatypeProperty ,
                     owl:FunctionalProperty ;
            rdfs:domain :Body ;
@@ -401,7 +401,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                            "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#firstName
+###  http://purl.org/pcp-on-web#firstName
 :firstName rdf:type owl:DatatypeProperty ;
            rdfs:domain :Person ;
            rdfs:comment "Rufname einer Person"@de ,
@@ -414,7 +414,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                            "0.1 initial creation date: 29.01.2015"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#forename
+###  http://purl.org/pcp-on-web#forename
 :forename rdf:type owl:DatatypeProperty ;
           rdfs:domain :Person ;
           rdfs:comment "Forename(s) of a person, seperated by space"@en ,
@@ -424,7 +424,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
           owl:versionInfo "0.1 initial creation date: 18.05.2015"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#founded
+###  http://purl.org/pcp-on-web#founded
 :founded rdf:type owl:DatatypeProperty ,
                   owl:FunctionalProperty ;
          rdfs:domain :Body ;
@@ -437,7 +437,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                          "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#from
+###  http://purl.org/pcp-on-web#from
 :from rdf:type owl:DatatypeProperty ;
       rdfs:domain :PeriodOfLife ;
       rdfs:range xsd:date ,
@@ -454,7 +454,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                       "2.0 stable other types added"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#fullAcademicalTitle
+###  http://purl.org/pcp-on-web#fullAcademicalTitle
 :fullAcademicalTitle rdf:type owl:DatatypeProperty ,
                               owl:FunctionalProperty ;
                      rdfs:domain :Person ;
@@ -466,7 +466,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                      "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#functionInOrganisation
+###  http://purl.org/pcp-on-web#functionInOrganisation
 :functionInOrganisation rdf:type owl:DatatypeProperty ;
                         rdfs:domain :SocialRole ;
                         rdfs:range xsd:string ;
@@ -477,7 +477,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                         "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#furtherInformation
+###  http://purl.org/pcp-on-web#furtherInformation
 :furtherInformation rdf:type owl:DatatypeProperty ,
                              owl:FunctionalProperty ;
                     rdfs:domain :Person ;
@@ -489,7 +489,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                     "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#gender
+###  http://purl.org/pcp-on-web#gender
 :gender rdf:type owl:DatatypeProperty ;
         rdfs:domain :Person ;
         rdfs:comment "Das Geschlecht einer Person"@de ,
@@ -501,7 +501,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                         "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#gnd
+###  http://purl.org/pcp-on-web#gnd
 :gnd rdf:type owl:DatatypeProperty ,
               owl:FunctionalProperty ;
      rdfs:domain :Person ;
@@ -515,7 +515,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                      "rename from pnd to gnd - 15.01.2016"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#graduationType
+###  http://purl.org/pcp-on-web#graduationType
 :graduationType rdf:type owl:DatatypeProperty ,
                          owl:FunctionalProperty ;
                 rdfs:domain :Graduation ;
@@ -528,7 +528,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                 "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#isPublic
+###  http://purl.org/pcp-on-web#isPublic
 :isPublic rdf:type owl:DatatypeProperty ;
           rdfs:domain :Person ;
           rdfs:range xsd:boolean ;
@@ -537,7 +537,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
           owl:versionInfo "0.1 initial creation - 17.02.2015"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#lectureLink
+###  http://purl.org/pcp-on-web#lectureLink
 :lectureLink rdf:type owl:DatatypeProperty ,
                       owl:FunctionalProperty ;
              rdfs:domain :PeriodOfLife ,
@@ -551,7 +551,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                              "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#literature
+###  http://purl.org/pcp-on-web#literature
 :literature rdf:type owl:DatatypeProperty ,
                      owl:FunctionalProperty ;
             rdfs:domain :Person ;
@@ -563,7 +563,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                             "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#note
+###  http://purl.org/pcp-on-web#note
 :note rdf:type owl:DatatypeProperty ,
                owl:FunctionalProperty ;
       rdfs:domain :Person ;
@@ -578,7 +578,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                       "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#organisationName
+###  http://purl.org/pcp-on-web#organisationName
 :organisationName rdf:type owl:DatatypeProperty ;
                   rdfs:domain :SocialRole ;
                   rdfs:comment "Der Name der Organisation"@de ,
@@ -589,7 +589,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                   "2.0 under discussion"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#periodNote
+###  http://purl.org/pcp-on-web#periodNote
 :periodNote rdf:type owl:DatatypeProperty ;
             rdfs:domain :PeriodOfLife ;
             rdfs:comment "Bemerkungen zu einem Lebensabschnitt"@de ,
@@ -600,7 +600,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                             "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#picture
+###  http://purl.org/pcp-on-web#picture
 :picture rdf:type owl:DatatypeProperty ,
                   owl:FunctionalProperty ;
          rdfs:domain :Picture ;
@@ -613,7 +613,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                          "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#pictureCredits
+###  http://purl.org/pcp-on-web#pictureCredits
 :pictureCredits rdf:type owl:DatatypeProperty ,
                          owl:FunctionalProperty ;
                 rdfs:domain :Picture ;
@@ -625,7 +625,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                 "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#pictureKey
+###  http://purl.org/pcp-on-web#pictureKey
 :pictureKey rdf:type owl:DatatypeProperty ,
                      owl:FunctionalProperty ;
             rdfs:domain :Picture ;
@@ -637,7 +637,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                             "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#pid
+###  http://purl.org/pcp-on-web#pid
 :pid rdf:type owl:DatatypeProperty ,
               owl:FunctionalProperty ;
      rdfs:domain :Person ;
@@ -650,7 +650,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                      "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#profession
+###  http://purl.org/pcp-on-web#profession
 :profession rdf:type owl:DatatypeProperty ,
                      owl:FunctionalProperty ;
             rdfs:domain :Person ;
@@ -661,7 +661,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                             "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#publicationReference
+###  http://purl.org/pcp-on-web#publicationReference
 :publicationReference rdf:type owl:DatatypeProperty ;
                       rdfs:domain :Person ;
                       rdfs:comment "Publikationsverzeichnisse einer Person"@de ,
@@ -671,7 +671,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                       owl:versionInfo "0.1 initial creation date: 09.02.2015"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#reasonForResigning
+###  http://purl.org/pcp-on-web#reasonForResigning
 :reasonForResigning rdf:type owl:DatatypeProperty ;
                     rdfs:domain :Career ;
                     rdfs:range xsd:string ;
@@ -682,7 +682,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                     "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#reference
+###  http://purl.org/pcp-on-web#reference
 :reference rdf:type owl:DatatypeProperty ,
                     owl:FunctionalProperty ;
            rdfs:domain :Publication ;
@@ -693,7 +693,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                            "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#references
+###  http://purl.org/pcp-on-web#references
 :references rdf:type owl:DatatypeProperty ,
                      owl:FunctionalProperty ;
             rdfs:domain :Person ;
@@ -706,7 +706,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                             "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#reviewed
+###  http://purl.org/pcp-on-web#reviewed
 :reviewed rdf:type owl:DatatypeProperty ;
           rdfs:domain :Person ;
           rdfs:range xsd:boolean ;
@@ -715,7 +715,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
           owl:versionInfo "0.1 initial creation - 17.02.2015"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#subject
+###  http://purl.org/pcp-on-web#subject
 :subject rdf:type owl:DatatypeProperty ,
                   owl:FunctionalProperty ;
          rdfs:domain :QualificationDocument ;
@@ -726,7 +726,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                          "2.0 stable changed from qualiPaperSubject to qualificationPaperSubject on 09.09.2013"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#subjectStudied
+###  http://purl.org/pcp-on-web#subjectStudied
 :subjectStudied rdf:type owl:DatatypeProperty ,
                          owl:FunctionalProperty ;
                 rdfs:domain :Study ;
@@ -742,7 +742,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                 "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#subjectsTaught
+###  http://purl.org/pcp-on-web#subjectsTaught
 :subjectsTaught rdf:type owl:DatatypeProperty ;
                 rdfs:domain :Career ;
                 rdfs:range xsd:string ;
@@ -752,7 +752,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                 "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#surname
+###  http://purl.org/pcp-on-web#surname
 :surname rdf:type owl:DatatypeProperty ;
          rdfs:domain :Person ;
          rdfs:comment "Nachname einer Person"@de ,
@@ -764,7 +764,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                          "version 0.2  10.03.2008"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#title
+###  http://purl.org/pcp-on-web#title
 :title rdf:type owl:DatatypeProperty ,
                 owl:FunctionalProperty ;
        rdfs:domain :Document ;
@@ -775,7 +775,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                        "2.0 stable changed from qualiPaperTitle to qualificationPaperTitle on 09.09.2013"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#to
+###  http://purl.org/pcp-on-web#to
 :to rdf:type owl:DatatypeProperty ;
     rdfs:domain :PeriodOfLife ;
     rdfs:range xsd:date ,
@@ -792,7 +792,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                     "2.0 stable other types added"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#type
+###  http://purl.org/pcp-on-web#type
 :type rdf:type owl:DatatypeProperty ;
       rdfs:domain :QualificationDocument ;
       rdfs:range xsd:string ;
@@ -803,7 +803,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                       "2.0 stable changed from qualiPaperType to qualificationPaperType on 09.09.2013"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#typeOfBody
+###  http://purl.org/pcp-on-web#typeOfBody
 :typeOfBody rdf:type owl:DatatypeProperty ;
             rdfs:domain :Body ;
             rdfs:range xsd:string ;
@@ -813,7 +813,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                             "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#veniaLegendi
+###  http://purl.org/pcp-on-web#veniaLegendi
 :veniaLegendi rdf:type owl:DatatypeProperty ,
                        owl:FunctionalProperty ;
               rdfs:domain :QualificationDocument ;
@@ -824,7 +824,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                               "2.0 stable changed from qualiPaperVeniaLegendi to qualificationPaperVeniaLegendi on 09.09.2013"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#webLink
+###  http://purl.org/pcp-on-web#webLink
 :webLink rdf:type owl:DatatypeProperty ,
                   owl:FunctionalProperty ;
          rdfs:domain :Body ,
@@ -843,7 +843,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 #    Classes
 #################################################################
 
-###  http://catalogus-professorum.org/cpm#AcademicSociety
+###  http://purl.org/pcp-on-web#AcademicSociety
 :AcademicSociety rdf:type owl:Class ;
                  rdfs:subClassOf :Organisation ;
                  rdfs:comment "Diese Konzept beschreibt eine wissenschaftliche Gesellschaft"@de ,
@@ -854,7 +854,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                  "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#Academy
+###  http://purl.org/pcp-on-web#Academy
 :Academy rdf:type owl:Class ;
          rdfs:subClassOf :Institution ;
          rdfs:comment "Diese Konzept beschreibt eine Hochschule"@de ,
@@ -865,7 +865,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                          "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#Archive
+###  http://purl.org/pcp-on-web#Archive
 :Archive rdf:type owl:Class ;
          rdfs:subClassOf :Institution ;
          rdfs:comment "Diese Konzept beschreibt ein Archiv"@de ,
@@ -876,7 +876,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                          "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#Birth
+###  http://purl.org/pcp-on-web#Birth
 :Birth rdf:type owl:Class ;
        rdfs:subClassOf :PeriodOfLife ;
        rdfs:comment "Diese Konzept beschreibt den Geburtstag"@de ,
@@ -887,7 +887,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                        "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#Body
+###  http://purl.org/pcp-on-web#Body
 :Body rdf:type owl:Class ;
       rdfs:comment "Diese Konzept beschreibt Körperschaften"@de ,
                    "The concept Person describes a Body"@en ;
@@ -897,7 +897,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                       "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#Career
+###  http://purl.org/pcp-on-web#Career
 :Career rdf:type owl:Class ;
         rdfs:subClassOf :PeriodOfLife ;
         rdfs:comment "Diese Konzept beschreibt einen Karriereschritt"@de ,
@@ -909,7 +909,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                         "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#Death
+###  http://purl.org/pcp-on-web#Death
 :Death rdf:type owl:Class ;
        rdfs:subClassOf :PeriodOfLife ;
        rdfs:comment "Diese Konzept beschreibt den Sterbetag"@de ,
@@ -920,7 +920,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                        "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#Department
+###  http://purl.org/pcp-on-web#Department
 :Department rdf:type owl:Class ;
             rdfs:subClassOf :Institution ;
             rdfs:comment "Diese Konzept beschreibt eine Abteilung"@de ,
@@ -931,7 +931,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                             "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#Document
+###  http://purl.org/pcp-on-web#Document
 :Document rdf:type owl:Class ;
           rdfs:comment "Dokument einer Periode"@de ,
                        "document of a period"@en ;
@@ -940,7 +940,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
           owl:versionInfo "0.1 initial creation date: 13.01.2015"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#Faculty
+###  http://purl.org/pcp-on-web#Faculty
 :Faculty rdf:type owl:Class ;
          rdfs:subClassOf :Institution ;
          rdfs:comment "Diese Konzept beschreibt eine Fakultät"@de ,
@@ -951,7 +951,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                          "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#Family
+###  http://purl.org/pcp-on-web#Family
 :Family rdf:type owl:Class ;
         rdfs:subClassOf :PeriodOfLife ;
         rdfs:comment "Diese Konzept beschreibt Familien"@de ,
@@ -962,7 +962,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                         "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#GeneralPeriod
+###  http://purl.org/pcp-on-web#GeneralPeriod
 :GeneralPeriod rdf:type owl:Class ;
                rdfs:subClassOf :PeriodOfLife ;
                rdfs:comment "Diese Konzept beschreibt einen allgemeineren Lebensabschnitt"@de ,
@@ -973,7 +973,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                "2.0 stable changed from cpm:General to cpm:GeneralPeriod on 09.09.2013"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#Graduation
+###  http://purl.org/pcp-on-web#Graduation
 :Graduation rdf:type owl:Class ;
             rdfs:subClassOf :PeriodOfLife ;
             rdfs:comment "Diese Konzept beschreibt einen Abschluss"@de ,
@@ -984,7 +984,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                             "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#GraduationDoctorate
+###  http://purl.org/pcp-on-web#GraduationDoctorate
 :GraduationDoctorate rdf:type owl:Class ;
                      rdfs:subClassOf :Graduation ;
                      rdfs:comment "Diese Konzept beschreibt den Abschluss einer Promotion"@de ,
@@ -995,7 +995,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                      "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#GraduationSchool
+###  http://purl.org/pcp-on-web#GraduationSchool
 :GraduationSchool rdf:type owl:Class ;
                   rdfs:subClassOf :Graduation ;
                   rdfs:comment "Diese Konzept beschreibt den Schulabschluss"@de ,
@@ -1006,7 +1006,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                   "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#GraduationUniversity
+###  http://purl.org/pcp-on-web#GraduationUniversity
 :GraduationUniversity rdf:type owl:Class ;
                       rdfs:subClassOf :Graduation ;
                       rdfs:comment "Diese Konzept beschreibt den Abschluss an einer Universität"@de ,
@@ -1017,7 +1017,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                       "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#Honour
+###  http://purl.org/pcp-on-web#Honour
 :Honour rdf:type owl:Class ;
         rdfs:subClassOf :PeriodOfLife ;
         rdfs:comment "Diese Konzept beschreibt eine Ehrung"@de ,
@@ -1027,7 +1027,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
         owl:versionInfo "0.1 initial creation date: 09.02.2015"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#Institute
+###  http://purl.org/pcp-on-web#Institute
 :Institute rdf:type owl:Class ;
            rdfs:subClassOf :Institution ;
            rdfs:comment "Diese Konzept beschreibt eine Institut"@de ,
@@ -1038,7 +1038,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                            "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#Institution
+###  http://purl.org/pcp-on-web#Institution
 :Institution rdf:type owl:Class ;
              rdfs:subClassOf :Body ;
              rdfs:comment "Diese Konzept beschreibt eine Institution"@de ,
@@ -1049,7 +1049,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                              "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#Membership
+###  http://purl.org/pcp-on-web#Membership
 :Membership rdf:type owl:Class ;
             rdfs:subClassOf :PeriodOfLife ;
             rdfs:comment "Diese Konzept beschreibt eine Mitgliedschaft oder Funktion"@de ,
@@ -1059,7 +1059,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
             owl:versionInfo "0.1 initial creation date: 09.02.2015"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#Office
+###  http://purl.org/pcp-on-web#Office
 :Office rdf:type owl:Class ;
         rdfs:subClassOf :PeriodOfLife ;
         rdfs:comment "Diese Konzept beschreibt eines Amtes"@de ,
@@ -1071,7 +1071,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                         "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#Organisation
+###  http://purl.org/pcp-on-web#Organisation
 :Organisation rdf:type owl:Class ;
               rdfs:subClassOf :Body ;
               rdfs:comment "Diese Konzept beschreibt eine Organisation"@de ,
@@ -1082,7 +1082,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                               "2.0 stable 09.09.2013 Organization changed to Organisation"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#OtherOrganisation
+###  http://purl.org/pcp-on-web#OtherOrganisation
 :OtherOrganisation rdf:type owl:Class ;
                    rdfs:subClassOf :Organisation ;
                    rdfs:comment "Diese Konzept beschreibt eine sonstige Organisation"@de ,
@@ -1093,7 +1093,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                    "2.0 stable 09.09.2013 Organization changed to Organisation"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#Party
+###  http://purl.org/pcp-on-web#Party
 :Party rdf:type owl:Class ;
        rdfs:subClassOf :Organisation ;
        rdfs:comment "Diese Konzept beschreibt eine politische Partei"@de ,
@@ -1104,7 +1104,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                        "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#PeriodOfLife
+###  http://purl.org/pcp-on-web#PeriodOfLife
 :PeriodOfLife rdf:type owl:Class ;
               rdfs:comment "Diese Konzept beschreibt einen Lebensabschnitt"@de ,
                            "The concept Person describes a period of life "@en ;
@@ -1114,7 +1114,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                               "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#Person
+###  http://purl.org/pcp-on-web#Person
 :Person rdf:type owl:Class ;
         rdfs:comment "Das Konzept beschreibt eine historische Person"@de ,
                      "The concept Person describes an historic Person"@en ;
@@ -1124,7 +1124,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                         "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#Picture
+###  http://purl.org/pcp-on-web#Picture
 :Picture rdf:type owl:Class ;
          rdfs:comment "Diese Konzept beschreibt ein Bild"@de ,
                       "The concept Person describes a Picture"@en ;
@@ -1133,7 +1133,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
          owl:versionInfo "0.1 initial creation date: 13.01.2015"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#PoliticalOrganisation
+###  http://purl.org/pcp-on-web#PoliticalOrganisation
 :PoliticalOrganisation rdf:type owl:Class ;
                        rdfs:subClassOf :Organisation ;
                        rdfs:comment "Diese Konzept beschreibt eine politische Organisation"@de ,
@@ -1144,7 +1144,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                        "2.0 stable 09.09.2013 Organization changed to Organisation"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#Professor
+###  http://purl.org/pcp-on-web#Professor
 :Professor rdf:type owl:Class ;
            rdfs:subClassOf :Person ;
            rdfs:comment "Das Konzept Professor beschreibt eine historische Person mit dem Beruf eines Professors"@de ,
@@ -1155,7 +1155,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                            "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#Publication
+###  http://purl.org/pcp-on-web#Publication
 :Publication rdf:type owl:Class ;
              rdfs:subClassOf :Document ;
              rdfs:comment "Diese Konzept beschreibt eine Publikation"@de ,
@@ -1168,7 +1168,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                              "version 0.2  10.03.2008"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#Qualification
+###  http://purl.org/pcp-on-web#Qualification
 :Qualification rdf:type owl:Class ;
                rdfs:subClassOf :PeriodOfLife ;
                rdfs:comment "Diese Konzept beschreibt eine Qualifikation, z.B. Promotion oder Habilitation"@de ,
@@ -1178,7 +1178,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                owl:versionInfo "0.1 initial creation date: 04.02.2015"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#QualificationDocument
+###  http://purl.org/pcp-on-web#QualificationDocument
 :QualificationDocument rdf:type owl:Class ;
                        rdfs:subClassOf :Document ;
                        rdfs:comment "Diese Konzept beschreibt eine Qualifikationsschrift"@de ,
@@ -1190,7 +1190,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                        "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#School
+###  http://purl.org/pcp-on-web#School
 :School rdf:type owl:Class ;
         rdfs:subClassOf :Body ;
         rdfs:comment "Describes a school"@en ,
@@ -1200,7 +1200,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
         owl:versionInfo "0.1 initial creation date: 19.02.2015"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#SocialRole
+###  http://purl.org/pcp-on-web#SocialRole
 :SocialRole rdf:type owl:Class ;
             rdfs:subClassOf :PeriodOfLife ;
             rdfs:comment "Diese Konzept beschreibt eine gesellschaftliche Funktion"@de ,
@@ -1211,7 +1211,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                             "2.0 stable"^^xsd:string .
 
 
-###  http://catalogus-professorum.org/cpm#Study
+###  http://purl.org/pcp-on-web#Study
 :Study rdf:type owl:Class ;
        rdfs:subClassOf :PeriodOfLife ;
        rdfs:comment "Diese Konzept beschreibt ein Studium"@de ,
