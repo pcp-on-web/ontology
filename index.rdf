@@ -1238,7 +1238,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 ## Classes
 
 :Lecture rdf:type owl:Class ;
-                                    "The concept Lecture describes a lecture given by a professor"@en ;
+                       rdfs:comment  "The concept Lecture describes a lecture given by a professor"@en ;
                        rdfs:label "Lecture"@en ,
                                   "Qualifikationsschrift"@de ;
                         owl:versionInfo "PCP-on-Web 1 this class originated from renaming the previous existing class Course - 27.06.18"^^xsd:string .
@@ -1540,4 +1540,3 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                 "Die Referenz eines Dokuments zum VD17 Datensatz."@de ;
                    rdfs:label "VD17 Reference" ;
                    owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
-				   
