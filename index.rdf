@@ -382,7 +382,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
               rdfs:range xsd:string ;
               <http://ns.ontowiki.net/SysOnt/order> "140"^^xsd:string ;
               rdfs:label "Konfession"@de ,
-                         "religious denomination"@en ;
+                         "Religious Denomination"@en ;
               owl:versionInfo "0.1 initial creation - 24.05.2007"^^xsd:string ,
                               "0.2 changed Domain from Professor to Person"^^xsd:string ,
                               "2.0 stable"^^xsd:string .
@@ -408,7 +408,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                         "The given first name of a person"@en ,
                         "given name of a person"@en ;
            rdfs:label "First Name"@en ,
-                      "First name"@en ,
                       "Rufname"@de ;
            owl:versionInfo "0.1 initial creation date: 18.05.2015"^^xsd:string ,
                            "0.1 initial creation date: 29.01.2015"^^xsd:string .
@@ -746,8 +745,9 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :subjectsTaught rdf:type owl:DatatypeProperty ;
                 rdfs:domain :Career ;
                 rdfs:range xsd:string ;
+		rdfs:comment "Subjects the professor has taught."@en ;
                 rdfs:label "Fächer die Gelehrt wurden"@de ,
-                           "subjects the professor taught"@en ;
+                           "Taught Subjects"@en ;
                 owl:versionInfo "0.1 initial creation - 24.05.2007"^^xsd:string ,
                                 "2.0 stable"^^xsd:string .
 
@@ -770,7 +770,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
        rdfs:domain :Document ;
        rdfs:range xsd:string ;
        rdfs:label "Titel der Qualifikationsschrift"@de ,
-                  "title of qualificationpaper"@en ;
+                  "Title of Qualificationpaper"@en ;
        owl:versionInfo "0.1 initial creation - 24.05.2007"^^xsd:string ,
                        "2.0 stable changed from qualiPaperTitle to qualificationPaperTitle on 09.09.2013"^^xsd:string .
 
@@ -797,7 +797,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
       rdfs:domain :QualificationDocument ;
       rdfs:range xsd:string ;
       rdfs:label "Art der Qualifikationsschrift"@de ,
-                 "qualification paper type"@en ;
+                 "Qualification Paper Type"@en ;
       owl:versionInfo "0.1 initial creation - 24.05.2007"^^xsd:string ,
                       "0.2 changed to DatatypeProperty - 13.11.2007 by TR"^^xsd:string ,
                       "2.0 stable changed from qualiPaperType to qualificationPaperType on 09.09.2013"^^xsd:string .
@@ -808,7 +808,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
             rdfs:domain :Body ;
             rdfs:range xsd:string ;
             rdfs:label "Typ der Körperschaft"@de ,
-                       "type of body"@en ;
+                       "Type of Body"@en ;
             owl:versionInfo "0.1 initial creation - 24.05.2007"^^xsd:string ,
                             "2.0 stable"^^xsd:string .
 
@@ -818,8 +818,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                        owl:FunctionalProperty ;
               rdfs:domain :QualificationDocument ;
               rdfs:range xsd:string ;
-              rdfs:label "Qualifikationsschrift - Venia Legendi"@de ,
-                         "qualificationpaper - venia legendi"@en ;
+              rdfs:label "Qualifikationsschrift (Venia Legendi)"@de ,
+                         "Qualification Paper (Venia Legendi)"@en ;
               owl:versionInfo "0.1 initial creation - 24.05.2007"^^xsd:string ,
                               "2.0 stable changed from qualiPaperVeniaLegendi to qualificationPaperVeniaLegendi on 09.09.2013"^^xsd:string .
 
@@ -834,7 +834,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
          <http://ns.ontowiki.net/SysOnt/order> "185"^^xsd:string ;
          rdfs:comment "This property is used for links into the WWW. e.g. Wikipedia."^^xsd:string ;
          rdfs:label "Links (e.g.Wikipedia)"@de ,
-                    "links to (e.g.Wikipedia)"@en ;
+                    "Links to (e.g.Wikipedia)"@en ;
          owl:versionInfo "0.1 initial creation - 24.05.2007"^^xsd:string ,
                          "2.0 stable changed from webLinks to webLink on 09.09.2013"^^xsd:string .
 
