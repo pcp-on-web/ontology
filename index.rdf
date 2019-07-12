@@ -900,10 +900,10 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 ###  http://purl.org/pcp-on-web/ontology#Career
 :Career rdf:type owl:Class ;
         rdfs:subClassOf :PeriodOfLife ;
-        rdfs:comment "Diese Konzept beschreibt einen Karriereschritt"@de ,
-                     "The concept Person describes of career step"@en ;
-        rdfs:label "Career step"@en ,
-                   "Karriereschritt"@de ;
+        rdfs:comment "Diese Konzept beschreibt die Karriere einer Person"@de ,
+                     "The concept Person is described by career steps."@en ;
+        rdfs:label "Career"@en ,
+                   "Karriere"@de ;
         owl:versionInfo "0.1 initial creation date: 24.05.2007"^^xsd:string ,
                         "13.01.2015 changed as subclass of PeriodOfLife"^^xsd:string ,
                         "2.0 stable"^^xsd:string .
