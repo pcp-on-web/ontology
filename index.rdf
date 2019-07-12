@@ -1240,7 +1240,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :Lecture rdf:type owl:Class ;
                        rdfs:comment  "The concept Lecture describes a lecture given by a professor"@en ;
                        rdfs:label "Lecture"@en ,
-                                  "Qualifikationsschrift"@de ;
+                                  "Vorlesung"@de ;
                         owl:versionInfo "PCP-on-Web 1 this class originated from renaming the previous existing class Course - 27.06.18"^^xsd:string .
 
 
