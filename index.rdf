@@ -142,7 +142,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :familyCohabitant rdf:type owl:ObjectProperty ;
                   rdfs:domain :Family ;
                   rdfs:range :Person ;
-                  rdfs:comment "A proprtery that adds a cohabitant to a family"@en ,
+                  rdfs:comment "A property that adds a cohabitant to a family"@en ,
                                "Ein Prädikat zur Angabe eines Lebenspartners einer Familie"@de ;
                   rdfs:label "Cohabitant"@en ,
                              "Lebenspartner"@de ;
@@ -166,7 +166,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :familyParent rdf:type owl:ObjectProperty ;
               rdfs:domain :Family ;
               rdfs:range :Person ;
-              rdfs:comment "A proprtery that adds a parent to a family"@en ,
+              rdfs:comment "A property that adds a parent to a family"@en ,
                            "Ein Prädikat zur Angabe eines Elternteils einer Familie"@de ;
               rdfs:label "Eltern"@de ,
                          "Parent"@en ;
@@ -209,7 +209,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
           rdfs:domain :QualificationDocument ;
           rdfs:range :Person ;
           rdfs:label "Betreuer"@de ,
-                     "tutor"@en ;
+                     "Tutor"@en ;
           owl:versionInfo "0.1 initial creation - 24.05.2007"^^xsd:string ,
                           "2.0 stable changed from has-tutor on 09.09.2013"^^xsd:string .
 
@@ -492,8 +492,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :gender rdf:type owl:DatatypeProperty ;
         rdfs:domain :Person ;
         rdfs:comment "Das Geschlecht einer Person"@de ,
-                     "Gender of a person"@en ,
-                     "Important to get family relations lie mother and father"^^xsd:string ;
+                     "Gender of a person"@en ;
         rdfs:label "Gender"@en ,
                    "Geschlecht"@de ;
         owl:versionInfo "0.1 initial creation date: 19.01.2009"^^xsd:string ,
