@@ -295,13 +295,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 #    Data properties
 #################################################################
 
-###  http://purl.org/pcp-on-web/ontology#academicalTitle
-:academicalTitle rdf:type owl:DatatypeProperty ,
+###  http://purl.org/pcp-on-web/ontology#academicTitle
+:academicTitle rdf:type owl:DatatypeProperty ,
                           owl:FunctionalProperty ;
                  rdfs:domain :QualificationDocument ;
                  rdfs:range xsd:string ;
                  rdfs:label "Qualifikationsschrift - akademischer Titel"@de ,
-                            "qualificationpaper academical title"@en ;
+                            "qualificationpaper academic title"@en ;
                  owl:versionInfo "0.1 initial creation - 24.05.2007"^^xsd:string ,
                                  "2.0 stable changed from bodyPlaceom qualiPaperAcademicalTitle to qualificationPaperAcademicalTitle on 09.09.2013"^^xsd:string .
 
@@ -453,13 +453,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                       "2.0 stable other types added"^^xsd:string .
 
 
-###  http://purl.org/pcp-on-web/ontology#fullAcademicalTitle
-:fullAcademicalTitle rdf:type owl:DatatypeProperty ,
+###  http://purl.org/pcp-on-web/ontology#fullAcademicTitle
+:fullAcademicTitle rdf:type owl:DatatypeProperty ,
                               owl:FunctionalProperty ;
                      rdfs:domain :Person ;
                      rdfs:range xsd:string ;
                      <http://ns.ontowiki.net/SysOnt/order> "30"^^xsd:string ;
-                     rdfs:label "full academical title"@en ,
+                     rdfs:label "full academic title"@en ,
                                 "voller akademischer Titel"@de ;
                      owl:versionInfo "0.1 initial creation - 24.05.2007"^^xsd:string ,
                                      "2.0 stable"^^xsd:string .
