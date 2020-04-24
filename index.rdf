@@ -361,13 +361,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :date rdf:type owl:DatatypeProperty ,
                owl:FunctionalProperty ;
       rdfs:domain :PeriodOfLife ;
-      rdfs:range xsd:date ,
+      rdfs:range rdfs:Literal;
+      rdfs:comment "The date within a period of life from a valid datatype xsd:date,
                  xsd:gDay ,
                  xsd:gMonth ,
                  xsd:gMonthDay ,
                  xsd:gYear ,
-                 xsd:gYearMonth ;
-      rdfs:comment "The date within a period of life"@en ,
+                 xsd:gYearMonth"@en,
                    "Zeitpunkt innerhalb eines Lebensabschnitts"@de ;
       rdfs:label "Date"@en ,
                  "Datum"@de ,
@@ -379,7 +379,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :denomination rdf:type owl:DatatypeProperty ,
                        owl:FunctionalProperty ;
               rdfs:domain :Person ;
-              rdfs:range xsd:string ;
+              rdfs:range rdfs:Literal ;
               <http://ns.ontowiki.net/SysOnt/order> "140"^^xsd:string ;
               rdfs:label "Konfession"@de ,
                          "Religious Denomination"@en ;
@@ -392,9 +392,10 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :dissolved rdf:type owl:DatatypeProperty ,
                     owl:FunctionalProperty ;
            rdfs:domain :Body ;
-           rdfs:range xsd:date ,
-                      xsd:gYear ,
-                      xsd:gYearMonth ;
+           rdfs:range rdfs:Literal;
+           rdfs:comment "Valid datatypes xsd:date,
+                      xsd:gYear,
+                      xsd:gYearMonth"@en;
            rdfs:label "Auflösungsjahr"@de ,
                       "Dissolved (year)"@en ;
            owl:versionInfo "0.1 initial creation - 10.12.2009"^^xsd:string ,
@@ -427,9 +428,10 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :founded rdf:type owl:DatatypeProperty ,
                   owl:FunctionalProperty ;
          rdfs:domain :Body ;
-         rdfs:range xsd:date ,
+         rdfs:range rdfs:Literal;
+         rdfs:comment "From a valid datatype xsd:date ,
                     xsd:gYear ,
-                    xsd:gYearMonth ;
+                    xsd:gYearMonth"@en;
          rdfs:label "Gründungsjahr"@de ,
                     "founded (year)"@en ;
          owl:versionInfo "0.1 initial creation - 10.12.2009"^^xsd:string ,
@@ -439,14 +441,14 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 ###  http://purl.org/pcp-on-web/ontology#from
 :from rdf:type owl:DatatypeProperty ;
       rdfs:domain :PeriodOfLife ;
-      rdfs:range xsd:date ,
+      rdfs:range rdfs:Literal ;
+      rdfs:comment "Das Startdatum eines Lebensabschnitts"@de ,
+                   "The date of the beginning of a period of life from a valid datatype xsd:date ,
                  xsd:gDay ,
                  xsd:gMonth ,
                  xsd:gMonthDay ,
                  xsd:gYear ,
-                 xsd:gYearMonth ;
-      rdfs:comment "Das Startdatum eines Lebensabschnitts"@de ,
-                   "The date of the beginning of a period of life"@en ;
+                 xsd:gYearMonth"@en ;
       rdfs:label "From"@en ,
                  "Von"@de ;
       owl:versionInfo "0.1 initial creation date:  24.05.2007"^^xsd:string ,
@@ -457,7 +459,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :fullAcademicTitle rdf:type owl:DatatypeProperty ,
                               owl:FunctionalProperty ;
                      rdfs:domain :Person ;
-                     rdfs:range xsd:string ;
+                     rdfs:range rdfs:Literal ;
                      <http://ns.ontowiki.net/SysOnt/order> "30"^^xsd:string ;
                      rdfs:label "full academic title"@en ,
                                 "voller akademischer Titel"@de ;
@@ -468,7 +470,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 ###  http://purl.org/pcp-on-web/ontology#functionInOrganisation
 :functionInOrganisation rdf:type owl:DatatypeProperty ;
                         rdfs:domain :SocialRole ;
-                        rdfs:range xsd:string ;
+                        rdfs:range rdfs:Literal ;
                         rdfs:label "Funktion in der Organisation"@de ,
                                    "function in organisation"@en ;
                         owl:versionInfo "0.1 initial creation - 25.05.2007"^^xsd:string ,
@@ -480,7 +482,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :furtherInformation rdf:type owl:DatatypeProperty ,
                              owl:FunctionalProperty ;
                     rdfs:domain :Person ;
-                    rdfs:range xsd:string ;
+                    rdfs:range rdfs:Literal ;
                     <http://ns.ontowiki.net/SysOnt/order> "340"^^xsd:string ;
                     rdfs:label "further information"@en ,
                                "weitere Informationen"@de ;
@@ -503,7 +505,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :gnd rdf:type owl:DatatypeProperty ,
               owl:FunctionalProperty ;
      rdfs:domain :Person ;
-     rdfs:range xsd:string ;
+     rdfs:range rdfs:Literal ;
      <http://ns.ontowiki.net/SysOnt/order> "370"^^xsd:string ;
      rdfs:comment "Personennamendatei"^^xsd:string ;
      rdfs:label "PND"@de ,
@@ -517,7 +519,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :graduationType rdf:type owl:DatatypeProperty ,
                          owl:FunctionalProperty ;
                 rdfs:domain :Graduation ;
-                rdfs:range xsd:string ;
+                rdfs:range rdfs:Literal ;
                 <http://ns.ontowiki.net/SysOnt/order> "290"^^xsd:string ;
                 rdfs:comment "Bsp: Gymnasium, etc."^^xsd:string ;
                 rdfs:label "Abitur Schulart"@de ,
@@ -529,7 +531,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 ###  http://purl.org/pcp-on-web/ontology#isPublic
 :isPublic rdf:type owl:DatatypeProperty ;
           rdfs:domain :Person ;
-          rdfs:range xsd:boolean ;
+          rdfs:range rdfs:Literal ;
+	  rdfs:comment "A boolean from a type xsd:boolean"@en;
           rdfs:label "is public"@en ,
                      "ist öffentlich"@de ;
           owl:versionInfo "0.1 initial creation - 17.02.2015"^^xsd:string .
@@ -540,7 +543,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                       owl:FunctionalProperty ;
              rdfs:domain :PeriodOfLife ,
                          :Person ;
-             rdfs:range xsd:string ;
+             rdfs:range rdfs:Literal ;
              <http://ns.ontowiki.net/SysOnt/order> "186"^^xsd:string ;
              rdfs:comment "This property is used for links to Lectures. The main use is to link into http://histvv.uni-leipzig.de/."^^xsd:string ;
              rdfs:label "Lectures"@en ,
@@ -553,7 +556,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :literature rdf:type owl:DatatypeProperty ,
                      owl:FunctionalProperty ;
             rdfs:domain :Person ;
-            rdfs:range xsd:string ;
+            rdfs:range rdfs:Literal ;
             <http://ns.ontowiki.net/SysOnt/order> "260"^^xsd:string ;
             rdfs:label "biographical, autobiographical literature"@en ,
                        "biographische, autobiograhpische Literatur"@de ;
@@ -565,7 +568,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :note rdf:type owl:DatatypeProperty ,
                owl:FunctionalProperty ;
       rdfs:domain :Person ;
-      rdfs:range xsd:string ;
+      rdfs:range rdfs:Literal ;
       <http://ns.ontowiki.net/SysOnt/order> "390"^^xsd:string ;
       rdfs:comment "additional information that does not fit elsewhere"@en ,
                    "zusätzliche Informationen die nirgends sonst eingetragen werden können"@de ;
@@ -602,7 +605,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :picture rdf:type owl:DatatypeProperty ,
                   owl:FunctionalProperty ;
          rdfs:domain :Picture ;
-         rdfs:range xsd:string ;
+         rdfs:range rdfs:Literal ;
          <http://ns.ontowiki.net/SysOnt/order> "150"^^xsd:string ;
          rdfs:comment "Web-URL zum Bild"@de ;
          rdfs:label "Bild"@de ,
@@ -615,7 +618,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :pictureCredits rdf:type owl:DatatypeProperty ,
                          owl:FunctionalProperty ;
                 rdfs:domain :Picture ;
-                rdfs:range xsd:string ;
+                rdfs:range rdfs:Literal ;
                 <http://ns.ontowiki.net/SysOnt/order> "180"^^xsd:string ;
                 rdfs:label "Bildnachweis"@de ,
                            "picture credits"@en ;
@@ -627,7 +630,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :pictureKey rdf:type owl:DatatypeProperty ,
                      owl:FunctionalProperty ;
             rdfs:domain :Picture ;
-            rdfs:range xsd:string ;
+            rdfs:range  rdfs:Literal ;
             <http://ns.ontowiki.net/SysOnt/order> "170"^^xsd:string ;
             rdfs:label "Bildnummer"@de ,
                        "picture key"@en ;
@@ -639,9 +642,10 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :pid rdf:type owl:DatatypeProperty ,
               owl:FunctionalProperty ;
      rdfs:domain :Person ;
-     rdfs:range xsd:int ;
+     rdfs:range rdfs:Literal ;
      <http://ns.ontowiki.net/SysOnt/order> "50"^^xsd:string ;
-     rdfs:comment "kuenstliche ID als Primaerschluessel fuer Person. Sollte automatisch erstellt werden."@de ;
+     rdfs:comment "kuenstliche ID als Primaerschluessel fuer Person. Sollte automatisch erstellt werden."@de,
+	     "A valid xsd:int"@en;
      rdfs:label "Person ID"@de ,
                 "person id"@en ;
      owl:versionInfo "0.1 initial creation - 25.05.2007"^^xsd:string ,
@@ -652,7 +656,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :profession rdf:type owl:DatatypeProperty ,
                      owl:FunctionalProperty ;
             rdfs:domain :Person ;
-            rdfs:range xsd:string ;
+            rdfs:range rdfs:Literal ;
             rdfs:label "Beruf"@de ,
                        "Profession"@en ;
             owl:versionInfo "0.1 initial creation - 12.02.2010"^^xsd:string ,
@@ -672,7 +676,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 ###  http://purl.org/pcp-on-web/ontology#reasonForResigning
 :reasonForResigning rdf:type owl:DatatypeProperty ;
                     rdfs:domain :Career ;
-                    rdfs:range xsd:string ;
+                    rdfs:range rdfs:Literal ;
                     rdfs:label "Grund des Austritts"@de ,
                                "reason for resigning"@en ;
                     owl:versionInfo "0.1 initial creation - 24.05.2007"^^xsd:string ,
@@ -684,7 +688,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :reference rdf:type owl:DatatypeProperty ,
                     owl:FunctionalProperty ;
            rdfs:domain :Publication ;
-           rdfs:range xsd:string ;
+           rdfs:range rdfs:Literal ;
            rdfs:label "Veröffentlichung Quellenangabe"@de ,
                       "publication reference"@en ;
            owl:versionInfo "0.1 initial creation - 25.05.2007"^^xsd:string ,
@@ -695,7 +699,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :references rdf:type owl:DatatypeProperty ,
                      owl:FunctionalProperty ;
             rdfs:domain :Person ;
-            rdfs:range xsd:string ;
+            rdfs:range rdfs:Literal ;
             <http://ns.ontowiki.net/SysOnt/order> "380"^^xsd:string ;
             rdfs:label "Quellennachweis"@de ,
                        "reference"@en ;
@@ -707,7 +711,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 ###  http://purl.org/pcp-on-web/ontology#reviewed
 :reviewed rdf:type owl:DatatypeProperty ;
           rdfs:domain :Person ;
-          rdfs:range xsd:boolean ;
+          rdfs:range rdfs:Literal ;
           rdfs:label "reviewed"@en ,
                      "überprüft"@de ;
           owl:versionInfo "0.1 initial creation - 17.02.2015"^^xsd:string .
@@ -717,7 +721,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :subject rdf:type owl:DatatypeProperty ,
                   owl:FunctionalProperty ;
          rdfs:domain :QualificationDocument ;
-         rdfs:range xsd:string ;
+         rdfs:range rdfs:Literal ;
          rdfs:label "Qualifikationsschrift - Fach"@de ,
                     "qualification paper - subject"@en ;
          owl:versionInfo "0.1 initial creation - 24.05.2007"^^xsd:string ,
@@ -728,7 +732,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :subjectStudied rdf:type owl:DatatypeProperty ,
                          owl:FunctionalProperty ;
                 rdfs:domain :Study ;
-                rdfs:range xsd:string ;
+                rdfs:range rdfs:Literal ;
                 rdfs:comment "Das Thema/Gebiet des Studiums"@de ,
                              "The subject of Study"@en ;
                 rdfs:label "Fach"@de ,
@@ -743,7 +747,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 ###  http://purl.org/pcp-on-web/ontology#subjectsTaught
 :subjectsTaught rdf:type owl:DatatypeProperty ;
                 rdfs:domain :Career ;
-                rdfs:range xsd:string ;
+                rdfs:range rdfs:Literal ;
 		rdfs:comment "Subjects the professor has taught."@en ;
                 rdfs:label "Fächer die Gelehrt wurden"@de ,
                            "Taught Subjects"@en ;
@@ -756,6 +760,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
          rdfs:domain :Person ;
          rdfs:comment "Nachname einer Person"@de ,
                       "The surname of a person"@en ;
+         rdfs:range rdfs:Literal ;
          rdfs:label "Nachname"@de ,
                     "Surname"@en ;
          owl:versionInfo "0.1 initial creation date: 24.05.2007"^^xsd:string ,
@@ -767,7 +772,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :title rdf:type owl:DatatypeProperty ,
                 owl:FunctionalProperty ;
        rdfs:domain :Document ;
-       rdfs:range xsd:string ;
+       rdfs:range rdfs:Literal ;
        rdfs:label "Titel der Qualifikationsschrift"@de ,
                   "Title of Qualificationpaper"@en ;
        owl:versionInfo "0.1 initial creation - 24.05.2007"^^xsd:string ,
@@ -777,14 +782,14 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 ###  http://purl.org/pcp-on-web/ontology#to
 :to rdf:type owl:DatatypeProperty ;
     rdfs:domain :PeriodOfLife ;
-    rdfs:range xsd:date ,
-               xsd:gDay ,
-               xsd:gMonth ,
-               xsd:gMonthDay ,
-               xsd:gYear ,
-               xsd:gYearMonth ;
+    rdfs:range rdfs:Literal ;
     rdfs:comment "Das Enddatum eines Lebensabschnitts"@de ,
-                 "The date of the ending of a period of life"@en ;
+                 "The date of the ending of a period of life from a valid datatype xsd:date ,
+               xsd:gDay,
+               xsd:gMonth,
+               xsd:gMonthDay,
+               xsd:gYear,
+               xsd:gYearMonth"@en ;
     rdfs:label "Bis"@de ,
                "To"@en ;
     owl:versionInfo "0.1 initial creation date:  24.05.2007"^^xsd:string ,
@@ -794,7 +799,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 ###  http://purl.org/pcp-on-web/ontology#type
 :type rdf:type owl:DatatypeProperty ;
       rdfs:domain :QualificationDocument ;
-      rdfs:range xsd:string ;
+      rdfs:range rdfs:Literal ;
       rdfs:label "Art der Qualifikationsschrift"@de ,
                  "Qualification Paper Type"@en ;
       owl:versionInfo "0.1 initial creation - 24.05.2007"^^xsd:string ,
@@ -805,7 +810,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 ###  http://purl.org/pcp-on-web/ontology#typeOfBody
 :typeOfBody rdf:type owl:DatatypeProperty ;
             rdfs:domain :Body ;
-            rdfs:range xsd:string ;
+            rdfs:range rdfs:Literal ;
             rdfs:label "Typ der Körperschaft"@de ,
                        "Type of Body"@en ;
             owl:versionInfo "0.1 initial creation - 24.05.2007"^^xsd:string ,
@@ -816,7 +821,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :veniaLegendi rdf:type owl:DatatypeProperty ,
                        owl:FunctionalProperty ;
               rdfs:domain :QualificationDocument ;
-              rdfs:range xsd:string ;
+              rdfs:range rdfs:Literal ;
               rdfs:label "Qualifikationsschrift (Venia Legendi)"@de ,
                          "Qualification Paper (Venia Legendi)"@en ;
               owl:versionInfo "0.1 initial creation - 24.05.2007"^^xsd:string ,
@@ -829,7 +834,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
          rdfs:domain :Body ,
                      :Document ,
                      :Person ;
-         rdfs:range xsd:string ;
+         rdfs:range rdfs:Literal ;
          <http://ns.ontowiki.net/SysOnt/order> "185"^^xsd:string ;
          rdfs:comment "This property is used for links into the WWW. e.g. Wikipedia."^^xsd:string ;
          rdfs:label "Links (e.g.Wikipedia)"@de ,
