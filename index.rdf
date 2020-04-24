@@ -16,7 +16,7 @@
                                                                                "2013-09-09"^^xsd:string ,
                                                                                "2013-09-10"^^xsd:string ,
                                                                                "2018-04-26"^^xsd:string ;
-                                           <http://purl.org/vocab/vann/changes> <https://github.com/PCP-on-Web 1/catalogus-professorum-lipsiensium/model/commits/master/cpm-2/ontology.ttl> ;
+                                           <http://purl.org/vocab/vann/changes> <https://github.com/pcp-on-web/ontology/commits/master/index.rdf> ;
                                            <http://purl.org/vocab/vann/preferredNamespacePrefix> "cpm"^^xsd:string ;
                                            <http://purl.org/vocab/vann/preferredNamespaceUri> "http://purl.org/pcp-on-web/ontology#"^^xsd:string ;
                                            <http://usefulinc.com/ns/doap#homepage> <https://catalogus-professorum.org/project/> ;
