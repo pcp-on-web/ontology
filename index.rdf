@@ -405,6 +405,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 ###  http://purl.org/pcp-on-web/ontology#firstName
 :firstName rdf:type owl:DatatypeProperty ;
            rdfs:domain :Person ;
+           rdfs:range rdfs:Literal;
            rdfs:comment "Rufname einer Person"@de ,
                         "The given first name of a person"@en ,
                         "given name of a person"@en ;
@@ -417,6 +418,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 ###  http://purl.org/pcp-on-web/ontology#forename
 :forename rdf:type owl:DatatypeProperty ;
           rdfs:domain :Person ;
+          rdfs:range rdfs:Literal;
           rdfs:comment "Forename(s) of a person, seperated by space"@en ,
                        "Vorname(n) einer Person, getrennt mit Leerzeichen"@de ;
           rdfs:label "Forename"@en ,
