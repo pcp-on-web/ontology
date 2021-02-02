@@ -1068,7 +1068,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 ###  http://purl.org/pcp-on-web/ontology#Office
 :Office rdf:type owl:Class ;
         rdfs:subClassOf :PeriodOfLife ;
-        rdfs:comment "Diese Konzept beschreibt eines Amtes"@de ,
+        rdfs:comment "Diese Konzept beschreibt ein Amt"@de ,
                      "The concept Person describes of a office"@en ;
         rdfs:label "Amt"@de ,
                    "Office"@en ;
