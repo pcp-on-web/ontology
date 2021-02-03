@@ -37,62 +37,62 @@
 
 		
 :University rdf:type owl:Class ;
-  rdf:subClassOf :Concept ;
+  rdfs:subClassOf :Concept ;
   rdfs:label "Universität"@de, "University"@en ;
 	dc:description "..."@de , "..."@en .
 	
 :Sovereign rdf:type owl:Class ;
-  rdf:subClassOf :Concept ;
+  rdfs:subClassOf :Concept ;
   rdfs:label "Landesherr"@de, "Sovereign"@en ;
 	dc:description "..."@de , "..."@en .
 	
 :Patronage  rdf:type owl:Class ;
-  rdf:subClassOf :Concept ;
+  rdfs:subClassOf :Concept ;
   rdfs:label "Professorenkarriere"@de, "Patronage"@en ;
 	dc:description "..."@de , "..."@en .
 
 :Office rdf:type owl:Class ;
-   rdf:subClassOf :Concept ;
+  rdfs:subClassOf :Concept ;
   rdfs:label "Amt"@de, "Office"@en ;
 	dc:description "..."@de , "..."@en .
 	
 :Network rdf:type owl:Class ;
-  rdf:subClassOf :Concept ;
+  rdfs:subClassOf :Concept ;
   rdfs:label "Netzwerke"@de, "Network"@en ;
 	dc:description "..."@de , "..."@en .
 	
 :Prestigious rdf:type owl:Class ;
-  rdf:subClassOf :Concept ;
+  rdfs:subClassOf :Concept ;
   rdfs:label "Prestige"@de, "Prestigious"@en ;
 	dc:description "..."@de , "..."@en .
 	
 :Origin rdf:type owl:Class ;
-   rdf:subClassOf :Concept ;
+  rdfs:subClassOf :Concept ;
   rdfs:label "Herkunft"@de, "Origin"@en ;
 	dc:description "..."@de , "..."@en .
 	
 :Denomination rdf:type owl:Class ;
-   rdf:subClassOf :Concept ;
+  rdfs:subClassOf :Concept ;
   rdfs:label "Konfession"@de, "Denomination"@en ;
 	dc:description "..."@de , "..."@en .
 	
 :Education  rdf:type owl:Class ;
-  rdf:subClassOf :Concept ;
+  rdfs:subClassOf :Concept ;
   rdfs:label "Bildungsweg"@de, "Education"@en ;
 	dc:description "..."@de , "..."@en .
 	
 :AcademicDegree rdf:type owl:Class ;
-    rdf:subClassOf :Concept ;
+  rdfs:subClassOf :Concept ;
   rdfs:label "Akademische Grade"@de, "Academic Degree"@en ;
 	dc:description "..."@de , "..."@en .
 	
 :Canditature rdf:type owl:Class ;
-    rdf:subClassOf :Concept ;
+  rdfs:subClassOf :Concept ;
   rdfs:label "Bewerbung"@de, "Canditature"@en ;
 	dc:description "..."@de , "..."@en .
 
 :Recommendation  rdf:type owl:Class ;
-   rdf:subClassOf :Concept ;
+  rdfs:subClassOf :Concept ;
   rdfs:label "Empfehlungen"@de, "Recommendation"@en ;
   dc:description "..."@de , "..."@en . 
 
