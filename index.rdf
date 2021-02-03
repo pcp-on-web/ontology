@@ -1,6 +1,5 @@
 ## This is the research model for the research project Early Modern Professorial Career Patterns Methodological research on online databases of academic history.
 
-
 @prefix : <http://pcp-on-web.de/ontology#> .
 @prefix pcp: <http://pcp-on-web.de/ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
