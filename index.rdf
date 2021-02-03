@@ -25,6 +25,7 @@
 	rdfs:label "Professorale Karrieremuster der Frühen Neuzeit - Version 0.1 (pcp-on-web)"@de,
   	"Early Modern Professorial Career Patterns - Version 0.1 (pcp-on-web)"@en;
   	owl:versionInfo "Version 0.1 (inital) - 2021-02-03 - Jennifer Blanke";
+  	dc:creator "Jennifer Blanke, Edgard Marx, Thomas Riechert" ;
   	<http://xmlns.com/foaf/0.1/maker> <http://pcp-on-web.de/team/JenniferBlanke> , <http://pcp-on-web.de/team/EdgardMarx> , <http://pcp-on-web.de/team/ThomasRiechert>.
   	
 :ProfessorCareer rdf:type owl:Class ;
