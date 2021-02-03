@@ -1,5 +1,5 @@
-# This is the research model for the research project Early Modern Professorial Career Patterns Methodological research on online databases of academic history.
-# 
+## This is the research model for the research project Early Modern Professorial Career Patterns Methodological research on online databases of academic history.
+
 
 @prefix : <http://pcp-on-web.de/ontology#> .
 @prefix pcp: <http://pcp-on-web.de/ontology#> .
@@ -25,63 +25,63 @@
 	rdfs:label "Professorale Karrieremuster der Frühen Neuzeit - Version 0.1 (pcp-on-web)"@de,
   	"Early Modern Professorial Career Patterns - Version 0.1 (pcp-on-web)"@en;
   	owl:versionInfo "Version 0.1 (inital) - 2021-02-03 - Jennifer Blanke";
-  	<http://xmlns.com/foaf/0.1/maker> <https://pcp-on-web.de/team/JenniferBlanke> , <https://pcp-on-web.de/team/EdgardMarx> , <https://pcp-on-web.de/team/ThomasRiechert>.
+  	<http://xmlns.com/foaf/0.1/maker> <http://pcp-on-web.de/team/JenniferBlanke> , <http://pcp-on-web.de/team/EdgardMarx> , <http://pcp-on-web.de/team/ThomasRiechert>.
   	
-ProfessorCareer rdf:type owl:Class ;
+:ProfessorCareer rdf:type owl:Class ;
   rdfs:label "Professorenkarriere"@de, "Professor Career"@en ;
 	rdfs:comment "..."@de , "..."@en .
 	
-University rdf:type owl:Class ;
+:University rdf:type owl:Class ;
   rdfs:label "Universität"@de, "University"@en ;
 	rdfs:comment "..."@de , "..."@en .
 	
-Sovereign rdf:type owl:Class ;
+:Sovereign rdf:type owl:Class ;
   rdfs:label "Landesherr"@de, "Sovereign"@en ;
 	rdfs:comment "..."@de , "..."@en .
 	
-Patronage  rdf:type owl:Class ;
+:Patronage  rdf:type owl:Class ;
   rdfs:label "Professorenkarriere"@de, "Patronage"@en ;
 	rdfs:comment "..."@de , "..."@en .
 
-Office  rdf:type owl:Class ;
+:Office  rdf:type owl:Class ;
   rdfs:label "Amt"@de, "Office"@en ;
 	rdfs:comment "..."@de , "..."@en .
 	
-Network  rdf:type owl:Class ;
+:Network  rdf:type owl:Class ;
   rdfs:label "Netzwerke"@de, "Network"@en ;
 	rdfs:comment "..."@de , "..."@en .
 	
-Prestigious  rdf:type owl:Class ;
+:Prestigious  rdf:type owl:Class ;
   rdfs:label "Prestige"@de, "Prestigious"@en ;
 	rdfs:comment "..."@de , "..."@en .
 	
-Origin  rdf:type owl:Class ;
+:Origin  rdf:type owl:Class ;
   rdfs:label "Herkunft"@de, "Origin"@en ;
 	rdfs:comment "..."@de , "..."@en .
 	
-Denomination  rdf:type owl:Class ;
+:Denomination  rdf:type owl:Class ;
   rdfs:label "Konfession"@de, "Denomination"@en ;
 	rdfs:comment "..."@de , "..."@en .
 	
-Education   rdf:type owl:Class ;
+:Education   rdf:type owl:Class ;
   rdfs:label "Bildungsweg"@de, "Education"@en ;
 	rdfs:comment "..."@de , "..."@en .
 	
-AcademicDegree   rdf:type owl:Class ;
+:AcademicDegree   rdf:type owl:Class ;
   rdfs:label "Akademische Grade"@de, "Academic Degree"@en ;
 	rdfs:comment "..."@de , "..."@en .
 	
-Canditature   rdf:type owl:Class ;
+:Canditature   rdf:type owl:Class ;
   rdfs:label "Bewerbung"@de, "Canditature"@en ;
 	rdfs:comment "..."@de , "..."@en .
 
-Recommendation   rdf:type owl:Class ;
+:Recommendation   rdf:type owl:Class ;
   rdfs:label "Empfehlungen"@de, "Recommendation"@en ;
 	rdfs:comment "..."@de , "..."@en . 
 
-influence rdf:type owl:ObjectProperty,
-	rdfs:domain University, Sovereign, Patronage, Office, Network, Prestigious, Origin, Denomination, Education,AcademicDegree, Canditature Recommendation;
-  rdfs:range ProfessorCareer ;
+:influence rdf:type owl:ObjectProperty;
+	rdfs:domain :University, :Sovereign, :Patronage, :Office, :Network, :Prestigious, :Origin, :Denomination, :Education, :AcademicDegree, :Canditature, :Recommendation;
+  rdfs:range :ProfessorCareer ;
   rdfs:label "beeinflusst"@de, "influence"@en ;  
 	rdfs:comment "Ein Konzept beeinflusst das Projekt."@de , "A concept influences the project."@de.
 	
