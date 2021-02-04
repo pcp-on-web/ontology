@@ -118,12 +118,12 @@
 
 :PublicLecture rdf:type owl:Class ;
   rdfs:subClassOf :Lecture;
-  rdfs:label "Öffentliche Vorlesung"@de, "Public Lecture"@en
+  rdfs:label "Öffentliche Vorlesung"@de, "Public Lecture"@en ;
 	dc:description "Bezieht sich auf öffentliche Vorlesungen, die ein Professor hält."@de, "Refers to public lectures, given by a professor."@en.
 		
 :PrivateLecture rdf:type owl:Class ;
   rdfs:subClassOf :Lecture;
-  rdfs:label "Private Vorlesung"@de, "Private Lecture"@en
+  rdfs:label "Private Vorlesung"@de, "Private Lecture"@en ;
 	dc:description "Bezieht sich auf private Vorlesungen (privatum, privatissimum), die ein Professor in einem kleinen Kreis von Studenten hält."@de, 
 		"Refers to private lectures (privatum, privatissimum), given by a professor for a relatively small amount of students."@en.
 	
