@@ -117,7 +117,7 @@
 	dc:description "Bezieht sich auf Kollegien, die von einem Professor im Rahmen der universitären Lehre abgehalten werden."@de,
 		"Refers to lectures, given by a professor at auniversity."@en.
 	
-:PublicLecture rdf:type ow:ObjectProperty;
+:PublicLecture rdf:type owl:ObjectProperty;
   rdfs:domain :TeachingPractices;
   rdfs:range :Lecture ;
   rdfs:label "Öffentliche Vorlesung"@de, "Public Lecture"@en
