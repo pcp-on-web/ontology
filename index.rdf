@@ -115,6 +115,11 @@
   rdfs:label "Kolleg/Vorlesung"@de, "Lecture"@en ;
 	dc:description "Bezieht sich auf Kollegien, die von einem Professor im Rahmen der universitären Lehre abgehalten werden."@de,
 		"Refers to lectures, given by a professor at auniversity."@en.
+
+:PublicLecture rdf:type owl:Class ;
+  rdfs:subClassOf :Lecture;
+  rdfs:label "Öffentliche Vorlesung"@de, "Public Lecture"@en
+	dc:description "Bezieht sich auf öffentliche Vorlesungen, die ein Professor hält."@de, "Refers to public lectures, given by a professor."@en.
 	
 
 		
