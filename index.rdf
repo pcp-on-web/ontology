@@ -28,8 +28,8 @@
   	dc:creator "Jennifer Blanke, Edgard Marx, Thomas Riechert" ;
   	<http://xmlns.com/foaf/0.1/maker> <http://pcp-on-web.de/team/JenniferBlanke> , <http://pcp-on-web.de/team/EdgardMarx> , <http://pcp-on-web.de/team/ThomasRiechert>.
   	
-:ProfessorCareer rdf:type owl:Class ;
-  rdfs:label "Professorenkarriere"@de, "Professor Career"@en ;
+:ProfessorsCareer rdf:type owl:Class ;
+  rdfs:label "Professorenkarriere"@de, "Professors Career"@en ;
 	dc:description "..."@de , "..."@en .
 
 :Concept rdf:type owl:Class ;
@@ -99,15 +99,48 @@
 
 :influence rdf:type owl:ObjectProperty;
   rdfs:domain :Concept;
-  rdfs:range :ProfessorCareer ;
+  rdfs:range :ProfessorsCareer ;
   rdfs:label "beeinflusst"@de, "influence"@en ;  
   	dc:description "Ein Konzept beeinflusst das Projekt."@de , "A concept influences the project."@de.
 		
 :TeachingPractices rdf:type owl:Class ;
   rdfs:subClassOf :Concept;
   rdfs:label "Lehrpraktiken"@de, "Teaching Practices"@en ;
-  	dc:description "Beschreibt akademische Lehrpraktiken, die eine Person an der Universität durchführt und welche durch Statuten, weitere Regularien 
+  	dc:description "Beschreibt akademische Lehrpraktiken, die ein Professor an der Universität durchführt und welche durch Statuten, weitere Regularien 
 		und/oder durch Gewohnheit geregelt sind."@de, "Describes academic teaching practices which are regulated by the University's statutes
-		or further regulations."@en.
+		or further regulations and/or customs."@en.
+
+:Lecture rdf:type owl:ObjectProperty;
+  rdfs:domain :TeachingPractices;
+  rdfs:range :ProfessorsCareer ;
+  rdfs:label "Kolleg/Vorlesung"@de, "Lecture"@en ;
+	dc:description "Bezieht sich auf Kollegien, die von einem Professor im Rahmen der universitären Lehre abgehalten werden."@de,
+		"Refers to lectures, given by a professor at auniversity."@en.
+
+:PublicLecture rdf:type ow:ObjectProperty;
+  rdfs:
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 	
