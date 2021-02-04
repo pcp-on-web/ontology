@@ -38,6 +38,10 @@
   rdfs:label "Konzept"@de, "Concept"@en ;
 	dc:description "..."@de , "..."@en .
 
+:Professor rdf:type owl:Class ;
+  rdfs:label "Professor"@de, "Professor"@en ;
+	dc:description "Bezeichnet eine Person, die durch Berufung an einer frühneuzeitlichen Universität lehrt und dort akademische Ämter führt."@de,
+		"Refers to a person who is vocated as a professor at an Early Modern university and who teaches and hold academic offices there."@en.
 		
 :University rdf:type owl:Class ;
   rdfs:subClassOf :Concept ;
