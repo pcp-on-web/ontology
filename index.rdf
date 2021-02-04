@@ -121,7 +121,7 @@
   rdfs:domain :TeachingPractices;
   rdfs:range :Lecture ;
   rdfs:label "Öffentliche Vorlesung"@de, "Public Lecture"@en
-		"Bezieht sich auf öffentliche Vorlesungen, die ein Professor hält."@de, "Refers to public lectures, given by a professor."@en.
+	dc:description "Bezieht sich auf öffentliche Vorlesungen, die ein Professor hält."@de, "Refers to public lectures, given by a professor."@en.
 		
 		
 		
