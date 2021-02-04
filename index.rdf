@@ -95,11 +95,19 @@
 :Recommendation  rdf:type owl:Class ;
   rdfs:subClassOf :Concept ;
   rdfs:label "Empfehlungen"@de, "Recommendation"@en ;
-  dc:description "..."@de , "..."@en . 
+  	dc:description "..."@de , "..."@en . 
 
 :influence rdf:type owl:ObjectProperty;
   rdfs:domain :Concept;
   rdfs:range :ProfessorCareer ;
   rdfs:label "beeinflusst"@de, "influence"@en ;  
-  dc:description "Ein Konzept beeinflusst das Projekt."@de , "A concept influences the project."@de.
+  	dc:description "Ein Konzept beeinflusst das Projekt."@de , "A concept influences the project."@de.
+		
+:TeachingPractices rdf:type owl:Class ;
+  rdfs:subClassOf :Concept;
+  rdfs:label "Lehrpraktiken"@de, "Teaching Practices"@en ;
+  	dc:description "Beschreibt akademische Lehrpraktiken, die eine Person an der Universität durchführt und welche durch Statuten, weitere Regularien 
+		und/oder durch Gewohnheit geregelt sind."@de, "Describes academic teaching practices which are regulated by the University's statutes
+		or further regulations."@en.
+		
 	
