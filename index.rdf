@@ -28,9 +28,11 @@
   	dc:creator "Jennifer Blanke, Edgard Marx, Thomas Riechert" ;
   	<http://xmlns.com/foaf/0.1/maker> <http://pcp-on-web.de/team/JenniferBlanke> , <http://pcp-on-web.de/team/EdgardMarx> , <http://pcp-on-web.de/team/ThomasRiechert>.
   	
-:ProfessorsCareer rdf:type owl:Class ;
-  rdfs:label "Professorenkarriere"@de, "Professors Career"@en ;
-	dc:description "..."@de , "..."@en .
+
+:ProfessorialCareer rdf:type owl:Class ;
+  rdfs:label "Professorenkarriere"@de, "ProfessorialCareer"@en ;
+	dc:description "Dieses Konzept bezeichnet eine Professorenkarriere und ergibt sich aus der Summe aller mit ihr verbundenen Konzepte und Eigenschaften."@de , 
+		"This concept of professorial career is constituted by the total of influencing concepts and properties."@en .
 
 :Concept rdf:type owl:Class ;
   rdfs:label "Konzept"@de, "Concept"@en ;
@@ -99,7 +101,7 @@
 
 :influence rdf:type owl:ObjectProperty;
   rdfs:domain :Concept;
-  rdfs:range :ProfessorsCareer ;
+  rdfs:range :ProfessorialCareer ;
   rdfs:label "beeinflusst"@de, "influence"@en ;  
   	dc:description "Ein Konzept beeinflusst das Projekt."@de , "A concept influences the project."@de.
 		
