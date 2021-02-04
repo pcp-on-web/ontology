@@ -144,7 +144,7 @@
 		"Refers to private lectures (privatum, privatissimum), given by a professor for a relatively small amount of students."@en.
 	
 :givesLecture rdf:type owl:ObjectProperty ;
-  rdfs:domain :Concept;
+  rdfs:domain :Lecture;
   rdfs:range :Professor ;
   rdfs:label "gibtVorlesung"@de, "gives lecture"@en ;
 	dc:description "Bezeichnet die Person, die eine Vorlesung an der Universität hält."@de, "Refers to the person who gives a lecture at a university."@en.
