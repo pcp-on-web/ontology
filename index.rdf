@@ -52,7 +52,7 @@
 		
 :hasStudents rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
-  rdfs:range :Student ;
+  rdfs:range :Lecture ;
   rdfs:label "hat Studenten"@de, "has students"@en ;
 	dc:description "eine Lehrkraft hat Studenten, bspw. in den Kollegien"@de; "a teacher has students, for instance at lectures."@en.
 
