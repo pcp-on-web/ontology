@@ -50,6 +50,12 @@
 	dc:description "Bezeichnet eine Person, die durch Berufung an einer frühneuzeitlichen Universität lehrt und dort akademische Ämter führt."@de,
 		"Refers to a person who is vocated as a professor at an Early Modern university and who teaches and holds academic offices there."@en.
 	
+:BirthDate rdf:type owl:Class ;
+  rdfs:subClassOf :LifeEvent ;
+  rdfs:subClassOf :Person ;
+  rdfs:label ´"Geburtsdatum"@de, "Birthdate"@en ;
+	dc:description "Gibt das Geburtsdatum einer Person an."@de, "Gives the birthdate of a person."@en.
+	
 :hasBirth rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
   rdfs:range :LifeEvent ;
