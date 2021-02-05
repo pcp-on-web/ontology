@@ -49,6 +49,13 @@
   rdfs:label "Professor"@de, "Professor"@en ;
 	dc:description "Bezeichnet eine Person, die durch Berufung an einer frühneuzeitlichen Universität lehrt und dort akademische Ämter führt."@de,
 		"Refers to a person who is vocated as a professor at an Early Modern university and who teaches and holds academic offices there."@en.
+	
+:hasBirth rdf:type owl:ObjectProperty ;
+  rdfs:domain :Professor ;
+  rdfs:range :LifeEvent ;
+  rdfs:label "hat ein Geburtsdatum"@de, "has a birth date"@en ;
+	dc:description "Nennt das Geburtsdatum des Professors."@de, "Gives the birthdate of a professor."@en.
+
 		
 :Person rdf:type owl:Class ;
   rdf:label "Person"@de, "Person"@en ;
