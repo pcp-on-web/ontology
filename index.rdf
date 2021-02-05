@@ -174,8 +174,16 @@
 :doneAt rdf:type owl:ObjectProperty ;
   rdfs:domain :TeachingPractices ;
   rdfs:range :University ;
-  rdfs:label "werden durchgeführt"@de, "doneAt"@en ;
-	dc:description "Bezieht sich auf Lehrpraktiken, die an einer Universität durchgeführt werden."@de, "Refers to teaching practices which are done at a university."@en.
+  rdfs:label "werden durchgeführt"@de, "done at"@en ;
+	dc:description "Bezieht sich auf Lehrpraktiken, die an einer Universität durchgeführt werden."@de, "Refers to teaching practices which are done at a
+		university."@en.
+		
+:doneBy rdf:type owl:ObjectProperty ;
+  rdfs:domain :TeachingPractices ;
+  rdfs:range :Professor ;
+  rdfs:label "werden durchgeführt von"@de, "done by"@en ;
+	dc:description "Bezieht sich auf Lehrpraktiken, die von einem Professor an einer Universität durchgeführt werden."@de, "Refers to teaching practices
+		which are done by a professor at a university."@en.
 
 :Lecture rdf:type owl:Class ;
   rdfs:subClassOf :TeachingPractices;
