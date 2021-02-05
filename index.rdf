@@ -39,9 +39,14 @@
 	dc:description "..."@de , "..."@en .
 
 :Professor rdf:type owl:Class ;
+  rdfs:subClassOf :Person ;
   rdfs:label "Professor"@de, "Professor"@en ;
 	dc:description "Bezeichnet eine Person, die durch Berufung an einer frühneuzeitlichen Universität lehrt und dort akademische Ämter führt."@de,
 		"Refers to a person who is vocated as a professor at an Early Modern university and who teaches and holds academic offices there."@en.
+		
+:Person rdf:type owl:Class ;
+  rdf:label "Person"@de, "Person"@en ;
+	dc:description "Bezeichnet eine historische Person."@de, "Refers to a historical person."@en.
 		
 :isStudentAt rdf:type owl:ObjectProperty ;
   rdfs:domain :Student ;
