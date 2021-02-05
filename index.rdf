@@ -45,7 +45,7 @@
 		
 :isStudentAt rdf:type owl:ObjectProperty ;
   rdfs:domain :University ;
-  rdfs:range :Professor ;
+  rdfs:range :Student ;
   rdfs:label "ist ein Student an"@de, "is a student at"@en ;
 	dc:description "Bezieht sich auf die Information an welcher Korporation ein Student studiert."@de,
 		"Refers to the information at which corporation a student studies."@en.
