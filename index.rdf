@@ -56,10 +56,10 @@
   rdfs:label ´"Geburtsdatum"@de, "Birthdate"@en ;
 	dc:description "Gibt das Geburtsdatum einer Person an."@de, "Gives the birthdate of a person."@en.
 	
-:hasBirth rdf:type owl:ObjectProperty ;
+:hasBirthDate rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
   rdfs:range :LifeEvent ;
-  rdfs:label "hat ein Geburtsdatum"@de, "has a birth date"@en ;
+  rdfs:label "hat ein Geburtsdatum"@de, "has a birthdate"@en ;
 	dc:description "Nennt das Geburtsdatum des Professors."@de, "Gives the birthdate of a professor."@en.
 
 		
@@ -224,7 +224,7 @@
 :givesLecture rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor;
   rdfs:range :Lecture ;
-  rdfs:label "gibtVorlesung"@de, "gives lecture"@en ;
+  rdfs:label "gibt Vorlesung"@de, "gives lecture"@en ;
 	dc:description "Bezeichnet die Person, die eine Vorlesung an der Universität hält."@de, "Refers to the person who gives a lecture at a university."@en.
 		
 :attendsLecture rdf:type owl:ObjectProperty ;
