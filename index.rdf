@@ -170,6 +170,12 @@
   	dc:description "Beschreibt akademische Lehrpraktiken, die ein Professor an der Universität durchführt und welche durch Statuten, weitere Regularien 
 		und/oder durch Gewohnheit geregelt sind."@de, "Describes academic teaching practices which are regulated by the University's statutes
 		or further regulations and/or customs."@en.
+		
+:doneAt rdf:type owl:ObjectProperty ;
+  rdfs:domain :TeachingPractices ;
+  rdfs:range :University ;
+  rdfs:label "werden durchgeführt"@de, "doneAt"@en ;
+	dc:description "Bezieht sich auf Lehrpraktiken, die an einer Universität durchgeführt werden."@de, "Refers to teaching practices which are done at a university."@en.
 
 :Lecture rdf:type owl:Class ;
   rdfs:subClassOf :TeachingPractices;
