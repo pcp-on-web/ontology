@@ -56,7 +56,8 @@
 :University rdf:type owl:Class ;
   rdfs:subClassOf :Concept ;
   rdfs:label "Universität"@de, "University"@en ;
-	dc:description "..."@de , "..."@en .
+	dc:description "Bezeichnet eine Lehr-, Bildungs- und Forschungskorporation die dazu priviligiert ist akademische Grade zu verleihen."@de ,
+		"Refers to educational and research corporations which own the privilige to award academic degrees."@en .
 	
 :Sovereign rdf:type owl:Class ;
   rdfs:subClassOf :Concept ;
