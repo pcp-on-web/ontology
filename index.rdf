@@ -207,6 +207,13 @@
   rdfs:range :Lecture ;
   rdfs:label "gibtVorlesung"@de, "gives lecture"@en ;
 	dc:description "Bezeichnet die Person, die eine Vorlesung an der Universität hält."@de, "Refers to the person who gives a lecture at a university."@en.
+		
+:attendsLecture rdf:type owl:ObjectProperty ;
+  rdfs:domain :Student;
+  rdfs:range :Lecture ;
+  rdfs:label "besucht Vorlesung"@de, "attends lecture"@en ;
+	dc:description "Bezieht sich auf die Praktik des Anhörens von Vorlesungen durch Studenten."@de, "Refers to the attendance of students at a lecture."@en.
+		
 	
 
 		
