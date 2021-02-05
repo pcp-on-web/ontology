@@ -86,6 +86,11 @@
   rdfs:label "Medizinische Fakultät"@de, "Faculty of Medicine"@en ;
 	dc:description "Bezeichnet die Medzinische Fakultät an einer Universität."@de, "Refers to the Faculty of Medicine at Universities."@en.
 		
+:Student rdf:type owl:Class ;
+  rdfs:subClassOf :Professor ;
+  rdfs:label "Student"@de, "Student"@en ;
+	dc:description "Bezeichnet einen an der Universität immatrikulierten Studenten."@de, "Refers to an enrolled student at a University."@en.
+		
 :Territory rdf:type owl:Class ;
   rdfs:subClassOf :Concept ;
   rdfs:label "Landesherrschaft"@de, "Territory"@en ;
