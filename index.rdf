@@ -57,12 +57,12 @@
   rdfs:subClassOf :Concept ;
   rdfs:label "Universität"@de, "University"@en ;
 	dc:description "Bezeichnet eine Lehr-, Bildungs- und Forschungskorporation die dazu priviligiert ist akademische Grade zu verleihen."@de ,
-		"Refers to educational and research corporations which own the privilige to award academic degrees."@en .
+		"Refers to education and research corporations which own the privilige to award academic degrees."@en .
 	
-:Sovereign rdf:type owl:Class ;
+:RulingTerritory rdf:type owl:Class ;
   rdfs:subClassOf :Concept ;
-  rdfs:label "Landesherr"@de, "Sovereign"@en ;
-	dc:description "..."@de , "..."@en .
+  rdfs:label "Landesherrschaft"@de, "Ruling Territory"@en ;
+	dc:description "Bezeichnet die Landesherrschaft eines Territoriums."@de , "Refers to the ruler of a territory."@en .
 	
 :Patronage  rdf:type owl:Class ;
   rdfs:subClassOf :Concept ;
@@ -87,12 +87,12 @@
 :Origin rdf:type owl:Class ;
   rdfs:subClassOf :Concept ;
   rdfs:label "Herkunft"@de, "Origin"@en ;
-	dc:description "..."@de , "..."@en .
+	dc:description "Bezieht sich auf die soziale Herkunft einer Person."@de , "Refers to the social background of a Person."@en .
 	
 :Denomination rdf:type owl:Class ;
   rdfs:subClassOf :Concept ;
   rdfs:label "Konfession"@de, "Denomination"@en ;
-	dc:description "..."@de , "..."@en .
+	dc:description "Bezeichnet das Glaubenbekenntnis einer Person und/oder deren Zugehörigkeit."@de , "Refers to the denomination of a person."@en .
 	
 :Education  rdf:type owl:Class ;
   rdfs:subClassOf :Concept ;
