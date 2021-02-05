@@ -52,7 +52,7 @@
 	
 :BirthDate rdf:type owl:Class ;
   rdfs:subClassOf :LifeEvent ;
-  rdfs:label ´"Geburtsdatum"@de, "Birthdate"@en ;
+  rdfs:label "Geburtsdatum"@de, "Birthdate"@en ;
 	dc:description "Gibt das Geburtsdatum einer Person an."@de, "Gives the birthdate of a person."@en.
 	
 :hasBirthDate rdf:type owl:ObjectProperty ;
