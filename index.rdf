@@ -59,6 +59,12 @@
 	dc:description "Bezeichnet eine Lehr-, Bildungs- und Forschungskorporation die dazu priviligiert ist akademische Grade zu verleihen."@de ,
 		"Refers to education and research corporations which own the privilige to award academic degrees."@en .
 	
+:Faculty rdf:type owl:Class ;
+  rdfs:subClassOf :University ;
+  rdfs:label "Fakultät"@de, "Faculty"@en ;
+	dc:description "Bezieht sich auf eine körperschaftlich organisierte und auf ein Fachgebiet begrenzte Lehr- und Verwaltungseinheit einer Volluniversität,
+		im frühneuzeitlichen Kontext: Philosophie, Theologie, Jurisprudenz, Medizin."@de, "Refers to corporated university divisions with specific subject areas."@en .
+	
 :RulingTerritory rdf:type owl:Class ;
   rdfs:subClassOf :Concept ;
   rdfs:label "Landesherrschaft"@de, "Ruling Territory"@en ;
