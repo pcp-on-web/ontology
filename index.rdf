@@ -49,12 +49,6 @@
   rdfs:label "ist ein Student an"@de, "is a student at"@en ;
 	dc:description "Bezieht sich auf die Information an welcher Korporation ein Student studiert."@de,
 		"Refers to the information at which corporation a student studies."@en.
-		
-:hasStudents rdf:type owl:ObjectProperty ;
-  rdfs:domain :Student ;
-  rdfs:range :Professor ;
-  rdfs:label "hat Studenten"@de, "has students"@en ;
-	dc:description "eine Lehrkraft hat Studenten, bspw. in den Kollegien"@de; "a teacher has students, for instance at lectures."@en.
 
 :FullProfessor rdf:type owl:Class ;
   rdfs:subClassOf :Professor ;
