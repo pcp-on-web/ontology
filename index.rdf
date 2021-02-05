@@ -37,6 +37,12 @@
 :Concept rdf:type owl:Class ;
   rdfs:label "Konzept"@de, "Concept"@en ;
 	dc:description "..."@de , "..."@en .
+	
+:LifeEvent rdf:type owl:Class ;
+  rdfs:subClassOf :Professor ;
+  rdfs:label "Lebensereignis"@de, "Life event"@en ;
+	dc:description "Dieses Konzept bezieht sich auf einen Lebensabschnitt und dessen Charakterisierung."@de, "This concept refers to a life Event and
+		its charcterization."@en.
 
 :Professor rdf:type owl:Class ;
   rdfs:subClassOf :Person ;
