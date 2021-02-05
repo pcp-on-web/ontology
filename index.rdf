@@ -63,8 +63,29 @@
   rdfs:subClassOf :University ;
   rdfs:label "Fakultät"@de, "Faculty"@en ;
 	dc:description "Bezieht sich auf eine körperschaftlich organisierte und auf ein Fachgebiet begrenzte Lehr- und Verwaltungseinheit einer Volluniversität,
-		im frühneuzeitlichen Kontext: Philosophie, Theologie, Jurisprudenz, Medizin."@de, "Refers to corporated university divisions with specific subject areas."@en .
+		im frühneuzeitlichen Kontext: Philosophie, Theologie, Jurisprudenz, Medizin."@de, "Refers to corporated university divisions with specific subject
+		areas, which are in an Early Modern context: Philosophy, Theology, Jurisprudence, Medicine."@en .
 	
+:FacultyOfPhilosophy rdf:type owl:Class ;
+  rdfs:subClassOf :Faculty ;
+  rdfs:label "Philosophische Fakultät"@de, "Faculty of Philosophy"@en ;
+	dc:description "Bezeichnet die Philosophische Fakultät an einer Universität."@de, "Refers to the Faculty of Philosophy at Universities."@en.
+		
+:FacultyOfTheology rdf:type owl:Class ;
+  rdfs:subClassOf :Faculty ;
+  rdfs:label "Theologische Fakultät"@de, "Faculty of Theology"@en ;
+	dc:description "Bezeichnet die Theologische Fakultät an einer Universität."@de, "Refers to the Faculty of Theology at Universities."@en.
+		
+:FacultyOfLaw rdf:type owl:Class ;
+  rdfs:subClassOf :Faculty ;
+  rdfs:label "Juristische Fakultät"@de, "Faculty of Law"@en ;
+	dc:description "Bezeichnet die Juristische Fakultät an einer Universität."@de, "Refers to the Faculty of Law at Universities."@en.
+
+:FacultyOfMedicine rdf:type owl:Class ;
+  rdfs:subClassOf :Faculty ;
+  rdfs:label "Medizinische Fakultät"@de, "Faculty of Medicine"@en ;
+	dc:description "Bezeichnet die Medzinische Fakultät an einer Universität."@de, "Refers to the Faculty of Medicine at Universities."@en.
+		
 :RulingTerritory rdf:type owl:Class ;
   rdfs:subClassOf :Concept ;
   rdfs:label "Landesherrschaft"@de, "Ruling Territory"@en ;
