@@ -120,6 +120,12 @@
   rdfs:label "Student"@de, "Student"@en ;
 	dc:description "Bezeichnet einen an der Universität immatrikulierten Studenten."@de, "Refers to an enrolled student at a University."@en.
 		
+:isStudent rdf:type owl:ObjectProperty ;
+  rdfs:domain :Professor ;
+  rdfs:range :Person ;
+  rdfs:label "ist Student"@de, "is student"@en ;
+	dc:description "Bezeichnet den Professor als Student."@de, "Refers to the Professor as a student."@en.
+		
 :Territory rdf:type owl:Class ;
   rdfs:subClassOf :Concept ;
   rdfs:label "Landesherrschaft"@de, "Territory"@en ;
