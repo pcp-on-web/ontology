@@ -121,8 +121,8 @@
 	dc:description "Bezeichnet einen an der Universität immatrikulierten Studenten."@de, "Refers to an enrolled student at a University."@en.
 		
 :isStudent rdf:type owl:ObjectProperty ;
-  rdfs:domain :Person ;
-  rdfs:range :Professor ;
+  rdfs:domain :Professor ;
+  rdfs:range :Student ;
   rdfs:label "ist Student"@de, "is student"@en ;
 	dc:description "Bezeichnet den Professor als Student."@de, "Refers to the Professor as a student."@en.
 		
