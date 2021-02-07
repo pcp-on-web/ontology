@@ -41,25 +41,19 @@
 :LifeEvent rdf:type owl:Class ;
   rdfs:subClassOf :Professor ;
   rdfs:label "Lebensereignis"@de, "Life event"@en ;
-	dc:description "Dieses Konzept bezieht sich auf einen Lebensabschnitt und dessen Charakterisierung."@de, "This concept refers to a life Event and
-		its charcterization."@en.
+	dc:description "Dieses Konzept bezieht sich auf einen Lebensabschnitt und dessen Charakterisierung."@de, "This concept refers to a life event and
+		its characterization."@en.
 
 :Professor rdf:type owl:Class ;
   rdfs:subClassOf :Person ;
   rdfs:label "Professor"@de, "Professor"@en ;
-	dc:description "Bezeichnet eine Person, die durch Berufung an einer frühneuzeitlichen Universität lehrt und dort akademische Ämter führt."@de,
-		"Refers to a person who is vocated as a professor at an Early Modern university and who teaches and holds academic offices there."@en.
+	dc:description "Bezeichnet eine Person die durch Berufung an einer frühneuzeitlichen Universität lehrt und dort akademische Ämter führt."@de,
+		"Refers to a person who is vocated as a professor at an Early Modern university, who teaches and holds academic offices."@en.
 
 :BirthDate rdf:type owl:Class ;
   rdfs:subClassOf :LifeEvent ;
   rdfs:label "Geburtsdatum"@de, "Birthdate"@en ;
 	dc:description "Gibt das Geburtsdatum einer Person an."@de, "Gives the birthdate of a person."@en.
-	
-:hasBirthDate rdf:type owl:ObjectProperty ;
-  rdfs:domain :Professor ;
-  rdfs:range :LifeEvent ;
-  rdfs:label "hat ein Geburtsdatum"@de, "has a birthdate"@en ;
-	dc:description "Nennt das Geburtsdatum des Professors."@de, "Gives the birthdate of a professor."@en.
 		
 :Person rdf:type owl:Class ;
   rdf:label "Person"@de, "Person"@en ;
