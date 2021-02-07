@@ -159,7 +159,7 @@
 	dc:description "..."@de , "..."@en .
 	
 :Origin rdf:type owl:Class ;
-  rdfs:subClassOf :Concept ;
+  rdfs:subClassOf :LifeEvent ;
   rdfs:label "Herkunft"@de, "Origin"@en ;
 	dc:description "Bezieht sich auf die soziale Herkunft einer Person."@de , "Refers to the social background of a Person."@en .
 	
@@ -178,9 +178,9 @@
   rdfs:label "Akademische Grade"@de, "Academic Degree"@en ;
 	dc:description "..."@de , "..."@en .
 	
-:Canditature rdf:type owl:Class ;
+:Candidature rdf:type owl:Class ;
   rdfs:subClassOf :Concept ;
-  rdfs:label "Bewerbung"@de, "Canditature"@en ;
+  rdfs:label "Bewerbung"@de, "Candidature"@en ;
 	dc:description "..."@de , "..."@en .
 
 :Recommendation  rdf:type owl:Class ;
