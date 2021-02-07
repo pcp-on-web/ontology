@@ -134,7 +134,19 @@
 :Office rdf:type owl:Class ;
   rdfs:subClassOf :Concept ;
   rdfs:label "Amt"@de, "Office"@en ;
-	dc:description "..."@de , "..."@en .
+	dc:description "Bezieht sich auf ein Amt, das eine Person bekleidet."@de , "Refers to an office a person holds."@en .
+		
+:AcademicOffice rdf:type owl:Class ;
+  rdfs:subClassOf :Office ;
+  rdfs:label "Akademisches Amt"@de, "Academic Office"@en ;
+	dc:description "Bezieht sich auf ein Amt, das ein Professor an einer Universität bekleidet."@de , "Refers to an academic office a professor holds at
+		the University."@en .
+		
+:NonAcademicOffice rdf:type owl:Class ;
+  rdfs:subClassOf :Office ;
+  rdfs:label "NichtAkademisches Amt"@de, "Non-Academic Office"@en ;
+	dc:description "Bezieht sich auf ein Amt, das ein Professor außerhalb der Universität bekleidet."@de , "Refers to an office a professor holds outside
+		the University."@en .
 	
 :Network rdf:type owl:Class ;
   rdfs:subClassOf :Concept ;
