@@ -56,8 +56,8 @@
 	dc:description "Gibt das Geburtsdatum einer Person an."@de, "Gives the birthdate of a person."@en.
 	
 :hasBirthDate rdf:type owl:ObjectProperty ;
-  rdfs:domain :LifeEvent ;
-  rdfs:range :Professor ;
+  rdfs:domain :Professor ;
+  rdfs:range :LifeEvent ;
   rdfs:label "hat ein Geburtsdatum"@de, "has a birthdate"@en ;
 	dc:description "Nennt das Geburtsdatum des Professors."@de, "Gives the birthdate of a professor."@en.
 		
