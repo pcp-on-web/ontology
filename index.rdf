@@ -125,10 +125,11 @@
   rdfs:label "Landesherrschaft"@de, "Territory"@en ;
 	dc:description "Bezeichnet die Landesherrschaft eines Territoriums."@de , "Refers to the authority by a ruler or group of rulers of a territory."@en .
 	
-:Patronage  rdf:type owl:Class ;
+:Patron  rdf:type owl:Class ;
   rdfs:subClassOf :Concept ;
-  rdfs:label "Professorenkarriere"@de, "Patronage"@en ;
-	dc:description "..."@de , "..."@en .
+  rdfs:label "Patron"@de, "Patron"@en ;
+	dc:description "Bezieht sich auf den Patron einer Person; hier auf in den Quellen namentlich erwähnten Förderer eines Professors und dessen Karriere."@de ,
+		"Refers to the patron of a person; here to the Patron of a professor's career who is known by the sources."@en .
 
 :Office rdf:type owl:Class ;
   rdfs:subClassOf :Concept ;
