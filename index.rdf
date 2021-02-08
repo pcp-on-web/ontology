@@ -162,6 +162,11 @@
   rdfs:subClassOf :LifeEvent ;
   rdfs:label "Herkunft"@de, "Origin"@en ;
 	dc:description "Bezieht sich auf die soziale Herkunft einer Person."@de , "Refers to the social background of a Person."@en .
+		
+:Family rdf:type owl:Class ;
+  rdfs:subClassOf :LifeEvent ;
+  rdfs:label "Familie"@de, "Family"@en ;
+	dc:description "Bezieht sich auf den Familienstand eines Professors."@de , "Refers to the marital status of a Professor."@en .
 	
 :Denomination rdf:type owl:Class ;
   rdfs:subClassOf :Concept ;
