@@ -39,7 +39,6 @@
 	dc:description "..."@de , "..."@en .
 	
 :LifeEvent rdf:type owl:Class ;
-  rdfs:subClassOf :Professor ;
   rdfs:label "Lebensereignis"@de, "Life event"@en ;
 	dc:description "Dieses Konzept bezieht sich auf einen Lebensabschnitt und dessen Charakterisierung."@de, "This concept refers to a life event and
 		its characterization."@en.
@@ -58,7 +57,14 @@
 :Person rdf:type owl:Class ;
   rdf:label "Person"@de, "Person"@en ;
 	dc:description "Bezeichnet eine historische Person."@de, "Refers to a historical person."@en.
-		
+	
+:hasEvent  rdf:type owl:ObjectProperty ;
+  rdfs:domain :Person ;
+  rdfs:range :LifeEvent ;
+  rdfs:label "hat Lebensereignis"@de, "has life event"@en ;
+	dc:description "...."@de,
+		"..."@en.
+
 :isStudentAt rdf:type owl:ObjectProperty ;
   rdfs:domain :Student ;
   rdfs:range :University ;
