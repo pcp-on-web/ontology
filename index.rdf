@@ -281,9 +281,24 @@
 		the act of  disputation."@en.
 		
 :Dissertation rdf:type owl:Class ;
-  rdfs:subClassOf :Prestige ;
+  rdfs:subClassOf :Media ;
   rdfs:label "Dissertation"@de, "dissertation"@en ;
 	dc:description "Bezeichnet das gedruckte Medium der Disputation."@de, "Refers to the printed media of a disputation."@en.
+		
+:Media rdf:type owl:Class ;
+  rdfs:subClassOf :Concept ;
+  rdfs:label "Medien"@de, "media"@en ;
+	dc:description "Bezieht sich auf gedruckte Medien."@de, "Refers to printed media."@en.
+		
+:isAuthor rdf:type owl:ObjectProperty ;
+  rdfs:domain :Professor ;
+  rdfs:range : Media ;
+  rdfs:label "ist Autor"@de, "is author"@en ;
+	dc:description "Zeichnet eine Person als einen Autoren aus. Autor wird hier im Falle einer Disputation als weiter Begriff verwendet,
+		da Praeses und Respondent in Literaturdatenbanken oft beide als Autoren einer Dissertation angegeben werden."@de,
+		"Refers to a person as an author of printed media. In case of dissertations the notion author in the context of this ontology model
+		must be considered felxible since literature databases often sign out either praeses or respondent as authors of dissertations."@en.
+		is the praeses - the head - of a disputation."@en.
 
 :PublicLecture rdf:type owl:Class ;
   rdfs:subClassOf :Lecture;
