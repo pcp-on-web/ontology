@@ -181,10 +181,15 @@
   rdfs:label "Prestige"@de, "Prestigious"@en ;
 	dc:description "..."@de , "..."@en .
 	
-:Origin rdf:type owl:Class ;
+:SocialOrigin rdf:type owl:Class ;
   rdfs:subClassOf :LifeEvent ;
-  rdfs:label "Herkunft"@de, "Origin"@en ;
+  rdfs:label "Soziale Herkunft"@de, "Social Origin"@en ;
 	dc:description "Bezieht sich auf die soziale Herkunft einer Person."@de , "Refers to the social background of a Person."@en .
+		
+:GeographicalOrigin rdf:type owl:Class ;
+  rdfs:subClassOf :LifeEvent ;
+  rdfs:label "Geografische Herkunft"@de, "Geographical Origin"@en ;
+	dc:description "Bezieht sich auf die geografische Herkunft einer Person."@de , "Refers to the geographical background of a Person."@en .
 		
 :Family rdf:type owl:Class ;
   rdfs:subClassOf :LifeEvent ;
