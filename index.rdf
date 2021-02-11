@@ -258,6 +258,12 @@
   rdfs:label "Kolleg/Vorlesung"@de, "Lecture"@en ;
 	dc:description "Bezieht sich auf Kollegien, die von einem Professor im Rahmen der universitären Lehre abgehalten werden."@de,
 		"Refers to lectures, given by a professor at auniversity."@en.
+		
+:Disputation rdf:type owl:Class ;
+  rdfs:subClassOf :TeachingPractices;
+  rdfs:label "Disputation"@de, "Disputation"@en ;
+	dc:description "Bezieht sich auf die Disputationspraxis (Lateinisch: disputationes) unterschiedlichster Form, die privat oder öffentlich durchgeführt wurde
+		und dem Zweck der bung, Graduierung, ls Inaugural Disputation pro loco de und/oder weiterer Formen."@de, "Refers to the practice of disputation."@en.
 
 :PublicLecture rdf:type owl:Class ;
   rdfs:subClassOf :Lecture;
