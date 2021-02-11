@@ -86,9 +86,14 @@
   rdfs:subClassOf :Professor ;
   rdfs:label "Außerordentlicher Professor"@de, "Associate Professor"@en ;
 	dc:description "Bezeichnet einen Professor, der eine außerordentliche Professur (aO) inne hat."@de, "A professor who is an associate professor."@en.
+
+:Corporation rdf:type owl:Class ;
+  rdfs:subClassOf :Concept ;
+  rdfs:label "Körperschaft"@de, "Corporation"@en ;
+	dc:description "Bezeichnet eine Körperschaft."@de, "Refers to a corporation or corporate body."@en .
 		
 :University rdf:type owl:Class ;
-  rdfs:subClassOf :Concept ;
+  rdfs:subClassOf :Corporation ;
   rdfs:label "Universität"@de, "University"@en ;
 	dc:description "Bezeichnet eine Lehr-, Bildungs- und Forschungskorporation die dazu priviligiert ist akademische Grade zu verleihen."@de ,
 		"Refers to education and research corporations which own the privilige to award academic degrees."@en .
