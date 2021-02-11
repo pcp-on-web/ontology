@@ -120,10 +120,10 @@
   rdfs:label "Lehrstuhl"@de, "Chair"@en ;
 	dc:description "Bezeichnet den Lehrstuhl bzw. das Fachgebiet einer Universitätsfakultät."@de, "Designates the chair or subject at university faculties."@en.
 		
-:hasChair rdf:type owl:ObjectProperty ;
+:organizedIn rdf:type owl:ObjectProperty ;
   rdfs:domain :Faculty ;
   rdfs:range :Chair ;
-  rdfs:label "hat Lehrstuhl"@de, "has chair"@en ;
+  rdfs:label "ist organisiert in"@de, "is organized in"@en ;
 	dc:description "Ordnet einen Lehrstuhl einer Fakultät zu."@de, "Allocates a chair to a faculty."@en.
 
 		
