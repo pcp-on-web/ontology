@@ -280,15 +280,15 @@
 	dc:description "Bezeichnet den Respondenten, der sich als Student der Disputation unterzieht."@de, "Refers to the Respondent who as a student is undergoing
 		the act of  disputation."@en.
 		
-:Dissertation rdf:type owl:Class ;
-  rdfs:subClassOf :Media ;
-  rdfs:label "Dissertation"@de, "dissertation"@en ;
-	dc:description "Bezeichnet das gedruckte Medium der Disputation."@de, "Refers to the printed media of a disputation."@en.
-		
 :Media rdf:type owl:Class ;
   rdfs:subClassOf :Concept ;
   rdfs:label "Medien"@de, "media"@en ;
 	dc:description "Bezieht sich auf gedruckte Medien."@de, "Refers to printed media."@en.
+
+:Dissertation rdf:type owl:Class ;
+  rdfs:subClassOf :Media ;
+  rdfs:label "Dissertation"@de, "dissertation"@en ;
+	dc:description "Bezeichnet das gedruckte Medium der Disputation, genannte Dissertation."@de, "Refers to the printed media of a disputation, called dissertation."@en.
 
 :PublicLecture rdf:type owl:Class ;
   rdfs:subClassOf :Lecture;
