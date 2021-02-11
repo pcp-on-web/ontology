@@ -255,8 +255,8 @@
 
 :Lecture rdf:type owl:Class ;
   rdfs:subClassOf :TeachingPractices;
-  rdfs:label "Kolleg/Vorlesung"@de, "Lecture"@en ;
-	dc:description "Bezieht sich auf Kollegien, die von einem Professor im Rahmen der universitären Lehre abgehalten werden."@de,
+  rdfs:label "Vorlesung/Lektion"@de, "Lecture"@en ;
+	dc:description "Bezieht sich auf Vorlesungen bzw. Lektionen (lectiones), die von einem Professor im Rahmen der universitären Lehre abgehalten werden."@de,
 		"Refers to lectures, given by a professor at auniversity."@en.
 		
 :Disputation rdf:type owl:Class ;
@@ -264,7 +264,14 @@
   rdfs:label "Disputation"@de, "Disputation"@en ;
 	dc:description "Bezieht sich auf die Disputationspraxis (Lateinisch: disputationes), die dem Zweck der Übung und/oder der Graduierung diente oder als
 		Inaugural Disputation pro loco auf die Erlangung einer Professur verwies."@de, "Refers to the practice of disputation which had the purpose of
-		practising curricula, to gain academic titles. It also refers to inaugural disputations of newly vocated professors."@en.
+		practising curricula, to obtain academic titles. It also refers to inaugural disputations of newly vocated professors."@en.
+		
+:isPraeses rdf:type owl:ObjectProperty ;
+  rdfs:domain :Professor ;
+  rdfs:range :Disputation ;
+  rdfs:label "ist Praeses"@de, "is Praeses"@en ;
+	dc:description "Bezeichnet den Professor, der während einer Disputation als Praeses auftritt."@de, "Refers to the professor who is the praeses of a
+		disputation."@en.
 
 :PublicLecture rdf:type owl:Class ;
   rdfs:subClassOf :Lecture;
