@@ -49,10 +49,15 @@
 	dc:description "Bezeichnet eine Person die durch Berufung an einer frühneuzeitlichen Universität lehrt und dort akademische Ämter führt."@de,
 		"Refers to a person who is vocated as a professor at an Early Modern university, who teaches and holds academic offices."@en.
 
-:BirthDate rdf:type owl:Class ;
+:Birth rdf:type owl:Class ;
   rdfs:subClassOf :LifeEvent ;
-  rdfs:label "Geburtsdatum"@de, "Birthdate"@en ;
-	dc:description "Gibt das Geburtsdatum einer Person an."@de, "Gives the birthdate of a person."@en.
+  rdfs:label "Geburt"@de, "Birth"@en ;
+	dc:description "Gibt das Datum oder den Zeitraum der Geburt einer Person an."@de, "Gives the birthdate or the period of birth of a person."@en.
+		
+:Death rdf:type owl:Class ;
+  rdfs:subClassOf :LifeEvent ;
+  rdfs:label "Tod"@de, "Death"@en ;
+	dc:description "Gibt das Datum oder den Zeitraum des Todes einer Person an."@de, "Gives the date or the period of death of a person."@en.
 		
 :Person rdf:type owl:Class ;
   rdf:label "Person"@de, "Person"@en ;
