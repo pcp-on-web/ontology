@@ -121,12 +121,6 @@
 	dc:description "Bezeichnet die einzelnen Lehrstühle bzw. Fachbereiche einer Fakultät an einer Universität."@de, "Refers to the chairs
 		or subjects of a university faculty.@en.
 		
-:hasChair rdf:type owl:ObjectProperty ;
-  rdfs:domain :University ;
-  rdfs:range :Faculty ;
-  rdfs:label "hat Lehrstuhl"@de, "has chair"@en ;
-	dc:description "Ordnet einen Lehrstuhl einer Fakultät zu."@de, "Allocates a chair to a faculty."@en.
-		
 :Student rdf:type owl:Class ;
   rdfs:subClassOf :Person ;
   rdfs:label "Student"@de, "Student"@en ;
