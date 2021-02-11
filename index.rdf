@@ -181,9 +181,9 @@
   rdfs:label "Netzwerke"@de, "Network"@en ;
 	dc:description "..."@de , "..."@en .
 	
-:Prestigious rdf:type owl:Class ;
+:Prestige rdf:type owl:Class ;
   rdfs:subClassOf :Concept ;
-  rdfs:label "Prestige"@de, "Prestigious"@en ;
+  rdfs:label "Prestige"@de, "Prestige"@en ;
 	dc:description "..."@de , "..."@en .
 	
 :SocialOrigin rdf:type owl:Class ;
@@ -246,9 +246,9 @@
 	dc:description "Bezieht sich auf Lehrpraktiken, die an einer Universität durchgeführt werden."@de, "Refers to teaching practices which are done at a
 		university."@en.
 		
-:doneBy rdf:type owl:ObjectProperty ;
-  rdfs:domain :TeachingPractices ;
-  rdfs:range :Professor ;
+:isDoing rdf:type owl:ObjectProperty ;
+  rdfs:domain :Professor ;
+  rdfs:range :TeachingPractices ;
   rdfs:label "werden durchgeführt von"@de, "done by"@en ;
 	dc:description "Bezieht sich auf Lehrpraktiken, die von einem Professor an einer Universität durchgeführt werden."@de, "Refers to teaching practices
 		which are done by a professor at a university."@en.
@@ -279,6 +279,11 @@
   rdfs:label "ist Respondent"@de, "is Respondent"@en ;
 	dc:description "Bezeichnet den Respondenten, der sich als Student der Disputation unterzieht."@de, "Refers to the Respondent who as a student is undergoing
 		the act of  disputation."@en.
+		
+:Dissertation rdf:type owl:Class ;
+  rdfs:subClassOf :Prestige ;
+  rdfs:label "Dissertation"@de, "dissertation"@en ;
+	dc:description "Bezeichnet das gedruckte Medium der Disputation."@de, "Refers to the printed media of a disputation."@en.
 
 :PublicLecture rdf:type owl:Class ;
   rdfs:subClassOf :Lecture;
