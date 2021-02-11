@@ -262,8 +262,9 @@
 :Disputation rdf:type owl:Class ;
   rdfs:subClassOf :TeachingPractices;
   rdfs:label "Disputation"@de, "Disputation"@en ;
-	dc:description "Bezieht sich auf die Disputationspraxis (Lateinisch: disputationes) unterschiedlichster Form, die privat oder öffentlich durchgeführt wurde
-		und dem Zweck der bung, Graduierung, ls Inaugural Disputation pro loco de und/oder weiterer Formen."@de, "Refers to the practice of disputation."@en.
+	dc:description "Bezieht sich auf die Disputationspraxis (Lateinisch: disputationes), die dem Zweck der Übung und/oder der Graduierung diente oder als
+		Inaugural Disputation pro loco auf die Erlangung einer Professur verwies."@de, "Refers to the practice of disputation which had the purpose of
+		practising curricula, to gain academic titles. It also refers to inaugural disputations of newly vocated professors."@en.
 
 :PublicLecture rdf:type owl:Class ;
   rdfs:subClassOf :Lecture;
