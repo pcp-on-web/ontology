@@ -119,7 +119,7 @@
   rdfs:subClassOf :University ;
   rdfs:label "Lehrstuhl"@de, "Chair"@en ;
 	dc:description "Bezeichnet die einzelnen Lehrstühle bzw. Fachbereiche einer Fakultät an einer Universität."@de, "Refers to the chairs
-		or subjects of a university faculty.@en.
+		or subjects of a university faculty."@en.
 		
 :Student rdf:type owl:Class ;
   rdfs:subClassOf :Person ;
