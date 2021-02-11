@@ -288,7 +288,17 @@
 :Dissertation rdf:type owl:Class ;
   rdfs:subClassOf :Media ;
   rdfs:label "Dissertation"@de, "dissertation"@en ;
-	dc:description "Bezeichnet das gedruckte Medium der Disputation, genannte Dissertation."@de, "Refers to the printed media of a disputation, called dissertation."@en.
+	dc:description "Bezeichnet das gedruckte Medium der Disputation, genannte Dissertation."@de, "Refers to the printed media of a disputation,
+		called dissertation."@en.
+
+:isAuthor rdf:type owl:ObjectProperty ;
+  rdfs:domain :Professor ;
+  rdfs:range : Media ;
+  rdfs:label "ist Autor"@de, "is author"@en ;
+	dc:description "Zeichnet eine Person als einen Autoren aus. Autor wird hier im Falle einer Disputation als weiter Begriff verwendet,
+		da Praeses und Respondent in Literaturdatenbanken oft beide als Autoren einer Dissertation angegeben werden."@de,
+		"Refers to a person as an author of printed media. In case of dissertations the notion author in the context of this ontology model
+		must be considered flexible since literature databases often sign out either praeses or respondent as authors of dissertations."@en.
 
 :PublicLecture rdf:type owl:Class ;
   rdfs:subClassOf :Lecture;
