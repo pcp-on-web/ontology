@@ -265,8 +265,8 @@
   rdfs:domain :Person ;
   rdfs:range :Denomination ;
   rdfs:label "hat Konfession"@de, "has denomination"@en ;
-	dc:description "Bezieht sich auf das Glaubenbekenntnis einer Person und/oder deren Religionszugehörigkeit."@de,
-		"Refers to geographical location of an office."@en .
+	dc:description "Verweist auf das Glaubenbekenntnis einer Person und/oder deren Religionszugehörigkeit."@de,
+		"Refers to the religious denomination of a person."@en .
 	
 :Education  rdf:type owl:Class ;
   rdfs:subClassOf :Concept ;
