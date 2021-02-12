@@ -139,8 +139,8 @@
   rdfs:range :Location ;
   rdfs:label "Ort eines Mediums"@de, "location of a medium"@en ;
 	dc:description "Bezieht sich auf den Druck- ode Verlagsort eines Mediums."@de,
-		"Refers to the geographical printing or publishing location of a medium."@en .
-		
+		"Refers to the geographical printing or publishing location of a medium."@en .	
+	
 :Denomination rdf:type owl:Class ;
   rdfs:subClassOf :Concept ;
   rdfs:label "Konfession"@de, "Denomination"@en ;
@@ -163,25 +163,13 @@
   rdfs:label "Körperschaft"@de, "Corporation"@en ;
 	dc:description "Bezeichnet eine Körperschaft."@de, "Refers to a corporation or corporate body."@en .
 		
-:PrimaryEducationInstitutions  rdf:type owl:Class ;
-  rdfs:subClassOf :Corporation ;
-  rdfs:label "Primäre Bildungsinstitutionen"@de, "primary educational institutions"@en ;
+:PrimaryEducation  rdf:type owl:Class ;
+  rdfs:subClassOf :Education ;
+  rdfs:label "Primäre Bildung"@de, "primary education"@en ;
 	dc:description "Bezieht sich auf die diversen vormodernen Schulformen und pädagogischen Bildungsangebote im Vorfeld eines Universitätsbesuchs
 		im Territorium des Heiligen Römischen Reichs Deutscher Nation, z.B. Elementarschulen, Lateinschulen, Gymnasien, Klosterschulen,
-		Pfarrschulen etc."@de , "Refers to the diverse early modern educational and pedagogical institutions of primary education within the Holy Roman
-		Empire."@en .
-		
-:hasEducation rdf:type owl:ObjectProperty ;
-  rdfs:domain :Person ;
-  rdfs:range :PrimaryEducationInstitutions ;
-  rdfs:label "hat Bildung"@de, "has education"@en ;
-	dc:description "Bezieht sich auf die elementare Bildung einer Person."@de, "Refers to the primary education of a person."@en .
-		
-:hasEducation rdf:type owl:ObjectProperty ;
-  rdfs:domain :Person ;
-  rdfs:range :University ;
-  rdfs:label "hat Bildung"@de, "has education"@en ;
-	dc:description "Bezieht sich auf die elementare Bildung einer Person."@de, "Refers to the primary education of a person."@en .		
+		Pfarrschulen etc."@de , "Refers to the diverse early modern educational and pedagogical formas and institutions of primary education within the
+		Holy Roman Empire."@en .		
 		
 :PrivateEducation rdf:type owl:Class ;
   rdfs:subClassOf :Education ;
