@@ -372,6 +372,12 @@
   rdfs:label "Dissertation"@de, "dissertation"@en ;
 	dc:description "Bezeichnet das gedruckte Medium der Disputation, genannte Dissertation."@de, "Refers to the printed media of a disputation,
 		called dissertation."@en.
+		
+:Textbook rdf:type owl:Class ;
+  rdfs:subClassOf :Media ;
+  rdfs:label "Lehrbuch"@de, "textbook"@en ;
+	dc:description "Bezeichnet ein Buch, das Lehrinhalte eines Studiums didaktisch aufbereitet."@de, "Refers to books which offer a compilation of content in a certain
+		field of interest.."@en.
 
 :isAuthor rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
