@@ -183,11 +183,11 @@
 	dc:description "Privatunterricht im Familienverband oder durch einen Privatlehrer."@de,
 		"Private education by family members or a different private teacher."@en .
 		
-:UniversityStudies rdf:type owl:ObjectProperty ;
-  rdfs:domain :Education ;
-  rdfs:range :University ;
+:UniversityStudies rdf:type owl:Class ;
+  rdfs:subClassOf :Education ;
   rdfs:label "Studium"@de, "University studies"@en ;
-	dc:description "Bezieht sich auf ein Studium an einer vormodernen Universität."@de, "Refers to university studies at Early Modern Universities."@en .
+	dc:description "Bezieht sich auf das Studium einer Person an einer vormodernen Universität."@de, "Refers to the university studies of a person at
+		Early Modern Universities."@en .
 		
 :AcademicDegree rdf:type owl:Class ;
   rdfs:subClassOf :Concept ;
