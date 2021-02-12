@@ -75,8 +75,8 @@
 	dc:description "Dieses Konzept beschreibt die Familie einer Person."@de, "This concept describes the family of a person."@en .
 		
 :Wife  rdf:type owl:ObjectProperty ;
-  rdfs:domain :Family ;
-  rdfs:range :Person ;
+  rdfs:domain :Professor ;
+  rdfs:range :Family ;
   rdfs:label "Ehefrau"@de, "wife"@en ;
 	dc:description "Benennt die Ehefrau eines."@de, "Refers to the wife of a professor."@en .
 
