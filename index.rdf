@@ -74,11 +74,23 @@
   rdfs:label "Familie"@de, "family"@en ;
 	dc:description "Dieses Konzept beschreibt die Familie einer Person."@de, "This concept describes the family of a person."@en .
 		
-:Wife  rdf:type owl:ObjectProperty ;
+:Wife rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
   rdfs:range :Family ;
   rdfs:label "Ehefrau"@de, "wife"@en ;
-	dc:description "Benennt die Ehefrau eines."@de, "Refers to the wife of a professor."@en .
+	dc:description "Bezieht sich auf die Ehefrau eines Professors."@de, "Refers to the wife of a professor."@en .
+		
+:Son rdf:type owl:ObjectProperty ;
+  rdfs:domain :Professor ;
+  rdfs:range :Family ;
+  rdfs:label "Sohn"@de, "son"@en ;
+	dc:description "Bezieht sich auf den Sohn, Pflegesohn, Adoptivsohn eines Professors."@de, "Refers to the son, foster, adoptive son of a professor."@en .
+		
+:Daughter rdf:type owl:ObjectProperty ;
+  rdfs:domain :Professor ;
+  rdfs:range :Family ;
+  rdfs:label "Tochter"@de, "daughter"@en ;
+	dc:description "Bezieht sich auf die Tochter, Pflegetochter, Adoptivtochter eines Professors."@de, "Refers to the daughter, foster, adoptive daughter of a professor."@en .
 
 :isStudentAt rdf:type owl:ObjectProperty ;
   rdfs:domain :Student ;
