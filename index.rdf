@@ -171,11 +171,17 @@
 		Pfarrschulen etc."@de , "Refers to the diverse early modern educational and pedagogical institutions of primary education within the Holy Roman
 		Empire."@en .
 		
-:hasPrimaryEducation rdf:type owl:ObjectProperty ;
+:hasEducation rdf:type owl:ObjectProperty ;
   rdfs:domain :Person ;
   rdfs:range :PrimaryEducationInstitutions ;
-  rdfs:label "hat elementare Bildung"@de, "has primary education"@en ;
-	dc:description "Bezieht sich auf die elementare Bildung einer Person."@de, "Refers to the orimary education of a person."@en .
+  rdfs:label "hat Bildung"@de, "has education"@en ;
+	dc:description "Bezieht sich auf die elementare Bildung einer Person."@de, "Refers to the primary education of a person."@en .
+		
+:hasEducation rdf:type owl:ObjectProperty ;
+  rdfs:domain :Person ;
+  rdfs:range :University ;
+  rdfs:label "hat Bildung"@de, "has education"@en ;
+	dc:description "Bezieht sich auf die elementare Bildung einer Person."@de, "Refers to the primary education of a person."@en .		
 		
 :PrivateEducation rdf:type owl:Class ;
   rdfs:subClassOf :Education ;
