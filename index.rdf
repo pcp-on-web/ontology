@@ -81,19 +81,19 @@
   rdfs:label "Ehepartner"@de, "spouse"@en ;
 	dc:description "Bezieht sich auf den Ehepartner (genersiches Maskulinum) einer Person."@de, "Refers to the spouse (generic masculine) of a person."@en .
 		
-:child rdf:type owl:ObjectProperty ;
+:Child rdf:type owl:ObjectProperty ;
   rdfs:domain :Person ;
   rdfs:range :Family ;
   rdfs:label "Kind"@de, "child"@en ;
 	dc:description "Bezieht sich auf das Kind, Pflegekind, Adoptivkind einer Person."@de, "Refers to the cild, foster child, adoptive child of a person."@en .
 	
-:father rdf:type owl:ObjectProperty ;
+:Father rdf:type owl:ObjectProperty ;
   rdfs:domain :Person ;
   rdfs:range :Family ;
   rdfs:label "Vater"@de, "father"@en ;
 	dc:description "Bezieht sich auf den Vater eines Professors."@de, "Refers to the father of a professor."@en .
 		
-:mother rdf:type owl:ObjectProperty ;
+:Mother rdf:type owl:ObjectProperty ;
   rdfs:domain :Person ;
   rdfs:range :Family ;
   rdfs:label "Mutter"@de, "mother"@en ;
@@ -259,7 +259,14 @@
 :Denomination rdf:type owl:Class ;
   rdfs:subClassOf :Concept ;
   rdfs:label "Konfession"@de, "Denomination"@en ;
-	dc:description "Bezeichnet das Glaubenbekenntnis einer Person und/oder deren Zugehörigkeit."@de , "Refers to the denomination of a person."@en .
+	dc:description "Religionszugehörigkeit oder Glaubenbekenntnis einer Person."@de , "The religious denomination of a person."@en .
+		
+:hasDenomination rdf:type owl:ObjectProperty ;
+  rdfs:domain :Person ;
+  rdfs:range :Denomination ;
+  rdfs:label "hat Konfession"@de, "has denomination"@en ;
+	dc:description "Bezieht sich auf das Glaubenbekenntnis einer Person und/oder deren Religionszugehörigkeit."@de,
+		"Refers to geographical location of an office."@en .
 	
 :Education  rdf:type owl:Class ;
   rdfs:subClassOf :Concept ;
