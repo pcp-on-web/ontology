@@ -105,6 +105,13 @@
 	dc:description "Bezieht sich auf den geografischen Ort eines Lebensereignisses einer Person sowie auf den Ort von Körperschaften,
 		Medien (Verlagsort, Druckort), Ämtern, Landesherrschaft."@de, "Refers to the location of life events of persons, corporate bodies, media
 		(printing, publishing), offices, territories."@en .
+		
+:LocationLifeEvent rdf:type owl:ObjectProperty ;
+  rdfs:domain :LifeEvent ;
+  rdfs:range :Location ;
+  rdfs:label "Ort eines Lebensereignisses"@de, "location of a life event"@en ;
+	dc:description "Bezieht sich auf den geografischen Ort eines Lebensereignisses einer Person."@de,
+		"Refers to geogrphical location of a life event of a person."@en .
 
 :isStudentAt rdf:type owl:ObjectProperty ;
   rdfs:domain :Student ;
