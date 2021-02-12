@@ -99,10 +99,12 @@
   rdfs:label "Mutter"@de, "mother"@en ;
 	dc:description "Bezieht sich auf die Mutter eines Professors."@de, "Refers to the mother of a professor."@en .
 		
-:GeographicalOrigin rdf:type owl:Class ;
-  rdfs:subClassOf :LifeEvent ;
-  rdfs:label "Geografische Herkunft"@de, "Geographical Origin"@en ;
-	dc:description "Bezieht sich auf die geografische Herkunft einer Person."@de , "Refers to the geographical background of a Person."@en .
+:Location rdf:type owl:Class ;
+  rdfs:subClassOf :Concept ;
+  rdfs:label "Ort"@de, "location"@en ;
+	dc:description "Bezieht sich auf den geografischen Ort eines Lebensereignisses einer Person sowie auf den Ort von Körperschaften,
+		Medien (Verlagsort, Druckort), Ämtern, Landesherrschaft."@de, "Refers to the location of life events of persons, corporate bodies, media
+		(printing, publishing), offices, territories."@en .
 
 :isStudentAt rdf:type owl:ObjectProperty ;
   rdfs:domain :Student ;
