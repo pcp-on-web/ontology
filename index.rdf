@@ -37,38 +37,42 @@
 :Concept rdf:type owl:Class ;
   rdfs:label "Konzept"@de, "Concept"@en ;
 	dc:description "..."@de , "..."@en .
-	
-:LifeEvent rdf:type owl:Class ;
-  rdfs:label "Lebensereignis"@de, "Life event"@en ;
-	dc:description "Dieses Konzept bezieht sich auf einen Lebensabschnitt und dessen Charakterisierung."@de, "This concept refers to a life event and
-		its characterization."@en.
+		
+:Person rdf:type owl:Class ;
+  rdf:label "Person"@de, "Person"@en ;
+	dc:description "Bezeichnet eine historische Person."@de, "Refers to a historical person."@en .
 
 :Professor rdf:type owl:Class ;
   rdfs:subClassOf :Person ;
   rdfs:label "Professor"@de, "Professor"@en ;
 	dc:description "Bezeichnet eine Person die durch Berufung an einer frühneuzeitlichen Universität lehrt und dort akademische Ämter führt."@de,
-		"Refers to a person who is vocated as a professor at an Early Modern university, who teaches and holds academic offices."@en.
+		"Refers to a person who is vocated as a professor at an Early Modern university, who teaches and holds academic offices."@en .
+		
+:LifeEvent rdf:type owl:Class ;
+  rdfs:label "Lebensereignis"@de, "Life event"@en ;
+	dc:description "Dieses Konzept bezieht sich auf einen Lebensabschnitt und dessen Charakterisierung."@de, "This concept refers to a life event and
+		its characterization."@en .
 
 :Birth rdf:type owl:Class ;
   rdfs:subClassOf :LifeEvent ;
   rdfs:label "Geburt"@de, "Birth"@en ;
-	dc:description "Gibt das Datum oder den Zeitraum der Geburt einer Person an."@de, "Gives the birthdate or the period of birth of a person."@en.
+	dc:description "Gibt das Datum oder den Zeitraum der Geburt einer Person an."@de, "Gives the birthdate or the period of birth of a person."@en .
 		
 :Death rdf:type owl:Class ;
   rdfs:subClassOf :LifeEvent ;
   rdfs:label "Tod"@de, "Death"@en ;
-	dc:description "Gibt das Datum oder den Zeitraum des Todes einer Person an."@de, "Gives the date or the period of death of a person."@en.
-		
-:Person rdf:type owl:Class ;
-  rdf:label "Person"@de, "Person"@en ;
-	dc:description "Bezeichnet eine historische Person."@de, "Refers to a historical person."@en.
+	dc:description "Gibt das Datum oder den Zeitraum des Todes einer Person an."@de, "Gives the date or the period of death of a person."@en .
 	
 :hasEvent  rdf:type owl:ObjectProperty ;
   rdfs:domain :Person ;
   rdfs:range :LifeEvent ;
   rdfs:label "hat Lebensereignis"@de, "has life event"@en ;
-	dc:description "...."@de,
-		"..."@en.
+	dc:description "Beschreibt, dass eine Person einen Lebensabschnitt hat."@de, "Refers to a life event of a person."@en .
+		
+:Family rdf:type owl:Class ;
+  rdfs:subClassOf :LifeEvent ;
+  rdfs:label "Familie"@de, "family"@en ;
+	dc:description "Dieses Konzept beschreibt die Familie einer Person."@de, "This concept describes the family of a person."@en .
 
 :isStudentAt rdf:type owl:ObjectProperty ;
   rdfs:domain :Student ;
@@ -136,7 +140,6 @@
   rdfs:label "ist organisiert in"@de, "is organized in"@en ;
 	dc:description "Ordnet einen Lehrstuhl einer Fakultät zu."@de, "Allocates a chair to a faculty."@en.
 
-		
 :Student rdf:type owl:Class ;
   rdfs:subClassOf :Person ;
   rdfs:label "Student"@de, "Student"@en ;
