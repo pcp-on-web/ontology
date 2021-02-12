@@ -186,7 +186,7 @@
 :AcademicDegree rdf:type owl:Class ;
   rdfs:subClassOf :LifeEvent ;
   rdfs:label "Akademische Grade"@de, "Academic Degree"@en ;
-	dc:description "..."@de , "..."@en .
+	dc:description ".."@de , "..."@en .
 		
 :isStudentAt rdf:type owl:ObjectProperty ;
   rdfs:domain :Student ;
