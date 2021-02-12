@@ -158,6 +158,11 @@
   rdfs:label "Bildungsweg"@de, "Education"@en ;
 	dc:description "Beschreibt den Bildungsweg einer Person."@de , "Decribes the education of a person."@en .
 		
+:Corporation rdf:type owl:Class ;
+  rdfs:subClassOf :Concept ;
+  rdfs:label "Körperschaft"@de, "Corporation"@en ;
+	dc:description "Bezeichnet eine Körperschaft."@de, "Refers to a corporation or corporate body."@en .
+		
 :PrimaryEducationInstitutions  rdf:type owl:Class ;
   rdfs:subClassOf :Corporation ;
   rdfs:label "Primäre Bildungsinstitutionen"@de, "primary educational institutions"@en ;
@@ -177,7 +182,13 @@
   rdfs:label "Privatunterricht"@de, "private education"@en ;
 	dc:description "Privatunterricht im Familienverband oder durch einen Privatlehrer."@de,
 		"Private education by family members or a different private teacher."@en .
-	
+		
+:UniversityStudies rdf:type owl:ObjectProperty ;
+  rdfs:domain :Education ;
+  rdfs:range :University ;
+  rdfs:label "Studium"@de, "University studies"@en ;
+	dc:description "Bezieht sich auf ein Studium an einer vormodernen Universität."@de, "Refers to university studies at Early Modern Universities."@en .
+		
 :AcademicDegree rdf:type owl:Class ;
   rdfs:subClassOf :Concept ;
   rdfs:label "Akademische Grade"@de, "Academic Degree"@en ;
@@ -199,12 +210,7 @@
   rdfs:subClassOf :Professor ;
   rdfs:label "Außerordentlicher Professor"@de, "Associate Professor"@en ;
 	dc:description "Bezeichnet einen Professor, der eine außerordentliche Professur (aO) inne hat."@de, "A professor who is an associate professor."@en.
-
-:Corporation rdf:type owl:Class ;
-  rdfs:subClassOf :Concept ;
-  rdfs:label "Körperschaft"@de, "Corporation"@en ;
-	dc:description "Bezeichnet eine Körperschaft."@de, "Refers to a corporation or corporate body."@en .
-		
+	
 :University rdf:type owl:Class ;
   rdfs:subClassOf :Corporation ;
   rdfs:label "Universität"@de, "University"@en ;
