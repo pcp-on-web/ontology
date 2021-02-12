@@ -72,41 +72,30 @@
 :Family rdf:type owl:Class ;
   rdfs:subClassOf :LifeEvent ;
   rdfs:label "Familie"@de, "family"@en ;
-	dc:description "Dieses Konzept beschreibt die Familie einer Person."@de, "This concept describes the family of a person."@en .
+	dc:description "Dieses Konzept beschreibt die soziale Herkunft und Familienverhältnisse einer Person."@de, "This concept describes the social origin
+		and the family relationship of a person."@en .
 		
-:Wife rdf:type owl:ObjectProperty ;
-  rdfs:domain :Professor ;
+:Spouse rdf:type owl:ObjectProperty ;
+  rdfs:domain :Person ;
   rdfs:range :Family ;
-  rdfs:label "Ehefrau"@de, "wife"@en ;
-	dc:description "Bezieht sich auf die Ehefrau eines Professors."@de, "Refers to the wife of a professor."@en .
+  rdfs:label "Ehepartner"@de, "spouse"@en ;
+	dc:description "Bezieht sich auf den Ehepartner (genersiches Maskulinum) einer Person."@de, "Refers to the spouse (generic masculine) of a person."@en .
 		
-:Son rdf:type owl:ObjectProperty ;
-  rdfs:domain :Professor ;
+:child rdf:type owl:ObjectProperty ;
+  rdfs:domain :Person ;
   rdfs:range :Family ;
-  rdfs:label "Sohn"@de, "son"@en ;
-	dc:description "Bezieht sich auf den Sohn, Pflegesohn, Adoptivsohn eines Professors."@de, "Refers to the son, foster, adoptive son of a professor."@en .
-		
-:Daughter rdf:type owl:ObjectProperty ;
-  rdfs:domain :Professor ;
-  rdfs:range :Family ;
-  rdfs:label "Tochter"@de, "daughter"@en ;
-	dc:description "Bezieht sich auf die Tochter, Pflegetochter, Adoptivtochter eines Professors."@de, "Refers to the daughter, foster, adoptive daughter
-		of a professor."@en .
-	
-:SocialOrigin rdf:type owl:Class ;
-  rdfs:subClassOf :LifeEvent ;
-  rdfs:label "Soziale Herkunft"@de, "Social Origin"@en ;
-	dc:description "Bezieht sich auf die soziale Herkunft einer Person."@de , "Refers to the social background of a Person."@en .
+  rdfs:label "Kind"@de, "child"@en ;
+	dc:description "Bezieht sich auf das Kind, Pflegekind, Adoptivkind einer Person."@de, "Refers to the cild, foster child, adoptive child of a person."@en .
 	
 :father rdf:type owl:ObjectProperty ;
-  rdfs:domain :Professor ;
-  rdfs:range :SocialOrigin ;
+  rdfs:domain :Person ;
+  rdfs:range :Family ;
   rdfs:label "Vater"@de, "father"@en ;
 	dc:description "Bezieht sich auf den Vater eines Professors."@de, "Refers to the father of a professor."@en .
 		
 :mother rdf:type owl:ObjectProperty ;
-  rdfs:domain :Professor ;
-  rdfs:range :SocialOrigin ;
+  rdfs:domain :Person ;
+  rdfs:range :Family ;
   rdfs:label "Mutter"@de, "mother"@en ;
 	dc:description "Bezieht sich auf die Mutter eines Professors."@de, "Refers to the mother of a professor."@en .
 		
