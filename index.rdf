@@ -90,7 +90,30 @@
   rdfs:domain :Professor ;
   rdfs:range :Family ;
   rdfs:label "Tochter"@de, "daughter"@en ;
-	dc:description "Bezieht sich auf die Tochter, Pflegetochter, Adoptivtochter eines Professors."@de, "Refers to the daughter, foster, adoptive daughter of a professor."@en .
+	dc:description "Bezieht sich auf die Tochter, Pflegetochter, Adoptivtochter eines Professors."@de, "Refers to the daughter, foster, adoptive daughter
+		of a professor."@en .
+	
+:SocialOrigin rdf:type owl:Class ;
+  rdfs:subClassOf :LifeEvent ;
+  rdfs:label "Soziale Herkunft"@de, "Social Origin"@en ;
+	dc:description "Bezieht sich auf die soziale Herkunft einer Person."@de , "Refers to the social background of a Person."@en .
+	
+:father rdf:type owl:ObjectProperty ;
+  rdfs:domain :Professor ;
+  rdfs:range :Family ;
+  rdfs:label "Vater"@de, "father"@en ;
+	dc:description "Bezieht sich auf den Vater eines Professors."@de, "Refers to the father of a professor."@en .
+		
+:mother rdf:type owl:ObjectProperty ;
+  rdfs:domain :Professor ;
+  rdfs:range :Family ;
+  rdfs:label "Mutter"@de, "mother"@en ;
+	dc:description "Bezieht sich auf die Mutter eines Professors."@de, "Refers to the mother of a professor."@en .
+		
+:GeographicalOrigin rdf:type owl:Class ;
+  rdfs:subClassOf :LifeEvent ;
+  rdfs:label "Geografische Herkunft"@de, "Geographical Origin"@en ;
+	dc:description "Bezieht sich auf die geografische Herkunft einer Person."@de , "Refers to the geographical background of a Person."@en .
 
 :isStudentAt rdf:type owl:ObjectProperty ;
   rdfs:domain :Student ;
@@ -206,21 +229,6 @@
   rdfs:subClassOf :Concept ;
   rdfs:label "Prestige"@de, "Prestige"@en ;
 	dc:description "..."@de , "..."@en .
-	
-:SocialOrigin rdf:type owl:Class ;
-  rdfs:subClassOf :LifeEvent ;
-  rdfs:label "Soziale Herkunft"@de, "Social Origin"@en ;
-	dc:description "Bezieht sich auf die soziale Herkunft einer Person."@de , "Refers to the social background of a Person."@en .
-		
-:GeographicalOrigin rdf:type owl:Class ;
-  rdfs:subClassOf :LifeEvent ;
-  rdfs:label "Geografische Herkunft"@de, "Geographical Origin"@en ;
-	dc:description "Bezieht sich auf die geografische Herkunft einer Person."@de , "Refers to the geographical background of a Person."@en .
-		
-:Family rdf:type owl:Class ;
-  rdfs:subClassOf :LifeEvent ;
-  rdfs:label "Familie"@de, "Family"@en ;
-	dc:description "Bezieht sich auf den Familienstand eines Professors."@de , "Refers to the marital status of a Professor."@en .
 	
 :Denomination rdf:type owl:Class ;
   rdfs:subClassOf :Concept ;
