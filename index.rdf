@@ -100,13 +100,13 @@
 	
 :father rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
-  rdfs:range :Family ;
+  rdfs:range :SocialOrigin ;
   rdfs:label "Vater"@de, "father"@en ;
 	dc:description "Bezieht sich auf den Vater eines Professors."@de, "Refers to the father of a professor."@en .
 		
 :mother rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
-  rdfs:range :Family ;
+  rdfs:range :SocialOrigin ;
   rdfs:label "Mutter"@de, "mother"@en ;
 	dc:description "Bezieht sich auf die Mutter eines Professors."@de, "Refers to the mother of a professor."@en .
 		
