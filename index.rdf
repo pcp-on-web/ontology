@@ -141,6 +141,28 @@
 	dc:description "Bezieht sich auf den Druck- ode Verlagsort eines Mediums."@de,
 		"Refers to the geographical printing or publishing location of a medium."@en .
 		
+:Denomination rdf:type owl:Class ;
+  rdfs:subClassOf :Concept ;
+  rdfs:label "Konfession"@de, "Denomination"@en ;
+	dc:description "Religionszugehörigkeit oder Glaubenbekenntnis einer Person."@de , "The religious denomination of a person."@en .
+		
+:hasDenomination rdf:type owl:ObjectProperty ;
+  rdfs:domain :Person ;
+  rdfs:range :Denomination ;
+  rdfs:label "hat Konfession"@de, "has denomination"@en ;
+	dc:description "Verweist auf das Glaubenbekenntnis einer Person und/oder deren Religionszugehörigkeit."@de,
+		"Refers to the religious denomination of a person."@en .
+	
+:Education  rdf:type owl:Class ;
+  rdfs:subClassOf :LifeEvent ;
+  rdfs:label "Bildungsweg"@de, "Education"@en ;
+	dc:description "..."@de , "..."@en .
+	
+:AcademicDegree rdf:type owl:Class ;
+  rdfs:subClassOf :Concept ;
+  rdfs:label "Akademische Grade"@de, "Academic Degree"@en ;
+	dc:description "..."@de , "..."@en .
+		
 :isStudentAt rdf:type owl:ObjectProperty ;
   rdfs:domain :Student ;
   rdfs:range :University ;
@@ -254,28 +276,6 @@
 :Prestige rdf:type owl:Class ;
   rdfs:subClassOf :Concept ;
   rdfs:label "Prestige"@de, "Prestige"@en ;
-	dc:description "..."@de , "..."@en .
-	
-:Denomination rdf:type owl:Class ;
-  rdfs:subClassOf :Concept ;
-  rdfs:label "Konfession"@de, "Denomination"@en ;
-	dc:description "Religionszugehörigkeit oder Glaubenbekenntnis einer Person."@de , "The religious denomination of a person."@en .
-		
-:hasDenomination rdf:type owl:ObjectProperty ;
-  rdfs:domain :Person ;
-  rdfs:range :Denomination ;
-  rdfs:label "hat Konfession"@de, "has denomination"@en ;
-	dc:description "Verweist auf das Glaubenbekenntnis einer Person und/oder deren Religionszugehörigkeit."@de,
-		"Refers to the religious denomination of a person."@en .
-	
-:Education  rdf:type owl:Class ;
-  rdfs:subClassOf :Concept ;
-  rdfs:label "Bildungsweg"@de, "Education"@en ;
-	dc:description "..."@de , "..."@en .
-	
-:AcademicDegree rdf:type owl:Class ;
-  rdfs:subClassOf :Concept ;
-  rdfs:label "Akademische Grade"@de, "Academic Degree"@en ;
 	dc:description "..."@de , "..."@en .
 	
 :Candidature rdf:type owl:Class ;
