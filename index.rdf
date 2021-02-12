@@ -184,7 +184,7 @@
 		Early Modern Universities."@en .
 		
 :AcademicDegree rdf:type owl:Class ;
-  rdfs:subClassOf :Concept ;
+  rdfs:subClassOf :LifeEvent ;
   rdfs:label "Akademische Grade"@de, "Academic Degree"@en ;
 	dc:description "..."@de , "..."@en .
 		
