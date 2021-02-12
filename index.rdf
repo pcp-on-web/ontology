@@ -161,16 +161,16 @@
 :PrimaryEducationInstitutions  rdf:type owl:Class ;
   rdfs:subClassOf :Corporation ;
   rdfs:label "Primäre Bildungsinstitutionen"@de, "primary educational institutions"@en ;
-	dc:description "Bezieht sich auf die im diversen vormodernen Schulformen und pädagogischen Bildungsangebote im Vorfeld eines Universitätsbesuchs
-		im Territorium des Heiligen Römischen Reichs Deutscher Nation, z.B. Elementarschulwesen, Lateinschulen, Gymnasien, Klosterschulen,
+	dc:description "Bezieht sich auf die diversen vormodernen Schulformen und pädagogischen Bildungsangebote im Vorfeld eines Universitätsbesuchs
+		im Territorium des Heiligen Römischen Reichs Deutscher Nation, z.B. Elementarschulen, Lateinschulen, Gymnasien, Klosterschulen,
 		Pfarrschulen etc."@de , "Refers to the diverse early modern educational and pedagogical institutions of primary education within the Holy Roman
 		Empire."@en .
 		
 :PrivateEducation rdf:type owl:Class ;
   rdfs:subClassOf :Education
   rdfs:label "Privatunterricht"@de, "private education"@en ;
-	dc:description "Privatunterricht im Familienverband oder durch einen Privatlehrer im Haushalt oder dessen Haushalt."@de,
-		"Private education located within the family by family members, a different private teacher and/or by a private teacher in his household."@en .
+	dc:description "Privatunterricht im Familienverband oder durch einen Privatlehrer."@de,
+		"Private education by family members or a different private teacher."@en .
 	
 :AcademicDegree rdf:type owl:Class ;
   rdfs:subClassOf :Concept ;
