@@ -168,7 +168,8 @@
 		
 :PrivateEducation rdf:type owl:Class ;
   rdfs:subClassOf :Education
-  rdfs:label "Privatunterricht im Familienverband oder durch einen Privatlehrer im Haushalt oder dessen Haushalt."@de,
+  rdfs:label "Privatunterricht"@de, "private education"@en ;
+	dc:description "Privatunterricht im Familienverband oder durch einen Privatlehrer im Haushalt oder dessen Haushalt."@de,
 		"Private education located within the family by family members, a different private teacher and/or by a private teacher in his household."@en .
 	
 :AcademicDegree rdf:type owl:Class ;
