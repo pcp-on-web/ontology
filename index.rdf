@@ -285,8 +285,6 @@
   rdfs:subClassOf :Concept ;
   rdfs:label "Netzwerk"@de, "Network"@en ;
 	dc:description "in Arbeit: Dieses Konzept bezieht sich auf ... Personengeflechte ... dynamisch ... Kommunikationsräume ... Interaktion"@de , "..."@en .
-		
-:AcademicSociety
 	
 :Prestige rdf:type owl:Class ;
   rdfs:subClassOf :Concept ;
@@ -406,13 +404,13 @@
 :PublicLecture rdf:type owl:Class ;
   rdfs:subClassOf :Lecture;
   rdfs:label "Öffentliche Vorlesung"@de, "Public Lecture"@en ;
-	dc:description "Bezieht sich auf öffentliche Vorlesungen, die ein Professor hält."@de, "Refers to public lectures, given by a professor."@en.
+	dc:description "Bezieht sich auf öffentliche Vorlesungen (lectio publica), die ein Professor hält."@de, "Refers to public lectures (lectio publica), given by a professor."@en.
 		
 :PrivateLecture rdf:type owl:Class ;
   rdfs:subClassOf :Lecture;
   rdfs:label "Private Vorlesung"@de, "Private Lecture"@en ;
-	dc:description "Bezieht sich auf private Vorlesungen (privatum, privatissimum), die ein Professor in einem kleinen Kreis von Studenten hält."@de, 
-		"Refers to private lectures (privatum, privatissimum), given by a professor for a relatively small amount of students."@en.
+	dc:description "Bezieht sich auf private Vorlesungen (lectio privata, privatum, privatissimum), die ein Professor in einem kleinen Kreis von Studenten hält."@de, 
+		"Refers to private lectures (lectio privata, privatum, privatissimum), given by a professor for a relatively small amount of students."@en.
 	
 :givesLecture rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor;
