@@ -48,6 +48,16 @@
 	dc:description "Bezeichnet eine Person die durch Berufung an einer frühneuzeitlichen Universität lehrt und dort akademische Ämter führt."@de,
 		"Refers to a person who is vocated as a professor at an Early Modern university, who teaches and holds academic offices."@en .
 		
+:FullProfessor rdf:type owl:Class ;
+  rdfs:subClassOf :Professor ;
+  rdfs:label "Ordentlicher Professor"@de, "Full Professor"@en ;
+	dc:description "Bezeichnet einen Professor, der eine ordentliche Professur inne hat."@de, "A professor who owns a full professorship."@en . 
+
+:AsscociateProfessor rdf:type owl:Class ;
+  rdfs:subClassOf :Professor ;
+  rdfs:label "Außerordentlicher Professor"@de, "Associate Professor"@en ;
+	dc:description "Bezeichnet einen Professor, der eine außerordentliche Professur (aO) inne hat."@de, "A professor who is an associate professor."@en .
+		
 :LifeEvent rdf:type owl:Class ;
   rdfs:label "Lebensereignis"@de, "Life event"@en ;
 	dc:description "Dieses Konzept bezieht sich auf einen Lebensabschnitt und dessen Charakterisierung."@de, "This concept refers to a life event and
@@ -186,17 +196,7 @@
   rdfs:range :University ;
   rdfs:label "ist ein Student an"@de, "is a student at"@en ;
 	dc:description "Bezieht sich auf die Information an welcher Korporation ein Student studiert."@de,
-		"Refers to the information at which corporation a student studies."@en.
-
-:FullProfessor rdf:type owl:Class ;
-  rdfs:subClassOf :Professor ;
-  rdfs:label "Ordentlicher Professor"@de, "Full Professor"@en ;
-	dc:description "Bezeichnet einen Professor, der eine ordentliche Professur inne hat."@de, "A professor who owns a full professorship."@en. 
-
-:AsscociateProfessor rdf:type owl:Class ;
-  rdfs:subClassOf :Professor ;
-  rdfs:label "Außerordentlicher Professor"@de, "Associate Professor"@en ;
-	dc:description "Bezeichnet einen Professor, der eine außerordentliche Professur (aO) inne hat."@de, "A professor who is an associate professor."@en.
+		"Refers to the information at which corporation a student studies."@en .
 	
 :University rdf:type owl:Class ;
   rdfs:subClassOf :Corporation ;
@@ -214,51 +214,51 @@
 :FacultyOfPhilosophy rdf:type owl:Class ;
   rdfs:subClassOf :Faculty ;
   rdfs:label "Philosophische Fakultät"@de, "Faculty of Philosophy"@en ;
-	dc:description "Bezeichnet die Philosophische Fakultät an einer Universität."@de, "Refers to the Faculty of Philosophy at Universities."@en.
+	dc:description "Bezeichnet die Philosophische Fakultät an einer Universität."@de, "Refers to the Faculty of Philosophy at Universities."@en .
 		
 :FacultyOfTheology rdf:type owl:Class ;
   rdfs:subClassOf :Faculty ;
   rdfs:label "Theologische Fakultät"@de, "Faculty of Theology"@en ;
-	dc:description "Bezeichnet die Theologische Fakultät an einer Universität."@de, "Refers to the Faculty of Theology at Universities."@en.
+	dc:description "Bezeichnet die Theologische Fakultät an einer Universität."@de, "Refers to the Faculty of Theology at Universities."@en .
 		
 :FacultyOfLaw rdf:type owl:Class ;
   rdfs:subClassOf :Faculty ;
   rdfs:label "Juristische Fakultät"@de, "Faculty of Law"@en ;
-	dc:description "Bezeichnet die Juristische Fakultät an einer Universität."@de, "Refers to the Faculty of Law at Universities."@en.
+	dc:description "Bezeichnet die Juristische Fakultät an einer Universität."@de, "Refers to the Faculty of Law at Universities."@en .
 
 :FacultyOfMedicine rdf:type owl:Class ;
   rdfs:subClassOf :Faculty ;
   rdfs:label "Medizinische Fakultät"@de, "Faculty of Medicine"@en ;
-	dc:description "Bezeichnet die Medzinische Fakultät an einer Universität."@de, "Refers to the Faculty of Medicine at Universities."@en.
+	dc:description "Bezeichnet die Medzinische Fakultät an einer Universität."@de, "Refers to the Faculty of Medicine at Universities."@en .
 
 :Chair rdf:type owl:Class ;
   rdfs:subClassOf :University ;
   rdfs:label "Lehrstuhl"@de, "Chair"@en ;
-	dc:description "Bezeichnet den Lehrstuhl bzw. das Fachgebiet einer Universitätsfakultät."@de, "Designates the chair or subject at university faculties."@en.
+	dc:description "Bezeichnet den Lehrstuhl bzw. das Fachgebiet einer Universitätsfakultät."@de, "Designates the chair or subject at university faculties."@en .
 		
 :organizedIn rdf:type owl:ObjectProperty ;
   rdfs:domain :Faculty ;
   rdfs:range :Chair ;
   rdfs:label "ist organisiert in"@de, "is organized in"@en ;
-	dc:description "Ordnet einen Lehrstuhl einer Fakultät zu."@de, "Allocates a chair to a faculty."@en.
+	dc:description "Ordnet einen Lehrstuhl einer Fakultät zu."@de, "Allocates a chair to a faculty."@en .
 
 :Student rdf:type owl:Class ;
   rdfs:subClassOf :Person ;
   rdfs:label "Student"@de, "Student"@en ;
-	dc:description "Bezeichnet einen an der Universität immatrikulierten Studenten."@de, "Refers to an enrolled student at a University."@en.
+	dc:description "Bezeichnet einen an der Universität immatrikulierten Studenten."@de, "Refers to an enrolled student at a University."@en .
 		
 :isStudent rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
   rdfs:range :Student ;
   rdfs:label "ist Student"@de, "is student"@en ;
-	dc:description "Bezeichnet den Professor als Student."@de, "Refers to the Professor as a student."@en.
+	dc:description "Bezeichnet den Professor als Student."@de, "Refers to the Professor as a student."@en .
 		
 :Territory rdf:type owl:Class ;
   rdfs:subClassOf :Concept ;
   rdfs:label "Landesherrschaft"@de, "Territory"@en ;
 	dc:description "Bezeichnet die Landesherrschaft eines Territoriums."@de , "Refers to the authority by a ruler or group of rulers of a territory."@en .
 	
-:Patron  rdf:type owl:Class ;
+:Patron rdf:type owl:Class ;
   rdfs:subClassOf :Concept ;
   rdfs:label "Patron"@de, "Patron"@en ;
 	dc:description "Bezieht sich auf den Patron einer Person; hier auf in den Quellen namentlich erwähnten Förderer eines Professors und dessen Karriere."@de ,
@@ -283,8 +283,10 @@
 	
 :Network rdf:type owl:Class ;
   rdfs:subClassOf :Concept ;
-  rdfs:label "Netzwerke"@de, "Network"@en ;
-	dc:description "..."@de , "..."@en .
+  rdfs:label "Netzwerk"@de, "Network"@en ;
+	dc:description "in Arbeit: Dieses Konzept bezieht sich auf ... Personengeflechte ... dynamisch ... Kommunikationsräume ... Interaktion"@de , "..."@en .
+		
+:AcademicSociety
 	
 :Prestige rdf:type owl:Class ;
   rdfs:subClassOf :Concept ;
@@ -372,7 +374,7 @@
 	dc:description "Bezeichnet ein Buch, das Lehrinhalte eines Studiums didaktisch aufbereitet."@de, "Refers to books which offer a compilation of content in a certain
 		field of interest.."@en.
 		
-:article rdf:type owl:Class ;
+:Article rdf:type owl:Class ;
   rdfs:subClassOf :Media ;
   rdfs:label "Artikel"@de, "article"@en ;
 	dc:description "Bezeichnet einen Artikel in einem Journal, einer Zeitschrift, einer Zeitung oder einem Magazin."@de, "Refers to an article published in journals, newspapers
