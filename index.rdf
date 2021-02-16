@@ -126,14 +126,14 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		and the family relationship of a person."@en .
 		
 :Spouse rdf:type owl:ObjectProperty ;
-  rdfs:domain :Person ;
-  rdfs:range :Family ;
+  rdfs:domain :Family ;
+  rdfs:range :Person ;
   rdfs:label "Ehepartner"@de, "spouse"@en ;
 	dc:description "Bezieht sich auf den Ehepartner (genersiches Maskulinum) einer Person."@de, "Refers to the spouse (generic masculine) of a person."@en .
 		
 :Child rdf:type owl:ObjectProperty ;
-  rdfs:domain :Person ;
-  rdfs:range :Family ;
+  rdfs:domain :Family ;
+  rdfs:range :Person ;
   rdfs:label "Kind"@de, "child"@en ;
 	dc:description "Bezieht sich auf das Kind, Pflegekind, Adoptivkind einer Person."@de, "Refers to the cild, foster child, adoptive child of a person."@en .
 	
