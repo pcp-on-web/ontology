@@ -424,6 +424,12 @@
   rdfs:label "besucht Vorlesung"@de, "attends lecture"@en ;
 	dc:description "Bezieht sich auf die Praktik des Anhörens von Vorlesungen durch Studenten."@de, "Refers to the attendance of students at a lecture."@en.
 		
+:GND rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Person ;
+  rdfs:range :Professor ;
+  rdfs:label "GND/PND"@de, "GND/PND"@en ;
+	dc:description "Bezieht sich auf Personen Normdateien GND oder PND."@de, "Refers to a Persons norm data GND or PND."@en .
+		
 	
 
 		
