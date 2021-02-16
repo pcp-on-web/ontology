@@ -378,12 +378,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "werden durchgeführt von"@de, "done by"@en ;
 	dc:description "Bezieht sich auf Lehrpraktiken, die von einem Professor an einer Universität durchgeführt werden."@de, "Refers to teaching practices
 		which are done by a professor at a university."@en.
-
-:Lecture rdf:type owl:Class ;
-  rdfs:subClassOf :TeachingPractices;
-  rdfs:label "Vorlesung/Lektion"@de, "Lecture"@en ;
-	dc:description "Bezieht sich auf Vorlesungen bzw. Lektionen (lectiones), die von einem Professor im Rahmen der universitären Lehre abgehalten werden."@de,
-		"Refers to lectures, given by a professor at auniversity."@en.
 		
 :Disputation rdf:type owl:Class ;
   rdfs:subClassOf :TeachingPractices;
@@ -452,16 +446,26 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		"Refers to a person as an author of printed media. In case of dissertations the notion author in the context of this ontology model
 		must be considered flexible since literature databases often sign out either praeses or respondent as authors of dissertations."@en.
 
-:PublicLecture rdf:type owl:Class ;
-  rdfs:subClassOf :Lecture;
-  rdfs:label "Öffentliche Vorlesung"@de, "Public Lecture"@en ;
-	dc:description "Bezieht sich auf öffentliche Vorlesungen (lectio publica), die ein Professor hält."@de, "Refers to public lectures (lectio publica), given by a professor."@en.
+:Lecture rdf:type owl:Class ;
+  rdfs:subClassOf :TeachingPractices;
+  rdfs:label "Vorlesung/Lektion"@de, "Lecture"@en ;
+	dc:description "Bezieht sich auf Vorlesungen bzw. Lektionen (lectiones), die von einem Professor im Rahmen der universitären Lehre abgehalten werden."@de,
+		"Refers to lectures, given by a professor at auniversity."@en.
+		
+:LectureType rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Lecture ;
+  rdfs:range :Lecture ;
+  rdfs:label "Vorlesungstyp"@de, "Lecture type"@en ;
+	dc:description "Gibt an, um welchen Typ Vorlesung es sich handelt. Unterschieden werden zwischen öffentlicher Vorlesung (lectio publica) oder privater
+		Vorlesung (lectio privata, privatum, privatissimum), die ein Professor in einem kleinen Kreis von Studenten hielt."@de,
+		"Refers to the type of lecture, which differ between public lecture (lectio publica) and private lecture (lectio privata, privatum, privatissimum),
+		that were given by a professor for a relatively small amount of students."@en.
 		
 :PrivateLecture rdf:type owl:Class ;
   rdfs:subClassOf :Lecture;
   rdfs:label "Private Vorlesung"@de, "Private Lecture"@en ;
-	dc:description "Bezieht sich auf private Vorlesungen (lectio privata, privatum, privatissimum), die ein Professor in einem kleinen Kreis von Studenten hält."@de, 
-		"Refers to private lectures (lectio privata, privatum, privatissimum), given by a professor for a relatively small amount of students."@en.
+	dc:description "Bezieht sich auf ."@de, 
+		"Refers to ."@en.
 	
 :givesLecture rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor;
@@ -475,18 +479,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "besucht Vorlesung"@de, "attends lecture"@en ;
 	dc:description "Bezieht sich auf die Praktik des Anhörens von Vorlesungen durch Studenten."@de, "Refers to the attendance of students at a lecture."@en.
 		
-###  http://purl.org/pcp-on-web/ontology#gnd
-:gnd rdf:type owl:DatatypeProperty ,
-              owl:FunctionalProperty ;
-     rdfs:domain :Person ;
-     rdfs:range rdfs:Literal ;
-     <http://ns.ontowiki.net/SysOnt/order> "370"^^xsd:string ;
-     rdfs:comment "Personennamendatei"^^xsd:string ;
-     rdfs:label "GND/PND"@de ,
-                "GND/PND"@en ;
-     owl:versionInfo "0.1 initial creation - 10.03.2008"^^xsd:string ,
-                     "2.0 stable"^^xsd:string ,
-                     "rename from pnd to gnd - 15.01.2016"^^xsd:string .
+:gnd rdf:type owl:DatatypeProperty , owl:FunctionalProperty ;
+  rdfs:domain :Person ;
+  rdfs:range rdfs:Literal ;
+  rdfs:label "GND/PND"@de, "GND/PND"@en ;
+  	dc:description "GND oder PND Normadatei einer Person."@de, "GND or PND norm data of a person."@en .
 		
 	
 
