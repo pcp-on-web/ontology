@@ -55,6 +55,22 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://www.w3.org/2001/XMLSchema#gYearMonth
 xsd:gYearMonth rdf:type rdfs:Datatype .
 		
+###  http://purl.org/pcp-on-web/ontology#date
+:date rdf:type owl:DatatypeProperty ,
+               owl:FunctionalProperty ;
+      rdfs:domain :PeriodOfLife ;
+      rdfs:range rdfs:Literal;
+      rdfs:comment "The date within a period of life from a valid datatype xsd:date,
+                 xsd:gDay ,
+                 xsd:gMonth ,
+                 xsd:gMonthDay ,
+                 xsd:gYear ,
+                 xsd:gYearMonth"@en,
+                   "Zeitpunkt innerhalb eines Lebensabschnitts"@de ;
+      rdfs:label "Date"@en ,
+                 "Datum"@de ,
+                 "date"@en ;
+      owl:versionInfo "2.0 initial creation date: 09.09.2013"^^xsd:string .
 		
 		
 
