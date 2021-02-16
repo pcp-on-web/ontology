@@ -138,14 +138,14 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezieht sich auf das Kind, Pflegekind, Adoptivkind einer Person."@de, "Refers to the cild, foster child, adoptive child of a person."@en .
 	
 :Father rdf:type owl:ObjectProperty ;
-  rdfs:domain :Person ;
-  rdfs:range :Family ;
+  rdfs:domain :Family ;
+  rdfs:range :Person ;
   rdfs:label "Vater"@de, "father"@en ;
 	dc:description "Bezieht sich auf den Vater eines Professors."@de, "Refers to the father of a professor."@en .
 		
 :Mother rdf:type owl:ObjectProperty ;
-  rdfs:domain :Person ;
-  rdfs:range :Family ;
+  rdfs:domain :Family ;
+  rdfs:range :Person ;
   rdfs:label "Mutter"@de, "mother"@en ;
 	dc:description "Bezieht sich auf die Mutter eines Professors."@de, "Refers to the mother of a professor."@en .
 		
