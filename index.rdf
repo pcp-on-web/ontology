@@ -116,28 +116,28 @@
 		Medien (Verlagsort, Druckort), Ämtern, Landesherrschaft."@de, "Refers to the location of life events of persons, corporate bodies, media
 		(printing, publishing), offices, territories."@en .
 		
-:LocationLifeEvent rdf:type owl:ObjectProperty ;
+:LocationLifeEvent rdf:type owl:DatatypeProperty ;
   rdfs:domain :LifeEvent ;
   rdfs:range :Location ;
   rdfs:label "Ort eines Lebensereignisses"@de, "location of a life event"@en ;
 	dc:description "Bezieht sich auf den geografischen Ort eines Lebensereignisses einer Person."@de,
 		"Refers to the geographical location of a life event of a person."@en .
 		
-:LocationCorporation rdf:type owl:ObjectProperty ;
+:LocationCorporation rdf:type owl:DatatypeProperty ;
   rdfs:domain :Corporation ;
   rdfs:range :Location ;
   rdfs:label "Ort einer Körperschaft"@de, "location of a corporation"@en ;
 	dc:description "Bezieht sich auf den geografischen Ort einer Körperschaft."@de,
 		"Refers to the geographical location of a corporation/corporate body."@en .
 		
-:LocationOffice rdf:type owl:ObjectProperty ;
+:LocationOffice rdf:type owl:DatatypeProperty ;
   rdfs:domain :Office ;
   rdfs:range :Location ;
   rdfs:label "Ort eines Amts"@de, "location of an office"@en ;
 	dc:description "Bezieht sich auf den geografischen Ort eines Amts."@de,
 		"Refers to the geographical location of an office."@en .
 
-:LocationTerritory rdf:type owl:ObjectProperty ;
+:LocationTerritory rdf:type owl:DatatypeProperty ;
   rdfs:domain :Territory ;
   rdfs:range :Location ;
   rdfs:label "Ort einer Landesherrschaft"@de, "location of a territory"@en ;
