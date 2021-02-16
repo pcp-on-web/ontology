@@ -53,8 +53,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 
 ###  http://www.w3.org/2001/XMLSchema#gYearMonth
-xsd:gYearMonth rdf:type rdfs:Datatype .
-		
+xsd:gYearMonth rdf:type rdfs:Datatype .		
 		
 :date rdf:type owl:DatatypeProperty, owl:FunctionalProperty ;
   rdfs:domain :LifeEvent ;
@@ -67,6 +66,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                  xsd:gMonthDay ,
                  xsd:gYear ,
                  xsd:gYearMonth"@en . 
+		
+##################################################################################		
 		
 :ProfessorialCareer rdf:type owl:Class ;
   rdfs:label "Professorenkarriere"@de, "Professorial Career"@en ;
