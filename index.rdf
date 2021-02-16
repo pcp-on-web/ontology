@@ -430,6 +430,19 @@
   rdfs:label "GND/PND"@de, "GND/PND"@en ;
 	dc:description "Bezieht sich auf Personen Normdateien GND oder PND."@de, "Refers to a Persons norm data GND or PND."@en .
 		
+###  http://purl.org/pcp-on-web/ontology#gnd
+:gnd rdf:type owl:DatatypeProperty ,
+              owl:FunctionalProperty ;
+     rdfs:domain :Person ;
+     rdfs:range rdfs:Literal ;
+     <http://ns.ontowiki.net/SysOnt/order> "370"^^xsd:string ;
+     rdfs:comment "Personennamendatei"^^xsd:string ;
+     rdfs:label "PND"@de ,
+                "PND"@en ;
+     owl:versionInfo "0.1 initial creation - 10.03.2008"^^xsd:string ,
+                     "2.0 stable"^^xsd:string ,
+                     "rename from pnd to gnd - 15.01.2016"^^xsd:string .
+		
 	
 
 		
