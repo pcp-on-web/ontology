@@ -75,7 +75,6 @@
 		
 :Gender rdf:type owl:DatatypeProperty ;
   rdfs:domain :Person ;
-  rdfs:range :Professor ;
   rdfs:label "Geschlecht"@de, "Gender"@en ;
 	dc:description "Geschlecht"@de, "Gender"@en .
 	
