@@ -73,7 +73,7 @@
   rdfs:label "Tod"@de, "Death"@en ;
 	dc:description "Gibt das Datum oder den Zeitraum des Todes einer Person an."@de, "Gives the date or the period of death of a person."@en .
 	
-:hasEvent  rdf:type owl:DatatypeProperty ;
+:hasLifeEvent  rdf:type owl:DatatypeProperty ;
   rdfs:domain :Person ;
   rdfs:range :LifeEvent ;
   rdfs:label "hat Lebensereignis"@de, "has life event"@en ;
