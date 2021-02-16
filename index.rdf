@@ -465,7 +465,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		
 :isOfType rdf:type owl:DatatypeProperty ;
   rdfs:domain :Lecture ;
-  rdfs:range :PublicLecture ;
+  rdfs:range :PublicLecture, :PrivateLecture ;
   rdfs:label "Vorlesungstyp"@de, "Lecture type"@en ;
 	dc:description "Gibt an, um welchen Typ Vorlesung es sich handelt."@de, "Refers to the type of lecture."@en.
 	
