@@ -27,7 +27,36 @@
   	owl:versionInfo "Version 0.1 (inital) - 2021-02-03 - Jennifer Blanke";
   	dc:creator "Jennifer Blanke, Edgard Marx, Thomas Riechert" ;
   	<http://xmlns.com/foaf/0.1/maker> <http://pcp-on-web.de/team/JenniferBlanke> , <http://pcp-on-web.de/team/EdgardMarx> , <http://pcp-on-web.de/team/ThomasRiechert>.
-  	
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gDay
+xsd:gDay rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gMonth
+xsd:gMonth rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gMonthDay
+xsd:gMonthDay rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gYear
+xsd:gYear rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gYearMonth
+xsd:gYearMonth rdf:type rdfs:Datatype .
+		
+		
+		
 
 :ProfessorialCareer rdf:type owl:Class ;
   rdfs:label "Professorenkarriere"@de, "Professorial Career"@en ;
