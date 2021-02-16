@@ -462,6 +462,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Private Vorlesung"@de, "Private Lecture"@en ;
 	dc:description "Bezieht sich auf private Vorlesungen (lectio privata, privatum, privatissimum), die ein Professor in einem kleinen Kreis von Studenten hält."@de, 
 		"Refers to private lectures (lectio privata, privatum, privatissimum), given by a professor for a relatively small amount of students."@en.
+		
+:isOfType rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Lecture ;
+  rdfs:range :PublicLecture ;
+  rdfs:label "Vorlesungstyp"@de, "Lecture type"@en ;
+	dc:description "Gibt an, um welchen Typ Vorlesung es sich handelt."@de, "Refers to the type of lecture."@en.
 	
 :givesLecture rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor;
