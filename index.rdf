@@ -58,17 +58,11 @@
   rdfs:label "Außerordentlicher Professor"@de, "Associate Professor"@en ;
 	dc:description "Bezeichnet einen Professor, der eine außerordentliche Professur (aO) inne hat."@de, "A professor who is an associate professor."@en .
 
-###  http://purl.org/pcp-on-web/ontology#surname
 :surname rdf:type owl:DatatypeProperty ;
-         rdfs:domain :Person ;
-         rdfs:comment "Nachname einer Person"@de ,
-                      "The surname of a person"@en ;
-         rdfs:range rdfs:Literal ;
-         rdfs:label "Nachname"@de ,
-                    "Surname"@en ;
-         owl:versionInfo "0.1 initial creation date: 24.05.2007"^^xsd:string ,
-                         "2.0 stable"^^xsd:string ,
-                         "version 0.2  10.03.2008"^^xsd:string .
+  rdfs:domain :Person ;
+  rdfs:range rdfs:Literal ;
+  rdfs:label "Nachname"@de , "Surname"@en ;
+  rdfs:comment "Nachname einer Person"@de , "The surname of a person"@en .
 		
 :LifeEvent rdf:type owl:Class ;
   rdfs:label "Lebensereignis"@de, "Life event"@en ;
