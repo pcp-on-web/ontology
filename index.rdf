@@ -68,11 +68,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                  xsd:gYearMonth"@en . 
 		
 ##################################################################################		
-		
-:ProfessorialCareer rdf:type owl:Class ;
-  rdfs:label "Professorenkarriere"@de, "Professorial Career"@en ;
-	dc:description "Dieses Konzept bezeichnet eine Professorenkarriere und ergibt sich aus der Summe aller mit ihr verbundenen Konzepte und Eigenschaften."@de , 
-		"This concept of professorial career is constituted by the total of influencing concepts and properties."@en .
+	
 
 :Concept rdf:type owl:Class ;
   rdfs:label "Konzept"@de, "Concept"@en ;
