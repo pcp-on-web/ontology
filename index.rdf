@@ -402,9 +402,9 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		
 :isDedicatee rdf:type owl:ObjectProperty ;
   rdfs:domain :Person ;
-  rdfs:range :Dissertation ;
-  rdfs:label "ist Widmungsempfänger"@de, "is deicatee"@en ;
-	dc:description "Bezeichnet den Widmunsgempfänger einer Dissertationsschrift."@de, "Refers to the dedicatee of a dissertation."@en.
+  rdfs:range :Media ;
+  rdfs:label "ist Widmungsempfänger"@de, "is dedicatee"@en ;
+	dc:description "Bezeichnet den Widmunsgempfänger einer Publikation."@de, "Refers to the dedicatee of a publication."@en.
 		
 :Media rdf:type owl:Class ;
   rdfs:subClassOf :Concept ;
