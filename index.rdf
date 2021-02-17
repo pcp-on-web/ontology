@@ -97,6 +97,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :Gender ;
   rdfs:label "Weiblich"@de, "Female"@en ;
 	dc:description "Verweist auf das Geschlecht Weiblich."@de, "Refers to the gender female."@en .
+		
+:hasGender rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Person ;
+  rdfs:range :Gender ;
+  rdfs:label "hat Geschlecht"@de, "has gender"@en ;
+	dc:description "Weist einer Person ein Geschlecht zu."@de, "Allocates a person to gender."@en .
 
 :Professor rdf:type owl:Class ;
   rdfs:subClassOf :Person ;
