@@ -82,6 +82,21 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :Person rdf:type owl:Class ;
   rdf:label "Person"@de, "Person"@en ;
 	dc:description "Bezeichnet eine historische Person."@de, "Refers to a historical person."@en .
+		
+:Gender rdf:type owl:Class ;
+  rdfs:subClassOf :Concept ;
+  rdfs:label "Geschlecht"@de, "Gender"@en ;
+	dc:description "Verweist auf das Geschlecht einer Person."@de, "Refers to the gender of a person."@en .
+		
+:Male rdf:type owl:Class ;
+  rdfs:subClassOf :Gender ;
+  rdfs:label "Männlich"@de, "Male"@en ;
+	dc:description "Verweist auf das Geschlecht Männlich."@de, "Refers to the gender male."@en .
+		
+:Female rdf:type owl:Class ;
+  rdfs:subClassOf :Gender ;
+  rdfs:label "Weiblich"@de, "Female"@en ;
+	dc:description "Verweist auf das Geschlecht Weiblich."@de, "Refers to the gender female."@en .
 
 :Professor rdf:type owl:Class ;
   rdfs:subClassOf :Person ;
