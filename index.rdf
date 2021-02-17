@@ -412,7 +412,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		the act of disputation."@en .
 		
 :isOpponent rdf:type owl:ObjectProperty ;
-  rdfs:domain :Student ;
+  rdfs:domain :Person ;
   rdfs:range :Disputation ;
   rdfs:label "ist Opponent"@de, "is opponent"@en ;
 	dc:description "Bezeichnet den Opponenten einer Disputation."@de, "Refers to the opponent of a disputation."@en .
