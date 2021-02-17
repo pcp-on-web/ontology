@@ -400,6 +400,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezeichnet den Respondenten, der sich als Student der Disputation unterzieht."@de, "Refers to the Respondent who as a student is undergoing
 		the act of  disputation."@en.
 		
+:isDedicatee rdf:type owl:ObjectProperty ;
+  rdfs:domain :Person ;
+  rdfs:range :Dissertation ;
+  rdfs:label "ist Widmungsempfänger"@de, "is deicatee"@en ;
+	dc:description "Bezeichnet den Widmunsgempfänger einer Dissertationsschrift."@de, "Refers to the dedicatee of a dissertation."@en.
+		
 :Media rdf:type owl:Class ;
   rdfs:subClassOf :Concept ;
   rdfs:label "Medien"@de, "media"@en ;
