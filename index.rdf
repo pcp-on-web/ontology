@@ -489,6 +489,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezieht sich auf Vorlesungen bzw. Lektionen (lectiones), die von einem Professor im Rahmen der universitären Lehre abgehalten werden."@de,
 		"Refers to lectures, given by a professor at auniversity."@en.
 		
+:lectureHasFaculty rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Lecture ;
+  rdfs:range :Faculty ;
+  rdfs:label "Vorlesung hat Fakultät"@de, "Lecture has faculty"@en ;
+	dc:description "Weist eine Vorlesung einer Fakultät zu."@de, "Assigns a lecture to a faculty."@en .	
+	
 :PublicLecture rdf:type owl:Class ;
   rdfs:subClassOf :Lecture;
   rdfs:label "Öffentliche Vorlesung"@de, "Public Lecture"@en ;
