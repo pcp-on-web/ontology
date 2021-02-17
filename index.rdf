@@ -391,31 +391,43 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Disputation ;
   rdfs:label "ist Praeses"@de, "is Praeses"@en ;
 	dc:description "Bezeichnet den Professor, der während einer Disputation als Praeses auftritt und die Disputation leitet."@de, "Refers to the professor who
-		is the praeses - the head - of a disputation."@en.
+		is the praeses - the head - of a disputation."@en .
 		
 :isRespondent rdf:type owl:ObjectProperty ;
   rdfs:domain :Student ;
   rdfs:range :Disputation ;
   rdfs:label "ist Respondent"@de, "is Respondent"@en ;
-	dc:description "Bezeichnet den Respondenten, der sich als Student der Disputation unterzieht."@de, "Refers to the Respondent who as a student is undergoing
-		the act of  disputation."@en.
+	dc:description "Bezeichnet den Respondenten, der sich als Student der Disputation unterzieht."@de, "Refers to the respondent who as a student is undergoing
+		the act of disputation."@en .
+		
+:isOpponent rdf:type owl:ObjectProperty ;
+  rdfs:domain :Student ;
+  rdfs:range :Disputation ;
+  rdfs:label "ist Opponent"@de, "is opponent"@en ;
+	dc:description "Bezeichnet den Opponenten einer Disputation."@de, "Refers to the opponent of a disputation."@en .
 		
 :isDedicatee rdf:type owl:ObjectProperty ;
   rdfs:domain :Person ;
   rdfs:range :Media ;
   rdfs:label "ist Widmungsempfänger"@de, "is dedicatee"@en ;
-	dc:description "Bezeichnet den Widmunsgempfänger einer Publikation."@de, "Refers to the dedicatee of a publication."@en.
+	dc:description "Bezeichnet den Widmunsgempfänger einer Publikation."@de, "Refers to the dedicatee of a publication."@en .
+		
+:isCongratulant rdf:type owl:ObjectProperty ;
+  rdfs:domain :Person ;
+  rdfs:range :Media ;
+  rdfs:label "ist Gratulant"@de, "is congratulant"@en ;
+	dc:description "Bezeichnet den Gratulanten einer Publikation."@de, "Refers to the congratulant of a publication."@en .
 		
 :Media rdf:type owl:Class ;
   rdfs:subClassOf :Concept ;
   rdfs:label "Medien"@de, "media"@en ;
-	dc:description "Bezieht sich auf gedruckte Medien."@de, "Refers to printed media."@en.
+	dc:description "Bezieht sich auf gedruckte Medien."@de, "Refers to printed media."@en .
 
 :Dissertation rdf:type owl:Class ;
   rdfs:subClassOf :Media ;
   rdfs:label "Dissertation"@de, "dissertation"@en ;
 	dc:description "Bezeichnet das gedruckte Medium der Disputation, genannte Dissertation."@de, "Refers to the printed media of a disputation,
-		called dissertation."@en.
+		called dissertation."@en .
 		
 :Textbook rdf:type owl:Class ;
   rdfs:subClassOf :Media ;
