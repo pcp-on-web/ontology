@@ -440,6 +440,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezeichnet das gedruckte Medium der Disputation, genannte Dissertation."@de, "Refers to the printed media of a disputation,
 		called dissertation."@en .
 		
+:dissHasFaculty rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Dissertation ;
+  rdfs:range :Faculty ;
+  rdfs:label "Diss hat Fakultät"@de, "Diss has faculty"@en ;
+	dc:description "Weist eine Dissertation einer Fakultät zu."@de, "Assigns a dissertation to a faculty."@en .
+		
 :Textbook rdf:type owl:Class ;
   rdfs:subClassOf :Publication ;
   rdfs:label "Lehrbuch"@de, "textbook"@en ;
