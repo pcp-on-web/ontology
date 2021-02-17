@@ -119,11 +119,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :LifeEvent ;
   rdfs:label "Tod"@de, "Death"@en ;
 	dc:description "Gibt das Datum oder den Zeitraum des Todes einer Person an."@de, "Gives the date or the period of death of a person."@en .
-		
-:Gender rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Person ;
-  rdfs:label "Geschlecht"@de, "Gender"@en ;
-	dc:description "Geschlecht"@de, "Gender"@en .
 	
 :hasLifeEvent rdf:type owl:DatatypeProperty ;
   rdfs:domain :Person ;
@@ -137,29 +132,23 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Dieses Konzept beschreibt die soziale Herkunft und Familienverhältnisse einer Person."@de, "This concept describes the social origin
 		and the family relationship of a person."@en .
 		
-:Spouse rdf:type owl:ObjectProperty ;
+:spouse rdf:type owl:ObjectProperty ;
   rdfs:domain :Family ;
   rdfs:range :Person ;
   rdfs:label "Ehepartner"@de, "spouse"@en ;
 	dc:description "Bezieht sich auf den Ehepartner (genersiches Maskulinum) einer Person."@de, "Refers to the spouse (generic masculine) of a person."@en .
 		
-:Child rdf:type owl:ObjectProperty ;
+:child rdf:type owl:ObjectProperty ;
   rdfs:domain :Family ;
   rdfs:range :Person ;
   rdfs:label "Kind"@de, "child"@en ;
 	dc:description "Bezieht sich auf das Kind, Pflegekind, Adoptivkind einer Person."@de, "Refers to the cild, foster child, adoptive child of a person."@en .
 	
-:Father rdf:type owl:ObjectProperty ;
+:parent rdf:type owl:ObjectProperty ;
   rdfs:domain :Family ;
   rdfs:range :Person ;
-  rdfs:label "Vater"@de, "father"@en ;
-	dc:description "Bezieht sich auf den Vater eines Professors."@de, "Refers to the father of a professor."@en .
-		
-:Mother rdf:type owl:ObjectProperty ;
-  rdfs:domain :Family ;
-  rdfs:range :Person ;
-  rdfs:label "Mutter"@de, "mother"@en ;
-	dc:description "Bezieht sich auf die Mutter eines Professors."@de, "Refers to the mother of a professor."@en .
+  rdfs:label "Elternteil"@de, "parent"@en ;
+	dc:description "Weist eine Person als Elternteil aus."@de, "Depicts a person as parent."@en .
 		
 :Location rdf:type owl:Class ;
   rdfs:subClassOf :Concept ;
@@ -168,28 +157,28 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		Medien (Verlagsort, Druckort), Ämtern, Landesherrschaft."@de, "Refers to the location of life events of persons, corporate bodies, media
 		(printing, publishing), offices, territories."@en .
 		
-:LocationLifeEvent rdf:type owl:DatatypeProperty ;
+:locationLifeEvent rdf:type owl:DatatypeProperty ;
   rdfs:domain :LifeEvent ;
   rdfs:range :Location ;
   rdfs:label "Ort eines Lebensereignisses"@de, "location of a life event"@en ;
 	dc:description "Bezieht sich auf den geografischen Ort eines Lebensereignisses einer Person."@de,
 		"Refers to the geographical location of a life event of a person."@en .
 		
-:LocationCorporation rdf:type owl:DatatypeProperty ;
+:locationCorporation rdf:type owl:DatatypeProperty ;
   rdfs:domain :Corporation ;
   rdfs:range :Location ;
   rdfs:label "Ort einer Körperschaft"@de, "location of a corporation"@en ;
 	dc:description "Bezieht sich auf den geografischen Ort einer Körperschaft."@de,
 		"Refers to the geographical location of a corporation/corporate body."@en .
 		
-:LocationOffice rdf:type owl:DatatypeProperty ;
+:locationOffice rdf:type owl:DatatypeProperty ;
   rdfs:domain :Office ;
   rdfs:range :Location ;
   rdfs:label "Ort eines Amts"@de, "location of an office"@en ;
 	dc:description "Bezieht sich auf den geografischen Ort eines Amts."@de,
 		"Refers to the geographical location of an office."@en .
 
-:LocationTerritory rdf:type owl:DatatypeProperty ;
+:locationTerritory rdf:type owl:DatatypeProperty ;
   rdfs:domain :Territory ;
   rdfs:range :Location ;
   rdfs:label "Ort einer Landesherrschaft"@de, "location of a territory"@en ;
