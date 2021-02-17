@@ -476,25 +476,19 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :Lecture;
   rdfs:label "Private Vorlesung"@de, "Private Lecture"@en ;
 	dc:description "Bezieht sich auf private Vorlesungen (lectio privata, privatum, privatissimum), die ein Professor in einem kleinen Kreis von Studenten hält."@de, 
-		"Refers to private lectures (lectio privata, privatum, privatissimum), given by a professor for a relatively small amount of students."@en.
-		
-:isOfType rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Lecture ;
-  rdfs:range :PublicLecture, :PrivateLecture ;
-  rdfs:label "Vorlesungstyp"@de, "Lecture type"@en ;
-	dc:description "Gibt an, um welchen Typ Vorlesung es sich handelt."@de, "Refers to the type of lecture."@en.
+		"Refers to private lectures (lectio privata, privatum, privatissimum), given by a professor for a relatively small amount of students."@en .
 	
 :givesLecture rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor;
   rdfs:range :Lecture ;
   rdfs:label "gibt Vorlesung"@de, "gives lecture"@en ;
-	dc:description "Bezeichnet die Person, die eine Vorlesung an der Universität hält."@de, "Refers to the person who gives a lecture at a university."@en.
+	dc:description "Bezeichnet die Person, die eine Vorlesung an der Universität hält."@de, "Refers to the person who gives a lecture at a university."@en .
 		
 :attendsLecture rdf:type owl:ObjectProperty ;
   rdfs:domain :Student;
   rdfs:range :Lecture ;
   rdfs:label "besucht Vorlesung"@de, "attends lecture"@en ;
-	dc:description "Bezieht sich auf die Praktik des Anhörens von Vorlesungen durch Studenten."@de, "Refers to the attendance of students at a lecture."@en.
+	dc:description "Bezieht sich auf die Praktik des Anhörens von Vorlesungen durch Studenten."@de, "Refers to the attendance of students at a lecture."@en .
 		
 :gnd rdf:type owl:DatatypeProperty , owl:FunctionalProperty ;
   rdfs:domain :Person ;
