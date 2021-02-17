@@ -432,7 +432,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :Review rdf:type owl:Class ;
   rdfs:subClassOf :Media ;
   rdfs:label "Rezension"@de, "Review"@en ;
-	dc:description "Bezeichnet eine Rezension in einer Rezensionszeitschrift."@de, "Refers to a review published in a review journal."@en.
+	dc:description "Bezeichnet eine Rezension in einer Rezensionszeitschrift."@de, "Refers to a review published in a review journal."@en .
 
 :isAuthor rdf:type owl:ObjectProperty ;
   rdfs:domain :Person ;
@@ -441,7 +441,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Zeichnet eine Person als einen Autoren aus. Autor wird hier im Falle einer Disputation als weiter Begriff verwendet,
 		da Praeses und Respondent in Literaturdatenbanken oft beide als Autoren einer Dissertation angegeben werden."@de,
 		"Refers to a person as an author of printed media. In case of dissertations the notion author in the context of this ontology model
-		must be considered flexible since literature databases often sign out either praeses or respondent as authors of dissertations."@en.
+		must be considered flexible since literature databases often sign out either praeses or respondent as authors of dissertations."@en .
+		
+:isPublisher rdf:type owl:ObjectProperty ;
+  rdfs:domain :Person ;
+  rdfs:range :Media ;
+  rdfs:label "ist Herausgeber"@de, "is publisher"@en ;
+	dc:description "Zeichnet eine Person als einen Herausgeber aus."@de, "Refers to a person as a publisher."@en .
 
 :Lecture rdf:type owl:Class ;
   rdfs:subClassOf :TeachingPractices;
