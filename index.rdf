@@ -419,13 +419,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		
 :isDedicatee rdf:type owl:ObjectProperty ;
   rdfs:domain :Person ;
-  rdfs:range :Media ;
+  rdfs:range :Publication ;
   rdfs:label "ist Widmungsempfänger"@de, "is dedicatee"@en ;
 	dc:description "Bezeichnet den Widmunsgempfänger einer Publikation."@de, "Refers to the dedicatee of a publication."@en .
 		
 :isCongratulant rdf:type owl:ObjectProperty ;
   rdfs:domain :Person ;
-  rdfs:range :Media ;
+  rdfs:range :Publication ;
   rdfs:label "ist Gratulant"@de, "is congratulant"@en ;
 	dc:description "Bezeichnet den Gratulanten einer Publikation."@de, "Refers to the congratulant of a publication."@en .
 		
