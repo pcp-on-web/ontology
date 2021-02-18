@@ -375,7 +375,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                  xsd:gYear ,
                  xsd:gYearMonth"@en .
 				     
-:hasAcademicDegree rdf:type owl:DatatypeProperty ;
+:hasAcademicDegree rdf:type owl:ObjectProperty ;
   rdfs:domain :Person ;
   rdfs:range :AcademicDegree ;
   rdfs:label "hat akademischen Grad"@de, "has academic degree"@en ;
