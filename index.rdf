@@ -75,7 +75,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezeichnet eine historische Person."@de, "Refers to a historical person."@en .
 		
 :Gender rdf:type owl:Class ;
-  rdfs:subClassOf :LifeEvent ;
+  rdfs:subClassOf :StageOfLife ;
   rdfs:label "Geschlecht"@de, "Gender"@en ;
 	dc:description "Verweist auf das Geschlecht einer Person."@de, "Refers to the gender of a person."@en .
 		
@@ -189,29 +189,28 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                               "Latein Name"@de ;
                    owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
 		
-:LifeEvent rdf:type owl:Class ;
-  rdfs:label "Lebensereignis"@de, "Life event"@en ;
-	dc:description "Dieses Konzept bezieht sich auf einen Lebensabschnitt und dessen Charakterisierung."@de, "This concept refers to a life event and
-		its characterization."@en .
+:StageOfLife rdf:type owl:Class ;
+  rdfs:label "Lebensabschnitt"@de, "Stage of Life"@en ;
+	dc:description "Dieses Konzept bezieht sich auf einen Lebensabschnitt."@de, "This concept refers to a stage of life."@en .
 
 :Birth rdf:type owl:Class ;
-  rdfs:subClassOf :LifeEvent ;
+  rdfs:subClassOf :StageOfLife ;
   rdfs:label "Geburt"@de, "Birth"@en ;
 	dc:description "Gibt das Datum oder den Zeitraum der Geburt einer Person an."@de, "Gives the birthdate or the period of birth of a person."@en .
 		
 :Death rdf:type owl:Class ;
-  rdfs:subClassOf :LifeEvent ;
+  rdfs:subClassOf :StageOfLife ;
   rdfs:label "Tod"@de, "Death"@en ;
 	dc:description "Gibt das Datum oder den Zeitraum des Todes einer Person an."@de, "Gives the date or the period of death of a person."@en .
 	
-:hasLifeEvent rdf:type owl:DatatypeProperty ;
+:hasStageOfLife rdf:type owl:DatatypeProperty ;
   rdfs:domain :Person ;
-  rdfs:range :LifeEvent ;
+  rdfs:range :StageOfLife ;
   rdfs:label "hat Lebensereignis"@de, "has life event"@en ;
 	dc:description "Beschreibt, dass eine Person einen Lebensabschnitt hat."@de, "Refers to a life event of a person."@en .
 		
 :Family rdf:type owl:Class ;
-  rdfs:subClassOf :LifeEvent ;
+  rdfs:subClassOf :StageOfLife ;
   rdfs:label "Familie"@de, "family"@en ;
 	dc:description "Dieses Konzept beschreibt die soziale Herkunft und Familienverhältnisse einer Person."@de, "This concept describes the social origin
 		and the family relationship of a person."@en .
@@ -235,14 +234,14 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Weist eine Person als Elternteil aus."@de, "Depicts a person as parent."@en .
 		
 :Location rdf:type owl:Class ;
-  rdfs:subClassOf :LifeEvent ;
+  rdfs:subClassOf :StageOfLife ;
   rdfs:label "Ort"@de, "location"@en ;
 	dc:description "Bezieht sich auf den geografischen Ort eines Lebensereignisses einer Person sowie auf den Ort von Körperschaften,
 		Medien (Verlagsort, Druckort), Ämtern, Landesherrschaft."@de, "Refers to the location of life events of persons, corporate bodies, media
 		(printing, publishing), offices, territories."@en .
 		
-:locationLifeEvent rdf:type owl:DatatypeProperty ;
-  rdfs:domain :LifeEvent ;
+:locationStageOfLife rdf:type owl:DatatypeProperty ;
+  rdfs:domain :StageOfLife ;
   rdfs:range :Location ;
   rdfs:label "Ort eines Lebensereignisses"@de, "location of a life event"@en ;
 	dc:description "Bezieht sich auf den geografischen Ort eines Lebensereignisses einer Person."@de,
@@ -270,7 +269,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		"Refers to the geographical location of a territory."@en .	
 	
 :Denomination rdf:type owl:Class ;
-  rdfs:subClassOf :LifeEvent ;
+  rdfs:subClassOf :StageOfLife ;
   rdfs:label "Konfession"@de, "Denomination"@en ;
 	dc:description "Religionszugehörigkeit oder Glaubenbekenntnis einer Person."@de , "The religious denomination of a person."@en .
 		
@@ -282,12 +281,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		"Refers to the religious denomination of a person."@en .
 	
 :Education  rdf:type owl:Class ;
-  rdfs:subClassOf :LifeEvent ;
+  rdfs:subClassOf :StageOfLife ;
   rdfs:label "Bildungsweg"@de, "Education"@en ;
 	dc:description "Beschreibt den Bildungsweg einer Person."@de , "Decribes the education of a person."@en .
 		
 :Corporation rdf:type owl:Class ;
-  rdfs:subClassOf :LifeEvent ;
+  rdfs:subClassOf :StageOfLife ;
   rdfs:label "Körperschaft"@de, "Corporation"@en ;
 	dc:description "Bezeichnet eine Körperschaft."@de, "Refers to a corporation or corporate body."@en .
 		
@@ -312,7 +311,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		Early Modern Universities."@en .
 		
 :AcademicDegree rdf:type owl:Class ;
-  rdfs:subClassOf :LifeEvent ;
+  rdfs:subClassOf :StageOfLife ;
   rdfs:label "Akademische Grade"@de, "Academic Degree"@en ;
 	dc:description ".."@de , "..."@en .
 		
@@ -379,18 +378,18 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezeichnet den Professor als Student."@de, "Refers to the Professor as a student."@en .
 		
 :Territory rdf:type owl:Class ;
-  rdfs:subClassOf :Concept ;
+  rdfs:subClassOf :StageOfLife ;
   rdfs:label "Landesherrschaft"@de, "Territory"@en ;
 	dc:description "Bezeichnet die Landesherrschaft eines Territoriums."@de , "Refers to the authority by a ruler or group of rulers of a territory."@en .
 	
 :Patron rdf:type owl:Class ;
-  rdfs:subClassOf :LifeEvent ;
+  rdfs:subClassOf :StageOfLife ;
   rdfs:label "Patron"@de, "Patron"@en ;
 	dc:description "Bezieht sich auf den Patron einer Person; hier auf in den Quellen namentlich erwähnten Förderer eines Professors und dessen Karriere."@de ,
 		"Refers to the patron of a person; here to the Patron of a professor's career who is known by the sources."@en .
 
 :Office rdf:type owl:Class ;
-  rdfs:subClassOf :LifeEvent ;
+  rdfs:subClassOf :StageOfLife;
   rdfs:label "Amt"@de, "Office"@en ;
 	dc:description "Bezieht sich auf ein Amt, das eine Person bekleidet."@de , "Refers to an office a person holds."@en .
 		
@@ -407,27 +406,27 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		the University."@en .
 	
 :Network rdf:type owl:Class ;
-  rdfs:subClassOf :LifeEvent ;
+  rdfs:subClassOf :StageOfLife ;
   rdfs:label "Netzwerk"@de, "Network"@en ;
 	dc:description "in Arbeit: Dieses Konzept bezieht sich auf ... Personengeflechte ... dynamisch ... Kommunikationsräume ... Interaktion"@de , "..."@en .
 	
 :Prestige rdf:type owl:Class ;
-  rdfs:subClassOf :LifeEvent ;
+  rdfs:subClassOf :StageOfLife ;
   rdfs:label "Prestige"@de, "Prestige"@en ;
 	dc:description "..."@de , "..."@en .
 	
 :Candidature rdf:type owl:Class ;
-  rdfs:subClassOf :LifeEvent ;
+  rdfs:subClassOf :StageOfLife ;
   rdfs:label "Bewerbung"@de, "Candidature"@en ;
 	dc:description "..."@de , "..."@en .
 
 :Recommendation  rdf:type owl:Class ;
-  rdfs:subClassOf :LifeEvent ;
+  rdfs:subClassOf :StageOfLife ;
   rdfs:label "Empfehlungen"@de, "Recommendation"@en ;
   	dc:description "..."@de , "..."@en .
 		
 :TeachingPractices rdf:type owl:Class ;
-  rdfs:subClassOf :LifeEvent;
+  rdfs:subClassOf :StageOfLife ;
   rdfs:label "Lehrpraktiken"@de, "Teaching Practices"@en ;
   	dc:description "Beschreibt akademische Lehrpraktiken, die ein Professor an der Universität durchführt und welche durch Statuten, weitere Regularien 
 		und/oder durch Gewohnheit geregelt sind."@de, "Describes academic teaching practices which are regulated by the University's statutes
@@ -487,7 +486,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezeichnet den Gratulanten einer Publikation."@de, "Refers to the congratulant of a publication."@en .
 		
 :Publication rdf:type owl:Class ;
-  rdfs:subClassOf :LifeEvent ;
+  rdfs:subClassOf :StageOfLife ;
   rdfs:label "Publikation"@de, "publication"@en ;
 	dc:description "Bezieht sich auf Publikationen."@de, "Refers to publications."@en .
 
