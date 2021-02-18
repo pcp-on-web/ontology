@@ -253,6 +253,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Ort einer Körperschaft"@de, "location of a corporation"@en ;
 	dc:description "Bezieht sich auf den geografischen Ort einer Körperschaft."@de,
 		"Refers to the geographical location of a corporation/corporate body."@en .
+				     
+:locationEducation rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Education ;
+  rdfs:range :Location ;
+  rdfs:label "Ort der Ausbildung"@de, "location of education"@en ;
+	dc:description "Bezieht sich auf den geografischen Ort der Ausbildung."@de,
+		"Refers to the geographical location of education."@en .
 		
 :locationOffice rdf:type owl:DatatypeProperty ;
   rdfs:domain :Office ;
