@@ -655,13 +655,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Mitgliedschaft"@de, "Membership"@en ;
 	dc:description "Verweist auf Mitgliedschaften einer Person in soziokulturellen und/oder politischen Gesellschaften und Zirkeln."@de, "Refers to the
 		membership of a person at sociocultural and/or political societies and/or corporations."@en .
-		
-:Collection rdf:type owl:Class ;
-  rdfs:subClassOf :StageOfLife ;
-  rdfs:label "Sammlung"@de, "Sammlung"@en ;
-	dc:description "Verweist auf Sammlungen einer Person, z.B. Privatbibliotheken, Münzen und anderweitige fachspezifische Sammlungen, die bspw. für eine Person
-		im Berufungsverfahren auf eine Professur von Bedeutung gewesen sein könnte."@de "Refers to a collection of a person, like private libraries or coins etc.
-		which could have been important for the vocation of a professorship."@en .
 	
 
 		
