@@ -361,7 +361,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :Doctor rdf:type owl:Class ;
   rdfs:subClassOf :AcademicDegree ;
   rdfs:label "Doctor"@de, "Doctor"@en ;
-	dc:description "Bezeichnet den akademischen Grad eines Doktoren. Kürzel: Dr."@de , "Describes the academic degree of a doctor. Abbreviation: Doc."@en .
+	dc:description "Bezeichnet den akademischen Grad eines Doktoren. Kürzel: Dr."@de , "Describes the academic degree of a doctor. Abbreviation: Dr."@en .
 				     
 :academicDegreeDate rdf:type owl:DatatypeProperty, owl:FunctionalProperty ;
   rdfs:domain :AcademicDegree ;
