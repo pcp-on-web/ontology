@@ -339,6 +339,18 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :StageOfLife ;
   rdfs:label "Akademische Grade"@de, "Academic Degree"@en ;
 	dc:description ".."@de , "..."@en .
+				     
+:academicDegreeDate rdf:type owl:DatatypeProperty, owl:FunctionalProperty ;
+  rdfs:domain :AcademicDegree ;
+  rdfs:range rdfs:Literal ;
+  rdfs:label "Date of Academic Degree"@en, "Datum des Akademischen Grads"@de ;
+  	dc:descritption "Gibt den Zeitpunkt an wann ein akademischer Grad erworben wurde."@de, "Gives the date of earning a degree from a valid datatype
+		 xsd:date ,
+                 xsd:gDay ,
+                 xsd:gMonth ,
+                 xsd:gMonthDay ,
+                 xsd:gYear ,
+                 xsd:gYearMonth"@en .
 		
 :isStudentAt rdf:type owl:ObjectProperty ;
   rdfs:domain :Student ;
