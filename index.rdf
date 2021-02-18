@@ -309,6 +309,18 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Studium"@de, "University studies"@en ;
 	dc:description "Bezieht sich auf das Studium einer Person an einer vormodernen Universität."@de, "Refers to the university studies of a person at
 		Early Modern Universities."@en .
+				    
+:Enrollment rdf:type owl:Class ;
+  rdfs:subClassOf :UniversityStudies ;
+  rdfs:label "Immatrikulation"@de, "Enrollment"@en ;
+	dc:description "Bezieht sich auf die Einschreibung einer Person in das Universitätsverzeichnis, die (Universitäts-)Matrikel."@de, "Refers to the enrollment of a person
+		into the universities' directory, the (university) 'Matrikel'."@en .
+
+:hasEnrollment rdf:type owl:ObjectProperty ;
+  rdfs:domain :Person ;
+  rdfs:range :Enrollment ;
+  rdfs:label "hat Matrikel"@de, "has enrollment"@en ;
+	dc:description "Verweist auf eine Immatrikulation einer Person an einer Universität."@de, "Refers to the enrollment of a person at a university."@en .
 		
 :AcademicDegree rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
