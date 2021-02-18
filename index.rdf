@@ -111,11 +111,83 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Außerordentlicher Professor"@de, "Associate Professor"@en ;
 	dc:description "Bezeichnet einen Professor, der eine außerordentliche Professur (aO) inne hat."@de, "A professor who is an associate professor."@en .
 
+###  http://purl.org/pcp-on-web/ontology#surname
 :surname rdf:type owl:DatatypeProperty ;
   rdfs:domain :Person ;
   rdfs:range rdfs:Literal ;
   rdfs:label "Nachname"@de , "Surname"@en ;
-  rdfs:comment "Nachname einer Person"@de , "The surname of a person"@en .
+  rdfs:comment "Nachname einer Person"@de , "The surname of a person"@en ;
+		         owl:versionInfo "0.1 initial creation date: 24.05.2007"^^xsd:string ,
+                         "2.0 stable"^^xsd:string ,
+                         "version 0.2  10.03.2008"^^xsd:string .
+
+###  http://purl.org/pcp-on-web/ontology#additionToSurname
+:additionToSurname rdf:type owl:DatatypeProperty ,
+                            owl:FunctionalProperty ;
+                   rdfs:domain :Person ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "Additions to the surname can be of, etc."@en ,
+                                "Namenszusätze sind zum Beispiel von, zu, etc."@de ;
+                   rdfs:label "Additions to Surename"@en ,
+                              "Namenszusatz"@de ;
+                   owl:versionInfo "0.2 changed Domain from Professor to Person 0.1 initial creation - 24.05.07"^^xsd:string ,
+                                   "2.0 stable"^^xsd:string .
+
+
+###  http://purl.org/pcp-on-web/ontology#alternativeWritingOfSurname
+:alternativeWritingOfSurname rdf:type owl:DatatypeProperty ,
+                                      owl:FunctionalProperty ;
+                             rdfs:domain :Person ;
+                             rdfs:range xsd:string ;
+                             <http://ns.ontowiki.net/SysOnt/order> "20"^^xsd:string ;
+                             rdfs:comment "Bsp: Meier, Meyer, Maier"@de ,
+                                          "For Example Meier, Meyer, Maier"@en ;
+                             rdfs:label "Alternative Namensschreibweisen"@de ,
+                                        "Alternative writings of the surname"@en ;
+                             owl:versionInfo "0.1 initial creation - 24.05.07"^^xsd:string ,
+                                             "0.2 changed Domain from Professor to Person"^^xsd:string ,
+                                             "2.0 under discussion"^^xsd:string .
+				     
+###  http://purl.org/pcp-on-web/ontology#firstName
+:firstName rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Person ;
+           rdfs:range rdfs:Literal;
+           rdfs:comment "Rufname einer Person"@de ,
+                        "The given first name of a person"@en ,
+                        "given name of a person"@en ;
+           rdfs:label "First Name"@en ,
+                      "Rufname"@de ;
+           owl:versionInfo "0.1 initial creation date: 18.05.2015"^^xsd:string ,
+                           "0.1 initial creation date: 29.01.2015"^^xsd:string .
+
+
+###  http://purl.org/pcp-on-web/ontology#forename
+:forename rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Person ;
+          rdfs:range rdfs:Literal;
+          rdfs:comment "Forename(s) of a person, seperated by space"@en ,
+                       "Vorname(n) einer Person, getrennt mit Leerzeichen"@de ;
+          rdfs:label "Forename"@en ,
+                     "Vorname"@de ;
+          owl:versionInfo "0.1 initial creation date: 18.05.2015"^^xsd:string .
+
+:surnameVariant rdf:type owl:DatatypeProperty ;
+					rdfs:domain :Person ;
+					rdfs:range rdfs:Literal ;
+					rdfs:comment "Alternative spelling of a person's last name."@en ,
+								"Alternative Schreibweise des Nachnamens einer Person."@de ;
+					rdfs:label "Surname Variant"@en ,
+							  "Name Variant"@de ;
+					owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
+
+:latinSurname rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Person ;
+				   rdfs:range rdfs:Literal ;
+                   rdfs:comment "Latinized last name of a person."@en ,
+                                "Latinisierter Nachname einer Person."@de ;
+                   rdfs:label "Latin Last Name"@en ,
+                              "Latein Name"@de ;
+                   owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
 		
 :LifeEvent rdf:type owl:Class ;
   rdfs:label "Lebensereignis"@de, "Life event"@en ;
