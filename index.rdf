@@ -332,7 +332,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :enrollmentDate rdf:type owl:DatatypeProperty, owl:FunctionalProperty ;
   rdfs:domain :Enrollment ;
   rdfs:range rdfs:Literal;
-  rdfs:label "Date"@en, "Datum"@de ;
+  rdfs:label "Date of enrollment"@en, "Datum der Immatrikulation"@de ;
   	dc:descritption "Zeitangabe einer Immatrikulation."@de, "The date of enrollment of a person at university from a valid datatype
 		 xsd:date ,
                  xsd:gDay ,
@@ -340,7 +340,14 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                  xsd:gMonthDay ,
                  xsd:gYear ,
                  xsd:gYearMonth"@en .
-		
+				     
+:enrollmentSemester rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Enrollment ;
+  rdfs:range :Person ;
+  rdfs:Literal ;
+  rdfs:label "Semester der Immatrikulation"@de, "Semester of enrollment"@en ;
+	dc:description "Nennt das Semester der Immatrikulation einer Person."@de, "Gives information of the semester in which a person got enrolled."@en .
+				     
 :AcademicDegree rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
   rdfs:label "Akademische Grade"@de, "Academic Degree"@en ;
