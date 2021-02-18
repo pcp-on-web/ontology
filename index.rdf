@@ -72,8 +72,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 :ProfessorialCareer rdf:type owl:Class ;
   rdfs:label "Professorenkarriere"@de, "Professorial Career"@en ;
-	dc:description "Dieses Konzept bezeichnet eine Professorenkarriere und ergibt sich aus der Summe aller mit ihr verbundenen Konzepte und Eigenschaften."@de , 
-		"This concept of professorial career is constituted by the total of influencing concepts and properties."@en .
+	dc:description "Arbeitskonzeptknoten: Dieses Konzept bezeichnet eine Professorenkarriere und ergibt sich aus der Summe aller mit ihr verbundenen Konzepte und Eigenschaften."@de , 
+		"Concept knot work-in-progress: This concept of professorial career is constituted by the total of influencing concepts and properties."@en .
 		
 :Concept rdf:type owl:Class ;
   rdfs:label "Konzept"@de, "Concept"@en ;
@@ -84,7 +84,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezeichnet eine historische Person."@de, "Refers to a historical person."@en .
 		
 :Gender rdf:type owl:Class ;
-  rdfs:subClassOf :Concept ;
+  rdfs:subClassOf :LifeEvent ;
   rdfs:label "Geschlecht"@de, "Gender"@en ;
 	dc:description "Verweist auf das Geschlecht einer Person."@de, "Refers to the gender of a person."@en .
 		
@@ -172,7 +172,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Weist eine Person als Elternteil aus."@de, "Depicts a person as parent."@en .
 		
 :Location rdf:type owl:Class ;
-  rdfs:subClassOf :Concept ;
+  rdfs:subClassOf :LifeEvent ;
   rdfs:label "Ort"@de, "location"@en ;
 	dc:description "Bezieht sich auf den geografischen Ort eines Lebensereignisses einer Person sowie auf den Ort von Körperschaften,
 		Medien (Verlagsort, Druckort), Ämtern, Landesherrschaft."@de, "Refers to the location of life events of persons, corporate bodies, media
@@ -207,7 +207,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		"Refers to the geographical location of a territory."@en .	
 	
 :Denomination rdf:type owl:Class ;
-  rdfs:subClassOf :Concept ;
+  rdfs:subClassOf :LifeEvent ;
   rdfs:label "Konfession"@de, "Denomination"@en ;
 	dc:description "Religionszugehörigkeit oder Glaubenbekenntnis einer Person."@de , "The religious denomination of a person."@en .
 		
@@ -224,7 +224,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Beschreibt den Bildungsweg einer Person."@de , "Decribes the education of a person."@en .
 		
 :Corporation rdf:type owl:Class ;
-  rdfs:subClassOf :Concept ;
+  rdfs:subClassOf :LifeEvent ;
   rdfs:label "Körperschaft"@de, "Corporation"@en ;
 	dc:description "Bezeichnet eine Körperschaft."@de, "Refers to a corporation or corporate body."@en .
 		
@@ -321,13 +321,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezeichnet die Landesherrschaft eines Territoriums."@de , "Refers to the authority by a ruler or group of rulers of a territory."@en .
 	
 :Patron rdf:type owl:Class ;
-  rdfs:subClassOf :Concept ;
+  rdfs:subClassOf :LifeEvent ;
   rdfs:label "Patron"@de, "Patron"@en ;
 	dc:description "Bezieht sich auf den Patron einer Person; hier auf in den Quellen namentlich erwähnten Förderer eines Professors und dessen Karriere."@de ,
 		"Refers to the patron of a person; here to the Patron of a professor's career who is known by the sources."@en .
 
 :Office rdf:type owl:Class ;
-  rdfs:subClassOf :Concept ;
+  rdfs:subClassOf :LifeEvent ;
   rdfs:label "Amt"@de, "Office"@en ;
 	dc:description "Bezieht sich auf ein Amt, das eine Person bekleidet."@de , "Refers to an office a person holds."@en .
 		
@@ -344,33 +344,33 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		the University."@en .
 	
 :Network rdf:type owl:Class ;
-  rdfs:subClassOf :Concept ;
+  rdfs:subClassOf :LifeEvent ;
   rdfs:label "Netzwerk"@de, "Network"@en ;
 	dc:description "in Arbeit: Dieses Konzept bezieht sich auf ... Personengeflechte ... dynamisch ... Kommunikationsräume ... Interaktion"@de , "..."@en .
 	
 :Prestige rdf:type owl:Class ;
-  rdfs:subClassOf :Concept ;
+  rdfs:subClassOf :LifeEvent ;
   rdfs:label "Prestige"@de, "Prestige"@en ;
 	dc:description "..."@de , "..."@en .
 	
 :Candidature rdf:type owl:Class ;
-  rdfs:subClassOf :Concept ;
+  rdfs:subClassOf :LifeEvent ;
   rdfs:label "Bewerbung"@de, "Candidature"@en ;
 	dc:description "..."@de , "..."@en .
 
 :Recommendation  rdf:type owl:Class ;
-  rdfs:subClassOf :Concept ;
+  rdfs:subClassOf :LifeEvent ;
   rdfs:label "Empfehlungen"@de, "Recommendation"@en ;
   	dc:description "..."@de , "..."@en . 
 
 :influence rdf:type owl:ObjectProperty;
-  rdfs:domain :Concept;
+  rdfs:domain :LifeEvent;
   rdfs:range :ProfessorialCareer ;
   rdfs:label "beeinflusst"@de, "influence"@en ;  
   	dc:description "Ein Konzept beeinflusst das Projekt."@de , "A concept influences the project."@de.
 		
 :TeachingPractices rdf:type owl:Class ;
-  rdfs:subClassOf :Concept;
+  rdfs:subClassOf :LifeEvent;
   rdfs:label "Lehrpraktiken"@de, "Teaching Practices"@en ;
   	dc:description "Beschreibt akademische Lehrpraktiken, die ein Professor an der Universität durchführt und welche durch Statuten, weitere Regularien 
 		und/oder durch Gewohnheit geregelt sind."@de, "Describes academic teaching practices which are regulated by the University's statutes
@@ -430,7 +430,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezeichnet den Gratulanten einer Publikation."@de, "Refers to the congratulant of a publication."@en .
 		
 :Publication rdf:type owl:Class ;
-  rdfs:subClassOf :Concept ;
+  rdfs:subClassOf :LifeEvent ;
   rdfs:label "Publikation"@de, "publication"@en ;
 	dc:description "Bezieht sich auf Publikationen."@de, "Refers to publications."@en .
 
