@@ -56,10 +56,10 @@ xsd:gYear rdf:type rdfs:Datatype .
 xsd:gYearMonth rdf:type rdfs:Datatype .		
 		
 :date rdf:type owl:DatatypeProperty, owl:FunctionalProperty ;
-  rdfs:domain :LifeEvent ;
+  rdfs:domain :StageOfLife ;
   rdfs:range rdfs:Literal;
   rdfs:label "Date"@en, "Datum"@de ;
-  	dc:descritption "Zeitangabe eines Lebensereignisses"@de, "The date or timespan of a life event from a valid datatype
+  	dc:descritption "Zeitangabe eines Lebensabschnitts."@de, "The date or timespan of a stage of life from a valid datatype
 		 xsd:date ,
                  xsd:gDay ,
                  xsd:gMonth ,
