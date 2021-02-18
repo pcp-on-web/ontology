@@ -75,10 +75,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Arbeitskonzeptknoten: Dieses Konzept bezeichnet eine Professorenkarriere und ergibt sich aus der Summe aller mit ihr verbundenen Konzepte und Eigenschaften."@de , 
 		"Concept knot work-in-progress: This concept of professorial career is constituted by the total of influencing concepts and properties."@en .
 		
-:Concept rdf:type owl:Class ;
-  rdfs:label "Konzept"@de, "Concept"@en ;
-	dc:description "..."@de , "..."@en .
-		
 :Person rdf:type owl:Class ;
   rdf:label "Person"@de, "Person"@en ;
 	dc:description "Bezeichnet eine historische Person."@de, "Refers to a historical person."@en .
