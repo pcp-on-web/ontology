@@ -381,9 +381,21 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezeichnet die Medzinische Fakultät an einer Universität."@de, "Refers to the Faculty of Medicine at Universities."@en .
 
 :Chair rdf:type owl:Class ;
-  rdfs:subClassOf :University ;
+  rdfs:subClassOf :Faculty ;
   rdfs:label "Lehrstuhl"@de, "Chair"@en ;
 	dc:description "Bezeichnet den Lehrstuhl bzw. das Fachgebiet einer Universitätsfakultät."@de, "Designates the chair or subject at university faculties."@en .
+				     
+:chairDate rdf:type owl:DatatypeProperty, owl:FunctionalProperty ;
+  rdfs:domain :Chair ;
+  rdfs:range rdfs:Literal ;
+  rdfs:label "timespan of chair"@en, "Zeitspanne eines Lehrstuhls"@de ;
+  	dc:descritption "Gibt die Zeitspanne an, in welcher ein Lehrstuhl von einem Professor besetzt war."@de, "Gives the timespan a chair was owned by a professor.
+		 xsd:date ,
+                 xsd:gDay ,
+                 xsd:gMonth ,
+                 xsd:gMonthDay ,
+                 xsd:gYear ,
+                 xsd:gYearMonth"@en .
 		
 :organizedIn rdf:type owl:ObjectProperty ;
   rdfs:domain :Faculty ;
