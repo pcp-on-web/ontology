@@ -343,25 +343,25 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :Baccalaureus rdf:type owl:Class ;
   rdfs:subClassOf :AcademicDegree ;
   rdfs:label "Baccalaureus"@de, "Baccalaureus"@en ;
-	dc:description "Bezeichnet den akademischen Grad eines Baccalaren/Baccalaureus, kurz Bacc."@de , "Describes the academic degree of a bachelor/baccalaureus, 
-			short Bacc."@en .
+	dc:description "Bezeichnet den akademischen Grad eines Baccalaren/Baccalaureus. Kürzel: Bacc."@de , "Describes the academic degree of a bachelor/baccalaureus. 
+			Abbreviation: Bacc."@en .
 				     
 :Licentiatus rdf:type owl:Class ;
   rdfs:subClassOf :AcademicDegree ;
   rdfs:label "Lizenziat"@de, "Licentiate"@en ;
-	dc:description "Bezeichnet den akademischen Grad eines Lizenziaten, eines Baccalaren mit Lehrbefugnis oder Doktor der evang. Theologie, kurz lic."@de , 
-			"Describes the academic degree of a Licentiate, which means a bachelor/baccalaureus with the right to teach, or the academic title of doctor
-			of Evangelic theology (valid until 1947 in Germany), short lic."@en .
+	dc:description "Bezeichnet den akademischen Grad eines Lizenziaten, eines Baccalaren mit Lehrbefugnis. Zugleich einen Doktor der evang. Theologie
+			(bis 1947 an deutschen Hochschulen). Kürzel: lic."@de , "Describes the academic degree of a Licentiate, which means a bachelor/baccalaureus
+			with the right to teach. Also the academic title of a doctor of Evangelic theology (valid until 1947 in Germany). Abbreviation: lic."@en .
 				     
 :Magister rdf:type owl:Class ;
   rdfs:subClassOf :AcademicDegree ;
   rdfs:label "Magister"@de, "Magister"@en ;
-	dc:description "Bezeichnet den akademischen Grad eines Magister, kurz Mag."@de , "Describes the academic degree of a magister, short Mag."@en .
+	dc:description "Bezeichnet den akademischen Grad eines Magister. Kürzel: Mag."@de , "Describes the academic degree of a magister. Abbreviation: Mag."@en .
 				     
 :Doctor rdf:type owl:Class ;
   rdfs:subClassOf :AcademicDegree ;
   rdfs:label "Doctor"@de, "Doctor"@en ;
-	dc:description "Bezeichnet den akademischen Grad eines Doktor, kurz Dr."@de , "Describes the academic degree of a doctor, short Doc."@en .
+	dc:description "Bezeichnet den akademischen Grad eines Doktoren. Kürzel: Dr."@de , "Describes the academic degree of a doctor. Abbreviation: Doc."@en .
 				     
 :academicDegreeDate rdf:type owl:DatatypeProperty, owl:FunctionalProperty ;
   rdfs:domain :AcademicDegree ;
