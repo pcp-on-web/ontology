@@ -622,13 +622,14 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :PublicLecture rdf:type owl:Class ;
   rdfs:subClassOf :Lecture;
   rdfs:label "Öffentliche Vorlesung"@de, "Public Lecture"@en ;
-	dc:description "Bezieht sich auf öffentliche Vorlesungen (lectio publica), die ein Professor hält."@de, "Refers to public lectures (lectio publica), given by a professor."@en.
+	dc:description "Bezieht sich auf öffentliche Vorlesungen (lectio publica), die ein Professor hält."@de, "Refers to public lectures (lectio publica), 
+		given by a professor."@en.
 		
 :PrivateLecture rdf:type owl:Class ;
   rdfs:subClassOf :Lecture;
   rdfs:label "Private Vorlesung"@de, "Private Lecture"@en ;
-	dc:description "Bezieht sich auf private Vorlesungen (lectio privata, privatum, privatissimum), die ein Professor in einem kleinen Kreis von Studenten hält."@de, 
-		"Refers to private lectures (lectio privata, privatum, privatissimum), given by a professor for a relatively small amount of students."@en .
+	dc:description "Bezieht sich auf private Vorlesungen (lectio privata, privatum, privatissimum), die ein Professor in einem kleinen Kreis von Studenten hält."
+		@de, "Refers to private lectures (lectio privata, privatum, privatissimum), given by a professor for a relatively small amount of students."@en .
 	
 :givesLecture rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor;
@@ -647,6 +648,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range rdfs:Literal ;
   rdfs:label "GND/PND"@de, "GND/PND"@en ;
   	dc:description "GND oder PND Normadatei einer Person."@de, "GND or PND norm data of a person."@en .
+
+### Besser isMemberOf und dann an corporation und network andocken? ###
+:Membership rdf:type owl:Class ;
+  rdfs:subClassOf :StageOfLife ;
+  rdfs:label "Mitgliedschaft"@de, "Membership"@en ;
+	dc:description "Verweist auf Mitgliedschaften einer Person in soziokulturellen und/oder politischen Gesellschaften und Zirkeln."@de, "Refers to the
+		membership of a person at sociocultural and/or political societies and/or corporations."@en .
 		
 	
 
