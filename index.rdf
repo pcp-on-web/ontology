@@ -627,6 +627,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Dissertation"@de, "dissertation"@en ;
 	dc:description "Bezeichnet das gedruckte Medium der Disputation, genannte Dissertation."@de, "Refers to the printed media of a disputation,
 		called dissertation."@en .
+				     
+:AuctionCatalogue rdf:type owl:Class ;
+  rdfs:subClassOf :PublicationType ;
+  rdfs:label "Auktionskatalog"@de, "auction catalogue"@en ;
+	dc:description "Bezeichnet einen Auktionskatalog."@de, "Refers to an auction catalogue."@en .				     
 		
 :dissHasFaculty rdf:type owl:DatatypeProperty ;
   rdfs:domain :Dissertation ;
@@ -761,7 +766,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :Collection ;
   rdfs:label "Privatbibliothek"@de, "Private library"@en ;
 	dc:description "Verweist auf die Privatbibliothek einer Person und kann u.U. durch publizierte Auktionskataloge erschlossen werden."@de, "Refers to the private
-		library of a person. Can be reconstructed by published auction catalogues."@en .  
+		library of a person. Can be reconstructed by published auction catalogues."@en .
+				     
+:hasAuctionCatalogue rdf:type owl:DataProperty ;
+  rdfs:domain :PrivateLibrary ;
+  rdfs:range :AuctionCatalogue ;
+  rdfs:label "hat Auktionskatalog"@de, "has auction catalogue"@en ;
+	dc:description "Verknüpft eine Privatbibliothek mit einem Auktionskatalog."@de, "Adds an auction catalogue to a private library."@en .
 				   
 ### VD 16-18 ###
 		
