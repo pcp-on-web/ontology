@@ -723,26 +723,33 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:domain :Membership ;
   rdfs:range :Corporation ;
   rdfs:label "Mitgliedschaft hat Körperschaft"@de, "Membership has corporation"@en ;
-	dc:description "Weist eine Mitgliedschaft einer Körperschaft zu."@de, "Adds a memebership to a corpration."@en .
-				    
+	dc:description "Weist eine Mitgliedschaft einer Körperschaft zu."@de, "Adds a memebership to a corpration."@en .				    
 				     
 :LearnedSociety rdf:type owl:Class ;
   rdfs:subClassOf :Membership ;
   rdfs:label "Gelehrte Gesellschaft"@de, "Learned Society"@en ;
-	dc:description "Bezeichnet eine Gelehrte Gesellschaft, die sich "@de, "Refers to a learned society."@en .
+	dc:description "Bezeichnet eine Gelehrte Gesellschaft, die sich einer bestimmten Geistesströmung oder Disziplin widmete und aus Gelehrten und Gebildeten 
+		bestand, zumeist regional begrenzt agierte."@de, "Refers to a learned society which dealt with a certain discipline or ideas which gathered learned
+		and educated people, mostly from a limited space or region."@en .
 				     
 :Academy rdf:type owl:Class ;
   rdfs:subClassOf :Membership ;
   rdfs:label "Akademie"@de, "Academy"@en ;
 	dc:description "Bezeichnet eine Sozietät mit strukturierter Körperschaft und obrigkeitlicher Protégierung, z.B. die diversen Akademien der Wissenschaften in
-		Europa"@de, "Refers to ..."@en .
+		Europa"@de, "Refers to a society with structured corporate body and most commonly protection and financing by the territory ruler, like the diverse "@en .
 				     
 :SecretSociety rdf:type owl:Class ;
   rdfs:subClassOf :Membership ;
   rdfs:label "Geheimgesellschaft"@de, "Secret Society"@en ;
 	dc:description "Bezeichnet Geheimgesellschaften wie Freimaurer oder Illuminaten, Studentenverbindungen etc."@de, "Refers to secret societies like Freemasons
 		or Illuminati, student societies etc."@en .
-		
+
+:FurtherSociety rdf:type owl:Class ;
+  rdfs:subClassOf :Membership ;
+  rdfs:label "Weitere Gesellschaft"@de, "Further Society"@en ;
+	dc:description "Bezieht sich auf weitere Formen von soziokulturellen Gesellschaften wie literarische Salons oder Lesegesellschaften."@de, "Refers to further 
+		societies like literary Salons or reading societies."@en .				    
+
 :Collection rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
   rdfs:label "Sammlung"@de, "collection"@en ;
