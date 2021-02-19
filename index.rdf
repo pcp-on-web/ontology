@@ -610,7 +610,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :Review rdf:type owl:Class ;
   rdfs:subClassOf :PublicationType ;
   rdfs:label "Rezension"@de, "Review"@en ;
-	dc:description "Bezeichnet eine Rezension in einer Rezensionszeitschrift."@de, "Refers to a review published in a review journal."@en .		
+	dc:description "Bezeichnet eine Rezension in einer Rezensionszeitschrift."@de, "Refers to a review published in a review journal."@en .
+				     
+:Pamphlet rdf:type owl:Class ;
+  rdfs:subClassOf :PublicationType ;
+  rdfs:label "Streitschrift"@de, "Pamphlet"@en ;
+	dc:description "Bezeichnet eine Streitschrift."@de, "Refers to a pamphlet."@en .
 
 :isAuthor rdf:type owl:ObjectProperty ;
   rdfs:domain :Person ;
