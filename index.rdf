@@ -660,7 +660,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :StageOfLife ;
   rdfs:label "Sammlung"@de, "collection"@en ;
 	dc:description "Verweist auf Sammlungen einer Person, z.B. Privatbibliotheken, Münzen und anderweitige fachspezifische Sammlungen, die bspw. für eine Person
-		im Berufungsverfahren auf eine Professur von Bedeutung gewesen sein könnten."@de "Refers to a collection of a person, like private libraries, coins 
+		im Berufungsverfahren auf eine Professur von Bedeutung gewesen sein könnten."@de, "Refers to a collection of a person, like private libraries, coins 
 		and other subject specific collections,	which could have been important for the vocation of a professorship."@en .
 		
 		
