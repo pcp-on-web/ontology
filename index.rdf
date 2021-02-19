@@ -562,9 +562,29 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :Document ;
   rdfs:label "Publikation"@de, "publication"@en ;
 	dc:description "Bezieht sich auf Publikationen."@de, "Refers to publications."@en .
+				     
+:PublicationType rdf:type owl:Class ;
+  rdfs:subClassOf :Publication ;
+  rdfs:label "Publikationstyp"@de, "publication type"@en ;
+	dc:description "Bezieht sich auf die Gattung bzw. den Typ einer Publikation."@de, "Refers to the genre or type of a publication."@en .
+				   
+:Title rdf:type owl:Class ;
+  rdfs:subClassOf :Publication ;
+  rdfs:label "Publikationstitel"@de, "publication title"@en ;
+	dc:description "Gibt den Titel einer Publikation an."@de, "Gives the title of a publication."@en .
+				     
+:Author rdf:type owl:Class ;
+  rdfs:subClassOf :Publication ;
+  rdfs:label "Autor einer Publikation"@de, "publication author"@en ;
+	dc:description "Nennt die Autoren einer Publikation."@de, "Gives the authors of a publication."@en .
+				     
+:Publisher rdf:type owl:Class ;
+  rdfs:subClassOf :Publication ;
+  rdfs:label "Herausgeber"@de, "Publisher"@en ;
+	dc:description "Nennt Herausgeber einer Publikation."@de, "Gives the publishers of a publication."@en .
 
 :Dissertation rdf:type owl:Class ;
-  rdfs:subClassOf :Publication ;
+  rdfs:subClassOf :PublicationType ;
   rdfs:label "Dissertation"@de, "dissertation"@en ;
 	dc:description "Bezeichnet das gedruckte Medium der Disputation, genannte Dissertation."@de, "Refers to the printed media of a disputation,
 		called dissertation."@en .
@@ -576,26 +596,21 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Weist eine Dissertation einer Fakultät zu."@de, "Assigns a dissertation to a faculty."@en .
 		
 :Textbook rdf:type owl:Class ;
-  rdfs:subClassOf :Publication ;
+  rdfs:subClassOf :PublicationType ;
   rdfs:label "Lehrbuch"@de, "textbook"@en ;
 	dc:description "Bezeichnet ein Buch, das Lehrinhalte eines Studiums didaktisch aufbereitet."@de, "Refers to books which offer a compilation of content in a certain
 		field of interest.."@en.
 		
 :Article rdf:type owl:Class ;
-  rdfs:subClassOf :Publication ;
+  rdfs:subClassOf :PublicationType ;
   rdfs:label "Artikel"@de, "article"@en ;
 	dc:description "Bezeichnet einen Artikel in einem Journal, einer Zeitschrift, einer Zeitung oder einem Magazin."@de, "Refers to an article published in journals, newspapers
 		or magazines."@en.
 		
 :Review rdf:type owl:Class ;
-  rdfs:subClassOf :Publication ;
+  rdfs:subClassOf :PublicationType ;
   rdfs:label "Rezension"@de, "Review"@en ;
-	dc:description "Bezeichnet eine Rezension in einer Rezensionszeitschrift."@de, "Refers to a review published in a review journal."@en .
-		
-:Title rdf:type owl:Class ;
-  rdfs:subClassOf :Publication ;
-  rdfs:label "Titel"@de, "Title"@en ;
-	dc:description "Verweist auf den Titel einer Publikation."@de, "Refers to the title of a publication."@en .		
+	dc:description "Bezeichnet eine Rezension in einer Rezensionszeitschrift."@de, "Refers to a review published in a review journal."@en .		
 
 :isAuthor rdf:type owl:ObjectProperty ;
   rdfs:domain :Person ;
