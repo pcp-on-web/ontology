@@ -763,7 +763,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Verweist auf die Privatbibliothek einer Person und kann u.U. durch publizierte Auktionskataloge erschlossen werden."@de, "Refers to the private
 		library of a person. Can be reconstructed by published auction catalogues."@en .  
 				   
-		
+### VD 16-18 ###
 		
 		
 		
