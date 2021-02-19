@@ -261,6 +261,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezieht sich auf den geografischen Ort der Ausbildung."@de,
 		"Refers to the geographical location of education."@en .
 		
+:locationMembership rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Membership ;
+  rdfs:range :Location ;
+  rdfs:label "Ort der Mitgliedschaft"@de, "location of membership"@en ;
+	dc:description "Bezieht sich auf den geografischen Ort einer Mitgliedschaft."@de,
+		"Refers to the geographical location of a membership."@en .
+				     
 :locationOffice rdf:type owl:DatatypeProperty ;
   rdfs:domain :Office ;
   rdfs:range :Location ;
@@ -679,6 +686,30 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Mitgliedschaft"@de, "Membership"@en ;
 	dc:description "Verweist auf Mitgliedschaften einer Person in soziokulturellen und/oder politischen Gesellschaften und Sozietäten."@de, "Refers to the
 		membership of a person at sociocultural and/or political societies and/or corporations."@en .
+				     
+:membershipHasCorporation rdf:type owl:DataProperty ;
+  rdfs:domain :Membership ;
+  rdfs:range :Corporation ;
+  rdfs:label "Mitgliedschaft hat Körperschaft"@de, "Membership has corporation"@en ;
+	dc:description "Weist eine Mitgliedschaft einer Körperschaft zu."@de, "Adds a memebership to a corpration."@en .
+				    
+				     
+:LearnedSociety rdf:type owl:Class ;
+  rdfs:subClassOf :Membership ;
+  rdfs:label "Gelehrte Gesellschaft"@de, "Learned Society"@en ;
+	dc:description "Bezeichnet eine Gelehrte Gesellschaft, die sich "@de, "Refers to a learned society."@en .
+				     
+:Academy rdf:type owl:Class ;
+  rdfs:subClassOf :Membership ;
+  rdfs:label "Akademie"@de, "Academy"@en ;
+	dc:description "Bezeichnet eine Sozietät mit strukturierter Körperschaft und obrigkeitlicher Protégierung, z.B. die diversen Akademien der Wissenschaften in
+		Europa"@de, "Refers to ..."@en .
+				     
+:SecretSociety rdf:type owl:Class ;
+  rdfs:subClassOf :Membership ;
+  rdfs:label "Geheimgesellschaft"@de, "Secret Society"@en ;
+	dc:description "Bezeichnet Geheimgesellschaften wie Freimaurer oder Illuminaten, Studentenverbindungen etc."@de, "Refers to secret societies like Freemasons
+		or Illuminati, student societies etc."@en .
 		
 :Collection rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
