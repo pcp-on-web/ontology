@@ -662,6 +662,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		im Berufungsverfahren auf eine Professur von Bedeutung gewesen sein könnten."@de, "Refers to a collection of a person, like private libraries, coins 
 		and other subject specific collections,	which could have been important for the vocation of a professorship."@en .
 		
+:PrivateLibrary rdf:type owl:Class ;
+  rdfs:subClassOf :Collection ;
+  rdfs:label "Privatbibliothek"@de, "Private library"@en ;
+	dc:description "Verweist auf die Privatbibliothek einer Person und kann u.U. durch publizierte Auktionskataloge erschlossen werden."@de, "Refers to the private
+		library of a person. Can be reconstructed by published auction catalogues."@en .  
+				   
 		
 		
 		
