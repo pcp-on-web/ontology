@@ -582,13 +582,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		
 :isDedicatee rdf:type owl:ObjectProperty ;
   rdfs:domain :Person ;
-  rdfs:range :Publication ;
+  rdfs:range :Document ;
   rdfs:label "ist Widmungsempfänger"@de, "is dedicatee"@en ;
 	dc:description "Bezeichnet den Widmunsgempfänger einer Publikation."@de, "Refers to the dedicatee of a publication."@en .
 		
 :isCongratulant rdf:type owl:ObjectProperty ;
   rdfs:domain :Person ;
-  rdfs:range :Publication ;
+  rdfs:range :Document ;
   rdfs:label "ist Gratulant"@de, "is congratulant"@en ;
 	dc:description "Bezeichnet den Gratulanten einer Publikation."@de, "Refers to the congratulant of a publication."@en .
 				     
@@ -626,17 +626,17 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezieht sich auf die Gattung bzw. den Typ einer Publikation."@de, "Refers to the genre or type of a publication."@en .
 				   
 :Title rdf:type owl:Class ;
-  rdfs:subClassOf :Publication ;
+  rdfs:subClassOf :Document ;
   rdfs:label "Publikationstitel"@de, "publication title"@en ;
 	dc:description "Gibt den Titel einer Publikation an."@de, "Gives the title of a publication."@en .
 				     
 :Author rdf:type owl:Class ;
-  rdfs:subClassOf :Publication ;
+  rdfs:subClassOf :Document ;
   rdfs:label "Autor einer Publikation"@de, "publication author"@en ;
 	dc:description "Nennt die Autoren einer Publikation."@de, "Gives the authors of a publication."@en .
 				     
 :Publisher rdf:type owl:Class ;
-  rdfs:subClassOf :Publication ;
+  rdfs:subClassOf :Document ;
   rdfs:label "Herausgeber"@de, "Publisher"@en ;
 	dc:description "Nennt Herausgeber einer Publikation."@de, "Gives the publishers of a publication."@en .
 
@@ -681,7 +681,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 :isAuthor rdf:type owl:ObjectProperty ;
   rdfs:domain :Person ;
-  rdfs:range :Dokument ;
+  rdfs:range :Document ;
   rdfs:label "ist Autor"@de, "is author"@en ;
 	dc:description "Zeichnet eine Person als einen Autoren aus. Autor wird hier im Falle einer Disputation als weiter Begriff verwendet,
 		da Praeses und Respondent in Literaturdatenbanken oft beide als Autoren einer Dissertation angegeben werden."@de,
@@ -690,7 +690,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		
 :isPublisher rdf:type owl:ObjectProperty ;
   rdfs:domain :Person ;
-  rdfs:range :Publication ;
+  rdfs:range :Document ;
   rdfs:label "ist Herausgeber"@de, "is publisher"@en ;
 	dc:description "Zeichnet eine Person als einen Herausgeber aus."@de, "Refers to a person as a publisher."@en .
 
