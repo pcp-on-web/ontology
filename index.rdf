@@ -654,7 +654,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Gibt den Titel eines Dokuments an."@de, "Gives the title of a document."@en .
 				     
 :Author rdf:type owl:Class ;
-  rdfs:subClassOf :Document ;
+  rdfs:subClassOf :Person ;
   rdfs:label "Autor"@de, "author"@en ;
 	dc:description "Nennt die Autorenschaft eiens Dokuments."@de, "Gives the authorship of a document."@en .
 				     
