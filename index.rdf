@@ -603,16 +603,16 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Rechenschaftsbericht, den Dozenten in regelmäßigen Abständen bei der Universitätverwaltung und/oder Landesverwaltung einreichten."@de,
 		"Means regular reports of lecturers about their curriculum to the university and/or territorial administration."@en .
 				     
-:hasFaculty rdf:type owl:DatatypeProperty ;
+:reportHasFaculty rdf:type owl:DatatypeProperty ;
   rdfs:domain :Report ;
   rdfs:range :Faculty ;
-  rdfs:label "hat Fakultät"@de, "has faculty"@en ;
+  rdfs:label "Rechenschaftsbericht hat Fakultät"@de, "report has faculty"@en ;
 	dc:description "Ordnet einen Rechenschaftsbericht einer Fakultät zu."@de, "Assigns a report to a faculty."@en .
 				     
-:hasAuthor rdf:type owl:DatatypeProperty ;
+:reportHasAuthor rdf:type owl:DatatypeProperty ;
   rdfs:domain :Report ;
   rdfs:range :Person ;
-  rdfs:label "hat Autor"@de, "has author"@en ;
+  rdfs:label "Rechenschaftsbericht hat Autor"@de, "report has author"@en ;
 	dc:description "Verweist auf den Autoren des Rechenschaftsberichts."@de, "Refers to the author of a report."@en .
 		
 :Publication rdf:type owl:Class ;
