@@ -596,6 +596,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :StageOfLife ;
   rdfs:label "Dokument"@de, "Document"@en ;
 	dc:description "Fügt einem Lebensabschnitt ein Dokument zu."@de, "Adds a document to a stage of life."@en .
+				     
+:docHasAuthor rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Document ;
+  rdfs:range :Author ;
+  rdfs:label "Dokument hat Autor"@de, "document has author"@en ;
+	dc:description "Gibt einem Dokument eine Autorenschaft."@de, "Gives a document an authorship."@en .
 
 :Report rdf:type owl:Class ;
   rdfs:subClassOf :Document ;
@@ -617,7 +623,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 				     			     
 :reportHasAuthor rdf:type owl:ObjectProperty ;
   rdfs:domain :Report ;
-  rdfs:range :Person ;
+  rdfs:range :Author ;
   rdfs:label "Rechenschaftsbericht hat Autor"@de, "report has author"@en ;
 	dc:description "Verweist auf den Autoren des Rechenschaftsberichts."@de, "Refers to the author of a report."@en .
 				     
