@@ -650,18 +650,18 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 				   
 :Title rdf:type owl:Class ;
   rdfs:subClassOf :Document ;
-  rdfs:label "Publikationstitel"@de, "publication title"@en ;
-	dc:description "Gibt den Titel einer Publikation an."@de, "Gives the title of a publication."@en .
+  rdfs:label "Titel"@de, "title"@en ;
+	dc:description "Gibt den Titel eines Dokuments an."@de, "Gives the title of a document."@en .
 				     
 :Author rdf:type owl:Class ;
   rdfs:subClassOf :Document ;
-  rdfs:label "Autor einer Publikation"@de, "publication author"@en ;
-	dc:description "Nennt die Autoren einer Publikation."@de, "Gives the authors of a publication."@en .
+  rdfs:label "Autor"@de, "author"@en ;
+	dc:description "Nennt die Autorenschaft eiens Dokuments."@de, "Gives the authorship of a document."@en .
 				     
 :Publisher rdf:type owl:Class ;
   rdfs:subClassOf :Document ;
   rdfs:label "Herausgeber"@de, "Publisher"@en ;
-	dc:description "Nennt Herausgeber einer Publikation."@de, "Gives the publishers of a publication."@en .
+	dc:description "Nennt Herausgeber eines Dokuments."@de, "Gives the publisher of a document."@en .
 
 :Dissertation rdf:type owl:Class ;
   rdfs:subClassOf :PublicationType ;
