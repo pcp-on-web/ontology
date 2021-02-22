@@ -634,7 +634,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                  xsd:gYearMonth"@en .
 				     
 :ProgramsAndSpeeches rdf:type owl:Class ;
-  rdfs:subClassOf :Documents ;
+  rdfs:subClassOf :PublicationType ;
   rdfs:label "Programme und Reden"@de, "Programs and Speeches"@en ;
 	dc:description "Bezieht sich auf gedruckte Universitätsprogramme und Reden."@de, "Refers to printed university programs and speeches."@en .
 		
