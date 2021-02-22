@@ -500,7 +500,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezeichnet die Landesherrschaft eines Territoriums."@de , "Refers to the authority by a ruler or group of rulers of a territory."@en .
 	
 :Patron rdf:type owl:Class ;
-  rdfs:subClassOf :StageOfLife ;
+  rdfs:subClassOf :Person ;
   rdfs:label "Patron"@de, "Patron"@en ;
 	dc:description "Bezieht sich auf den Patron einer Person; hier auf in den Quellen namentlich erwähnten Förderer eines Professors und dessen Karriere."@de ,
 		"Refers to the patron of a person; here to the Patron of a professor's career who is known by the sources."@en .
@@ -561,14 +561,14 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		practising curricula, to obtain academic titles. It also refers to inaugural disputations of newly vocated professors."@en.
 		
 :isPraeses rdf:type owl:ObjectProperty ;
-  rdfs:domain :Professor ;
+  rdfs:domain :Person ;
   rdfs:range :Disputation ;
   rdfs:label "ist Praeses"@de, "is Praeses"@en ;
 	dc:description "Bezeichnet den Professor, der während einer Disputation als Praeses auftritt und die Disputation leitet."@de, "Refers to the professor who
 		is the praeses - the head - of a disputation."@en .
 		
 :isRespondent rdf:type owl:ObjectProperty ;
-  rdfs:domain :Student ;
+  rdfs:domain :Person ;
   rdfs:range :Disputation ;
   rdfs:label "ist Respondent"@de, "is Respondent"@en ;
 	dc:description "Bezeichnet den Respondenten, der sich als Student der Disputation unterzieht."@de, "Refers to the respondent who as a student is undergoing
