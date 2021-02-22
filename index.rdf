@@ -614,6 +614,18 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Person ;
   rdfs:label "Rechenschaftsbericht hat Autor"@de, "report has author"@en ;
 	dc:description "Verweist auf den Autoren des Rechenschaftsberichts."@de, "Refers to the author of a report."@en .
+				     
+:reportDate rdf:type owl:DatatypeProperty, owl:FunctionalProperty ;
+  rdfs:domain :Report ;
+  rdfs:range rdfs:Literal ;
+  rdfs:label "timespan of report"@en, "Zeitspanne eines Rechenschaftsberichts"@de ;
+  	dc:description "Gibt die Zeitspanne an, die ein Rechenschaftsbericht umfasst."@de, "Gives the timespan of a report.
+		 xsd:date ,
+                 xsd:gDay ,
+                 xsd:gMonth ,
+                 xsd:gMonthDay ,
+                 xsd:gYear ,
+                 xsd:gYearMonth"@en .
 		
 :Publication rdf:type owl:Class ;
   rdfs:subClassOf :Document ;
