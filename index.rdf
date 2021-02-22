@@ -599,9 +599,15 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 :Report rdf:type owl:Class ;
   rdfs:subClassOf :Document ;
-  rdfs:label "Rechenschaftsbericht"@de, "status report"@en ;
+  rdfs:label "Rechenschaftsbericht"@de, "report"@en ;
 	dc:description "Rechenschaftsbericht, den Professoren in regelmäßigen Abständen bei der Universitätverwaltung und/oder Landesverwaltung einreichten."@de,
 		"Means regular reports of professors about their curriculum to the university and/or territorial administration."@en .
+				     
+:hasFaculty rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Report ;
+  rdfs:range :Faculty ;
+  rdfs:label "hat Fakultät"@de, "has faculty"@en ;
+	dc:description "Ordnet einen Rechenschaftsbericht einer Fakultät zu."@de, "Assigns a report to a faculty."@en .
 		
 :Publication rdf:type owl:Class ;
   rdfs:subClassOf :Document ;
