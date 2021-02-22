@@ -608,6 +608,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Faculty ;
   rdfs:label "Rechenschaftsbericht hat Fakultät"@de, "report has faculty"@en ;
 	dc:description "Ordnet einen Rechenschaftsbericht einer Fakultät zu."@de, "Assigns a report to a faculty."@en .
+				     
+:reportHasChair rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Report ;
+  rdfs:range :Chair ;
+  rdfs:label "Rechenschaftsbericht hat Lehrstuhl"@de, "report has chair"@en ;
+	dc:description "Ordnet einen Rechenschaftsbericht einem Lehrstuhl zu."@de, "Assigns a report to a chair."@en .
 				     			     
 :reportHasAuthor rdf:type owl:ObjectProperty ;
   rdfs:domain :Report ;
