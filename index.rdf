@@ -613,7 +613,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:domain :Report ;
   rdfs:range :Person ;
   rdfs:label "hat Autor"@de, "has author"@en ;
-	dc:description "Verweist auf den Autoren des Rechenschaftsberichts."@de, "Refers to the author of a report ("Rechenschaftsbericht")."@en .
+	dc:description "Verweist auf den Autoren des Rechenschaftsberichts."@de, "Refers to the author of a report."@en .
 		
 :Publication rdf:type owl:Class ;
   rdfs:subClassOf :Document ;
