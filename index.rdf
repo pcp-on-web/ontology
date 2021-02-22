@@ -268,8 +268,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :Location rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
   rdfs:label "Ort"@de, "location"@en ;
-	dc:description "Bezieht sich auf den geografischen Ort eines Lebensereignisses einer Person sowie auf den Ort von Körperschaften,
-		Medien (Verlagsort, Druckort), Ämtern, Landesherrschaft."@de, "Refers to the location of life events of persons, corporate bodies, media
+	dc:description "Bezieht sich auf den geografischen Ort eines Lebensabschnitts einer Person sowie auf den Ort von Körperschaften,
+		Medien (Verlagsort, Druckort), Ämtern, Landesherrschaft."@de, "Refers to the location of life stages of persons, corporate bodies, media
 		(printing, publishing), offices, territories."@en .
 		
 :locationStageOfLife rdf:type owl:DatatypeProperty ;
