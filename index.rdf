@@ -681,7 +681,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 :isAuthor rdf:type owl:ObjectProperty ;
   rdfs:domain :Person ;
-  rdfs:range :Publication ;
+  rdfs:range :Dokument ;
   rdfs:label "ist Autor"@de, "is author"@en ;
 	dc:description "Zeichnet eine Person als einen Autoren aus. Autor wird hier im Falle einer Disputation als weiter Begriff verwendet,
 		da Praeses und Respondent in Literaturdatenbanken oft beide als Autoren einer Dissertation angegeben werden."@de,
