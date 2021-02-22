@@ -59,7 +59,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:domain :StageOfLife ;
   rdfs:range rdfs:Literal;
   rdfs:label "Date"@en, "Datum"@de ;
-  	dc:descritption "Zeitangabe eines Lebensabschnitts."@de, "The date or timespan of a stage of life from a valid datatype
+  	dc:description "Zeitangabe eines Lebensabschnitts."@de, "The date or timespan of a stage of life from a valid datatype
 		 xsd:date ,
                  xsd:gDay ,
                  xsd:gMonth ,
