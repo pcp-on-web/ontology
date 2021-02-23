@@ -591,20 +591,20 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Herausgeber"@de, "Publisher"@en ;
 	dc:description "Nennt Herausgeber eines Dokuments."@de, "Gives the publisher of a document."@en .
 				     
-:docHasAuthor rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Document ;
+:hasAuthor rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Publication ;
   rdfs:range :Author ;
   rdfs:label "Dokument hat Autor"@de, "document has author"@en ;
 	dc:description "Gibt einem Dokument eine Autorenschaft."@de, "Gives a document an authorship."@en .
 				     
-:docHasTitle rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Document ;
+:hasTitle rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Publication ;
   rdfs:range :Title ;
   rdfs:label "Titel eines Dokuments"@de, "title of a document"@en ;
 	dc:description "Nennt den Titel eines Dokuments."@de, "Gives the title of a document."@en .
 				     
-:docHasPublisher rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Document ;
+:hasPublisher rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Publication ;
   rdfs:range :Publisher ;
   rdfs:label "Dokument hat Herausgeber"@de, "document has publisher"@en ;
 	dc:description "Nennt Herausgeber eines Dokuments."@de, "Gives the publisher of a document."@en .
