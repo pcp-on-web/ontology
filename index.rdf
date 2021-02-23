@@ -575,6 +575,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :StageOfLife ;
   rdfs:label "Dokument"@de, "Document"@en ;
 	dc:description "Fügt einem Lebensabschnitt ein Dokument zu."@de, "Adds a document to a stage of life."@en .
+				     
+:Curriculum rdf:type owl:Class ;
+  rdfs:subClassOf :Document ;
+  rdfs:label "Curriculum"@de, "Lektionskatalog"@en ;
+	dc:description "Lektions- oder Vorlesungskatalog einer Universität."@de, "Curriculum or lecture catalogue of a university."@en .
 				
 :Title rdf:type owl:Class ;
   rdfs:subClassOf :Document ;
