@@ -748,8 +748,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:domain :Lecture ;
   rdfs:range :Document ;
   rdfs:label "Vorlesung hat Dokument"@de, "lecture has document"@en ;
-	dc:description "Weist einer Vorlesung ein Dokument zu, z.B. Lektionskatalog oder Textbuch."@de, "Assigns a lecture to a document, like curriculum or textbook.
-		"@en .
+	dc:description "Weist einer Vorlesung ein Dokument zu, wie Lektionskatalog oder Textbuch."@de, "Assigns a lecture to a document, like curriculum or 
+		textbook."@en .
 	
 :PublicLecture rdf:type owl:Class ;
   rdfs:subClassOf :Lecture;
