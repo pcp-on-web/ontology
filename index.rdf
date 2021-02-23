@@ -578,7 +578,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 				     
 :Curriculum rdf:type owl:Class ;
   rdfs:subClassOf :Document ;
-  rdfs:label "Curriculum"@de, "Lektionskatalog"@en ;
+  rdfs:label "Lektionskatalog"@de, "Curriculum"@en ;
 	dc:description "Lektions- oder Vorlesungskatalog einer Universität."@de, "Curriculum or lecture catalogue of a university."@en .
 				
 :Title rdf:type owl:Class ;
@@ -743,12 +743,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Title ;
   rdfs:label "Vorlesung hat Titel"@de, "lecture has title"@en ;
 	dc:description "Gibt den Titel einer Vorlesung."@de, "Gives the title of a lecture."@en .
-				     
-:lectureHasDocument rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Lecture ;
-  rdfs:range :Document ;
-  rdfs:label "Vorlesung hat Dokument"@de, "lecture has document"@en ;
-	dc:description "Verweist auf Vorlesungskatalog."@de, "Refers to the curriculum or lecture catalogue."@en .
 	
 :PublicLecture rdf:type owl:Class ;
   rdfs:subClassOf :Lecture;
