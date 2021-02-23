@@ -731,7 +731,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:domain :Lecture ;
   rdfs:range :Faculty ;
   rdfs:label "Vorlesung hat Fakultät"@de, "lecture has faculty"@en ;
-	dc:description "Weist eine Vorlesung einer Fakultät zu."@de, "Assigns a lecture to a faculty."@en .	
+	dc:description "Weist eine Vorlesung einer Fakultät zu."@de, "Assigns a lecture to a faculty."@en .
+				     
+:lectureHastitle rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Lecture ;
+  rdfs:range :title ;
+  rdfs:label "Vorlesung hat Titel"@de, "lecture has title"@en ;
+	dc:description "Gibt Titel einer Vorlesung."@de, "Gives title of a lecture."@en .
 	
 :PublicLecture rdf:type owl:Class ;
   rdfs:subClassOf :Lecture;
