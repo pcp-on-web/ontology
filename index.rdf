@@ -594,20 +594,20 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :hasAuthor rdf:type owl:DatatypeProperty ;
   rdfs:domain :Publication ;
   rdfs:range :Author ;
-  rdfs:label "Dokument hat Autor"@de, "document has author"@en ;
-	dc:description "Gibt einem Dokument eine Autorenschaft."@de, "Gives a document an authorship."@en .
+  rdfs:label "Publikation hat Autor"@de, "publication has author"@en ;
+	dc:description "Gibt einer Publikation eine Autorenschaft."@de, "Gives a publication an authorship."@en .
 				     
 :hasTitle rdf:type owl:DatatypeProperty ;
   rdfs:domain :Publication ;
   rdfs:range :Title ;
-  rdfs:label "Titel eines Dokuments"@de, "title of a document"@en ;
-	dc:description "Nennt den Titel eines Dokuments."@de, "Gives the title of a document."@en .
+  rdfs:label "Titel einer Publikation"@de, "title of a publication"@en ;
+	dc:description "Nennt den Titel einer Publikation."@de, "Gives the title of a publication."@en .
 				     
 :hasPublisher rdf:type owl:DatatypeProperty ;
   rdfs:domain :Publication ;
   rdfs:range :Publisher ;
-  rdfs:label "Dokument hat Herausgeber"@de, "document has publisher"@en ;
-	dc:description "Nennt Herausgeber eines Dokuments."@de, "Gives the publisher of a document."@en .
+  rdfs:label "Publikation hat Herausgeber"@de, "publication has publisher"@en ;
+	dc:description "Nennt Herausgeber einer Publikation."@de, "Gives the publisher of a publication."@en .
 
 :Report rdf:type owl:Class ;
   rdfs:subClassOf :Document ;
