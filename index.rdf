@@ -608,6 +608,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Publisher ;
   rdfs:label "Publikation hat Herausgeber"@de, "publication has publisher"@en ;
 	dc:description "Nennt Herausgeber einer Publikation."@de, "Gives the publisher of a publication."@en .
+				     
+:locationDocument rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Document ;
+  rdfs:range :Location ;
+  rdfs:label "Ort eines Dokument"@de, "location of a document"@en ;
+	dc:description "Bezieht sich auf den geografischen Ort eines Dokuments, z.B. Publikationsort."@de,
+		"Refers to the geographical location of a document, e.g. location of a publication."@en .
 
 :Report rdf:type owl:Class ;
   rdfs:subClassOf :Document ;
