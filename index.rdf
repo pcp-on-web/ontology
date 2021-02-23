@@ -830,7 +830,9 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Privatbibliothek"@de, "Private library"@en ;
 	dc:description "Verweist auf die Privatbibliothek einer Person und kann u.U. durch publizierte Auktionskataloge erschlossen werden."@de, "Refers to the private
 		library of a person. Can be reconstructed by published auction catalogues."@en .
-				     
+
+### Damit könnten digitalisierte Auktionskataloge an die Onotologie geknüpft werden, um bspw. Aufschluss über Gelehrtensammlungen zu geben. Die HAB Wolfenbüttel weist
+auf ihrer Webseite dezidiert auf den Wert dieser Gattung hin und auf ihre reichhaltige Sammlung.###
 :hasAuctionCatalogue rdf:type owl:DataProperty ;
   rdfs:domain :PrivateLibrary ;
   rdfs:range :AuctionCatalogue ;
