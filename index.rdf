@@ -78,8 +78,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                  xsd:gMonthDay ,
                  xsd:gYear ,
                  xsd:gYearMonth"@en ;
-      rdfs:label "From"@en ,
-                 "Von"@de ;
+      rdfs:label "from"@en ,
+                 "von"@de ;
       owl:versionInfo "0.1 initial creation date:  24.05.2007"^^xsd:string ,
                       "2.0 stable other types added"^^xsd:string .
 		
@@ -94,8 +94,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                xsd:gMonthDay,
                xsd:gYear,
                xsd:gYearMonth"@en ;
-    rdfs:label "Bis"@de ,
-               "To"@en ;
+    rdfs:label "bis"@de ,
+               "to"@en ;
     owl:versionInfo "0.1 initial creation date:  24.05.2007"^^xsd:string ,
                     "2.0 stable other types added"^^xsd:string .
 		
@@ -104,7 +104,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		
 :Person rdf:type owl:Class ;
   rdf:label "Person"@de, "Person"@en ;
-	dc:description "Bezeichnet eine historische Person."@de, "Refers to a historical person."@en .
+	dc:description "Bezeichnet eine Person."@de, "Refers to a person."@en .
 		
 :Gender rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
@@ -147,7 +147,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :surname rdf:type owl:DatatypeProperty ;
   rdfs:domain :Person ;
   rdfs:range rdfs:Literal ;
-  rdfs:label "Nachname"@de , "Surname"@en ;
+  rdfs:label "Nachname"@de , "surname"@en ;
   rdfs:comment "Nachname einer Person"@de , "The surname of a person"@en ;
 		         owl:versionInfo "0.1 initial creation date: 24.05.2007"^^xsd:string ,
                          "2.0 stable"^^xsd:string ,
@@ -160,7 +160,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                    rdfs:range xsd:string ;
                    rdfs:comment "Additions to the surname can be of, etc."@en ,
                                 "Namenszusätze sind zum Beispiel von, zu, etc."@de ;
-                   rdfs:label "Additions to Surename"@en ,
+                   rdfs:label "additions to surname"@en ,
                               "Namenszusatz"@de ;
                    owl:versionInfo "0.2 changed Domain from Professor to Person 0.1 initial creation - 24.05.07"^^xsd:string ,
                                    "2.0 stable"^^xsd:string .
@@ -174,23 +174,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                              <http://ns.ontowiki.net/SysOnt/order> "20"^^xsd:string ;
                              rdfs:comment "Bsp: Meier, Meyer, Maier"@de ,
                                           "For Example Meier, Meyer, Maier"@en ;
-                             rdfs:label "Alternative Namensschreibweisen"@de ,
-                                        "Alternative writings of the surname"@en ;
+                             rdfs:label "alternative Namensschreibweisen"@de ,
+                                        "alternative writings of the surname"@en ;
                              owl:versionInfo "0.1 initial creation - 24.05.07"^^xsd:string ,
                                              "0.2 changed Domain from Professor to Person"^^xsd:string ,
                                              "2.0 under discussion"^^xsd:string .
-				     
-###  http://purl.org/pcp-on-web/ontology#firstName
-:firstName rdf:type owl:DatatypeProperty ;
-           rdfs:domain :Person ;
-           rdfs:range rdfs:Literal;
-           rdfs:comment "Rufname einer Person"@de ,
-                        "The given first name of a person"@en ,
-                        "given name of a person"@en ;
-           rdfs:label "First Name"@en ,
-                      "Rufname"@de ;
-           owl:versionInfo "0.1 initial creation date: 18.05.2015"^^xsd:string ,
-                           "0.1 initial creation date: 29.01.2015"^^xsd:string .
 
 
 ###  http://purl.org/pcp-on-web/ontology#forename
@@ -202,15 +190,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
           rdfs:label "Forename"@en ,
                      "Vorname"@de ;
           owl:versionInfo "0.1 initial creation date: 18.05.2015"^^xsd:string .
-
-:surnameVariant rdf:type owl:DatatypeProperty ;
-					rdfs:domain :Person ;
-					rdfs:range rdfs:Literal ;
-					rdfs:comment "Alternative spelling of a person's last name."@en ,
-								"Alternative Schreibweise des Nachnamens einer Person."@de ;
-					rdfs:label "Surname Variant"@en ,
-							  "Name Variant"@de ;
-					owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
 
 :latinSurname rdf:type owl:DatatypeProperty ;
                    rdfs:domain :Person ;
@@ -243,7 +222,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		
 :Family rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
-  rdfs:label "Familie"@de, "family"@en ;
+  rdfs:label "Familie"@de, "Family"@en ;
 	dc:description "Dieses Konzept beschreibt die soziale Herkunft und Familienverhältnisse einer Person."@de, "This concept describes the social origin
 		and the family relationship of a person."@en .
 		
@@ -267,7 +246,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		
 :Location rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
-  rdfs:label "Ort"@de, "location"@en ;
+  rdfs:label "Ort"@de, "Location"@en ;
 	dc:description "Bezieht sich auf den geografischen Ort eines Lebensabschnitts einer Person sowie auf den Ort von Körperschaften,
 		Medien (Verlagsort, Druckort), Ämtern, Landesherrschaft."@de, "Refers to the location of life stages of persons, corporate bodies, media
 		(printing, publishing), offices, territories."@en .
@@ -338,7 +317,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		
 :PrimaryEducation  rdf:type owl:Class ;
   rdfs:subClassOf :Education ;
-  rdfs:label "Primäre Bildung"@de, "primary education"@en ;
+  rdfs:label "Primäre Bildung"@de, "Primary education"@en ;
 	dc:description "Bezieht sich auf die diversen vormodernen Schulformen und pädagogischen Bildungsangebote im Vorfeld eines Universitätsbesuchs
 		im Territorium des Heiligen Römischen Reichs Deutscher Nation, z.B. Elementarschulen, Lateinschulen, Gymnasien, Klosterschulen,
 		Pfarrschulen etc."@de , "Refers to the diverse early modern educational and pedagogical formas and institutions of primary education within the
@@ -346,7 +325,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		
 :PrivateEducation rdf:type owl:Class ;
   rdfs:subClassOf :Education ;
-  rdfs:label "Privatunterricht"@de, "private education"@en ;
+  rdfs:label "Privatunterricht"@de, "Private education"@en ;
 	dc:description "Privatunterricht im Familienverband oder durch einen Privatlehrer."@de,
 		"Private education by family members or a different private teacher."@en .
 		
@@ -371,7 +350,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :enrollmentSemester rdf:type owl:DatatypeProperty ;
   rdfs:domain :Enrollment ;
   rdfs:range :Person ;
-  rdfs:label "Semester der Immatrikulation"@de, "Semester of enrollment"@en ;
+  rdfs:label "Semester der Immatrikulation"@de, "semester of enrollment"@en ;
 	dc:description "Nennt das Semester der Immatrikulation einer Person."@de, "Gives information of the semester in which a person got enrolled."@en .
 				     
 :AcademicDegree rdf:type owl:Class ;
@@ -605,7 +584,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 :Report rdf:type owl:Class ;
   rdfs:subClassOf :Document ;
-  rdfs:label "Rechenschaftsbericht"@de, "report"@en ;
+  rdfs:label "Rechenschaftsbericht"@de, "Report"@en ;
 	dc:description "Rechenschaftsbericht, den Dozenten in regelmäßigen Abständen bei der Universitätverwaltung und/oder Landesverwaltung einreichten."@de,
 		"Means regular reports of lecturers about their curriculum to the university and/or territorial administration."@en .
 				     
@@ -646,22 +625,22 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		
 :Publication rdf:type owl:Class ;
   rdfs:subClassOf :Document ;
-  rdfs:label "Publikation"@de, "publication"@en ;
+  rdfs:label "Publikation"@de, "Publication"@en ;
 	dc:description "Bezieht sich auf Publikationen."@de, "Refers to publications."@en .
 				     
 :PublicationType rdf:type owl:Class ;
   rdfs:subClassOf :Publication ;
-  rdfs:label "Publikationstyp"@de, "publication type"@en ;
+  rdfs:label "Publikationstyp"@de, "Publication type"@en ;
 	dc:description "Bezieht sich auf die Gattung bzw. den Typ einer Publikation."@de, "Refers to the genre or type of a publication."@en .
 				   
 :Title rdf:type owl:Class ;
   rdfs:subClassOf :Document ;
-  rdfs:label "Titel"@de, "title"@en ;
+  rdfs:label "Titel"@de, "Title"@en ;
 	dc:description "Gibt den Titel eines Dokuments an."@de, "Gives the title of a document."@en .
 				     
 :Author rdf:type owl:Class ;
   rdfs:subClassOf :Person ;
-  rdfs:label "Autor"@de, "author"@en ;
+  rdfs:label "Autor"@de, "Author"@en ;
 	dc:description "Nennt die Autorenschaft eiens Dokuments."@de, "Gives the authorship of a document."@en .
 				     
 :Publisher rdf:type owl:Class ;
@@ -671,30 +650,30 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 :Dissertation rdf:type owl:Class ;
   rdfs:subClassOf :PublicationType ;
-  rdfs:label "Dissertation"@de, "dissertation"@en ;
+  rdfs:label "Dissertation"@de, "Dissertation"@en ;
 	dc:description "Bezeichnet das gedruckte Medium der Disputation, genannte Dissertation."@de, "Refers to the printed media of a disputation,
 		called dissertation."@en .
 				     
 :AuctionCatalogue rdf:type owl:Class ;
   rdfs:subClassOf :PublicationType ;
-  rdfs:label "Auktionskatalog"@de, "auction catalogue"@en ;
+  rdfs:label "Auktionskatalog"@de, "Auction catalogue"@en ;
 	dc:description "Bezeichnet einen Auktionskatalog."@de, "Refers to an auction catalogue."@en .				     
 		
 :dissHasFaculty rdf:type owl:DatatypeProperty ;
   rdfs:domain :Dissertation ;
   rdfs:range :Faculty ;
-  rdfs:label "Diss hat Fakultät"@de, "Diss has faculty"@en ;
+  rdfs:label "Diss hat Fakultät"@de, "diss has faculty"@en ;
 	dc:description "Weist eine Dissertation einer Fakultät zu."@de, "Assigns a dissertation to a faculty."@en .
 		
 :Textbook rdf:type owl:Class ;
   rdfs:subClassOf :PublicationType ;
-  rdfs:label "Lehrbuch"@de, "textbook"@en ;
+  rdfs:label "Lehrbuch"@de, "Textbook"@en ;
 	dc:description "Bezeichnet ein Buch, das Lehrinhalte eines Studiums didaktisch aufbereitet."@de, "Refers to books which offer a compilation of content in a certain
 		field of interest.."@en.
 		
 :Article rdf:type owl:Class ;
   rdfs:subClassOf :PublicationType ;
-  rdfs:label "Artikel"@de, "article"@en ;
+  rdfs:label "Artikel"@de, "Article"@en ;
 	dc:description "Bezeichnet einen Artikel in einem Journal, einer Zeitschrift, einer Zeitung oder einem Magazin."@de, "Refers to an article published in journals, newspapers
 		or magazines."@en.
 		
@@ -732,7 +711,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :lectureHasFaculty rdf:type owl:DatatypeProperty ;
   rdfs:domain :Lecture ;
   rdfs:range :Faculty ;
-  rdfs:label "Vorlesung hat Fakultät"@de, "Lecture has faculty"@en ;
+  rdfs:label "Vorlesung hat Fakultät"@de, "lecture has faculty"@en ;
 	dc:description "Weist eine Vorlesung einer Fakultät zu."@de, "Assigns a lecture to a faculty."@en .	
 	
 :PublicLecture rdf:type owl:Class ;
@@ -774,7 +753,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :membershipHasCorporation rdf:type owl:DataProperty ;
   rdfs:domain :Membership ;
   rdfs:range :Corporation ;
-  rdfs:label "Mitgliedschaft hat Körperschaft"@de, "Membership has corporation"@en ;
+  rdfs:label "Mitgliedschaft hat Körperschaft"@de, "membership has corporation"@en ;
 	dc:description "Weist eine Mitgliedschaft einer Körperschaft zu."@de, "Adds a memebership to a corpration."@en .				    
 				     
 :LearnedSociety rdf:type owl:Class ;
@@ -804,7 +783,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 :Collection rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
-  rdfs:label "Sammlung"@de, "collection"@en ;
+  rdfs:label "Sammlung"@de, "Collection"@en ;
 	dc:description "Verweist auf Sammlungen einer Person, z.B. Privatbibliotheken, Münzen und anderweitige fachspezifische Sammlungen, die bspw. für eine Person
 		im Berufungsverfahren auf eine Professur von Bedeutung gewesen sein könnten."@de, "Refers to a collection of a person, like private libraries, coins 
 		and other subject specific collections,	which could have been important for the vocation of a professorship."@en .
