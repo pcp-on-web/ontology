@@ -129,6 +129,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 :Professor rdf:type owl:Class ;
   rdfs:subClassOf :Person ;
+  :derivedFrom <http://catalogus-professorm.org/cpm/Professor>;		
   rdfs:label "Professor"@de, "Professor"@en ;
 	dc:description "Bezeichnet eine Person die durch Berufung an einer frühneuzeitlichen Universität lehrt und dort akademische Ämter führt."@de,
 		"Refers to a person who is vocated as a professor at an Early Modern university, who teaches and holds academic offices."@en .
@@ -831,16 +832,21 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Verweist auf die Privatbibliothek einer Person und kann u.U. durch publizierte Auktionskataloge erschlossen werden."@de, "Refers to the private
 		library of a person. Can be reconstructed by published auction catalogues."@en .
 
-:hasAuctionCatalogue rdf:type owl:DataProperty ;
+:hasAuctionCatalogue rdf:type owl:ObjectProperty ;
   rdfs:domain :PrivateLibrary ;
   rdfs:range :AuctionCatalogue ;
   rdfs:label "hat Auktionskatalog"@de, "has auction catalogue"@en ;
 	dc:description "Verknüpft eine Privatbibliothek mit einem Auktionskatalog."@de, "Adds an auction catalogue to a private library."@en .
 				   
 ### VD 16-18 ###
-		
-		
-		
+				     
+:derivedFrom rdf:type owl:ObjectProperty ;
+  rdfs:domain owl:Thing;
+  rdfs:range owl:Thing ;
+  rdfs:label "ist abgeleitet von"@de, "has been derived from"@en ;
+	dc:description "Wird für das Alignment genutzt."@de, "Wird für das Alignment genutzt."@en .
+				   			     
+				    
 		
 		
 		
