@@ -216,7 +216,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Gibt das Datum oder den Zeitraum des Todes einer Person an."@de, "Gives the date or the period of death of a person."@en .
 	
 :hasStageOfLife rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Person ;
+  rdfs:domain :Professor ;
   rdfs:range :StageOfLife ;
   rdfs:label "hat Lebensabschnitt"@de, "has stage of life"@en ;
 	dc:description "Beschreibt, dass eine Person einen Lebensabschnitt hat."@de, "Refers to the stage of life of a person."@en .
@@ -229,19 +229,19 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		
 :spouse rdf:type owl:ObjectProperty ;
   rdfs:domain :Family ;
-  rdfs:range :Person ;
+  rdfs:range :Professor ;
   rdfs:label "Ehepartner"@de, "spouse"@en ;
 	dc:description "Bezieht sich auf den Ehepartner (genersiches Maskulinum) einer Person."@de, "Refers to the spouse (generic masculine) of a person."@en .
 		
 :child rdf:type owl:ObjectProperty ;
   rdfs:domain :Family ;
-  rdfs:range :Person ;
+  rdfs:range :Professor ;
   rdfs:label "Kind"@de, "child"@en ;
 	dc:description "Bezieht sich auf das Kind, Pflegekind, Adoptivkind einer Person."@de, "Refers to the cild, foster child, adoptive child of a person."@en .
 	
 :parent rdf:type owl:ObjectProperty ;
   rdfs:domain :Family ;
-  rdfs:range :Person ;
+  rdfs:range :Professor ;
   rdfs:label "Elternteil"@de, "parent"@en ;
 	dc:description "Weist eine Person als Elternteil aus."@de, "Depicts a person as parent."@en .
 		
@@ -250,49 +250,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Ort"@de, "Location"@en ;
 	dc:description "Bezieht sich auf den geografischen Ort eines Lebensabschnitts einer Person sowie auf den Ort von Körperschaften,
 		Medien (Verlagsort, Druckort), Ämtern, Landesherrschaft."@de, "Refers to the location of life stages of persons, corporate bodies, media
-		(printing, publishing), offices, territories."@en .
-		
-:locationStageOfLife rdf:type owl:DatatypeProperty ;
-  rdfs:domain :StageOfLife ;
-  rdfs:range :Location ;
-  rdfs:label "Ort eines Lebensabschnitts"@de, "location of a stage of life"@en ;
-	dc:description "Bezieht sich auf den geografischen Ort eines Lebensabschnitts einer Person."@de,
-		"Refers to the geographical location of a stage of life of a person."@en .
-		
-:locationCorporation rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Corporation ;
-  rdfs:range :Location ;
-  rdfs:label "Ort einer Körperschaft"@de, "location of a corporation"@en ;
-	dc:description "Bezieht sich auf den geografischen Ort einer Körperschaft."@de,
-		"Refers to the geographical location of a corporation/corporate body."@en .
-				     
-:locationEducation rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Education ;
-  rdfs:range :Location ;
-  rdfs:label "Ort der Ausbildung"@de, "location of education"@en ;
-	dc:description "Bezieht sich auf den geografischen Ort der Ausbildung."@de,
-		"Refers to the geographical location of education."@en .
-		
-:locationMembership rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Membership ;
-  rdfs:range :Location ;
-  rdfs:label "Ort der Mitgliedschaft"@de, "location of membership"@en ;
-	dc:description "Bezieht sich auf den geografischen Ort einer Mitgliedschaft."@de,
-		"Refers to the geographical location of a membership."@en .
-				     
-:locationOffice rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Office ;
-  rdfs:range :Location ;
-  rdfs:label "Ort eines Amts"@de, "location of an office"@en ;
-	dc:description "Bezieht sich auf den geografischen Ort eines Amts."@de,
-		"Refers to the geographical location of an office."@en .
-
-:locationTerritory rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Territory ;
-  rdfs:range :Location ;
-  rdfs:label "Ort einer Landesherrschaft"@de, "location of a territory"@en ;
-	dc:description "Bezieht sich auf den geografischen Ort einer Landesherrschaft."@de,
-		"Refers to the geographical location of a territory."@en .	
+		(printing, publishing), offices, territories."@en .	
 	
 :Denomination rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
