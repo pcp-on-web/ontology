@@ -129,7 +129,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 :Professor rdf:type owl:Class ;
   rdfs:subClassOf :Person ;
-  :derivedFrom <http://catalogus-professorm.org/cpm/Professor>;		
+  :derivedFrom <http://catalogus-professorum.org/cpm/Professor>;		
   rdfs:label "Professor"@de, "Professor"@en ;
 	dc:description "Bezeichnet eine Person die durch Berufung an einer frühneuzeitlichen Universität lehrt und dort akademische Ämter führt."@de,
 		"Refers to a person who is vocated as a professor at an Early Modern university, who teaches and holds academic offices."@en .
