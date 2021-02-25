@@ -203,23 +203,23 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		
 :StageOfLife rdf:type owl:Class ;
   rdfs:label "Lebensabschnitt"@de, "Stage of Life"@en ;
-	dc:description "Dieses Konzept bezieht sich auf einen Lebensabschnitt."@de, "This concept refers to a stage of life."@en .
+	dc:description "Dieses Konzept bezieht sich auf einen Lebensabschnitt eines Professors."@de, "This concept refers to a stage of life of a professor."@en .
 
 :Birth rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
   rdfs:label "Geburt"@de, "Birth"@en ;
-	dc:description "Gibt das Datum oder den Zeitraum der Geburt einer Person an."@de, "Gives the birthdate or the period of birth of a person."@en .
+	dc:description "Geburtsdatum oder Zeitraum einer Person."@de, "Birthdate or the period of birth of a person."@en .
 		
 :Death rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
   rdfs:label "Tod"@de, "Death"@en ;
-	dc:description "Gibt das Datum oder den Zeitraum des Todes einer Person an."@de, "Gives the date or the period of death of a person."@en .
+	dc:description "Sterbedatum oder den Zeitraum des Todes einer Person."@de, "Day of death or the period of death of a person."@en .
 	
 :hasStageOfLife rdf:type owl:DatatypeProperty ;
   rdfs:domain :Professor ;
   rdfs:range :StageOfLife ;
   rdfs:label "hat Lebensabschnitt"@de, "has stage of life"@en ;
-	dc:description "Beschreibt, dass eine Person einen Lebensabschnitt hat."@de, "Refers to the stage of life of a person."@en .
+	dc:description "Lebensabschnitt eines Professors."@de, "Stage of life of a professor."@en .
 		
 :Family rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
@@ -231,38 +231,31 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:domain :Family ;
   rdfs:range :Professor ;
   rdfs:label "Ehepartner"@de, "spouse"@en ;
-	dc:description "Bezieht sich auf den Ehepartner (genersiches Maskulinum) einer Person."@de, "Refers to the spouse (generic masculine) of a person."@en .
+	dc:description "Bezieht sich auf den Ehepartner (genersiches Maskulinum) eines Professors."@de, "Refers to the spouse (generic masculine) of a professor."@en .
 		
 :child rdf:type owl:ObjectProperty ;
   rdfs:domain :Family ;
   rdfs:range :Professor ;
   rdfs:label "Kind"@de, "child"@en ;
-	dc:description "Bezieht sich auf das Kind, Pflegekind, Adoptivkind einer Person."@de, "Refers to the cild, foster child, adoptive child of a person."@en .
+	dc:description "Bezieht sich auf das Kind, Pflegekind, Adoptivkind eines Professors."@de, "Refers to the cild, foster child, adoptive child of a professor."@en .
 	
 :parent rdf:type owl:ObjectProperty ;
   rdfs:domain :Family ;
   rdfs:range :Professor ;
   rdfs:label "Elternteil"@de, "parent"@en ;
-	dc:description "Weist eine Person als Elternteil aus."@de, "Depicts a person as parent."@en .
+	dc:description "Weist einen Professor als Elternteil aus."@de, "Depicts a professor as a parent."@en .
 		
 :Location rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
   rdfs:label "Ort"@de, "Location"@en ;
-	dc:description "Bezieht sich auf den geografischen Ort eines Lebensabschnitts einer Person sowie auf den Ort von Körperschaften,
-		Medien (Verlagsort, Druckort), Ämtern, Landesherrschaft."@de, "Refers to the location of life stages of persons, corporate bodies, media
-		(printing, publishing), offices, territories."@en .	
+	dc:description "Bezieht sich auf den geografischen Ort eines Lebensabschnitts sowie auf den Ort von Körperschaften,
+		Medien (Verlagsort, Druckort), Ämtern, Landesherrschaft usw."@de, "Refers to the location of life stages of persons, corporate bodies, media
+		(printing, publishing), offices, territories and others."@en .	
 	
 :Denomination rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
   rdfs:label "Konfession"@de, "Denomination"@en ;
 	dc:description "Religionszugehörigkeit oder Glaubenbekenntnis einer Person."@de , "The religious denomination of a person."@en .
-		
-:hasDenomination rdf:type owl:ObjectProperty ;
-  rdfs:domain :Person ;
-  rdfs:range :Denomination ;
-  rdfs:label "hat Konfession"@de, "has denomination"@en ;
-	dc:description "Verweist auf das Glaubenbekenntnis einer Person und/oder deren Religionszugehörigkeit."@de,
-		"Refers to the religious denomination of a person."@en .
 	
 :Education  rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
@@ -291,26 +284,26 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :UniversityStudies rdf:type owl:Class ;
   rdfs:subClassOf :Education ;
   rdfs:label "Studium"@de, "University studies"@en ;
-	dc:description "Bezieht sich auf das Studium einer Person an einer vormodernen Universität."@de, "Refers to the university studies of a person at
+	dc:description "Bezieht sich auf das vormoderne Universitätsstudium einer Person."@de, "Refers to the university studies of a professor at
 		Early Modern Universities."@en .
 				    
 :Enrollment rdf:type owl:Class ;
   rdfs:subClassOf :UniversityStudies ;
   rdfs:label "Immatrikulation"@de, "Enrollment"@en ;
-	dc:description "Bezieht sich auf die Einschreibung einer Person in das Universitätsverzeichnis, die (Universitäts-)Matrikel."@de, "Refers to the enrollment of a person
-		into the universities' directory, the (university) 'Matrikel'."@en .
+	dc:description "Bezieht sich auf die Einschreibung eines Person in das Universitätsverzeichnis, die (Universitäts-)Matrikel."@de, "Refers to the enrollment 
+		of a person into the universities' directory, the (university) 'Matrikel'."@en .
 
 :hasEnrollment rdf:type owl:ObjectProperty ;
-  rdfs:domain :Person ;
+  rdfs:domain :Professor ;
   rdfs:range :Enrollment ;
   rdfs:label "hat Matrikel"@de, "has enrollment"@en ;
 	dc:description "Verweist auf eine Immatrikulation einer Person an einer Universität."@de, "Refers to the enrollment of a person at a university."@en .
 				     
 :enrollmentSemester rdf:type owl:DatatypeProperty ;
   rdfs:domain :Enrollment ;
-  rdfs:range :Person ;
+  rdfs:range :Professor ;
   rdfs:label "Semester der Immatrikulation"@de, "semester of enrollment"@en ;
-	dc:description "Nennt das Semester der Immatrikulation einer Person."@de, "Gives information of the semester in which a person got enrolled."@en .
+	dc:description "Nennt das Semester der Immatrikulation eines Professors."@de, "Gives information of the semester in which a person got enrolled."@en .
 				     
 :AcademicDegree rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
