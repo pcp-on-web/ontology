@@ -365,6 +365,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezeichnet eine Lehr-, Bildungs- und Forschungskorporation die dazu priviligiert ist akademische Grade zu verleihen."@de ,
 		"Refers to education and research corporations which own the privilige to award academic degrees."@en .
 	
+:Semester rdf:type owl:Class ;
+  rdfs:subClassOf :University ;
+  rdfs:label "Semester"@de, "semester"@en ;
+	dc:description "..."@de, "..."@en .				   
+				     
 :Faculty rdf:type owl:Class ;
   rdfs:subClassOf :University ;
   rdfs:label "Fakultät"@de, "Faculty"@en ;
