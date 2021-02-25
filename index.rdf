@@ -202,6 +202,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                    owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
 		
 :StageOfLife rdf:type owl:Class ;
+  :derivedFrom <http://catalogus-professorum.org/cpm/PeriodOfLife>;
   rdfs:label "Lebensabschnitt"@de, "Stage of Life"@en ;
 	dc:description "Dieses Konzept bezieht sich auf einen Lebensabschnitt eines Professors."@de, "This concept refers to a stage of life of a professor."@en .
 
@@ -803,7 +804,49 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range owl:Thing ;
   rdfs:label "ist abgeleitet von"@de, "has been derived from"@en ;
 	dc:description "Wird für das Alignment genutzt."@de, "Wird für das Alignment genutzt."@en .
-				   			     
+				     
+###  http://purl.org/pcp-on-web/ontology#note
+:note rdf:type owl:DatatypeProperty ,
+               owl:FunctionalProperty ;
+      rdfs:domain :Person ;
+      rdfs:range rdfs:Literal ;
+      <http://ns.ontowiki.net/SysOnt/order> "390"^^xsd:string ;
+      rdfs:comment "additional information that does not fit elsewhere"@en ,
+                   "zusätzliche Informationen die nirgends sonst eingetragen werden können"@de ;
+      rdfs:label "Vermerk, Hinweis"@de ,
+                 "note"@en ;
+      owl:versionInfo "0.1 initial creation - 24.05.2007"^^xsd:string ,
+                      "0.2 changed Domain from Professor to Person"^^xsd:string ,
+                      "2.0 stable"^^xsd:string .				     
+				   			
+	      
+###  http://purl.org/pcp-on-web/ontology#Picture
+:Picture rdf:type owl:Class ;
+         rdfs:comment "Diese Konzept beschreibt ein Bild"@de ,
+                      "The concept Person describes a Picture"@en ;
+         rdfs:label "Bild"@de ,
+                    "Picture"@en ;
+         owl:versionInfo "0.1 initial creation date: 13.01.2015"^^xsd:string .
+	      
+:pid rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Professor ;
+				   rdfs:range rdfs:Literal ;
+                   rdfs:comment "Professor Identification number in the original database."@en ,
+                                "Professoren Identifikationsnummer in der ursprünglichen Datenbank."@de ;
+                   rdfs:label "PID"@en ,
+                              "PID"@de ;
+                   owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
+	      
+###  http://purl.org/pcp-on-web/ontology#furtherInformation
+:furtherInformation rdf:type owl:DatatypeProperty ,
+                             owl:FunctionalProperty ;
+                    rdfs:domain :Person ;
+                    rdfs:range rdfs:Literal ;
+                    <http://ns.ontowiki.net/SysOnt/order> "340"^^xsd:string ;
+                    rdfs:label "further information"@en ,
+                               "weitere Informationen"@de ;
+                    owl:versionInfo "0.1 initial creation - 28.06.2007"^^xsd:string ,
+                                    "2.0 stable"^^xsd:string .
 				    
 		
 		
