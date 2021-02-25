@@ -293,7 +293,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezieht sich auf die Einschreibung eines Person in das Universitätsverzeichnis, die (Universitäts-)Matrikel."@de, "Refers to the enrollment 
 		of a person into the universities' directory, the (university) 'Matrikel'."@en .
 
-:hasEnrollment rdf:type owl:ObjectProperty ;
+:hasEnrollment rdf:type owl:DatatypeProperty ;
   rdfs:domain :Professor ;
   rdfs:range :Enrollment ;
   rdfs:label "hat Matrikel"@de, "has enrollment"@en ;
@@ -345,13 +345,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                  xsd:gYear ,
                  xsd:gYearMonth"@en .
 				     
-:hasAcademicDegree rdf:type owl:ObjectProperty ;
+:hasAcademicDegree rdf:type owl:DatatypeProperty ;
   rdfs:domain :Professor ;
   rdfs:range :AcademicDegree ;
   rdfs:label "hat akademischen Grad"@de, "has academic degree"@en ;
 	dc:description "Gibt an, dass eine Person über einen akademischen Grad verfügt."@de, "Gives the academic degree of a person."@en .
 		
-:isStudentAt rdf:type owl:ObjectProperty ;
+:isStudentAt rdf:type owl:DatatypeProperty ;
   rdfs:domain :Student ;
   rdfs:range :University ;
   rdfs:label "ist ein Student an"@de, "is a student at"@en ;
@@ -441,7 +441,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Amt"@de, "Office"@en ;
 	dc:description "Bezieht sich auf ein Amt, das eine Person bekleidet."@de , "Refers to an office a person holds."@en .	
 				     
-:officeAtUniversity rdf:type owl:DatatypeProperty ;
+:officeAtUniversity rdf:type owl:ObjectProperty ;
   rdfs:domain :Office ;
   rdfs:range :University ;
   rdfs:label "Akademisches Amt"@de, "Academic office"@en ;
@@ -548,7 +548,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Herausgeber"@de, "Publisher"@en ;
 	dc:description "Nennt Herausgeber eines Dokuments."@de, "Gives the publisher of a document."@en .
 				     
-:hasAuthor rdf:type owl:DatatypeProperty ;
+:hasAuthor rdf:type owl:ObjectProperty ;
   rdfs:domain :Publication ;
   rdfs:range :Author ;
   rdfs:label "Publikation hat Autor"@de, "publication has author"@en ;
@@ -560,7 +560,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Titel einer Publikation"@de, "title of a publication"@en ;
 	dc:description "Nennt den Titel einer Publikation."@de, "Gives the title of a publication."@en .
 				     
-:hasPublisher rdf:type owl:DatatypeProperty ;
+:hasPublisher rdf:type owl:ObjectProperty ;
   rdfs:domain :Publication ;
   rdfs:range :Publisher ;
   rdfs:label "Publikation hat Herausgeber"@de, "publication has publisher"@en ;
@@ -579,13 +579,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Rechenschaftsbericht, den Dozenten in regelmäßigen Abständen bei der Universitätverwaltung und/oder Landesverwaltung einreichten."@de,
 		"Means regular reports of lecturers about their curriculum to the university and/or territorial administration."@en .
 				     
-:reportHasFaculty rdf:type owl:DatatypeProperty ;
+:reportHasFaculty rdf:type owl:ObjectProperty ;
   rdfs:domain :Report ;
   rdfs:range :Faculty ;
   rdfs:label "Rechenschaftsbericht hat Fakultät"@de, "report has faculty"@en ;
 	dc:description "Ordnet einen Rechenschaftsbericht einer Fakultät zu."@de, "Assigns a report to a faculty."@en .
 				     
-:reportHasChair rdf:type owl:DatatypeProperty ;
+:reportHasChair rdf:type owl:ObjectProperty ;
   rdfs:domain :Report ;
   rdfs:range :Chair ;
   rdfs:label "Rechenschaftsbericht hat Lehrstuhl"@de, "report has chair"@en ;
@@ -635,7 +635,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Auktionskatalog"@de, "Auction catalogue"@en ;
 	dc:description "Bezeichnet einen Auktionskatalog."@de, "Refers to an auction catalogue."@en .				     
 		
-:dissHasFaculty rdf:type owl:DatatypeProperty ;
+:dissHasFaculty rdf:type owl:ObjectProperty ;
   rdfs:domain :Dissertation ;
   rdfs:range :Faculty ;
   rdfs:label "Diss hat Fakultät"@de, "diss has faculty"@en ;
@@ -684,7 +684,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezieht sich auf Vorlesungen bzw. Lektionen (lectiones), die von einem Professor im Rahmen der universitären Lehre abgehalten werden."@de,
 		"Refers to lectures, given by a professor at auniversity."@en.
 		
-:lectureHasFaculty rdf:type owl:DatatypeProperty ;
+:lectureHasFaculty rdf:type owl:ObjectProperty ;
   rdfs:domain :Lecture ;
   rdfs:range :Faculty ;
   rdfs:label "Vorlesung hat Fakultät"@de, "lecture has faculty"@en ;
@@ -696,7 +696,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Vorlesung hat Titel"@de, "lecture has title"@en ;
 	dc:description "Gibt den Titel einer Vorlesung."@de, "Gives the title of a lecture."@en .
 				     
-:lectureHasDocument rdf:type owl:DatatypeProperty ;
+:lectureHasDocument rdf:type owl:ObjectProperty ;
   rdfs:domain :Lecture ;
   rdfs:range :Document ;
   rdfs:label "Vorlesung hat Dokument"@de, "lecture has document"@en ;
@@ -739,7 +739,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Verweist auf Mitgliedschaften einer Person in soziokulturellen und/oder politischen Gesellschaften und Sozietäten."@de, "Refers to the
 		membership of a person at sociocultural and/or political societies and/or corporations."@en .
 				     
-:membershipHasCorporation rdf:type owl:DataProperty ;
+:membershipHasCorporation rdf:type owl:ObjectProperty ;
   rdfs:domain :Membership ;
   rdfs:range :Corporation ;
   rdfs:label "Mitgliedschaft hat Körperschaft"@de, "membership has corporation"@en ;
