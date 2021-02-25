@@ -696,14 +696,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Vorlesung hat Fakultät"@de, "lecture has faculty"@en ;
 	dc:description "Weist eine Vorlesung einer Fakultät zu."@de, "Assigns a lecture to a faculty."@en .
 				     
-:semester rdf:type owl:ObjectProperty ;
-                   rdfs:domain :Theses ;
-				   rdfs:range rdfs:Literal ;
-                   rdfs:comment "The semester id composed by year+A for summer or year+B for winter."@en ,
-                                "Das Semester setzt sich zusammen aus Jahr+A für Sommer oder Jahr+B für Winter."@de ;
-                   rdfs:label "Semester" ;
-                   owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
-				     
 :lectureHasTitle rdf:type owl:DatatypeProperty ;
   rdfs:domain :Lecture ;
   rdfs:range :Title ;
