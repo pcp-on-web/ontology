@@ -346,7 +346,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                  xsd:gYearMonth"@en .
 				     
 :hasAcademicDegree rdf:type owl:ObjectProperty ;
-  rdfs:domain :Person ;
+  rdfs:domain :Professor ;
   rdfs:range :AcademicDegree ;
   rdfs:label "hat akademischen Grad"@de, "has academic degree"@en ;
 	dc:description "Gibt an, dass eine Person über einen akademischen Grad verfügt."@de, "Gives the academic degree of a person."@en .
@@ -431,7 +431,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezeichnet die Landesherrschaft eines Territoriums."@de , "Refers to the authority by a ruler or group of rulers of a territory."@en .
 	
 :Patron rdf:type owl:Class ;
-  rdfs:subClassOf :Person ;
+  rdfs:subClassOf :Professor ;
   rdfs:label "Patron"@de, "Patron"@en ;
 	dc:description "Bezieht sich auf den Patron einer Person; hier auf in den Quellen namentlich erwähnten Förderer eines Professors und dessen Karriere."@de ,
 		"Refers to the patron of a person; here to the Patron of a professor's career who is known by the sources."@en .
@@ -492,7 +492,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		practising curricula, to obtain academic titles. It also refers to inaugural disputations of newly vocated professors."@en.
 		
 :isPraeses rdf:type owl:ObjectProperty ;
-  rdfs:domain :Person ;
+  rdfs:domain :Professor ;
   rdfs:range :Disputation ;
   rdfs:label "ist Praeses"@de, "is Praeses"@en ;
 	dc:description "Bezeichnet den Professor, der während einer Disputation als Praeses auftritt und die Disputation leitet."@de, "Refers to the professor who
@@ -664,7 +664,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezeichnet eine Streitschrift."@de, "Refers to a pamphlet."@en .
 
 :isAuthor rdf:type owl:ObjectProperty ;
-  rdfs:domain :Person ;
+  rdfs:domain :Professor ;
   rdfs:range :Author ;
   rdfs:label "ist Autor"@de, "is author"@en ;
 	dc:description "Zeichnet eine Person als einen Autoren aus. Autor wird hier im Falle einer Disputation als weiter Begriff verwendet,
@@ -673,7 +673,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		must be considered flexible since literature databases often sign out either praeses or respondent as authors of dissertations."@en .
 		
 :isPublisher rdf:type owl:ObjectProperty ;
-  rdfs:domain :Person ;
+  rdfs:domain :Professor ;
   rdfs:range :Publisher ;
   rdfs:label "ist Herausgeber"@de, "is publisher"@en ;
 	dc:description "Zeichnet eine Person als einen Herausgeber aus."@de, "Refers to a person as a publisher."@en .
@@ -731,7 +731,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:domain :Person ;
   rdfs:range rdfs:Literal ;
   rdfs:label "GND/PND"@de, "GND/PND"@en ;
-  	dc:description "GND oder PND Normadatei einer Person."@de, "GND or PND norm data of a person."@en .
+  	dc:description "GND oder PND Normadatei."@de, "GND or PND integrated authority file."@en .
 				   
 :Membership rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
@@ -743,7 +743,14 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:domain :Membership ;
   rdfs:range :Corporation ;
   rdfs:label "Mitgliedschaft hat Körperschaft"@de, "membership has corporation"@en ;
-	dc:description "Weist eine Mitgliedschaft einer Körperschaft zu."@de, "Adds a memebership to a corpration."@en .				    
+	dc:description "Weist die Mitgliedschaft einer Körperschaft zu."@de, "Adds the membership to a corporation."@en .
+				     
+:hasMembership rdf:type owl:ObjectProperty ;
+  rdfs:domain :Professor ;
+  rdfs:range :Membership ;
+  rdfs:label "Professor ist Mitglied"@de, "membership of a Professor"@en ;
+	dc:description "Gibt an, ob ein Professor Mitglied einer Gesellschaft oder Sozietät war."@de, "Refers to memberships of professors at societies and/or
+		corporations."@en .
 				     
 :LearnedSociety rdf:type owl:Class ;
   rdfs:subClassOf :Membership ;
@@ -773,9 +780,9 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :Collection rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
   rdfs:label "Sammlung"@de, "Collection"@en ;
-	dc:description "Verweist auf Sammlungen einer Person, z.B. Privatbibliotheken, Münzen und anderweitige fachspezifische Sammlungen, die bspw. für eine Person
-		im Berufungsverfahren auf eine Professur von Bedeutung gewesen sein könnten."@de, "Refers to a collection of a person, like private libraries, coins 
-		and other subject specific collections,	which could have been important for the vocation of a professorship."@en .
+	dc:description "Verweist auf Sammlungen eines Professors, z.B. Privatbibliotheken, Münzen und anderweitige fachspezifische Sammlungen, die bspw. für eine 
+		Person im Berufungsverfahren auf eine Professur von Bedeutung gewesen sein könnten."@de, "Refers to a collection of a professor, like private
+		libraries, coins and other subject specific collections, which could have been important for the vocation of a professorship."@en .
 		
 :PrivateLibrary rdf:type owl:Class ;
   rdfs:subClassOf :Collection ;
