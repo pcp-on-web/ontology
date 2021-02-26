@@ -368,7 +368,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :Semester rdf:type owl:Class ;
   rdfs:subClassOf :University
   rdfs:label "Abschnitt des Akademischen Jahrs"@de, "Part of Academic Year"@en ;
-    dc:description "Ein akademisches Jahr besteht aus einem Sommer- und einem Wintersemester."@de , "An academic year consits of a summer- and a wintersemester"@en .
+    dc:description "Ein akademisches Jahr besteht aus einem Sommer- und einem Wintersemester."@de , "An academic year consists of a summer- and a wintersemester"@en .
    
 :WinterSemester rdf:type owl:Class ;
   rdfs:subClassOf :Semester ;
@@ -387,7 +387,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:domain :Lecture ;
   rdfs:range :Semester ;
   rdfs:label "Vorlesung wird gehalten/angeboten in Semester"@de, "Lecture is offered/held in semester"@en ;
-    dc:description "Gibt das Semester an, in welchem eine Vorlseung gehalten bzw. angeboten wurde."@de,"Gives the semester at which a lecture had been hold or was
+    dc:description "Gibt das Semester an, in welchem eine Vorlesung gehalten bzw. angeboten wurde."@de,"Gives the semester at which a lecture had been hold or was
 		offered"@en .
    
 :academicYear rdf:type owl:DatatypeProperty ;
