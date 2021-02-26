@@ -366,9 +366,32 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		"Refers to education and research corporations which own the privilige to award academic degrees."@en .
 	
 :Semester rdf:type owl:Class ;
-  rdfs:subClassOf :University ;
-  rdfs:label "Semester"@de, "semester"@en ;
-	dc:description "..."@de, "..."@en .				   
+  rdfs:label "Abschnitt des Akademischen Jahrs"@de, "Part of Academic Year"@en ;
+    dc:description "Ein akademisches Jahr besteht aus einem Sommer und einem Wintersemester."@de , "..."@en .
+   
+:WinterSemester rdf:type owl:Class ;
+  rdfs:subClassOf :Semester ;
+  owl:DisjoinUnionOf :SummerSemester;
+  rdfs:label "Wintersemester"@de, "Winter Semester"@en ;
+    dc:description "..."@de , "..."@en .
+
+:SummerSemester rdf:type owl:Class ;
+  rdfs:subClassOf :Semester ;
+  owl:DisjoinUnionOf :WinterSemester;
+  rdfs:label "Sommersemester"@de, "Summer Semester"@en ;
+    dc:description "..."@de , "..."@en .
+   
+   
+:heldInSemester rdf:type owl:ObjectProperty ;
+  rdfs:domain :Lecture ;
+  rdfs:range :Semester ;
+  rdfs:label "Vorlesung wird gehalten/angeboten in Semester"@de, "..."@en ;
+    dc:description "..."@de,"..."@en .
+   
+:academicYear rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Semester ;
+  rdfs:range xsd:gYear;
+  rdfs:label "Academic Year"@en, "Akademisches Jahr"@de .				   
 				     
 :Faculty rdf:type owl:Class ;
   rdfs:subClassOf :University ;
