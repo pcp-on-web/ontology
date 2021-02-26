@@ -855,6 +855,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "ist abgeleitet von"@de, "has been derived from"@en ;
 	dc:description "Wird für das Alignment genutzt."@de, "Wird für das Alignment genutzt."@en .
 				     
+:isSameAs rdf:type owl:ObjectProperty ;
+  rdfs:domain owl:Thing;
+  rdfs:range owl:Thing ;
+  rdfs:label "ist das Gleiche wie"@de, "is same as"@en ;
+	dc:description "Wird für das Alignment genutzt."@de, "Wird für das Alignment genutzt."@en .
+				     
 ###  http://purl.org/pcp-on-web/ontology#note
 :note rdf:type owl:DatatypeProperty ,
                owl:FunctionalProperty ;
