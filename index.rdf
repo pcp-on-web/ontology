@@ -210,7 +210,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                    owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
 				     
 :Picture rdf:type owl:Class ;
-  :isSameAs <http://catalogus-professorum.org/cpm/Picture>;
+  rdfs:isSameAs <http://catalogus-professorum.org/cpm/Picture>;
   rdfs:label "Bild"@de, "Picture"@en ;
 	dc:description "Dieses Konzept beschreibt ein Bild einer Person."@de, "This concept describes the picture of a person."@en .
 				    
@@ -692,6 +692,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezieht sich auf gedruckte Universitätsprogramme und Reden."@de, "Refers to printed university programs and speeches."@en .
 		
 :Publication rdf:type owl:Class ;
+  rdfs:isSameAs <http://purl.org/pcp-on-web/ontology#Publication> ;
   rdfs:subClassOf :Document ;
   rdfs:label "Publikation"@de, "Publication"@en ;
 	dc:description "Bezieht sich auf Publikationen."@de, "Refers to publications."@en .
