@@ -492,6 +492,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Professor ;
   rdfs:label "beruft"@de, "vocates"@en ;
 	dc:description "Landesherrschaft beruft bzw. bestätigt und ernennt einen Professor."@de, "Territorial rulership vocates or confirms a Professor."@en .
+				     
+:territoryDocument rdf:type owl:ObjectProperty ;
+  rdfs:domain :Territory ;
+  rdfs:range :Document ;
+  rdfs:label "hat Dokument"@de, "has Document"@en ;
+	dc:description "Bezieht sich auf das dazugehörige Dokument einer Ernennung, z.B. Bestallungsakte."@de, "Refers to documents of a vocation, like vocation files.
+		"@en .
 	
 :Patron rdf:type owl:Class ;
   rdfs:subClassOf :Professor ;
@@ -584,7 +591,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Document ;
   rdfs:label "ist Gratulant"@de, "is congratulant"@en ;
 	dc:description "Bezeichnet den Gratulanten einer Publikation."@de, "Refers to the congratulant of a publication."@en .
-				     
+
+###ROAR Ontology could be taken for further description of archival resources in Documents!###
 :Document rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
   rdfs:label "Dokument"@de, "Document"@en ;
@@ -858,7 +866,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "hat Auktionskatalog"@de, "has auction catalogue"@en ;
 	dc:description "Verknüpft eine Privatbibliothek mit einem Auktionskatalog."@de, "Adds an auction catalogue to a private library."@en .
 				   
-### VD 16-18 ###
+### VD 16-18 DC ###
 				     
 :derivedFrom rdf:type owl:ObjectProperty ;
   rdfs:domain owl:Thing;
