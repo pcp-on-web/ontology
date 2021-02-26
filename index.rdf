@@ -367,8 +367,9 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	
 :Semester rdf:type owl:Class ;
   rdfs:subClassOf :University ;
-  rdfs:label "Abschnitt des Akademischen Jahrs"@de, "Part of Academic Year"@en ;
-    dc:description "Ein akademisches Jahr besteht aus einem Sommer- und einem Wintersemester."@de , "An academic year consists of a summer- and a wintersemester"@en .
+  rdfs:label "Semester"@de, "Semester"@en ;
+    dc:description "Abschnitt des Akademischen Jahrs. Es besteht aus einem Sommer- und einem Wintersemester."@de ,
+		"Part of an academic year. It consists of a summer- and a wintersemester"@en .
    
 :WinterSemester rdf:type owl:Class ;
   rdfs:subClassOf :Semester ;
