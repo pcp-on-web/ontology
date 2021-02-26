@@ -251,7 +251,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:domain :Family ;
   rdfs:range :Professor ;
   rdfs:label "Ehepartner"@de, "spouse"@en ;
-	dc:description "Bezieht sich auf den Ehepartner (genersiches Maskulinum) eines Professors."@de, "Refers to the spouse (generic masculine) of a professor."@en .
+	dc:description "Bezieht sich auf den Ehepartner (generisches Maskulinum) eines Professors."@de, "Refers to the spouse (generic masculine) of a professor."@en .
 		
 :child rdf:type owl:ObjectProperty ;
   rdfs:domain :Family ;
