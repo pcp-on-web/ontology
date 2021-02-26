@@ -372,22 +372,23 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
    
 :WinterSemester rdf:type owl:Class ;
   rdfs:subClassOf :Semester ;
-  owl:DisjointUnionOf :SummerSemester;
+  owl:DisjoinUnionOf :SummerSemester;
   rdfs:label "Wintersemester"@de, "Winter Semester"@en ;
-    dc:description "..."@de , "..."@en .
+    dc:description "Das halbjährige Wintersemester dauert von Oktober bis März."@de , "The biannual winter semester starts in October and ends in March."@en .
 
 :SummerSemester rdf:type owl:Class ;
   rdfs:subClassOf :Semester ;
-  owl:DisjointUnionOf :WinterSemester;
+  owl:DisjoinUnionOf :WinterSemester;
   rdfs:label "Sommersemester"@de, "Summer Semester"@en ;
-    dc:description "..."@de , "..."@en .
+    dc:description "Das halbjährige Sommersemester dauert von April bis September."@de , "The biannual summer semester starts in April and ends in September."@en .
    
    
 :heldInSemester rdf:type owl:ObjectProperty ;
   rdfs:domain :Lecture ;
   rdfs:range :Semester ;
-  rdfs:label "Vorlesung wird gehalten/angeboten in Semester"@de, "..."@en ;
-    dc:description "..."@de,"..."@en .
+  rdfs:label "Vorlesung wird gehalten/angeboten in Semester"@de, "Lecture is offered/held in semester"@en ;
+    dc:description "Gibt das Semester an, in welchem eine Vorlseung gehalten bzw. angeboten wurde."@de,"Gives the semester at which a lecture had been hold or was
+		offered"@en .
    
 :academicYear rdf:type owl:DatatypeProperty ;
   rdfs:domain :Semester ;
