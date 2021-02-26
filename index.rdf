@@ -443,7 +443,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezeichnet die Medzinische Fakultät an einer Universität."@de, "Refers to the Faculty of Medicine at Universities."@en .
 
 :Chair rdf:type owl:Class ;
-  rdfs:subClassOf :Office ;
+  rdfs:subClassOf :AcademicOffice ;
   rdfs:label "Lehrstuhl"@de, "Chair"@en ;
 	dc:description "Bezeichnet den Lehrstuhl bzw. das Fachgebiet einer Universitätsfakultät."@de, "Designates the chair or subject at university faculties."@en .
 				     
@@ -481,11 +481,22 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Student ;
   rdfs:label "ist Student"@de, "is student"@en ;
 	dc:description "Bezeichnet den Professor als Student."@de, "Refers to the Professor as a student."@en .
+				     
+:Career rdf:type owl:Class ;
+  rdfs:subClassOf :StageOfLife ;
+  rdfs:label "Karriere"@de, "Career"@en ;
+	dc:description "Bezieht sich auf die Karriere eines Professors."@de , "Refers to the career of a professor."@en .
 		
 :Territory rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
   rdfs:label "Landesherrschaft"@de, "Territory"@en ;
 	dc:description "Bezeichnet die Landesherrschaft eines Territoriums."@de , "Refers to the authority by a ruler or group of rulers of a territory."@en .
+				     
+:influences rdf:type owl:ObjectProperty ;
+  rdfs:domain :Territory ;
+  rdfs:range :Career ;
+  rdfs:label "beeinflusst"@de, "influences"@en ;
+	dc:description "."@de, "Refers to the Professor as a student."@en .
 	
 :Patron rdf:type owl:Class ;
   rdfs:subClassOf :Professor ;
@@ -498,9 +509,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Amt"@de, "Office"@en ;
 	dc:description "Bezieht sich auf ein Amt, das eine Person bekleidet."@de , "Refers to an office a person holds."@en .	
 				     
-:officeAtUniversity rdf:type owl:ObjectProperty ;
-  rdfs:domain :Office ;
-  rdfs:range :University ;
+:AcademicOffice rdf:type owl:Class ;
+  rdfs:subClassOf :Office ;
   rdfs:label "Akademisches Amt"@de, "Academic office"@en ;
 	dc:description "Bezieht sich auf ein Amt, das ein Professor an einer Universität bekleidet."@de , "Refers to an academic office a professor holds at
 		the University."@en .
