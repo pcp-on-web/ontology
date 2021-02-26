@@ -209,6 +209,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                               "Latinisierter Vorname"@de ;
                    owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
 				     
+:hasCorrespondence rdf:type owl:ObjectProperty ;
+  rdfs:domain :Professor ;
+  rdfs:range :Correspondence ;
+  rdfs:label "hat Korrespondenzpartner"@de, "has correspondence partner"@en ;
+	dc:description "Verweist auf die Korrespondenzpartner eines Professors."@de, "Refers to correspondence partner of a professor."@en .
+				     
 :Picture rdf:type owl:Class ;
   rdfs:isSameAs <http://catalogus-professorum.org/cpm/Picture>;
   rdfs:label "Bild"@de, "Picture"@en ;
@@ -521,6 +527,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :StageOfLife ;
   rdfs:label "Netzwerk"@de, "Network"@en ;
 	dc:description "in Arbeit: Dieses Konzept bezieht sich auf ... Personengeflechte ... dynamisch ... Kommunikationsräume ... Interaktion"@de , "..."@en .
+				     
+:Correspondence rdf:type owl:Class ;
+  rdfs:subClassOf :Network ;
+  rdfs:label "Korrespondenz"@de, "Correspondence"@en ;
+	dc:description "Verweist auf Korrespondenzpartner einer Person."@de, "Refers to correspondence partner of a person."@en .
 	
 :Candidature rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
@@ -592,7 +603,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "ist Gratulant"@de, "is congratulant"@en ;
 	dc:description "Bezeichnet den Gratulanten einer Publikation."@de, "Refers to the congratulant of a publication."@en .
 
-###ROAR Ontology could be taken for further description of archival resources in Documents!###
 :Document rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
   rdfs:label "Dokument"@de, "Document"@en ;
@@ -830,7 +840,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   	dc:description "GND oder PND Normadatei."@de, "GND or PND integrated authority file."@en .
 				   
 :Membership rdf:type owl:Class ;
-  rdfs:subClassOf :StageOfLife ;
+  rdfs:subClassOf :Network ;
   rdfs:label "Mitgliedschaft"@de, "Membership"@en ;
 	dc:description "Verweist auf Mitgliedschaften einer Person in soziokulturellen und/oder politischen Gesellschaften und Sozietäten."@de, "Refers to the
 		membership of a person at sociocultural and/or political societies and/or corporations."@en .
