@@ -213,6 +213,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   :isSameAs <http://catalogus-professorum.org/cpm/Picture>;
   rdfs:label "Bild"@de, "Picture"@en ;
 	dc:description "Dieses Konzept beschreibt ein Bild einer Person."@de, "This concept describes the picture of a person."@en .
+				    
+:hasPicture rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Professor ;
+  rdfs:range :Picture ;
+  rdfs:string ;
+  rdfs:label "hat Bild"@de, "has picture"@en ;
+	dc:description "Verweist auf ein Bild des Professors."@de, "Refers to a picture of the professor."@en .
 		
 :StageOfLife rdf:type owl:Class ;
   :derivedFrom <http://catalogus-professorum.org/cpm/PeriodOfLife>;
