@@ -481,22 +481,17 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Student ;
   rdfs:label "ist Student"@de, "is student"@en ;
 	dc:description "Bezeichnet den Professor als Student."@de, "Refers to the Professor as a student."@en .
-				     
-:Career rdf:type owl:Class ;
-  rdfs:subClassOf :StageOfLife ;
-  rdfs:label "Karriere"@de, "Career"@en ;
-	dc:description "Bezieht sich auf die Karriere eines Professors."@de , "Refers to the career of a professor."@en .
 		
 :Territory rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
   rdfs:label "Landesherrschaft"@de, "Territory"@en ;
-	dc:description "Bezeichnet die Landesherrschaft eines Territoriums."@de , "Refers to the authority by a ruler or group of rulers of a territory."@en .
+	dc:description "Bezeichnet die Landesherrschaft eines Territoriums."@de , "Refers to the authority by a ruler/rulership or group of rulers of a territory."@en .
 				     
-:influences rdf:type owl:ObjectProperty ;
+:vocates rdf:type owl:ObjectProperty ;
   rdfs:domain :Territory ;
-  rdfs:range :Career ;
-  rdfs:label "beeinflusst"@de, "influences"@en ;
-	dc:description "."@de, "Refers to the Professor as a student."@en .
+  rdfs:range :Professor ;
+  rdfs:label "beruft"@de, "vocates"@en ;
+	dc:description "Landesherrschaft beruft bzw. bestätigt und ernennt einen Professor."@de, "Territorial rulership vocates or confirms a Professor."@en .
 	
 :Patron rdf:type owl:Class ;
   rdfs:subClassOf :Professor ;
