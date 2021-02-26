@@ -314,7 +314,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		of a person into the universities' directory, the (university) 'Matrikel'."@en .
 
 :hasEnrollment rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Professor ;
+  rdfs:domain :Person ;
   rdfs:range :Enrollment ;
   rdfs:label "hat Matrikel"@de, "has enrollment"@en ;
 	dc:description "Verweist auf eine Immatrikulation einer Person an einer Universität."@de, "Refers to the enrollment of a person at a university."@en .
