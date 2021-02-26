@@ -366,7 +366,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		"Refers to education and research corporations which own the privilige to award academic degrees."@en .
 	
 :Semester rdf:type owl:Class ;
-  rdfs:subClassOf :University ;
   rdfs:label "Abschnitt des Akademischen Jahrs"@de, "Part of Academic Year"@en ;
     dc:description "Ein akademisches Jahr besteht aus einem Sommer- und einem Wintersemester."@de , "An academic year consists of a summer- and a wintersemester"@en .
    
