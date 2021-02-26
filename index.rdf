@@ -208,6 +208,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                    rdfs:label "Latin First Name"@en ,
                               "Latinisierter Vorname"@de ;
                    owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
+				     
+:Picture rdf:type owl:Class ;
+  :isSameAs <http://catalogus-professorum.org/cpm/Picture>;
+  rdfs:label "Bild"@de, "Picture"@en ;
+	dc:description "Dieses Konzept beschreibt ein Bild einer Person."@de, "This concept describes the picture of a person."@en .
 		
 :StageOfLife rdf:type owl:Class ;
   :derivedFrom <http://catalogus-professorum.org/cpm/PeriodOfLife>;
