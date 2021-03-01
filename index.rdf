@@ -561,6 +561,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Kandidat"@de, "Candidate"@en ;
 	dc:description "Bezeichnet eine Person, die im Zuge der Besetzung einer Professur als Kandidat gehandelt wird."@de , "Refers to a person which is a candidate
 		for a university chair."@en .
+				     
+:isVocated rdf:type owl:ObjectProperty ;
+  rdfs:domain :Candidate ;
+  rdfs:range :Professor ;
+  rdfs:label "wird ernannt"@de, "is vocated"@en ;
+	dc:description "Bezieht sich auf den von Universität und Landesherrschaft ausgewählten Kandidaten für eine Professur."@de, "Refers to the candidate for a 
+		professorship/or chair which had been negotiated by the university and the territorial authority."@en.
 
 :Recommendation  rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
