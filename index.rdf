@@ -292,6 +292,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :StageOfLife ;
   rdfs:label "Körperschaft"@de, "Corporation"@en ;
 	dc:description "Bezeichnet eine Körperschaft."@de, "Refers to a corporation or corporate body."@en .
+				     
+:Archive rdf:type owl:Class ;
+  rdfs:subClassOf :Corporation ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Archive> ;
+  rdfs:label "Archiv"@de, "Archive"@en ;
+	dc:description "Bezeichnet eine Körperschaft."@de, "Refers to a corporation or corporate body."@en .
 		
 :PrimaryEducation  rdf:type owl:Class ;
   rdfs:subClassOf :Education ;
@@ -647,6 +653,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		enthalten können. Nominationslisten der Fakultäten an die Landesherrschaft, Kopial- und Beschlussbücher der Universität und Fakultäten usw."@de, 
 		"Archival material refering to the domain, for instance nomination lists of the faculties for the territorial authorities, vocation files which 
 		contain vocation certificates, reference letters and/or applications, etc."@en .
+
+### Cidoc CRM P 49 has former or current keeper ###
+:hasFormerOrCurrentKeeper rdf:type owl:ObjectProperty ;
+  rdfs:domain :ArchivalMaterial ;
+  rdfs:range :Archive ;
+  rdfs:label "hat früheren oder derzeitigen Bewhrer"@de, "has former or current keeper"@en ;
+	dc:description "Wie P49 Cidoc CRM."@de, "Like P49 Cidoc CRM."@en .
 				     
 :Curriculum rdf:type owl:Class ;
   rdfs:subClassOf :Document ;
