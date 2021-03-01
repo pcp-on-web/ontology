@@ -316,8 +316,14 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :UniversityStudies rdf:type owl:Class ;
   rdfs:subClassOf :Education ;
   rdfs:label "Studium"@de, "University studies"@en ;
-	dc:description "Bezieht sich auf das vormoderne Universitätsstudium einer Person."@de, "Refers to the university studies of a professor at
-		Early Modern Universities."@en .
+	dc:description "Bezieht sich auf das Universitätsstudium einer Person an einer vormodernen Universität."@de, "Refers to the university studies of a professor
+		at Early Modern Universities."@en .
+				     
+:hasSemester rdf:type owl:ObjectProperty ;
+  rdfs:domain :UniversityStudies ;
+  rdfs:range :Semester ;
+  rdfs:label "Semesterangabe eines Studiums"@de, "semesters of a university study"@en ;
+    dc:description "..."@de,"..."@en .
 				    
 :Enrollment rdf:type owl:Class ;
   rdfs:subClassOf :UniversityStudies ;
