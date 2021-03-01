@@ -662,9 +662,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ### Cidoc CRM P 49 has former or current keeper ###
 :hasFormerOrCurrentKeeper rdf:type owl:ObjectProperty ;
-  rdfs:domain :ArchivalMaterial ;
-  rdfs:range :Archive ;
-  rdfs:label "hat früheren oder derzeitigen Bewhrer"@de, "has former or current keeper"@en ;
+  rdfs:label "hat früheren oder derzeitigen Bewahrer"@de, "has former or current keeper"@en ;
 	dc:description "Wie P49 Cidoc CRM."@de, "Like P49 Cidoc CRM."@en .
 				     
 :Curriculum rdf:type owl:Class ;
