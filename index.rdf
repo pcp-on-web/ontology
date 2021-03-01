@@ -394,7 +394,15 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :University ;
   rdfs:label "Statuten"@de, "Statutes"@en ;
 	dc:description "Die Verfassung einer Universität, ratifziert durch die Landesherrschaft."@de, "University constitution, ratificated by territorial
-		authority."@en . 
+		authority."@en .
+				     
+###CRM P15 was influenced by ###
+:wasInfluencedBy rdf:type owl:ObjectProperty ;
+  rdfs:domain :Territory ;
+  rdfs:range :Statutes ;
+  rdfs:label "wurde beeinflusst durch"@de, "was influenced by"@en ;
+    dc:description "Wie P15 Cidoc CRM ... ."@de,"Like P15 Cidoc CRM ... ."@en .
+
 	
 :Semester rdf:type owl:Class ;
   rdfs:subClassOf :University ;
