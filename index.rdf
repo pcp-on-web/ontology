@@ -389,6 +389,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Universität"@de, "University"@en ;
 	dc:description "Bezeichnet eine Lehr-, Bildungs- und Forschungskorporation die dazu priviligiert ist akademische Grade zu verleihen."@de ,
 		"Refers to education and research corporations which own the privilige to award academic degrees."@en .
+				     
+:Statutes rdf:type owl:Class ;
+  rdfs:subClassOf :University ;
+  rdfs:label "Statuten"@de, "Statutes"@en ;
+	dc:description "Die Verfassung einer Universität, ratifziert durch die Landesherrschaft."@de, "University constitution, ratificated by territorial
+		authority."@en . 
 	
 :Semester rdf:type owl:Class ;
   rdfs:subClassOf :University ;
