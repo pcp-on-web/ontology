@@ -227,7 +227,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Verweist auf ein Bild des Professors."@de, "Refers to a picture of the professor."@en .
 		
 :StageOfLife rdf:type owl:Class ;
-  :derivedFrom <http://catalogus-professorum.org/cpm/PeriodOfLife>;
+  :derivedFrom <http://purl.org/pcp-on-web/ontology#PeriodOfLife>;
   rdfs:label "Lebensabschnitt"@de, "Stage of Life"@en ;
 	dc:description "Dieses Konzept bezieht sich auf einen Lebensabschnitt eines Professors."@de, "This concept refers to a stage of life of a professor."@en .
 
