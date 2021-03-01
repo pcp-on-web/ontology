@@ -513,6 +513,15 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "beruft"@de, "vocates"@en ;
 	dc:description "Landesherrschaft beruft bzw. bestätigt und ernennt einen Professor."@de, "Territorial rulership vocates or confirms a Professor."@en .
 				     
+:nominates rdf:type owl:ObjectProperty ;
+  rdfs:domain :Faculty ;
+  rdfs:range :Candidate ;
+  rdfs:label "nominiert"@de, "nominates"@en ;
+	dc:description "Bezieht sich auf die Nominierungslisten einer Fakultät, die an die Verwaltung der Landesherrschaft erging und aus denen ein Kandidat durch die 
+		Landesherrschaft bestätigt wurde. Diese Listen liegen zumeist in zuständigen Archiven vor."@de, "Refers to nomination lists which were handed in  to
+		the territorial administration by the faculties in  order to choose and to vocate a candidate for a university chair. Those lists can be found in
+		relevant archives."@en .
+				     
 :territoryDocument rdf:type owl:ObjectProperty ;
   rdfs:domain :Territory ;
   rdfs:range :Document ;
@@ -547,10 +556,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Korrespondenz"@de, "Correspondence"@en ;
 	dc:description "Verweist auf Korrespondenzpartner einer Person."@de, "Refers to correspondence partner of a person."@en .
 	
-:Candidature rdf:type owl:Class ;
-  rdfs:subClassOf :StageOfLife ;
-  rdfs:label "Bewerbung"@de, "Candidature"@en ;
-	dc:description "..."@de , "..."@en .
+:Candidate rdf:type owl:Class ;
+  rdfs:subClassOf :Person ;
+  rdfs:label "Kandidat"@de, "Candidate"@en ;
+	dc:description "Bezeichnet eine Person, die im Zuge der Besetzung einer Professur als Kandidat gehandelt wird."@de , "Refers to a person which is a candidate
+		for a university chair."@en .
 
 :Recommendation  rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
