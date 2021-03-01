@@ -626,8 +626,9 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :Document ;
   rdfs:label "Archivmaterial"@de, "Archival Material"@en ;
 	dc:description "Archiv Material die Domäne betreffend, bspw. Bestallungsakten, die Ernennungsurkunden und Empfehlungsschreiben und/oder Bewerbungsschreiben
-		enthalten können. Kopial- und Beschlussbücher der Universität und Fakultäten usw."@de, "Archival material refering to the domain, for instance vocation
-			files which contain vocation certificates, reference letters and/or applications."@en .
+		enthalten können. Nominationslisten der Fakultäten an die Landesherrschaft, Kopial- und Beschlussbücher der Universität und Fakultäten usw."@de, 
+		"Archival material refering to the domain, for instance nomination lists of the faculties for the territorial authorities, vocation files which 
+		contain vocation certificates, reference letters and/or applications, etc."@en .
 				     
 :Curriculum rdf:type owl:Class ;
   rdfs:subClassOf :Document ;
