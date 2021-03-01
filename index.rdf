@@ -386,6 +386,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	
 :University rdf:type owl:Class ;
   rdfs:subClassOf :Corporation ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Academy> ;
   rdfs:label "Universität"@de, "University"@en ;
 	dc:description "Bezeichnet eine Lehr-, Bildungs- und Forschungskorporation die dazu priviligiert ist akademische Grade zu verleihen."@de ,
 		"Refers to education and research corporations which own the privilige to award academic degrees."@en .
@@ -873,6 +874,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 				   
 :Membership rdf:type owl:Class ;
   rdfs:subClassOf :Network ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#AcademicSociety> ;
   rdfs:label "Mitgliedschaft"@de, "Membership"@en ;
 	dc:description "Verweist auf Mitgliedschaften einer Person in soziokulturellen und/oder politischen Gesellschaften und Sozietäten."@de, "Refers to the
 		membership of a person at sociocultural and/or political societies and/or corporations."@en .
