@@ -384,7 +384,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                  xsd:gYearMonth"@en .
 				     
 :hasAcademicDegree rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Professor ;
+  rdfs:domain :Person ;
   rdfs:range :AcademicDegree ;
   rdfs:label "hat akademischen Grad"@de, "has academic degree"@en ;
 	dc:description "Gibt an, dass eine Person über einen akademischen Grad verfügt."@de, "Gives the academic degree of a person."@en .
@@ -604,9 +604,10 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :isDoing rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
   rdfs:range :TeachingPractices ;
-  rdfs:label "werden durchgeführt von"@de, "done by"@en ;
-	dc:description "Bezieht sich auf Lehrpraktiken, die von einem Professor an einer Universität durchgeführt werden."@de, "Refers to teaching practices
-		which are done by a professor at a university."@en.
+  rdfs:label "hält oder führt durch"@de, "does or gives"@en ;
+	dc:description "Bezieht sich auf Lehrpraktiken, die von einem Professor an einer Universität durchgeführt werden, z.B. Vorlesungen halten, 
+		Disputationen vorstehen oder Übungen geben."@de, "Refers to teaching practices which are done by a professor at a university, e.g. give lectures,
+		preside over disputations or give excersizes."@en.
 				     
 :Exercise rdf:type owl:Class ;
   rdfs:subClassOf :TeachingPractices;
@@ -866,18 +867,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Private Vorlesung"@de, "Private Lecture"@en ;
 	dc:description "Bezieht sich auf private Vorlesungen (lectio privata, privatum, privatissimum), die ein Professor in einem kleinen Kreis von Studenten hält."
 		@de, "Refers to private lectures (lectio privata, privatum, privatissimum), given by a professor for a relatively small amount of students."@en .
-	
-:givesLecture rdf:type owl:ObjectProperty ;
-  rdfs:domain :Professor;
-  rdfs:range :Lecture ;
-  rdfs:label "gibt Vorlesung"@de, "gives lecture"@en ;
-	dc:description "Bezeichnet die Person, die eine Vorlesung an der Universität hält."@de, "Refers to the person who gives a lecture at a university."@en .
 		
-:attendsLecture rdf:type owl:ObjectProperty ;
+:attendsTeachingPractice rdf:type owl:ObjectProperty ;
   rdfs:domain :Student;
-  rdfs:range :Lecture ;
-  rdfs:label "besucht Vorlesung"@de, "attends lecture"@en ;
-	dc:description "Bezieht sich auf die Praktik des Anhörens von Vorlesungen durch Studenten."@de, "Refers to the attendance of students at a lecture."@en .
+  rdfs:range :TeachingPractice ;
+  rdfs:label "nimmt teil"@de, "attends"@en ;
+	dc:description "Bezieht sich auf die Teilnahme von Studenten an Lehrpraktiken."@de, "Refers to the attendance of students at teaching practices."@en .
 		
 :gnd rdf:type owl:DatatypeProperty , owl:FunctionalProperty ;
   rdfs:domain :Person ;
