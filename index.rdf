@@ -682,34 +682,31 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Lektions- oder Vorlesungskatalog einer Universität."@de, "Curriculum or lecture catalogue of a university."@en .
 				
 :Title rdf:type owl:Class ;
-  rdfs:subClassOf :Document ;
   rdfs:label "Titel"@de, "Title"@en ;
 	dc:description "Gibt den Titel eines Dokuments an."@de, "Gives the title of a document."@en .
 				     
 :Author rdf:type owl:Class ;
-  rdfs:subClassOf :Document ;
   rdfs:label "Autor"@de, "Author"@en ;
 	dc:description "Nennt die Autorenschaft eiens Dokuments."@de, "Gives the authorship of a document."@en .
 				     
 :Publisher rdf:type owl:Class ;
-  rdfs:subClassOf :Document ;
   rdfs:label "Herausgeber"@de, "Publisher"@en ;
 	dc:description "Nennt Herausgeber eines Dokuments."@de, "Gives the publisher of a document."@en .
 				     
 :hasAuthor rdf:type owl:ObjectProperty ;
-  rdfs:domain :Publication ;
+  rdfs:domain :Document ;
   rdfs:range :Author ;
   rdfs:label "Publikation hat Autor"@de, "publication has author"@en ;
 	dc:description "Gibt einer Publikation eine Autorenschaft."@de, "Gives a publication an authorship."@en .
 				     
 :hasTitle rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Publication ;
+  rdfs:domain :Document ;
   rdfs:range :Title ;
   rdfs:label "Titel einer Publikation"@de, "title of a publication"@en ;
 	dc:description "Nennt den Titel einer Publikation."@de, "Gives the title of a publication."@en .
 				     
 :hasPublisher rdf:type owl:ObjectProperty ;
-  rdfs:domain :Publication ;
+  rdfs:domain :Document ;
   rdfs:range :Publisher ;
   rdfs:label "Publikation hat Herausgeber"@de, "publication has publisher"@en ;
 	dc:description "Nennt Herausgeber einer Publikation."@de, "Gives the publisher of a publication."@en .
@@ -790,17 +787,17 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Dissertation"@de, "Dissertation"@en ;
 	dc:description "Bezeichnet das gedruckte Medium der Disputation, genannte Dissertation."@de, "Refers to the printed media of a disputation,
 		called dissertation."@en .
-				     
-:AuctionCatalogue rdf:type owl:Class ;
-  rdfs:subClassOf :PublicationType ;
-  rdfs:label "Auktionskatalog"@de, "Auction catalogue"@en ;
-	dc:description "Bezeichnet einen Auktionskatalog."@de, "Refers to an auction catalogue."@en .				     
-		
+				   
 :dissHasFaculty rdf:type owl:ObjectProperty ;
   rdfs:domain :Dissertation ;
   rdfs:range :Faculty ;
   rdfs:label "Diss hat Fakultät"@de, "diss has faculty"@en ;
 	dc:description "Weist eine Dissertation einer Fakultät zu."@de, "Assigns a dissertation to a faculty."@en .
+				     
+:AuctionCatalogue rdf:type owl:Class ;
+  rdfs:subClassOf :PublicationType ;
+  rdfs:label "Auktionskatalog"@de, "Auction catalogue"@en ;
+	dc:description "Bezeichnet einen Auktionskatalog."@de, "Refers to an auction catalogue."@en .				     
 		
 :Textbook rdf:type owl:Class ;
   rdfs:subClassOf :PublicationType ;
@@ -936,6 +933,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :Collection rdf:type owl:Class ;
   rdfs:label "Sammlung"@de, "Collection"@en ;
 	dc:description "Objekt Sammlungen einer Person oder Institution."@de, "Object collections of a person or institution."@en .
+				     
+:collectionHasDocument rdf:type owl:ObjectProperty ;
+  rdfs:domain :Collection ;
+  rdfs:range :Document ;
+  rdfs:label "Sammlung hat Dokument"@de, "collection has document"@en ;
+	dc:description "Weist einer Sammlung ein Dokument zu."@de, "Assigns a collection a document."@en .
 				     
 :owns rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
