@@ -607,6 +607,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "werden durchgeführt von"@de, "done by"@en ;
 	dc:description "Bezieht sich auf Lehrpraktiken, die von einem Professor an einer Universität durchgeführt werden."@de, "Refers to teaching practices
 		which are done by a professor at a university."@en.
+				     
+:Exercise rdf:type owl:Class ;
+  rdfs:subClassOf :TeachingPractices;
+  rdfs:label "Übung"@de, "Exercise"@en ;
+	dc:description "Bezieht sich auf die Lehrpraktik der Übung."@de, "Refers to the practice of exercise."@en.				     
 		
 :Disputation rdf:type owl:Class ;
   rdfs:subClassOf :TeachingPractices;
