@@ -639,6 +639,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Disputation ;
   rdfs:label "ist Opponent"@de, "is opponent"@en ;
 	dc:description "Bezeichnet den Opponenten einer Disputation."@de, "Refers to the opponent of a disputation."@en .
+				     
+:disputationHasDissertation rdf:type owl:ObjectProperty ;
+  rdfs:domain :Disputation ;
+  rdfs:range :Dissertation ;
+  rdfs:label "Disputation hat Dissertation"@de, "disputation has dissertation"@en ;
+	dc:description "Weist einer Disputation eine Dissertation zu."@de, "Assigns a disputation to a dissertation."@en .
 		
 :isDedicatee rdf:type owl:ObjectProperty ;
   rdfs:domain :Person ;
@@ -732,12 +738,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Chair ;
   rdfs:label "Rechenschaftsbericht hat Lehrstuhl"@de, "report has chair"@en ;
 	dc:description "Ordnet einen Rechenschaftsbericht einem Lehrstuhl zu."@de, "Assigns a report to a chair."@en .
-				     			     
-:reportHasAuthor rdf:type owl:ObjectProperty ;
-  rdfs:domain :Report ;
-  rdfs:range :Author ;
-  rdfs:label "Rechenschaftsbericht hat Autor"@de, "report has author"@en ;
-	dc:description "Verweist auf den Autoren des Rechenschaftsberichts."@de, "Refers to the author of a report."@en .
 				     
 :reportDate rdf:type owl:DatatypeProperty, owl:FunctionalProperty ;
   rdfs:domain :Report ;
@@ -850,12 +850,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Faculty ;
   rdfs:label "Vorlesung hat Fakultät"@de, "lecture has faculty"@en ;
 	dc:description "Weist eine Vorlesung einer Fakultät zu."@de, "Assigns a lecture to a faculty."@en .
-				     
-:lectureHasTitle rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Lecture ;
-  rdfs:range :Title ;
-  rdfs:label "Vorlesung hat Titel"@de, "lecture has title"@en ;
-	dc:description "Gibt den Titel einer Vorlesung."@de, "Gives the title of a lecture."@en .
 				     
 :lectureHasDocument rdf:type owl:ObjectProperty ;
   rdfs:domain :Lecture ;
