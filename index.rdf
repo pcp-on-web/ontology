@@ -623,14 +623,14 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		is the praeses - the head - of a disputation."@en .
 		
 :isRespondent rdf:type owl:ObjectProperty ;
-  rdfs:domain :Person ;
+  rdfs:domain :Student ;
   rdfs:range :Disputation ;
   rdfs:label "ist Respondent"@de, "is Respondent"@en ;
 	dc:description "Bezeichnet den Respondenten, der sich als Student der Disputation unterzieht."@de, "Refers to the respondent who as a student is undergoing
 		the act of disputation."@en .
 		
 :isOpponent rdf:type owl:ObjectProperty ;
-  rdfs:domain :Person ;
+  rdfs:domain :Student ;
   rdfs:range :Disputation ;
   rdfs:label "ist Opponent"@de, "is opponent"@en ;
 	dc:description "Bezeichnet den Opponenten einer Disputation."@de, "Refers to the opponent of a disputation."@en .
