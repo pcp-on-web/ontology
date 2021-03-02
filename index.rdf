@@ -568,6 +568,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :Network ;
   rdfs:label "Korrespondenz"@de, "Correspondence"@en ;
 	dc:description "Verweist auf Korrespondenzpartner einer Person."@de, "Refers to correspondence partner of a person."@en .
+				     
+:correspondenceHasDocument rdf:type owl:ObjectProperty ;
+  rdfs:domain :Correspondence ;
+  rdfs:range :Document ;
+  rdfs:label "Korrespondenz hat Dokument"@de, "correspondence has document"@en ;
+	dc:description "Weist einer Korrespondenz ein Dokument zu."@de, "Assigns a correspondence to a document."@en .
 	
 :Candidate rdf:type owl:Class ;
   rdfs:subClassOf :Person ;
