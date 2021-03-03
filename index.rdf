@@ -534,7 +534,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezeichnet den Professor als Student."@de, "Refers to the Professor as a student."@en .
 		
 :Territory rdf:type owl:Class ;
-  rdfs:subClassOf :corporation ;
+  rdfs:subClassOf :Corporation ;
   rdfs:label "Landesherrschaft"@de, "Territory"@en ;
 	dc:description "Bezeichnet die Landesherrschaft eines Territoriums."@de , "Refers to the authority by a ruler/rulership or group of rulers of a territory."@en .
 				     
