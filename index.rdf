@@ -611,11 +611,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :StageOfLife ;
   rdfs:label "Empfehlung"@de, "Recommendation"@en ;
   	dc:description "Bezieht sich auf Empfehlungen, z.B. Empfehlungsschreiben, die in Bestallungsakten enthalten sind."@de , "Refers to recommendations,
-		e.g. letters of recommendation which are part of vocation fildes."@en .
+		e.g. letters of recommendation which are part of vocation files."@en .
 				     
 :recommendationDocument rdf:type owl:ObjectProperty ;
   rdfs:domain :Recommendation ;
-  rdfs:range : Document;
+  rdfs:range :Document ;
   rdfs:label "Empfehlungsschreiben"@de, "letter of recommendation"@en ;
 	dc:description "Verweist auf ein Empfehlungsschreiben."@de, "Refers to a letter of recommendation."@en .
 		
