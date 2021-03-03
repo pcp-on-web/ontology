@@ -210,7 +210,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Verweist auf die Korrespondenzpartner eines Professors."@de, "Refers to correspondence partner of a professor."@en .
 				     
 :Picture rdf:type owl:Class ;
-  rdfs:isSameAs <http://catalogus-professorum.org/cpm/Picture>;
+  rdfs:isSameAs <http://catalogus-professorum.org/cpm/Picture> ;
   rdfs:label "Bild"@de, "Picture"@en ;
 	dc:description "Dieses Konzept beschreibt ein Bild einer Person."@de, "This concept describes the picture of a person."@en .
 				    
@@ -221,7 +221,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Verweist auf ein Bild des Professors."@de, "Refers to a picture of the professor."@en .
 		
 :StageOfLife rdf:type owl:Class ;
-  :derivedFrom <http://purl.org/pcp-on-web/ontology#PeriodOfLife>;
+  :derivedFrom <http://purl.org/pcp-on-web/ontology#PeriodOfLife> ;
   rdfs:label "Lebensabschnitt"@de, "Stage of Life"@en ;
 	dc:description "Dieses Konzept bezieht sich auf einen Lebensabschnitt eines Professors."@de, "This concept refers to a stage of life of a professor."@en .
 
@@ -784,6 +784,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 :Dissertation rdf:type owl:Class ;
   rdfs:subClassOf :PublicationType ;
+  rdfs:isSameAs <http://purl.org/pcp-on-web/ontology#QualificationDocument> ;
   rdfs:label "Dissertation"@de, "Dissertation"@en ;
 	dc:description "Bezeichnet das gedruckte Medium der Disputation, genannte Dissertation."@de, "Refers to the printed media of a disputation,
 		called dissertation."@en .
