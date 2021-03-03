@@ -543,7 +543,9 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :Territory rdf:type owl:Class ;
   rdfs:subClassOf :Corporation ;
   rdfs:label "Landesherrschaft"@de, "Territory"@en ;
-	dc:description "Bezeichnet die Landesherrschaft eines Territoriums."@de , "Refers to the authority by a ruler/rulership or group of rulers of a territory."@en .
+	dc:description "Bezeichnet die Landesherrschaft eines Territoriums und bezieht sich hier auf den Amtssitz jener landesherrschaftliche  Organe, 
+		denen die Universitäten unterstellt sind."@de , "Refers to the authority by a ruler/rulership or group of rulers of a territory and means here the
+		territorial administration which deal with the universities."@en .
 				     
 :vocates rdf:type owl:ObjectProperty ;
   rdfs:domain :Territory ;
