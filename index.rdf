@@ -298,6 +298,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Körperschaft"@de, "Corporation"@en ;
 	dc:description "Bezeichnet eine Körperschaft."@de, "Refers to a corporation or corporate body."@en .
 				     
+:locationCorporation rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Corporation ;
+  rdfs:range :Location ;
+  rdfs:label "Ort einer Körperschaft"@de, "location of a corporation"@en ;
+	dc:description "Bezieht sich auf den geografischen Ort einer Körperschaft."@de,
+		"Refers to the geographical location of a corporation."@en .
+				     
 :Archive rdf:type owl:Class ;
   rdfs:subClassOf :Corporation ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Archive> ;
