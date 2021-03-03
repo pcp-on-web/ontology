@@ -305,6 +305,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Privatunterricht"@de, "Private education"@en ;
 	dc:description "Privatunterricht im Familienverband oder durch einen Privatlehrer."@de,
 		"Private education by family members or a different private teacher."@en .
+				     
+:Graduation rdf:type owl:Class ;
+  rdfs:subClassOf :StageOfLife ;
+  rdfs:isSameAs <http://purl.org/pcp-on-web/ontology#Graduation> ;
+  rdfs:label "Abschluss"@de, "Graduation"@en ;
+	dc:description "Bezeichnet einen Abschluss an einer Schule oder Universität."@de, "Refers to a graduation at a school or university."@en .
 		
 :UniversityStudies rdf:type owl:Class ;
   rdfs:subClassOf :Education ;
@@ -337,7 +343,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Nennt das Semester der Immatrikulation eines Professors."@de, "Gives information of the semester in which a person got enrolled."@en .
 				     
 :AcademicDegree rdf:type owl:Class ;
-  rdfs:subClassOf :StageOfLife ;
+  rdfs:subClassOf :Graduation ;
   rdfs:label "Akademische Grade"@de, "Academic Degree"@en ;
 	dc:description "Bezeichnet akademische Abschlüsse, die an frühneuzeitlichen Universitäten in deutschen Territorien erworben werden konnten."@de , "..."@en .
 				     
