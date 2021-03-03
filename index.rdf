@@ -276,6 +276,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :StageOfLife ;
   rdfs:label "Konfession"@de, "Denomination"@en ;
 	dc:description "Religionszugehörigkeit oder Glaubenbekenntnis einer Person."@de , "The religious denomination of a person."@en .
+				     
+:Honour rdf:type owl:Class ;
+  rdfs:isSameAs <http://purl.org/pcp-on-web/ontology#Honour> ;
+  rdfs:subClassOf :StageOfLife ;
+  rdfs:label "Ehrung"@de , "Honour"@en ;
+	dc:description "Diese Konzept beschreibt eine Ehrung"@de , "The concept Person describes a honour"@en .
+
 	
 :Education  rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
