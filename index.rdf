@@ -266,11 +266,16 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Weist einen Professor als Elternteil aus."@de, "Depicts a professor as a parent."@en .
 		
 :Location rdf:type owl:Class ;
-  rdfs:subClassOf :StageOfLife ;
   rdfs:label "Ort"@de, "Location"@en ;
-	dc:description "Bezieht sich auf den geografischen Ort eines Lebensabschnitts sowie auf den Ort von Körperschaften,
-		Medien (Verlagsort, Druckort), Ämtern, Landesherrschaft usw."@de, "Refers to the location of life stages of persons, corporate bodies, media
-		(printing, publishing), offices, territories and others."@en .	
+	dc:description "Bezieht sich auf den geografischen Ort für Lebensabschnitte einer Person, Orte von Körperschaften,
+		Medien (Verlagsort, Druckort), Ämtern, Landesherrschaft usw."@de, "Refers to the geographical location of life stages of persons, corporate bodies, media
+		(printing, publishing), offices, territories and others."@en .
+				     
+:stageOfLifeLocation rdf:type owl:DatatypeProperty ;
+  rdfs:domain :StageOfLife ;
+  rdfs:range :Location ;
+  rdfs:label "Ort Lebensabschnitt"@de, "location of stage of life"@en ;
+	dc:description "Fügt einem Lebensabschnitt einer Person einen geografischen Ort zu."@de, "Adds a geographical location to a stage of life of a person."@en .
 	
 :Denomination rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
