@@ -594,6 +594,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezeichnet eine Person, die im Zuge der Besetzung einer Professur als Kandidat gehandelt wird."@de , "Refers to a person which is a candidate
 		for a university chair."@en .
 				     
+:hasRecommendation rdf:type owl:ObjectProperty ;
+  rdfs:domain :Candidate ;
+  rdfs:range :Recommendation ;
+  rdfs:label "hat Empfehlung"@de, "has recommendation"@en ;
+	dc:description "Gibt an, ob ein Kandidat ein Empfehlungsschreiben hat."@de, "Refers to any given recommendation of a candidate."@en .		
+				     
 :isVocated rdf:type owl:ObjectProperty ;
   rdfs:domain :Candidate ;
   rdfs:range :Professor ;
@@ -603,8 +609,15 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 :Recommendation  rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
-  rdfs:label "Empfehlungen"@de, "Recommendation"@en ;
-  	dc:description "..."@de , "..."@en .
+  rdfs:label "Empfehlung"@de, "Recommendation"@en ;
+  	dc:description "Bezieht sich auf Empfehlungen, z.B. Empfehlungsschreiben, die in Bestallungsakten enthalten sind."@de , "Refers to recommendations,
+		e.g. letters of recommendation which are part of vocation fildes."@en .
+				     
+:recommendationDocument rdf:type owl:ObjectProperty ;
+  rdfs:domain :Recommendation ;
+  rdfs:range : Document;
+  rdfs:label "Empfehlungsschreiben"@de, "letter of recommendation"@en ;
+	dc:description "Verweist auf ein Empfehlungsschreiben."@de, "Refers to a letter of recommendation."@en .
 		
 :TeachingPractices rdf:type owl:Class ;
   rdfs:label "Lehrpraktiken"@de, "Teaching Practices"@en ;
