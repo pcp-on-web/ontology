@@ -587,7 +587,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   	dc:description "..."@de , "..."@en .
 		
 :TeachingPractices rdf:type owl:Class ;
-  rdfs:subClassOf :StageOfLife ;
   rdfs:label "Lehrpraktiken"@de, "Teaching Practices"@en ;
   	dc:description "Beschreibt akademische Lehrpraktiken, die ein Professor an der Universität durchführt und welche durch Statuten, weitere Regularien 
 		und/oder durch Gewohnheit geregelt sind."@de, "Describes academic teaching practices which are regulated by the University's statutes
