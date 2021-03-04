@@ -55,49 +55,6 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://www.w3.org/2001/XMLSchema#gYearMonth
 xsd:gYearMonth rdf:type rdfs:Datatype .		
 		
-:date rdf:type owl:DatatypeProperty, owl:FunctionalProperty ;
-  rdfs:domain :StageOfLife ;
-  rdfs:range rdfs:Literal;
-  rdfs:label "Date"@en, "Datum"@de ;
-  	dc:description "Zeitangabe eines Lebensabschnitts."@de, "The date or timespan of a stage of life from a valid datatype
-		 xsd:date ,
-                 xsd:gDay ,
-                 xsd:gMonth ,
-                 xsd:gMonthDay ,
-                 xsd:gYear ,
-                 xsd:gYearMonth"@en .
-		
-###  http://purl.org/pcp-on-web/ontology#from
-:from rdf:type owl:DatatypeProperty ;
-      rdfs:domain :StageOfLife ;
-      rdfs:range rdfs:Literal ;
-      rdfs:comment "Das Startdatum eines Lebensabschnitts"@de ,
-                   "The date of the beginning of a stage of life from a valid datatype xsd:date ,
-                 xsd:gDay ,
-                 xsd:gMonth ,
-                 xsd:gMonthDay ,
-                 xsd:gYear ,
-                 xsd:gYearMonth"@en ;
-      rdfs:label "from"@en ,
-                 "von"@de ;
-      owl:versionInfo "0.1 initial creation date:  24.05.2007"^^xsd:string ,
-                      "2.0 stable other types added"^^xsd:string .
-		
-###  http://purl.org/pcp-on-web/ontology#to
-:to rdf:type owl:DatatypeProperty ;
-    rdfs:domain :StageOfLife ;
-    rdfs:range rdfs:Literal ;
-    rdfs:comment "Das Enddatum eines Lebensabschnitts"@de ,
-                 "The date of the ending of a stage of life from a valid datatype xsd:date ,
-               xsd:gDay,
-               xsd:gMonth,
-               xsd:gMonthDay,
-               xsd:gYear,
-               xsd:gYearMonth"@en ;
-    rdfs:label "bis"@de ,
-               "to"@en ;
-    owl:versionInfo "0.1 initial creation date:  24.05.2007"^^xsd:string ,
-                    "2.0 stable other types added"^^xsd:string .
 		
 #################################################################
 #		Classes
@@ -614,6 +571,18 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                  xsd:gYear ,
                  xsd:gYearMonth"@en .
 
+:date rdf:type owl:DatatypeProperty, owl:FunctionalProperty ;
+  rdfs:domain :StageOfLife ;
+  rdfs:range rdfs:Literal;
+  rdfs:label "Date"@en, "Datum"@de ;
+  	dc:description "Zeitangabe eines Lebensabschnitts."@de, "The date or timespan of a stage of life from a valid datatype
+		 xsd:date ,
+                 xsd:gDay ,
+                 xsd:gMonth ,
+                 xsd:gMonthDay ,
+                 xsd:gYear ,
+                 xsd:gYearMonth"@en .
+				     
 :enrollmentSemester rdf:type owl:DatatypeProperty ;
   rdfs:domain :Enrollment ;
   rdfs:range :Semester ;
@@ -630,6 +599,22 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                      "Vorname"@de ;
           owl:versionInfo "0.1 initial creation date: 18.05.2015"^^xsd:string .
 
+###  http://purl.org/pcp-on-web/ontology#from
+:from rdf:type owl:DatatypeProperty ;
+      rdfs:domain :StageOfLife ;
+      rdfs:range rdfs:Literal ;
+      rdfs:comment "Das Startdatum eines Lebensabschnitts"@de ,
+                   "The date of the beginning of a stage of life from a valid datatype xsd:date ,
+                 xsd:gDay ,
+                 xsd:gMonth ,
+                 xsd:gMonthDay ,
+                 xsd:gYear ,
+                 xsd:gYearMonth"@en ;
+      rdfs:label "from"@en ,
+                 "von"@de ;
+      owl:versionInfo "0.1 initial creation date:  24.05.2007"^^xsd:string ,
+                      "2.0 stable other types added"^^xsd:string .
+				     
 ###  http://purl.org/pcp-on-web/ontology#furtherInformation
 :furtherInformation rdf:type owl:DatatypeProperty ,
                              owl:FunctionalProperty ;
@@ -760,7 +745,22 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Location ;
   rdfs:label "Ort Lebensabschnitt"@de, "location of stage of life"@en ;
 	dc:description "Fügt einem Lebensabschnitt einer Person einen geografischen Ort zu."@de, "Adds a geographical location to a stage of life of a person."@en .
-				     
+
+###  http://purl.org/pcp-on-web/ontology#to
+:to rdf:type owl:DatatypeProperty ;
+    rdfs:domain :StageOfLife ;
+    rdfs:range rdfs:Literal ;
+    rdfs:comment "Das Enddatum eines Lebensabschnitts"@de ,
+                 "The date of the ending of a stage of life from a valid datatype xsd:date ,
+               xsd:gDay,
+               xsd:gMonth,
+               xsd:gMonthDay,
+               xsd:gYear,
+               xsd:gYearMonth"@en ;
+    rdfs:label "bis"@de ,
+               "to"@en ;
+    owl:versionInfo "0.1 initial creation date:  24.05.2007"^^xsd:string ,
+                    "2.0 stable other types added"^^xsd:string .
 				     
 #####################################################################################################################################################################
 #				     Object Properties				     
