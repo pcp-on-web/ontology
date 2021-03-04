@@ -99,9 +99,9 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
     owl:versionInfo "0.1 initial creation date:  24.05.2007"^^xsd:string ,
                     "2.0 stable other types added"^^xsd:string .
 		
-#####################################################################################################################################################################
+#################################################################
 #		Classes
-#####################################################################################################################################################################
+#################################################################
 
 :AcademicDegree rdf:type owl:Class ;
   rdfs:subClassOf :Graduation ;
@@ -554,9 +554,9 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Wintersemester"@de, "Winter Semester"@en ;
     dc:description "Das halbjährige Wintersemester dauert von Oktober bis März."@de , "The biannual winter semester starts in October and ends in March."@en .		
 
-#####################################################################################################################################################################
+#################################################################
 #		Datatype Propertys		
-#####################################################################################################################################################################
+#################################################################
 		
 :academicDegreeDate rdf:type owl:DatatypeProperty, owl:FunctionalProperty ;
   rdfs:domain :AcademicDegree ;
