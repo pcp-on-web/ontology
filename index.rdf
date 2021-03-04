@@ -848,7 +848,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :hasGraduation rdf:type owl:ObjectProperty ;
   rdfs:domain :Education ;
   rdfs:range :Graduation ;
-  rdfs:label "Bildungsabschnitt hat Abschluss"@de, "education has graduation"@de ;
+  rdfs:label "Bildungsabschnitt hat Abschluss"@de, "education has graduation"@en ;
 	dc:description "Bezieht sich auf den Abschluss eines Bildungsweges im Lebensabschnitt eines Professors."@de, "Refers to the graduation in education of a
 		professors stage of life."@en .
 	      
