@@ -814,14 +814,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :University ;
   rdfs:label "werden durchgeführt"@de, "done at"@en ;
 	dc:description "Bezieht sich auf Lehrpraktiken, die an einer Universität durchgeführt werden."@de, "Refers to teaching practices which are done at a
-		university."@en .
-				     
-:educationGraduation rdf:type owl:ObjectProperty ;
-  rdfs:domain :Education ;
-  rdfs:range :Graduation ;
-  rdfs:label "Abschluss Bildungsabschnitt"@de, "graduation of education"@de ;
-	dc:description "Bezieht sich auf den Abschluss eines Bildungsweges im Lebensabschnitt eines Professors."@de, "Refers to the graduation in education of a
-		professors stage of life."@en .				 
+		university."@en .				 
 
 :hasAuctionCatalogue rdf:type owl:ObjectProperty ;
   rdfs:domain :PrivateLibrary ;
@@ -852,6 +845,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "hat früheren oder derzeitigen Bewahrer"@de, "has former or current keeper"@en ;
 	dc:description "Wie P49 Cidoc CRM."@de, "Like P49 Cidoc CRM."@en .
 
+:hasGraduation rdf:type owl:ObjectProperty ;
+  rdfs:domain :Education ;
+  rdfs:range :Graduation ;
+  rdfs:label "Bildungsabschnitt hat Abschluss"@de, "education has graduation"@de ;
+	dc:description "Bezieht sich auf den Abschluss eines Bildungsweges im Lebensabschnitt eines Professors."@de, "Refers to the graduation in education of a
+		professors stage of life."@en .
+	      
 :hasMembership rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
   rdfs:range :Membership ;
