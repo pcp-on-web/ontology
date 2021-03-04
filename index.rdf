@@ -633,6 +633,17 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                      "Vorname"@de ;
           owl:versionInfo "0.1 initial creation date: 18.05.2015"^^xsd:string .
 
+###  http://purl.org/pcp-on-web/ontology#furtherInformation
+:furtherInformation rdf:type owl:DatatypeProperty ,
+                             owl:FunctionalProperty ;
+                    rdfs:domain :Person ;
+                    rdfs:range rdfs:Literal ;
+                    <http://ns.ontowiki.net/SysOnt/order> "340"^^xsd:string ;
+                    rdfs:label "further information"@en ,
+                               "weitere Informationen"@de ;
+                    owl:versionInfo "0.1 initial creation - 28.06.2007"^^xsd:string ,
+                                    "2.0 stable"^^xsd:string .
+				     
 :gnd rdf:type owl:DatatypeProperty , owl:FunctionalProperty ;
   rdfs:domain :Person ;
   rdfs:range rdfs:Literal ;
@@ -702,6 +713,29 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezieht sich auf den geografischen Ort eines Dokuments, z.B. Publikationsort."@de,
 		"Refers to the geographical location of a document, e.g. location of a publication."@en .
 
+###  http://purl.org/pcp-on-web/ontology#note
+:note rdf:type owl:DatatypeProperty ,
+               owl:FunctionalProperty ;
+      rdfs:domain :Person ;
+      rdfs:range rdfs:Literal ;
+      <http://ns.ontowiki.net/SysOnt/order> "390"^^xsd:string ;
+      rdfs:comment "additional information that does not fit elsewhere"@en ,
+                   "zusätzliche Informationen die nirgends sonst eingetragen werden können"@de ;
+      rdfs:label "Vermerk, Hinweis"@de ,
+                 "note"@en ;
+      owl:versionInfo "0.1 initial creation - 24.05.2007"^^xsd:string ,
+                      "0.2 changed Domain from Professor to Person"^^xsd:string ,
+                      "2.0 stable"^^xsd:string .				     
+	      
+:pid rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Professor ;
+				   rdfs:range rdfs:Literal ;
+                   rdfs:comment "Professor Identification number in the original database."@en ,
+                                "Professoren Identifikationsnummer in der ursprünglichen Datenbank."@de ;
+                   rdfs:label "PID"@en ,
+                              "PID"@de ;
+                   owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
+				     
 :reportDate rdf:type owl:DatatypeProperty, owl:FunctionalProperty ;
   rdfs:domain :Report ;
   rdfs:range rdfs:Literal ;
@@ -736,6 +770,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 				     Object Properties
 				     
 #####################################################################################################################################################################    
+
+:attendsTeachingPractice rdf:type owl:ObjectProperty ;
+  rdfs:domain :Student;
+  rdfs:range :TeachingPractices ;
+  rdfs:label "nimmt teil"@de, "attends"@en ;
+	dc:description "Bezieht sich auf die Teilnahme von Studenten an Lehrpraktiken."@de, "Refers to the attendance of students at teaching practices."@en .
 				     
 :child rdf:type owl:ObjectProperty ;
   rdfs:domain :Family ;
@@ -743,6 +783,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Kind"@de, "child"@en ;
 	dc:description "Bezieht sich auf das Kind, Pflegekind, Adoptivkind eines Professors."@de, "Refers to the cild, foster child, adoptive child of a professor."@en .
 
+:collectionHasDocument rdf:type owl:ObjectProperty ;
+  rdfs:domain :Collection ;
+  rdfs:range :Document ;
+  rdfs:label "Sammlung hat Dokument"@de, "collection has document"@en ;
+	dc:description "Weist einer Sammlung ein Dokument zu."@de, "Assigns a collection a document."@en .
+				     
 :correspondenceHasDocument rdf:type owl:ObjectProperty ;
   rdfs:domain :Correspondence ;
   rdfs:range :Document ;
@@ -754,6 +800,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Dissertation ;
   rdfs:label "Disputation hat Dissertation"@de, "disputation has dissertation"@en ;
 	dc:description "Weist einer Disputation eine Dissertation zu."@de, "Assigns a disputation to a dissertation."@en .
+
+:dissHasFaculty rdf:type owl:ObjectProperty ;
+  rdfs:domain :Dissertation ;
+  rdfs:range :Faculty ;
+  rdfs:label "Diss hat Fakultät"@de, "diss has faculty"@en ;
+	dc:description "Weist eine Dissertation einer Fakultät zu."@de, "Assigns a dissertation to a faculty."@en .
 				     
 :doneAt rdf:type owl:ObjectProperty ;
   rdfs:domain :TeachingPractices ;
@@ -769,17 +821,23 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezieht sich auf den Abschluss eines Bildungsweges im Lebensabschnitt eines Professors."@de, "Refers to the graduation in education of a
 		professors stage of life."@en .				 
 
-:hasChair rdf:type owl:ObjectProperty ;
-  rdfs:domain :Professor ;
-  rdfs:range :Chair ;
-  rdfs:label "hat Lehrstuhl"@de, "has chair"@en ;
-	dc:description "Professor hat Lehrstuhl."@de, "Professor has chair."@en .
-
+:hasAuctionCatalogue rdf:type owl:ObjectProperty ;
+  rdfs:domain :PrivateLibrary ;
+  rdfs:range :AuctionCatalogue ;
+  rdfs:label "hat Auktionskatalog"@de, "has auction catalogue"@en ;
+	dc:description "Verknüpft eine Privatbibliothek mit einem Auktionskatalog."@de, "Adds an auction catalogue to a private library."@en .
+				     
 :hasAuthor rdf:type owl:ObjectProperty ;
   rdfs:domain :Document ;
   rdfs:range :Author ;
   rdfs:label "Dokument hat Autor"@de, "document has author"@en ;
 	dc:description "Verweist auf die Autorenschaft eines Dokuments."@de, "Refers to the authorship of a document."@en .
+
+:hasChair rdf:type owl:ObjectProperty ;
+  rdfs:domain :Professor ;
+  rdfs:range :Chair ;
+  rdfs:label "hat Lehrstuhl"@de, "has chair"@en ;
+	dc:description "Professor hat Lehrstuhl."@de, "Professor has chair."@en .
 				     
 :hasCorrespondence rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
@@ -791,7 +849,14 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :hasFormerOrCurrentKeeper rdf:type owl:ObjectProperty ;
   rdfs:label "hat früheren oder derzeitigen Bewahrer"@de, "has former or current keeper"@en ;
 	dc:description "Wie P49 Cidoc CRM."@de, "Like P49 Cidoc CRM."@en .
-				     				     
+
+:hasMembership rdf:type owl:ObjectProperty ;
+  rdfs:domain :Professor ;
+  rdfs:range :Membership ;
+  rdfs:label "Professor ist Mitglied"@de, "membership of a Professor"@en ;
+	dc:description "Gibt an, ob ein Professor Mitglied einer Gesellschaft oder Sozietät war."@de, "Refers to memberships of professors at societies and/or
+		corporations."@en .
+				     
 :hasPublisher rdf:type owl:ObjectProperty ;
   rdfs:domain :Document ;
   rdfs:range :Publisher ;
@@ -823,6 +888,15 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
     dc:description "Gibt das Semester an, in welchem eine Vorlesung gehalten bzw. angeboten wurde."@de,"Gives the semester at which a lecture had been hold or was
 		offered"@en .				  				     
 
+:isAuthor rdf:type owl:ObjectProperty ;
+  rdfs:domain :Professor ;
+  rdfs:range :Author ;
+  rdfs:label "ist Autor"@de, "is author"@en ;
+	dc:description "Zeichnet eine Person als einen Autoren aus. Autor wird hier im Falle einer Disputation als weiter Begriff verwendet,
+		da Praeses und Respondent in Literaturdatenbanken oft beide als Autoren einer Dissertation angegeben werden."@de,
+		"Refers to a person as an author of a publication. In case of dissertations the notion author in the context of this ontology model
+		must be considered flexible since literature databases often sign out either praeses or respondent as authors of dissertations."@en .
+		
 :isCongratulant rdf:type owl:ObjectProperty ;
   rdfs:domain :Person ;
   rdfs:range :Document ;
@@ -855,7 +929,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "ist Praeses"@de, "is Praeses"@en ;
 	dc:description "Bezeichnet den Professor, der während einer Disputation als Praeses auftritt und die Disputation leitet."@de, "Refers to the professor who
 		is the praeses - the head - of a disputation."@en .
-		
+
+:isPublisher rdf:type owl:ObjectProperty ;
+  rdfs:domain :Professor ;
+  rdfs:range :Publisher ;
+  rdfs:label "ist Herausgeber"@de, "is publisher"@en ;
+	dc:description "Zeichnet eine Person als einen Herausgeber aus."@de, "Refers to a person as a publisher."@en .
+				     
 :isRespondent rdf:type owl:ObjectProperty ;
   rdfs:domain :Student ;
   rdfs:range :Disputation ;
@@ -875,7 +955,26 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "wird ernannt"@de, "is vocated"@en ;
 	dc:description "Bezieht sich auf den von Universität und Landesherrschaft ausgewählten Kandidaten für eine Professur."@de, "Refers to the candidate for a 
 		professorship/or chair which had been negotiated by the university and the territorial authority."@en.
+
+:lectureHasDocument rdf:type owl:ObjectProperty ;
+  rdfs:domain :Lecture ;
+  rdfs:range :Document ;
+  rdfs:label "Vorlesung hat Dokument"@de, "lecture has document"@en ;
+	dc:description "Weist einer Vorlesung ein Dokument zu, wie Lektionskatalog oder Textbuch."@de, "Assigns a lecture to a document, like curriculum or 
+		textbook."@en .
 				     
+:lectureHasFaculty rdf:type owl:ObjectProperty ;
+  rdfs:domain :Lecture ;
+  rdfs:range :Faculty ;
+  rdfs:label "Vorlesung hat Fakultät"@de, "lecture has faculty"@en ;
+	dc:description "Weist eine Vorlesung einer Fakultät zu."@de, "Assigns a lecture to a faculty."@en .
+				     
+:membershipHasCorporation rdf:type owl:ObjectProperty ;
+  rdfs:domain :Membership ;
+  rdfs:range :Corporation ;
+  rdfs:label "Mitgliedschaft hat Körperschaft"@de, "membership has corporation"@en ;
+	dc:description "Weist die Mitgliedschaft einer Körperschaft zu."@de, "Adds the membership to a corporation."@en .
+				     				     
 :nominates rdf:type owl:ObjectProperty ;
   rdfs:domain :Faculty ;
   rdfs:range :Candidate ;
@@ -891,6 +990,14 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "ist organisiert in"@de, "is organized in"@en ;
 	dc:description "Ordnet einen Lehrstuhl einer Fakultät zu."@de, "Allocates a chair to a faculty."@en .
 
+:owns rdf:type owl:ObjectProperty ;
+  rdfs:domain :Professor ;
+  rdfs:range :Collection ;
+  rdfs:label "hat"@de, "owns"@en ;
+	dc:description "Verweist auf Sammlungen eines Professors, z.B. Privatbibliotheken, Münzen und anderweitige fachspezifische Sammlungen, die bspw. für eine 
+		Person im Berufungsverfahren auf eine Professur von Bedeutung gewesen sein könnten."@de, "Refers to a collection of a professor, like private
+		libraries, coins and other subject specific collections, which could have been important for the vocation of a professorship."@en .
+				     
 :parent rdf:type owl:ObjectProperty ;
   rdfs:domain :Family ;
   rdfs:range :Professor ;
@@ -903,9 +1010,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Empfehlungsschreiben"@de, "letter of recommendation"@en ;
 	dc:description "Verweist auf ein Empfehlungsschreiben."@de, "Refers to a letter of recommendation."@en .
 				     
-
-
-
+:reportHasChair rdf:type owl:ObjectProperty ;
+  rdfs:domain :Report ;
+  rdfs:range :Chair ;
+  rdfs:label "Rechenschaftsbericht hat Lehrstuhl"@de, "report has chair"@en ;
+	dc:description "Ordnet einen Rechenschaftsbericht einem Lehrstuhl zu."@de, "Assigns a report to a chair."@en .
 				     
 :reportHasFaculty rdf:type owl:ObjectProperty ;
   rdfs:domain :Report ;
@@ -939,112 +1048,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "wurde beeinflusst durch"@de, "was influenced by"@en ;
     dc:description "Wie P15 Cidoc CRM ... ."@de,"Like P15 Cidoc CRM ... ."@en .
 				     
-
-				     
-
-				     
-
-				     
-		
-				     
-
-				     
+			     
 
 		
 
-		
+#####################################################################################################################################################################
 
-		
-
-				     
-
-		
-
-
-
-				     
-
-				   
-:dissHasFaculty rdf:type owl:ObjectProperty ;
-  rdfs:domain :Dissertation ;
-  rdfs:range :Faculty ;
-  rdfs:label "Diss hat Fakultät"@de, "diss has faculty"@en ;
-	dc:description "Weist eine Dissertation einer Fakultät zu."@de, "Assigns a dissertation to a faculty."@en .
-
-:isAuthor rdf:type owl:ObjectProperty ;
-  rdfs:domain :Professor ;
-  rdfs:range :Author ;
-  rdfs:label "ist Autor"@de, "is author"@en ;
-	dc:description "Zeichnet eine Person als einen Autoren aus. Autor wird hier im Falle einer Disputation als weiter Begriff verwendet,
-		da Praeses und Respondent in Literaturdatenbanken oft beide als Autoren einer Dissertation angegeben werden."@de,
-		"Refers to a person as an author of a publication. In case of dissertations the notion author in the context of this ontology model
-		must be considered flexible since literature databases often sign out either praeses or respondent as authors of dissertations."@en .
-		
-:isPublisher rdf:type owl:ObjectProperty ;
-  rdfs:domain :Professor ;
-  rdfs:range :Publisher ;
-  rdfs:label "ist Herausgeber"@de, "is publisher"@en ;
-	dc:description "Zeichnet eine Person als einen Herausgeber aus."@de, "Refers to a person as a publisher."@en .
-		
-:lectureHasFaculty rdf:type owl:ObjectProperty ;
-  rdfs:domain :Lecture ;
-  rdfs:range :Faculty ;
-  rdfs:label "Vorlesung hat Fakultät"@de, "lecture has faculty"@en ;
-	dc:description "Weist eine Vorlesung einer Fakultät zu."@de, "Assigns a lecture to a faculty."@en .
-				     
-:lectureHasDocument rdf:type owl:ObjectProperty ;
-  rdfs:domain :Lecture ;
-  rdfs:range :Document ;
-  rdfs:label "Vorlesung hat Dokument"@de, "lecture has document"@en ;
-	dc:description "Weist einer Vorlesung ein Dokument zu, wie Lektionskatalog oder Textbuch."@de, "Assigns a lecture to a document, like curriculum or 
-		textbook."@en .
-		
-:attendsTeachingPractice rdf:type owl:ObjectProperty ;
-  rdfs:domain :Student;
-  rdfs:range :TeachingPractices ;
-  rdfs:label "nimmt teil"@de, "attends"@en ;
-	dc:description "Bezieht sich auf die Teilnahme von Studenten an Lehrpraktiken."@de, "Refers to the attendance of students at teaching practices."@en .
-		
-
-				   
-
-				     
-:membershipHasCorporation rdf:type owl:ObjectProperty ;
-  rdfs:domain :Membership ;
-  rdfs:range :Corporation ;
-  rdfs:label "Mitgliedschaft hat Körperschaft"@de, "membership has corporation"@en ;
-	dc:description "Weist die Mitgliedschaft einer Körperschaft zu."@de, "Adds the membership to a corporation."@en .
-				     
-:hasMembership rdf:type owl:ObjectProperty ;
-  rdfs:domain :Professor ;
-  rdfs:range :Membership ;
-  rdfs:label "Professor ist Mitglied"@de, "membership of a Professor"@en ;
-	dc:description "Gibt an, ob ein Professor Mitglied einer Gesellschaft oder Sozietät war."@de, "Refers to memberships of professors at societies and/or
-		corporations."@en .
-				     
-
-				     
-:collectionHasDocument rdf:type owl:ObjectProperty ;
-  rdfs:domain :Collection ;
-  rdfs:range :Document ;
-  rdfs:label "Sammlung hat Dokument"@de, "collection has document"@en ;
-	dc:description "Weist einer Sammlung ein Dokument zu."@de, "Assigns a collection a document."@en .
-				     
-:owns rdf:type owl:ObjectProperty ;
-  rdfs:domain :Professor ;
-  rdfs:range :Collection ;
-  rdfs:label "hat"@de, "owns"@en ;
-	dc:description "Verweist auf Sammlungen eines Professors, z.B. Privatbibliotheken, Münzen und anderweitige fachspezifische Sammlungen, die bspw. für eine 
-		Person im Berufungsverfahren auf eine Professur von Bedeutung gewesen sein könnten."@de, "Refers to a collection of a professor, like private
-		libraries, coins and other subject specific collections, which could have been important for the vocation of a professorship."@en .
-		
-
-
-:hasAuctionCatalogue rdf:type owl:ObjectProperty ;
-  rdfs:domain :PrivateLibrary ;
-  rdfs:range :AuctionCatalogue ;
-  rdfs:label "hat Auktionskatalog"@de, "has auction catalogue"@en ;
-	dc:description "Verknüpft eine Privatbibliothek mit einem Auktionskatalog."@de, "Adds an auction catalogue to a private library."@en .
 				   
 ### VD 16-18 DC ###
 				     
@@ -1060,39 +1069,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "ist das Gleiche wie"@de, "is same as"@en ;
 	dc:description "Wird für das Alignment genutzt."@de, "Wird für das Alignment genutzt."@en .
 				     
-###  http://purl.org/pcp-on-web/ontology#note
-:note rdf:type owl:DatatypeProperty ,
-               owl:FunctionalProperty ;
-      rdfs:domain :Person ;
-      rdfs:range rdfs:Literal ;
-      <http://ns.ontowiki.net/SysOnt/order> "390"^^xsd:string ;
-      rdfs:comment "additional information that does not fit elsewhere"@en ,
-                   "zusätzliche Informationen die nirgends sonst eingetragen werden können"@de ;
-      rdfs:label "Vermerk, Hinweis"@de ,
-                 "note"@en ;
-      owl:versionInfo "0.1 initial creation - 24.05.2007"^^xsd:string ,
-                      "0.2 changed Domain from Professor to Person"^^xsd:string ,
-                      "2.0 stable"^^xsd:string .				     
-	      
-:pid rdf:type owl:DatatypeProperty ;
-                   rdfs:domain :Professor ;
-				   rdfs:range rdfs:Literal ;
-                   rdfs:comment "Professor Identification number in the original database."@en ,
-                                "Professoren Identifikationsnummer in der ursprünglichen Datenbank."@de ;
-                   rdfs:label "PID"@en ,
-                              "PID"@de ;
-                   owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
-	      
-###  http://purl.org/pcp-on-web/ontology#furtherInformation
-:furtherInformation rdf:type owl:DatatypeProperty ,
-                             owl:FunctionalProperty ;
-                    rdfs:domain :Person ;
-                    rdfs:range rdfs:Literal ;
-                    <http://ns.ontowiki.net/SysOnt/order> "340"^^xsd:string ;
-                    rdfs:label "further information"@en ,
-                               "weitere Informationen"@de ;
-                    owl:versionInfo "0.1 initial creation - 28.06.2007"^^xsd:string ,
-                                    "2.0 stable"^^xsd:string .
 				    
 		
 		
