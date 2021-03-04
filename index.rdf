@@ -120,7 +120,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :Membership ;
   rdfs:label "Akademie"@de, "Academy"@en ;
 	dc:description "Bezeichnet eine Sozietät mit strukturierter Körperschaft und obrigkeitlicher Protégierung, z.B. die diversen Akademien der Wissenschaften in
-		Europa"@de, "Refers to a society with structured corporate body and most commonly protection and financing by the territory ruler, like the diverse "@en .
+		Europa"@de, "Refers to a society with structured corporate body and most commonly protection and financing by the territory ruler, like the diverse.
+		"@en .
 		
 :ArchivalMaterial rdf:type owl:Class ;
   rdfs:subClassOf :Document ;
@@ -139,8 +140,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :Article rdf:type owl:Class ;
   rdfs:subClassOf :PublicationType ;
   rdfs:label "Artikel"@de, "Article"@en ;
-	dc:description "Bezeichnet einen Artikel in einem Journal, einer Zeitschrift, einer Zeitung oder einem Magazin."@de, "Refers to an article published in journals, newspapers
-		or magazines."@en.
+	dc:description "Bezeichnet einen Artikel in einem Journal, einer Zeitschrift, einer Zeitung oder einem Magazin."@de, "Refers to an article published in 
+		journals, newspapers or magazines."@en .
 		
 :AsscociateProfessor rdf:type owl:Class ;
   rdfs:subClassOf :Professor ;
@@ -218,7 +219,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Disputation"@de, "Disputation"@en ;
 	dc:description "Bezieht sich auf die Disputationspraxis (Lateinisch: disputationes), die dem Zweck der Übung und/oder der Graduierung diente oder als
 		Inaugural Disputation pro loco auf die Erlangung einer Professur verwies."@de, "Refers to the practice of disputation which had the purpose of
-		practising curricula, to obtain academic titles. It also refers to inaugural disputations of newly vocated professors."@en.
+		practising curricula, to obtain academic titles. It also refers to inaugural disputations of newly vocated professors."@en .
 		
 :Doctor rdf:type owl:Class ;
   rdfs:subClassOf :AcademicDegree ;
@@ -244,7 +245,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :Exercise rdf:type owl:Class ;
   rdfs:subClassOf :TeachingPractices;
   rdfs:label "Übung"@de, "Exercise"@en ;
-	dc:description "Bezieht sich auf die Lehrpraktik der Übung."@de, "Refers to the practice of exercise."@en.
+	dc:description "Bezieht sich auf die Lehrpraktik der Übung."@de, "Refers to the practice of exercise."@en .
 		
 :Faculty rdf:type owl:Class ;
   rdfs:subClassOf :University ;
@@ -310,7 +311,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:isSameAs <http://purl.org/pcp-on-web/ontology#Honour> ;
   rdfs:subClassOf :StageOfLife ;
   rdfs:label "Ehrung"@de , "Honour"@en ;
-	dc:description "Diese Konzept beschreibt eine Ehrung"@de , "The concept Person describes a honour"@en .
+	dc:description "Diese Konzept beschreibt eine Ehrung"@de, "The concept Person describes a honour"@en .
 
 :LearnedSociety rdf:type owl:Class ;
   rdfs:subClassOf :Membership ;
@@ -323,7 +324,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :TeachingPractices;
   rdfs:label "Vorlesung/Lektion"@de, "Lecture"@en ;
 	dc:description "Bezieht sich auf Vorlesungen bzw. Lektionen (lectiones), die von einem Professor im Rahmen der universitären Lehre abgehalten werden."@de,
-		"Refers to lectures, given by a professor at auniversity."@en.
+		"Refers to lectures, given by a professor at auniversity."@en .
 		
 :Licentiatus rdf:type owl:Class ;
   rdfs:subClassOf :AcademicDegree ;
@@ -438,7 +439,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :Lecture;
   rdfs:label "Öffentliche Vorlesung"@de, "Public Lecture"@en ;
 	dc:description "Bezieht sich auf öffentliche Vorlesungen (lectio publica), die ein Professor hält."@de, "Refers to public lectures (lectio publica), 
-		given by a professor."@en.
+		given by a professor."@en .
 		
 :Publisher rdf:type owl:Class ;
   rdfs:label "Herausgeber"@de, "Publisher"@en ;
@@ -499,7 +500,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Lehrpraktiken"@de, "Teaching Practices"@en ;
   	dc:description "Beschreibt akademische Lehrpraktiken, die ein Professor an der Universität durchführt und welche durch Statuten, weitere Regularien 
 		und/oder durch Gewohnheit geregelt sind."@de, "Describes academic teaching practices which are regulated by the University's statutes
-		or further regulations and/or customs."@en.
+		or further regulations and/or customs."@en .
 		
 :Territory rdf:type owl:Class ;
   rdfs:subClassOf :Corporation ;
@@ -511,8 +512,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :Textbook rdf:type owl:Class ;
   rdfs:subClassOf :PublicationType ;
   rdfs:label "Lehrbuch"@de, "Textbook"@en ;
-	dc:description "Bezeichnet ein Buch, das Lehrinhalte eines Studiums didaktisch aufbereitet."@de, "Refers to books which offer a compilation of content in a certain
-		field of interest."@en.
+	dc:description "Bezeichnet ein Buch, das Lehrinhalte eines Studiums didaktisch aufbereitet."@de, "Refers to books which offer a compilation of content in a 
+		certain field of interest."@en .
 		
 :Title rdf:type owl:Class ;
   rdfs:label "Titel"@de, "Title"@en ;
@@ -555,12 +556,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Wintersemester"@de, "Winter Semester"@en ;
     dc:description "Das halbjährige Wintersemester dauert von Oktober bis März."@de , "The biannual winter semester starts in October and ends in March."@en .		
 
-#############################################################################
+#####################################################################################################################################################################
 		
 		Datatype Propertys
 		
-#############################################################################
-
+#####################################################################################################################################################################
+		
 :academicDegreeDate rdf:type owl:DatatypeProperty, owl:FunctionalProperty ;
   rdfs:domain :AcademicDegree ;
   rdfs:range rdfs:Literal ;
@@ -781,7 +782,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:domain :Family ;
   rdfs:range :Professor ;
   rdfs:label "Kind"@de, "child"@en ;
-	dc:description "Bezieht sich auf das Kind, Pflegekind, Adoptivkind eines Professors."@de, "Refers to the cild, foster child, adoptive child of a professor."@en .
+	dc:description "Bezieht sich auf das Kind, Pflegekind, Adoptivkind eines Professors."@de, "Refers to the cild, foster child, adoptive child of a 
+	      professor."@en .
 
 :collectionHasDocument rdf:type owl:ObjectProperty ;
   rdfs:domain :Collection ;
@@ -812,7 +814,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :University ;
   rdfs:label "werden durchgeführt"@de, "done at"@en ;
 	dc:description "Bezieht sich auf Lehrpraktiken, die an einer Universität durchgeführt werden."@de, "Refers to teaching practices which are done at a
-		university."@en.
+		university."@en .
 				     
 :educationGraduation rdf:type owl:ObjectProperty ;
   rdfs:domain :Education ;
@@ -954,7 +956,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Professor ;
   rdfs:label "wird ernannt"@de, "is vocated"@en ;
 	dc:description "Bezieht sich auf den von Universität und Landesherrschaft ausgewählten Kandidaten für eine Professur."@de, "Refers to the candidate for a 
-		professorship/or chair which had been negotiated by the university and the territorial authority."@en.
+		professorship/or chair which had been negotiated by the university and the territorial authority."@en .
 
 :lectureHasDocument rdf:type owl:ObjectProperty ;
   rdfs:domain :Lecture ;
@@ -1026,14 +1028,15 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:domain :Family ;
   rdfs:range :Professor ;
   rdfs:label "Ehepartner"@de, "spouse"@en ;
-	dc:description "Bezieht sich auf den Ehepartner (generisches Maskulinum) eines Professors."@de, "Refers to the spouse (generic masculine) of a professor."@en .
+	dc:description "Bezieht sich auf den Ehepartner (generisches Maskulinum) eines Professors."@de, "Refers to the spouse (generic masculine) of a 
+	      professor."@en .
 
 :territoryDocument rdf:type owl:ObjectProperty ;
   rdfs:domain :Territory ;
   rdfs:range :Document ;
   rdfs:label "hat Dokument"@de, "has Document"@en ;
-	dc:description "Bezieht sich auf das dazugehörige Dokument einer Ernennung, z.B. Bestallungsakte."@de, "Refers to documents of a vocation, like vocation files.
-		"@en .
+	dc:description "Bezieht sich auf das dazugehörige Dokument einer Ernennung, z.B. Bestallungsakte."@de, "Refers to documents of a vocation, like vocation 
+	      files."@en .
 				     
 :vocates rdf:type owl:ObjectProperty ;
   rdfs:domain :Territory ;
