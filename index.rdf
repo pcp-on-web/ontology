@@ -99,64 +99,484 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
     owl:versionInfo "0.1 initial creation date:  24.05.2007"^^xsd:string ,
                     "2.0 stable other types added"^^xsd:string .
 		
-##################################################################################		
-	
+#####################################################################################################################################################################
 		
-:Person rdf:type owl:Class ;
-  rdf:label "Person"@de, "Person"@en ;
-	dc:description "Bezeichnet eine Person."@de, "Refers to a person."@en .
+		Classes
+		
+#####################################################################################################################################################################
+
+:AcademicDegree rdf:type owl:Class ;
+  rdfs:subClassOf :Graduation ;
+  rdfs:label "Akademische Grade"@de, "Academic Degree"@en ;
+	dc:description "Bezeichnet akademische Abschlüsse, die an frühneuzeitlichen Universitäten in deutschen Territorien erworben werden konnten."@de , "..."@en .
+
+:AcademicOffice rdf:type owl:Class ;
+  rdfs:subClassOf :Office ;
+  rdfs:label "Akademisches Amt"@de, "Academic office"@en ;
+	dc:description "Bezieht sich auf ein Amt, das ein Professor an einer Universität bekleidet."@de , "Refers to an academic office a professor holds at
+		the University."@en .
+
+:Academy rdf:type owl:Class ;
+  rdfs:subClassOf :Membership ;
+  rdfs:label "Akademie"@de, "Academy"@en ;
+	dc:description "Bezeichnet eine Sozietät mit strukturierter Körperschaft und obrigkeitlicher Protégierung, z.B. die diversen Akademien der Wissenschaften in
+		Europa"@de, "Refers to a society with structured corporate body and most commonly protection and financing by the territory ruler, like the diverse "@en .
+		
+:ArchivalMaterial rdf:type owl:Class ;
+  rdfs:subClassOf :Document ;
+  rdfs:label "Archivmaterial"@de, "Archival Material"@en ;
+	dc:description "Archiv Material die Domäne betreffend, bspw. Bestallungsakten, die Ernennungsurkunden und Empfehlungsschreiben und/oder Bewerbungsschreiben
+		enthalten können. Nominationslisten der Fakultäten an die Landesherrschaft, Kopial- und Beschlussbücher der Universität und Fakultäten usw."@de, 
+		"Archival material refering to the domain, for instance nomination lists of the faculties for the territorial authorities, vocation files which 
+		contain vocation certificates, reference letters and/or applications, etc."@en .
+		
+:Archive rdf:type owl:Class ;
+  rdfs:subClassOf :Corporation ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Archive> ;
+  rdfs:label "Archiv"@de, "Archive"@en ;
+	dc:description "Bezeichnet eine Körperschaft."@de, "Refers to a corporation or corporate body."@en .
+
+:Article rdf:type owl:Class ;
+  rdfs:subClassOf :PublicationType ;
+  rdfs:label "Artikel"@de, "Article"@en ;
+	dc:description "Bezeichnet einen Artikel in einem Journal, einer Zeitschrift, einer Zeitung oder einem Magazin."@de, "Refers to an article published in journals, newspapers
+		or magazines."@en.
+		
+:AsscociateProfessor rdf:type owl:Class ;
+  rdfs:subClassOf :Professor ;
+  rdfs:label "Außerordentlicher Professor"@de, "Associate Professor"@en ;
+	dc:description "Bezeichnet einen Professor, der eine außerordentliche Professur (aO) inne hat."@de, "A professor who is an associate professor."@en .
+
+:AuctionCatalogue rdf:type owl:Class ;
+  rdfs:subClassOf :PublicationType ;
+  rdfs:label "Auktionskatalog"@de, "Auction catalogue"@en ;
+	dc:description "Bezeichnet einen Auktionskatalog."@de, "Refers to an auction catalogue."@en .				     
+		
+:Author rdf:type owl:Class ;
+  rdfs:label "Autor"@de, "Author"@en ;
+	dc:description "Nennt die Autorenschaft eiens Dokuments."@de, "Gives the authorship of a document."@en .
+		
+:Baccalaureus rdf:type owl:Class ;
+  rdfs:subClassOf :AcademicDegree ;
+  rdfs:label "Baccalaureus"@de, "Baccalaureus"@en ;
+	dc:description "Bezeichnet den akademischen Grad eines Baccalaren/Baccalaureus. Kürzel: Bacc."@de , "Describes the academic degree of a bachelor/baccalaureus. 
+			Abbreviation: Bacc."@en .
+		
+:Birth rdf:type owl:Class ;
+  rdfs:subClassOf :StageOfLife ;
+  rdfs:label "Geburt"@de, "Birth"@en ;
+	dc:description "Geburtsdatum oder Zeitraum einer Person."@de, "Birthdate or the period of birth of a person."@en .
+
+:Candidate rdf:type owl:Class ;
+  rdfs:subClassOf :Person ;
+  rdfs:label "Kandidat"@de, "Candidate"@en ;
+	dc:description "Bezeichnet eine Person, die im Zuge der Besetzung einer Professur als Kandidat gehandelt wird."@de , "Refers to a person which is a candidate
+		for a university chair."@en .
+		
+:Chair rdf:type owl:Class ;
+  rdfs:subClassOf :AcademicOffice ;
+  rdfs:label "Lehrstuhl"@de, "Chair"@en ;
+	dc:description "Bezeichnet den Lehrstuhl bzw. das Fachgebiet einer Universitätsfakultät."@de, "Designates the chair or subject at university faculties."@en .
+
+:Collection rdf:type owl:Class ;
+  rdfs:label "Sammlung"@de, "Collection"@en ;
+	dc:description "Objekt Sammlungen einer Person oder Institution."@de, "Object collections of a person or institution."@en .
+		
+:Corporation rdf:type owl:Class ;
+  rdfs:label "Körperschaft"@de, "Corporation"@en ;
+	dc:description "Bezeichnet eine Körperschaft."@de, "Refers to a corporation or corporate body."@en .		
+
+:Correspondence rdf:type owl:Class ;
+  rdfs:subClassOf :Network ;
+  rdfs:label "Korrespondenz"@de, "Correspondence"@en ;
+	dc:description "Verweist auf Korrespondenzpartner einer Person."@de, "Refers to correspondence partner of a person."@en .
+
+:Curriculum rdf:type owl:Class ;
+  rdfs:subClassOf :Document ;
+  rdfs:label "Lektionskatalog"@de, "Curriculum"@en ;
+	dc:description "Lektions- oder Vorlesungskatalog einer Universität."@de, "Curriculum or lecture catalogue of a university."@en .
+	
+:Denomination rdf:type owl:Class ;
+  rdfs:subClassOf :StageOfLife ;
+  rdfs:label "Konfession"@de, "Denomination"@en ;
+	dc:description "Religionszugehörigkeit oder Glaubenbekenntnis einer Person."@de , "The religious denomination of a person."@en .
+		
+:Death rdf:type owl:Class ;
+  rdfs:subClassOf :StageOfLife ;
+  rdfs:label "Tod"@de, "Death"@en ;
+	dc:description "Sterbedatum oder den Zeitraum des Todes einer Person."@de, "Day of death or the period of death of a person."@en .				     
+
+:Dissertation rdf:type owl:Class ;
+  rdfs:subClassOf :PublicationType ;
+  rdfs:isSameAs <http://purl.org/pcp-on-web/ontology#QualificationDocument> ;
+  rdfs:label "Dissertation"@de, "Dissertation"@en ;
+	dc:description "Bezeichnet das gedruckte Medium der Disputation, genannte Dissertation."@de, "Refers to the printed media of a disputation,
+		called dissertation."@en .
+		
+:Disputation rdf:type owl:Class ;
+  rdfs:subClassOf :TeachingPractices;
+  rdfs:label "Disputation"@de, "Disputation"@en ;
+	dc:description "Bezieht sich auf die Disputationspraxis (Lateinisch: disputationes), die dem Zweck der Übung und/oder der Graduierung diente oder als
+		Inaugural Disputation pro loco auf die Erlangung einer Professur verwies."@de, "Refers to the practice of disputation which had the purpose of
+		practising curricula, to obtain academic titles. It also refers to inaugural disputations of newly vocated professors."@en.
+		
+:Doctor rdf:type owl:Class ;
+  rdfs:subClassOf :AcademicDegree ;
+  rdfs:label "Doctor"@de, "Doctor"@en ;
+	dc:description "Bezeichnet den akademischen Grad eines Doktoren. Kürzel: Dr."@de , "Describes the academic degree of a doctor. Abbreviation: Dr."@en .
+
+:Document rdf:type owl:Class ;
+  rdfs:subClassOf :StageOfLife ;
+  rdfs:label "Dokument"@de, "Document"@en ;
+	dc:description "Fügt einem Lebensabschnitt ein Dokument zu."@de, "Adds a document to a stage of life."@en .
+		
+:Education  rdf:type owl:Class ;
+  rdfs:subClassOf :StageOfLife ;
+  rdfs:label "Bildungsweg"@de, "Education"@en ;
+	dc:description "Beschreibt den Bildungsweg einer Person."@de , "Decribes the education of a person."@en .
+
+:Enrollment rdf:type owl:Class ;
+  rdfs:subClassOf :UniversityStudies ;
+  rdfs:label "Immatrikulation"@de, "Enrollment"@en ;
+	dc:description "Bezieht sich auf die Einschreibung eines Person in das Universitätsverzeichnis, die (Universitäts-)Matrikel."@de, "Refers to the enrollment 
+		of a person into the universities' directory, the (university) 'Matrikel'."@en .
+
+:Exercise rdf:type owl:Class ;
+  rdfs:subClassOf :TeachingPractices;
+  rdfs:label "Übung"@de, "Exercise"@en ;
+	dc:description "Bezieht sich auf die Lehrpraktik der Übung."@de, "Refers to the practice of exercise."@en.
+		
+:Faculty rdf:type owl:Class ;
+  rdfs:subClassOf :University ;
+  rdfs:label "Fakultät"@de, "Faculty"@en ;
+	dc:description "Bezieht sich auf eine körperschaftlich organisierte und auf ein Fachgebiet begrenzte Lehr- und Verwaltungseinheit einer Volluniversität,
+		im frühneuzeitlichen Kontext: Philosophie, Theologie, Jurisprudenz, Medizin."@de, "Refers to corporated university divisions with specific subject
+		areas, which are in an Early Modern context: Philosophy, Theology, Jurisprudence, Medicine."@en .
+
+:FacultyOfLaw rdf:type owl:Class ;
+  rdfs:subClassOf :Faculty ;
+  rdfs:label "Juristische Fakultät"@de, "Faculty of Law"@en ;
+	dc:description "Bezeichnet die Juristische Fakultät an einer Universität."@de, "Refers to the Faculty of Law at Universities."@en .
+		
+:FacultyOfMedicine rdf:type owl:Class ;
+  rdfs:subClassOf :Faculty ;
+  rdfs:label "Medizinische Fakultät"@de, "Faculty of Medicine"@en ;
+	dc:description "Bezeichnet die Medzinische Fakultät an einer Universität."@de, "Refers to the Faculty of Medicine at Universities."@en .
+		
+:FacultyOfPhilosophy rdf:type owl:Class ;
+  rdfs:subClassOf :Faculty ;
+  rdfs:label "Philosophische Fakultät"@de, "Faculty of Philosophy"@en ;
+	dc:description "Bezeichnet die Philosophische Fakultät an einer Universität."@de, "Refers to the Faculty of Philosophy at Universities."@en .
+		
+:FacultyOfTheology rdf:type owl:Class ;
+  rdfs:subClassOf :Faculty ;
+  rdfs:label "Theologische Fakultät"@de, "Faculty of Theology"@en ;
+	dc:description "Bezeichnet die Theologische Fakultät an einer Universität."@de, "Refers to the Faculty of Theology at Universities."@en .
+		
+:Family rdf:type owl:Class ;
+  rdfs:subClassOf :StageOfLife ;
+  rdfs:label "Familie"@de, "Family"@en ;
+	dc:description "Dieses Konzept beschreibt die soziale Herkunft und Familienverhältnisse einer Person."@de, "This concept describes the social origin
+		and the family relationship of a person."@en .
+		
+:Female rdf:type owl:Class ;
+  rdfs:subClassOf :Gender ;
+  rdfs:label "Weiblich"@de, "Female"@en ;
+	dc:description "Verweist auf das Geschlecht Weiblich."@de, "Refers to the gender female."@en .
+		
+:FullProfessor rdf:type owl:Class ;
+  rdfs:subClassOf :Professor ;
+  rdfs:label "Ordentlicher Professor"@de, "Full Professor"@en ;
+	dc:description "Bezeichnet einen Professor, der eine ordentliche Professur inne hat."@de, "A professor who owns a full professorship."@en .
+
+:FurtherSociety rdf:type owl:Class ;
+  rdfs:subClassOf :Membership ;
+  rdfs:label "Weitere Gesellschaft"@de, "Further Society"@en ;
+	dc:description "Bezieht sich auf weitere Formen von soziokulturellen Gesellschaften wie literarische Salons oder Lesegesellschaften."@de, "Refers to further 
+		societies like literary Salons or reading societies."@en .
 		
 :Gender rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
   rdfs:label "Geschlecht"@de, "Gender"@en ;
 	dc:description "Verweist auf das Geschlecht einer Person."@de, "Refers to the gender of a person."@en .
 		
+:Graduation rdf:type owl:Class ;
+  rdfs:subClassOf :StageOfLife ;
+  rdfs:isSameAs <http://purl.org/pcp-on-web/ontology#Graduation> ;
+  rdfs:label "Abschluss"@de, "Graduation"@en ;
+	dc:description "Bezeichnet einen Abschluss an einer Schule oder Universität."@de, "Refers to a graduation at a school or university."@en .
+		
+:Honour rdf:type owl:Class ;
+  rdfs:isSameAs <http://purl.org/pcp-on-web/ontology#Honour> ;
+  rdfs:subClassOf :StageOfLife ;
+  rdfs:label "Ehrung"@de , "Honour"@en ;
+	dc:description "Diese Konzept beschreibt eine Ehrung"@de , "The concept Person describes a honour"@en .
+
+:LearnedSociety rdf:type owl:Class ;
+  rdfs:subClassOf :Membership ;
+  rdfs:label "Gelehrte Gesellschaft"@de, "Learned Society"@en ;
+	dc:description "Bezeichnet eine Gelehrte Gesellschaft, die sich einer bestimmten Geistesströmung oder Disziplin widmete und aus Gelehrten und Gebildeten 
+		bestand, zumeist regional begrenzt agierte."@de, "Refers to a learned society which dealt with a certain discipline or ideas which gathered learned
+		and educated people, mostly from a limited space or region."@en .
+		
+:Lecture rdf:type owl:Class ;
+  rdfs:subClassOf :TeachingPractices;
+  rdfs:label "Vorlesung/Lektion"@de, "Lecture"@en ;
+	dc:description "Bezieht sich auf Vorlesungen bzw. Lektionen (lectiones), die von einem Professor im Rahmen der universitären Lehre abgehalten werden."@de,
+		"Refers to lectures, given by a professor at auniversity."@en.
+		
+:Licentiatus rdf:type owl:Class ;
+  rdfs:subClassOf :AcademicDegree ;
+  rdfs:label "Lizenziat"@de, "Licentiate"@en ;
+	dc:description "Bezeichnet den akademischen Grad eines Lizenziaten, eines Baccalaren mit Lehrbefugnis. Zugleich einen Doktor der evang. Theologie
+			(bis 1947 an deutschen Hochschulen). Kürzel: lic."@de , "Describes the academic degree of a Licentiate, which means a bachelor/baccalaureus
+			with the right to teach. Also the academic title of a doctor of Evangelic theology (valid until 1947 in Germany). Abbreviation: lic."@en .
+		
+:Location rdf:type owl:Class ;
+  rdfs:label "Ort"@de, "Location"@en ;
+	dc:description "Bezieht sich auf den geografischen Ort für Lebensabschnitte einer Person, Orte von Körperschaften,
+		Medien (Verlagsort, Druckort), Ämtern, Landesherrschaft usw."@de, "Refers to the geographical location of life stages of persons, corporate bodies, media
+		(printing, publishing), offices, territories and others."@en .
+
+:Magister rdf:type owl:Class ;
+  rdfs:subClassOf :AcademicDegree ;
+  rdfs:label "Magister"@de, "Magister"@en ;
+	dc:description "Bezeichnet den akademischen Grad eines Magister. Kürzel: Mag."@de , "Describes the academic degree of a magister. Abbreviation: Mag."@en .
+		
 :Male rdf:type owl:Class ;
   rdfs:subClassOf :Gender ;
   rdfs:label "Männlich"@de, "Male"@en ;
 	dc:description "Verweist auf das Geschlecht Männlich."@de, "Refers to the gender male."@en .
-		
-:Female rdf:type owl:Class ;
-  rdfs:subClassOf :Gender ;
-  rdfs:label "Weiblich"@de, "Female"@en ;
-	dc:description "Verweist auf das Geschlecht Weiblich."@de, "Refers to the gender female."@en .
 
+:Membership rdf:type owl:Class ;
+  rdfs:subClassOf :Network ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#AcademicSociety> ;
+  rdfs:label "Mitgliedschaft"@de, "Membership"@en ;
+	dc:description "Verweist auf Mitgliedschaften einer Person in soziokulturellen und/oder politischen Gesellschaften und Sozietäten."@de, "Refers to the
+		membership of a person at sociocultural and/or political societies and/or corporations."@en .
+		
+:Network rdf:type owl:Class ;
+  rdfs:subClassOf :StageOfLife ;
+  rdfs:label "Netzwerk"@de, "Network"@en ;
+	dc:description "in Arbeit: Dieses Konzept bezieht sich auf ... Personengeflechte ... dynamisch ... Kommunikationsräume ... Interaktion"@de , "..."@en .
+		
+:Office rdf:type owl:Class ;
+  rdfs:subClassOf :StageOfLife;
+  rdfs:label "Amt"@de, "Office"@en ;
+	dc:description "Bezieht sich auf ein Amt, das eine Person bekleidet."@de , "Refers to an office a person holds."@en .
+
+:Pamphlet rdf:type owl:Class ;
+  rdfs:subClassOf :PublicationType ;
+  rdfs:label "Streitschrift"@de, "Pamphlet"@en ;
+	dc:description "Bezeichnet eine Streitschrift."@de, "Refers to a pamphlet."@en .
+		
+:Patron rdf:type owl:Class ;
+  rdfs:subClassOf :Professor ;
+  rdfs:label "Patron"@de, "Patron"@en ;
+	dc:description "Bezieht sich auf den Patron einer Person; hier auf in den Quellen namentlich erwähnten Förderer eines Professors und dessen Karriere."@de ,
+		"Refers to the patron of a person; here to the Patron of a professor's career who is known by the sources."@en .	
+		
+:Person rdf:type owl:Class ;
+  rdf:label "Person"@de, "Person"@en ;
+	dc:description "Bezeichnet eine Person."@de, "Refers to a person."@en .
+		
+:Picture rdf:type owl:Class ;
+  rdfs:isSameAs <http://catalogus-professorum.org/cpm/Picture> ;
+  rdfs:label "Bild"@de, "Picture"@en ;
+	dc:description "Dieses Konzept beschreibt ein Bild einer Person."@de, "This concept describes the picture of a person."@en .
+		
+:PrimaryEducation  rdf:type owl:Class ;
+  rdfs:subClassOf :Education ;
+  rdfs:label "Primäre Bildung"@de, "Primary education"@en ;
+	dc:description "Bezieht sich auf die diversen vormodernen Schulformen und pädagogischen Bildungsangebote im Vorfeld eines Universitätsbesuchs
+		im Territorium des Heiligen Römischen Reichs Deutscher Nation, z.B. Elementarschulen, Lateinschulen, Gymnasien, Klosterschulen,
+		Pfarrschulen etc."@de , "Refers to the diverse early modern educational and pedagogical formas and institutions of primary education within the
+		Holy Roman Empire."@en .		
+		
+:PrivateEducation rdf:type owl:Class ;
+  rdfs:subClassOf :Education ;
+  rdfs:label "Privatunterricht"@de, "Private education"@en ;
+	dc:description "Privatunterricht im Familienverband oder durch einen Privatlehrer."@de,
+		"Private education by family members or a different private teacher."@en .
+		
+:PrivateLecture rdf:type owl:Class ;
+  rdfs:subClassOf :Lecture;
+  rdfs:label "Private Vorlesung"@de, "Private Lecture"@en ;
+	dc:description "Bezieht sich auf private Vorlesungen (lectio privata, privatum, privatissimum), die ein Professor in einem kleinen Kreis von Studenten hält."
+		@de, "Refers to private lectures (lectio privata, privatum, privatissimum), given by a professor for a relatively small amount of students."@en .
+
+:PrivateLibrary rdf:type owl:Class ;
+  rdfs:subClassOf :Collection ;
+  rdfs:label "Privatbibliothek"@de, "Private library"@en ;
+	dc:description "Verweist auf die Privatbibliothek einer Person und kann u.U. durch publizierte Auktionskataloge erschlossen werden."@de, "Refers to the private
+		library of a person. Can be reconstructed by published auction catalogues."@en .
+		
 :Professor rdf:type owl:Class ;
   rdfs:subClassOf :Person ;
-  rdfs:derivedFrom <http://catalogus-professorum.org/cpm/Professor>;		
+  rdfs:isSameAs <http://purl.org/pcp-on-web/ontology#Professor> ;
   rdfs:label "Professor"@de, "Professor"@en ;
 	dc:description "Bezeichnet eine Person die durch Berufung an einer frühneuzeitlichen Universität lehrt und dort akademische Ämter führt."@de,
 		"Refers to a person who is vocated as a professor at an Early Modern university, who teaches and holds academic offices."@en .
+
+:ProgramsAndSpeeches rdf:type owl:Class ;
+  rdfs:subClassOf :PublicationType ;
+  rdfs:label "Programme und Reden"@de, "Programs and Speeches"@en ;
+	dc:description "Bezieht sich auf gedruckte Universitätsprogramme und Reden."@de, "Refers to printed university programs and speeches."@en .
 		
-:FullProfessor rdf:type owl:Class ;
-  rdfs:subClassOf :Professor ;
-  rdfs:label "Ordentlicher Professor"@de, "Full Professor"@en ;
-	dc:description "Bezeichnet einen Professor, der eine ordentliche Professur inne hat."@de, "A professor who owns a full professorship."@en . 
+:Publication rdf:type owl:Class ;
+  rdfs:isSameAs <http://purl.org/pcp-on-web/ontology#Publication> ;
+  rdfs:subClassOf :Document ;
+  rdfs:label "Publikation"@de, "Publication"@en ;
+	dc:description "Bezieht sich auf Publikationen."@de, "Refers to publications."@en .
+				     
+:PublicationType rdf:type owl:Class ;
+  rdfs:subClassOf :Publication ;
+  rdfs:label "Publikationstyp"@de, "Publication type"@en ;
+	dc:description "Bezieht sich auf die Gattung bzw. den Typ einer Publikation."@de, "Refers to the genre or type of a publication."@en .
 
-:AsscociateProfessor rdf:type owl:Class ;
-  rdfs:subClassOf :Professor ;
-  rdfs:label "Außerordentlicher Professor"@de, "Associate Professor"@en ;
-	dc:description "Bezeichnet einen Professor, der eine außerordentliche Professur (aO) inne hat."@de, "A professor who is an associate professor."@en .
+:PublicLecture rdf:type owl:Class ;
+  rdfs:subClassOf :Lecture;
+  rdfs:label "Öffentliche Vorlesung"@de, "Public Lecture"@en ;
+	dc:description "Bezieht sich auf öffentliche Vorlesungen (lectio publica), die ein Professor hält."@de, "Refers to public lectures (lectio publica), 
+		given by a professor."@en.
+		
+:Publisher rdf:type owl:Class ;
+  rdfs:label "Herausgeber"@de, "Publisher"@en ;
+	dc:description "Nennt Herausgeber eines Dokuments."@de, "Gives the publisher of a document."@en .
+		
+:Recommendation  rdf:type owl:Class ;
+  rdfs:subClassOf :StageOfLife ;
+  rdfs:label "Empfehlung"@de, "Recommendation"@en ;
+  	dc:description "Bezieht sich auf Empfehlungen, z.B. Empfehlungsschreiben, die in Bestallungsakten enthalten sind."@de , "Refers to recommendations,
+		e.g. letters of recommendation which are part of vocation files."@en .
 
-###  http://purl.org/pcp-on-web/ontology#surname
-:surname rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Person ;
+:Report rdf:type owl:Class ;
+  rdfs:subClassOf :Document ;
+  rdfs:label "Rechenschaftsbericht"@de, "Report"@en ;
+	dc:description "Rechenschaftsbericht, den Dozenten in regelmäßigen Abständen bei der Universitätverwaltung und/oder Landesverwaltung einreichten."@de,
+		"Means regular reports of lecturers about their curriculum to the university and/or territorial administration."@en .
+
+:Review rdf:type owl:Class ;
+  rdfs:subClassOf :PublicationType ;
+  rdfs:label "Rezension"@de, "Review"@en ;
+	dc:description "Bezeichnet eine Rezension in einer Rezensionszeitschrift."@de, "Refers to a review published in a review journal."@en .
+
+:SecretSociety rdf:type owl:Class ;
+  rdfs:subClassOf :Membership ;
+  rdfs:label "Geheimgesellschaft"@de, "Secret Society"@en ;
+	dc:description "Bezeichnet Geheimgesellschaften wie Freimaurer oder Illuminaten, Studentenverbindungen etc."@de, "Refers to secret societies like Freemasons
+		or Illuminati, student societies etc."@en .
+		
+:Semester rdf:type owl:Class ;
+  rdfs:subClassOf :University ;
+  rdfs:label "Semester"@de, "Semester"@en ;
+    dc:description "Abschnitt des Akademischen Jahrs. Es besteht aus einem Sommer- und einem Wintersemester."@de ,
+		"Part of an academic year. It consists of a summer- and a wintersemester"@en .
+		
+:Statutes rdf:type owl:Class ;
+  rdfs:subClassOf :University ;
+  rdfs:label "Statuten"@de, "Statutes"@en ;
+	dc:description "Die Verfassung einer Universität, ratifziert durch die Landesherrschaft."@de, "University constitution, ratificated by territorial
+		authority."@en .
+
+:Student rdf:type owl:Class ;
+  rdfs:subClassOf :Person ;
+  rdfs:label "Student"@de, "Student"@en ;
+	dc:description "Bezeichnet einen an der Universität immatrikulierten Studenten."@de, "Refers to an enrolled student at a University."@en .
+		
+:SummerSemester rdf:type owl:Class ;
+  rdfs:subClassOf :Semester ;
+  owl:DisjoinUnionOf :WinterSemester;
+  rdfs:label "Sommersemester"@de, "Summer Semester"@en ;
+    dc:description "Das halbjährige Sommersemester dauert von April bis September."@de , "The biannual summer semester starts in April and ends in September."@en .
+		
+ :StageOfLife rdf:type owl:Class ;
+  :derivedFrom <http://purl.org/pcp-on-web/ontology#PeriodOfLife> ;
+  rdfs:label "Lebensabschnitt"@de, "Stage of Life"@en ;
+	dc:description "Dieses Konzept bezieht sich auf einen Lebensabschnitt eines Professors."@de, "This concept refers to a stage of life of a professor."@en .
+
+:TeachingPractices rdf:type owl:Class ;
+  rdfs:label "Lehrpraktiken"@de, "Teaching Practices"@en ;
+  	dc:description "Beschreibt akademische Lehrpraktiken, die ein Professor an der Universität durchführt und welche durch Statuten, weitere Regularien 
+		und/oder durch Gewohnheit geregelt sind."@de, "Describes academic teaching practices which are regulated by the University's statutes
+		or further regulations and/or customs."@en.
+		
+:Territory rdf:type owl:Class ;
+  rdfs:subClassOf :Corporation ;
+  rdfs:label "Landesherrschaft"@de, "Territory"@en ;
+	dc:description "Bezeichnet die Landesherrschaft eines Territoriums und bezieht sich hier auf den Amtssitz jener landesherrschaftliche  Organe, 
+		denen die Universitäten unterstellt sind."@de , "Refers to the authority by a ruler/rulership or group of rulers of a territory and means here the
+		territorial administration which deal with the universities."@en .
+
+:Textbook rdf:type owl:Class ;
+  rdfs:subClassOf :PublicationType ;
+  rdfs:label "Lehrbuch"@de, "Textbook"@en ;
+	dc:description "Bezeichnet ein Buch, das Lehrinhalte eines Studiums didaktisch aufbereitet."@de, "Refers to books which offer a compilation of content in a certain
+		field of interest."@en.
+		
+:Title rdf:type owl:Class ;
+  rdfs:label "Titel"@de, "Title"@en ;
+	dc:description "Gibt den Titel eines Dokuments an."@de, "Gives the title of a document."@en .
+		
+:University rdf:type owl:Class ;
+  rdfs:subClassOf :Corporation ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Academy> ;
+  rdfs:label "Universität"@de, "University"@en ;
+	dc:description "Bezeichnet eine Lehr-, Bildungs- und Forschungskorporation die dazu priviligiert ist akademische Grade zu verleihen."@de ,
+		"Refers to education and research corporations which own the privilige to award academic degrees."@en .
+				     
+:UniversityStudies rdf:type owl:Class ;
+  rdfs:subClassOf :Education ;
+  rdfs:label "Studium"@de, "University studies"@en ;
+	dc:description "Bezieht sich auf das Universitätsstudium einer Person an einer vormodernen Universität."@de, "Refers to the university studies of a professor
+		at Early Modern Universities."@en .
+
+:VD16 rdf:type owl:Class ;
+  rdfs:subClassOf :Publication ;
+  rdfs:label "VD16 Publikationen"@de, "VD16 Publication"@en ;
+	dc:description "Verweist auf eine limitierten Satz an Publikationen im VD16 Katalog im Vokabular Dublin Core, FABIO, GND, DBPedia."@de, "Refers to a limited
+		set of publications at VD16 via vocabulary of Dublin Core, FABIO, GND, DBPedia."@en .
+				     
+:VD17 rdf:type owl:Class ;
+  rdfs:subClassOf :Publication ;
+  rdfs:label "VD17 Publikationen"@de, "VD17 Publication"@en ;
+	dc:description "Verweist auf eine limitierten Satz an Publikationen im VD17 Katalog im Vokabular Dublin Core, FABIO, GND, DBPedia."@de, "Refers to a limited
+		set of publications at VD17 via vocabulary of Dublin Core, FABIO, GND, DBPedia."@en .
+				     
+:VD18 rdf:type owl:Class ;
+  rdfs:subClassOf :Publication ;
+  rdfs:label "VD18 Publikationen"@de, "VD18 Publication"@en ;
+	dc:description "Verweist auf eine limitierten Satz an Publikationen im VD18 Katalog im Vokabular Dublin Core, FABIO, GND, DBPedia."@de, "Refers to a limited
+		set of publications at VD18 via vocabulary of Dublin Core, FABIO, GND, DBPedia."@en .
+		
+:WinterSemester rdf:type owl:Class ;
+  rdfs:subClassOf :Semester ;
+  owl:DisjoinUnionOf :SummerSemester;
+  rdfs:label "Wintersemester"@de, "Winter Semester"@en ;
+    dc:description "Das halbjährige Wintersemester dauert von Oktober bis März."@de , "The biannual winter semester starts in October and ends in March."@en .		
+
+#############################################################################
+		
+		Datatype Propertys
+		
+#############################################################################
+
+:academicDegreeDate rdf:type owl:DatatypeProperty, owl:FunctionalProperty ;
+  rdfs:domain :AcademicDegree ;
   rdfs:range rdfs:Literal ;
-  rdfs:label "Nachname"@de , "surname"@en ;
-  rdfs:comment "Nachname einer Person"@de , "The surname of a person"@en ;
-		         owl:versionInfo "0.1 initial creation date: 24.05.2007"^^xsd:string ,
-                         "2.0 stable"^^xsd:string ,
-                         "version 0.2  10.03.2008"^^xsd:string .
+  rdfs:label "Date of Academic Degree"@en, "Datum des Akademischen Grads"@de ;
+  	dc:descritption "Gibt den Zeitpunkt an wann ein akademischer Grad erworben wurde."@de, "Gives the date of earning a degree from a valid datatype
+		 xsd:date ,
+                 xsd:gDay ,
+                 xsd:gMonth ,
+                 xsd:gMonthDay ,
+                 xsd:gYear ,
+                 xsd:gYearMonth"@en .
 		
-###  http://purl.org/pcp-on-web/ontology#forename
-:forename rdf:type owl:DatatypeProperty ;
-          rdfs:domain :Person ;
-          rdfs:range rdfs:Literal;
-          rdfs:comment "Forename(s) of a person, seperated by space"@en ,
-                       "Vorname(n) einer Person, getrennt mit Leerzeichen"@de ;
-          rdfs:label "Forename"@en ,
-                     "Vorname"@de ;
-          owl:versionInfo "0.1 initial creation date: 18.05.2015"^^xsd:string .
+:academicYear rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Semester ;
+  rdfs:range xsd:gYear;
+  rdfs:label "Academic Year"@en, "Akademisches Jahr"@de .
 
 ###  http://purl.org/pcp-on-web/ontology#additionToSurname
 :additionToSurname rdf:type owl:DatatypeProperty ,
@@ -185,332 +605,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                              "0.2 changed Domain from Professor to Person"^^xsd:string ,
                                              "2.0 under discussion"^^xsd:string .
 
-:latinSurname rdf:type owl:DatatypeProperty ;
-                   rdfs:domain :Person ;
-				   rdfs:range rdfs:Literal ;
-                   rdfs:comment "Latinized last name of a person."@en ,
-                                "Latinisierter Nachname einer Person."@de ;
-                   rdfs:label "Latin Last Name"@en ,
-                              "Latein Name"@de ;
-                   owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
-				   
-:latinForename rdf:type owl:DatatypeProperty ;
-                   rdfs:domain :Person ;
-				   rdfs:range rdfs:Literal ;
-                   rdfs:comment "Latinized first name of a person."@en ,
-                                "Latinisierter  Vorname einer Person."@de ;
-                   rdfs:label "Latin First Name"@en ,
-                              "Latinisierter Vorname"@de ;
-                   owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
-				     
-:hasCorrespondence rdf:type owl:ObjectProperty ;
-  rdfs:domain :Professor ;
-  rdfs:range :Correspondence ;
-  rdfs:label "hat Korrespondenzpartner"@de, "has correspondence partner"@en ;
-	dc:description "Verweist auf die Korrespondenzpartner eines Professors."@de, "Refers to correspondence partner of a professor."@en .
-				     
-:Picture rdf:type owl:Class ;
-  rdfs:isSameAs <http://catalogus-professorum.org/cpm/Picture> ;
-  rdfs:label "Bild"@de, "Picture"@en ;
-	dc:description "Dieses Konzept beschreibt ein Bild einer Person."@de, "This concept describes the picture of a person."@en .
-				    
-:hasPicture rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Professor ;
-  rdfs:range :Picture ;
-  rdfs:label "hat Bild"@de, "has picture"@en ;
-	dc:description "Verweist auf ein Bild des Professors."@de, "Refers to a picture of the professor."@en .
-		
-:StageOfLife rdf:type owl:Class ;
-  :derivedFrom <http://purl.org/pcp-on-web/ontology#PeriodOfLife> ;
-  rdfs:label "Lebensabschnitt"@de, "Stage of Life"@en ;
-	dc:description "Dieses Konzept bezieht sich auf einen Lebensabschnitt eines Professors."@de, "This concept refers to a stage of life of a professor."@en .
-
-:Birth rdf:type owl:Class ;
-  rdfs:subClassOf :StageOfLife ;
-  rdfs:label "Geburt"@de, "Birth"@en ;
-	dc:description "Geburtsdatum oder Zeitraum einer Person."@de, "Birthdate or the period of birth of a person."@en .
-		
-:Death rdf:type owl:Class ;
-  rdfs:subClassOf :StageOfLife ;
-  rdfs:label "Tod"@de, "Death"@en ;
-	dc:description "Sterbedatum oder den Zeitraum des Todes einer Person."@de, "Day of death or the period of death of a person."@en .
-	
-:hasStageOfLife rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Professor ;
-  rdfs:range :StageOfLife ;
-  rdfs:label "hat Lebensabschnitt"@de, "has stage of life"@en ;
-	dc:description "Lebensabschnitt eines Professors."@de, "Stage of life of a professor."@en .
-		
-:Family rdf:type owl:Class ;
-  rdfs:subClassOf :StageOfLife ;
-  rdfs:label "Familie"@de, "Family"@en ;
-	dc:description "Dieses Konzept beschreibt die soziale Herkunft und Familienverhältnisse einer Person."@de, "This concept describes the social origin
-		and the family relationship of a person."@en .
-		
-:spouse rdf:type owl:ObjectProperty ;
-  rdfs:domain :Family ;
-  rdfs:range :Professor ;
-  rdfs:label "Ehepartner"@de, "spouse"@en ;
-	dc:description "Bezieht sich auf den Ehepartner (generisches Maskulinum) eines Professors."@de, "Refers to the spouse (generic masculine) of a professor."@en .
-		
-:child rdf:type owl:ObjectProperty ;
-  rdfs:domain :Family ;
-  rdfs:range :Professor ;
-  rdfs:label "Kind"@de, "child"@en ;
-	dc:description "Bezieht sich auf das Kind, Pflegekind, Adoptivkind eines Professors."@de, "Refers to the cild, foster child, adoptive child of a professor."@en .
-	
-:parent rdf:type owl:ObjectProperty ;
-  rdfs:domain :Family ;
-  rdfs:range :Professor ;
-  rdfs:label "Elternteil"@de, "parent"@en ;
-	dc:description "Weist einen Professor als Elternteil aus."@de, "Depicts a professor as a parent."@en .
-		
-:Location rdf:type owl:Class ;
-  rdfs:label "Ort"@de, "Location"@en ;
-	dc:description "Bezieht sich auf den geografischen Ort für Lebensabschnitte einer Person, Orte von Körperschaften,
-		Medien (Verlagsort, Druckort), Ämtern, Landesherrschaft usw."@de, "Refers to the geographical location of life stages of persons, corporate bodies, media
-		(printing, publishing), offices, territories and others."@en .
-				     
-:stageOfLifeLocation rdf:type owl:DatatypeProperty ;
-  rdfs:domain :StageOfLife ;
-  rdfs:range :Location ;
-  rdfs:label "Ort Lebensabschnitt"@de, "location of stage of life"@en ;
-	dc:description "Fügt einem Lebensabschnitt einer Person einen geografischen Ort zu."@de, "Adds a geographical location to a stage of life of a person."@en .
-	
-:Denomination rdf:type owl:Class ;
-  rdfs:subClassOf :StageOfLife ;
-  rdfs:label "Konfession"@de, "Denomination"@en ;
-	dc:description "Religionszugehörigkeit oder Glaubenbekenntnis einer Person."@de , "The religious denomination of a person."@en .
-				     
-:Honour rdf:type owl:Class ;
-  rdfs:isSameAs <http://purl.org/pcp-on-web/ontology#Honour> ;
-  rdfs:subClassOf :StageOfLife ;
-  rdfs:label "Ehrung"@de , "Honour"@en ;
-	dc:description "Diese Konzept beschreibt eine Ehrung"@de , "The concept Person describes a honour"@en .
-
-	
-:Education  rdf:type owl:Class ;
-  rdfs:subClassOf :StageOfLife ;
-  rdfs:label "Bildungsweg"@de, "Education"@en ;
-	dc:description "Beschreibt den Bildungsweg einer Person."@de , "Decribes the education of a person."@en .
-		
-:Corporation rdf:type owl:Class ;
-  rdfs:label "Körperschaft"@de, "Corporation"@en ;
-	dc:description "Bezeichnet eine Körperschaft."@de, "Refers to a corporation or corporate body."@en .
-				     
-:locationCorporation rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Corporation ;
-  rdfs:range :Location ;
-  rdfs:label "Ort einer Körperschaft"@de, "location of a corporation"@en ;
-	dc:description "Bezieht sich auf den geografischen Ort einer Körperschaft."@de,
-		"Refers to the geographical location of a corporation."@en .
-				     
-:Archive rdf:type owl:Class ;
-  rdfs:subClassOf :Corporation ;
-  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Archive> ;
-  rdfs:label "Archiv"@de, "Archive"@en ;
-	dc:description "Bezeichnet eine Körperschaft."@de, "Refers to a corporation or corporate body."@en .
-		
-:PrimaryEducation  rdf:type owl:Class ;
-  rdfs:subClassOf :Education ;
-  rdfs:label "Primäre Bildung"@de, "Primary education"@en ;
-	dc:description "Bezieht sich auf die diversen vormodernen Schulformen und pädagogischen Bildungsangebote im Vorfeld eines Universitätsbesuchs
-		im Territorium des Heiligen Römischen Reichs Deutscher Nation, z.B. Elementarschulen, Lateinschulen, Gymnasien, Klosterschulen,
-		Pfarrschulen etc."@de , "Refers to the diverse early modern educational and pedagogical formas and institutions of primary education within the
-		Holy Roman Empire."@en .		
-		
-:PrivateEducation rdf:type owl:Class ;
-  rdfs:subClassOf :Education ;
-  rdfs:label "Privatunterricht"@de, "Private education"@en ;
-	dc:description "Privatunterricht im Familienverband oder durch einen Privatlehrer."@de,
-		"Private education by family members or a different private teacher."@en .
-				     
-:Graduation rdf:type owl:Class ;
-  rdfs:subClassOf :StageOfLife ;
-  rdfs:isSameAs <http://purl.org/pcp-on-web/ontology#Graduation> ;
-  rdfs:label "Abschluss"@de, "Graduation"@en ;
-	dc:description "Bezeichnet einen Abschluss an einer Schule oder Universität."@de, "Refers to a graduation at a school or university."@en .
-				     
-:educationGraduation rdf:type owl:ObjectProperty ;
-  rdfs:domain :Education ;
-  rdfs:range :Graduation ;
-  rdfs:label "Abschluss Bildungsabschnitt"@de, "graduation of education"@de ;
-	dc:description "Bezieht sich auf den Abschluss eines Bildungsweges im Lebensabschnitt eines Professors."@de, "Refers to the graduation in education of a
-		professors stage of life."@en .
-		
-:UniversityStudies rdf:type owl:Class ;
-  rdfs:subClassOf :Education ;
-  rdfs:label "Studium"@de, "University studies"@en ;
-	dc:description "Bezieht sich auf das Universitätsstudium einer Person an einer vormodernen Universität."@de, "Refers to the university studies of a professor
-		at Early Modern Universities."@en .
-				     
-:hasSemester rdf:type owl:ObjectProperty ;
-  rdfs:domain :UniversityStudies ;
-  rdfs:range :Semester ;
-  rdfs:label "Semesterangabe eines Studiums"@de, "semesters of a university study"@en ;
-    dc:description "Nennt Semester eines Studiums."@de,"Gives the semester of a university study."@en .
-				    
-:Enrollment rdf:type owl:Class ;
-  rdfs:subClassOf :UniversityStudies ;
-  rdfs:label "Immatrikulation"@de, "Enrollment"@en ;
-	dc:description "Bezieht sich auf die Einschreibung eines Person in das Universitätsverzeichnis, die (Universitäts-)Matrikel."@de, "Refers to the enrollment 
-		of a person into the universities' directory, the (university) 'Matrikel'."@en .
-
-:hasEnrollment rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Person ;
-  rdfs:range :Enrollment ;
-  rdfs:label "hat Matrikel"@de, "has enrollment"@en ;
-	dc:description "Verweist auf eine Immatrikulation einer Person an einer Universität."@de, "Refers to the enrollment of a person at a university."@en .
-				     
-:enrollmentSemester rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Enrollment ;
-  rdfs:range :Semester ;
-  rdfs:label "Semester der Immatrikulation"@de, "semester of enrollment"@en ;
-	dc:description "Nennt das Semester der Immatrikulation eines Professors."@de, "Gives information of the semester in which a person got enrolled."@en .
-				     
-:AcademicDegree rdf:type owl:Class ;
-  rdfs:subClassOf :Graduation ;
-  rdfs:label "Akademische Grade"@de, "Academic Degree"@en ;
-	dc:description "Bezeichnet akademische Abschlüsse, die an frühneuzeitlichen Universitäten in deutschen Territorien erworben werden konnten."@de , "..."@en .
-				     
-:Baccalaureus rdf:type owl:Class ;
-  rdfs:subClassOf :AcademicDegree ;
-  rdfs:label "Baccalaureus"@de, "Baccalaureus"@en ;
-	dc:description "Bezeichnet den akademischen Grad eines Baccalaren/Baccalaureus. Kürzel: Bacc."@de , "Describes the academic degree of a bachelor/baccalaureus. 
-			Abbreviation: Bacc."@en .
-				     
-:Licentiatus rdf:type owl:Class ;
-  rdfs:subClassOf :AcademicDegree ;
-  rdfs:label "Lizenziat"@de, "Licentiate"@en ;
-	dc:description "Bezeichnet den akademischen Grad eines Lizenziaten, eines Baccalaren mit Lehrbefugnis. Zugleich einen Doktor der evang. Theologie
-			(bis 1947 an deutschen Hochschulen). Kürzel: lic."@de , "Describes the academic degree of a Licentiate, which means a bachelor/baccalaureus
-			with the right to teach. Also the academic title of a doctor of Evangelic theology (valid until 1947 in Germany). Abbreviation: lic."@en .
-				     
-:Magister rdf:type owl:Class ;
-  rdfs:subClassOf :AcademicDegree ;
-  rdfs:label "Magister"@de, "Magister"@en ;
-	dc:description "Bezeichnet den akademischen Grad eines Magister. Kürzel: Mag."@de , "Describes the academic degree of a magister. Abbreviation: Mag."@en .
-				     
-:Doctor rdf:type owl:Class ;
-  rdfs:subClassOf :AcademicDegree ;
-  rdfs:label "Doctor"@de, "Doctor"@en ;
-	dc:description "Bezeichnet den akademischen Grad eines Doktoren. Kürzel: Dr."@de , "Describes the academic degree of a doctor. Abbreviation: Dr."@en .
-				     
-:academicDegreeDate rdf:type owl:DatatypeProperty, owl:FunctionalProperty ;
-  rdfs:domain :AcademicDegree ;
-  rdfs:range rdfs:Literal ;
-  rdfs:label "Date of Academic Degree"@en, "Datum des Akademischen Grads"@de ;
-  	dc:descritption "Gibt den Zeitpunkt an wann ein akademischer Grad erworben wurde."@de, "Gives the date of earning a degree from a valid datatype
-		 xsd:date ,
-                 xsd:gDay ,
-                 xsd:gMonth ,
-                 xsd:gMonthDay ,
-                 xsd:gYear ,
-                 xsd:gYearMonth"@en .
-				     
-:hasAcademicDegree rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Person ;
-  rdfs:range :AcademicDegree ;
-  rdfs:label "hat akademischen Grad"@de, "has academic degree"@en ;
-	dc:description "Gibt an, dass eine Person über einen akademischen Grad verfügt."@de, "Gives the academic degree of a person."@en .
-		
-:isStudentAt rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Student ;
-  rdfs:range :University ;
-  rdfs:label "ist ein Student an"@de, "is a student at"@en ;
-	dc:description "Bezieht sich auf die Information an welcher Korporation ein Student studiert."@de,
-		"Refers to the information at which corporation a student studies."@en .
-	
-:University rdf:type owl:Class ;
-  rdfs:subClassOf :Corporation ;
-  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Academy> ;
-  rdfs:label "Universität"@de, "University"@en ;
-	dc:description "Bezeichnet eine Lehr-, Bildungs- und Forschungskorporation die dazu priviligiert ist akademische Grade zu verleihen."@de ,
-		"Refers to education and research corporations which own the privilige to award academic degrees."@en .
-				     
-:Statutes rdf:type owl:Class ;
-  rdfs:subClassOf :University ;
-  rdfs:label "Statuten"@de, "Statutes"@en ;
-	dc:description "Die Verfassung einer Universität, ratifziert durch die Landesherrschaft."@de, "University constitution, ratificated by territorial
-		authority."@en .
-				     
-###CRM P15 was influenced by ###
-:wasInfluencedBy rdf:type owl:ObjectProperty ;
-  rdfs:domain :Territory ;
-  rdfs:range :Statutes ;
-  rdfs:label "wurde beeinflusst durch"@de, "was influenced by"@en ;
-    dc:description "Wie P15 Cidoc CRM ... ."@de,"Like P15 Cidoc CRM ... ."@en .
-
-	
-:Semester rdf:type owl:Class ;
-  rdfs:subClassOf :University ;
-  rdfs:label "Semester"@de, "Semester"@en ;
-    dc:description "Abschnitt des Akademischen Jahrs. Es besteht aus einem Sommer- und einem Wintersemester."@de ,
-		"Part of an academic year. It consists of a summer- and a wintersemester"@en .
-   
-:WinterSemester rdf:type owl:Class ;
-  rdfs:subClassOf :Semester ;
-  owl:DisjoinUnionOf :SummerSemester;
-  rdfs:label "Wintersemester"@de, "Winter Semester"@en ;
-    dc:description "Das halbjährige Wintersemester dauert von Oktober bis März."@de , "The biannual winter semester starts in October and ends in March."@en .
-
-:SummerSemester rdf:type owl:Class ;
-  rdfs:subClassOf :Semester ;
-  owl:DisjoinUnionOf :WinterSemester;
-  rdfs:label "Sommersemester"@de, "Summer Semester"@en ;
-    dc:description "Das halbjährige Sommersemester dauert von April bis September."@de , "The biannual summer semester starts in April and ends in September."@en .
-   
-   
-:heldInSemester rdf:type owl:ObjectProperty ;
-  rdfs:domain :Lecture ;
-  rdfs:range :Semester ;
-  rdfs:label "Vorlesung wird gehalten/angeboten in Semester"@de, "Lecture is offered/held in semester"@en ;
-    dc:description "Gibt das Semester an, in welchem eine Vorlesung gehalten bzw. angeboten wurde."@de,"Gives the semester at which a lecture had been hold or was
-		offered"@en .
-   
-:academicYear rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Semester ;
-  rdfs:range xsd:gYear;
-  rdfs:label "Academic Year"@en, "Akademisches Jahr"@de .				   
-				     
-:Faculty rdf:type owl:Class ;
-  rdfs:subClassOf :University ;
-  rdfs:label "Fakultät"@de, "Faculty"@en ;
-	dc:description "Bezieht sich auf eine körperschaftlich organisierte und auf ein Fachgebiet begrenzte Lehr- und Verwaltungseinheit einer Volluniversität,
-		im frühneuzeitlichen Kontext: Philosophie, Theologie, Jurisprudenz, Medizin."@de, "Refers to corporated university divisions with specific subject
-		areas, which are in an Early Modern context: Philosophy, Theology, Jurisprudence, Medicine."@en .
-	
-:FacultyOfPhilosophy rdf:type owl:Class ;
-  rdfs:subClassOf :Faculty ;
-  rdfs:label "Philosophische Fakultät"@de, "Faculty of Philosophy"@en ;
-	dc:description "Bezeichnet die Philosophische Fakultät an einer Universität."@de, "Refers to the Faculty of Philosophy at Universities."@en .
-		
-:FacultyOfTheology rdf:type owl:Class ;
-  rdfs:subClassOf :Faculty ;
-  rdfs:label "Theologische Fakultät"@de, "Faculty of Theology"@en ;
-	dc:description "Bezeichnet die Theologische Fakultät an einer Universität."@de, "Refers to the Faculty of Theology at Universities."@en .
-		
-:FacultyOfLaw rdf:type owl:Class ;
-  rdfs:subClassOf :Faculty ;
-  rdfs:label "Juristische Fakultät"@de, "Faculty of Law"@en ;
-	dc:description "Bezeichnet die Juristische Fakultät an einer Universität."@de, "Refers to the Faculty of Law at Universities."@en .
-
-:FacultyOfMedicine rdf:type owl:Class ;
-  rdfs:subClassOf :Faculty ;
-  rdfs:label "Medizinische Fakultät"@de, "Faculty of Medicine"@en ;
-	dc:description "Bezeichnet die Medzinische Fakultät an einer Universität."@de, "Refers to the Faculty of Medicine at Universities."@en .
-
-:Chair rdf:type owl:Class ;
-  rdfs:subClassOf :AcademicOffice ;
-  rdfs:label "Lehrstuhl"@de, "Chair"@en ;
-	dc:description "Bezeichnet den Lehrstuhl bzw. das Fachgebiet einer Universitätsfakultät."@de, "Designates the chair or subject at university faculties."@en .
-				     
-:hasChair rdf:type owl:ObjectProperty ;
-  rdfs:domain :Professor ;
-  rdfs:range :Chair ;
-  rdfs:label "hat Lehrstuhl"@de, "has chair"@en ;
-	dc:description "Professor hat Lehrstuhl."@de, "Professor has chair."@en .
-				     
 :chairDate rdf:type owl:DatatypeProperty, owl:FunctionalProperty ;
   rdfs:domain :Chair ;
   rdfs:range rdfs:Literal ;
@@ -522,150 +616,239 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                  xsd:gMonthDay ,
                  xsd:gYear ,
                  xsd:gYearMonth"@en .
-		
-:organizedIn rdf:type owl:ObjectProperty ;
-  rdfs:domain :Faculty ;
-  rdfs:range :Chair ;
-  rdfs:label "ist organisiert in"@de, "is organized in"@en ;
-	dc:description "Ordnet einen Lehrstuhl einer Fakultät zu."@de, "Allocates a chair to a faculty."@en .
 
-:Student rdf:type owl:Class ;
-  rdfs:subClassOf :Person ;
-  rdfs:label "Student"@de, "Student"@en ;
-	dc:description "Bezeichnet einen an der Universität immatrikulierten Studenten."@de, "Refers to an enrolled student at a University."@en .
-		
-:isStudent rdf:type owl:ObjectProperty ;
+:enrollmentSemester rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Enrollment ;
+  rdfs:range :Semester ;
+  rdfs:label "Semester der Immatrikulation"@de, "semester of enrollment"@en ;
+	dc:description "Nennt das Semester der Immatrikulation eines Professors."@de, "Gives information of the semester in which a person got enrolled."@en .
+				     
+###  http://purl.org/pcp-on-web/ontology#forename
+:forename rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Person ;
+          rdfs:range rdfs:Literal;
+          rdfs:comment "Forename(s) of a person, seperated by space"@en ,
+                       "Vorname(n) einer Person, getrennt mit Leerzeichen"@de ;
+          rdfs:label "Forename"@en ,
+                     "Vorname"@de ;
+          owl:versionInfo "0.1 initial creation date: 18.05.2015"^^xsd:string .
+
+:gnd rdf:type owl:DatatypeProperty , owl:FunctionalProperty ;
+  rdfs:domain :Person ;
+  rdfs:range rdfs:Literal ;
+  rdfs:label "GND/PND"@de, "GND/PND"@en ;
+  	dc:description "GND oder PND Normadatei."@de, "GND or PND integrated authority file."@en .
+				     
+:hasAcademicDegree rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Person ;
+  rdfs:range :AcademicDegree ;
+  rdfs:label "hat akademischen Grad"@de, "has academic degree"@en ;
+	dc:description "Gibt an, dass eine Person über einen akademischen Grad verfügt."@de, "Gives the academic degree of a person."@en .
+
+:hasEnrollment rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Person ;
+  rdfs:range :Enrollment ;
+  rdfs:label "hat Matrikel"@de, "has enrollment"@en ;
+	dc:description "Verweist auf eine Immatrikulation einer Person an einer Universität."@de, "Refers to the enrollment of a person at a university."@en .
+				     
+:hasPicture rdf:type owl:DatatypeProperty ;
   rdfs:domain :Professor ;
-  rdfs:range :Student ;
-  rdfs:label "ist Student"@de, "is student"@en ;
-	dc:description "Bezeichnet den Professor als Student."@de, "Refers to the Professor as a student."@en .
-		
-:Territory rdf:type owl:Class ;
-  rdfs:subClassOf :Corporation ;
-  rdfs:label "Landesherrschaft"@de, "Territory"@en ;
-	dc:description "Bezeichnet die Landesherrschaft eines Territoriums und bezieht sich hier auf den Amtssitz jener landesherrschaftliche  Organe, 
-		denen die Universitäten unterstellt sind."@de , "Refers to the authority by a ruler/rulership or group of rulers of a territory and means here the
-		territorial administration which deal with the universities."@en .
-				     
-:vocates rdf:type owl:ObjectProperty ;
-  rdfs:domain :Territory ;
-  rdfs:range :Professor ;
-  rdfs:label "beruft"@de, "vocates"@en ;
-	dc:description "Landesherrschaft beruft bzw. bestätigt und ernennt einen Professor."@de, "Territorial rulership vocates or confirms a Professor."@en .
-				     
-:nominates rdf:type owl:ObjectProperty ;
-  rdfs:domain :Faculty ;
-  rdfs:range :Candidate ;
-  rdfs:label "nominiert"@de, "nominates"@en ;
-	dc:description "Bezieht sich auf die Nominierungslisten einer Fakultät, die an die Verwaltung der Landesherrschaft erging und aus denen ein Kandidat durch die 
-		Landesherrschaft bestätigt wurde. Diese Listen liegen zumeist in zuständigen Archiven vor."@de, "Refers to nomination lists which were handed in  to
-		the territorial administration by the faculties in  order to choose and to vocate a candidate for a university chair. Those lists can be found in
-		relevant archives."@en .
-				     
-:territoryDocument rdf:type owl:ObjectProperty ;
-  rdfs:domain :Territory ;
-  rdfs:range :Document ;
-  rdfs:label "hat Dokument"@de, "has Document"@en ;
-	dc:description "Bezieht sich auf das dazugehörige Dokument einer Ernennung, z.B. Bestallungsakte."@de, "Refers to documents of a vocation, like vocation files.
-		"@en .
-	
-:Patron rdf:type owl:Class ;
-  rdfs:subClassOf :Professor ;
-  rdfs:label "Patron"@de, "Patron"@en ;
-	dc:description "Bezieht sich auf den Patron einer Person; hier auf in den Quellen namentlich erwähnten Förderer eines Professors und dessen Karriere."@de ,
-		"Refers to the patron of a person; here to the Patron of a professor's career who is known by the sources."@en .
+  rdfs:range :Picture ;
+  rdfs:label "hat Bild"@de, "has picture"@en ;
+	dc:description "Verweist auf ein Bild des Professors."@de, "Refers to a picture of the professor."@en .
+			     
+:hasStageOfLife rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Professor ;
+  rdfs:range :StageOfLife ;
+  rdfs:label "hat Lebensabschnitt"@de, "has stage of life"@en ;
+	dc:description "Lebensabschnitt eines Professors."@de, "Stage of life of a professor."@en .
 
-:Office rdf:type owl:Class ;
-  rdfs:subClassOf :StageOfLife;
-  rdfs:label "Amt"@de, "Office"@en ;
-	dc:description "Bezieht sich auf ein Amt, das eine Person bekleidet."@de , "Refers to an office a person holds."@en .	
+:isStudentAt rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Student ;
+  rdfs:range :University ;
+  rdfs:label "ist ein Student an"@de, "is a student at"@en ;
+	dc:description "Bezieht sich auf die Information an welcher Korporation ein Student studiert."@de,
+		"Refers to the information at which corporation a student studies."@en .
 				     
-:AcademicOffice rdf:type owl:Class ;
-  rdfs:subClassOf :Office ;
-  rdfs:label "Akademisches Amt"@de, "Academic office"@en ;
-	dc:description "Bezieht sich auf ein Amt, das ein Professor an einer Universität bekleidet."@de , "Refers to an academic office a professor holds at
-		the University."@en .
-	
-:Network rdf:type owl:Class ;
-  rdfs:subClassOf :StageOfLife ;
-  rdfs:label "Netzwerk"@de, "Network"@en ;
-	dc:description "in Arbeit: Dieses Konzept bezieht sich auf ... Personengeflechte ... dynamisch ... Kommunikationsräume ... Interaktion"@de , "..."@en .
+:latinForename rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Person ;
+				   rdfs:range rdfs:Literal ;
+                   rdfs:comment "Latinized first name of a person."@en ,
+                                "Latinisierter  Vorname einer Person."@de ;
+                   rdfs:label "Latin First Name"@en ,
+                              "Latinisierter Vorname"@de ;
+                   owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
+
+:latinSurname rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Person ;
+				   rdfs:range rdfs:Literal ;
+                   rdfs:comment "Latinized last name of a person."@en ,
+                                "Latinisierter Nachname einer Person."@de ;
+                   rdfs:label "Latin Last Name"@en ,
+                              "Latein Name"@de ;
+                   owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
 				     
-:Correspondence rdf:type owl:Class ;
-  rdfs:subClassOf :Network ;
-  rdfs:label "Korrespondenz"@de, "Correspondence"@en ;
-	dc:description "Verweist auf Korrespondenzpartner einer Person."@de, "Refers to correspondence partner of a person."@en .
+:locationCorporation rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Corporation ;
+  rdfs:range :Location ;
+  rdfs:label "Ort einer Körperschaft"@de, "location of a corporation"@en ;
+	dc:description "Bezieht sich auf den geografischen Ort einer Körperschaft."@de,
+		"Refers to the geographical location of a corporation."@en .
+
+:locationDocument rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Document ;
+  rdfs:range :Location ;
+  rdfs:label "Ort eines Dokument"@de, "location of a document"@en ;
+	dc:description "Bezieht sich auf den geografischen Ort eines Dokuments, z.B. Publikationsort."@de,
+		"Refers to the geographical location of a document, e.g. location of a publication."@en .
+
+:reportDate rdf:type owl:DatatypeProperty, owl:FunctionalProperty ;
+  rdfs:domain :Report ;
+  rdfs:range rdfs:Literal ;
+  rdfs:label "timespan of report"@en, "Zeitspanne eines Rechenschaftsberichts"@de ;
+  	dc:description "Gibt die Zeitspanne an, die ein Rechenschaftsbericht umfasst."@de, "Gives the timespan of a report.
+		 xsd:date ,
+                 xsd:gDay ,
+                 xsd:gMonth ,
+                 xsd:gMonthDay ,
+                 xsd:gYear ,
+                 xsd:gYearMonth"@en .
 				     
+###  http://purl.org/pcp-on-web/ontology#surname
+:surname rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Person ;
+  rdfs:range rdfs:Literal ;
+  rdfs:label "Nachname"@de , "surname"@en ;
+  rdfs:comment "Nachname einer Person"@de , "The surname of a person"@en ;
+		         owl:versionInfo "0.1 initial creation date: 24.05.2007"^^xsd:string ,
+                         "2.0 stable"^^xsd:string ,
+                         "version 0.2  10.03.2008"^^xsd:string .
+				     
+:stageOfLifeLocation rdf:type owl:DatatypeProperty ;
+  rdfs:domain :StageOfLife ;
+  rdfs:range :Location ;
+  rdfs:label "Ort Lebensabschnitt"@de, "location of stage of life"@en ;
+	dc:description "Fügt einem Lebensabschnitt einer Person einen geografischen Ort zu."@de, "Adds a geographical location to a stage of life of a person."@en .
+				     
+				     
+#####################################################################################################################################################################
+				     
+				     Object Properties
+				     
+#####################################################################################################################################################################    
+				     
+:child rdf:type owl:ObjectProperty ;
+  rdfs:domain :Family ;
+  rdfs:range :Professor ;
+  rdfs:label "Kind"@de, "child"@en ;
+	dc:description "Bezieht sich auf das Kind, Pflegekind, Adoptivkind eines Professors."@de, "Refers to the cild, foster child, adoptive child of a professor."@en .
+
 :correspondenceHasDocument rdf:type owl:ObjectProperty ;
   rdfs:domain :Correspondence ;
   rdfs:range :Document ;
   rdfs:label "Korrespondenz hat Dokument"@de, "correspondence has document"@en ;
 	dc:description "Weist einer Korrespondenz ein Dokument zu."@de, "Assigns a correspondence to a document."@en .
-	
-:Candidate rdf:type owl:Class ;
-  rdfs:subClassOf :Person ;
-  rdfs:label "Kandidat"@de, "Candidate"@en ;
-	dc:description "Bezeichnet eine Person, die im Zuge der Besetzung einer Professur als Kandidat gehandelt wird."@de , "Refers to a person which is a candidate
-		for a university chair."@en .
-				     
-:hasRecommendation rdf:type owl:ObjectProperty ;
-  rdfs:domain :Candidate ;
-  rdfs:range :Recommendation ;
-  rdfs:label "hat Empfehlung"@de, "has recommendation"@en ;
-	dc:description "Gibt an, ob ein Kandidat ein Empfehlungsschreiben hat."@de, "Refers to any given recommendation of a candidate."@en .		
-				     
-:isVocated rdf:type owl:ObjectProperty ;
-  rdfs:domain :Candidate ;
-  rdfs:range :Professor ;
-  rdfs:label "wird ernannt"@de, "is vocated"@en ;
-	dc:description "Bezieht sich auf den von Universität und Landesherrschaft ausgewählten Kandidaten für eine Professur."@de, "Refers to the candidate for a 
-		professorship/or chair which had been negotiated by the university and the territorial authority."@en.
 
-:Recommendation  rdf:type owl:Class ;
-  rdfs:subClassOf :StageOfLife ;
-  rdfs:label "Empfehlung"@de, "Recommendation"@en ;
-  	dc:description "Bezieht sich auf Empfehlungen, z.B. Empfehlungsschreiben, die in Bestallungsakten enthalten sind."@de , "Refers to recommendations,
-		e.g. letters of recommendation which are part of vocation files."@en .
+:disputationHasDissertation rdf:type owl:ObjectProperty ;
+  rdfs:domain :Disputation ;
+  rdfs:range :Dissertation ;
+  rdfs:label "Disputation hat Dissertation"@de, "disputation has dissertation"@en ;
+	dc:description "Weist einer Disputation eine Dissertation zu."@de, "Assigns a disputation to a dissertation."@en .
 				     
-:recommendationDocument rdf:type owl:ObjectProperty ;
-  rdfs:domain :Recommendation ;
-  rdfs:range :Document ;
-  rdfs:label "Empfehlungsschreiben"@de, "letter of recommendation"@en ;
-	dc:description "Verweist auf ein Empfehlungsschreiben."@de, "Refers to a letter of recommendation."@en .
-		
-:TeachingPractices rdf:type owl:Class ;
-  rdfs:label "Lehrpraktiken"@de, "Teaching Practices"@en ;
-  	dc:description "Beschreibt akademische Lehrpraktiken, die ein Professor an der Universität durchführt und welche durch Statuten, weitere Regularien 
-		und/oder durch Gewohnheit geregelt sind."@de, "Describes academic teaching practices which are regulated by the University's statutes
-		or further regulations and/or customs."@en.
-		
 :doneAt rdf:type owl:ObjectProperty ;
   rdfs:domain :TeachingPractices ;
   rdfs:range :University ;
   rdfs:label "werden durchgeführt"@de, "done at"@en ;
 	dc:description "Bezieht sich auf Lehrpraktiken, die an einer Universität durchgeführt werden."@de, "Refers to teaching practices which are done at a
 		university."@en.
-		
+				     
+:educationGraduation rdf:type owl:ObjectProperty ;
+  rdfs:domain :Education ;
+  rdfs:range :Graduation ;
+  rdfs:label "Abschluss Bildungsabschnitt"@de, "graduation of education"@de ;
+	dc:description "Bezieht sich auf den Abschluss eines Bildungsweges im Lebensabschnitt eines Professors."@de, "Refers to the graduation in education of a
+		professors stage of life."@en .				 
+
+:hasChair rdf:type owl:ObjectProperty ;
+  rdfs:domain :Professor ;
+  rdfs:range :Chair ;
+  rdfs:label "hat Lehrstuhl"@de, "has chair"@en ;
+	dc:description "Professor hat Lehrstuhl."@de, "Professor has chair."@en .
+
+:hasAuthor rdf:type owl:ObjectProperty ;
+  rdfs:domain :Document ;
+  rdfs:range :Author ;
+  rdfs:label "Dokument hat Autor"@de, "document has author"@en ;
+	dc:description "Verweist auf die Autorenschaft eines Dokuments."@de, "Refers to the authorship of a document."@en .
+				     
+:hasCorrespondence rdf:type owl:ObjectProperty ;
+  rdfs:domain :Professor ;
+  rdfs:range :Correspondence ;
+  rdfs:label "hat Korrespondenzpartner"@de, "has correspondence partner"@en ;
+	dc:description "Verweist auf die Korrespondenzpartner eines Professors."@de, "Refers to correspondence partner of a professor."@en .
+
+### Cidoc CRM P 49 has former or current keeper ###
+:hasFormerOrCurrentKeeper rdf:type owl:ObjectProperty ;
+  rdfs:label "hat früheren oder derzeitigen Bewahrer"@de, "has former or current keeper"@en ;
+	dc:description "Wie P49 Cidoc CRM."@de, "Like P49 Cidoc CRM."@en .
+				     				     
+:hasPublisher rdf:type owl:ObjectProperty ;
+  rdfs:domain :Document ;
+  rdfs:range :Publisher ;
+  rdfs:label "Dokument hat Herausgeber"@de, "document has publisher"@en ;
+	dc:description "Nennt Herausgeber eines Dokuments."@de, "Gives the publisher of a document."@en .
+				     
+:hasRecommendation rdf:type owl:ObjectProperty ;
+  rdfs:domain :Candidate ;
+  rdfs:range :Recommendation ;
+  rdfs:label "hat Empfehlung"@de, "has recommendation"@en ;
+	dc:description "Gibt an, ob ein Kandidat ein Empfehlungsschreiben hat."@de, "Refers to any given recommendation of a candidate."@en .
+				     
+:hasSemester rdf:type owl:ObjectProperty ;
+  rdfs:domain :UniversityStudies ;
+  rdfs:range :Semester ;
+  rdfs:label "Semesterangabe eines Studiums"@de, "semesters of a university study"@en ;
+    dc:description "Nennt Semester eines Studiums."@de,"Gives the semester of a university study."@en .
+ 
+:hasTitle rdf:type owl:ObjectProperty ;
+  rdfs:domain :Document ;
+  rdfs:range :Title ;
+  rdfs:label "Titel eines Dokuments"@de, "title of a document"@en ;
+	dc:description "Nennt den Titel eines Dokuments."@de, "Gives the title of a document."@en .
+				     
+:heldInSemester rdf:type owl:ObjectProperty ;
+  rdfs:domain :Lecture ;
+  rdfs:range :Semester ;
+  rdfs:label "Vorlesung wird gehalten/angeboten in Semester"@de, "Lecture is offered/held in semester"@en ;
+    dc:description "Gibt das Semester an, in welchem eine Vorlesung gehalten bzw. angeboten wurde."@de,"Gives the semester at which a lecture had been hold or was
+		offered"@en .				  				     
+
+:isCongratulant rdf:type owl:ObjectProperty ;
+  rdfs:domain :Person ;
+  rdfs:range :Document ;
+  rdfs:label "ist Gratulant"@de, "is congratulant"@en ;
+	dc:description "Bezeichnet den Gratulanten einer Publikation."@de, "Refers to the congratulant of a publication."@en .
+				     
+:isDedicatee rdf:type owl:ObjectProperty ;
+  rdfs:domain :Person ;
+  rdfs:range :Document ;
+  rdfs:label "ist Widmungsempfänger"@de, "is dedicatee"@en ;
+	dc:description "Bezeichnet den Widmunsgempfänger einer Publikation."@de, "Refers to the dedicatee of a publication."@en .
+				     
 :isDoing rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
   rdfs:range :TeachingPractices ;
   rdfs:label "hält oder führt durch"@de, "does or gives"@en ;
 	dc:description "Bezieht sich auf Lehrpraktiken, die von einem Professor an einer Universität durchgeführt werden, z.B. Vorlesungen halten, 
-		Disputationen vorstehen oder Übungen geben."@de, "Refers to teaching practices which are done by a professor at a university, e.g. give lectures,
+		Disputationen vorstehen oder Übungen geben."@de, "Refers to teaching practices which are done by a professor at a university, e.g. give lectures, 
 		preside over disputations or give excersizes."@en.
-				     
-:Exercise rdf:type owl:Class ;
-  rdfs:subClassOf :TeachingPractices;
-  rdfs:label "Übung"@de, "Exercise"@en ;
-	dc:description "Bezieht sich auf die Lehrpraktik der Übung."@de, "Refers to the practice of exercise."@en.				     
 		
-:Disputation rdf:type owl:Class ;
-  rdfs:subClassOf :TeachingPractices;
-  rdfs:label "Disputation"@de, "Disputation"@en ;
-	dc:description "Bezieht sich auf die Disputationspraxis (Lateinisch: disputationes), die dem Zweck der Übung und/oder der Graduierung diente oder als
-		Inaugural Disputation pro loco auf die Erlangung einer Professur verwies."@de, "Refers to the practice of disputation which had the purpose of
-		practising curricula, to obtain academic titles. It also refers to inaugural disputations of newly vocated professors."@en.
-		
+:isOpponent rdf:type owl:ObjectProperty ;
+  rdfs:domain :Student ;
+  rdfs:range :Disputation ;
+  rdfs:label "ist Opponent"@de, "is opponent"@en ;
+	dc:description "Bezeichnet den Opponenten einer Disputation."@de, "Refers to the opponent of a disputation."@en .
+
 :isPraeses rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
   rdfs:range :Disputation ;
@@ -679,96 +862,50 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "ist Respondent"@de, "is Respondent"@en ;
 	dc:description "Bezeichnet den Respondenten, der sich als Student der Disputation unterzieht."@de, "Refers to the respondent who as a student is undergoing
 		the act of disputation."@en .
-		
-:isOpponent rdf:type owl:ObjectProperty ;
-  rdfs:domain :Student ;
-  rdfs:range :Disputation ;
-  rdfs:label "ist Opponent"@de, "is opponent"@en ;
-	dc:description "Bezeichnet den Opponenten einer Disputation."@de, "Refers to the opponent of a disputation."@en .
 				     
-:disputationHasDissertation rdf:type owl:ObjectProperty ;
-  rdfs:domain :Disputation ;
-  rdfs:range :Dissertation ;
-  rdfs:label "Disputation hat Dissertation"@de, "disputation has dissertation"@en ;
-	dc:description "Weist einer Disputation eine Dissertation zu."@de, "Assigns a disputation to a dissertation."@en .
-		
-:isDedicatee rdf:type owl:ObjectProperty ;
-  rdfs:domain :Person ;
+:isStudent rdf:type owl:ObjectProperty ;
+  rdfs:domain :Professor ;
+  rdfs:range :Student ;
+  rdfs:label "ist Student"@de, "is student"@en ;
+	dc:description "Bezeichnet den Professor als Student."@de, "Refers to the Professor as a student."@en .
+
+:isVocated rdf:type owl:ObjectProperty ;
+  rdfs:domain :Candidate ;
+  rdfs:range :Professor ;
+  rdfs:label "wird ernannt"@de, "is vocated"@en ;
+	dc:description "Bezieht sich auf den von Universität und Landesherrschaft ausgewählten Kandidaten für eine Professur."@de, "Refers to the candidate for a 
+		professorship/or chair which had been negotiated by the university and the territorial authority."@en.
+				     
+:nominates rdf:type owl:ObjectProperty ;
+  rdfs:domain :Faculty ;
+  rdfs:range :Candidate ;
+  rdfs:label "nominiert"@de, "nominates"@en ;
+	dc:description "Bezieht sich auf die Nominierungslisten einer Fakultät, die an die Verwaltung der Landesherrschaft erging und aus denen ein Kandidat durch die 
+		Landesherrschaft bestätigt wurde. Diese Listen liegen zumeist in zuständigen Archiven vor."@de, "Refers to nomination lists which were handed in  to
+		the territorial administration by the faculties in  order to choose and to vocate a candidate for a university chair. Those lists can be found in
+		relevant archives."@en .			     
+				     
+:organizedIn rdf:type owl:ObjectProperty ;
+  rdfs:domain :Faculty ;
+  rdfs:range :Chair ;
+  rdfs:label "ist organisiert in"@de, "is organized in"@en ;
+	dc:description "Ordnet einen Lehrstuhl einer Fakultät zu."@de, "Allocates a chair to a faculty."@en .
+
+:parent rdf:type owl:ObjectProperty ;
+  rdfs:domain :Family ;
+  rdfs:range :Professor ;
+  rdfs:label "Elternteil"@de, "parent"@en ;
+	dc:description "Weist einen Professor als Elternteil aus."@de, "Depicts a professor as a parent."@en .
+
+:recommendationDocument rdf:type owl:ObjectProperty ;
+  rdfs:domain :Recommendation ;
   rdfs:range :Document ;
-  rdfs:label "ist Widmungsempfänger"@de, "is dedicatee"@en ;
-	dc:description "Bezeichnet den Widmunsgempfänger einer Publikation."@de, "Refers to the dedicatee of a publication."@en .
-		
-:isCongratulant rdf:type owl:ObjectProperty ;
-  rdfs:domain :Person ;
-  rdfs:range :Document ;
-  rdfs:label "ist Gratulant"@de, "is congratulant"@en ;
-	dc:description "Bezeichnet den Gratulanten einer Publikation."@de, "Refers to the congratulant of a publication."@en .
+  rdfs:label "Empfehlungsschreiben"@de, "letter of recommendation"@en ;
+	dc:description "Verweist auf ein Empfehlungsschreiben."@de, "Refers to a letter of recommendation."@en .
+				     
 
-:Document rdf:type owl:Class ;
-  rdfs:subClassOf :StageOfLife ;
-  rdfs:label "Dokument"@de, "Document"@en ;
-	dc:description "Fügt einem Lebensabschnitt ein Dokument zu."@de, "Adds a document to a stage of life."@en .
-				     
-:ArchivalMaterial rdf:type owl:Class ;
-  rdfs:subClassOf :Document ;
-  rdfs:label "Archivmaterial"@de, "Archival Material"@en ;
-	dc:description "Archiv Material die Domäne betreffend, bspw. Bestallungsakten, die Ernennungsurkunden und Empfehlungsschreiben und/oder Bewerbungsschreiben
-		enthalten können. Nominationslisten der Fakultäten an die Landesherrschaft, Kopial- und Beschlussbücher der Universität und Fakultäten usw."@de, 
-		"Archival material refering to the domain, for instance nomination lists of the faculties for the territorial authorities, vocation files which 
-		contain vocation certificates, reference letters and/or applications, etc."@en .
 
-### Cidoc CRM P 49 has former or current keeper ###
-:hasFormerOrCurrentKeeper rdf:type owl:ObjectProperty ;
-  rdfs:label "hat früheren oder derzeitigen Bewahrer"@de, "has former or current keeper"@en ;
-	dc:description "Wie P49 Cidoc CRM."@de, "Like P49 Cidoc CRM."@en .
-				     
-:Curriculum rdf:type owl:Class ;
-  rdfs:subClassOf :Document ;
-  rdfs:label "Lektionskatalog"@de, "Curriculum"@en ;
-	dc:description "Lektions- oder Vorlesungskatalog einer Universität."@de, "Curriculum or lecture catalogue of a university."@en .
-				
-:Title rdf:type owl:Class ;
-  rdfs:label "Titel"@de, "Title"@en ;
-	dc:description "Gibt den Titel eines Dokuments an."@de, "Gives the title of a document."@en .
-				     
-:Author rdf:type owl:Class ;
-  rdfs:label "Autor"@de, "Author"@en ;
-	dc:description "Nennt die Autorenschaft eiens Dokuments."@de, "Gives the authorship of a document."@en .
-				     
-:Publisher rdf:type owl:Class ;
-  rdfs:label "Herausgeber"@de, "Publisher"@en ;
-	dc:description "Nennt Herausgeber eines Dokuments."@de, "Gives the publisher of a document."@en .
-				     
-:hasAuthor rdf:type owl:ObjectProperty ;
-  rdfs:domain :Document ;
-  rdfs:range :Author ;
-  rdfs:label "Dokument hat Autor"@de, "document has author"@en ;
-	dc:description "Verweist auf die Autorenschaft eines Dokuments."@de, "Refers to the authorship of a document."@en .
-				     
-:hasTitle rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Document ;
-  rdfs:range :Title ;
-  rdfs:label "Titel eines Dokuments"@de, "title of a document"@en ;
-	dc:description "Nennt den Titel eines Dokuments."@de, "Gives the title of a document."@en .
-				     
-:hasPublisher rdf:type owl:ObjectProperty ;
-  rdfs:domain :Document ;
-  rdfs:range :Publisher ;
-  rdfs:label "Dokument hat Herausgeber"@de, "document has publisher"@en ;
-	dc:description "Nennt Herausgeber eines Dokuments."@de, "Gives the publisher of a document."@en .
-				     
-:locationDocument rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Document ;
-  rdfs:range :Location ;
-  rdfs:label "Ort eines Dokument"@de, "location of a document"@en ;
-	dc:description "Bezieht sich auf den geografischen Ort eines Dokuments, z.B. Publikationsort."@de,
-		"Refers to the geographical location of a document, e.g. location of a publication."@en .
 
-:Report rdf:type owl:Class ;
-  rdfs:subClassOf :Document ;
-  rdfs:label "Rechenschaftsbericht"@de, "Report"@en ;
-	dc:description "Rechenschaftsbericht, den Dozenten in regelmäßigen Abständen bei der Universitätverwaltung und/oder Landesverwaltung einreichten."@de,
-		"Means regular reports of lecturers about their curriculum to the university and/or territorial administration."@en .
 				     
 :reportHasFaculty rdf:type owl:ObjectProperty ;
   rdfs:domain :Report ;
@@ -776,97 +913,63 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Rechenschaftsbericht hat Fakultät"@de, "report has faculty"@en ;
 	dc:description "Ordnet einen Rechenschaftsbericht einer Fakultät zu."@de, "Assigns a report to a faculty."@en .
 				     
-:reportHasChair rdf:type owl:ObjectProperty ;
-  rdfs:domain :Report ;
-  rdfs:range :Chair ;
-  rdfs:label "Rechenschaftsbericht hat Lehrstuhl"@de, "report has chair"@en ;
-	dc:description "Ordnet einen Rechenschaftsbericht einem Lehrstuhl zu."@de, "Assigns a report to a chair."@en .
-				     
-:reportDate rdf:type owl:DatatypeProperty, owl:FunctionalProperty ;
-  rdfs:domain :Report ;
-  rdfs:range rdfs:Literal ;
-  rdfs:label "timespan of report"@en, "Zeitspanne eines Rechenschaftsberichts"@de ;
-  	dc:description "Gibt die Zeitspanne an, die ein Rechenschaftsbericht umfasst."@de, "Gives the timespan of a report.
-		 xsd:date ,
-                 xsd:gDay ,
-                 xsd:gMonth ,
-                 xsd:gMonthDay ,
-                 xsd:gYear ,
-                 xsd:gYearMonth"@en .
-				     
-:ProgramsAndSpeeches rdf:type owl:Class ;
-  rdfs:subClassOf :PublicationType ;
-  rdfs:label "Programme und Reden"@de, "Programs and Speeches"@en ;
-	dc:description "Bezieht sich auf gedruckte Universitätsprogramme und Reden."@de, "Refers to printed university programs and speeches."@en .
-		
-:Publication rdf:type owl:Class ;
-  rdfs:isSameAs <http://purl.org/pcp-on-web/ontology#Publication> ;
-  rdfs:subClassOf :Document ;
-  rdfs:label "Publikation"@de, "Publication"@en ;
-	dc:description "Bezieht sich auf Publikationen."@de, "Refers to publications."@en .
-				     
-:VD16 rdf:type owl:Class ;
-  rdfs:subClassOf :Publication ;
-  rdfs:label "VD16 Publikationen"@de, "VD16 Publication"@en ;
-	dc:description "Verweist auf eine limitierten Satz an Publikationen im VD16 Katalog im Vokabular Dublin Core, FABIO, GND, DBPedia."@de, "Refers to a limited
-		set of publications at VD16 via vocabulary of Dublin Core, FABIO, GND, DBPedia."@en .
-				     
-:VD17 rdf:type owl:Class ;
-  rdfs:subClassOf :Publication ;
-  rdfs:label "VD17 Publikationen"@de, "VD17 Publication"@en ;
-	dc:description "Verweist auf eine limitierten Satz an Publikationen im VD17 Katalog im Vokabular Dublin Core, FABIO, GND, DBPedia."@de, "Refers to a limited
-		set of publications at VD17 via vocabulary of Dublin Core, FABIO, GND, DBPedia."@en .
-				     
-:VD18 rdf:type owl:Class ;
-  rdfs:subClassOf :Publication ;
-  rdfs:label "VD18 Publikationen"@de, "VD18 Publication"@en ;
-	dc:description "Verweist auf eine limitierten Satz an Publikationen im VD18 Katalog im Vokabular Dublin Core, FABIO, GND, DBPedia."@de, "Refers to a limited
-		set of publications at VD18 via vocabulary of Dublin Core, FABIO, GND, DBPedia."@en .
-				     
-:PublicationType rdf:type owl:Class ;
-  rdfs:subClassOf :Publication ;
-  rdfs:label "Publikationstyp"@de, "Publication type"@en ;
-	dc:description "Bezieht sich auf die Gattung bzw. den Typ einer Publikation."@de, "Refers to the genre or type of a publication."@en .
+:spouse rdf:type owl:ObjectProperty ;
+  rdfs:domain :Family ;
+  rdfs:range :Professor ;
+  rdfs:label "Ehepartner"@de, "spouse"@en ;
+	dc:description "Bezieht sich auf den Ehepartner (generisches Maskulinum) eines Professors."@de, "Refers to the spouse (generic masculine) of a professor."@en .
 
-:Dissertation rdf:type owl:Class ;
-  rdfs:subClassOf :PublicationType ;
-  rdfs:isSameAs <http://purl.org/pcp-on-web/ontology#QualificationDocument> ;
-  rdfs:label "Dissertation"@de, "Dissertation"@en ;
-	dc:description "Bezeichnet das gedruckte Medium der Disputation, genannte Dissertation."@de, "Refers to the printed media of a disputation,
-		called dissertation."@en .
+:territoryDocument rdf:type owl:ObjectProperty ;
+  rdfs:domain :Territory ;
+  rdfs:range :Document ;
+  rdfs:label "hat Dokument"@de, "has Document"@en ;
+	dc:description "Bezieht sich auf das dazugehörige Dokument einer Ernennung, z.B. Bestallungsakte."@de, "Refers to documents of a vocation, like vocation files.
+		"@en .
+				     
+:vocates rdf:type owl:ObjectProperty ;
+  rdfs:domain :Territory ;
+  rdfs:range :Professor ;
+  rdfs:label "beruft"@de, "vocates"@en ;
+	dc:description "Landesherrschaft beruft bzw. bestätigt und ernennt einen Professor."@de, "Territorial rulership vocates or confirms a Professor."@en .
+				     
+###CRM P15 was influenced by ###
+:wasInfluencedBy rdf:type owl:ObjectProperty ;
+  rdfs:domain :Territory ;
+  rdfs:range :Statutes ;
+  rdfs:label "wurde beeinflusst durch"@de, "was influenced by"@en ;
+    dc:description "Wie P15 Cidoc CRM ... ."@de,"Like P15 Cidoc CRM ... ."@en .
+				     
+
+				     
+
+				     
+
+				     
+		
+				     
+
+				     
+
+		
+
+		
+
+		
+
+				     
+
+		
+
+
+
+				     
+
 				   
 :dissHasFaculty rdf:type owl:ObjectProperty ;
   rdfs:domain :Dissertation ;
   rdfs:range :Faculty ;
   rdfs:label "Diss hat Fakultät"@de, "diss has faculty"@en ;
 	dc:description "Weist eine Dissertation einer Fakultät zu."@de, "Assigns a dissertation to a faculty."@en .
-				     
-:AuctionCatalogue rdf:type owl:Class ;
-  rdfs:subClassOf :PublicationType ;
-  rdfs:label "Auktionskatalog"@de, "Auction catalogue"@en ;
-	dc:description "Bezeichnet einen Auktionskatalog."@de, "Refers to an auction catalogue."@en .				     
-		
-:Textbook rdf:type owl:Class ;
-  rdfs:subClassOf :PublicationType ;
-  rdfs:label "Lehrbuch"@de, "Textbook"@en ;
-	dc:description "Bezeichnet ein Buch, das Lehrinhalte eines Studiums didaktisch aufbereitet."@de, "Refers to books which offer a compilation of content in a certain
-		field of interest.."@en.
-		
-:Article rdf:type owl:Class ;
-  rdfs:subClassOf :PublicationType ;
-  rdfs:label "Artikel"@de, "Article"@en ;
-	dc:description "Bezeichnet einen Artikel in einem Journal, einer Zeitschrift, einer Zeitung oder einem Magazin."@de, "Refers to an article published in journals, newspapers
-		or magazines."@en.
-		
-:Review rdf:type owl:Class ;
-  rdfs:subClassOf :PublicationType ;
-  rdfs:label "Rezension"@de, "Review"@en ;
-	dc:description "Bezeichnet eine Rezension in einer Rezensionszeitschrift."@de, "Refers to a review published in a review journal."@en .
-				     
-:Pamphlet rdf:type owl:Class ;
-  rdfs:subClassOf :PublicationType ;
-  rdfs:label "Streitschrift"@de, "Pamphlet"@en ;
-	dc:description "Bezeichnet eine Streitschrift."@de, "Refers to a pamphlet."@en .
 
 :isAuthor rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
@@ -882,12 +985,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Publisher ;
   rdfs:label "ist Herausgeber"@de, "is publisher"@en ;
 	dc:description "Zeichnet eine Person als einen Herausgeber aus."@de, "Refers to a person as a publisher."@en .
-
-:Lecture rdf:type owl:Class ;
-  rdfs:subClassOf :TeachingPractices;
-  rdfs:label "Vorlesung/Lektion"@de, "Lecture"@en ;
-	dc:description "Bezieht sich auf Vorlesungen bzw. Lektionen (lectiones), die von einem Professor im Rahmen der universitären Lehre abgehalten werden."@de,
-		"Refers to lectures, given by a professor at auniversity."@en.
 		
 :lectureHasFaculty rdf:type owl:ObjectProperty ;
   rdfs:domain :Lecture ;
@@ -901,18 +998,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Vorlesung hat Dokument"@de, "lecture has document"@en ;
 	dc:description "Weist einer Vorlesung ein Dokument zu, wie Lektionskatalog oder Textbuch."@de, "Assigns a lecture to a document, like curriculum or 
 		textbook."@en .
-	
-:PublicLecture rdf:type owl:Class ;
-  rdfs:subClassOf :Lecture;
-  rdfs:label "Öffentliche Vorlesung"@de, "Public Lecture"@en ;
-	dc:description "Bezieht sich auf öffentliche Vorlesungen (lectio publica), die ein Professor hält."@de, "Refers to public lectures (lectio publica), 
-		given by a professor."@en.
-		
-:PrivateLecture rdf:type owl:Class ;
-  rdfs:subClassOf :Lecture;
-  rdfs:label "Private Vorlesung"@de, "Private Lecture"@en ;
-	dc:description "Bezieht sich auf private Vorlesungen (lectio privata, privatum, privatissimum), die ein Professor in einem kleinen Kreis von Studenten hält."
-		@de, "Refers to private lectures (lectio privata, privatum, privatissimum), given by a professor for a relatively small amount of students."@en .
 		
 :attendsTeachingPractice rdf:type owl:ObjectProperty ;
   rdfs:domain :Student;
@@ -920,18 +1005,9 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "nimmt teil"@de, "attends"@en ;
 	dc:description "Bezieht sich auf die Teilnahme von Studenten an Lehrpraktiken."@de, "Refers to the attendance of students at teaching practices."@en .
 		
-:gnd rdf:type owl:DatatypeProperty , owl:FunctionalProperty ;
-  rdfs:domain :Person ;
-  rdfs:range rdfs:Literal ;
-  rdfs:label "GND/PND"@de, "GND/PND"@en ;
-  	dc:description "GND oder PND Normadatei."@de, "GND or PND integrated authority file."@en .
+
 				   
-:Membership rdf:type owl:Class ;
-  rdfs:subClassOf :Network ;
-  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#AcademicSociety> ;
-  rdfs:label "Mitgliedschaft"@de, "Membership"@en ;
-	dc:description "Verweist auf Mitgliedschaften einer Person in soziokulturellen und/oder politischen Gesellschaften und Sozietäten."@de, "Refers to the
-		membership of a person at sociocultural and/or political societies and/or corporations."@en .
+
 				     
 :membershipHasCorporation rdf:type owl:ObjectProperty ;
   rdfs:domain :Membership ;
@@ -946,34 +1022,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Gibt an, ob ein Professor Mitglied einer Gesellschaft oder Sozietät war."@de, "Refers to memberships of professors at societies and/or
 		corporations."@en .
 				     
-:LearnedSociety rdf:type owl:Class ;
-  rdfs:subClassOf :Membership ;
-  rdfs:label "Gelehrte Gesellschaft"@de, "Learned Society"@en ;
-	dc:description "Bezeichnet eine Gelehrte Gesellschaft, die sich einer bestimmten Geistesströmung oder Disziplin widmete und aus Gelehrten und Gebildeten 
-		bestand, zumeist regional begrenzt agierte."@de, "Refers to a learned society which dealt with a certain discipline or ideas which gathered learned
-		and educated people, mostly from a limited space or region."@en .
-				     
-:Academy rdf:type owl:Class ;
-  rdfs:subClassOf :Membership ;
-  rdfs:label "Akademie"@de, "Academy"@en ;
-	dc:description "Bezeichnet eine Sozietät mit strukturierter Körperschaft und obrigkeitlicher Protégierung, z.B. die diversen Akademien der Wissenschaften in
-		Europa"@de, "Refers to a society with structured corporate body and most commonly protection and financing by the territory ruler, like the diverse "@en .
-				     
-:SecretSociety rdf:type owl:Class ;
-  rdfs:subClassOf :Membership ;
-  rdfs:label "Geheimgesellschaft"@de, "Secret Society"@en ;
-	dc:description "Bezeichnet Geheimgesellschaften wie Freimaurer oder Illuminaten, Studentenverbindungen etc."@de, "Refers to secret societies like Freemasons
-		or Illuminati, student societies etc."@en .
 
-:FurtherSociety rdf:type owl:Class ;
-  rdfs:subClassOf :Membership ;
-  rdfs:label "Weitere Gesellschaft"@de, "Further Society"@en ;
-	dc:description "Bezieht sich auf weitere Formen von soziokulturellen Gesellschaften wie literarische Salons oder Lesegesellschaften."@de, "Refers to further 
-		societies like literary Salons or reading societies."@en .				    
-
-:Collection rdf:type owl:Class ;
-  rdfs:label "Sammlung"@de, "Collection"@en ;
-	dc:description "Objekt Sammlungen einer Person oder Institution."@de, "Object collections of a person or institution."@en .
 				     
 :collectionHasDocument rdf:type owl:ObjectProperty ;
   rdfs:domain :Collection ;
@@ -989,11 +1038,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		Person im Berufungsverfahren auf eine Professur von Bedeutung gewesen sein könnten."@de, "Refers to a collection of a professor, like private
 		libraries, coins and other subject specific collections, which could have been important for the vocation of a professorship."@en .
 		
-:PrivateLibrary rdf:type owl:Class ;
-  rdfs:subClassOf :Collection ;
-  rdfs:label "Privatbibliothek"@de, "Private library"@en ;
-	dc:description "Verweist auf die Privatbibliothek einer Person und kann u.U. durch publizierte Auktionskataloge erschlossen werden."@de, "Refers to the private
-		library of a person. Can be reconstructed by published auction catalogues."@en .
+
 
 :hasAuctionCatalogue rdf:type owl:ObjectProperty ;
   rdfs:domain :PrivateLibrary ;
