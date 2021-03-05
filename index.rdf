@@ -483,7 +483,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		"Refers to education and research corporations which own the privilige to award academic degrees."@en .
 				     
 :UniversityStudies rdf:type owl:Class ;
-  rdfs:isDerivedFrom >http://purl.org/pcp-on-web/ontology#Study> ;
+  rdfs:derivedFrom >http://purl.org/pcp-on-web/ontology#Study> ;
   rdfs:subClassOf :Education ;
   rdfs:label "Studium"@de, "University studies"@en ;
 	dc:description "Bezieht sich auf das Universitätsstudium einer Person."@de, "Refers to the university studies of a person."@en .
@@ -871,7 +871,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
     dc:description "Nennt Semester eines Studiums."@de,"Gives the semester of a university study."@en .
 
 :hasStageOfLife rdf:type owl:ObjectProperty ;
-  rdfs:isDerivedFrom <http://purl.org/pcp-on-web/ontology#hasPeriod> ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#hasPeriod> ;
   rdfs:domain :Professor ;
   rdfs:range :StageOfLife ;
   rdfs:label "hat Lebensabschnitt"@de, "has stage of life"@en ;
