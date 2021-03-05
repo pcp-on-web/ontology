@@ -645,19 +645,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Picture ;
   rdfs:label "hat Bild"@de, "has picture"@en ;
 	dc:description "Verweist auf ein Bild des Professors."@de, "Refers to a picture of the professor."@en .
-			     
-:hasStageOfLife rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Professor ;
-  rdfs:range :StageOfLife ;
-  rdfs:label "hat Lebensabschnitt"@de, "has stage of life"@en ;
-	dc:description "Lebensabschnitt eines Professors."@de, "Stage of life of a professor."@en .
-
-:isStudentAt rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Student ;
-  rdfs:range :University ;
-  rdfs:label "ist ein Student an"@de, "is a student at"@en ;
-	dc:description "Bezieht sich auf die Information an welcher Korporation ein Student studiert."@de,
-		"Refers to the information at which corporation a student studies."@en .
 				     
 :latinForename rdf:type owl:DatatypeProperty ;
                    rdfs:domain :Person ;
@@ -879,7 +866,21 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Semester ;
   rdfs:label "Semesterangabe eines Studiums"@de, "semesters of a university study"@en ;
     dc:description "Nennt Semester eines Studiums."@de,"Gives the semester of a university study."@en .
- 
+
+:hasStageOfLife rdf:type owl:ObjectProperty ;
+  rdfs:isDerivedFrom <http://purl.org/pcp-on-web/ontology#hasPeriod> ;
+  rdfs:domain :Professor ;
+  rdfs:range :StageOfLife ;
+  rdfs:label "hat Lebensabschnitt"@de, "has stage of life"@en ;
+	dc:description "Lebensabschnitt eines Professors."@de, "Stage of life of a professor."@en .
+
+:StudentAt rdf:type owl:ObjectProperty ;
+  rdfs:domain :Student ;
+  rdfs:range :University ;
+  rdfs:label "Student an"@de, "student at"@en ;
+	dc:description "Bezieht sich auf die Information an welcher Korporation ein Student studiert."@de,
+		"Refers to the information at which corporation a student studies."@en .
+	      
 :hasTitle rdf:type owl:ObjectProperty ;
   rdfs:domain :Document ;
   rdfs:range :Title ;
