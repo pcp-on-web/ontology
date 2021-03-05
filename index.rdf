@@ -257,7 +257,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		
 :Graduation rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
-  rdfs:isSameAs <http://purl.org/pcp-on-web/ontology#Graduation>, <http://purl.org/pcp-on-web/ontology#Qualification> ;
+  rdfs:isSameAs <http://purl.org/pcp-on-web/ontology#Graduation> ;
   rdfs:label "Abschluss"@de, "Graduation"@en ;
 	dc:description "Bezeichnet einen Abschluss an einer Schule oder Universität."@de, "Refers to a graduation at a school or university."@en .
 		
