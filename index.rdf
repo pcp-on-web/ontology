@@ -760,7 +760,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 #####################################################################################################################################################################    
 
 :attendsTeachingPractice rdf:type owl:ObjectProperty ;
-  owl:inverseOf :isDoing ;
   rdfs:domain :Student;
   rdfs:range :TeachingPractices ;
   rdfs:label "nimmt teil"@de, "attends"@en ;
@@ -920,7 +919,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezeichnet den Widmunsgempfänger einer Publikation."@de, "Refers to the dedicatee of a publication."@en .
 				     
 :isDoing rdf:type owl:ObjectProperty ;
-  owl:inverseOf :attendsTeachingPractice ;
   rdfs:domain :Professor ;
   rdfs:range :TeachingPractices ;
   rdfs:label "hält oder führt durch"@de, "does or gives"@en ;
