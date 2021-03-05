@@ -257,7 +257,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		
 :Graduation rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
-  rdfs:isSameAs <http://purl.org/pcp-on-web/ontology#Graduation> ;
+  rdfs:isSameAs <http://purl.org/pcp-on-web/ontology#Graduation>, <http://purl.org/pcp-on-web/ontology#Qualification> ;
   rdfs:label "Abschluss"@de, "Graduation"@en ;
 	dc:description "Bezeichnet einen Abschluss an einer Schule oder Universität."@de, "Refers to a graduation at a school or university."@en .
 		
@@ -275,6 +275,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		learned and educated people, mostly of regionaly importance."@en .
 		
 :Lecture rdf:type owl:Class ;
+  rdfs:isSameAs <http://purl.org/pcp-on-web/ontology#Lecture> ;
   rdfs:subClassOf :TeachingPractices;
   rdfs:label "Vorlesung/Lektion"@de, "Lecture"@en ;
 	dc:description "Bezieht sich auf Vorlesungen bzw. Lektionen (lectiones), die von einem Professor im Rahmen der universitären Lehre abgehalten werden."@de,
@@ -336,7 +337,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezeichnet eine Person."@de, "Refers to a person."@en .
 		
 :Picture rdf:type owl:Class ;
-  rdfs:isSameAs <http://catalogus-professorum.org/cpm/Picture> ;
+  rdfs:isSameAs <http://purl.org/pcp-on-web/ontology#Picture> ;
   rdfs:label "Bild"@de, "Picture"@en ;
 	dc:description "Dieses Konzept beschreibt das Bild einer Person."@de, "This concept describes the picture of a person."@en .
 		
@@ -482,6 +483,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		"Refers to education and research corporations which own the privilige to award academic degrees."@en .
 				     
 :UniversityStudies rdf:type owl:Class ;
+  rdfs:isDerivedFrom >http://purl.org/pcp-on-web/ontology#Study> ;
   rdfs:subClassOf :Education ;
   rdfs:label "Studium"@de, "University studies"@en ;
 	dc:description "Bezieht sich auf das Universitätsstudium einer Person."@de, "Refers to the university studies of a person."@en .
@@ -638,6 +640,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Verweist auf eine Immatrikulation einer Person an einer Universität."@de, "Refers to the enrollment of a person at a university."@en .
 				     
 :hasPicture rdf:type owl:DatatypeProperty ;
+  rdfs:isSameAs <http://purl.org/pcp-on-web/ontology#hasPicture> ;
   rdfs:domain :Professor ;
   rdfs:range :Picture ;
   rdfs:label "hat Bild"@de, "has picture"@en ;
