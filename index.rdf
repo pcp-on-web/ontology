@@ -584,7 +584,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                  xsd:gYear ,
                  xsd:gYearMonth"@en .
 
-### in consideration ####
 :enrollmentSemester rdf:type owl:DatatypeProperty ;
   rdfs:domain :Enrollment ;
   rdfs:range :Semester ;
