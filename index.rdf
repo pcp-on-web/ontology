@@ -702,9 +702,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                               "PID"@de ;
                    owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
 
+:docYear rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Document ;
+  rdfs:range xsd:gYear ;
+  rdfs:label "Jahresangabe eines Dokuments"@en, "Year of document"@de ;
+	      dc:description "Gibt das Publikationsjahr oder die Jahres-Datierung eines Dokuments an."@de, "Refers to the year of publication or the dating (year) of
+	      a document."@en .
 
-
-### in consideration ###
 :reportDate rdf:type owl:DatatypeProperty, owl:FunctionalProperty ;
   rdfs:domain :Report ;
   rdfs:range rdfs:Literal ;
