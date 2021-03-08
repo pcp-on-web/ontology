@@ -164,7 +164,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 :Dissertation rdf:type owl:Class ;
   rdfs:subClassOf :PublicationType ;
-  rdfs:isSameAs <http://purl.org/pcp-on-web/ontology#QualificationDocument> ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#QualificationDocument> ;
   rdfs:label "Dissertation"@de, "Dissertation"@en ;
 	dc:description "Bezeichnet das gedruckte Medium der Disputation."@de, "Refers to the printed media of a disputation."@en .
 		
@@ -257,12 +257,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		
 :Graduation rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
-  rdfs:isSameAs <http://purl.org/pcp-on-web/ontology#Graduation> ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Graduation> ;
   rdfs:label "Abschluss"@de, "Graduation"@en ;
 	dc:description "Bezeichnet einen Abschluss an einer Schule oder Universität."@de, "Refers to a graduation at a school or university."@en .
 		
 :Honour rdf:type owl:Class ;
-  rdfs:isSameAs <http://purl.org/pcp-on-web/ontology#Honour> ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Honour> ;
   rdfs:subClassOf :StageOfLife ;
   rdfs:label "Ehrung"@de , "Honour"@en ;
 	dc:description "Diese Konzept beschreibt eine Ehrung"@de, "The concept Person describes an honour"@en .
@@ -275,7 +275,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		learned and educated people, mostly of regionaly importance."@en .
 		
 :Lecture rdf:type owl:Class ;
-  rdfs:isSameAs <http://purl.org/pcp-on-web/ontology#Lecture> ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Lecture> ;
   rdfs:subClassOf :TeachingPractices;
   rdfs:label "Vorlesung/Lektion"@de, "Lecture"@en ;
 	dc:description "Bezieht sich auf Vorlesungen bzw. Lektionen (lectiones), die von einem Professor im Rahmen der universitären Lehre abgehalten werden."@de,
@@ -337,7 +337,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezeichnet eine Person."@de, "Refers to a person."@en .
 		
 :Picture rdf:type owl:Class ;
-  rdfs:isSameAs <http://purl.org/pcp-on-web/ontology#Picture> ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Picture> ;
   rdfs:label "Bild"@de, "Picture"@en ;
 	dc:description "Dieses Konzept beschreibt das Bild einer Person."@de, "This concept describes the picture of a person."@en .
 		
@@ -371,7 +371,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		
 :Professor rdf:type owl:Class ;
   rdfs:subClassOf :Person ;
-  rdfs:isSameAs <http://purl.org/pcp-on-web/ontology#Professor> ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Professor> ;
   rdfs:label "Professor"@de, "Professor"@en ;
 	dc:description "Bezeichnet eine Person die durch Berufung zum Professor an einer frühneuzeitlichen Universität lehrt und dort akademische Ämter führt."@de,
 		"Refers to a person who is vocated as a professor at an Early Modern university, who teaches and holds academic offices."@en .
@@ -382,7 +382,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezieht sich auf gedruckte Universitätsprogramme und Reden."@de, "Refers to printed university programs and speeches."@en .
 		
 :Publication rdf:type owl:Class ;
-  rdfs:isSameAs <http://purl.org/pcp-on-web/ontology#Publication> ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Publication> ;
   rdfs:subClassOf :Document ;
   rdfs:label "Publikation"@de, "Publication"@en ;
 	dc:description "Bezieht sich auf Publikationen."@de, "Refers to publications."@en .
@@ -447,8 +447,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Sommersemester"@de, "Summer Semester"@en ;
     dc:description "Das halbjährige Sommersemester dauert von April bis September."@de , "The biannual summer semester starts in April and ends in September."@en .
 		
- :StageOfLife rdf:type owl:Class ;
-  :derivedFrom <http://purl.org/pcp-on-web/ontology#PeriodOfLife> ;
+:StageOfLife rdf:type owl:Class ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#PeriodOfLife> ;
   rdfs:label "Lebensabschnitt"@de, "Stage of Life"@en ;
 	dc:description "Dieses Konzept bezieht sich auf einen Lebensabschnitt eines Professors."@de, "This concept refers to a stage of life of a professor."@en .
 
