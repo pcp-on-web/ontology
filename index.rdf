@@ -262,8 +262,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezeichnet einen Abschluss an einer Schule oder Universität."@de, "Refers to a graduation at a school or university."@en .
 		
 :Honour rdf:type owl:Class ;
-  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Honour> ;
   rdfs:subClassOf :StageOfLife ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Honour> ;
   rdfs:label "Ehrung"@de , "Honour"@en ;
 	dc:description "Diese Konzept beschreibt eine Ehrung"@de, "The concept Person describes an honour"@en .
 
@@ -275,8 +275,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		learned and educated people, mostly of regionaly importance."@en .
 		
 :Lecture rdf:type owl:Class ;
-  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Lecture> ;
   rdfs:subClassOf :TeachingPractices;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Lecture> ;
   rdfs:label "Vorlesung/Lektion"@de, "Lecture"@en ;
 	dc:description "Bezieht sich auf Vorlesungen bzw. Lektionen (lectiones), die von einem Professor im Rahmen der universitären Lehre abgehalten werden."@de,
 		"Refers to lectures given by a professor at auniversity."@en .
@@ -382,8 +382,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezieht sich auf gedruckte Universitätsprogramme und Reden."@de, "Refers to printed university programs and speeches."@en .
 		
 :Publication rdf:type owl:Class ;
-  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Publication> ;
   rdfs:subClassOf :Document ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Publication> ;
   rdfs:label "Publikation"@de, "Publication"@en ;
 	dc:description "Bezieht sich auf Publikationen."@de, "Refers to publications."@en .
 				     
@@ -483,8 +483,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		"Refers to education and research corporations which own the privilige to award academic degrees."@en .
 				     
 :UniversityStudies rdf:type owl:Class ;
-  rdfs:derivedFrom >http://purl.org/pcp-on-web/ontology#Study> ;
   rdfs:subClassOf :Education ;
+  rdfs:derivedFrom >http://purl.org/pcp-on-web/ontology#Study> ;
   rdfs:label "Studium"@de, "University studies"@en ;
 	dc:description "Bezieht sich auf das Universitätsstudium einer Person."@de, "Refers to the university studies of a person."@en .
 
@@ -640,9 +640,9 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Verweist auf eine Immatrikulation einer Person an einer Universität."@de, "Refers to the enrollment of a person at a university."@en .
 				     
 :hasPicture rdf:type owl:DatatypeProperty ;
-  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#hasPicture> ;
   rdfs:domain :Professor ;
   rdfs:range :Picture ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#hasPicture> ;
   rdfs:label "hat Bild"@de, "has picture"@en ;
 	dc:description "Verweist auf ein Bild des Professors."@de, "Refers to a picture of the professor."@en .
 				     
@@ -763,9 +763,9 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezieht sich auf die Teilnahme von Studenten an Lehrpraktiken."@de, "Refers to the attendance of students at teaching practices."@en .
 				     
 :child rdf:type owl:ObjectProperty ;
-  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#familyChild> ;
   rdfs:domain :Family ;
   rdfs:range :Professor ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#familyChild> ;
   rdfs:label "Kind"@de, "child"@en ;
 	dc:description "Bezieht sich auf das Kind, Pflegekind, Adoptivkind eines Professors."@de, "Refers to the cild, foster child, adoptive child of a 
 	      professor."@en .
@@ -869,9 +869,9 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
     dc:description "Nennt Semester eines Studiums."@de,"Gives the semester of a university study."@en .
 
 :hasStageOfLife rdf:type owl:ObjectProperty ;
-  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#hasPeriod> ;
   rdfs:domain :Professor ;
   rdfs:range :StageOfLife ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#hasPeriod> ;
   rdfs:label "hat Lebensabschnitt"@de, "has stage of life"@en ;
 	dc:description "Lebensabschnitt eines Professors."@de, "Stage of life of a professor."@en .
 
@@ -1006,9 +1006,9 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		libraries, coins and other subject specific collections, which could have been important for the vocation of a professorship."@en .
 				     
 :parent rdf:type owl:ObjectProperty ;
-  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#familyParent> ;
   rdfs:domain :Family ;
   rdfs:range :Professor ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#familyParent> ;
   rdfs:label "Elternteil"@de, "parent"@en ;
 	dc:description "Weist einen Professor als Elternteil aus."@de, "Depicts a professor as a parent."@en .
 
