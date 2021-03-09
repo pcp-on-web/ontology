@@ -763,6 +763,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezieht sich auf die Teilnahme von Studenten an Lehrpraktiken."@de, "Refers to the attendance of students at teaching practices."@en .
 				     
 :child rdf:type owl:ObjectProperty ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#familyChild> ;
   rdfs:domain :Family ;
   rdfs:range :Professor ;
   rdfs:label "Kind"@de, "child"@en ;
@@ -1005,6 +1006,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		libraries, coins and other subject specific collections, which could have been important for the vocation of a professorship."@en .
 				     
 :parent rdf:type owl:ObjectProperty ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#familyParent> ;
   rdfs:domain :Family ;
   rdfs:range :Professor ;
   rdfs:label "Elternteil"@de, "parent"@en ;
