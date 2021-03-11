@@ -887,6 +887,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :isPraeses rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
   rdfs:range :Disputation ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#praeses> ;
   rdfs:label "ist Praeses"@de, "is Praeses"@en ;
 	dc:description "Bezeichnet den Professor, der während einer Disputation als Praeses auftritt und die Disputation leitet."@de, "Refers to the professor who is the praeses - the head - of a disputation."@en .
 
@@ -899,6 +900,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :isRespondent rdf:type owl:ObjectProperty ;
   rdfs:domain :Student ;
   rdfs:range :Disputation ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#respondent> ;
   rdfs:label "ist Respondent"@de, "is Respondent"@en ;
 	dc:description "Bezeichnet den Respondenten, der sich als Student der Disputation unterzieht."@de, "Refers to the respondent who as a student is undergoing the act of disputation."@en .
 				     
