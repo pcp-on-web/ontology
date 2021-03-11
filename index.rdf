@@ -71,7 +71,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezieht sich auf ein akademisches Amt an der Universität."@de , "Refers to an academic office at university."@en .
 
 :Academy rdf:type owl:Class ;
-  rdfs:subClassOf :Membership ;
+  rdfs:subClassOf :Institution ;
   rdfs:label "Akademie"@de, "Academy"@en ;
 	dc:description "Bezeichnet eine Sozietät mit strukturierter Körperschaft und obrigkeitlicher Protégierung, z.B. die Akademie der Wissenschaften in Berlin."@de, 
 		"Refers to a society with structured corporate body and most commonly protection and financing by the territory ruler, like Akademie der Wissenschaften in Berlin."@en .
@@ -239,7 +239,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezeichnet einen Professor, der eine ordentliche Professur inne hat."@de, "A professor who owns a full professorship."@en .
 
 :FurtherSociety rdf:type owl:Class ;
-  rdfs:subClassOf :Membership ;
+  rdfs:subClassOf :Institution ;
   rdfs:label "Weitere Gesellschaft"@de, "Further Society"@en ;
 	dc:description "Bezieht sich auf weitere Formen von soziokulturellen Gesellschaften wie literarische Salons, Lesegesellschaften oder Studentenverbindungen etc."@de, "Refers to further societies  like literary Salons, reading societies or student societies etc.."@en .
 		
@@ -267,7 +267,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "..."@de, "..."@en .
 		
 :LearnedSociety rdf:type owl:Class ;
-  rdfs:subClassOf :Membership ;
+  rdfs:subClassOf :Institution ;
   rdfs:label "Gelehrte Gesellschaft"@de, "Learned Society"@en ;
 	dc:description "Bezeichnet eine Gelehrte Gesellschaft, die sich einer bestimmten Geistesströmung oder Disziplin widmete und aus Gelehrten und Gebildeten bestand sowie zumeist regional begrenzt agierte."@de, "Refers to a learned society which dealt with a certain discipline or ideas which gathered learned and educated people, mostly of regionaly importance."@en .
 		
@@ -405,7 +405,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezeichnet die Rezension in einer Rezensionszeitschrift."@de, "Refers to a review published in a review journal."@en .
 
 :SecretSociety rdf:type owl:Class ;
-  rdfs:subClassOf :Membership ;
+  rdfs:subClassOf :Institution ;
   rdfs:label "Geheimgesellschaft"@de, "Secret Society"@en ;
 	dc:description "Bezeichnet Geheimgesellschaften wie Freimaurer oder Illuminaten, etc."@de, "Refers to secret societies like Freemasons or Illuminati etc."@en .
 		
