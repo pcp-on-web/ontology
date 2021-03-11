@@ -310,6 +310,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		
 :Office rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Office> ;
   rdfs:label "Amt"@de, "Office"@en ;
 	dc:description "Bezieht sich auf ein Amt, das eine Person bekleidet."@de , "Refers to an office a person holds."@en .
 
@@ -325,6 +326,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		"Refers to the patron of a person; here to the patron of a professor's career who can be identified by the sources."@en .	
 		
 :Person rdf:type owl:Class ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Person> ;
   rdf:label "Person"@de, "Person"@en ;
 	dc:description "Bezeichnet eine Person."@de, "Refers to a person."@en .
 		
@@ -420,6 +422,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#AcademicSociety> ;
   rdfs:label "Gesellschaften"@de, "Societies"@en ;
 	dc:description "Bezeichnet Gesellschaften."@de, "Refers to societies."@en .
+
+:StageOfLife rdf:type owl:Class ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#PeriodOfLife> ;
+  rdfs:label "Lebensabschnitt"@de, "Stage of Life"@en ;
+	dc:description "Dieses Konzept bezieht sich auf einen Lebensabschnitt eines Professors."@de, "This concept refers to a stage of life of a professor."@en .
 		
 :Statutes rdf:type owl:Class ;
   rdfs:subClassOf :University ;
@@ -436,11 +443,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   owl:DisjoinUnionOf :WinterSemester;
   rdfs:label "Sommersemester"@de, "Summer Semester"@en ;
     dc:description "Das halbjährige Sommersemester dauert von April bis September."@de , "The biannual summer semester starts in April and ends in September."@en .
-		
-:StageOfLife rdf:type owl:Class ;
-  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#PeriodOfLife> ;
-  rdfs:label "Lebensabschnitt"@de, "Stage of Life"@en ;
-	dc:description "Dieses Konzept bezieht sich auf einen Lebensabschnitt eines Professors."@de, "This concept refers to a stage of life of a professor."@en .
 
 :TeachingPractices rdf:type owl:Class ;
   rdfs:label "Lehrpraktiken"@de, "Teaching Practices"@en ;
