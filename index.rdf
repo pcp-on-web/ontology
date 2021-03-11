@@ -114,6 +114,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		
 :Birth rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Birth> ;
   rdfs:label "Geburt"@de, "Birth"@en ;
 	dc:description "Geburtsdatum oder Zeitraum einer Person."@de, "Birthdate or the period of birth of a person."@en .
 
@@ -132,6 +133,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Objekt-Sammlungen einer Person oder Institution."@de, "Object-collections of a person or institution."@en .
 		
 :Corporation rdf:type owl:Class ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Body> ;
   rdfs:label "Körperschaft"@de, "Corporation"@en ;
 	dc:description "Bezeichnet eine Körperschaft."@de, "Refers to a corporation or corporate body."@en .		
 
@@ -152,6 +154,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		
 :Death rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Death> ;
   rdfs:label "Tod"@de, "Death"@en ;
 	dc:description "Sterbedatum oder den Zeitraum des Todes einer Person."@de, "Day of death or the period of death of a person."@en .				     
 
@@ -168,11 +171,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		
 :Doctor rdf:type owl:Class ;
   rdfs:subClassOf :AcademicDegree ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#GraduationDoctorate> ;
   rdfs:label "Doctor"@de, "Doctor"@en ;
 	dc:description "Bezeichnet den akademischen Grad eines Doktoren. Kürzel: Dr."@de , "Describes the academic degree of a doctor. Abbreviation: Dr."@en .
 
 :Document rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Document> ;
   rdfs:label "Dokument"@de, "Document"@en ;
 	dc:description "Fügt einem Lebensabschnitt ein Dokument zu."@de, "Adds a document to a stage of life."@en .
 		
@@ -193,6 +198,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		
 :Faculty rdf:type owl:Class ;
   rdfs:subClassOf :University ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Faculty> ;
   rdfs:label "Fakultät"@de, "Faculty"@en ;
 	dc:description "Bezieht sich auf eine körperschaftlich organisierte und auf ein Fachgebiet begrenzte Lehr- und Verwaltungseinheit einer Volluniversität, im frühneuzeitlichen Kontext: Philosophie, Theologie, Jurisprudenz, Medizin."@de, "Refers to corporated university divisions with specific subject areas, which are in an Early Modern context: Philosophy, Theology, Jurisprudence, Medicine."@en .
 
@@ -218,6 +224,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		
 :Family rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Family> ;
   rdfs:label "Familie"@de, "Family"@en ;
 	dc:description "Dieses Konzept beschreibt die soziale Herkunft und Familienverhältnisse einer Person."@de, "This concept describes the social origin and the family relationship of a person."@en .
 		
