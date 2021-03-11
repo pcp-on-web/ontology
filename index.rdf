@@ -946,9 +946,9 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Vorlesung hat Fakultät"@de, "lecture has faculty"@en ;
 	dc:description "Weist eine Vorlesung einer Fakultät zu."@de, "Assigns a lecture to a faculty."@en .
 				     
-:membershipHasInstitution rdf:type owl:ObjectProperty ;
+:membershipSociety rdf:type owl:ObjectProperty ;
   rdfs:domain :Membership ;
-  rdfs:range :Institution ;
+  rdfs:range :Society ;
   rdfs:label "Mitgliedschaft hat Institution"@de, "membership has institution"@en ;
 	dc:description "Weist die Mitgliedschaft einer Institution zu."@de, "Adds the membership to an institution."@en .
 				     				     
