@@ -83,7 +83,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		"Archival material refering to the domain, for instance nomination lists of the faculties for the territorial authorities, vocation files which contain vocation certificates, reference  letters and applications, etc."@en .
 		
 :Archive rdf:type owl:Class ;
-  rdfs:subClassOf :Corporation ;
+  rdfs:subClassOf :Institution ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Archive> ;
   rdfs:label "Archiv"@de, "Archive"@en ;
 	dc:description "Bezieht sich auf ein Archiv."@de, "Refers to an archive."@en .
@@ -941,11 +941,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Vorlesung hat Fakultät"@de, "lecture has faculty"@en ;
 	dc:description "Weist eine Vorlesung einer Fakultät zu."@de, "Assigns a lecture to a faculty."@en .
 				     
-:membershipHasCorporation rdf:type owl:ObjectProperty ;
+:membershipHasInstitution rdf:type owl:ObjectProperty ;
   rdfs:domain :Membership ;
-  rdfs:range :Corporation ;
-  rdfs:label "Mitgliedschaft hat Körperschaft"@de, "membership has corporation"@en ;
-	dc:description "Weist die Mitgliedschaft einer Körperschaft zu."@de, "Adds the membership to a corporation."@en .
+  rdfs:range :Institution ;
+  rdfs:label "Mitgliedschaft hat Institution"@de, "membership has institution"@en ;
+	dc:description "Weist die Mitgliedschaft einer Institution zu."@de, "Adds the membership to an institution."@en .
 				     				     
 :nominates rdf:type owl:ObjectProperty ;
   rdfs:domain :Faculty ;
