@@ -62,8 +62,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 :AcademicDegree rdf:type owl:Class ;
   rdfs:subClassOf :Graduation ;
-  rdfs:label "Akademische Grade"@de, "Academic Degree"@en ;
-	dc:description "Bezeichnet akademische Abschlüsse."@de , "Refers to Academic degrees."@en .
+  rdfs:label "Akademischer Grad"@de, "Academic Degree"@en ;
+	dc:description "Bezeichnet einen akademischen Grad."@de , "Refers to Academic degrees."@en .
 
 :AcademicOffice rdf:type owl:Class ;
   rdfs:subClassOf :Office ;
