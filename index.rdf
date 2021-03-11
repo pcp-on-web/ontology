@@ -784,7 +784,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezieht sich auf Lehrpraktiken, die an einer Universität durchgeführt werden."@de, "Refers to teaching practices which are done at a university."@en .				 
 
 :hasAcademicDegree rdf:type owl:ObjectProperty ;
-  rdfs:domain :Person ;
+  rdfs:domain :Professor ;
   rdfs:range :AcademicDegree ;
   rdfs:label "hat akademischen Grad"@de, "has academic degree"@en ;
 	dc:description "Gibt an, dass eine Person über einen akademischen Grad verfügt."@de, "Gives the academic degree of a person."@en .
