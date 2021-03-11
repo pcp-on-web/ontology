@@ -301,7 +301,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :Network ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#AcademicSociety> ;
   rdfs:label "Mitgliedschaft"@de, "Membership"@en ;
-	dc:description "Verweist auf Mitgliedschaften einer Person in soziokulturellen und/oder politischen Gesellschaften und Sozietäten."@de, "Refers to the membership of a person at sociocultural and/or political societies and/or corporations."@en .
+	dc:description "Verweist auf Mitgliedschaften einer Person in soziokulturellen und/oder politischen Gesellschaften, Sozietäten und weiterer Institutionen."@de, "Refers to the membership of a person at sociocultural and/or political societies or further institutions."@en .
 		
 :Network rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
@@ -825,7 +825,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:domain :Professor ;
   rdfs:range :Membership ;
   rdfs:label "Professor ist Mitglied"@de, "membership of a Professor"@en ;
-	dc:description "Gibt an, ob ein Professor Mitglied einer Gesellschaft oder Sozietät war."@de, "Refers to memberships of professors at societies and/or corporations."@en .
+	dc:description "Gibt an, ob ein Professor Mitglied einer Gesellschaft, Sozietät oder weiterer Institutionen war."@de, "Refers to memberships of professors at societies or further institutions."@en .
 				     
 :hasPublisher rdf:type owl:ObjectProperty ;
   rdfs:domain :Document ;
