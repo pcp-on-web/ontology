@@ -417,6 +417,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		
 :Societies rdf:type owl:Class ;
   rdfs:subClassOf :Institution ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#AcademicSociety> ;
   rdfs:label "Gesellschaften"@de, "Societies"@en ;
 	dc:description "Bezeichnet Gesellschaften."@de, "Refers to societies."@en .
 		
