@@ -259,7 +259,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Honour> ;
   rdfs:label "Ehrung"@de , "Honour"@en ;
 	dc:description "Diese Konzept beschreibt eine Ehrung"@de, "The concept Person describes an honour"@en .
-
+		
+:Institution rdf:type owl:Class ;
+  rdfs:subClassOf :Corporation ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Institution> ;
+  rdfs:label "Institution"@de , "Institution"@en ;
+	dc:description "..."@de, "..."@en .
+		
 :LearnedSociety rdf:type owl:Class ;
   rdfs:subClassOf :Membership ;
   rdfs:label "Gelehrte Gesellschaft"@de, "Learned Society"@en ;
