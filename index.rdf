@@ -630,6 +630,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :locationCorporation rdf:type owl:DatatypeProperty ;
   rdfs:domain :Corporation ;
   rdfs:range :Location ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#bodyPlace> ;
   rdfs:label "Ort einer Körperschaft"@de, "location of a corporation"@en ;
 	dc:description "Bezieht sich auf den geografischen Ort einer Körperschaft."@de,
 		"Refers to the geographical location of a corporation."@en .
