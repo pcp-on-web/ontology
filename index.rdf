@@ -406,6 +406,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Rezension"@de, "Review"@en ;
 	dc:description "Bezeichnet die Rezension in einer Rezensionszeitschrift."@de, "Refers to a review published in a review journal."@en .
 
+:School rdf:type owl:Class ;
+  rdfs:subClassOf :Institution ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#School> ;
+  rdfs:label "Schule"@de, "School"@en ;
+	dc:description "Bezeichnet Schulen für die primäre Bildung."@de, "Refers to schools for primary education."@en .
+		
 :SecretSociety rdf:type owl:Class ;
   rdfs:subClassOf :Societies ;
   rdfs:label "Geheimgesellschaft"@de, "Secret Society"@en ;
@@ -841,7 +847,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Recommendation ;
   rdfs:label "hat Empfehlung"@de, "has recommendation"@en ;
 	dc:description "Gibt an, ob ein Kandidat ein Empfehlungsschreiben hat."@de, "Refers to any given recommendation of a candidate."@en .
-				     
+
+:hasSchool rdf:type owl:ObjectProperty ;
+  rdfs:domain :PrimaryEducation ;
+  rdfs:range :School ;
+  rdfs:label "hat Schule"@de, "has school"@en ;
+	dc:description "Verweist auf die Institution an der primäre Bildung erworben wurde."@de, "Refers to the institution of primary education."@en .
+	      
 :hasSemester rdf:type owl:ObjectProperty ;
   rdfs:domain :UniversityStudies ;
   rdfs:range :Semester ;
@@ -980,7 +992,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#familyParent> ;
   rdfs:label "Elternteil"@de, "parent"@en ;
 	dc:description "Weist einen Professor als Elternteil aus."@de, "Depicts a professor as a parent."@en .
-
+	      
 :recommendationDocument rdf:type owl:ObjectProperty ;
   rdfs:domain :Recommendation ;
   rdfs:range :Document ;
