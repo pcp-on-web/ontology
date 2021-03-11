@@ -299,7 +299,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 :Membership rdf:type owl:Class ;
   rdfs:subClassOf :Network ;
-  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#AcademicSociety> ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Membership> ;
   rdfs:label "Mitgliedschaft"@de, "Membership"@en ;
 	dc:description "Verweist auf Mitgliedschaften einer Person in soziokulturellen und/oder politischen Gesellschaften, Sozietäten und weiterer Institutionen."@de, "Refers to the membership of a person at sociocultural and/or political societies or further institutions."@en .
 		
