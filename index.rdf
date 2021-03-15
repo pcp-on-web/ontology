@@ -622,19 +622,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range rdfs:Literal ;
   rdfs:label "GND/PND"@de, "GND/PND"@en ;
   	dc:description "GND oder PND Normadatei."@de, "GND or PND integrated authority file."@en .
-
-:hasEnrollment rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Person ;
-  rdfs:range :Enrollment ;
-  rdfs:label "hat Matrikel"@de, "has enrollment"@en ;
-	dc:description "Verweist auf eine Immatrikulation einer Person an einer Universität."@de, "Refers to the enrollment of a person at a university."@en .
-				     
-:hasPicture rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Professor ;
-  rdfs:range :Picture ;
-  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#hasPicture> ;
-  rdfs:label "hat Bild"@de, "has picture"@en ;
-	dc:description "Verweist auf ein Bild des Professors."@de, "Refers to a picture of the professor."@en .
 				     
 :latinForename rdf:type owl:DatatypeProperty ;
                    rdfs:domain :Person ;
@@ -818,6 +805,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Correspondence ;
   rdfs:label "hat Korrespondenzpartner"@de, "has correspondence partner"@en ;
 	dc:description "Verweist auf die Korrespondenzpartner eines Professors."@de, "Refers to correspondence partner of a professor."@en .
+	      
+:hasEnrollment rdf:type owl:ObjectProperty ;
+  rdfs:domain :Person ;
+  rdfs:range :Enrollment ;
+  rdfs:label "hat Matrikel"@de, "has enrollment"@en ;
+	dc:description "Verweist auf eine Immatrikulation einer Person an einer Universität."@de, "Refers to the enrollment of a person at a university."@en .
 
 ### Cidoc CRM P 49 has former or current keeper ###
 :hasFormerOrCurrentKeeper rdf:type owl:ObjectProperty ;
@@ -835,7 +828,14 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Membership ;
   rdfs:label "Professor ist Mitglied"@de, "membership of a Professor"@en ;
 	dc:description "Gibt an, ob ein Professor Mitglied einer Gesellschaft, Sozietät oder weiterer Institutionen war."@de, "Refers to memberships of professors at societies or further institutions."@en .
-				     
+
+:hasPicture rdf:type owl:ObjectProperty ;
+  rdfs:domain :Professor ;
+  rdfs:range :Picture ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#hasPicture> ;
+  rdfs:label "hat Bild"@de, "has picture"@en ;
+	dc:description "Verweist auf ein Bild des Professors."@de, "Refers to a picture of the professor."@en .
+	      
 :hasPublisher rdf:type owl:ObjectProperty ;
   rdfs:domain :Document ;
   rdfs:range :Publisher ;
