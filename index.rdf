@@ -738,9 +738,9 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 :attends rdf:type owl:ObjectProperty ;
   rdfs:domain :Student;
-  rdfs:range rdfs:Resource ;
+  rdfs:range :TeachingPractices ;
   rdfs:label "nimmt teil"@de, "attends"@en ;
-	dc:description "Bezieht sich auf die Teilnahme von Studenten, z.B. an Lehrpraktiken."@de, "Refers to the attendance of students, e.g. at teaching practices."@en .
+	dc:description "Bezieht sich auf die Teilnahme von Studenten an Lehrpraktiken."@de, "Refers to the attendance of students at teaching practices."@en .
 				     
 :child rdf:type owl:ObjectProperty ;
   rdfs:domain :Family ;
