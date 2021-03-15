@@ -791,6 +791,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :hasAuthor rdf:type owl:ObjectProperty ;
   rdfs:domain :Document ;
   rdfs:range :Author ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#hasTutor> ;
   rdfs:label "Dokument hat Autor"@de, "document has author"@en ;
 	dc:description "Verweist auf die Autorenschaft eines Dokuments."@de, "Refers to the authorship of a document."@en .
 
@@ -889,6 +890,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :isAuthor rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
   rdfs:range :Author ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#isTutor> ;
   rdfs:label "ist Autor"@de, "is author"@en ;
 	dc:description "Zeichnet eine Person als einen Autoren aus. Autor wird hier im Falle einer Disputation als weiter Begriff verwendet, da Praeses und Respondent in Literaturdatenbanken oft beide als Autoren einer Dissertation angegeben werden."@de,
 		"Refers to a person as an author of a publication. In case of dissertations the notion author in the context of this ontology model must be considered flexible since literature databases often sign out either praeses or respondent as authors of dissertations."@en .
