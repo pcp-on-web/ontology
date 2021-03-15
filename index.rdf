@@ -710,6 +710,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :stageOfLifeLocation rdf:type owl:DatatypeProperty ;
   rdfs:domain :StageOfLife ;
   rdfs:range :Location ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#periodPlace> ;
   rdfs:label "Ort Lebensabschnitt"@de, "location of stage of life"@en ;
 	dc:description "Fügt einem Lebensabschnitt einer Person einen geografischen Ort zu."@de, "Adds a geographical location to a stage of life of a person."@en .
 
@@ -840,6 +841,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :hasPublisher rdf:type owl:ObjectProperty ;
   rdfs:domain :Document ;
   rdfs:range :Publisher ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#published> ;
   rdfs:label "Dokument hat Herausgeber"@de, "document has publisher"@en ;
 	dc:description "Nennt Herausgeber eines Dokuments."@de, "Gives the publisher of a document."@en .
 				     
@@ -890,7 +892,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :isAuthor rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
   rdfs:range :Author ;
-  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#isTutor> ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#isTutor>, <http://purl.org/pcp-on-web/ontology#published> ;
   rdfs:label "ist Autor"@de, "is author"@en ;
 	dc:description "Zeichnet eine Person als einen Autoren aus. Autor wird hier im Falle einer Disputation als weiter Begriff verwendet, da Praeses und Respondent in Literaturdatenbanken oft beide als Autoren einer Dissertation angegeben werden."@de,
 		"Refers to a person as an author of a publication. In case of dissertations the notion author in the context of this ontology model must be considered flexible since literature databases often sign out either praeses or respondent as authors of dissertations."@en .
