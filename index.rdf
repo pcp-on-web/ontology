@@ -556,25 +556,25 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:domain :Chair ;
   rdfs:range rdfs:Literal ;
   rdfs:label "timespan of chair"@en, "Zeitspanne eines Lehrstuhls"@de ;
-  	dc:description "Gibt die Zeitspanne an, in welcher ein Lehrstuhl von einem Professor besetzt war."""@de, """Gives the timespan a chair was owned by a professor.
+  	dc:description """Gibt die Zeitspanne an, in welcher ein Lehrstuhl von einem Professor besetzt war."""@de, """Gives the timespan a chair was owned by a professor.
 		 xsd:date ,
                  xsd:gDay ,
                  xsd:gMonth ,
                  xsd:gMonthDay ,
                  xsd:gYear ,
-                 xsd:gYearMonth"@en .
+                 xsd:gYearMonth"""@en .
 
 :date rdf:type owl:DatatypeProperty, owl:FunctionalProperty ;
   rdfs:domain :StageOfLife ;
   rdfs:range rdfs:Literal;
   rdfs:label "Date"@en, "Datum"@de ;
-  	dc:description "Zeitangabe eines Lebensabschnitts."@de, "The date or timespan of a stage of life from a valid datatype
+  	dc:description """Zeitangabe eines Lebensabschnitts."@de, "The date or timespan of a stage of life from a valid datatype
 		 xsd:date ,
                  xsd:gDay ,
                  xsd:gMonth ,
                  xsd:gMonthDay ,
                  xsd:gYear ,
-                 xsd:gYearMonth"@en .
+                 xsd:gYearMonth"""@en .
 
 :enrollmentSemester rdf:type owl:DatatypeProperty ;
   rdfs:domain :Enrollment ;
@@ -597,12 +597,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
       rdfs:domain :StageOfLife ;
       rdfs:range rdfs:Literal ;
       rdfs:comment "Das Startdatum eines Lebensabschnitts"@de ,
-                   "The date of the beginning of a stage of life from a valid datatype xsd:date ,
+                   """The date of the beginning of a stage of life from a valid datatype xsd:date ,
                  xsd:gDay ,
                  xsd:gMonth ,
                  xsd:gMonthDay ,
                  xsd:gYear ,
-                 xsd:gYearMonth"@en ;
+                 xsd:gYearMonth"""@en ;
       rdfs:label "from"@en ,
                  "von"@de ;
       owl:versionInfo "0.1 initial creation date:  24.05.2007"^^xsd:string ,
@@ -691,13 +691,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:domain :Report ;
   rdfs:range rdfs:Literal ;
   rdfs:label "timespan of report"@en, "Zeitspanne eines Rechenschaftsberichts"@de ;
-  	dc:description "Gibt die Zeitspanne an, die ein Rechenschaftsbericht umfasst."@de, "Gives the timespan of a report.
+  	dc:description "Gibt die Zeitspanne an, die ein Rechenschaftsbericht umfasst."@de, """Gives the timespan of a report.
 		 xsd:date ,
                  xsd:gDay ,
                  xsd:gMonth ,
                  xsd:gMonthDay ,
                  xsd:gYear ,
-                 xsd:gYearMonth"@en .
+                 xsd:gYearMonth"""@en .
 				     
 ###  http://purl.org/pcp-on-web/ontology#surname
 :surname rdf:type owl:DatatypeProperty ;
@@ -721,12 +721,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
     rdfs:domain :StageOfLife ;
     rdfs:range rdfs:Literal ;
     rdfs:comment "Das Enddatum eines Lebensabschnitts"@de ,
-                 "The date of the ending of a stage of life from a valid datatype xsd:date ,
+                 """The date of the ending of a stage of life from a valid datatype xsd:date ,
                xsd:gDay,
                xsd:gMonth,
                xsd:gMonthDay,
                xsd:gYear,
-               xsd:gYearMonth"@en ;
+               xsd:gYearMonth"""@en ;
     rdfs:label "bis"@de ,
                "to"@en ;
     owl:versionInfo "0.1 initial creation date:  24.05.2007"^^xsd:string ,
