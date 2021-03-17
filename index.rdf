@@ -752,13 +752,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Kind"@de, "child"@en ;
 	dc:description "Bezieht sich auf das Kind, Pflegekind, Adoptivkind eines Professors."@de, "Refers to the cild, foster child, adoptive child of a professor."@en .
 
-:collectionHasDocument rdf:type owl:ObjectProperty ;
+:collectionDocument rdf:type owl:ObjectProperty ;
   rdfs:domain :Collection ;
   rdfs:range :Document ;
   rdfs:label "Sammlung hat Dokument"@de, "collection has document"@en ;
 	dc:description "Weist einer Sammlung ein Dokument zu."@de, "Assigns a collection a document."@en .
 				     
-:correspondenceHasDocument rdf:type owl:ObjectProperty ;
+:correspondenceDocument rdf:type owl:ObjectProperty ;
   rdfs:domain :Correspondence ;
   rdfs:range :Document ;
   rdfs:label "Korrespondenz hat Dokument"@de, "correspondence has document"@en ;
