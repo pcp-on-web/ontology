@@ -101,7 +101,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :AuctionCatalogue rdf:type owl:Class ;
   rdfs:subClassOf :PublicationType ;
   rdfs:label "Auktionskatalog"@de, "Auction catalogue"@en ;
-	dc:description "Bezeichnet einen Auktionskatalog."@de, "Refers to an auction catalogue."@en .				     
+	dc:description "Bezeichnet einen Auktionskatalog."@de, "Refers to an auction catalogue."@en .	
+		
+:Author rdfs:type owl:Class ;
+  rdfs:subClassOf :Document ;
+  rdfs:label "Autor"@de, "Author"@en ;
+	dc:description "Bezeichnet die Autorschaft eines Dokuments."@de, "Gives the authorship of a document."@en .
 		
 :Baccalaureus rdf:type owl:Class ;
   rdfs:subClassOf :AcademicDegree ;
