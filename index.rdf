@@ -455,6 +455,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
     dc:description "Das halbjährige Sommersemester dauert von April bis September."@de , "The biannual summer semester starts in April and ends in September."@en .
 
 :TeachingPractices rdf:type owl:Class ;
+  rdfs:subClassOf :University ;
   rdfs:label "Lehrpraktiken"@de, "Teaching Practices"@en ;
   	dc:description "Beschreibt akademische Lehrpraktiken, die ein Professor an der Universität durchführt und welche durch Statuten, weitere Regularien und/oder durch Gewohnheit geregelt sind."@de, "Describes academic teaching practices which are regulated by the University's statutes or further regulations and/or customs."@en .
 		
@@ -739,12 +740,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 #####################################################################################################################################################################
 #				     Object Properties				     
 #####################################################################################################################################################################    
-
-:attends rdf:type owl:ObjectProperty ;
-  rdfs:domain :Student ;
-  rdfs:range :TeachingPractices ;
-  rdfs:label "nimmt teil"@de, "attends"@en ;
-	dc:description "Bezieht sich auf die Teilnahme von Studenten an Lehrpraktiken."@de, "Refers to the attendance of students at teaching practices."@en .	      
+	      
 				     
 :child rdf:type owl:ObjectProperty ;
   rdfs:domain :Family ;
@@ -776,13 +772,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:domain :Dissertation ;
   rdfs:range :Faculty ;
   rdfs:label "Diss hat Fakultät"@de, "diss has faculty"@en ;
-	dc:description "Weist eine Dissertation einer Fakultät zu."@de, "Assigns a dissertation to a faculty."@en .
-				     
-:doneAt rdf:type owl:ObjectProperty ;
-  rdfs:domain :TeachingPractices ;
-  rdfs:range :University ;
-  rdfs:label "werden durchgeführt"@de, "done at"@en ;
-	dc:description "Bezieht sich auf Lehrpraktiken, die an einer Universität durchgeführt werden."@de, "Refers to teaching practices which are done at a university."@en .				 
+	dc:description "Weist eine Dissertation einer Fakultät zu."@de, "Assigns a dissertation to a faculty."@en .				 
 
 :hasAcademicDegree rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
