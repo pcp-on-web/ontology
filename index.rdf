@@ -738,7 +738,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "nimmt teil"@de, "attends"@en ;
 	dc:description "Bezieht sich auf die Teilnahme von Studenten an Lehrpraktiken."@de, "Refers to the attendance of students at teaching practices."@en .
 	      
-:Author rdf:type owl:ObjectProperty ;
+:author rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
   rdfs:range :Document ;
   rdfs:label "Autor"@de, "Author"@en ;
