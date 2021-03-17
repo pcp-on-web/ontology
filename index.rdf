@@ -102,7 +102,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :PublicationType ;
   rdfs:label "Auktionskatalog"@de, "Auction catalogue"@en ;
 	dc:description "Bezeichnet einen Auktionskatalog."@de, "Refers to an auction catalogue."@en .	
-		
+
+###check PRO Ontology & FOAF ###
 :Author rdfs:type owl:Class ;
   rdfs:subClassOf :Document ;
   rdfs:label "Autor"@de, "Author"@en ;
