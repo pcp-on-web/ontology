@@ -752,6 +752,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Kind"@de, "child"@en ;
 	dc:description "Bezieht sich auf das Kind, Pflegekind, Adoptivkind eines Professors."@de, "Refers to the cild, foster child, adoptive child of a professor."@en .
 
+###skos check####
 :collectionDocument rdf:type owl:ObjectProperty ;
   rdfs:domain :Collection ;
   rdfs:range :Document ;
