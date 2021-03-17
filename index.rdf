@@ -389,6 +389,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		"Refers to public lectures (lectio publica) of professors which had not to be payed extra by students."@en .
 		
 :Publisher rdf:type owl:Class ;
+  rdfs:subClassOf :Document ;
   rdfs:label "Herausgeber"@de, "Publisher"@en ;
 	dc:description "Nennt Herausgeber eines Dokuments."@de, "Gives publishers of a document."@en .
 		
@@ -467,6 +468,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezeichnet ein Buch das Lehrinhalte eines Studiums didaktisch aufbereitet."@de, "Refers to books which offer a compilation of content in a certain field of interest."@en .
 		
 :Title rdf:type owl:Class ;
+  rdfs:subClassOf :Document ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#title> ;
   rdfs:label "Titel"@de, "Title"@en ;
 	dc:description "Gibt den Titel eines Dokuments an."@de, "Gives the title of a document."@en .
