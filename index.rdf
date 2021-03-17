@@ -816,11 +816,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "hat Matrikel"@de, "has enrollment"@en ;
 	dc:description "Verweist auf eine Immatrikulation einer Person an einer Universität."@de, "Refers to the enrollment of a person at a university."@en .
 
-### Cidoc CRM P 49 has former or current keeper ###
-:hasFormerOrCurrentKeeper rdf:type owl:ObjectProperty ;
-  rdfs:label "hat früheren oder derzeitigen Bewahrer"@de, "has former or current keeper"@en ;
-	dc:description "Wie P49 Cidoc CRM."@de, "Like P49 Cidoc CRM."@en .
-
 :hasGraduation rdf:type owl:ObjectProperty ;
   rdfs:domain :Education ;
   rdfs:range :Graduation ;
