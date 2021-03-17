@@ -103,10 +103,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Auktionskatalog"@de, "Auction catalogue"@en ;
 	dc:description "Bezeichnet einen Auktionskatalog."@de, "Refers to an auction catalogue."@en .				     
 		
-:Author rdf:type owl:Class ;
-  rdfs:label "Autor"@de, "Author"@en ;
-	dc:description "Nennt die Autorenschaft eines Dokuments."@de, "Gives the authorship of a document."@en .
-		
 :Baccalaureus rdf:type owl:Class ;
   rdfs:subClassOf :AcademicDegree ;
   rdfs:label "Baccalaureus"@de, "Baccalaureus"@en ;
@@ -737,10 +733,16 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 #####################################################################################################################################################################    
 
 :attends rdf:type owl:ObjectProperty ;
-  rdfs:domain :Student;
+  rdfs:domain :Student ;
   rdfs:range :TeachingPractices ;
   rdfs:label "nimmt teil"@de, "attends"@en ;
 	dc:description "Bezieht sich auf die Teilnahme von Studenten an Lehrpraktiken."@de, "Refers to the attendance of students at teaching practices."@en .
+	      
+:Author rdf:type owl:ObjectProperty ;
+  rdfs:domain :Professor ;
+  rdfs:range :Document ;
+  rdfs:label "Autor"@de, "Author"@en ;
+	dc:description "Zeichnet einen Professor als Autor aus."@de, "..."@en .	      
 				     
 :child rdf:type owl:ObjectProperty ;
   rdfs:domain :Family ;
