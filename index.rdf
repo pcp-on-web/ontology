@@ -1026,6 +1026,16 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Elternteil"@de, "parent"@en ;
 	dc:description "Weist einen Professor als Elternteil aus."@de, "Depicts a professor as a parent."@en .
 	      
+:ppn rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Dissertation ;
+				   rdfs:range rdfs:Resource ;
+                   rdfs:comment "The PICA Production Number (PPN) of a record."@en ,
+                                "Die PICA Produktionsnummer (PPN) eines Datensatzes."@de ;
+	           rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#ppn> ;
+                   rdfs:label "PICA Production Number (PPN)"@en ,
+                              "PICA Produktionsnummer (PPN)"@de ;
+                   owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
+	      
 :recommendationDocument rdf:type owl:ObjectProperty ;
   rdfs:domain :Recommendation ;
   rdfs:range :Document ;
