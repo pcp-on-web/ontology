@@ -689,7 +689,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :docYear rdf:type owl:DatatypeProperty ;
   rdfs:domain :Document ;
   rdfs:range xsd:gYear ;
-  rdfs:label "Jahresangabe eines Dokuments"@en, "Year of document"@de ;
+  rdfs:label "Jahresangabe eines Dokuments"@de, "Year of document"@en ;
 	      dc:description "Gibt das Publikationsjahr oder die Jahres-Datierung eines Dokuments an."@de, "Refers to the year of publication or the dating (year) of a document."@en .
 
 :reportDate rdf:type owl:DatatypeProperty, owl:FunctionalProperty ;
@@ -806,7 +806,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Verweist auf die Korrespondenzpartner eines Professors."@de, "Refers to correspondence partner of a professor."@en .
 	      
 :hasEnrollment rdf:type owl:ObjectProperty ;
-  rdfs:domain :Person ;
+  rdfs:domain :Professor ;
   rdfs:range :Enrollment ;
   rdfs:label "hat Matrikel"@de, "has enrollment"@en ;
 	dc:description "Verweist auf eine Immatrikulation einer Person an einer Universität."@de, "Refers to the enrollment of a person at a university."@en .
@@ -890,13 +890,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		"Refers to a person as an author of a publication. In case of dissertations the notion author in the context of this ontology model must be considered flexible since literature databases often sign out either praeses or respondent as authors of dissertations."@en .
 		
 :isCongratulant rdf:type owl:ObjectProperty ;
-  rdfs:domain :Person ;
+  rdfs:domain :Professor ;
   rdfs:range :Document ;
   rdfs:label "ist Gratulant"@de, "is congratulant"@en ;
 	dc:description "Bezeichnet den Gratulanten einer Publikation."@de, "Refers to the congratulant of a publication."@en .
 				     
 :isDedicatee rdf:type owl:ObjectProperty ;
-  rdfs:domain :Person ;
+  rdfs:domain :Professor ;
   rdfs:range :Document ;
   rdfs:label "ist Widmungsempfänger"@de, "is dedicatee"@en ;
 	dc:description "Bezeichnet den Widmunsgempfänger einer Publikation."@de, "Refers to the dedicatee of a publication."@en .
