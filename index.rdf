@@ -9,7 +9,8 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <http://pcp-on-web.de/ontology#> .
-@prefix foaf: <http://xmlns.com/foaf/spec/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gn: <http://www.geonames.org/ontology#> .
 
 <http://pcp-on-web.de/ontology#> rdf:type owl:Ontology ;
 	<http://creativecommons.org/ns#attributionName> "AKSW", "HAB", "HTWK" ;
