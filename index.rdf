@@ -905,7 +905,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "ist Autor"@de, "is author"@en ;
 	dc:description "Zeichnet eine Person als einen Autoren aus. Autor wird hier im Falle einer Disputation als weiter Begriff verwendet, da Praeses und Respondent in Literaturdatenbanken oft beide als Autoren einer Dissertation angegeben werden."@de,
 		"Refers to a person as an author of a publication. In case of dissertations the notion author in the context of this ontology model must be considered flexible since literature databases often sign out either praeses or respondent as authors of dissertations."@en .
-		
+
+:isCandidate rdf:type owl:ObjectProperty ;
+  rdfs:domain :Candidate ;
+  rdfs:range :Professor ;
+  rdfs:label "ist Kandidat"@de, "is candidate"@en ;
+	dc:description "Gibt an, dass ein Professor ein Kandidat für eine Professur ist."@de, "Indicates that a professor is candidate for a professorship."@en .
+	      
 :isCongratulant rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
   rdfs:range :Document ;
