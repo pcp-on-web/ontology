@@ -758,6 +758,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Document ;
   rdfs:label "Sammlung hat Dokument"@de, "collection has document"@en ;
 	dc:description "Weist einer Sammlung ein Dokument zu."@de, "Assigns a collection a document."@en .
+	      
+:confirms rdf:type owl:ObjectProperty ;
+  rdfs:domain :Territory ;
+  rdfs:range :Candidate ;
+  rdfs:label "bestätigt"@de, "confirms"@en ;
+	dc:description "Landesherrschaft bestätigt den Kandidaten der Fakultät für eine Professur durch Ernennung."@de, "Territory ruler confirms the candidate for a professorship given by the faculty by vocation."@en .
 				     
 :correspondenceDocument rdf:type owl:ObjectProperty ;
   rdfs:domain :Correspondence ;
