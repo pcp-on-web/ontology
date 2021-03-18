@@ -841,12 +841,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Graduation ;
   rdfs:label "Bildungsabschnitt hat Abschluss"@de, "education has graduation"@en ;
 	dc:description "Bezieht sich auf den Abschluss eines Bildungsweges im Lebensabschnitt eines Professors."@de, "Refers to the graduation in education of a professors stage of life."@en .
-
-:hasLocation rdf:type owl:ObjectProperty ;
-  rdfs:domain :Territory ;
-  rdfs:range :Location ;
-  rdfs:label "Ort Landesherrschaft"@de, "location territory"@en ;
-	dc:description "Fügt einer Landesherrschaft einen geografischen Ort zu."@de, "Adds a geographical location to a territory."@en .
 	      
 :hasMembership rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
