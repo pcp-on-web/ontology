@@ -948,7 +948,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :isOpponent rdf:type owl:ObjectProperty ;
   rdfs:domain :Student ;
   rdfs:range :Disputation ;
-  rdfs:label "ist Opponent"@de, "is opponent"@en ;
+  rdfs:label "ist Opponent"@de, "is Opponent"@en ;
 	dc:description "Bezeichnet den Opponenten einer Disputation."@de, "Refers to the opponent of a disputation."@en .
 
 :isPraeses rdf:type owl:ObjectProperty ;
