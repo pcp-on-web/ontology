@@ -249,7 +249,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezieht sich auf weitere Formen von soziokulturellen Gesellschaften wie literarische Salons, Lesegesellschaften oder Studentenverbindungen etc."@de, "Refers to further societies  like literary Salons, reading societies or student societies etc.."@en .
 		
 :Gender rdf:type owl:Class ;
-  rdfs:subClassOf :StageOfLife ;
+  rdfs:subClassOf :Person ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#gender> ;
   rdfs:label "Geschlecht"@de, "Gender"@en ;
 	dc:description "Verweist auf das Geschlecht einer Person."@de, "Refers to the gender of a person."@en .
