@@ -678,7 +678,16 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                  "note"@en ;
       owl:versionInfo "0.1 initial creation - 24.05.2007"^^xsd:string ,
                       "0.2 changed Domain from Professor to Person"^^xsd:string ,
-                      "2.0 stable"^^xsd:string .				     
+                      "2.0 stable"^^xsd:string .
+	      
+:pagination rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Document ;
+				   rdfs:range rdfs:Literal ;
+                   rdfs:comment "Pagination of a document."@en ,
+                                "Seitennummerierung eines Dokuments"@de ;
+                   rdfs:label "Pagination"@en ,
+                              "Seitennummerierung"@de ;
+                   owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
 	      
 :pid rdf:type owl:DatatypeProperty ;
                    rdfs:domain :Professor ;
