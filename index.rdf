@@ -1042,8 +1042,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                    rdfs:comment "The person who printed the thesis."@en ,
                                 "Die Drucker einer Dissertation."@de ;
 	           rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#printer> ;
-                   rdfs:label "Pagination"@en ,
-                              "Seitennummerierung"@de ;
+                   rdfs:label "printer"@en ,
+                              "Drucker"@de ;
                    owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
 	      
 :recommendationDocument rdf:type owl:ObjectProperty ;
