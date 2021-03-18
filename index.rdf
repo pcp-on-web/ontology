@@ -784,13 +784,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ### hinzugefügt 18/03/21 ###
 :geoname rdf:type owl:ObjectProperty ;
-                   rdfs:domain rdfs:Location ;
-				   rdfs:range rdfs:Resource ;
-                   rdfs:comment "The Resource location's URL in http://geonames.org."@en ,
-                                "Die URL des Ressourcenstandorts in http://geonames.org."@de ;
-                   rdfs:label "Geoname"@en ,
-                              "Geoname"@de ;
-                   owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
+  rdfs:domain rdfs:Location ;
+  rdfs:range rdfs:Resource ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#geoname> ;
+  rdfs:label "Geoname"@en , "Geoname"@de ;
+  	dc:description "The Resource location's URL in http://geonames.org."@en ,"Die URL des Ressourcenstandorts in http://geonames.org."@de; owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
 
 :hasAcademicDegree rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
