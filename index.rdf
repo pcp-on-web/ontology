@@ -107,7 +107,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ###check PRO Ontology & FOAF ###
 :Author rdfs:type owl:Class ;
-  rdfs:subClassOf :Document ;
+  rdfs:subClassOf :Person ;
   rdfs:label "Autor"@de, "Author"@en ;
 	dc:description "Bezeichnet die Autorschaft eines Dokuments."@de, "Gives the authorship of a document."@en .
 		
@@ -393,7 +393,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		"Refers to public lectures (lectio publica) of professors which had not to be payed extra by students."@en .
 		
 :Publisher rdf:type owl:Class ;
-  rdfs:subClassOf :Document ;
+  rdfs:subClassOf :Person ;
   rdfs:label "Herausgeber"@de, "Publisher"@en ;
 	dc:description "Nennt Herausgeber eines Dokuments."@de, "Gives publishers of a document."@en .
 		
