@@ -784,7 +784,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ### hinzugefügt 18/03/21 ###
 :geoname rdf:type owl:ObjectProperty ;
-  rdfs:domain rdfs:Location ;
+  rdfs:domain rdfs:Resource ;
   rdfs:range rdfs:Resource ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#geoname> ;
   rdfs:label "Geoname"@en , "Geoname"@de ;
@@ -824,6 +824,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :hasEnrollment rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
   rdfs:range :Enrollment ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#hasEnrollment> ;  
   rdfs:label "hat Matrikel"@de, "has enrollment"@en ;
 	dc:description "Verweist auf eine Immatrikulation einer Person an einer Universität."@de, "Refers to the enrollment of a person at a university."@en .
 
