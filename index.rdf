@@ -762,6 +762,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Document ;
   rdfs:label "Korrespondenz hat Dokument"@de, "correspondence has document"@en ;
 	dc:description "Weist einer Korrespondenz ein Dokument zu."@de, "Assigns a correspondence to a document."@en .
+	      
+:correspondenceHasPerson rdf:type owl:ObjectProperty ;
+  rdfs:domain :Correspondence ;
+  rdfs:range :Person ;
+  rdfs:label "Korrespondenz hat Dokument"@de, "correspondence has document"@en ;
+	dc:description "Weist einer Korrespondenz ein Dokument zu."@de, "Assigns a correspondence to a document."@en .
 
 :disputationHasDissertation rdf:type owl:ObjectProperty ;
   rdfs:domain :Disputation ;
@@ -773,7 +779,17 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:domain :Dissertation ;
   rdfs:range :Faculty ;
   rdfs:label "Diss hat Fakultät"@de, "diss has faculty"@en ;
-	dc:description "Weist eine Dissertation einer Fakultät zu."@de, "Assigns a dissertation to a faculty."@en .				 
+	dc:description "Weist eine Dissertation einer Fakultät zu."@de, "Assigns a dissertation to a faculty."@en .
+
+### hinzugefügt 18/03/21 ###
+:geoname rdf:type owl:ObjectProperty ;
+                   rdfs:domain rdfs:Resource ;
+				   rdfs:range rdfs:Resource ;
+                   rdfs:comment "The Resource location's URL in http://geonames.org."@en ,
+                                "Die URL des Ressourcenstandorts in http://geonames.org."@de ;
+                   rdfs:label "Geoname"@en ,
+                              "Geoname"@de ;
+                   owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
 
 :hasAcademicDegree rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
@@ -995,7 +1011,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:domain :Professor ;
   rdfs:range :Person ;
   rdfs:label "kennt"@de, "knows"@en ;
-	dc:description "Verweist auf Verbindungen zwischen dem Professor und anderen Personen, z.B. auf Grundlage von Korrespondenz."@de, "Refers to a connection bewteen a professor and another person, e.g. through correspondence."@en .
+	dc:description "Verweist auf Verbindungen zwischen dem Professor und anderen Personen, z.B. auf Grundlage von Korrespondenz."@de, "Refers to a connection between a professor and another person, e.g. through correspondence."@en .
 	      
 :recommendationDocument rdf:type owl:ObjectProperty ;
   rdfs:domain :Recommendation ;
