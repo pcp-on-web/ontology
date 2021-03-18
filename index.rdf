@@ -783,7 +783,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 ### hinzugefügt 18/03/21 ###
 :geoname rdf:type owl:ObjectProperty ;
-                   rdfs:domain rdfs:Resource ;
+                   rdfs:domain rdfs:Location ;
 				   rdfs:range rdfs:Resource ;
                    rdfs:comment "The Resource location's URL in http://geonames.org."@en ,
                                 "Die URL des Ressourcenstandorts in http://geonames.org."@de ;
