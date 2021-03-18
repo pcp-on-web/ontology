@@ -842,7 +842,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Verweist auf die Korrespondenzpartner eines Professors."@de, "Refers to correspondence partner of a professor."@en .
 	      
 :hasEnrollment rdf:type owl:ObjectProperty ;
-  rdfs:domain :Professor ;
+  rdfs:domain :Student ;
   rdfs:range :Enrollment ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#hasEnrollment> ;  
   rdfs:label "hat Matrikel"@de, "has enrollment"@en ;
