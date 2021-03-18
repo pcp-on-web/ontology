@@ -909,6 +909,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :isCongratulant rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
   rdfs:range :Document ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#wellWisher> ;
   rdfs:label "ist Gratulant"@de, "is congratulant"@en ;
 	dc:description "Bezeichnet den Gratulanten einer Publikation."@de, "Refers to the congratulant of a publication."@en .
 				     
