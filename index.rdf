@@ -726,13 +726,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                          "2.0 stable"^^xsd:string ,
                          "version 0.2  10.03.2008"^^xsd:string .
 				     
-:stageOfLifeLocation rdf:type owl:DatatypeProperty ;
-  rdfs:domain :StageOfLife ;
-  rdfs:range :Location ;
-  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#periodPlace> ;
-  rdfs:label "Ort Lebensabschnitt"@de, "location of stage of life"@en ;
-	dc:description "Fügt einem Lebensabschnitt einer Person einen geografischen Ort zu."@de, "Adds a geographical location to a stage of life of a person."@en .
-
 ###  http://purl.org/pcp-on-web/ontology#to
 :to rdf:type owl:DatatypeProperty ;
     rdfs:domain :StageOfLife ;
@@ -848,6 +841,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Graduation ;
   rdfs:label "Bildungsabschnitt hat Abschluss"@de, "education has graduation"@en ;
 	dc:description "Bezieht sich auf den Abschluss eines Bildungsweges im Lebensabschnitt eines Professors."@de, "Refers to the graduation in education of a professors stage of life."@en .
+
+:hasLocation rdf:type owl:ObjectProperty ;
+  rdfs:domain :Territory ;
+  rdfs:range :Location ;
+  rdfs:label "Ort Landesherrschaft"@de, "location territory"@en ;
+	dc:description "Fügt einer Landesherrschaft einen geografischen Ort zu."@de, "Adds a geographical location to a territory."@en .
 	      
 :hasMembership rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
@@ -1072,7 +1071,14 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Faculty ;
   rdfs:label "Rechenschaftsbericht hat Fakultät"@de, "report has faculty"@en ;
 	dc:description "Ordnet einen Rechenschaftsbericht einer Fakultät zu."@de, "Assigns a report to a faculty."@en .
-				     
+
+:stageOfLifeLocation rdf:type owl:ObjectProperty ;
+  rdfs:domain :StageOfLife ;
+  rdfs:range :Location ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#periodPlace> ;
+  rdfs:label "Ort Lebensabschnitt"@de, "location of stage of life"@en ;
+	dc:description "Fügt einem Lebensabschnitt einer Person einen geografischen Ort zu."@de, "Adds a geographical location to a stage of life of a person."@en .
+	      
 :spouse rdf:type owl:ObjectProperty ;
   rdfs:domain :Family ;
   rdfs:range :Professor ;
