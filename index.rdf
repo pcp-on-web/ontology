@@ -838,8 +838,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :hasCorrespondence rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
   rdfs:range :Correspondence ;
-  rdfs:label "hat Korrespondenzpartner"@de, "has correspondence partner"@en ;
-	dc:description "Verweist auf die Korrespondenzpartner eines Professors."@de, "Refers to correspondence partner of a professor."@en .
+  rdfs:label "hat Korrespondenz"@de, "has correspondence"@en ;
+	dc:description "Verweist auf die Korrespondenz eines Professors."@de, "Refers to correspondence of a professor."@en .
 	      
 :hasEnrollment rdf:type owl:ObjectProperty ;
   rdfs:domain :Student ;
