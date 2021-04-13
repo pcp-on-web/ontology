@@ -773,11 +773,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Korrespondenz hat Dokument"@de, "correspondence has document"@en ;
 	dc:description "Weist einer Korrespondenz ein Dokument zu."@de, "Assigns a correspondence to a document."@en .
 	      
-:correspondenceHasPerson rdf:type owl:ObjectProperty ;
+:correspondent rdf:type owl:ObjectProperty ;
   rdfs:domain :Correspondence ;
   rdfs:range :Person ;
-  rdfs:label "Korrespondenz hat Dokument"@de, "correspondence has document"@en ;
-	dc:description "Weist einer Korrespondenz ein Dokument zu."@de, "Assigns a correspondence to a document."@en .
+  rdfs:label "Korrespondenzpartner"@de, "correspondent"@en ;
+	dc:description "Verweist auf die aus einem Dokument hervorgehenden Korrespondenzpartner."@de, "Assigns to the correspondents given by a document."@en .
 
 :disputationHasDissertation rdf:type owl:ObjectProperty ;
   rdfs:domain :Disputation ;
