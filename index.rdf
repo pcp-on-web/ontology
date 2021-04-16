@@ -172,7 +172,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :Disputation rdf:type owl:Class ;
   rdfs:subClassOf :TeachingPractices;
   rdfs:label "Disputation"@de, "Disputation"@en ;
-	dc:description "Bezieht sich auf die Disputationspraxis, die dem Zweck der Übung oder der Graduierung diente sowie als Inaugural Disputation pro loco auf die Erlangung einer Professur verwies."@de, "Refers to the practice of disputation which had the purpose of practising curricula or to obtain academic titles. It also refers to inaugural disputations of newly vocated professors."@en .
+	dc:description "Bezieht sich auf die Disputationspraxis, dem wissenschaftlichen Streitgespräch. Es diente dem Zweck der Übung oder der Graduierung und verwies als Inaugural Disputation pro loco auf die Erlangung einer Professur."@de, "Refers to the practice of disputation, a scientific debate which had the purpose of practising curricula or to obtain academic titles. It also refers to inaugural disputations of newly vocated professors."@en .
 		
 :Doctor rdf:type owl:Class ;
   rdfs:subClassOf :AcademicDegree ;
