@@ -326,7 +326,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezeichnet eine Streitschrift."@de, "Refers to a pamphlet."@en .
 		
 :Patron rdf:type owl:Class ;
-  rdfs:subClassOf :Professor ;
+  rdfs:subClassOf :Person ;
   rdfs:label "Patron"@de, "Patron"@en ;
 	dc:description "Bezieht sich auf den Patron einer Person; hier auf in den Quellen identifizierbaren Förderer eines Professors und dessen Karriere."@de ,
 		"Refers to the patron of a person; here to the patron of a professor's career who can be identified by the sources."@en .	
@@ -860,6 +860,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Professor ist Mitglied"@de, "membership of a Professor"@en ;
 	dc:description "Gibt an, ob ein Professor Mitglied einer Gesellschaft, Sozietät oder weiterer Institutionen war."@de, "Refers to memberships of professors at societies or further institutions."@en .
 
+:hasPatron rdf:type owl:ObjectProperty ;
+  rdfs:domain :Professor ;
+  rdfs:range :Patron ;
+  rdfs:label "hat Förderer"@de, "has patron"@en ;
+	dc:description "Gibt an, ob ein Professor einen Förderer hatte."@de, "Gives the patron of a professor."@en .
+	      
 :hasPicture rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
   rdfs:range :Picture ;
@@ -981,7 +987,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:domain :Professor ;
   rdfs:range :Student ;
   rdfs:label "ist Student"@de, "is student"@en ;
-	dc:description "Bezeichnet den Professor als Student."@de, "Refers to the Professor as a student."@en .
+	dc:description "Weist einen Professor als Student aus."@de, "Refers to the Professor as a student."@en .
 
 :isVocated rdf:type owl:ObjectProperty ;
   rdfs:domain :Candidate ;
