@@ -172,7 +172,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :Disputation rdf:type owl:Class ;
   rdfs:subClassOf :TeachingPractices;
   rdfs:label "Disputation"@de, "Disputation"@en ;
-	dc:description "Bezieht sich auf die Disputationspraxis, dem wissenschaftlichen Streitgespräch. Es diente dem Zweck der Übung oder der Graduierung und verwies als Inaugural Disputation pro loco auf die Erlangung einer Professur."@de, "Refers to the practice of disputation, a scientific debate which had the purpose of practising curricula or to obtain academic titles. It also refers to inaugural disputations of newly vocated professors."@en .
+	dc:description "Bezieht sich auf die Disputationspraxis, dem wissenschaftlichen Streitgespräch. Es diente dem Zweck der Übung oder der Graduierung und verwies als Inaugural Disputation pro loco auf die Erlangung einer Professur. Die Dissertation ist das gedruckte Medium der Dispuation."@de, "Refers to the practice of disputation, a scientific debate which had the purpose of practising curricula or to obtain academic titles. It also refers to inaugural disputations of newly vocated professors. The printed medium of a disputation is the dissertation."@en .
 		
 :Doctor rdf:type owl:Class ;
   rdfs:subClassOf :AcademicDegree ;
@@ -934,14 +934,14 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	      
 :isCongratulant rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
-  rdfs:range :Document ;
+  rdfs:range :Dissertation ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#wellWisher> ;
   rdfs:label "ist Gratulant"@de, "is congratulant"@en ;
 	dc:description "Bezeichnet den Gratulanten einer Publikation."@de, "Refers to the congratulant of a publication."@en .
 				     
 :isDedicatee rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
-  rdfs:range :Document ;
+  rdfs:range :Dissertation ;
   rdfs:label "ist Widmungsempfänger"@de, "is dedicatee"@en ;
 	dc:description "Bezeichnet den Widmunsgempfänger einer Publikation."@de, "Refers to the dedicatee of a publication."@en .
 				     
@@ -952,7 +952,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezieht sich auf Lehrpraktiken, die von einem Professor an einer Universität durchgeführt werden, z.B. Vorlesungen halten, Disputationen vorstehen oder Übungen geben."@de, "Refers to teaching practices which are done by a professor at a university, e.g. give lectures, preside over disputations or give excersizes."@en.
 		
 :isOpponent rdf:type owl:ObjectProperty ;
-  rdfs:domain :Student ;
+  rdfs:domain :Professor ;
   rdfs:range :Disputation ;
   rdfs:label "ist Opponent"@de, "is Opponent"@en ;
 	dc:description "Bezeichnet den Opponenten einer Disputation."@de, "Refers to the opponent of a disputation."@en .
