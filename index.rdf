@@ -71,12 +71,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :Office ;
   rdfs:label "Akademisches Amt"@de, "Academic office"@en ;
 	dc:description "Bezieht sich auf ein akademisches Amt an der Universität."@de , "Refers to an academic office at university."@en .
-
-:Academy rdf:type owl:Class ;
-  rdfs:subClassOf :Societies ;
-  rdfs:label "Akademie"@de, "Academy"@en ;
-	dc:description "Bezeichnet eine Sozietät mit strukturierter Körperschaft und obrigkeitlicher Protégierung, z.B. die Akademie der Wissenschaften in Berlin."@de, 
-		"Refers to a society with structured corporate body and most commonly protection and financing by the territory ruler, like Akademie der Wissenschaften in Berlin."@en .
 		
 :ArchivalMaterial rdf:type owl:Class ;
   rdfs:subClassOf :Document ;
@@ -242,11 +236,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :Professor ;
   rdfs:label "Ordentlicher Professor"@de, "Full Professor"@en ;
 	dc:description "Bezeichnet einen Professor, der eine ordentliche Professur inne hat."@de, "A professor who owns a full professorship."@en .
-
-:FurtherSociety rdf:type owl:Class ;
-  rdfs:subClassOf :Societies ;
-  rdfs:label "Weitere Gesellschaft"@de, "Further Society"@en ;
-	dc:description "Bezieht sich auf weitere Formen von soziokulturellen Gesellschaften wie literarische Salons, Lesegesellschaften oder Studentenverbindungen etc."@de, "Refers to further societies  like literary Salons, reading societies or student societies etc.."@en .
 		
 :Gender rdf:type owl:Class ;
   rdfs:subClassOf :Person ;
@@ -307,7 +296,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :Network ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Membership> ;
   rdfs:label "Mitgliedschaft"@de, "Membership"@en ;
-	dc:description "Verweist auf Mitgliedschaften einer Person in soziokulturellen und/oder politischen Gesellschaften, Sozietäten und weiterer Institutionen."@de, "Refers to the membership of a person at sociocultural and/or political societies or further institutions."@en .
+	dc:description "Verweist auf Mitgliedschaften einer Person in soziokulturellen und/oder politischen Gesellschaften, Sozietäten und weiterer Institutionen; auch Studentenverbindungen."@de, "Refers to the membership of a person at sociocultural and/or political societies or further institutions; also fraternities."@en .
 		
 :Network rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
@@ -434,7 +423,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :Institution ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#AcademicSociety> ;
   rdfs:label "Gesellschaften"@de, "Societies"@en ;
-	dc:description "Bezeichnet Gesellschaften."@de, "Refers to societies."@en .
+	dc:description "Bezeichnet Gesellschaften, wie Gelehrtengesellschaften, literarische Salons oder Lesegesellschaften. Außerdem Sozietäten mit strukturierter Körperschaft und obrigkeitlicher Protégierung (z.B. Akademie der Wissenschaften in Berlin)."@de, "Refers to societies like Learned Societies, Literary salons or Reading Societies. Furthermore societies with structured corporate body and most commonly protection and financing by the territory ruler, like the Akademie der Wissenschaften in Berlin."@en .
 
 :StageOfLife rdf:type owl:Class ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#PeriodOfLife> ;
