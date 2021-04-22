@@ -334,6 +334,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :Education ;
   rdfs:label "Primäre Bildung"@de, "Primary education"@en ;
 	dc:description "Bezieht sich auf die diversen vormodernen Schulformen und pädagogischen Bildungsangebote im Vorfeld eines Universitätsbesuchs im Territorium des Heiligen Römischen Reichs Deutscher Nation, z.B. Elementarschulen, Lateinschulen, Gymnasien, Klosterschulen, Pfarrschulen etc."@de , "Refers to the diverse early modern educational and pedagogical formas and institutions of primary education within the Holy Roman Empire."@en .		
+
+:Privatdozent rdf:type owl:Class ;
+  rdfs:subClassOf :Professor ;
+  rdfs:label "Privatdozent"@de, "Privatdozent"@en ;
+	dc:description "in proress: Bezeichnet Lehrkräfte ohne Professur."@de, "Refers to teachers without professorship."@en .
 		
 :PrivateEducation rdf:type owl:Class ;
   rdfs:subClassOf :Education ;
