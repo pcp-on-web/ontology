@@ -74,6 +74,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		
 :ArchivalMaterial rdf:type owl:Class ;
   rdfs:subClassOf :Document ;
+  rdfs:subClassOf <http://purl.org/spar/fabio/ArchivalDocument> ;
   rdfs:label "Archivmaterial"@de, "Archival Material"@en ;
 	dc:description "Archiv Material die Domäne betreffend, bspw. Bestallungsakten, die Ernennungsurkunden und Empfehlungsschreiben und Bewerbungsschreiben enthalten können. Nominationslisten der Fakultäten an die Landesherrschaft, Kopial- und Beschlussbücher der Universität und Fakultäten usw."@de, 
 		"Archival material refering to the domain, for instance nomination lists of the faculties for the territorial authorities, vocation files which contain vocation certificates, reference  letters and applications, etc."@en .
@@ -85,7 +86,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezieht sich auf ein Archiv."@de, "Refers to an archive."@en .
 
 :Article rdf:type owl:Class ;
-  rdfs:subClassOf :PublicationType ;
+  rdfs:subClassOf :Publication;
+  rdfs:subClassOf <http://purl.org/spar/fabio/Article>;
   rdfs:label "Artikel"@de, "Article"@en ;
 	dc:description "Bezeichnet einen Artikel in einem Journal, einer Zeitschrift, einer Zeitung oder einem Magazin."@de, "Refers to an article published in journals, newspapers or magazines."@en .
 		
@@ -95,13 +97,14 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezeichnet einen Professor, der eine außerordentliche Professur (aO) inne hat."@de, "A professor who is an associate professor."@en .
 
 :AuctionCatalogue rdf:type owl:Class ;
-  rdfs:subClassOf :PublicationType ;
+  rdfs:subClassOf :Publication ;
   rdfs:label "Auktionskatalog"@de, "Auction catalogue"@en ;
 	dc:description "Bezeichnet einen Auktionskatalog."@de, "Refers to an auction catalogue."@en .	
 
 ###check PRO Ontology & FOAF ###
 :Author rdfs:type owl:Class ;
   rdfs:subClassOf :Person ;
+  rdfs:subClassOf :Institution ;
   rdfs:label "Autor"@de, "Author"@en ;
 	dc:description "Bezeichnet die Autorschaft eines Dokuments."@de, "Gives the authorship of a document."@en .
 		
@@ -159,6 +162,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 :Dissertation rdf:type owl:Class ;
   rdfs:subClassOf :PublicationType ;
+  rdfs:subClassOf :
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#QualificationDocument> ;
   rdfs:label "Dissertation"@de, "Dissertation"@en ;
 	dc:description "Bezeichnet das gedruckte Medium der Disputation."@de, "Refers to the printed media of a disputation."@en .
@@ -176,6 +180,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 :Document rdf:type owl:Class ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Document> ;
+  rdfs:subClassOf <http://purl.org/spar/fabio/Expression>
   rdfs:label "Dokument"@de, "Document"@en ;
 	dc:description "Beschreibt ein Dokument."@de, "General Document."@en .
 		
@@ -221,7 +226,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezeichnet die Theologische Fakultät an einer Universität."@de, "Refers to the Faculty of Theology at Universities."@en .
 		
 :Family rdf:type owl:Class ;
-  rdfs:subClassOf :StageOfLife ;
+  rdfs:subClassOf :StageOfLife ;:has
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Family> ;
   rdfs:label "Familie"@de, "Family"@en ;
 	dc:description "Dieses Konzept beschreibt die soziale Herkunft und Familienverhältnisse einer Person."@de, "This concept describes the social origin and the family relationship of a person."@en .
@@ -1124,7 +1129,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "ist abgeleitet von"@de, "has been derived from"@en ;
 	dc:description "Wird für das Alignment genutzt."@de, "Wird für das Alignment genutzt."@en .
 				     
-				    
+
+:relatedDocument rdf:type owl:ObjectProperty ;
+  rdfs:domain :StageOfLife;
+  rdfs:range :Document;
+  rdfs:label "Relevante Dokumente zu einem Labensabschnitt"@de, "relevant documents to a stage of life"@en ;
+	dc:description "..."@de, ".."@en .
+	
 		
 		
 		
