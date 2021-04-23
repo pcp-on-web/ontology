@@ -175,10 +175,9 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezeichnet den akademischen Grad eines Doktoren. Kürzel: Dr."@de , "Describes the academic degree of a doctor. Abbreviation: Dr."@en .
 
 :Document rdf:type owl:Class ;
-  rdfs:subClassOf :StageOfLife ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Document> ;
   rdfs:label "Dokument"@de, "Document"@en ;
-	dc:description "Fügt einem Lebensabschnitt ein Dokument zu."@de, "Adds a document to a stage of life."@en .
+	dc:description "Beschreibt ein Dokument."@de, "General Document."@en .
 		
 :Education  rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
