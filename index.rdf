@@ -161,8 +161,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Sterbedatum oder den Zeitraum des Todes einer Person."@de, "Day of death or the period of death of a person."@en .				     
 
 :Dissertation rdf:type owl:Class ;
-  rdfs:subClassOf :PublicationType ;
-  rdfs:subClassOf :
+  rdfs:subClassOf :Publication ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#QualificationDocument> ;
   rdfs:label "Dissertation"@de, "Dissertation"@en ;
 	dc:description "Bezeichnet das gedruckte Medium der Disputation."@de, "Refers to the printed media of a disputation."@en .
