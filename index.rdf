@@ -11,6 +11,7 @@
 @base <http://pcp-on-web.de/ontology#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix gn: <http://www.geonames.org/ontology#> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
 
 <http://pcp-on-web.de/ontology#> rdf:type owl:Ontology ;
 	<http://creativecommons.org/ns#attributionName> "AKSW", "HAB", "HTWK" ;
