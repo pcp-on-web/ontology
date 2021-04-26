@@ -378,11 +378,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Publication> ;
   rdfs:label "Publikation"@de, "Publication"@en ;
 	dc:description "Bezieht sich auf Publikationen."@de, "Refers to publications."@en .
-				     
-:PublicationType rdf:type owl:Class ;
-  rdfs:subClassOf :Publication ;
-  rdfs:label "Publikationstyp"@de, "Publication type"@en ;
-	dc:description "Bezieht sich auf die Gattung bzw. den Typ einer Publikation."@de, "Refers to the genre or type of a publication."@en .
 
 :PublicLecture rdf:type owl:Class ;
   rdfs:subClassOf :Lecture;
@@ -489,21 +484,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Studium"@de, "University studies"@en ;
 	dc:description "Bezieht sich auf das Universitätsstudium einer Person."@de, "Refers to the university studies of a person."@en .
 
-:VD16 rdf:type owl:Class ;
-  rdfs:subClassOf :Publication ;
-  rdfs:label "VD16 Publikationen"@de, "VD16 Publication"@en ;
-	dc:description "Verweist auf eine limitierten Satz an Publikationen im VD16 Katalog im Vokabular Dublin Core, FABIO, GND, DBPedia."@de, "Refers to a limited set of publications at VD16 via vocabulary of Dublin Core, FABIO, GND, DBPedia."@en .
-				     
-:VD17 rdf:type owl:Class ;
-  rdfs:subClassOf :Publication ;
-  rdfs:label "VD17 Publikationen"@de, "VD17 Publication"@en ;
-	dc:description "Verweist auf eine limitierten Satz an Publikationen im VD17 Katalog im Vokabular Dublin Core, FABIO, GND, DBPedia."@de, "Refers to a limited set of publications at VD17 via vocabulary of Dublin Core, FABIO, GND, DBPedia."@en .
-				     
-:VD18 rdf:type owl:Class ;
-  rdfs:subClassOf :Publication ;
-  rdfs:label "VD18 Publikationen"@de, "VD18 Publication"@en ;
-	dc:description "Verweist auf eine limitierten Satz an Publikationen im VD18 Katalog im Vokabular Dublin Core, FABIO, GND, DBPedia."@de, "Refers to a limited set of publications at VD18 via vocabulary of Dublin Core, FABIO, GND, DBPedia."@en .
-		
 :WinterSemester rdf:type owl:Class ;
   rdfs:subClassOf :Semester ;
   owl:DisjoinUnionOf :SummerSemester;
