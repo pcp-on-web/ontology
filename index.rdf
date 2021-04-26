@@ -138,6 +138,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		
 :Corporation rdf:type owl:Class ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Body> ;
+  rdfs:subClassOf <https://d-nb.info/standards/elementset/gnd#CorporateBody> ;
   rdfs:label "Körperschaft"@de, "Corporation"@en ;
 	dc:description "Bezeichnet eine Körperschaft."@de, "Refers to a corporation or corporate body."@en .		
 
@@ -789,12 +790,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#geoname> ;
   rdfs:label "Geoname"@en , "Geoname"@de ;
   	dc:description "The Resource location's URL in http://geonames.org."@en ,"Die URL des Ressourcenstandorts in http://geonames.org."@de; owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
-
-:hasAcademicDegree rdf:type owl:ObjectProperty ;
-  rdfs:domain :Professor ;
-  rdfs:range :AcademicDegree ;
-  rdfs:label "hat akademischen Grad"@de, "has academic degree"@en ;
-	dc:description "Gibt an, dass eine Person über einen akademischen Grad verfügt."@de, "Gives the academic degree of a person."@en .
 	      
 :hasAuctionCatalogue rdf:type owl:ObjectProperty ;
   rdfs:domain :PrivateLibrary ;
