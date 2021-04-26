@@ -723,9 +723,9 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :Author rdfs:type owl:ObjectProperty ;
   rdfs:domain :Document ;
   rdfs:range :Professor ;
-  rdfs:derivedFrom <https://d-nb.info/standards/elementset/gnd#author> ;
+  rdfs:derivedFrom <https://d-nb.info/standards/elementset/gnd#author>, <http://purl.org/pcp-on-web/ontology#isTutor>, <http://purl.org/pcp-on-web/ontology#published> ;
   rdfs:label "Verfasser"@de, "Author"@en ;
-	dc:description "Bezeichnet die Autorschaft eines Dokuments."@de, "Gives the authorship of a document."@en .
+	dc:description "Bezeichnet die Autorschaft eines Dokuments.Zeichnet eine Person als einen Autoren aus. Autor wird hier im Falle einer Disputation als weiter Begriff verwendet, da Praeses und Respondent in Literaturdatenbanken oft beide als Autoren einer Dissertation angegeben werden."@de, "Gives the authorship of a document.Refers to a person as an author of a publication. In case of dissertations the notion author in the context of this ontology model must be considered flexible since literature databases often sign out either praeses or respondent as authors of dissertations."@en .
 				     
 :child rdf:type owl:ObjectProperty ;
   rdfs:domain :Family ;
@@ -897,14 +897,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Semester ;
   rdfs:label "Vorlesung wird gehalten/angeboten in Semester"@de, "Lecture is offered/held in semester"@en ;
     dc:description "Gibt das Semester an, in welchem eine Vorlesung gehalten bzw. angeboten wurde."@de,"Gives the semester at which a lecture had been hold or was offered"@en .				  				     
-
-:isAuthor rdf:type owl:ObjectProperty ;
-  rdfs:domain :Professor ;
-  rdfs:range :Author ;
-  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#isTutor>, <http://purl.org/pcp-on-web/ontology#published> ;
-  rdfs:label "ist Autor"@de, "is author"@en ;
-	dc:description "Zeichnet eine Person als einen Autoren aus. Autor wird hier im Falle einer Disputation als weiter Begriff verwendet, da Praeses und Respondent in Literaturdatenbanken oft beide als Autoren einer Dissertation angegeben werden."@de,
-		"Refers to a person as an author of a publication. In case of dissertations the notion author in the context of this ontology model must be considered flexible since literature databases often sign out either praeses or respondent as authors of dissertations."@en .
 
 :isCandidate rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
