@@ -179,7 +179,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 :Document rdf:type owl:Class ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Document> ;
-  rdfs:subClassOf <http://purl.org/spar/fabio/Expression>
+  rdfs:subClassOf <http://purl.org/spar/fabio/Expression> ;
   rdfs:label "Dokument"@de, "Document"@en ;
 	dc:description "Beschreibt ein Dokument."@de, "General Document."@en .
 		
