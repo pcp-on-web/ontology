@@ -227,7 +227,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		
 :Family rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
-  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Family> ;
   rdfs:label "Familie"@de, "Family"@en ;
 	dc:description "Dieses Konzept beschreibt die soziale Herkunft und Familienverhältnisse einer Person."@de, "This concept describes the social origin and the family relationship of a person."@en .
 		
