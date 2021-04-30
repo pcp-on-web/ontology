@@ -310,7 +310,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezieht sich auf ein Amt, das eine Person bekleidet."@de , "Refers to an office a person holds."@en .
 
 :Pamphlet rdf:type owl:Class ;
-  rdfs:subClassOf :PublicationType ;
+  rdfs:subClassOf :Publication ;
   rdfs:label "Streitschrift"@de, "Pamphlet"@en ;
 	dc:description "Bezeichnet eine Streitschrift."@de, "Refers to a pamphlet."@en .
 		
@@ -365,7 +365,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		"Refers to a person who is vocated as a professor at an Early Modern university, who teaches and holds academic offices."@en .
 
 :ProgramsAndSpeeches rdf:type owl:Class ;
-  rdfs:subClassOf :PublicationType ;
+  rdfs:subClassOf :Publication ;
   rdfs:label "Programme und Reden"@de, "Programs and Speeches"@en ;
 	dc:description "Bezieht sich auf gedruckte Universitätsprogramme und Reden."@de, "Refers to printed university programs and speeches."@en .
 		
@@ -398,7 +398,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		"Means regular reports of lecturers about their curriculum to the university and territorial administration."@en .
 
 :Review rdf:type owl:Class ;
-  rdfs:subClassOf :PublicationType ;
+  rdfs:subClassOf :Publication ;
   rdfs:label "Rezension"@de, "Review"@en ;
 	dc:description "Bezeichnet die Rezension in einer Rezensionszeitschrift."@de, "Refers to a review published in a review journal."@en .
 
@@ -457,7 +457,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezeichnet die Landesherrschaft eines Territoriums und bezieht sich hier auf den Amtssitz jener landesherrschaftlichen Organe, denen die Universitäten unterstellt sind."@de, "Refers to the authority by a ruler/rulership of a territory and means the territorial administration which deal with the universities."@en .
 
 :Textbook rdf:type owl:Class ;
-  rdfs:subClassOf :PublicationType ;
+  rdfs:subClassOf :Publication ;
   rdfs:label "Lehrbuch"@de, "Textbook"@en ;
 	dc:description "Bezeichnet ein Buch das Lehrinhalte eines Studiums didaktisch aufbereitet."@de, "Refers to books which offer a compilation of content in a certain field of interest."@en .
 		
