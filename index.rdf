@@ -307,7 +307,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :StageOfLife;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Office> ;
   rdfs:label "Amt"@de, "Office"@en ;
-	dc:description "Bezieht sich auf ein Amt, das eine Person bekleidet."@de , "Refers to an office a person holds."@en .
+	dc:description "Bezieht sich auf ein nicht akademisches Amt einer Person."@de , "Refers to a non-academic office of a person."@en .
 
 :Pamphlet rdf:type owl:Class ;
   rdfs:subClassOf :Publication ;
