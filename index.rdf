@@ -226,11 +226,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Weiblich"@de, "Female"@en ;
 	dc:description "Verweist auf das Geschlecht Weiblich."@de, "Refers to the gender female."@en .
 		
-:FullProfessor rdf:type owl:Class ;
-  rdfs:subClassOf :Chair ;
-  rdfs:label "Ordentlicher Professor"@de, "Full Professor"@en ;
-	dc:description "Bezeichnet einen Professor, der eine ordentliche Professur inne hat."@de, "A professor who owns a full professorship."@en .
-		
 :Gender rdf:type owl:Class ;
   rdfs:subClassOf :Person ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#gender> ;
@@ -355,8 +350,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :Person ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Professor> ;
   rdfs:label "Professor"@de, "Professor"@en ;
-	dc:description "Bezeichnet eine Person die durch Berufung zum Professor an einer frühneuzeitlichen Universität lehrt und dort akademische Ämter führt."@de,
-		"Refers to a person who is vocated as a professor at an Early Modern university, who teaches and holds academic offices."@en .
+	dc:description "Bezeichnet den frühneuzeitlichen Professor an Universitäten im deutschsprachigen Raum des Heiligen Römischen Reichs, dessen Karriereweg im Fokus des für die Ontologie maßgebenden Forschungsprojektes liegt. Professoren sind vor diesem Hintergrund Personen, die durch Berufung eine ordentliche Professur inne hatten."@de,
+		"Designates the early modern professor at universities in the German-speaking area of the Holy Roman Empire, whose career path is the focus of the research project relevant for the given ontology. In that respect, professors are persons who held a full professorship by vocation."@en .
 
 :ProgramsAndSpeeches rdf:type owl:Class ;
   rdfs:subClassOf :Publication ;
