@@ -75,13 +75,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Akademisches Amt"@de, "Academic office"@en ;
 	dc:description "Bezieht sich auf ein akademisches Amt an der Universität."@de , "Refers to an academic office at university."@en .
 		
-:ArchivalMaterial rdf:type owl:Class ;
-  rdfs:subClassOf :Document ;
-  rdfs:subClassOf <http://purl.org/spar/fabio/ArchivalDocument> ;
-  rdfs:label "Archivmaterial"@de, "Archival Material"@en ;
-	dc:description "Archiv Material die Domäne betreffend, bspw. Bestallungsakten, die Ernennungsurkunden und Empfehlungsschreiben und Bewerbungsschreiben enthalten können. Nominationslisten der Fakultäten an die Landesherrschaft, Kopial- und Beschlussbücher der Universität und Fakultäten usw."@de, 
-		"Archival material refering to the domain, for instance nomination lists of the faculties for the territorial authorities, vocation files which contain vocation certificates, reference  letters and applications, etc."@en .
-		
 :Archive rdf:type owl:Class ;
   rdfs:subClassOf :Institution ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Archive> ;
@@ -95,7 +88,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezeichnet einen Artikel in einem Journal, einer Zeitschrift, einer Zeitung oder einem Magazin."@de, "Refers to an article published in journals, newspapers or magazines."@en .
 		
 :AsscociateProfessor rdf:type owl:Class ;
-  rdfs:subClassOf :Professor ;
+  rdfs:subClassOf :AcademicOffice ;
   rdfs:label "Außerordentlicher Professor"@de, "Associate Professor"@en ;
 	dc:description "Bezeichnet einen Professor, der eine außerordentliche Professur (aO) inne hat."@de, "A professor who is an associate professor."@en .
 
@@ -126,6 +119,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezeichnet den Lehrstuhl bzw. das Fachgebiet an einer Universitätsfakultät."@de, "Designates the chair or subject at a university faculty."@en .
 
 :Collection rdf:type owl:Class ;
+  rdfs:subClassOf :StageOfLife ;
   rdfs:label "Sammlung"@de, "Collection"@en ;
 	dc:description "Objekt-Sammlungen einer Person oder Institution."@de, "Object-collections of a person or institution."@en .
 		
@@ -233,7 +227,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Verweist auf das Geschlecht Weiblich."@de, "Refers to the gender female."@en .
 		
 :FullProfessor rdf:type owl:Class ;
-  rdfs:subClassOf :Professor ;
+  rdfs:subClassOf :Chair ;
   rdfs:label "Ordentlicher Professor"@de, "Full Professor"@en ;
 	dc:description "Bezeichnet einen Professor, der eine ordentliche Professur inne hat."@de, "A professor who owns a full professorship."@en .
 		
@@ -315,7 +309,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezeichnet eine Streitschrift."@de, "Refers to a pamphlet."@en .
 		
 :Patron rdf:type owl:Class ;
-  rdfs:subClassOf :Person ;
+  rdfs:subClassOf :StageOfLife ;
   rdfs:label "Patron"@de, "Patron"@en ;
 	dc:description "Bezieht sich auf den Patron einer Person; hier auf in den Quellen identifizierbaren Förderer eines Professors und dessen Karriere."@de ,
 		"Refers to the patron of a person; here to the patron of a professor's career who can be identified by the sources."@en .	
@@ -336,7 +330,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezieht sich auf die diversen vormodernen Schulformen und pädagogischen Bildungsangebote im Vorfeld eines Universitätsbesuchs im Territorium des Heiligen Römischen Reichs Deutscher Nation, z.B. Elementarschulen, Lateinschulen, Gymnasien, Klosterschulen, Pfarrschulen etc."@de , "Refers to the diverse early modern educational and pedagogical formas and institutions of primary education within the Holy Roman Empire."@en .		
 
 :Privatdozent rdf:type owl:Class ;
-  rdfs:subClassOf :Professor ;
+  rdfs:subClassOf :AcademicOffice ;
   rdfs:label "Privatdozent"@de, "Privatdozent"@en ;
 	dc:description "in proress: Bezeichnet Lehrkräfte ohne Professur, oft als PD bezeichnet."@de, "Refers to teachers without professorship, often referred to as PD."@en .
 		
