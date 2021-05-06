@@ -305,6 +305,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezeichnet eine Person."@de, "Refers to a person."@en .
 		
 :Picture rdf:type owl:Class ;
+  rdfs:subClassOf :StageOfLife ;		
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Picture> ;
   rdfs:label "Bild"@de, "Picture"@en ;
 	dc:description "Dieses Konzept beschreibt das Bild einer Person."@de, "This concept describes the picture of a person."@en .
