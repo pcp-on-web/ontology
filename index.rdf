@@ -118,6 +118,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Lehrstuhl"@de, "Chair"@en ;
 	dc:description "Bezeichnet den Lehrstuhl bzw. das Fachgebiet an einer Universitätsfakultät."@de, "Designates the chair or subject at a university faculty."@en .
 
+### Anknüpfungspunkt für CIDOC ###
 :Collection rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
   rdfs:label "Sammlung"@de, "Collection"@en ;
@@ -478,7 +479,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 #################################################################
 #		Datatype Propertys		
 #################################################################
-		
 	
 :academicYear rdf:type owl:DatatypeProperty ;
   rdfs:domain :Semester ;
@@ -700,13 +700,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#familyChild> ;
   rdfs:label "Kind"@de, "child"@en ;
 	dc:description "Bezieht sich auf das Kind, Pflegekind, Adoptivkind eines Professors."@de, "Refers to the cild, foster child, adoptive child of a professor."@en .
-
-###skos check####
-:collectionDocument rdf:type owl:ObjectProperty ;
-  rdfs:domain :Collection ;
-  rdfs:range :Document ;
-  rdfs:label "Sammlung hat Dokument"@de, "collection has document"@en ;
-	dc:description "Weist einer Sammlung ein Dokument zu."@de, "Assigns a collection a document."@en .
 	      
 :confirms rdf:type owl:ObjectProperty ;
   rdfs:domain :Territory ;
