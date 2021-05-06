@@ -68,7 +68,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :Graduation ;
   rdfs:subClassOf <https://d-nb.info/standards/elementset/gnd#academicDegree> ;
   rdfs:label "Akademischer Grad"@de, "Academic Degree"@en ;
-	dc:description "Bezeichnet einen akademischen Grad, verweist aber im frühneuzeitlichen Zusammenhang dieser Ontologie nicht, wie die verknüpfte GNDO, auf die Erlangung eines Akademischen Grads als Leistungsnachweis, sondern als Standesbezeichnung."@de , "Refers to Academic degrees. In an early modern context those are understood as proof of social ranking than proof of qualification."@en .
+	dc:description "Bezeichnet einen akademischen Grad, verweist aber im frühneuzeitlichen Zusammenhang dieser Ontologie nicht, wie die verknüpfte GNDO, auf die Erlangung eines Akademischen Grads als Leistungsnachweis, sondern als Standesbezeichnung."@de , "Refers to Academic degrees. In an early modern context those are rather understood as proof of social ranking than as proof of qualification."@en .
 
 :AcademicOffice rdf:type owl:Class ;
   rdfs:subClassOf :Office ;
@@ -189,7 +189,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :University ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Faculty> ;
   rdfs:label "Fakultät"@de, "Faculty"@en ;
-	dc:description "Bezieht sich auf eine körperschaftlich organisierte und auf ein Fachgebiet begrenzte Lehr- und Verwaltungseinheit einer Volluniversität, im frühneuzeitlichen Kontext: Philosophie, Theologie, Jurisprudenz, Medizin."@de, "Refers to corporated university divisions with specific subject areas, which are in an Early Modern context: Philosophy, Theology, Jurisprudence, Medicine."@en .
+	dc:description "Bezieht sich auf eine körperschaftlich organisierte und auf ein Fachgebiet begrenzte Lehr- und Verwaltungseinheit einer Volluniversität, im frühneuzeitlichen Kontext: Artistenfakultät (facultas artium), später Philosophische Fak., Theologie, Jurisprudenz, Medizin."@de, "Refers to corporated university divisions with specific subject areas, which are in an Early Modern context: facultas artium, later Philosophical fac., Theology, Jurisprudence, Medicine."@en .
 
 :FacultyOfLaw rdf:type owl:Class ;
   rdfs:subClassOf :Faculty ;
@@ -204,7 +204,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :FacultyOfPhilosophy rdf:type owl:Class ;
   rdfs:subClassOf :Faculty ;
   rdfs:label "Philosophische Fakultät"@de, "Faculty of Philosophy"@en ;
-	dc:description "Bezeichnet die Philosophische Fakultät an einer Universität."@de, "Refers to the Faculty of Philosophy at Universities."@en .
+	dc:description "Bezeichnet die Artistenfakultät, die sich im Untersuchungszeitraum zu einer Philosophischen Fakultät entwickelte und an der propädeutisches Wissen für das weitergehende Studium an den übrigen höheren Fakultäten einer Volluniversität vermittelt wurde."@de, "Refers to the facultats artium which developed into a faculty of philosophy throughout the period of interest and at which propaedeutic knowledge was taught for further studies at one of the higher faculties of a full university."@en .
 		
 :FacultyOfTheology rdf:type owl:Class ;
   rdfs:subClassOf :Faculty ;
