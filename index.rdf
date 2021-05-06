@@ -109,7 +109,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Geburtsdatum oder Zeitraum einer Person."@de, "Birthdate or the period of birth of a person."@en .
 
 :Candidate rdf:type owl:Class ;
-  rdfs:subClassOf :Person ;
+  rdfs:subClassOf :StageOfLife ;
   rdfs:label "Kandidat"@de, "Candidate"@en ;
 	dc:description "Bezeichnet eine Person, die im Zuge der Besetzung einer Professur als Kandidat gehandelt wird."@de , "Refers to a person which is a candidate for a university chair or professorship."@en .
 		
