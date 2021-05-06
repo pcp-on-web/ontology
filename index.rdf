@@ -350,8 +350,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :Person ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Professor> ;
   rdfs:label "Professor"@de, "Professor"@en ;
-	dc:description "Bezeichnet den frühneuzeitlichen Professor an Universitäten im deutschsprachigen Raum des Heiligen Römischen Reichs, dessen Karriereweg im Fokus des für die Ontologie maßgebenden Forschungsprojektes liegt. Professoren sind vor diesem Hintergrund Personen, die durch Berufung eine ordentliche Professur inne hatten."@de,
-		"Designates the early modern professor at universities in the German-speaking area of the Holy Roman Empire, whose career path is the focus of the research project relevant for the given ontology. In that respect, professors are persons who held a full professorship by vocation."@en .
+	dc:description "Bezieht sich auf frühneuzeitliche Professoren an Universitäten im deutschsprachigen Raum des Heiligen Römischen Reichs, deren Karrierewege im Fokus des für die Ontologie maßgebenden Forschungsprojektes liegen. Professoren sind vor diesem Hintergrund Personen, die durch Berufung eine ordentliche Professur inne hatten."@de,
+		"Refers to early modern professors at universities in the German-speaking area of the Holy Roman Empire, whose career paths are the focus of the research project relevant to the given ontology. In that respect, professors are persons who held a full professorship by vocation."@en .
 
 :ProgramsAndSpeeches rdf:type owl:Class ;
   rdfs:subClassOf :Publication ;
