@@ -90,12 +90,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :AsscociateProfessor rdf:type owl:Class ;
   rdfs:subClassOf :AcademicOffice ;
   rdfs:label "Außerordentlicher Professor"@de, "Associate Professor"@en ;
-	dc:description "Bezeichnet einen Professor, der eine außerordentliche Professur (aO) inne hat."@de, "A professor who is an associate professor."@en .
-
-:AuctionCatalogue rdf:type owl:Class ;
-  rdfs:subClassOf :Publication ;
-  rdfs:label "Auktionskatalog"@de, "Auction catalogue"@en ;
-	dc:description "Bezeichnet einen Auktionskatalog."@de, "Refers to an auction catalogue."@en .	
+	dc:description "Bezeichnet einen Professor, der eine außerordentliche Professur (aO) inne hat."@de, "A professor who is an associate professor."@en .	
 		
 :Baccalaureus rdf:type owl:Class ;
   rdfs:subClassOf :AcademicDegree ;
@@ -122,7 +117,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :Collection rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
   rdfs:label "Sammlung"@de, "Collection"@en ;
-	dc:description "Objekt-Sammlungen einer Person oder Institution."@de, "Object-collections of a person or institution."@en .
+	dc:description "Objekt-Sammlungen eines Professors, z.B. Privatbibliotheken, Naturalien- und Instrumentensammlungen etc."@de, "Object-collections of a professor, e.g. private libraries, naturalia or further scholarly devices."@en .
 		
 :Corporation rdf:type owl:Class ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Body> ;
