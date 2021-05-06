@@ -64,12 +64,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 #		Classes
 #################################################################
 
-:AcademicDegree rdf:type owl:Class ;
-  rdfs:subClassOf :Graduation ;
-  rdfs:subClassOf <https://d-nb.info/standards/elementset/gnd#academicDegree> ;
-  rdfs:label "Akademischer Grad"@de, "Academic Degree"@en ;
-	dc:description "Bezeichnet einen akademischen Grad, verweist aber im frühneuzeitlichen Zusammenhang dieser Ontologie nicht, wie die verknüpfte GNDO, auf die Erlangung eines Akademischen Grads als Leistungsnachweis, sondern als Standesbezeichnung."@de , "Refers to Academic degrees. In an early modern context those are rather understood as proof of social ranking than as proof of qualification."@en .
-
 :AcademicOffice rdf:type owl:Class ;
   rdfs:subClassOf :Office ;
   rdfs:label "Akademisches Amt"@de, "Academic office"@en ;
@@ -93,7 +87,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezeichnet einen Professor, der eine außerordentliche Professur (aO) inne hat."@de, "A professor who is an associate professor."@en .	
 		
 :Baccalaureus rdf:type owl:Class ;
-  rdfs:subClassOf :AcademicDegree ;
+  rdfs:subClassOf :Graduation ;
   rdfs:label "Baccalaureus"@de, "Baccalaureus"@en ;
 	dc:description "Bezeichnet den akademischen Grad eines Baccalaren/Baccalaureus. Kürzel: Bacc."@de , "Describes the academic degree of a bachelor/baccalaureus.  Abbreviation: Bacc."@en .
 		
@@ -159,7 +153,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezieht sich auf die Disputationspraxis, dem wissenschaftlichen Streitgespräch. Es diente dem Zweck der Übung oder der Graduierung und verwies als Inaugural Disputation pro loco auf die Erlangung einer Professur. Die Dissertation ist das gedruckte Medium der Dispuation."@de, "Refers to the practice of disputation, a scientific debate which had the purpose of practising curricula or to obtain academic titles. It also refers to inaugural disputations of newly vocated professors. The printed medium of a disputation is the dissertation."@en .
 		
 :Doctor rdf:type owl:Class ;
-  rdfs:subClassOf :AcademicDegree ;
+  rdfs:subClassOf :Graduation ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#GraduationDoctorate> ;
   rdfs:label "Doctor"@de, "Doctor"@en ;
 	dc:description "Bezeichnet den akademischen Grad eines Doktoren. Kürzel: Dr."@de , "Describes the academic degree of a doctor. Abbreviation: Dr."@en .
@@ -259,7 +253,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		"Refers to lectures given by a professor at auniversity."@en .
 		
 :Licentiatus rdf:type owl:Class ;
-  rdfs:subClassOf :AcademicDegree ;
+  rdfs:subClassOf :Graduation ;
   rdfs:label "Lizenziat"@de, "Licentiate"@en ;
 	dc:description "Bezeichnet den akademischen Grad eines Lizenziaten, eines Baccalaren mit Lehrbefugnis. Zugleich einen Doktor der evang. Theologie (bis 1947 an deutschen Hochschulen). Kürzel: lic."@de , "Describes the academic degree of a Licentiate, which means a bachelor/baccalaureus with the right to teach. Also the academic title of a doctor of Evangelic theology (valid until 1947 in Germany). Abbreviation: lic."@en .
 		
@@ -268,7 +262,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezieht sich auf den geografischen Ort für Lebensabschnitte einer Person, Orte von Körperschaften, Medien (Verlagsort, Druckort), Ämtern, Landesherrschaft usw."@de, "Refers to the geographical location of life stages of persons, corporate bodies, media (printing, publishing), offices, territories and others."@en .
 
 :Magister rdf:type owl:Class ;
-  rdfs:subClassOf :AcademicDegree ;
+  rdfs:subClassOf :Graduation ;
   rdfs:label "Magister"@de, "Magister"@en ;
 	dc:description "Bezeichnet den akademischen Grad eines Magister. Kürzel: Mag."@de , "Describes the academic degree of a Magister. Abbreviation: Mag."@en .
 		
@@ -292,7 +286,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :StageOfLife;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Office> ;
   rdfs:label "Amt"@de, "Office"@en ;
-	dc:description "Bezieht sich auf nicht akademische Ämter und Berufe."@de , "Refers to non-academic offices and professions."@en .
+	dc:description "Bezieht sich auf nicht akademische Ämter und Berufe von Professoren außerhalb der Universität, z.B. als Ärzte, Räte oder Anwälte."@de , "Refers to non-academic offices and professions of professors outside of the university, e.g. as physicians at court, lawyers or counselers."@en .
 
 :Pamphlet rdf:type owl:Class ;
   rdfs:subClassOf :Publication ;
