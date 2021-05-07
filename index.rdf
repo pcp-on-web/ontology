@@ -67,29 +67,29 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :AcademicOffice rdf:type owl:Class ;
   rdfs:subClassOf :Office ;
   rdfs:label "Akademisches Amt"@de, "Academic office"@en ;
-	dc:description "Bezieht sich auf akademische Ämter, die ein Professor neben seinem Lehrstuhl an der Universität ausübte, bspw. als Rektor, Prorektor, Kanzler, Dekan usw.."@de , "Refers to academic offices a professor held next to his chair at the university, e.g. rector, prorector, chancellor, dean etc.."@en .
+	rdfs:comment "Bezieht sich auf akademische Ämter, die ein Professor neben seinem Lehrstuhl an der Universität ausübte, bspw. als Rektor, Prorektor, Kanzler, Dekan usw.."@de , "Refers to academic offices a professor held next to his chair at the university, e.g. rector, prorector, chancellor, dean etc.."@en .
 		
 :Archive rdf:type owl:Class ;
   rdfs:subClassOf :Institution ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Archive> ;
   rdfs:label "Archiv"@de, "Archive"@en ;
-	dc:description "Bezieht sich auf ein Archiv."@de, "Refers to an archive."@en .
+	rdfs:comment "Bezieht sich auf ein Archiv."@de, "Refers to an archive."@en .
 
 :Article rdf:type owl:Class ;
   rdfs:subClassOf :Publication;
   rdfs:subClassOf <http://purl.org/spar/fabio/Article>;
   rdfs:label "Artikel"@de, "Article"@en ;
-	dc:description "Bezeichnet einen Artikel in einem Journal, einer Zeitschrift, einer Zeitung oder einem Magazin."@de, "Refers to an article published in journals, newspapers or magazines."@en .
+	rdfs:comment "Bezeichnet einen Artikel in einem Journal, einer Zeitschrift, einer Zeitung oder einem Magazin."@de, "Refers to an article published in journals, newspapers or magazines."@en .
 		
 :AsscociateProfessor rdf:type owl:Class ;
   rdfs:subClassOf :AcademicOffice ;
   rdfs:label "Außerordentlicher Professor"@de, "Associate Professor"@en ;
-	dc:description "Bezeichnet einen Professor, der eine außerordentliche Professur (aO) inne hat. Diese Professoren auf Anwartschaft lehrten ohne Lehrstuhl auf dessen Vakanz sie warteten."@de, "A professor who is an associate professor, who is teaching without holding a chair. Those professors taught in expectance of a vacant chair."@en .	
+	rdfs:comment "Bezeichnet einen Professor, der eine außerordentliche Professur (aO) inne hat. Diese Professoren auf Anwartschaft lehrten ohne Lehrstuhl auf dessen Vakanz sie warteten."@de, "A professor who is an associate professor, who is teaching without holding a chair. Those professors taught in expectance of a vacant chair."@en .	
 		
 :Baccalaureus rdf:type owl:Class ;
   rdfs:subClassOf :Graduation ;
   rdfs:label "Baccalaureus"@de, "Baccalaureus"@en ;
-	dc:description "Bezeichnet den akademischen Grad eines Baccalaren/Baccalaureus. Kürzel: Bacc."@de , "Describes the academic degree of a bachelor/baccalaureus.  Abbreviation: Bacc."@en .
+	rdfs:comment "Bezeichnet den akademischen Grad eines Baccalaren/Baccalaureus. Kürzel: Bacc."@de , "Describes the academic degree of a bachelor/baccalaureus.  Abbreviation: Bacc."@en .
 		
 :Birth rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
