@@ -615,10 +615,10 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                    owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
 	      
 :pid rdf:type owl:DatatypeProperty ;
-                   rdfs:domain :Professor ;
+                   rdfs:domain :Person ;
 				   rdfs:range rdfs:Literal ;
-                   rdfs:comment "Professor Identification number in the original database."@en ,
-                                "Professoren Identifikationsnummer in der ursprünglichen Datenbank."@de ;
+                   rdfs:comment "Persons Identification number in the original database, including professors."@en ,
+                                "Personen Identifikationsnummer in der ursprünglichen Datenbank, inkl. Professoren."@de ;
                    rdfs:label "PID"@en ,
                               "PID"@de ;
                    owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
