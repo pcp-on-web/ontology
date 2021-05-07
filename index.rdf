@@ -697,11 +697,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Korrespondenzpartner"@de, "correspondent"@en ;
 	rdfs:comment "Verweist auf die aus einem Dokument hervorgehenden Korrespondenzpartner."@de, "Assigns to the correspondents given by a document."@en .
 
-:disputationHasDissertation rdf:type owl:ObjectProperty ;
-  rdfs:domain :Disputation ;
-  rdfs:range :Dissertation ;
-  rdfs:label "Disputation hat Dissertation"@de, "disputation has dissertation"@en ;
-	rdfs:comment "Weist einer Disputation eine Dissertation zu."@de, "Assigns a disputation to a dissertation."@en .
+:dissertationHasDisputation rdf:type owl:ObjectProperty ;
+  rdfs:domain :Dissertaion ;
+  rdfs:range :Disputation ;
+  rdfs:label "Dissertation hat Disputation"@de, "dissertation has disputation"@en ;
+	rdfs:comment "Weist eine Dissertation einer Disputation zu."@de, "Assigns a dissertation to a disputation."@en .
 
 :dissHasFaculty rdf:type owl:ObjectProperty ;
   rdfs:domain :Dissertation ;
