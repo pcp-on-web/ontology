@@ -67,7 +67,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :AcademicOffice rdf:type owl:Class ;
   rdfs:subClassOf :Office ;
   rdfs:label "Akademisches Amt"@de, "Academic office"@en ;
-	dc:description "Bezieht sich auf ein akademisches Amt an der Universität."@de , "Refers to an academic office at university."@en .
+	dc:description "Bezieht sich auf akademische Ämter, die ein Professor neben seinem Lehrstuhl an der Universität ausübte, bspw. als Rektor, Prorektor, Kanzler, Dekan usw.."@de , "Refers to academic offices a professor held next to his chair at the university, e.g. rector, prorector, chancellor, dean etc.."@en .
 		
 :Archive rdf:type owl:Class ;
   rdfs:subClassOf :Institution ;
@@ -84,7 +84,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :AsscociateProfessor rdf:type owl:Class ;
   rdfs:subClassOf :AcademicOffice ;
   rdfs:label "Außerordentlicher Professor"@de, "Associate Professor"@en ;
-	dc:description "Bezeichnet einen Professor, der eine außerordentliche Professur (aO) inne hat."@de, "A professor who is an associate professor."@en .	
+	dc:description "Bezeichnet einen Professor, der eine außerordentliche Professur (aO) inne hat. Diese Professoren auf Anwartschaft lehrten ohne Lehrstuhl auf dessen Vakanz sie warteten."@de, "A professor who is an associate professor, who is teaching without holding a chair. Those professors taught in expectance of a vacant chair."@en .	
 		
 :Baccalaureus rdf:type owl:Class ;
   rdfs:subClassOf :Graduation ;
@@ -198,7 +198,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :FacultyOfPhilosophy rdf:type owl:Class ;
   rdfs:subClassOf :Faculty ;
   rdfs:label "Philosophische Fakultät"@de, "Faculty of Philosophy"@en ;
-	dc:description "Bezeichnet die Artistenfakultät, die sich im Untersuchungszeitraum zu einer Philosophischen Fakultät entwickelte und an der propädeutisches Wissen für das weitergehende Studium an den übrigen höheren Fakultäten einer Volluniversität vermittelt wurde."@de, "Refers to the facultats artium which developed into a faculty of philosophy throughout the period of interest and at which propaedeutic knowledge was taught for further studies at one of the higher faculties of a full university."@en .
+	dc:description "Bezeichnet die Artesfakultät, die sich im Untersuchungszeitraum zu einer Philosophischen Fakultät entwickelte und an der propädeutisches Wissen für das weitergehende Studium an den übrigen höheren Fakultäten einer Volluniversität vermittelt wurde."@de, "Refers to the facultats artium which developed into a faculty of philosophy throughout the period of interest and at which propaedeutic knowledge was taught for further studies at one of the higher faculties of a full university."@en .
 		
 :FacultyOfTheology rdf:type owl:Class ;
   rdfs:subClassOf :Faculty ;
@@ -318,7 +318,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :Privatdozent rdf:type owl:Class ;
   rdfs:subClassOf :AcademicOffice ;
   rdfs:label "Privatdozent"@de, "Privatdozent"@en ;
-	dc:description "in proress: Bezeichnet Lehrkräfte ohne Professur, oft als PD bezeichnet."@de, "Refers to teachers without professorship, often referred to as PD."@en .
+	dc:description "in progress: Bezeichnet Lehrkräfte ohne Professur, oft als PD bezeichnet. Magister oder Doktoren, die mit Lehrbefähigung an der Universität lehrten, aber kein Salär erhielten, sondern von den direkten Einnahmen ihrer Lehrpraxis lebten."@de, "Refers to teachers without professorships, often referred to as PD. Those were Magister or Doctors who did not receive a salary but got paid directly for their teaching practices."@en .
 		
 :PrivateEducation rdf:type owl:Class ;
   rdfs:subClassOf :Education ;
@@ -330,12 +330,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :Lecture;
   rdfs:label "Private Vorlesung"@de, "Private Lecture"@en ;
 	dc:description "Bezieht sich auf private Vorlesungen (lectio privata, privatum, privatissimum), die ein Professor in einem kleinen Kreis von Studenten hält und die von den Studenten in der Regel an den Professor selbst bezahlt werden mussten."@de, "Refers to private lectures (lectio privata, privatum, privatissimum), given by a professor for a relatively small amount of students, which a 	student usually had to pay for directly to the Professor."@en .
-
-:PrivateLibrary rdf:type owl:Class ;
-  rdfs:subClassOf :Collection ;
-  rdfs:label "Privatbibliothek"@de, "Private library"@en ;
-	dc:description "Verweist auf die Privatbibliothek einer Person und kann u.U. durch publizierte Auktionskataloge erschlossen werden."@de, 
-		"Refers to the private library of a person. Can be reconstructed by published auction catalogues."@en .
 		
 :Professor rdf:type owl:Class ;
   rdfs:subClassOf :Person ;
@@ -356,7 +350,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	dc:description "Bezieht sich auf Publikationen."@de, "Refers to publications."@en .
 
 :PublicLecture rdf:type owl:Class ;
-  rdfs:subClassOf :Lecture;
+  rdfs:subClassOf :Lecture ;
   rdfs:label "Öffentliche Vorlesung"@de, "Public Lecture"@en ;
 	dc:description "Bezieht sich auf öffentliche Vorlesungen (lectio publica) von Professoren, die nicht extra vom Studenten bezahlt werden mussten."@de, 
 		"Refers to public lectures (lectio publica) of professors which had not to be payed extra by students."@en .
@@ -785,13 +779,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#hasPeriod> ;
   rdfs:label "hat Lebensabschnitt"@de, "has stage of life"@en ;
 	dc:description "Lebensabschnitt eines Professors."@de, "Stage of life of a professor."@en .
-
-:StudentAt rdf:type owl:ObjectProperty ;
-  rdfs:domain :Student ;
-  rdfs:range :University ;
-  rdfs:label "Student an"@de, "student at"@en ;
-	dc:description "Bezieht sich auf die Information an welcher Korporation ein Student studiert."@de,
-		"Refers to the information at which corporation a student studies."@en .
 	      
 :hasTitle rdf:type owl:ObjectProperty ;
   rdfs:domain :Document ;
@@ -824,33 +811,33 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "hält oder führt durch"@de, "does or gives"@en ;
 	dc:description "Bezieht sich auf Lehrpraktiken, die von einem Professor an einer Universität durchgeführt werden, z.B. Vorlesungen halten, Disputationen vorstehen oder Übungen geben."@de, "Refers to teaching practices which are done by a professor at a university, e.g. give lectures, preside over disputations or give excersizes."@en.
 		
-:isOpponent rdf:type owl:ObjectProperty ;
-  rdfs:domain :Student ;
+:Opponent rdf:type owl:ObjectProperty ;
+  rdfs:domain :Person ;
   rdfs:range :Disputation ;
   rdfs:label "ist Opponent"@de, "is Opponent"@en ;
-	dc:description "Bezeichnet den Opponenten einer Disputation."@de, "Refers to the opponent of a disputation."@en .
+	dc:description "Bezeichnet den Opponenten einer Disputation. Opponenten sind auf Titelblättern der gedruckten Disputationsschrift in der Regel nicht angegeben und konnten aus Lehrkräften sowie Studenten gleichermaßen bestehen. Zur Vollständigkeit und auch weil nicht ausgeschlossen werden kann, dass diese Elemete einer Disputation nicht doch in Disputationsschriften verzeichnet sind, hier diese Property."@de, "Refers to the opponent of a disputation. Opponents are usually not indicated on title pages of printed disputation papers aka dissertations and could consist of teachers as well as students.For the sake of completeness and also because it cannot be ruled out that these elements of a disputation are not listed in dissertations, here this property."@en .
 
-:isPraeses rdf:type owl:ObjectProperty ;
+:Praeses rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
   rdfs:range :Disputation ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#praeses> ;
   rdfs:label "ist Praeses"@de, "is Praeses"@en ;
 	dc:description "Bezeichnet den Professor, der während einer Disputation als Praeses auftritt und die Disputation leitet."@de, "Refers to the professor who is the praeses - the head - of a disputation."@en .
 
-:isPublisher rdf:type owl:ObjectProperty ;
+:Publisher rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
   rdfs:range :Publisher ;
   rdfs:label "ist Herausgeber"@de, "is publisher"@en ;
 	dc:description "Zeichnet eine Person als einen Herausgeber aus."@de, "Refers to a person as a publisher."@en .
 				     
-:isRespondent rdf:type owl:ObjectProperty ;
+:Respondent rdf:type owl:ObjectProperty ;
   rdfs:domain :Student ;
   rdfs:range :Disputation ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#respondent> ;
   rdfs:label "ist Respondent"@de, "is Respondent"@en ;
 	dc:description "Bezeichnet den Respondenten, der sich als Student der Disputation unterzieht."@de, "Refers to the respondent who as a student is undergoing the act of disputation."@en .
 				     
-:isStudent rdf:type owl:ObjectProperty ;
+:Student rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
   rdfs:range :Student ;
   rdfs:label "ist Student"@de, "is student"@en ;
