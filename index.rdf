@@ -831,38 +831,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "ist Praeses"@de, "is Praeses"@en ;
 	rdfs:comment "Bezeichnet den Professor, der während einer Disputation als Praeses auftritt und die Disputation leitet."@de, "Refers to the professor who is the praeses - the head - of a disputation."@en .
 
-:Publisher rdf:type owl:ObjectProperty ;
-  rdfs:domain :Professor ;
-  rdfs:range :Publisher ;
-  rdfs:label "ist Herausgeber"@de, "is publisher"@en ;
-	rdfs:comment "Zeichnet eine Person als einen Herausgeber aus."@de, "Refers to a person as a publisher."@en .
-				     
-:Respondent rdf:type owl:ObjectProperty ;
-  rdfs:domain :Student ;
-  rdfs:range :Disputation ;
-  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#respondent> ;
-  rdfs:label "ist Respondent"@de, "is Respondent"@en ;
-	rdfs:comment "Bezeichnet den Respondenten, der sich als Student der Disputation unterzieht."@de, "Refers to the respondent who as a student is undergoing the act of disputation."@en .
-				     
-:Student rdf:type owl:ObjectProperty ;
-  rdfs:domain :Professor ;
-  rdfs:range :Student ;
-  rdfs:label "ist Student"@de, "is student"@en ;
-	rdfs:comment "Weist einen Professor als Student aus."@de, "Refers to the Professor as a student."@en .
-
 :isVocated rdf:type owl:ObjectProperty ;
   rdfs:domain :Candidate ;
   rdfs:range :Professor ;
   rdfs:label "wird ernannt"@de, "is vocated"@en ;
 	rdfs:comment "Bezieht sich auf den von Universität und Landesherrschaft ausgewählten Kandidaten für eine Professur."@de, "Refers to the candidate for a professorship/or chair which had been negotiated by the university and the territorial authority."@en .
 
-### check FOAF 'knows' sameAs ###
-:knows rdf:type owl:ObjectProperty ;
-  rdfs:domain :Professor ;
-  rdfs:range :Person ;
-  rdfs:label "kennt"@de, "knows"@en ;
-	rdfs:comment "Verweist auf Verbindungen zwischen dem Professor und anderen Personen, z.B. auf Grundlage von Korrespondenz."@de, "Refers to a connection between a professor and another person, e.g. through correspondence."@en .
-	      
 :lectureHasDocument rdf:type owl:ObjectProperty ;
   rdfs:domain :Lecture ;
   rdfs:range :Document ;
@@ -926,7 +900,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                    rdfs:label "printer"@en ,
                               "Drucker"@de ;
                    owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
-	      
+	   
+:Publisher rdf:type owl:ObjectProperty ;
+  rdfs:domain :Professor ;
+  rdfs:range :Publisher ;
+  rdfs:label "ist Herausgeber"@de, "is publisher"@en ;
+	rdfs:comment "Zeichnet eine Person als einen Herausgeber aus."@de, "Refers to a person as a publisher."@en .
+				     	      
 :recommendationDocument rdf:type owl:ObjectProperty ;
   rdfs:domain :Recommendation ;
   rdfs:range :Document ;
@@ -945,12 +925,25 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Rechenschaftsbericht hat Fakultät"@de, "report has faculty"@en ;
 	rdfs:comment "Ordnet einen Rechenschaftsbericht einer Fakultät zu."@de, "Assigns a report to a faculty."@en .
 
+:Respondent rdf:type owl:ObjectProperty ;
+  rdfs:domain :Student ;
+  rdfs:range :Disputation ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#respondent> ;
+  rdfs:label "ist Respondent"@de, "is Respondent"@en ;
+	rdfs:comment "Bezeichnet den Respondenten, der sich als Student der Disputation unterzieht."@de, "Refers to the respondent who as a student is undergoing the act of disputation."@en .   
+	      
 :stageOfLifeLocation rdf:type owl:ObjectProperty ;
   rdfs:domain :StageOfLife ;
   rdfs:range :Location ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#periodPlace> ;
   rdfs:label "Ort Lebensabschnitt"@de, "location of stage of life"@en ;
 	rdfs:comment "Fügt einem Lebensabschnitt einer Person einen geografischen Ort zu."@de, "Adds a geographical location to a stage of life of a person."@en .
+	      
+:Student rdf:type owl:ObjectProperty ;
+  rdfs:domain :Professor ;
+  rdfs:range :Student ;
+  rdfs:label "ist Student"@de, "is student"@en ;
+	rdfs:comment "Weist einen Professor als Student aus."@de, "Refers to the Professor as a student."@en .
 	      
 :spouse rdf:type owl:ObjectProperty ;
   rdfs:domain :Family ;
