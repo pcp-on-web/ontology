@@ -120,7 +120,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Bezeichnet eine Körperschaft."@de, "Refers to a corporation or corporate body."@en .		
 
 :Correspondence rdf:type owl:Class ;
-  rdfs:subClassOf :Network ;
+  rdfs:subClassOf :StageOfLife ;
   rdfs:label "Korrespondenz"@de, "Correspondence"@en ;
 	rdfs:comment "Verweist auf Korrespondenzpartner einer Person."@de, "Refers to correspondence partners of a person."@en .
 
@@ -278,15 +278,10 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Verweist auf das Geschlecht Männlich."@de, "Refers to the gender male."@en .
 
 :Membership rdf:type owl:Class ;
-  rdfs:subClassOf :Network ;
+  rdfs:subClassOf :StageOfLife ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Membership> ;
   rdfs:label "Mitgliedschaft"@de, "Membership"@en ;
 	rdfs:comment "Verweist auf Mitgliedschaften einer Person in soziokulturellen und/oder politischen Gesellschaften, Sozietäten und weiterer Institutionen; auch Studentenverbindungen."@de, "Refers to the membership of a person at sociocultural and/or political societies or further institutions; also fraternities."@en .
-		
-:Network rdf:type owl:Class ;
-  rdfs:subClassOf :StageOfLife ;
-  rdfs:label "Netzwerk"@de, "Network"@en ;
-	rdfs:comment "in Arbeit: Dieses Konzept bezieht sich auf ... Personengeflechte ... dynamisch ... Kommunikationsräume ... Interaktion"@de , "..."@en .
 		
 :Office rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife;
