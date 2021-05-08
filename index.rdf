@@ -421,7 +421,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
     rdfs:comment "Das halbjährige Sommersemester dauert von April bis September."@de , "The biannual summer semester starts in April and ends in September."@en .
 
 :TeachingPractices rdf:type owl:Class ;
-  rdfs:subClassOf :University ;
+  rdfs:subClassOf :StageOfLife ;
   rdfs:label "Lehrpraktiken"@de, "Teaching Practices"@en ;
   	rdfs:comment "Beschreibt akademische Lehrpraktiken, die ein Professor an der Universität durchführt und welche durch Statuten, weitere Regularien und/oder durch Gewohnheit geregelt sind."@de, "Describes academic teaching practices which are regulated by the University's statutes or further regulations and/or customs."@en .
 		
@@ -508,6 +508,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                  xsd:gMonthDay ,
                  xsd:gYear ,
                  xsd:gYearMonth"""@en .
+				     
+:docYear rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Document ;
+  rdfs:range xsd:gYear ;
+  rdfs:label "Jahresangabe eines Dokuments"@de, "Year of document"@en ;
+	      rdfs:comment "Gibt das Publikationsjahr oder die Jahres-Datierung eines Dokuments an."@de, "Refers to the year of publication or the dating (year) of a document."@en .
 
 :enrollmentSemester rdf:type owl:DatatypeProperty ;
   rdfs:domain :Enrollment ;
@@ -555,8 +561,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :gnd rdf:type owl:DatatypeProperty , owl:FunctionalProperty ;
   rdfs:domain :Person ;
   rdfs:range rdfs:Literal ;
-  rdfs:label "GND/PND"@de, "GND/PND"@en ;
-  	rdfs:comment "GND oder PND Normadatei."@de, "GND or PND integrated authority file."@en .
+  rdfs:label "GND"@de, "GND"@en ;
+  	rdfs:comment "GND Normadatei."@de, "GND integrated authority file."@en .
 				     
 :latinForename rdf:type owl:DatatypeProperty ;
                    rdfs:domain :Person ;
@@ -622,12 +628,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                    rdfs:label "PID"@en ,
                               "PID"@de ;
                    owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
-
-:docYear rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Document ;
-  rdfs:range xsd:gYear ;
-  rdfs:label "Jahresangabe eines Dokuments"@de, "Year of document"@en ;
-	      rdfs:comment "Gibt das Publikationsjahr oder die Jahres-Datierung eines Dokuments an."@de, "Refers to the year of publication or the dating (year) of a document."@en .
+	      
+:pnd rdf:type owl:DatatypeProperty , owl:FunctionalProperty ;
+  rdfs:domain :Person ;
+  rdfs:range rdfs:Literal ;
+  rdfs:label "PND"@de, "PND"@en ;
+  	rdfs:comment "PND Normadatei."@de, "PND integrated authority file."@en .
 
 :reportDate rdf:type owl:DatatypeProperty, owl:FunctionalProperty ;
   rdfs:domain :Report ;
