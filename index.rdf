@@ -798,15 +798,15 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Vorlesung wird gehalten/angeboten in Semester"@de, "Lecture is offered/held in semester"@en ;
     rdfs:comment "Gibt das Semester an, in welchem eine Vorlesung gehalten bzw. angeboten wurde."@de,"Gives the semester at which a lecture had been hold or was offered"@en .				  				     
 	      
-:isCongratulant rdf:type owl:ObjectProperty ;
-  rdfs:domain :Professor ;
+:Congratulant rdf:type owl:ObjectProperty ;
+  rdfs:domain :Person ;
   rdfs:range :Dissertation ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#wellWisher> ;
   rdfs:label "ist Gratulant"@de, "is congratulant"@en ;
 	rdfs:comment "Bezeichnet den Gratulanten einer Publikation."@de, "Refers to the congratulant of a publication."@en .
 				     
-:isDedicatee rdf:type owl:ObjectProperty ;
-  rdfs:domain :Professor ;
+:Dedicatee rdf:type owl:ObjectProperty ;
+  rdfs:domain :Person ;
   rdfs:range :Dissertation ;
   rdfs:label "ist Widmungsempfänger"@de, "is dedicatee"@en ;
 	rdfs:comment "Bezeichnet den Widmunsgempfänger einer Publikation."@de, "Refers to the dedicatee of a publication."@en .
