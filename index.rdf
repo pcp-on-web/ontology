@@ -246,11 +246,17 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Bezeichnet eine Gelehrte Gesellschaft, die sich einer bestimmten Geistesströmung oder Disziplin widmete und aus Gelehrten und Gebildeten bestand sowie zumeist regional begrenzt agierte."@de, "Refers to a learned society which dealt with a certain discipline or ideas which gathered learned and educated people, mostly of regionaly importance."@en .
 		
 :Lecture rdf:type owl:Class ;
-  rdfs:subClassOf :TeachingPractices;
+  rdfs:subClassOf :TeachingPractices ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Lecture> ;
   rdfs:label "Vorlesung/Lektion"@de, "Lecture"@en ;
-	rdfs:comment "Bezieht sich auf Vorlesungen bzw. Lektionen (lectiones), die von einem Professor im Rahmen der universitären Lehre abgehalten werden."@de,
-		"Refers to lectures given by a professor at auniversity."@en .
+	rdfs:comment "Bezieht sich auf Vorlesungen bzw. Lektionen (lectiones), die von einem Professor im Rahmen der universitären Lehre in Vorlesungsverzeichnissen angekündigt wurden."@de,
+		"Refers to lectures announced by a professor in the curriculum of a university."@en .
+		
+:LectureDone rdf:type owl:Class ;
+  rdfs:subClassOf :Lecture ;
+  rdfs:label "abgehaltene Vorlesung/Lektion"@de, "Lecture done"@en ;
+	rdfs:comment "Bezieht sich auf Vorlesungen bzw. Lektionen (lectiones) die von Professoren nachweislich durchgeführt wurden, z.B. nachgewiesen in Rechenschaftsberichten."@de,
+		"Refers to lectures actually given by a professor and which can be proved, e.g. reports."@en .	
 		
 :Licentiatus rdf:type owl:Class ;
   rdfs:subClassOf :Graduation ;
