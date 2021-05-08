@@ -697,13 +697,26 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Candidate ;
   rdfs:label "bestätigt"@de, "confirms"@en ;
 	rdfs:comment "Landesherrschaft bestätigt den Kandidaten der Fakultät für eine Professur durch Ernennung."@de, "Territory ruler confirms the candidate for a professorship given by the faculty by vocation."@en .
-				     
+
+:Congratulant rdf:type owl:ObjectProperty ;
+  rdfs:domain :Person ;
+  rdfs:range :Dissertation ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#wellWisher> ;
+  rdfs:label "ist Gratulant"@de, "is congratulant"@en ;
+	rdfs:comment "Bezeichnet den Gratulanten einer Publikation."@de, "Refers to the congratulant of a publication."@en .
+
 :correspondent rdf:type owl:ObjectProperty ;
   rdfs:domain :Correspondence ;
   rdfs:range :Person ;
   rdfs:label "Korrespondenzpartner"@de, "correspondent"@en ;
 	rdfs:comment "Verweist auf die aus einem Dokument hervorgehenden Korrespondenzpartner."@de, "Assigns to the correspondents given by a document."@en .
 
+:Dedicatee rdf:type owl:ObjectProperty ;
+  rdfs:domain :Person ;
+  rdfs:range :Dissertation ;
+  rdfs:label "ist Widmungsempfänger"@de, "is dedicatee"@en ;
+	rdfs:comment "Bezeichnet den Widmunsgempfänger einer Publikation."@de, "Refers to the dedicatee of a publication."@en .	      
+	      
 :dissertationHasDisputation rdf:type owl:ObjectProperty ;
   rdfs:domain :Dissertation ;
   rdfs:range :Disputation ;
@@ -798,19 +811,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Semester ;
   rdfs:label "Vorlesung wird gehalten/angeboten in Semester"@de, "Lecture is offered/held in semester"@en ;
     rdfs:comment "Gibt das Semester an, in welchem eine Vorlesung gehalten bzw. angeboten wurde."@de,"Gives the semester at which a lecture had been hold or was offered"@en .				  				     
-	      
-:Congratulant rdf:type owl:ObjectProperty ;
-  rdfs:domain :Person ;
-  rdfs:range :Dissertation ;
-  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#wellWisher> ;
-  rdfs:label "ist Gratulant"@de, "is congratulant"@en ;
-	rdfs:comment "Bezeichnet den Gratulanten einer Publikation."@de, "Refers to the congratulant of a publication."@en .
-				     
-:Dedicatee rdf:type owl:ObjectProperty ;
-  rdfs:domain :Person ;
-  rdfs:range :Dissertation ;
-  rdfs:label "ist Widmungsempfänger"@de, "is dedicatee"@en ;
-	rdfs:comment "Bezeichnet den Widmunsgempfänger einer Publikation."@de, "Refers to the dedicatee of a publication."@en .
 				     
 :isDoing rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
