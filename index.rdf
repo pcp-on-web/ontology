@@ -360,11 +360,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Bezieht sich auf öffentliche Vorlesungen (lectio publica) von Professoren, die nicht extra vom Studenten bezahlt werden mussten."@de, 
 		"Refers to public lectures (lectio publica) of professors which had not to be payed extra by students."@en .
 		
-:Publisher rdf:type owl:Class ;
-  rdfs:subClassOf :Person ;
-  rdfs:label "Herausgeber"@de, "Publisher"@en ;
-	rdfs:comment "Nennt Herausgeber eines Dokuments."@de, "Gives publishers of a document."@en .
-		
 :Recommendation  rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
   rdfs:label "Empfehlung"@de, "Recommendation"@en ;
@@ -679,9 +674,9 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :author rdfs:type owl:ObjectProperty ;
   rdfs:domain :Document ;
   rdfs:range :Professor ;
-  rdfs:derivedFrom <https://d-nb.info/standards/elementset/gnd#author>, <http://purl.org/pcp-on-web/ontology#isTutor>, <http://purl.org/pcp-on-web/ontology#published> ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#author> <http://purl.org/pcp-on-web/ontology#published>, <https://d-nb.info/standards/elementset/gnd#author> ;
   rdfs:label "Verfasser"@de, "Author"@en ;
-	rdfs:comment "Bezeichnet die Autorschaft eines Dokuments.Zeichnet eine Person als einen Autoren aus. Autor wird hier im Falle einer Disputation als weiter Begriff verwendet, da Praeses und Respondent in Literaturdatenbanken oft beide als Autoren einer Dissertation angegeben werden."@de, "Gives the authorship of a document.Refers to a person as an author of a publication. In case of dissertations the notion author in the context of this ontology model must be considered flexible since literature databases often sign out either praeses or respondent as authors of dissertations."@en .
+	rdfs:comment "Weist den Professor als Autor eines Dokuments aus.Zeichnet eine Person als einen Autoren aus. Autor wird hier im Falle einer Disputation als weiter Begriff verwendet, da Praeses und Respondent in Literaturdatenbanken oft beide als Autoren einer Dissertation angegeben werden."@de, "Gives the authorship of a document.Refers to a person as an author of a publication. In case of dissertations the notion author in the context of this ontology model must be considered flexible since literature databases often sign out either praeses or respondent as authors of dissertations."@en .
 				     
 :child rdf:type owl:ObjectProperty ;
   rdfs:domain :Family ;
@@ -694,9 +689,9 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:domain :Territory ;
   rdfs:range :Candidate ;
   rdfs:label "bestätigt"@de, "confirms"@en ;
-	rdfs:comment "Landesherrschaft bestätigt den Kandidaten der Fakultät für eine Professur durch Ernennung."@de, "Territory ruler confirms the candidate for a professorship given by the faculty by vocation."@en .
+	rdfs:comment "Landesherrschaft bestätigt den Kandidaten der Fakultät für eine Professur durch urkundliche Ernennung."@de, "Territory ruler confirms the candidate for a professorship given by the faculty by a documented vocation."@en .
 
-:Congratulant rdf:type owl:ObjectProperty ;
+:congratulant rdf:type owl:ObjectProperty ;
   rdfs:domain :Person ;
   rdfs:range :Dissertation ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#wellWisher> ;
@@ -708,8 +703,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Person ;
   rdfs:label "Korrespondenzpartner"@de, "correspondent"@en ;
 	rdfs:comment "Verweist auf die aus einem Dokument hervorgehenden Korrespondenzpartner."@de, "Assigns to the correspondents given by a document."@en .
-
-:Dedicatee rdf:type owl:ObjectProperty ;
+	     
+:dedicatee rdf:type owl:ObjectProperty ;
   rdfs:domain :Person ;
   rdfs:range :Dissertation ;
   rdfs:label "ist Widmungsempfänger"@de, "is dedicatee"@en ;
@@ -816,13 +811,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "hält oder führt durch"@de, "does or gives"@en ;
 	rdfs:comment "Bezieht sich auf Lehrpraktiken, die von einem Professor an einer Universität durchgeführt werden, z.B. Vorlesungen halten, Disputationen vorstehen oder Übungen geben."@de, "Refers to teaching practices which are done by a professor at a university, e.g. give lectures, preside over disputations or give excersizes."@en.
 		
-:Opponent rdf:type owl:ObjectProperty ;
+:opponent rdf:type owl:ObjectProperty ;
   rdfs:domain :Person ;
   rdfs:range :Disputation ;
   rdfs:label "ist Opponent"@de, "is Opponent"@en ;
 	rdfs:comment "Bezeichnet den Opponenten einer Disputation. Opponenten sind auf Titelblättern der gedruckten Disputationsschrift in der Regel nicht angegeben und konnten aus Lehrkräften sowie Studenten gleichermaßen bestehen. Zur Vollständigkeit und auch weil nicht ausgeschlossen werden kann, dass diese Elemete einer Disputation nicht doch in Disputationsschriften verzeichnet sind, hier diese Property."@de, "Refers to the opponent of a disputation. Opponents are usually not indicated on title pages of printed disputation papers aka dissertations and could consist of teachers as well as students.For the sake of completeness and also because it cannot be ruled out that these elements of a disputation are not listed in dissertations, here this property."@en .
 
-:Praeses rdf:type owl:ObjectProperty ;
+:praeses rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
   rdfs:range :Disputation ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#praeses> ;
@@ -899,9 +894,9 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                               "Drucker"@de ;
                    owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
 	   
-:Publisher rdf:type owl:ObjectProperty ;
+:publisher rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
-  rdfs:range :Publisher ;
+  rdfs:range :Publicist ;
   rdfs:label "ist Herausgeber"@de, "is publisher"@en ;
 	rdfs:comment "Zeichnet eine Person als einen Herausgeber aus."@de, "Refers to a person as a publisher."@en .
 				     	      
@@ -929,7 +924,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Rechenschaftsbericht hat Fakultät"@de, "report has faculty"@en ;
 	rdfs:comment "Ordnet einen Rechenschaftsbericht einer Fakultät zu."@de, "Assigns a report to a faculty."@en .
 
-:Respondent rdf:type owl:ObjectProperty ;
+:respondent rdf:type owl:ObjectProperty ;
   rdfs:domain :Student ;
   rdfs:range :Disputation ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#respondent> ;
@@ -943,7 +938,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Ort Lebensabschnitt"@de, "location of stage of life"@en ;
 	rdfs:comment "Fügt einem Lebensabschnitt einer Person einen geografischen Ort zu."@de, "Adds a geographical location to a stage of life of a person."@en .
 	      
-:Student rdf:type owl:ObjectProperty ;
+:student rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
   rdfs:range :Student ;
   rdfs:label "ist Student"@de, "is student"@en ;
