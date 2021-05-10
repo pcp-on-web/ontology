@@ -342,7 +342,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :Publication ;
   rdfs:label "Programme und Reden"@de, "Programs and Speeches"@en ;
 	rdfs:comment "Bezieht sich auf gedruckte Universitätsprogramme und Reden."@de, "Refers to printed university programs and speeches."@en .
-		
+
+### DCMI BibliographicResource ###
 :Publication rdf:type owl:Class ;
   rdfs:subClassOf :Document ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Publication> ;
