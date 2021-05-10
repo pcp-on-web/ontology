@@ -349,6 +349,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Publikation"@de, "Publication"@en ;
 	rdfs:comment "Bezieht sich auf Publikationen."@de, "Refers to publications."@en .
 
+:Publicist rdf:type owl:Class ;
+  rdfs:subClassOf :StageOfLife;
+  rdfs:label "Publizist"@de, "Publicist"@en ;
+	rdfs:comment "Bezieht sich auf den Lebensabschnitt eines Professors als Publizist, als Autor oder Herausgeber auf dem zeitgenössischen Publikationsmarkt auftritt."@de, "Refers to the stage of a professor's life as a publicist, appearing as an author or editor on the contemporary publication market."@en .		
+		
 :PublicLecture rdf:type owl:Class ;
   rdfs:subClassOf :Lecture ;
   rdfs:label "Öffentliche Vorlesung"@de, "Public Lecture"@en ;
@@ -905,7 +910,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Document ;
   rdfs:label "Empfehlungsschreiben"@de, "letter of recommendation"@en ;
 	rdfs:comment "Verweist auf ein Empfehlungsschreiben."@de, "Refers to a letter of recommendation."@en .
-				     
+
+:relatedDocument rdf:type owl:ObjectProperty ;
+  rdfs:domain :StageOfLife;
+  rdfs:range :Document;
+  rdfs:label "Relevante Dokumente zu einem Lebensabschnitt"@de, "relevant documents of a stage of life"@en ;
+	rdfs:comment "Ordnet einem Lebensabschnitt Dokumente zu, z.B. "@de, ".."@en .	      
+	      
 :reportHasChair rdf:type owl:ObjectProperty ;
   rdfs:domain :Report ;
   rdfs:range :Chair ;
@@ -966,8 +977,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	
 #####################################################################################################################################################################
 
-				   
-### VD 16-18 DC ###
+				
 				     
 :derivedFrom rdf:type owl:ObjectProperty ;
   rdfs:domain owl:Thing;
@@ -975,10 +985,4 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "ist abgeleitet von"@de, "has been derived from"@en ;
 	rdfs:comment "Wird für das Alignment genutzt."@de, "Wird für das Alignment genutzt."@en .
 				     
-
-:relatedDocument rdf:type owl:ObjectProperty ;
-  rdfs:domain :StageOfLife;
-  rdfs:range :Document;
-  rdfs:label "Relevante Dokumente zu einem Labensabschnitt"@de, "relevant documents to a stage of life"@en ;
-	rdfs:comment "..."@de, ".."@en .
 	
