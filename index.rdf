@@ -509,12 +509,18 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                  xsd:gYear ,
                  xsd:gYearMonth"""@en .
 				     
-:docYear rdf:type owl:DatatypeProperty ;
+:docDate rdf:type owl:DatatypeProperty, owl:FunctionalProperty ;
   rdfs:domain :Document ;
-  rdfs:range xsd:gYear ;
-  rdfs:label "Jahresangabe eines Dokuments"@de, "Year of document"@en ;
-	      rdfs:comment "Gibt das Publikationsjahr oder die Jahres-Datierung eines Dokuments an."@de, "Refers to the year of publication or the dating (year) of a document."@en .
-
+  rdfs:range rdfs:Literal;
+  rdfs:label "Date Document"@en, "Datum Dokument"@de ;
+  	rdfs:comment """Zeitangabe eines Dokuments, z.B. Veröffentlichungsjahr, Datum eines Rechenschaftsberichts etc. ."@de, "The date or timespan of a document from a valid datatype, like publishing years or the given date of a report etc.
+		 xsd:date ,
+                 xsd:gDay ,
+                 xsd:gMonth ,
+                 xsd:gMonthDay ,
+                 xsd:gYear ,
+                 xsd:gYearMonth"""@en .
+				     
 :enrollmentSemester rdf:type owl:DatatypeProperty ;
   rdfs:domain :Enrollment ;
   rdfs:range :Semester ;
