@@ -674,9 +674,9 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :author rdfs:type owl:ObjectProperty ;
   rdfs:domain :Document ;
   rdfs:range :Professor ;
-  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#author> <http://purl.org/pcp-on-web/ontology#published>, <https://d-nb.info/standards/elementset/gnd#author> ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#author>, <http://purl.org/pcp-on-web/ontology#published>, <https://d-nb.info/standards/elementset/gnd#author> ;
   rdfs:label "Verfasser"@de, "Author"@en ;
-	rdfs:comment "Weist den Professor als Autor eines Dokuments aus.Zeichnet eine Person als einen Autoren aus. Autor wird hier im Falle einer Disputation als weiter Begriff verwendet, da Praeses und Respondent in Literaturdatenbanken oft beide als Autoren einer Dissertation angegeben werden."@de, "Gives the authorship of a document.Refers to a person as an author of a publication. In case of dissertations the notion author in the context of this ontology model must be considered flexible since literature databases often sign out either praeses or respondent as authors of dissertations."@en .
+	rdfs:comment "Weist den Professor als Autor eines Dokuments aus Autor wird hier im Falle einer Disputation als weiter Begriff verwendet, da Praeses und Respondent in Literaturdatenbanken oft beide als Autoren einer Dissertation angegeben werden."@de, "Gives the authorship of a document.Refers to a person as an author of a publication. In case of dissertations the notion author in the context of this ontology model must be considered flexible since literature databases often sign out either praeses or respondent as authors of dissertations."@en .
 				     
 :child rdf:type owl:ObjectProperty ;
   rdfs:domain :Family ;
