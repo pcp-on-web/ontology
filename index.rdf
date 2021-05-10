@@ -435,12 +435,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Lehrbuch"@de, "Textbook"@en ;
 	rdfs:comment "Bezeichnet ein Buch das Lehrinhalte eines Studiums didaktisch aufbereitet."@de, "Refers to books which offer a compilation of content in a certain field of interest."@en .
 		
-:Title rdf:type owl:Class ;
-  rdfs:subClassOf :Document ;
-  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#title> ;
-  rdfs:label "Titel"@de, "Title"@en ;
-	rdfs:comment "Gibt den Titel eines Dokuments an."@de, "Gives the title of a document."@en .
-		
 :University rdf:type owl:Class ;
   rdfs:subClassOf :Corporation ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Academy> ;
@@ -791,10 +785,10 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#hasPeriod> ;
   rdfs:label "hat Lebensabschnitt"@de, "has stage of life"@en ;
 	rdfs:comment "Lebensabschnitt eines Professors."@de, "Stage of life of a professor."@en .
-	      
-:hasTitle rdf:type owl:ObjectProperty ;
+
+### DCMI ###	      
+:title rdf:type owl:ObjectProperty ;
   rdfs:domain :Document ;
-  rdfs:range :Title ;
   rdfs:label "Titel eines Dokuments"@de, "title of a document"@en ;
 	rdfs:comment "Nennt den Titel eines Dokuments."@de, "Gives the title of a document."@en .
 				     
@@ -892,7 +886,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                    rdfs:label "printer"@en ,
                               "Drucker"@de ;
                    owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
-	   
+
+### DCMI Document ###
 :publisher rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
   rdfs:range :Publicist ;
