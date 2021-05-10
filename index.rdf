@@ -640,18 +640,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range rdfs:Literal ;
   rdfs:label "PND"@de, "PND"@en ;
   	rdfs:comment "PND Normadatei."@de, "PND integrated authority file."@en .
-
-:reportDate rdf:type owl:DatatypeProperty, owl:FunctionalProperty ;
-  rdfs:domain :Report ;
-  rdfs:range rdfs:Literal ;
-  rdfs:label "timespan of report"@en, "Zeitspanne eines Rechenschaftsberichts"@de ;
-  	rdfs:comment "Gibt die Zeitspanne an, die ein Rechenschaftsbericht umfasst."@de, """Gives the timespan of a report.
-		 xsd:date ,
-                 xsd:gDay ,
-                 xsd:gMonth ,
-                 xsd:gMonthDay ,
-                 xsd:gYear ,
-                 xsd:gYearMonth"""@en .
 				     
 ###  http://purl.org/pcp-on-web/ontology#surname
 :surname rdf:type owl:DatatypeProperty ;
@@ -683,7 +671,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 #				     Object Properties				     
 #####################################################################################################################################################################    
 
-:Author rdfs:type owl:ObjectProperty ;
+:author rdfs:type owl:ObjectProperty ;
   rdfs:domain :Document ;
   rdfs:range :Professor ;
   rdfs:derivedFrom <https://d-nb.info/standards/elementset/gnd#author>, <http://purl.org/pcp-on-web/ontology#isTutor>, <http://purl.org/pcp-on-web/ontology#published> ;
