@@ -660,6 +660,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 #####################################################################################################################################################################    
 
 :author rdfs:type owl:ObjectProperty ;
+  rdfs:subPropertyOf <http://purl.org/dc/terms/creator> ;
   rdfs:domain :Document ;
   rdfs:range :Professor ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#author>, <http://purl.org/pcp-on-web/ontology#published>, <https://d-nb.info/standards/elementset/gnd#author> ;
