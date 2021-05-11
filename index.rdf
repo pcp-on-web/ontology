@@ -101,7 +101,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Lehrstuhl"@de, "Chair"@en ;
 	rdfs:comment "Bezeichnet den Lehrstuhl bzw. das Fachgebiet an einer Universitätsfakultät."@de, "Designates the chair or subject at a university faculty."@en .
 
-### Anknüpfungspunkt für CIDOC ###
 :Collection rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
   rdfs:label "Sammlung"@de, "Collection"@en ;
@@ -154,6 +153,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :Document rdf:type owl:Class ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Document> ;
   rdfs:subClassOf <http://purl.org/spar/fabio/Expression> ;
+  rdfs:subClassOf <http://purl.org/dc/terms/BibliographicResource> ;
   rdfs:label "Dokument"@de, "Document"@en ;
 	rdfs:comment "Beschreibt ein Dokument."@de, "General Document."@en .
 		
@@ -337,7 +337,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Programme und Reden"@de, "Programs and Speeches"@en ;
 	rdfs:comment "Bezieht sich auf gedruckte Universitätsprogramme und Reden."@de, "Refers to printed university programs and speeches."@en .
 
-### DCMI BibliographicResource ###
 :Publication rdf:type owl:Class ;
   rdfs:subClassOf :Document ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Publication> ;
