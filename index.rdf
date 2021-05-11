@@ -67,17 +67,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :AcademicOffice rdf:type owl:Class ;
   rdfs:subClassOf :Office ;
   rdfs:label "Akademisches Amt"@de, "Academic office"@en ;
-	rdfs:comment "Bezieht sich auf akademische Ämter, die ein Professor neben seinem Lehrstuhl an der Universität ausübte, bspw. als Rektor, Prorektor, Kanzler, Dekan usw.."@de , "Refers to academic offices a professor held next to his chair at the university, e.g. rector, prorector, chancellor, dean etc.."@en .
-		
-:Archive rdf:type owl:Class ;
-  rdfs:subClassOf :Institution ;
-  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Archive> ;
-  rdfs:label "Archiv"@de, "Archive"@en ;
-	rdfs:comment "Bezieht sich auf ein Archiv."@de, "Refers to an archive."@en .
+	rdfs:comment "Akademische Ämter die ein Professor neben seinem Lehrstuhl an der Universität ausübte, bspw. als Rektor, Prorektor, Kanzler, Dekan usw. ."@de , "Academic offices a professor held next to his chair at the university, e.g. rector, prorector, chancellor, dean etc.."@en .
 
 :Article rdf:type owl:Class ;
-  rdfs:subClassOf :Publication;
-  rdfs:subClassOf <http://purl.org/spar/fabio/Article>;
+  rdfs:subClassOf :Publication ;
+  rdfs:subClassOf <http://purl.org/spar/fabio/Article> ;
   rdfs:label "Artikel"@de, "Article"@en ;
 	rdfs:comment "Bezeichnet einen Artikel in einem Journal, einer Zeitschrift, einer Zeitung oder einem Magazin."@de, "Refers to an article published in journals, newspapers or magazines."@en .
 		
@@ -674,7 +668,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Weist den Professor als Verfasser eines Dokuments aus. Verfasser wird hier im Falle einer Disputation als weiter Begriff verwendet, da Praeses und Respondent in Literaturdatenbanken wie VD17 oft beide Rollen als Verfasser einer Dissertation angegeben werden."@de, "Refers to the professor as an author of a document. In case of dissertations the notion author in the context of this ontology model must be considered flexible since literature databases such as VD17 often sign out either praeses or respondent as authors of dissertations."@en .
 				     
 :child rdf:type owl:ObjectProperty ;
-  rdfs:domain :Family ;  rdfs:range :Professor ;
+  rdfs:domain :Family ;  
+  rdfs:range :Professor ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#familyChild> ;
   rdfs:label "Kind"@de, "child"@en ;
 	rdfs:comment "Bezieht sich auf das Kind, Pflegekind, Adoptivkind eines Professors."@de, "Refers to the cild, foster child, adoptive child of a professor."@en .
