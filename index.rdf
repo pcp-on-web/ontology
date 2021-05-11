@@ -781,9 +781,9 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#hasPeriod> ;
   rdfs:label "hat Lebensabschnitt"@de, "has stage of life"@en ;
 	rdfs:comment "Lebensabschnitt eines Professors."@de, "Stage of life of a professor."@en .
-
-### DCMI ###	      
+	      
 :title rdf:type owl:ObjectProperty ;
+  rdfs:subPropertyOf <http://purl.org/dc/terms/title> ;
   rdfs:domain :Document ;
   rdfs:label "Titel eines Dokuments"@de, "title of a document"@en ;
 	rdfs:comment "Nennt den Titel eines Dokuments."@de, "Gives the title of a document."@en .
