@@ -333,13 +333,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :Person ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Professor> ;
   rdfs:label "Professor"@de, "Professor"@en ;
-	rdfs:comment "Bezieht sich auf ordentliche Professoren an frühneuzeitlichen Universitäten im deutschsprachigen Raum des Heiligen Römischen Reichs, deren Karrierewege im Fokus des für die Ontologie maßgebenden Forschungsprojektes liegen."@de,
-		"Refers full professors at early modern universities in the German-speaking area of the Holy Roman Empire whose career paths are the focus of the research project relevant to the given ontology."@en .
+	rdfs:comment "Bezeichnet ordentliche Professoren an frühneuzeitlichen Universitäten im deutschsprachigen Raum des Heiligen Römischen Reichs, deren Karrierewege im Fokus des für die Ontologie maßgebenden Forschungsprojektes liegen."@de,
+		"Refers to full or ordinary professors at early modern universities in the German-speaking area of the Holy Roman Empire whose career paths are the focus of the research project relevant to the given ontology."@en .
 
 :Professorship rdf:type owl:Class ;
   rdfs:subClassOf :AcademicOffice ;
   rdfs:label "Professur"@de, "Professorship"@en ;
-	rdfs:comment "Bezeichnet den Lehrstuhl eines Voll-Professors an einer Universitätsfakultät, der einem Fachgebiet zugeordnet ist."@de, "Designates the chair of a full Professor at a university faculty."@en .
+	rdfs:comment "Bezeichnet den Lehrstuhl eines ordentlichen Professors an einer Universitätsfakultät, der einem Fachgebiet zugeordnet ist."@de, "Designates the chair of a full or ordinary Professor at a university faculty."@en .
 		
 :ProgramsAndSpeeches rdf:type owl:Class ;
   rdfs:subClassOf :Publication ;
