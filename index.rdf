@@ -95,7 +95,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :Candidacy rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
   rdfs:label "Kandidatur"@de, "Candidacy"@en ;
-	rdfs:comment "Bezeichnet die Kandadatur einer Person, die im Zuge der Besetzung einer Professur als Kandidat gehandelt wird. Diese Person kann ein Kandidat ohne Lehrstuhl sein, aber auch ein amtierender Professor, der für einen anderen Lehrstuhl gehandelt wird."@de , "Refers to a candidacy of a person which is a candidate for a university chair or professorship. This person can be a candidate without a chair, but also an incumbent professor who is being traded for another chair."@en .
+	rdfs:comment "Bezeichnet die Kandidatur einer Person, die im Zuge der Besetzung einer Professur als Kandidat gehandelt wird. Diese Person kann ein Kandidat ohne Lehrstuhl sein, aber auch ein amtierender Professor, der für einen anderen Lehrstuhl gehandelt wird."@de , "Refers to a candidacy of a person which is a candidate for a university chair or professorship. This person can be a candidate without a chair, but also an incumbent professor who is being traded for another chair."@en .
 		
 :Chair rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
