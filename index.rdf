@@ -68,7 +68,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :AcademicOffice rdf:type owl:Class ;
   rdfs:subClassOf :Office ;
   rdfs:label "Akademisches Amt"@de, "Academic office"@en ;
-	rdfs:comment "Akademische Ämter die ein Professor neben seinem Lehrstuhl an der Universität ausübte, bspw. als Rektor, Prorektor, Kanzler, Dekan usw. ."@de , "Academic offices a professor held next to his chair at the university, e.g. rector, prorector, chancellor, dean etc.."@en .
+	rdfs:comment "Akademische Ämter wie Professuren sowie akademische Nebenämter, bspw. als Rektor, Prorektor, Kanzler, Dekan usw. ."@de , "Academic offices like professorships and further academic offices, e.g. rector, prorector, chancellor, dean etc.."@en .
 
 :Article rdf:type owl:Class ;
   rdfs:subClassOf :Publication ;
@@ -337,9 +337,9 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		"Refers full professors at early modern universities in the German-speaking area of the Holy Roman Empire whose career paths are the focus of the research project relevant to the given ontology."@en .
 
 :Professorship rdf:type owl:Class ;
-  rdfs:subClassOf :StageOfLife ;
-  rdfs:label "Lehrstuhl"@de, "Chair"@en ;
-	rdfs:comment "Bezeichnet den Lehrstuhl eines Professors an einer Universitätsfakultät, der einem Fachgebiet zugeordnet ist."@de, "Designates the chair or subject at a university faculty."@en .
+  rdfs:subClassOf :AcademicOffice ;
+  rdfs:label "Professur"@de, "Professorship"@en ;
+	rdfs:comment "Bezeichnet den Lehrstuhl eines Voll-Professors an einer Universitätsfakultät, der einem Fachgebiet zugeordnet ist."@de, "Designates the chair of a full Professor at a university faculty."@en .
 		
 :ProgramsAndSpeeches rdf:type owl:Class ;
   rdfs:subClassOf :Publication ;
