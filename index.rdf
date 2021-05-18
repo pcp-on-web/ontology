@@ -565,7 +565,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:domain :Person ;
   rdfs:range rdfs:Literal ;
   rdfs:label "GND"@de, "GND"@en ;
-  	rdfs:comment "GND Normadatei."@de, "GND integrated authority file."@en .
+  	rdfs:comment "GND Normadatei, inklusive ehemals genutzte PND."@de, "GND integrated authority file, including formerly used PND."@en .
 				     
 :latinForename rdf:type owl:DatatypeProperty ;
                    rdfs:domain :Person ;
@@ -631,12 +631,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                    rdfs:label "PID"@en ,
                               "PID"@de ;
                    owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
-	      
-:pnd rdf:type owl:DatatypeProperty , owl:FunctionalProperty ;
-  rdfs:domain :Person ;
-  rdfs:range rdfs:Literal ;
-  rdfs:label "PND"@de, "PND"@en ;
-  	rdfs:comment "PND Normadatei."@de, "PND integrated authority file."@en .
 				     
 ###  http://purl.org/pcp-on-web/ontology#surname
 :surname rdf:type owl:DatatypeProperty ;
