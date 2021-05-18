@@ -13,6 +13,7 @@
 @prefix gn: <http://www.geonames.org/ontology#> .
 @prefix fabio: <http://purl.org/spar/fabio/> .
 @prefix gndo: <http://d-nb.info/standards/elementset/gnd#> .
+@prefix wgs84: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 
 <http://pcp-on-web.de/ontology#> rdf:type owl:Ontology ;
 	<http://creativecommons.org/ns#attributionName> "AKSW", "HAB", "HTWK" ;
@@ -258,6 +259,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Bezeichnet den akademischen Grad eines Lizenziaten, eines Baccalaren mit Lehrbefugnis. Zugleich einen Doktor der evang. Theologie (bis 1947 an deutschen Hochschulen). Kürzel: lic."@de , "Describes the academic degree of a Licentiate, which means a bachelor/baccalaureus with the right to teach. Also the academic title of a doctor of Evangelic theology (valid until 1947 in Germany). Abbreviation: lic."@en .
 		
 :Location rdf:type owl:Class ;
+  rdfs:subClassOf wgs84:SpatialThing;	
   rdfs:label "Ort"@de, "Location"@en ;
 	rdfs:comment "Bezieht sich auf den geografischen Ort für Lebensabschnitte einer Person, Orte von Körperschaften, Medien (Verlagsort, Druckort), Ämtern, Landesherrschaft usw."@de, "Refers to the geographical location of life stages of persons, corporate bodies, media (printing, publishing), offices, territories and others."@en .
 
