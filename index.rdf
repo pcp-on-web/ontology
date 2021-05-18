@@ -16,7 +16,7 @@
 
 <http://pcp-on-web.de/ontology#> rdf:type owl:Ontology ;
 	<http://creativecommons.org/ns#attributionName> "AKSW", "HAB", "HTWK" ;
-	<http://purl.org/dc/elements/1.1/title> "Professorale Karrieremuster der Frühen Neuzeit - Version 0.1 (pcp-on-web)"@de,
+	dc:title "Professorale Karrieremuster der Frühen Neuzeit - Version 0.1 (pcp-on-web)"@de,
   	"Early Modern Professorial Career Patterns - Version 0.1 (pcp-on-web)"@en;
 	dc:license "http://creativecommons.org/licenses/by/4.0/" ;
 	dc:modified "2021-02-03";
