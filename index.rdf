@@ -108,6 +108,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		
 :Corporation rdf:type owl:Class ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Body> ;
+  rdfs:subClassOf <http://purl.org/dc/terms/Agent> ;
   rdfs:label "Körperschaft"@de, "Corporation"@en ;
 	rdfs:comment "Bezeichnet eine Körperschaft."@de, "Refers to a corporation or corporate body."@en .		
 
@@ -295,6 +296,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		
 :Person rdf:type owl:Class ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Person> ;
+  rdfs:subClassOf <http://purl.org/dc/terms/Agent> ;
   rdf:label "Person"@de, "Person"@en ;
 	rdfs:comment "Bezeichnet eine Person."@de, "Refers to a person."@en .
 		
