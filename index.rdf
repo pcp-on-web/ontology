@@ -108,7 +108,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		
 :Corporation rdf:type owl:Class ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Body> ;
-  rdfs:subClassOf <http://purl.org/dc/terms/Agent> ;
+  rdfs:subClassOf dc:Agent ;
   rdfs:label "Körperschaft"@de, "Corporation"@en ;
 	rdfs:comment "Bezeichnet eine Körperschaft."@de, "Refers to a corporation or corporate body."@en .		
 
@@ -296,7 +296,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		
 :Person rdf:type owl:Class ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Person> ;
-  rdfs:subClassOf <http://purl.org/dc/terms/Agent> ;
+  rdfs:subClassOf dc:Agent ;
   rdf:label "Person"@de, "Person"@en ;
 	rdfs:comment "Bezeichnet eine Person."@de, "Refers to a person."@en .
 		
@@ -662,12 +662,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 #####################################################################################################################################################################    
 
 :author rdfs:type owl:ObjectProperty ;
-  rdfs:subPropertyOf <http://purl.org/dc/terms/creator> ;
-  rdfs:domain :Document ;
+  rdfs:subPropertyOf :creator ;
   rdfs:range :Professor ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#author>, <http://purl.org/pcp-on-web/ontology#published>, <https://d-nb.info/standards/elementset/gnd#author> ;
   rdfs:label "Verfasser"@de, "Author"@en ;
-	rdfs:comment "Weist den Professor als Verfasser eines Dokuments aus. Verfasser wird hier im Falle einer Disputation als weiter Begriff verwendet, da Praeses und Respondent in Literaturdatenbanken wie VD17 oft beide Rollen als Verfasser einer Dissertation angegeben werden."@de, "Refers to the professor as an author of a document. In case of dissertations the notion author in the context of this ontology model must be considered flexible since literature databases such as VD17 often sign out either praeses or respondent as authors of dissertations."@en .
+  rdfs:comment "Weist den Professor als Verfasser eines Dokuments aus. Verfasser wird hier im Falle einer Disputation als weiterer Begriff verwendet, da Praeses und Respondent in Literaturdatenbanken wie VD17 oft beide Rollen als Verfasser einer Dissertation angegeben werden."@de, "Refers to the professor as an author of a document. In case of dissertations the notion author in the context of this ontology model must be considered flexible since literature databases such as VD17 often sign out either praeses or respondent as authors of dissertations."@en .
 				     
 :child rdf:type owl:ObjectProperty ;
   rdfs:domain :Family ;  
@@ -694,7 +693,14 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Person ;
   rdfs:label "Korrespondenzpartner"@de, "correspondent"@en ;
 	rdfs:comment "Verweist auf die aus einem Dokument hervorgehenden Korrespondenzpartner."@de, "Assigns to the correspondents given by a document."@en .
-	     
+
+:creator rdf:type owl:ObjectProperty ;
+  rdfs:subPropertyOf dc:creator;	      
+  rdfs:domain :Document ;
+  rdfs:range :Corporation, :Person  ;
+  rdfs:label "erstellt Dokument"@de, "create Document"@en ;
+	rdfs:comment "Urheber eines Dokuments"@de, "Creator of an document."@en .
+
 :dedicatee rdf:type owl:ObjectProperty ;
   rdfs:domain :Person ;
   rdfs:range :Dissertation ;
