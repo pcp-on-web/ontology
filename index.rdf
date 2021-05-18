@@ -851,12 +851,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Disputation ;
   rdfs:label "ist Opponent"@de, "is Opponent"@en ;
 	rdfs:comment "Bezeichnet den Opponenten einer Disputation. Opponenten sind auf Titelblättern der gedruckten Disputationsschrift in der Regel nicht angegeben und konnten aus Lehrkräften sowie Studenten gleichermaßen bestehen. Zur Vollständigkeit und auch weil nicht ausgeschlossen werden kann, dass diese Elemete einer Disputation nicht doch in Disputationsschriften verzeichnet sind, hier diese Property."@de, "Refers to the opponent of a disputation. Opponents are usually not indicated on title pages of printed disputation papers aka dissertations and could consist of teachers as well as students.For the sake of completeness and also because it cannot be ruled out that these elements of a disputation are not listed in dissertations, here this property."@en .
-	      
-:organizedIn rdf:type owl:ObjectProperty ;
-  rdfs:domain :Faculty ;
-  rdfs:range :Chair ;
-  rdfs:label "ist organisiert in"@de, "is organized in"@en ;
-	rdfs:comment "Ordnet einen Lehrstuhl einer Fakultät zu."@de, "Allocates a chair to a faculty."@en .
 
 :owns rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
