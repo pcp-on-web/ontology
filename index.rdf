@@ -946,7 +946,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:domain owl:Thing ;
   rdfs:range :Keyword ;
   rdfs:label "markiert"@de, "tagged"@en ;
-	rdfs:comment "..."de, "..."@en .
+  rdfs:comment "..."de, "..."@en .
 	      
 :territoryDocument rdf:type owl:ObjectProperty ;
   rdfs:domain :Territory ;
