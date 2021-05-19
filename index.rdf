@@ -678,7 +678,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	      
 :confirms rdf:type owl:ObjectProperty ;
   rdfs:domain :Territory ;
-  rdfs:range :Candidate ;
+  rdfs:range :Candidacy ;
   rdfs:label "bestätigt"@de, "confirms"@en ;
 	rdfs:comment "Landesherrschaft bestätigt den Kandidaten der Fakultät für eine Professur durch urkundliche Ernennung."@de, "Territory ruler confirms the candidate for a professorship given by the faculty by a documented vocation."@en .
 
@@ -767,7 +767,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Nennt Herausgeber eines Dokuments."@de, "Gives the publisher of a document."@en .
 				     
 :hasRecommendation rdf:type owl:ObjectProperty ;
-  rdfs:domain :Candidate ;
+  rdfs:domain :Candidacy ;
   rdfs:range :Recommendation ;
   rdfs:label "hat Empfehlung"@de, "has recommendation"@en ;
 	rdfs:comment "Gibt an, ob ein Kandidat ein Empfehlungsschreiben hat."@de, "Refers to any given recommendation of a candidate."@en .
@@ -810,7 +810,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Bezieht sich auf Lehrpraktiken, die von einem Professor an einer Universität durchgeführt werden, z.B. Vorlesungen halten, Disputationen vorstehen oder Übungen geben."@de, "Refers to teaching practices which are done by a professor at a university, e.g. give lectures, preside over disputations or give excersizes."@en.
 		
 :isVocated rdf:type owl:ObjectProperty ;
-  rdfs:domain :Candidate ;
+  rdfs:domain :Candidacy ;
   rdfs:range :Professor ;
   rdfs:label "wird ernannt"@de, "is vocated"@en ;
 	rdfs:comment "Bezieht sich auf den von Universität und Landesherrschaft ausgewählten Kandidaten für eine Professur."@de, "Refers to the candidate for a professorship/or chair which had been negotiated by the university and the territorial authority."@en .
@@ -835,7 +835,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 				     				     
 :nominates rdf:type owl:ObjectProperty ;
   rdfs:domain :Faculty ;
-  rdfs:range :Candidate ;
+  rdfs:range :Candidacy ;
   rdfs:label "nominiert"@de, "nominates"@en ;
 	rdfs:comment "Bezieht sich auf die Nominierungslisten einer Fakultät, die an die Verwaltung der Landesherrschaft erging und aus denen ein Kandidat durch die Landesherrschaft bestätigt wurde. Diese Listen liegen zumeist in zuständigen Archiven vor."@de,
 	"Refers to nomination lists which were handed in  to the territorial administration by the faculties in  order to choose and to vocate a  candidate for a university chair. Those lists can be found in relevant archives."@en .			     
