@@ -794,19 +794,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#hasPeriod> ;
   rdfs:label "hat Lebensabschnitt"@de, "has stage of life"@en ;
 	rdfs:comment "Lebensabschnitt eines Professors."@de, "Stage of life of a professor."@en .
-
-:tagged rdf:type owl:ObjectProperty ;
-  rdfs:domain owl:Thing ;
-  rdfs:range :Keyword ;
-  rdfs:derivedFrom <pcp:furtherInformation, pcp:note, pcp:keyword> ;
-  rdfs:label "markiert"@de, "tagged"@en ;
-	rdfs:comment "..."de, "..."@en .
-	      
-:title rdf:type owl:ObjectProperty ;
-  rdfs:subPropertyOf <http://purl.org/dc/terms/title> ;
-  rdfs:domain :Document ;
-  rdfs:label "Titel eines Dokuments"@de, "title of a document"@en ;
-	rdfs:comment "Nennt den Titel eines Dokuments."@de, "Gives the title of a document."@en .
 				     
 :heldInSemester rdf:type owl:ObjectProperty ;
   rdfs:domain :Lecture ;
@@ -954,12 +941,25 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Ehepartner"@de, "spouse"@en ;
 	rdfs:comment "Bezieht sich auf den Ehepartner (generisches Maskulinum) eines Professors."@de, "Refers to the spouse (generic masculine) of a professor."@en .
 
+:tagged rdf:type owl:ObjectProperty ;
+  rdfs:domain owl:Thing ;
+  rdfs:range :Keyword ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#furtherInformation>, <http://purl.org/pcp-on-web/ontology#note>, <http://purl.org/pcp-on-web/ontology#keyword> ;
+  rdfs:label "markiert"@de, "tagged"@en ;
+	rdfs:comment "..."de, "..."@en .
+	      
 :territoryDocument rdf:type owl:ObjectProperty ;
   rdfs:domain :Territory ;
   rdfs:range :Document ;
   rdfs:label "hat Dokument"@de, "has Document"@en ;
 	rdfs:comment "Bezieht sich auf das dazugehörige Dokument einer Ernennung, z.B. Bestallungsakte."@de, "Refers to documents of a vocation, like vocation files."@en .
-				     
+
+:title rdf:type owl:ObjectProperty ;
+  rdfs:subPropertyOf <http://purl.org/dc/terms/title> ;
+  rdfs:domain :Document ;
+  rdfs:label "Titel eines Dokuments"@de, "title of a document"@en ;
+	rdfs:comment "Nennt den Titel eines Dokuments."@de, "Gives the title of a document."@en .
+	      
 :vocates rdf:type owl:ObjectProperty ;
   rdfs:domain :Territory ;
   rdfs:range :Professor ;
