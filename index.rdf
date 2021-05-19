@@ -942,6 +942,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Bezieht sich auf den Ehepartner (generisches Maskulinum) eines Professors."@de, "Refers to the spouse (generic masculine) of a professor."@en .
 
 :tagged rdf:type owl:ObjectProperty ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#furtherInformation>, <http://purl.org/pcp-on-web/ontology#note>, <http://purl.org/pcp-on-web/ontology#keyword> ;
   rdfs:domain owl:Thing ;
   rdfs:range :Keyword ;
   rdfs:label "markiert"@de, "tagged"@en ;
