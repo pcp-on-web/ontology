@@ -794,6 +794,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#hasPeriod> ;
   rdfs:label "hat Lebensabschnitt"@de, "has stage of life"@en ;
 	rdfs:comment "Lebensabschnitt eines Professors."@de, "Stage of life of a professor."@en .
+
+:tagged rdf:type owl:ObjectProperty ;
+  rdfs:domain owl:Thing ;
+  rdfs:range :Keyword ;
+  rdfs:derivedFrom <pcp:furtherInformation, pcp:note, pcp:keyword> ;
+  rdfs:label "markiert"@de, "tagged"@en ;
+	rdfs:comment "..."de, "..."@en .
 	      
 :title rdf:type owl:ObjectProperty ;
   rdfs:subPropertyOf <http://purl.org/dc/terms/title> ;
