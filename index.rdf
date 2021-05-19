@@ -235,6 +235,10 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Institution"@de , "Institution"@en ;
 	rdfs:comment "..."@de, "..."@en .
 		
+:Keyword rdf:type owl:Class ;
+  rdfs:label "Schlagwort"@de, "Keyword"@en ;
+	rdfs:comment "Zusätzliche Informationen, die in den Datenbanken unter Schlagworten und Kommentarfunktionen verborgen sind und ganz unterschiedlicher Natur sein können."@de, "Additional information given under keyword or commentary in the original databases and which can be varied in content."@en . 
+		
 :LearnedSociety rdf:type owl:Class ;
   rdfs:subClassOf :Societies ;
   rdfs:label "Gelehrte Gesellschaft"@de, "Learned Society"@en ;
