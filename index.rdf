@@ -944,7 +944,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :tagged rdf:type owl:ObjectProperty ;
   rdfs:domain owl:Thing ;
   rdfs:range :Keyword ;
-  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#furtherInformation>, <http://purl.org/pcp-on-web/ontology#note>, <http://purl.org/pcp-on-web/ontology#keyword> ;
   rdfs:label "markiert"@de, "tagged"@en ;
 	rdfs:comment "..."de, "..."@en .
 	      
