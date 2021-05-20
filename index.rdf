@@ -69,7 +69,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :Office ;
   rdfs:label "Akademisches Amt"@de, "Academic office"@en ;
 	rdfs:comment "Akademische Ämter wie Professuren sowie akademische Nebenämter, bspw. als Rektor, Prorektor, Kanzler, Dekan usw. ."@de , "Academic offices like professorships and further academic offices, e.g. rector, prorector, chancellor, dean etc.."@en .
-
+		
 :Article rdf:type owl:Class ;
   rdfs:subClassOf :Publication ;
   rdfs:label "Artikel"@de, "Article"@en ;
@@ -846,7 +846,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :owns rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
   rdfs:range :Collection ;
-  rdfs:label "hat"@de, "owns"@en ;
+  rdfs:label "besitzt"@de, "owns"@en ;
 	rdfs:comment "Verweist auf Sammlungen eines Professors, z.B. Privatbibliotheken, Münzen und anderweitige fachspezifische Sammlungen, die bspw. für eine Person im Berufungsverfahren auf eine Professur von Bedeutung gewesen sein könnten."@de, "Refers to a collection of a professor, like private libraries, coins and other subject specific collections, which could have been important for the vocation of a professorship."@en .
 				     
 :parent rdf:type owl:ObjectProperty ;
