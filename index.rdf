@@ -73,12 +73,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :Article rdf:type owl:Class ;
   rdfs:subClassOf :Publication ;
   rdfs:label "Artikel"@de, "Article"@en ;
-	rdfs:comment "Bezeichnet einen Artikel in einem Journal, einer Zeitschrift, einer Zeitung oder einem Magazin."@de, "Refers to an article published in journals, newspapers or magazines."@en .
+	rdfs:comment "Artikel in einem Journal, einer Zeitschrift, einer Zeitung oder einem Magazin."@de, "Articles published in journals, newspapers or magazines."@en .
 		
 :AsscociateProfessor rdf:type owl:Class ;
   rdfs:subClassOf :AcademicOffice ;
   rdfs:label "Außerordentlicher Professor"@de, "Associate Professor"@en ;
-	rdfs:comment "Bezeichnet einen Professor, der eine außerordentliche Professur (aO) inne hat. Diese Professoren auf Anwartschaft lehrten ohne Lehrstuhl auf dessen Vakanz sie warteten."@de, "A professor who is an associate professor, who is teaching without holding a chair. Those professors taught in expectance of a vacant chair."@en .	
+	rdfs:comment "Bezeichnet einen Professor, der eine außerordentliche Professur (aO) inne hat. Diese Professoren auf Anwartschaft lehrten ohne Lehrstuhl und warteten in der regel auf Vakanz."@de, "Associate professors who teach without holding a chair. Those professors usually taught in expectance of a vacant chair."@en .	
 		
 :Baccalaureus rdf:type owl:Class ;
   rdfs:subClassOf :Graduation ;
