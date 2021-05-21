@@ -867,11 +867,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                    owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
 	      
 :praeses rdf:type owl:ObjectProperty ;
-  rdfs:domain :Professor ;
+  rdfs:domain :Person ;
   rdfs:range :Disputation ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#praeses> ;
   rdfs:label "ist Praeses"@de, "is Praeses"@en ;
-	rdfs:comment "Bezeichnet den Professor, der während einer Disputation als Praeses auftritt und die Disputation leitet."@de, "Refers to the professor who is the praeses - the head - of a disputation."@en .
+	rdfs:comment "Bezeichnet die Person, die während einer Disputation als Praeses auftritt und die Disputation leitet."@de, "Refers to the professor who is the praeses - the head - of a disputation."@en .
 	      
 :printer rdf:type owl:ObjectProperty ;
                    rdfs:domain :Dissertation ;
