@@ -685,12 +685,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "bestätigt"@de, "confirms"@en ;
 	rdfs:comment "Landesherrschaft bestätigt den Kandidaten der Fakultät für eine Professur durch urkundliche Ernennung."@de, "Territory ruler confirms the candidate for a professorship given by the faculty by a documented vocation."@en .
 
-:congratulant rdf:type owl:ObjectProperty ;
+:well-wisher rdf:type owl:ObjectProperty ;
   rdfs:domain :Person ;
   rdfs:range :Dissertation ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#wellWisher> ;
-  rdfs:label "ist Gratulant"@de, "is congratulant"@en ;
-	rdfs:comment "Bezeichnet den Gratulanten einer Publikation."@de, "Refers to the congratulant of a publication."@en .
+  rdfs:label "ist Gratulant"@de, "is well-wisher"@en ;
+	rdfs:comment "Bezeichnet den Gratulanten einer Publikation, bspw. den Gratulanten eines Disputanten. Diese Gratulanten-Schriften befinden sich zumeist am Ende einer Dissertation."@de, "Refers to the well-wisher of a publication, e.g. the well-wisher to a disputant. These well-wishing writings are usually found at the end of a dissertation."@en .
 
 :correspondent rdf:type owl:ObjectProperty ;
   rdfs:domain :Correspondence ;
