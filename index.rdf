@@ -283,10 +283,10 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Verweist auf Mitgliedschaften einer Person in soziokulturellen und/oder politischen Gesellschaften, Sozietäten und weiterer Institutionen; auch Studentenverbindungen."@de, "Refers to the membership of a person at sociocultural and/or political societies or further institutions; also fraternities."@en .
 		
 :Office rdf:type owl:Class ;
-  rdfs:subClassOf :AcademicOffice;
+  rdfs:subClassOf :StageOfLife;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Office> ;
   rdfs:label "Amt"@de, "Office"@en ;
-	rdfs:comment "Bezieht sich auf nicht akademische Ämter und Berufe von Professoren außerhalb der Universität, z.B. als Ärzte, Räte oder Anwälte."@de , "Refers to non-academic offices and professions of professors outside of the university, e.g. as physicians at court, lawyers or counselers."@en .
+	rdfs:comment "Bezieht sich auf nicht akademische Ämter bzw. Nebenberufe von Professoren außerhalb der Universität, z.B. als Ärzte, Räte oder Anwälte."@de , "Refers to non-academic offices resp. side professions of professors outside of the university, e.g. as physicians at court, lawyers or counselers."@en .
 
 :Pamphlet rdf:type owl:Class ;
   rdfs:subClassOf :Publication ;
