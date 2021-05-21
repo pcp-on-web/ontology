@@ -143,7 +143,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :Disputation rdf:type owl:Class ;
   rdfs:subClassOf :TeachingPractices;
   rdfs:label "Disputation"@de, "Disputation"@en ;
-	rdfs:comment "Bezieht sich auf die Disputationspraxis, dem wissenschaftlichen Streitgespräch. Es diente dem Zweck der Übung oder der Graduierung und verwies als Inaugural Disputation pro loco auf die Erlangung einer Professur. Die Dissertation ist das gedruckte Medium der Dispuation."@de, "Refers to the practice of disputation, a scientific debate which had the purpose of practising curricula or to obtain academic titles. It also refers to inaugural disputations of newly vocated professors. The printed medium of a disputation is the dissertation."@en .
+	rdfs:comment "Bezieht sich auf die Disputationspraxis, dem wissenschaftlichen Streitgespräch. Es diente dem Zweck der Übung, der Graduierung oder Lehrbefähigung (venia legendi) und verwies als Inauguraldisputation pro loco auf die Erlangung einer Professur. Die Dissertation ist das gedruckte Medium der Dispuation."@de, "Refers to the practice of disputation, a scientific debate which had the purpose of practising curricula, to obtain academic titles and the right to teach and give lectures (venia legendi). It also refers to inaugural disputations of newly vocated professors. The printed medium of a disputation is the dissertation."@en .
 		
 :Doctor rdf:type owl:Class ;
   rdfs:subClassOf :Graduation ;
@@ -292,13 +292,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :Publication ;
   rdfs:label "Streitschrift"@de, "Pamphlet"@en ;
 	rdfs:comment "Bezeichnet eine Streitschrift."@de, "Refers to a pamphlet."@en .
-		
-:Patron rdf:type owl:Class ;
-  rdfs:subClassOf :StageOfLife ;
-  rdfs:label "Patron"@de, "Patron"@en ;
-	rdfs:comment "Bezieht sich auf den Patron einer Person; hier auf in den Quellen identifizierbaren Förderer eines Professors und dessen Karriere."@de ,
-		"Refers to the patron of a person; here to the patron of a professor's career who can be identified by the sources."@en .	
-		
+			
 :Person rdf:type owl:Class ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Person> ;
   rdfs:subClassOf dc:Agent ;
@@ -316,10 +310,10 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Primäre Bildung"@de, "Primary education"@en ;
 	rdfs:comment "Bezieht sich auf die diversen vormodernen Schulformen und pädagogischen Bildungsangebote im Vorfeld eines Universitätsbesuchs im Territorium des Heiligen Römischen Reichs Deutscher Nation, z.B. Elementarschulen, Lateinschulen, Gymnasien, Klosterschulen, Pfarrschulen etc."@de , "Refers to the diverse early modern educational and pedagogical formas and institutions of primary education within the Holy Roman Empire."@en .		
 
-:Privatdozent rdf:type owl:Class ;
+:Lecturer rdf:type owl:Class ;
   rdfs:subClassOf :AcademicOffice ;
-  rdfs:label "Privatdozent"@de, "Privatdozent"@en ;
-	rdfs:comment "in progress: Bezeichnet Lehrkräfte ohne Professur, oft als PD bezeichnet. Magister oder Doktoren, die mit Lehrbefähigung an der Universität lehrten, aber kein Salär erhielten, sondern von den direkten Einnahmen ihrer Lehrpraxis lebten."@de, "Refers to teachers without professorships, often referred to as PD. Those were Magister or Doctors who did not receive a salary but got paid directly for their teaching practices."@en .
+  rdfs:label "Privatdozent"@de, "Lecturer"@en ;
+	rdfs:comment "in progress: Bezeichnet Lehrkräfte ohne Professur, oft als PD bezeichnet. Magister oder Doktoren, die mit Lehrbefähigung (venia legendi/docendi) an der Universität lehrten, aber kein Salär erhielten, sondern von den direkten Einnahmen ihrer Lehrpraxis lebten."@de, "Refers to teachers without professorships but the permission to teach (venia legendi/docendi), often referred to as PD. Those were Magister or Doctors who did not receive a salary but got paid directly for their teaching practices."@en .
 		
 :PrivateEducation rdf:type owl:Class ;
   rdfs:subClassOf :Education ;
