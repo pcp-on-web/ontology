@@ -817,7 +817,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Faculty ;
   rdfs:label "Vorlesung hat Fakultät"@de, "lecture has faculty"@en ;
 	rdfs:comment "Weist eine Vorlesung einer Fakultät zu."@de, "Assigns a lecture to a faculty."@en .
-				     
+	      
 :membershipSociety rdf:type owl:ObjectProperty ;
   rdfs:domain :Membership ;
   rdfs:range :Societies ;
@@ -865,7 +865,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Disputation ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#praeses> ;
   rdfs:label "ist Praeses"@de, "is Praeses"@en ;
-	rdfs:comment "Bezeichnet die Person, die während einer Disputation als Praeses auftritt und die Disputation leitet."@de, "Refers to the professor who is the praeses - the head - of a disputation."@en .
+	rdfs:comment "Bezeichnet die Person, die während einer Disputation als Praeses auftritt und die Disputation leitet."@de, "Refers to the person who is the praeses - the head - of a disputation."@en .
 	      
 :printer rdf:type owl:ObjectProperty ;
                    rdfs:domain :Dissertation ;
@@ -877,7 +877,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                               "Drucker"@de ;
                    owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
 
-### DCMI Document ###
 :publisher rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
   rdfs:range :Publicist ;
@@ -958,8 +957,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Professor ;
   rdfs:label "beruft"@de, "vocates"@en ;
 	rdfs:comment "Landesherrschaft beruft bzw. bestätigt und ernennt einen Professor."@de, "Territorial rulership vocates or confirms a Professor."@en .
-				     
-###CRM P15 was influenced by ###
+
 :wasInfluencedBy rdf:type owl:ObjectProperty ;
   rdfs:domain :Territory ;
   rdfs:range :Statutes ;
