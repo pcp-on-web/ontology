@@ -64,13 +64,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 #################################################################
 #		Classes
 #################################################################
-
-:AcademicDegree rdf:type owl:Class ;
-  rdfs:subClassOf :Graduation ;
-  rdfs:subClassOf <https://d-nb.info/standards/elementset/gnd#academicDegree> ;
-  rdfs:label "Akademischer Grad"@de, "Academic Degree"@en ;
-	dc:description "Bezeichnet einen akademischen Grad, verweist aber im frühneuzeitlichen Zusammenhang dieser Ontologie nicht, wie die verknüpfte GNDO, auf die Erlangung eines Akademischen Grads als Leistungsnachweis, sondern als Standesbezeichnung."@de , "Refers to Academic degrees. In an early modern context those are rather understood as proof of social ranking than as proof of qualification."@en .		
-		
+	
 :AcademicOffice rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
   rdfs:label "Akademisches Amt"@de, "Academic office"@en ;
@@ -231,7 +225,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :StageOfLife ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Graduation> ;
   rdfs:label "Abschluss"@de, "Graduation"@en ;
-	rdfs:comment "Bezeichnet einen Abschluss an einer Schule oder Universität."@de, "Refers to a graduation at a school or university."@en .
+	rdfs:comment "Bezieht sich auf einen Abschluss an einer Schule oder Universität. Dieser kann durch eine Promotion zum Magister, Baccalaureus, Lizentiat, Doktor belegt sein, bspw. über eine pro gradu disputatio."@de, "Refers to a graduation at a school or university to the degrees of doctor, magister, baccalaureus, licentiate, e.g. proven via a pro gradu disputatio."@en .
 		
 :Honour rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
@@ -260,7 +254,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Vorlesung/Lektion"@de, "Lecture"@en ;
 	rdfs:comment "Bezieht sich auf Vorlesungen bzw. Lektionen (lectiones), die von einem Professor im Rahmen der universitären Lehre in Vorlesungsverzeichnissen angekündigt wurden."@de,
 		"Refers to lectures announced by a professor in the curriculum of a university."@en .
-		
+
+:Lecturer rdf:type owl:Class ;
+  rdfs:subClassOf :AcademicOffice ;
+  rdfs:label "Privatdozent"@de, "Lecturer"@en ;
+	rdfs:comment "in progress: Bezeichnet Lehrkräfte ohne Professur, oft als PD bezeichnet. Magister oder Doktoren, die mit Lehrbefähigung (venia legendi/docendi) an der Universität lehrten, aber kein Salär erhielten, sondern von den direkten Einnahmen ihrer Lehrpraxis lebten."@de, "Refers to teachers without professorships but the permission to teach (venia legendi/docendi), often referred to as PD. Those were Magister or Doctors who did not receive a salary but got paid directly for their teaching practices."@en .
+			
 :LectureDone rdf:type owl:Class ;
   rdfs:subClassOf :Lecture ;
   rdfs:label "abgehaltene Vorlesung/Lektion"@de, "Lecture done"@en ;
@@ -326,12 +325,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Privatbibliothek"@de, "Private library"@en ;
 	dc:description "Verweist auf die Privatbibliothek einer Person und kann u.U. durch publizierte Auktionskataloge erschlossen werden."@de, 
 		"Refers to the private library of a person. Can be reconstructed by published auction catalogues."@en .		
-		
-:Lecturer rdf:type owl:Class ;
-  rdfs:subClassOf :AcademicOffice ;
-  rdfs:label "Privatdozent"@de, "Lecturer"@en ;
-	rdfs:comment "in progress: Bezeichnet Lehrkräfte ohne Professur, oft als PD bezeichnet. Magister oder Doktoren, die mit Lehrbefähigung (venia legendi/docendi) an der Universität lehrten, aber kein Salär erhielten, sondern von den direkten Einnahmen ihrer Lehrpraxis lebten."@de, "Refers to teachers without professorships but the permission to teach (venia legendi/docendi), often referred to as PD. Those were Magister or Doctors who did not receive a salary but got paid directly for their teaching practices."@en .
-		
+			
 :PrivateEducation rdf:type owl:Class ;
   rdfs:subClassOf :Education ;
   rdfs:label "Privatunterricht"@de, "Private education"@en ;
