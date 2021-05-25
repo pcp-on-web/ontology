@@ -684,12 +684,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Kind"@de, "child"@en ;
 	rdfs:comment "Bezieht sich auf das Kind, Pflegekind, Adoptivkind eines Professors."@de, "Refers to the cild, foster child, adoptive child of a professor."@en .
 	      
-:confirms rdf:type owl:ObjectProperty ;
-  rdfs:domain :Territory ;
-  rdfs:range :Candidacy ;
-  rdfs:label "bestätigt"@de, "confirms"@en ;
-	rdfs:comment "Landesherrschaft bestätigt den Kandidaten der Fakultät für eine Professur durch urkundliche Ernennung."@de, "Territory ruler confirms the candidate for a professorship given by the faculty by a documented vocation."@en .
-
 :correspondent rdf:type owl:ObjectProperty ;
   rdfs:domain :Correspondence ;
   rdfs:range :Person ;
