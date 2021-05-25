@@ -115,12 +115,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Body> ;
   rdfs:subClassOf dc:Agent ;
   rdfs:label "Körperschaft"@de, "Corporation"@en ;
-	rdfs:comment "Bezeichnet eine Körperschaft."@de, "Refers to a corporation or corporate body."@en .		
-
-:Correspondence rdf:type owl:Class ;
-  rdfs:subClassOf :StageOfLife ;
-  rdfs:label "Korrespondenz"@de, "Correspondence"@en ;
-	rdfs:comment "Verweist auf Korrespondenzpartner einer Person."@de, "Refers to correspondence partners of a person."@en .
+	rdfs:comment "Bezeichnet eine Körperschaft."@de, "Refers to a corporation or corporate body."@en .
 
 :Curriculum rdf:type owl:Class ;
   rdfs:subClassOf :Document ;
@@ -393,6 +388,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Semester"@de, "Semester"@en ;
     rdfs:comment "Abschnitt des Akademischen Jahrs. Es besteht aus einem Sommer- und einem Wintersemester."@de ,
 		"Part of an academic year. It consists of a summer- and a wintersemester"@en .
+		
+:Seminar rdf:type owl:Class ;
+  rdfs:subClassOf :TeachingPractices ;
+  rdfs:label "Seminar"@de, "Seminar"@en ;
+    rdfs:comment "Bezieht sich auf die Lehrveranstaltung eines Seminars, in den Quellen wie im Fall Uni Helmstedt mit Seminarium bezeichnet."@de ,"Refers to the course of a seminar, referred to in the sources as Seminarium, as in the case of the University of Helmstedt."@en .	
 		
 :Societies rdf:type owl:Class ;
   rdfs:subClassOf :Institution ;
@@ -667,11 +667,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Kind"@de, "child"@en ;
 	rdfs:comment "Bezieht sich auf das Kind, Pflegekind, Adoptivkind eines Professors."@de, "Refers to the cild, foster child, adoptive child of a professor."@en .
 	      
-:correspondent rdf:type owl:ObjectProperty ;
-  rdfs:domain :Correspondence ;
-  rdfs:range :Person ;
-  rdfs:label "Korrespondenzpartner"@de, "correspondent"@en ;
-	rdfs:comment "Verweist auf die aus einem Dokument hervorgehenden Korrespondenzpartner."@de, "Assigns to the correspondents given by a document."@en .
+:correspondence rdf:type owl:ObjectProperty ;
+  rdfs:subPropertyOf foaf:knows ;
+  rdfs:domain :Person ;
+  rdfs:label "Korrespondenz"@de, "correspondence"@en ;
+	rdfs:comment "Verweist auf die aus einem Dokument hervorgehende Korrespondenz zwischen Personen."@de, "Assigns to the correspondence between persons."@en .
 
 :creator rdf:type owl:ObjectProperty ;
   rdfs:subPropertyOf dc:creator;	      
