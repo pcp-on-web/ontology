@@ -79,6 +79,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :AcademicOffice ;
   rdfs:label "Außerordentlicher Professor"@de, "Associate Professor"@en ;
 	rdfs:comment "Bezeichnet einen Professor, der eine außerordentliche Professur (aO) inne hat. Diese Professoren auf Anwartschaft lehrten ohne Lehrstuhl und warteten in der regel auf Vakanz."@de, "Associate professors who teach without holding a chair. Those professors usually taught in expectance of a vacant chair."@en .	
+
+:AuctionCatalogue rdf:type owl:Class ;
+  rdfs:subClassOf :Publication ;
+  rdfs:label "Auktionskatalog"@de, "Auction catalogue"@en ;
+	dc:description "Bezeichnet einen Auktionskatalog."@de, "Refers to an auction catalogue."@en .		
 		
 :Baccalaureus rdf:type owl:Class ;
   rdfs:subClassOf :Graduation ;
@@ -310,6 +315,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Primäre Bildung"@de, "Primary education"@en ;
 	rdfs:comment "Bezieht sich auf die diversen vormodernen Schulformen und pädagogischen Bildungsangebote im Vorfeld eines Universitätsbesuchs im Territorium des Heiligen Römischen Reichs Deutscher Nation, z.B. Elementarschulen, Lateinschulen, Gymnasien, Klosterschulen, Pfarrschulen etc."@de , "Refers to the diverse early modern educational and pedagogical formas and institutions of primary education within the Holy Roman Empire."@en .		
 
+:PrivateLibrary rdf:type owl:Class ;
+  rdfs:subClassOf :Collection ;
+  rdfs:label "Privatbibliothek"@de, "Private library"@en ;
+	dc:description "Verweist auf die Privatbibliothek einer Person und kann u.U. durch publizierte Auktionskataloge erschlossen werden."@de, 
+		"Refers to the private library of a person. Can be reconstructed by published auction catalogues."@en .		
+		
 :Lecturer rdf:type owl:Class ;
   rdfs:subClassOf :AcademicOffice ;
   rdfs:label "Privatdozent"@de, "Lecturer"@en ;
@@ -748,6 +759,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Graduation ;
   rdfs:label "Bildungsabschnitt hat Abschluss"@de, "education has graduation"@en ;
 	rdfs:comment "Bezieht sich auf den Abschluss eines Bildungsweges im Lebensabschnitt eines Professors."@de, "Refers to the graduation in education of a professors stage of life."@en .
+
+:hasAuctionCatalogue rdf:type owl:ObjectProperty ;
+  rdfs:domain :PrivateLibrary ;
+  rdfs:range :AuctionCatalogue ;
+  rdfs:label "hat Auktionskatalog"@de, "has auction catalogue"@en ;
+	dc:description "Verknüpft eine Privatbibliothek mit einem Auktionskatalog."@de, "Adds an auction catalogue to a private library."@en .	      
 	      
 :hasPublisher rdf:type owl:ObjectProperty ;
   rdfs:domain :Document ;
