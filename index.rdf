@@ -65,6 +65,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 #		Classes
 #################################################################
 
+:AcademicDegree rdf:type owl:Class ;
+  rdfs:subClassOf :Graduation ;
+  rdfs:subClassOf <https://d-nb.info/standards/elementset/gnd#academicDegree> ;
+  rdfs:label "Akademischer Grad"@de, "Academic Degree"@en ;
+	dc:description "Bezeichnet einen akademischen Grad, verweist aber im frühneuzeitlichen Zusammenhang dieser Ontologie nicht, wie die verknüpfte GNDO, auf die Erlangung eines Akademischen Grads als Leistungsnachweis, sondern als Standesbezeichnung."@de , "Refers to Academic degrees. In an early modern context those are rather understood as proof of social ranking than as proof of qualification."@en .		
+		
 :AcademicOffice rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
   rdfs:label "Akademisches Amt"@de, "Academic office"@en ;
