@@ -754,12 +754,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "hat Matrikel"@de, "has enrollment"@en ;
 	rdfs:comment "Verweist auf eine Immatrikulation einer Person an einer Universität."@de, "Refers to the enrollment of a person at a university."@en .
 
-:hasGraduation rdf:type owl:ObjectProperty ;
-  rdfs:domain :Education ;
-  rdfs:range :Graduation ;
-  rdfs:label "Bildungsabschnitt hat Abschluss"@de, "education has graduation"@en ;
-	rdfs:comment "Bezieht sich auf den Abschluss eines Bildungsweges im Lebensabschnitt eines Professors."@de, "Refers to the graduation in education of a professors stage of life."@en .
-
 :hasAuctionCatalogue rdf:type owl:ObjectProperty ;
   rdfs:domain :PrivateLibrary ;
   rdfs:range :AuctionCatalogue ;
