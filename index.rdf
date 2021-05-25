@@ -901,7 +901,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Ordnet einen Rechenschaftsbericht einer Fakultät zu."@de, "Assigns a report to a faculty."@en .
 
 :respondent rdf:type owl:ObjectProperty ;
-  rdfs:domain :Student ;
+  rdfs:domain :Person ;
   rdfs:range :Disputation ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#respondent> ;
   rdfs:label "ist Respondent"@de, "is Respondent"@en ;
