@@ -962,11 +962,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "beruft"@de, "vocates"@en ;
 	rdfs:comment "Landesherrschaft beruft bzw. bestätigt und ernennt einen Professor."@de, "Territorial rulership vocates or confirms a Professor."@en .
 
-:wasInfluencedBy rdf:type owl:ObjectProperty ;
+:ratifies rdf:type owl:ObjectProperty ;
   rdfs:domain :Territory ;
   rdfs:range :Statutes ;
   rdfs:label "wurde beeinflusst durch"@de, "was influenced by"@en ;
-    rdfs:comment "Wie P15 Cidoc CRM ... ."@de,"Like P15 Cidoc CRM ... ."@en .
+    rdfs:comment "Die Landesherrschaft genehmigt bzw. ratifziert die von einem Gremium entworfenen Statuten einer Universität."@de,"The sovereign rulership approves or ratifies the statutes of a university usually drafted by a committee."@en .
 
 :well-wisher rdf:type owl:ObjectProperty ;
   rdfs:domain :Person ;
