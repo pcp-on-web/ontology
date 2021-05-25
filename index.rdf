@@ -242,12 +242,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :Keyword rdf:type owl:Class ;
   rdfs:label "Schlagwort"@de, "Keyword"@en ;
 	rdfs:comment "Zusätzliche Informationen, die in den Datenbanken unter Schlagworten und Kommentarfunktionen verborgen sind und ganz unterschiedlicher Natur sein können."@de, "Additional information given under keyword or commentary in the original databases and which can be varied in content."@en . 
-		
-:LearnedSociety rdf:type owl:Class ;
-  rdfs:subClassOf :Societies ;
-  rdfs:label "Gelehrte Gesellschaft"@de, "Learned Society"@en ;
-	rdfs:comment "Bezeichnet eine Gelehrte Gesellschaft, die sich einer bestimmten Geistesströmung oder Disziplin widmete und aus Gelehrten und Gebildeten bestand sowie zumeist regional begrenzt agierte."@de, "Refers to a learned society which dealt with a certain discipline or ideas which gathered learned and educated people, mostly of regionaly importance."@en .
-		
+				
 :Lecture rdf:type owl:Class ;
   rdfs:subClassOf :TeachingPractices ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Lecture> ;
@@ -392,12 +387,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#School> ;
   rdfs:label "Schule"@de, "School"@en ;
 	rdfs:comment "Bezeichnet Schulen für die primäre Bildung."@de, "Refers to schools for primary education."@en .
-		
-:SecretSociety rdf:type owl:Class ;
-  rdfs:subClassOf :Societies ;
-  rdfs:label "Geheimgesellschaft"@de, "Secret Society"@en ;
-	rdfs:comment "Bezeichnet Geheimgesellschaften wie Freimaurer oder Illuminaten, etc."@de, "Refers to secret societies like Freemasons or Illuminati etc."@en .
-		
+			
 :Semester rdf:type owl:Class ;
   rdfs:subClassOf :University ;
   rdfs:label "Semester"@de, "Semester"@en ;
@@ -408,7 +398,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :Institution ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#AcademicSociety> ;
   rdfs:label "Gesellschaften"@de, "Societies"@en ;
-	rdfs:comment "Bezeichnet Gesellschaften, wie Gelehrtengesellschaften, literarische Salons oder Lesegesellschaften. Außerdem Sozietäten mit strukturierter Körperschaft und obrigkeitlicher Protégierung (z.B. Akademie der Wissenschaften in Berlin)."@de, "Refers to societies like Learned Societies, Literary salons or Reading Societies. Furthermore societies with structured corporate body and most commonly protection and financing by the territory ruler, like the Akademie der Wissenschaften in Berlin."@en .
+	rdfs:comment "Bezeichnet Gesellschaften, wie Gelehrtengesellschaften, die sich einer bestimmten Geistesströmung oder Disziplin widmeten und aus Gelehrten und Gebildeten bestand sowie zumeist regional begrenzt agierte. Mit Gesellschaften konnten auch literarische Salons oder Lesegesellschaften gemeint sein. Außerdem Sozietäten mit strukturierter Körperschaft und obrigkeitlicher Protégierung (z.B. Akademie der Wissenschaften in Berlin). Des Weiteren sind mit Gesellschaften unter Umständen auch Geheimgesellschaften wie Freimaurer oder Illuminaten gemeint."@de, "Refers to societies like Learned Societies, which usually dealt with a certain discipline or ideas and which gathered learned and educated people, mostly of regionaly importance. Societies could also refer to literary salons or reading societies. Furthermore, societies with structured corporate body and most commonly protection and financing by the territory ruler, like the Akademie der Wissenschaften in Berlin. Furthermore societies could also refer to secret societies like Freemasons or Illuminati."@en .
 
 :StageOfLife rdf:type owl:Class ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#PeriodOfLife> ;
