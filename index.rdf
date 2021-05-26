@@ -687,7 +687,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subPropertyOf dc:creator;	      
   rdfs:range :Document ;
   rdfs:domain :Corporation, :Person ;
-  rdfs:label "erstellt Dokument"@de, "creates document"@en ;
+  rdfs:label "hat Urheber"@de, "has creator"@en ;
 	rdfs:comment "Urheber eines Dokuments"@de, "Creator of a document."@en .
 
 :dedicatee rdf:type owl:ObjectProperty ;
