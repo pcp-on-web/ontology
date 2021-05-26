@@ -637,7 +637,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :title rdf:type owl:DatatypeProperty ;
   rdfs:subPropertyOf <http://purl.org/dc/terms/title> ;
   rdfs:domain :Document ;
-  rdfs:range xsd:string ;
+  rdfs:range xsd:literal ;
   rdfs:label "Titel eines Dokuments"@de, "title of a document"@en ;
 	rdfs:comment "Nennt den Titel eines Dokuments."@de, "Gives the title of a document."@en .	      
 	      
