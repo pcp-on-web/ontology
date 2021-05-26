@@ -664,9 +664,9 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :author rdf:type owl:ObjectProperty ;
   rdfs:subPropertyOf dc:creator;
   rdfs:domain :Document ;
-  rdfs:range :Corporation, :Person ;
+  rdfs:range :Person ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#hasTutor>, <http://purl.org/pcp-on-web/ontology#author>, <http://purl.org/pcp-on-web/ontology#published>, <https://d-nb.info/standards/elementset/gnd#author> ;
-  rdfs:label "Autor"@de, "Author"@en ;
+  rdfs:label "ist Autor"@de, "is author"@en ;
 	rdfs:comment "Verweist auf die Autorenschaft eines Dokuments."@de, "Refers to the authorship of a document."@en .
 	      
 :child rdf:type owl:ObjectProperty ;
