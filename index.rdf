@@ -216,7 +216,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :StageOfLife ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Honour> ;
   rdfs:label "Ehrung"@de , "Honour"@en ;
-	rdfs:comment "Diese Konzept beschreibt eine Ehrung, wie wissenschaftliche Auszeichnungen oder Preise."@de, "This concept describes an honour, such as scientific awards or prizes."@en .
+	rdfs:comment "Dieses Konzept beschreibt eine Ehrung, wie wissenschaftliche Auszeichnungen oder Preise."@de, "This concept describes an honour, such as scientific awards or prizes."@en .
 		
 :Institution rdf:type owl:Class ;
   rdfs:subClassOf :Corporation ;
@@ -328,7 +328,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Bezieht sich auf gedruckte Universitätsprogramme und Reden."@de, "Refers to printed university programs and speeches."@en .
 
 :Publication rdf:type owl:Class ;
-  rdfs:subClassOf :Document ;
+  rdfs:subClassOf :Document ;	
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Publication> ;
   rdfs:label "Publikation"@de, "Publication"@en ;
 	rdfs:comment "Bezieht sich auf Publikationen."@de, "Refers to publications."@en .
@@ -660,7 +660,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subPropertyOf foaf:knows ;
   rdfs:domain :Person ;
   rdfs:label "Korrespondenz"@de, "correspondence"@en ;
-	rdfs:comment "Verweist auf die aus einem Dokument hervorgehende Korrespondenz zwischen Personen."@de, "Assigns to the correspondence between persons."@en .
+	rdfs:comment "Verweist auf die aus einem Dokument hervorgehende Korrespondenz zwischen Personen, z.B. über Editionen oder Nachlassplattformen wie KALLIOPE."@de, "Assigns to the correspondence between persons, e.g. via editions or heritage plattforms such as KALLIOPE."@en .
 
 :creator rdf:type owl:ObjectProperty ;
   rdfs:subPropertyOf dc:creator;	      
