@@ -843,16 +843,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#praeses> ;
   rdfs:label "ist Praeses"@de, "is Praeses"@en ;
 	rdfs:comment "Bezeichnet die Person, die während einer Disputation als Praeses auftritt und die Disputation leitet."@de, "Refers to the person who is the praeses - the head - of a disputation."@en .
-	      
-:printer rdf:type owl:ObjectProperty ;
-                   rdfs:domain :Dissertation ;
-				   rdfs:range :Person ;
-                   rdfs:comment "The person who printed the thesis."@en ,
-                                "Die Drucker einer Dissertation."@de ;
-	           rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#printer> ;
-                   rdfs:label "printer"@en ,
-                              "Drucker"@de ;
-                   owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
 
 :publisher rdf:type owl:ObjectProperty ;
   rdfs:subPropertyOf dc:creator;
