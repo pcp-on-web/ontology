@@ -849,7 +849,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Document ;
   rdfs:domain :Corporation, :Person ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#published> ;
-  rdfs:label "Herausgeber"@de, "publisher"@en ;
+  rdfs:label "ist Herausgeber"@de, "is publisher"@en ;
 	rdfs:comment "Nennt Herausgeber eines Dokuments."@de, "Gives the publisher of a document."@en .	      
 	      
 :relatedDocument rdf:type owl:ObjectProperty ;
