@@ -633,7 +633,14 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		         owl:versionInfo "0.1 initial creation date: 24.05.2007"^^xsd:string ,
                          "2.0 stable"^^xsd:string ,
                          "version 0.2  10.03.2008"^^xsd:string .
-				     
+
+:title rdf:type owl:DatatypeProperty ;
+  rdfs:subPropertyOf <http://purl.org/dc/terms/title> ;
+  rdfs:domain :Document ;
+  rdfs:range xsd:string ;
+  rdfs:label "Titel eines Dokuments"@de, "title of a document"@en ;
+	rdfs:comment "Nennt den Titel eines Dokuments."@de, "Gives the title of a document."@en .	      
+	      
 ###  http://purl.org/pcp-on-web/ontology#to
 :to rdf:type owl:DatatypeProperty ;
     rdfs:domain :StageOfLife ;
@@ -922,12 +929,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Document ;
   rdfs:label "hat Dokument"@de, "has Document"@en ;
 	rdfs:comment "Bezieht sich auf das dazugehörige Dokument einer Ernennung, z.B. Bestallungsakte."@de, "Refers to documents of a vocation, like vocation files."@en .
-
-:title rdf:type owl:ObjectProperty ;
-  rdfs:subPropertyOf <http://purl.org/dc/terms/title> ;
-  rdfs:domain :Document ;
-  rdfs:label "Titel eines Dokuments"@de, "title of a document"@en ;
-	rdfs:comment "Nennt den Titel eines Dokuments."@de, "Gives the title of a document."@en .
 	      
 :vocates rdf:type owl:ObjectProperty ;
   rdfs:domain :Territory ;
