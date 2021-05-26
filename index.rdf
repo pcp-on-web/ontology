@@ -691,9 +691,9 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Urheber eines Dokuments"@de, "Creator of a document."@en .
 
 :dedicatee rdf:type owl:ObjectProperty ;
-  rdfs:domain :Person ;
-  rdfs:range :Dissertation ;
-  rdfs:label "ist Widmungsempfänger"@de, "is dedicatee"@en ;
+  rdfs:domain :Dissertation ;
+  rdfs:range :Person ;
+  rdfs:label "hat Widmungsempfänger"@de, "has dedicatee"@en ;
 	rdfs:comment "Bezeichnet den Widmunsgempfänger einer Publikation."@de, "Refers to the dedicatee of a publication."@en .	      
 	      
 :dissertationHasDisputation rdf:type owl:ObjectProperty ;
@@ -922,10 +922,10 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
     rdfs:comment "Die Landesherrschaft genehmigt bzw. ratifziert die von einem Gremium entworfenen Statuten einer Universität."@de,"The sovereign rulership approves or ratifies the statutes of a university usually drafted by a committee."@en .
 
 :well-wisher rdf:type owl:ObjectProperty ;
-  rdfs:domain :Person ;
-  rdfs:range :Dissertation ;
+  rdfs:domain :Dissertation ;
+  rdfs:range :Person ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#wellWisher> ;
-  rdfs:label "ist Gratulant"@de, "is well-wisher"@en ;
+  rdfs:label "hat Gratulant"@de, "has well-wisher"@en ;
 	rdfs:comment "Bezeichnet den Gratulanten einer Publikation, bspw. den Gratulanten eines Disputanten. Diese Gratulanten-Schriften befinden sich zumeist am Ende einer Dissertation."@de, "Refers to the well-wisher of a publication, e.g. the well-wisher to a disputant. These well-wishing writings are usually found at the end of a dissertation."@en .
 
 	
