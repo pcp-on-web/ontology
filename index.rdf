@@ -663,7 +663,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 				     
 :author rdf:type owl:ObjectProperty ;
   rdfs:subPropertyOf dc:creator;
-  rdfs:domain :Person ;
+  rdfs:domain :Person, :Corporation ;
   rdfs:range :Document ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#hasTutor>, <http://purl.org/pcp-on-web/ontology#author>, <http://purl.org/pcp-on-web/ontology#published>, <https://d-nb.info/standards/elementset/gnd#author> ;
   rdfs:label "ist Autor"@de, "is author"@en ;
