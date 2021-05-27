@@ -503,7 +503,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                  xsd:gMonthDay ,
                  xsd:gYear ,
                  xsd:gYearMonth"""@en .
-				     			     
+
+:enrollmentName rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Enrollment ;
+  rdfs:range xsd:String ;
+  rdfs:label "Name in Matrikel"@de, "name in enrollment document"@en ;
+	rdfs:comment "Zumeist latinisierter Name eines Studenten im Matrikelbuch einer Universität."@de, "Most likely latinized name of a student at the enrollment document of a university."@en .	      				     
+				     
 ###  http://purl.org/pcp-on-web/ontology#forename
 :forename rdf:type owl:DatatypeProperty ;
           rdfs:domain :Person ;
@@ -680,12 +686,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Disputation hat Dissertation"@de, "disputation has dissertation"@en ;
 	rdfs:comment "Weist einer Disputation eine Dissertation zu."@de, "Assigns a disputation to a dissertation."@en .
 
-:enrollmentName rdf:type owl:ObjectProperty ;
+:enrollment rdf:type owl:ObjectProperty ;
   rdfs:domain :Enrollment ;
   rdfs:range :Student ;
-  rdfs:label "Name in Matrikel"@de, "name in enrollment document"@en ;
-	rdfs:comment "Zumeist latinisierter Name eines Studenten im Matrikelbuch einer Universität."@de, "Most likely latinized name of a student at the enrollment document of a university."@en .
-	      
+  rdfs:label "eingeschriebener Student"@de, "enrolled student"@en ;
+	rdfs:comment "Im Matrikelbuch eingeschriebener Student."@de, "Most likely latinized name of a student at the enrollment document of a university."@en .
+	        
 :geoname rdf:type owl:ObjectProperty ;
   rdfs:domain rdfs:Resource ;
   rdfs:range rdfs:Resource ;
