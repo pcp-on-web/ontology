@@ -503,13 +503,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                  xsd:gMonthDay ,
                  xsd:gYear ,
                  xsd:gYearMonth"""@en .
-				     
-:enrollmentSemester rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Enrollment ;
-  rdfs:range :Semester ;
-  rdfs:label "Semester der Immatrikulation"@de, "semester of enrollment"@en ;
-	rdfs:comment "Nennt das Semester der Immatrikulation eines Professors."@de, "Gives information of the semester in which a person got enrolled."@en .
-				     
+				     			     
 ###  http://purl.org/pcp-on-web/ontology#forename
 :forename rdf:type owl:DatatypeProperty ;
           rdfs:domain :Person ;
