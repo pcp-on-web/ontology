@@ -570,21 +570,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                   rdfs:label "Latin Last Name"@en ,
                               "Latein Name"@de ;
                    owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
-				     
-:locationCorporation rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Corporation ;
-  rdfs:range :Location ;
-  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#bodyPlace> ;
-  rdfs:label "Ort einer Körperschaft"@de, "location of a corporation"@en ;
-	rdfs:comment "Bezieht sich auf den geografischen Ort einer Körperschaft."@de,
-		"Refers to the geographical location of a corporation."@en .
-
-:locationDocument rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Document ;
-  rdfs:range :Location ;
-  rdfs:label "Ort eines Dokument"@de, "location of a document"@en ;
-	rdfs:comment "Bezieht sich auf den geografischen Ort eines Dokuments, z.B. Publikationsort."@de,
-		"Refers to the geographical location of a document, e.g. location of a publication."@en .
 
 ###  http://purl.org/pcp-on-web/ontology#note
 :note rdf:type owl:DatatypeProperty ,
@@ -770,7 +755,22 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Professor ;
   rdfs:label "wird ernannt"@de, "is vocated"@en ;
 	rdfs:comment "Bezieht sich auf den von Universität und Landesherrschaft ausgewählten Kandidaten für eine Professur."@de, "Refers to the candidate for a professorship/or chair which had been negotiated by the university and the territorial authority."@en .
-			        
+
+:locationCorporation rdf:type owl:ObjectProperty ;
+  rdfs:domain :Corporation ;
+  rdfs:range :Location ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#bodyPlace> ;
+  rdfs:label "Ort einer Körperschaft"@de, "location of a corporation"@en ;
+	rdfs:comment "Bezieht sich auf den geografischen Ort einer Körperschaft."@de,
+		"Refers to the geographical location of a corporation."@en .
+
+:locationDocument rdf:type owl:ObjectProperty ;
+  rdfs:domain :Document ;
+  rdfs:range :Location ;
+  rdfs:label "Ort eines Dokument"@de, "location of a document"@en ;
+	rdfs:comment "Bezieht sich auf den geografischen Ort eines Dokuments, z.B. Publikationsort."@de,
+		"Refers to the geographical location of a document, e.g. location of a publication."@en .	   
+	      
 :membershipSociety rdf:type owl:ObjectProperty ;
   rdfs:domain :Membership ;
   rdfs:range :Societies ;
