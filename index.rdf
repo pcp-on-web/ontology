@@ -689,11 +689,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "hat Widmungsempfänger"@de, "has dedicatee"@en ;
 	rdfs:comment "Bezeichnet den Widmunsgempfänger einer Publikation."@de, "Refers to the dedicatee of a publication."@en .	      
 	      
-:dissertationHasDisputation rdf:type owl:ObjectProperty ;
-  rdfs:domain :Dissertation ;
-  rdfs:range :Disputation ;
-  rdfs:label "Dissertation hat Disputation"@de, "dissertation has disputation"@en ;
-	rdfs:comment "Weist eine Dissertation einer Disputation zu."@de, "Assigns a dissertation to a disputation."@en .
+:disputationHasDisertation rdf:type owl:ObjectProperty ;
+  rdfs:range :Dissertation ;
+  rdfs:domain :Disputation ;
+  rdfs:label "Disputation hat Dissertation"@de, "disputation has dissertation"@en ;
+	rdfs:comment "Weist einer Disputation eine Dissertation zu."@de, "Assigns a disputation to a dissertation."@en .
 
 :dissHasFaculty rdf:type owl:ObjectProperty ;
   rdfs:domain :Dissertation ;
@@ -755,7 +755,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :hasSemester rdf:type owl:ObjectProperty ;
   rdfs:domain :UniversityStudies, :TeachingPractices ;
   rdfs:range :Semester ;
-  rdfs:label "hatSemester"@de, "hasSemester"@en ;
+  rdfs:label "hat Semester"@de, "has Semester"@en ;
     rdfs:comment "Nennt Semester eines Studiums."@de,"Gives the semester of a university study."@en .
 
 :hasStageOfLife rdf:type owl:ObjectProperty ;
