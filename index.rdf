@@ -68,13 +68,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :AcademicOffice rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
   rdfs:label "Akademisches Amt"@de, "Academic office"@en ;
-	rdfs:comment "Akademische Ämter wie Professuren sowie akademische Nebenämter, bspw. als Rektor, Prorektor, Kanzler, Dekan usw. ."@de, "Academic offices like professorships and further academic offices, e.g. rector, prorector, chancellor, dean etc.."@en .
+	rdfs:comment "Akademische Ämter wie Professor, Rektor, Prorektor, Kanzler, Dekan usw. ."@de, "Academic offices like professor, rector, prorector, chancellor, dean etc.."@en .
 		
 :Article rdf:type owl:Class ;
   rdfs:subClassOf :Publication ;
   rdfs:subClassOf fabio:Article ;
   rdfs:label "Artikel"@de, "Article"@en ;
-	rdfs:comment "Artikel in Periodika wie Journale, einer Zeitschriften, einer Zeitung oder einem Magazin."@de, "Articles published in periodicals like journals, newspapers or magazines."@en .
+	rdfs:comment "Artikel in Periodika wie Journalen, Zeitschriften, Zeitungen oder Magazinen."@de, "Articles published in periodicals like journals, newspapers or magazines."@en .
 		
 :AsscociateProfessor rdf:type owl:Class ;
   rdfs:subClassOf :AcademicOffice ;
@@ -210,7 +210,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :StageOfLife ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Graduation> ;
   rdfs:label "Abschluss"@de, "Graduation"@en ;
-	rdfs:comment "Bezieht sich auf den Abschluss an einer Schule oder Universität. Dieser kann durch eine Promotion zum Magister, Baccalaureus, Lizentiat, Doktor belegt sein, bspw. über eine pro gradu disputatio."@de, "Refers to a graduation at a school or university to the degrees of doctor, magister, baccalaureus, licentiate, e.g. proven via a pro gradu disputatio."@en .
+	rdfs:comment "Bezieht sich auf den Abschluss an einer Universität. Dieser kann durch eine Promotion zum Magister, Baccalaureus, Lizentiat, Doktor belegt sein, bspw. über eine pro gradu disputatio."@de, "Refers to a graduation at a school or university to the degrees of doctor, magister, baccalaureus, licentiate, e.g. proven via a pro gradu disputatio."@en .
 		
 :Honour rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
@@ -320,7 +320,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :ProfessorialFamily rdf:type owl:Class ;
   rdfs:subClassOf :Family ;
   rdfs:label "Professorenfamilie"@de, "Professorial Family"@en ;
-	rdfs:comment "Bezieht sich auf Familien die generationenübegreifend auffallend häufig Professoren hervorbrachten."@de, "Refers to families that produced professors with a striking frequency across the generations."@en . 
+	rdfs:comment "Bezieht sich auf Familien die generationenübegreifend auffallend häufig Professoren hervorbrachten und in der Forschung durch Zuschreibungen Gelehrtendynastie und Familienuniversität bekannt sind."@de, "Refers to families that produced professors with a striking frequency across the generations."@en . 
 		
 :Professorship rdf:type owl:Class ;
   rdfs:subClassOf :AcademicOffice ;
