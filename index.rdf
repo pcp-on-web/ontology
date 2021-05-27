@@ -642,10 +642,10 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 				     
 :author rdf:type owl:ObjectProperty ;
   rdfs:subPropertyOf dc:creator;
-  rdfs:domain :Person, :Corporation ;
-  rdfs:range :Document ;
+  rdfs:range :Person, :Corporation ;
+  rdfs:domain :Document ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#hasTutor>, <http://purl.org/pcp-on-web/ontology#author>, <http://purl.org/pcp-on-web/ontology#published>, <https://d-nb.info/standards/elementset/gnd#author> ;
-  rdfs:label "ist Autor"@de, "is author"@en ;
+  rdfs:label "hat Autor"@de, "hat author"@en ;
 	rdfs:comment "Verweist auf die Autorenschaft eines Dokuments."@de, "Refers to the authorship of a document."@en .
 	      
 :child rdf:type owl:ObjectProperty ;
@@ -828,10 +828,10 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 :publisher rdf:type owl:ObjectProperty ;
   rdfs:subPropertyOf dc:creator;
-  rdfs:range :Document ;
-  rdfs:domain :Corporation, :Person ;
+  rdfs:domain :Document ;
+  rdfs:range :Corporation, :Person ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#published> ;
-  rdfs:label "ist Herausgeber"@de, "is publisher"@en ;
+  rdfs:label "hat Herausgeber"@de, "has publisher"@en ;
 	rdfs:comment "Nennt Herausgeber eines Dokuments."@de, "Gives the publisher of a document."@en .	      
 	      
 :relatedDocument rdf:type owl:ObjectProperty ;
