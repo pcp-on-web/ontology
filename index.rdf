@@ -210,7 +210,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :StageOfLife ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Graduation> ;
   rdfs:label "Abschluss"@de, "Graduation"@en ;
-	rdfs:comment "Bezieht sich auf den Abschluss an einer Universität. Dieser kann durch eine Promotion zum Magister, Baccalaureus, Lizentiat, Doktor belegt sein, bspw. über eine pro gradu disputatio."@de, "Refers to a graduation at a school or university to the degrees of doctor, magister, baccalaureus, licentiate, e.g. proven via a pro gradu disputatio."@en .
+	rdfs:comment "Bezieht sich auf den Abschluss an einer Universität. Dieser kann durch eine Promotion zum Magister, Baccalaureus, Lizentiat, Doktor belegt sein, bspw. über eine pro gradu disputatio."@de, "Refers to a graduation at a university to the degrees of doctor, magister, baccalaureus, licentiate, e.g. proven via a pro gradu disputatio."@en .
 		
 :Honour rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
@@ -320,7 +320,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :ProfessorialFamily rdf:type owl:Class ;
   rdfs:subClassOf :Family ;
   rdfs:label "Professorenfamilie"@de, "Professorial Family"@en ;
-	rdfs:comment "Bezieht sich auf Familien die generationenübegreifend auffallend häufig Professoren hervorbrachten. Diese Familien werde in der Forschung häufig mit Begriffen wie "Gelehrtendynastie" und "Familienuniversität" belegt."@de, "Refers to families that produced professors with a striking frequency across the generations. In research, these families are often referred to by terms such as "scholarly dynasty" and "family university"."@en . 
+	rdfs:comment "Bezieht sich auf Familien die generationenübegreifend auffallend häufig Professoren hervorbrachten. Diese Familien werde in der Forschung häufig mit Begriffen wie Gelehrtendynastie und Familienuniversität belegt."@de, "Refers to families that produced professors with a striking frequency across the generations. In research, these families are often referred to by terms such as scholarly dynasty and family university."@en . 
 		
 :Professorship rdf:type owl:Class ;
   rdfs:subClassOf :AcademicOffice ;
