@@ -707,12 +707,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Name in Matrikel"@de, "name in enrollment document"@en ;
 	rdfs:comment "Zumeist latinisierter Name eines Studenten im Matrikelbuch einer Universität."@de, "Most likely latinized name of a student at the enrollment document of a university."@en .
 	      
-:enrollmentOrigin rdf:type owl:ObjectProperty ;
-  rdfs:domain :Enrollment ;
-  rdfs:range :Location ;
-  rdfs:label "Herkunft in Matrikel"@de, "origin in enrollment document"@en ;
-	rdfs:comment "Zumeist latinisierter Herkunftsort eines Studenten im Matrikelbuch einer Universität."@de, "Most likely latinized name of origin of a student at the enrollment document of a university."@en .
-	      
 :geoname rdf:type owl:ObjectProperty ;
   rdfs:domain rdfs:Resource ;
   rdfs:range rdfs:Resource ;
