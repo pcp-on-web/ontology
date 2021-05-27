@@ -506,7 +506,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 :enrollmentName rdf:type owl:DatatypeProperty ;
   rdfs:domain :Enrollment ;
-  rdfs:range xsd:String ;
+  rdfs:range xsd:string ;
   rdfs:label "Name in Matrikel"@de, "name in enrollment document"@en ;
 	rdfs:comment "Zumeist latinisierter Name eines Studenten im Matrikelbuch einer Universität."@de, "Most likely latinized name of a student at the enrollment document of a university."@en .	      				     
 				     
