@@ -608,7 +608,37 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                    rdfs:label "PID"@en ,
                               "PID"@de ;
                    owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
-				     
+
+:reportBegin rdf:type owl:DatatypeProperty ;
+    rdfs:domain :Report ;
+      rdfs:range rdfs:Literal ;
+      rdfs:comment "Das Startdatum eines Rechenschaftsberichts."@de ,
+                   """The date of the beginning of a report from a valid datatype xsd:date ,
+                 xsd:gDay ,
+                 xsd:gMonth ,
+                 xsd:gMonthDay ,
+                 xsd:gYear ,
+                 xsd:gYearMonth"""@en ;
+      rdfs:label "begins"@en ,
+                 "beginnt"@de ;
+      owl:versionInfo "0.1 initial creation date:  24.05.2007"^^xsd:string ,
+                      "2.0 stable other types added"^^xsd:string .
+	      
+:reportEnds rdf:type owl:DatatypeProperty ;
+    rdfs:domain :Report ;
+      rdfs:range rdfs:Literal ;
+      rdfs:comment "Das Enddatum eines Rechenschaftsberichts."@de ,
+                   """The date of the ending of a report from a valid datatype xsd:date ,
+                 xsd:gDay ,
+                 xsd:gMonth ,
+                 xsd:gMonthDay ,
+                 xsd:gYear ,
+                 xsd:gYearMonth"""@en ;
+      rdfs:label "ends"@en ,
+                 "endet"@de ;
+      owl:versionInfo "0.1 initial creation date:  24.05.2007"^^xsd:string ,
+                      "2.0 stable other types added"^^xsd:string .
+	      
 ###  http://purl.org/pcp-on-web/ontology#surname
 :surname rdf:type owl:DatatypeProperty ;
   rdfs:domain :Person ;
