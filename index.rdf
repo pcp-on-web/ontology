@@ -755,7 +755,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :hasSemester rdf:type owl:ObjectProperty ;
   rdfs:domain :UniversityStudies, :TeachingPractices ;
   rdfs:range :Semester ;
-  rdfs:label "Semesterangabe eines Studiums"@de, "semesters of a university study"@en ;
+  rdfs:label "hatSemester"@de, "hasSemester"@en ;
     rdfs:comment "Nennt Semester eines Studiums."@de,"Gives the semester of a university study."@en .
 
 :hasStageOfLife rdf:type owl:ObjectProperty ;
