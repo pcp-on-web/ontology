@@ -753,7 +753,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Verweist auf die Institution an der primäre Bildung erworben wurde."@de, "Refers to the institution of primary education."@en .
 	      
 :hasSemester rdf:type owl:ObjectProperty ;
-  rdfs:domain :UniversityStudies ;
+  rdfs:domain :UniversityStudies, :TeachingPractices ;
   rdfs:range :Semester ;
   rdfs:label "Semesterangabe eines Studiums"@de, "semesters of a university study"@en ;
     rdfs:comment "Nennt Semester eines Studiums."@de,"Gives the semester of a university study."@en .
@@ -765,12 +765,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "hat Lebensabschnitt"@de, "has stage of life"@en ;
 	rdfs:comment "Lebensabschnitt eines Professors."@de, "Stage of life of a professor."@en .
 				     
-:heldInSemester rdf:type owl:ObjectProperty ;
-  rdfs:domain :Lecture ;
-  rdfs:range :Semester ;
-  rdfs:label "Vorlesung wird gehalten/angeboten in Semester"@de, "Lecture is offered/held in semester"@en ;
-    rdfs:comment "Gibt das Semester an, in welchem eine Vorlesung gehalten bzw. angeboten wurde."@de,"Gives the semester at which a lecture had been hold or was offered"@en .				  				     
-	
 :isDoing rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
   rdfs:range :TeachingPractices ;
@@ -805,7 +799,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:domain :Faculty ;
   rdfs:range :Candidacy ;
   rdfs:label "nominiert"@de, "nominates"@en ;
-	rdfs:comment "Bezieht sich auf die Nominierungslisten einer Fakultät, die an die Verwaltung der Landesherrschaft erging und aus denen ein Kandidat durch die Landesherrschaft bestätigt wurde. Diese Listen liegen zumeist in zuständigen Archiven vor."@de,
+	rdfs:comment "Bezieht sich auf Nominierungslisten einer Fakultät, die an die Verwaltung der Landesherrschaft erging und aus denen ein Kandidat durch die Landesherrschaft bestätigt wurde. Diese Listen liegen zumeist in zuständigen Archiven vor."@de,
 	"Refers to nomination lists which were handed in  to the territorial administration by the faculties in  order to choose and to vocate a  candidate for a university chair. Those lists can be found in relevant archives."@en .			     
 
 :opponent rdf:type owl:ObjectProperty ;
@@ -901,7 +895,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:domain owl:Thing ;
   rdfs:range :Keyword ;
   rdfs:label "markiert"@de, "tagged"@en ;
-	rdfs:comment "x."@de, "x."@en .
+	rdfs:comment "Gibt Informationen, die unspezifisch in Datenbanken unter Schlagworten, Kommentaren oder Notizen verborgen sind."@de, "Gives information that is unspecifically hidden in databases under keywords, comments or notes."@en .
 	      
 :territoryDocument rdf:type owl:ObjectProperty ;
   rdfs:domain :Territory ;
@@ -914,12 +908,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Professor ;
   rdfs:label "beruft"@de, "vocates"@en ;
 	rdfs:comment "Landesherrschaft beruft bzw. bestätigt und ernennt einen Professor."@de, "Territorial rulership vocates or confirms a Professor."@en .
-
-:ratifies rdf:type owl:ObjectProperty ;
-  rdfs:domain :Territory ;
-  rdfs:range :Statutes ;
-  rdfs:label "wurde beeinflusst durch"@de, "was influenced by"@en ;
-    rdfs:comment "Die Landesherrschaft genehmigt bzw. ratifziert die von einem Gremium entworfenen Statuten einer Universität."@de,"The sovereign rulership approves or ratifies the statutes of a university usually drafted by a committee."@en .
 
 :well-wisher rdf:type owl:ObjectProperty ;
   rdfs:domain :Dissertation ;
