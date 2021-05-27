@@ -698,11 +698,15 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :AuctionCatalogue ;
   rdfs:label "hat Auktionskatalog"@de, "has auction catalogue"@en ;
 	dc:description "Verknüpft eine Privatbibliothek mit einem Auktionskatalog."@de, "Adds an auction catalogue to a private library."@en .	      
-	      
-:hasCreator rdf:type owl:ObjectProperty ;
-  rdfs:subPropertyOf dc:creator;	      
+
+:hasContributor rdf:type owl:ObjectProperty ;	      
   rdfs:domain :Document ;
   rdfs:range :Corporation, :Person ;
+  rdfs:label "hat Beteiligung"@de, "has contributor"@en ;
+	rdfs:comment "Beteiligung an einem Dokument."@de, "Contributor of a document."@en .	      
+	      
+:hasCreator rdf:type owl:ObjectProperty ;
+  rdfs:subPropertyOf dc:creator, :hasContributor ;
   rdfs:label "hat Urheber"@de, "has creator"@en ;
 	rdfs:comment "Urheber eines Dokuments"@de, "Creator of a document."@en .	      
 	      
