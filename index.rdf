@@ -560,7 +560,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   	rdfs:comment "GND Normadatei, inklusive ehemals genutzte PND."@de, "GND integrated authority file, including formerly used PND."@en .
 
 :hasPNDpraeses rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Report ;
+  rdfs:domain :Report, :dissertation ;
   rdfs:range rdfs:Literal ;
   rdfs:label "has PND praeses"@de, "hat PND praeses"@en ;
   	rdfs:comment "Die PND Nummer des in Rechenschaftsberichten angegebenen Praeses."@de, "The PND number of the praeses given in the reports."@en .			    
@@ -568,7 +568,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :hasText rdf:type owl:DatatypeProperty ;
   rdfs:domain :Report ;
   rdfs:range rdfs:Literal ;
-  rdfs:label "has text"@de, "hat Text"@en ;
+  rdfs:label "has text"@en, "hat Text"@de ;
   	rdfs:comment "Gibt den Text eines Rechenschaftsberichts an."@de, "Gives the text of a report."@en .			    
 			    
 :latinForename rdf:type owl:DatatypeProperty ;
