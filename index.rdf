@@ -701,12 +701,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Disputation hat Dissertation"@de, "disputation has dissertation"@en ;
 	rdfs:comment "Weist einer Disputation eine Dissertation zu."@de, "Assigns a disputation to a dissertation."@en .
 
-:dissHasFaculty rdf:type owl:ObjectProperty ;
-  rdfs:domain :Dissertation ;
-  rdfs:range :Faculty ;
-  rdfs:label "Diss hat Fakultät"@de, "diss has faculty"@en ;
-	rdfs:comment "Weist eine Dissertation einer Fakultät zu."@de, "Assigns a dissertation to a faculty."@en .
-	      
 :enrollmentName rdf:type owl:ObjectProperty ;
   rdfs:domain :Enrollment ;
   rdfs:range :Student ;
@@ -726,6 +720,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Geoname"@en , "Geoname"@de ;
   	rdfs:comment "The Resource location's URL in http://geonames.org."@en ,"Die URL des Ressourcenstandorts in http://geonames.org."@de; owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
 
+:hasAuctionCatalogue rdf:type owl:ObjectProperty ;
+  rdfs:domain :PrivateLibrary ;
+  rdfs:range :AuctionCatalogue ;
+  rdfs:label "hat Auktionskatalog"@de, "has auction catalogue"@en ;
+	dc:description "Verknüpft eine Privatbibliothek mit einem Auktionskatalog."@de, "Adds an auction catalogue to a private library."@en .	      
+	      
 :hasCreator rdf:type owl:ObjectProperty ;
   rdfs:subPropertyOf dc:creator;	      
   rdfs:domain :Document ;
@@ -740,12 +740,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "hat Matrikel"@de, "has enrollment"@en ;
 	rdfs:comment "Verweist auf eine Immatrikulation einer Person an einer Universität."@de, "Refers to the enrollment of a person at a university."@en .
 
-:hasAuctionCatalogue rdf:type owl:ObjectProperty ;
-  rdfs:domain :PrivateLibrary ;
-  rdfs:range :AuctionCatalogue ;
-  rdfs:label "hat Auktionskatalog"@de, "has auction catalogue"@en ;
-	dc:description "Verknüpft eine Privatbibliothek mit einem Auktionskatalog."@de, "Adds an auction catalogue to a private library."@en .	      
-	          
+:hasFaculty rdf:type owl:ObjectProperty ;
+  rdfs:domain :Document ;
+  rdfs:range :Faculty ;
+  rdfs:label "hat Fakultät"@de, "has faculty"@en ;
+	rdfs:comment "Verknüpft Dokumente mit Fakultät."@de, "Links documents to faculty."@en .
+	   	      	          
 :hasRecommendation rdf:type owl:ObjectProperty ;
   rdfs:domain :Candidacy ;
   rdfs:range :Recommendation ;
@@ -782,13 +782,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Professor ;
   rdfs:label "wird ernannt"@de, "is vocated"@en ;
 	rdfs:comment "Bezieht sich auf den von Universität und Landesherrschaft ausgewählten Kandidaten für eine Professur."@de, "Refers to the candidate for a professorship/or chair which had been negotiated by the university and the territorial authority."@en .
-			     
-:lectureHasFaculty rdf:type owl:ObjectProperty ;
-  rdfs:domain :Lecture ;
-  rdfs:range :Faculty ;
-  rdfs:label "Vorlesung hat Fakultät"@de, "lecture has faculty"@en ;
-	rdfs:comment "Weist eine Vorlesung einer Fakultät zu."@de, "Assigns a lecture to a faculty."@en .
-	      
+			        
 :membershipSociety rdf:type owl:ObjectProperty ;
   rdfs:domain :Membership ;
   rdfs:range :Societies ;
@@ -852,18 +846,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Relevante Dokumente zu einem Lebensabschnitt"@de, "relevant documents of a stage of life"@en ;
 	rdfs:comment "Ordnet einem Lebensabschnitt Dokumente zu, z.B. "@de, ".."@en .	      
 	      
-:reportHasChair rdf:type owl:ObjectProperty ;
-  rdfs:domain :Report ;
-  rdfs:range :Chair ;
-  rdfs:label "Rechenschaftsbericht hat Lehrstuhl"@de, "report has chair"@en ;
-	rdfs:comment "Ordnet einen Rechenschaftsbericht einem Lehrstuhl zu."@de, "Assigns a report to a chair."@en .
-				     
-:reportHasFaculty rdf:type owl:ObjectProperty ;
-  rdfs:domain :Report ;
-  rdfs:range :Faculty ;
-  rdfs:label "Rechenschaftsbericht hat Fakultät"@de, "report has faculty"@en ;
-	rdfs:comment "Ordnet einen Rechenschaftsbericht einer Fakultät zu."@de, "Assigns a report to a faculty."@en .
-
 :respondent rdf:type owl:ObjectProperty ;
   rdfs:domain :Person ;
   rdfs:range :Disputation ;
