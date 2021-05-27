@@ -675,6 +675,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#familyChild> ;
   rdfs:label "Kind"@de, "child"@en ;
 	rdfs:comment "Bezieht sich auf das Kind, Pflegekind, Adoptivkind eines Professors."@de, "Refers to the cild, foster child, adoptive child of a professor."@en .
+
+:corporationDocument rdf:type owl:ObjectProperty ;
+  rdfs:domain :Corporation ;
+  rdfs:range :Document ;
+  rdfs:label "hat Dokument"@de, "has Document"@en ;
+	rdfs:comment "Dokumente die mit Körperschaften und Institutionen in Verbindung stehen, z.B. Ernennungsurkunden ratifziert durch die Landesherrschaft."@de, "Documents related to corporations and institutions, e.g. deeds of appointment ratified by the sovereignty."@en .
 	      
 :correspondence rdf:type owl:ObjectProperty ;
   rdfs:subPropertyOf foaf:knows ;
@@ -890,12 +896,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Keyword ;
   rdfs:label "markiert"@de, "tagged"@en ;
 	rdfs:comment "Gibt Informationen, die unspezifisch in Datenbanken unter Schlagworten, Kommentaren oder Notizen verborgen sind."@de, "Gives information that is unspecifically hidden in databases under keywords, comments or notes."@en .
-	      
-:territoryDocument rdf:type owl:ObjectProperty ;
-  rdfs:domain :Territory ;
-  rdfs:range :Document ;
-  rdfs:label "hat Dokument"@de, "has Document"@en ;
-	rdfs:comment "Bezieht sich auf das dazugehörige Dokument einer Ernennung, z.B. Bestallungsakte."@de, "Refers to documents of a vocation, like vocation files."@en .
 	      
 :vocates rdf:type owl:ObjectProperty ;
   rdfs:domain :Territory ;
