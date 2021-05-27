@@ -563,7 +563,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:domain :Report, :Dissertation ;
   rdfs:range rdfs:Literal ;
   rdfs:label "has PND praeses"@de, "hat PND praeses"@en ;
-  	rdfs:comment "Die PND Nummer des in Rechenschaftsberichten angegebenen Praeses."@de, "The PND number of the praeses given in the reports."@en .			    
+  	rdfs:comment "Die PND Nummer des in Rechenschaftsberichten angegebenen Praeses."@de, "The PND number of the praeses given in the reports."@en .
+			    
+:hasPNDrespondent rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Dissertation ;
+  rdfs:range rdfs:Literal ;
+  rdfs:label "has PND respondent"@de, "hat PND respondent"@en ;
+  	rdfs:comment "Die PND Nummer des in Dissertationen angegebenen Respondenten."@de, "The PND number of the respondent given in the reports."@en .			    
 
 :hasText rdf:type owl:DatatypeProperty ;
   rdfs:domain :Report ;
