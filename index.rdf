@@ -778,6 +778,19 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Faculty ;
   rdfs:label "hat Fakultät"@de, "has faculty"@en ;
 	rdfs:comment "Verknüpft Dokumente mit Fakultät."@de, "Links documents to faculty."@en .
+
+:hasOpponent rdf:type owl:ObjectProperty ;
+  rdfs:domain :Dissertation ;
+  rdfs:range :Person ;
+  rdfs:label "hat Opponent"@de, "has opponent"@en ;
+	rdfs:comment "Bezeichnet den oder die Personen, die während einer Disputation als Opponenten auftreten. Opponenten sind auf Titelblättern der gedruckten Disputationsschrift in der Regel nicht angegeben und konnten aus Lehrkräften sowie Studenten gleichermaßen bestehen."@de, "Refers to the persons who acted as opponents at a disputation. Opponents are rarely indicated in printed disputation papers aka dissertations and could consist of teachers as well as students."@en .	      
+
+:hasPraeses rdf:type owl:ObjectProperty ;
+  rdfs:domain :Dissertation ;
+  rdfs:range :Person ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#praeses> ;
+  rdfs:label "hat Praeses"@de, "has praeses"@en ;
+	rdfs:comment "Bezeichnet die Person, die während einer Disputation als Praeses auftritt und die Disputation leitet."@de, "Refers to the person who is the praeses - the head - of a disputation."@en .	      
 	      
 :hasRecommendation rdf:type owl:ObjectProperty ;
   rdfs:domain :Candidacy ;
@@ -785,6 +798,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "hat Empfehlung"@de, "has recommendation"@en ;
 	rdfs:comment "Gibt an, ob ein Kandidat ein Empfehlungsschreiben hat."@de, "Refers to any given recommendation of a candidate."@en .
 
+:hasRespondent rdf:type owl:ObjectProperty ;
+  rdfs:domain :Diputation ;
+  rdfs:range :Person ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#respondent> ;
+  rdfs:label "hat Respondent"@de, "has respondent"@en ;
+	rdfs:comment "Bezeichnet die Person des Respondenten, der sich als Student der Disputation unterzieht."@de, "Refers to the person who as a student is undergoing the act of disputation, called respondent."@en .   	      
+	      
 :hasSchool rdf:type owl:ObjectProperty ;
   rdfs:domain :PrimaryEducation ;
   rdfs:range :School ;
@@ -844,12 +864,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Bezieht sich auf Nominierungslisten einer Fakultät, die an die Verwaltung der Landesherrschaft erging und aus denen ein Kandidat durch die Landesherrschaft bestätigt wurde. Diese Listen liegen zumeist in zuständigen Archiven vor."@de,
 	"Refers to nomination lists which were handed in  to the territorial administration by the faculties in  order to choose and to vocate a  candidate for a university chair. Those lists can be found in relevant archives."@en .			     
 
-:opponent rdf:type owl:ObjectProperty ;
-  rdfs:domain :Person ;
-  rdfs:range :Disputation ;
-  rdfs:label "ist Opponent"@de, "is Opponent"@en ;
-	rdfs:comment "Bezeichnet den Opponenten einer Disputation. Opponenten sind auf Titelblättern der gedruckten Disputationsschrift in der Regel nicht angegeben und konnten aus Lehrkräften sowie Studenten gleichermaßen bestehen. Zur Vollständigkeit und auch weil nicht ausgeschlossen werden kann, dass diese Elemete einer Disputation nicht doch in Disputationsschriften verzeichnet sind, hier diese Property."@de, "Refers to the opponent of a disputation. Opponents are usually not indicated on title pages of printed disputation papers aka dissertations and could consist of teachers as well as students.For the sake of completeness and also because it cannot be ruled out that these elements of a disputation are not listed in dissertations, here this property."@en .
-
 :owns rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
   rdfs:range :Collection ;
@@ -873,13 +887,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                               "PICA Produktionsnummer (PPN)"@de ;
                    owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
 	      
-:praeses rdf:type owl:ObjectProperty ;
-  rdfs:domain :Person ;
-  rdfs:range :Disputation ;
-  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#praeses> ;
-  rdfs:label "ist Praeses"@de, "is Praeses"@en ;
-	rdfs:comment "Bezeichnet die Person, die während einer Disputation als Praeses auftritt und die Disputation leitet."@de, "Refers to the person who is the praeses - the head - of a disputation."@en .
-
 :publisher rdf:type owl:ObjectProperty ;
   rdfs:subPropertyOf dc:creator;
   rdfs:domain :Document ;
@@ -893,14 +900,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Document;
   rdfs:label "Relevante Dokumente zu einem Lebensabschnitt"@de, "relevant documents of a stage of life"@en ;
 	rdfs:comment "Ordnet einem Lebensabschnitt Dokumente zu, z.B. "@de, ".."@en .	      
-	      
-:respondent rdf:type owl:ObjectProperty ;
-  rdfs:domain :Person ;
-  rdfs:range :Disputation ;
-  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#respondent> ;
-  rdfs:label "ist Respondent"@de, "is Respondent"@en ;
-	rdfs:comment "Bezeichnet den Respondenten, der sich als Student der Disputation unterzieht."@de, "Refers to the respondent who as a student is undergoing the act of disputation."@en .   
-	      
+	      	      
 :stageOfLifeLocation rdf:type owl:ObjectProperty ;
   rdfs:domain :StageOfLife ;
   rdfs:range :Location ;
