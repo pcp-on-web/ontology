@@ -176,17 +176,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :Faculty rdf:type owl:Class ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Faculty> ;
   rdfs:label "Fakultät"@de, "Faculty"@en ;
-	rdfs:comment "Bezieht sich auf eine körperschaftlich organisierte und auf ein Fachgebiet begrenzte Lehr- und Verwaltungseinheit einer Volluniversität, im frühneuzeitlichen Kontext: Artistenfakultät (facultas artium), später Philosophische Fak., Theologie, Jurisprudenz, Medizin."@de, "Refers to corporated university divisions with specific subject areas, which are in an Early Modern context: facultas artium, later Philosophical fac., Theology, Jurisprudence, Medicine."@en .
-
-:isPartOfUniversity rdf:type owl:ObjectProperty ;
-  rdfs:domain :Faculty ;
-  rdfs:range :University ;
-  rdfs:label "..."de.
-		
-:isPartOfFaculty rdf:type owl:ObjectProperty ;
-  rdfs:domain :Chair ;
-  rdfs:range :Faculty ;
-  rdfs:label "..."de.		
+	rdfs:comment "Bezieht sich auf eine körperschaftlich organisierte und auf ein Fachgebiet begrenzte Lehr- und Verwaltungseinheit einer Volluniversität, im frühneuzeitlichen Kontext: Artistenfakultät (facultas artium), später Philosophische Fak., Theologie, Jurisprudenz, Medizin."@de, "Refers to corporated university divisions with specific subject areas, which are in an Early Modern context: facultas artium, later Philosophical fac., Theology, Jurisprudence, Medicine."@en .		
 		
 :FacultyOfLaw rdf:type owl:Class ;
   rdfs:subClassOf :Faculty ;
@@ -846,6 +836,18 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :TeachingPractices ;
   rdfs:label "hält oder führt durch"@de, "does or gives"@en ;
 	rdfs:comment "Bezieht sich auf Lehrpraktiken, die von einem Professor an einer Universität durchgeführt werden, z.B. Vorlesungen halten, Disputationen vorstehen oder Übungen geben."@de, "Refers to teaching practices which are done by a professor at a university, e.g. give lectures, preside over disputations or give excersizes."@en.
+
+:isPartOfFaculty rdf:type owl:ObjectProperty ;
+  rdfs:domain :Chair ;
+  rdfs:range :Faculty ;
+  rdfs:label "ist Teil der Fakultät"de@, "is part of faculty"@en ;
+	rdfs:comment "Bezieht sich auf Lehrstühle der einzelnen Fakultäten."@de, "Refers to chairs of the individual faculties."@en .
+	      
+:isPartOfUniversity rdf:type owl:ObjectProperty ;
+  rdfs:domain :Faculty ;
+  rdfs:range :University ;
+  rdfs:label "ist Teil der Universität"@de, "is part of university"@en ;
+	rdfs:comment "Bezieht sich auf die Fakultäten an einer Universität"@de, "Refers to the faculties of a university."@en .	      
 	      
 :isVocated rdf:type owl:ObjectProperty ;
   rdfs:domain :Candidacy ;
