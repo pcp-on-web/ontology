@@ -65,11 +65,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 #		Classes
 #################################################################
 
-:AcademicDocument rdf:type owl:Class ;
-  rdfs:subClassOf :Document ;
-  rdfs:label "Akademisches Dokument"@de, "Academic document"@en ;
-	rdfs:comment "Dokumente die für die professorale Lehr- und Lehrpraxis relevant waren."@de, "Academic documents which were relevant for the teaching and learning practice."@en .
-				
 :AcademicOffice rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
   rdfs:label "Akademisches Amt"@de, "Academic office"@en ;
@@ -140,7 +135,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Sterbedatum oder Zeitraum des Todes einer Person."@de, "Day of death or the period of death of a person."@en .				     
 
 :Dissertation rdf:type owl:Class ;
-  rdfs:subClassOf :Publication, :AcademicDocument ;
+  rdfs:subClassOf :Publication ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#QualificationDocument> ;
   rdfs:label "Dissertation"@de, "Dissertation"@en ;
 	rdfs:comment "Bezeichnet das gedruckte Medium der Disputation. Die Dissertation ist im frühneuzeitlichen Kontext dieser Domäne als Werbeschrift für die Disputation zu betrachten, die in Kürze jene relevanten Thesen zusammenfasste, welche während der Disputation verhandelt wurden."@de, "Refers to the printed media of a disputation. In the early modern context of this domain it functioned as advertisement of the disputation as practice which briefly summoned the thesises of the given topic."@en .
@@ -340,7 +335,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Bezeichnet den Lehrstuhl eines ordentlichen Professors an einer Universitätsfakultät, der einem Fachgebiet zugeordnet ist."@de, "Designates the chair of a full or ordinary Professor at a university faculty."@en .
 		
 :ProgramsAndSpeeches rdf:type owl:Class ;
-  rdfs:subClassOf :Publication, :AcademicDocument ;
+  rdfs:subClassOf :Publication ;
   rdfs:label "Programme und Reden"@de, "Programs and Speeches"@en ;
 	rdfs:comment "Bezieht sich auf Hochschulschriften wie gedruckte Universitätsprogramme und Reden."@de, "Refers to university publications like printed university programs and speeches."@en .
 
@@ -367,7 +362,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   	rdfs:comment "Bezieht sich auf Empfehlungen, z.B. Empfehlungsschreiben, die in Bestallungsakten enthalten sind."@de , "Refers to recommendations, e.g. letters of recommendation which are part of vocation files."@en .
 
 :Report rdf:type owl:Class ;
-  rdfs:subClassOf :AcademicDocument ;
+  rdfs:subClassOf :Document ;
   rdfs:label "Rechenschaftsbericht"@de, "Report"@en ;
 	rdfs:comment "Rechenschaftsbericht den Dozenten in regelmäßigen Abständen bei der Universitätverwaltung und Landesverwaltung einreichten."@de,
 		"Means regular reports of lecturers about their curriculum to the university and territorial administration."@en .
@@ -564,13 +559,19 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range rdfs:Literal ;
   rdfs:label "GND"@de, "GND"@en ;
   	rdfs:comment "GND Normadatei, inklusive ehemals genutzte PND."@de, "GND integrated authority file, including formerly used PND."@en .
+
+:hasPraesesPND rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Report ;
+  rdfs:range rdfs:Literal ;
+  rdfs:label "has praeses PND"@en, "hat praeses PND"@de ;
+  	rdfs:comment "Betrifft die Rechenschaftsberichte der Uni Helmstedt, welche über PND_prases den Autoren, also Professoren in der Original Datenbank zugeordnet sind."@de, "Concerns the accountability reports of the University of Helmstedt, which are assigned to the authors, i.e. professors, in the original database via PND_prases."@en .			    
 			    
 :hasText rdf:type owl:DatatypeProperty ;
   rdfs:domain :Report ;
   rdfs:range rdfs:Literal ;
   rdfs:label "has text"@en, "hat Text"@de ;
   	rdfs:comment "Gibt den Text eines Rechenschaftsberichts an."@de, "Gives the text of a report."@en .			    
-			    
+			     
 :latinForename rdf:type owl:DatatypeProperty ;
                    rdfs:domain :Person ;
 				   rdfs:range rdfs:Literal ;
@@ -708,7 +709,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Verweist auf die aus einem Dokument hervorgehende Korrespondenz zwischen Personen, z.B. über Editionen oder Nachlassplattformen wie KALLIOPE."@de, "Assigns to the correspondence between persons, e.g. via editions or heritage plattforms such as KALLIOPE."@en .
 
 :dedicatee rdf:type owl:ObjectProperty ;
-  rdfs:domain :AcademicDocument ;
+  rdfs:domain :Dissertation ;
   rdfs:range :Person ;
   rdfs:label "hat Widmungsempfänger"@de, "has dedicatee"@en ;
 	rdfs:comment "Bezeichnet den Widmunsgempfänger einer Publikation."@de, "Refers to the dedicatee of a publication."@en .	      
@@ -777,7 +778,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Bezeichnet den oder die Personen, die während einer Disputation als Opponenten auftreten. Opponenten sind auf Titelblättern der gedruckten Disputationsschrift in der Regel nicht angegeben und konnten aus Lehrkräften sowie Studenten gleichermaßen bestehen."@de, "Refers to the persons who acted as opponents at a disputation. Opponents are rarely indicated in printed disputation papers aka dissertations and could consist of teachers as well as students."@en .	      
 
 :hasPraeses rdf:type owl:ObjectProperty ;
-  rdfs:domain :AcademicDocument ;
+  rdfs:domain :Dissertation ;
   rdfs:range :Person ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#praeses> ;
   rdfs:label "hat Praeses"@de, "has praeses"@en ;
