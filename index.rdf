@@ -496,7 +496,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:domain :Document ;
   rdfs:range rdfs:Literal;
   rdfs:label "Date Document"@en, "Datum Dokument"@de ;
-  	rdfs:comment """Zeitangabe eines Dokuments, z.B. Veröffentlichungsjahr, Datum eines Rechenschaftsberichts etc. ."@de, "The date or timespan of a document from a valid datatype, like publishing years or the given date of a report etc.
+  	rdfs:comment """Zeitangabe eines Dokuments, z.B. Veröffentlichungsjahr, Datum einer Disputation, Einschreibung in Matrikel, Reden und Programmen."@de, "The date of a document from a valid datatype, like publishing years, date of a disputation, enrollement date of a student or publishing dates of speeches and programs
 		 xsd:date ,
                  xsd:gDay ,
                  xsd:gMonth ,
