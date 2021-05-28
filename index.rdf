@@ -66,7 +66,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 #################################################################
 
 :AcademicDocuments rdf:type owl:Class ;
-  rdfs:subClassOf :Documents ;
+  rdfs:subClassOf :Document ;
   rdfs:label "Akademische Dokumente"@de, "Academic Documents"@en ;
 	rdfs:comment "Bezieht sich auf Akademische Dokumente im engsten Sinne, die für die Lehrpraxis relevant waren und in Abgrenzung zu Publikationen wie Büchern, inklusive Textbüchern stehen."@de, "..."@en .				
 		
