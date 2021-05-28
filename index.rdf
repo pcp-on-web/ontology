@@ -123,7 +123,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Bezeichnet eine Körperschaft, eine rechtsfähige Institution."@de, "Refers to a corporation or corporate body in the sense of a legal institution."@en .
 
 :Curriculum rdf:type owl:Class ;
-  rdfs:subClassOf :AcademicDocument ;
+  rdfs:subClassOf :AcademicDocuments ;
   rdfs:label "Lektionskatalog"@de, "Curriculum"@en ;
 	rdfs:comment "Lektions-/Vorlesungskatalog einer Universität."@de, "Curriculum or lecture catalogue of a university."@en .
 	
@@ -367,7 +367,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   	rdfs:comment "Bezieht sich auf Empfehlungen, z.B. Empfehlungsschreiben, die in Bestallungsakten enthalten sind."@de , "Refers to recommendations, e.g. letters of recommendation which are part of vocation files."@en .
 
 :Report rdf:type owl:Class ;
-  rdfs:subClassOf :AcademicDocument ;
+  rdfs:subClassOf :AcademicDocuments ;
   rdfs:label "Rechenschaftsbericht"@de, "Report"@en ;
 	rdfs:comment "Rechenschaftsbericht den Dozenten in regelmäßigen Abständen bei der Universitätverwaltung und Landesverwaltung einreichten."@de,
 		"Means regular reports of lecturers about their curriculum to the university and territorial administration."@en .
@@ -432,7 +432,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Bezeichnet die Landesherrschaft eines Territoriums und bezieht sich hier auf den Amtssitz jener landesherrschaftlichen Organe, denen die Universitäten unterstellt sind."@de, "Refers to the authority by a ruler/rulership of a territory and means the territorial administration which deal with the universities."@en .
 
 :Textbook rdf:type owl:Class ;
-  rdfs:subClassOf :Publication, :AcademicDocument ;
+  rdfs:subClassOf :Publication, :AcademicDocuments ;
   rdfs:label "Lehrbuch"@de, "Textbook"@en ;
 	rdfs:comment "Bezeichnet ein Buch das Lehrinhalte eines Studiums didaktisch aufbereitet."@de, "Refers to books which offer a compilation of content in a certain field of interest."@en .
 		
@@ -765,7 +765,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Verweist auf eine Immatrikulation einer Person an einer Universität."@de, "Refers to the enrollment of a person at a university."@en .
 
 :hasFaculty rdf:type owl:ObjectProperty ;
-  rdfs:domain :AcademicDocument ;
+  rdfs:domain :AcademicDocuments ;
   rdfs:range :Faculty ;
   rdfs:label "hat Fakultät"@de, "has faculty"@en ;
 	rdfs:comment "Verknüpft Dokumente mit Fakultät."@de, "Links documents to faculty."@en .	      
@@ -777,7 +777,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Bezeichnet den oder die Personen, die während einer Disputation als Opponenten auftreten. Opponenten sind auf Titelblättern der gedruckten Disputationsschrift in der Regel nicht angegeben und konnten aus Lehrkräften sowie Studenten gleichermaßen bestehen."@de, "Refers to the persons who acted as opponents at a disputation. Opponents are rarely indicated in printed disputation papers aka dissertations and could consist of teachers as well as students."@en .	      
 
 :hasPraeses rdf:type owl:ObjectProperty ;
-  rdfs:domain :AcademicDocument ;
+  rdfs:domain :AcademicDocuments ;
   rdfs:range :Person ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#praeses> ;
   rdfs:label "hat Praeses"@de, "has praeses"@en ;
