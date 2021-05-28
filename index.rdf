@@ -103,7 +103,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Bezieht sich auf die Kandidatur einer Person, die im Zuge der Besetzung einer Professur als Kandidat gehandelt wird. Diese Person kann ein Kandidat ohne Lehrstuhl sein, aber auch ein bereits amtierender Professor, der für einen anderen Lehrstuhl gehandelt wird."@de , "Refers to the candidacy of a person which is a candidate for a university chair/professorship. This person can be a candidate without a chair, but also an incumbent professor who is being traded for another chair."@en .
 		
 :Chair rdf:type owl:Class ;
-  rdfs:subClassOf :Faculty ;
   rdfs:label "Lehrstuhl"@de, "Chair"@en ;
 	rdfs:comment "Bezeichnet einen Lehrstuhl an einer Universitätsfakultät, der ein spezifisches Fachgebiet umfasst und mit einer Professur besetzt ist."@de, "Designates a chair at a university faculty that covers a specific subject area and is occupied by a professorship."@en .
 
@@ -175,11 +174,20 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Bezieht sich auf die Lehr- und Lernpraktik einer Übung."@de, "Refers to the teaching and learning practice of an exercise."@en .
 		
 :Faculty rdf:type owl:Class ;
-  rdfs:subClassOf :University ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Faculty> ;
   rdfs:label "Fakultät"@de, "Faculty"@en ;
 	rdfs:comment "Bezieht sich auf eine körperschaftlich organisierte und auf ein Fachgebiet begrenzte Lehr- und Verwaltungseinheit einer Volluniversität, im frühneuzeitlichen Kontext: Artistenfakultät (facultas artium), später Philosophische Fak., Theologie, Jurisprudenz, Medizin."@de, "Refers to corporated university divisions with specific subject areas, which are in an Early Modern context: facultas artium, later Philosophical fac., Theology, Jurisprudence, Medicine."@en .
 
+:isPartOfUniversity rdf:type owl:ObjectProperty ;
+  rdfs:domain :Faculty ;
+  rdfs:range :University ;
+  rdfs:label "..."de.
+		
+:isPartOfFaculty rdf:type owl:ObjectProperty ;
+  rdfs:domain :Chair ;
+  rdfs:range :Faculty ;
+  rdfs:label "..."de.		
+		
 :FacultyOfLaw rdf:type owl:Class ;
   rdfs:subClassOf :Faculty ;
   rdfs:label "Juristische Fakultät"@de, "Faculty of Law"@en ;
