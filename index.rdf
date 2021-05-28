@@ -340,7 +340,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Bezeichnet den Lehrstuhl eines ordentlichen Professors an einer Universitätsfakultät, der einem Fachgebiet zugeordnet ist."@de, "Designates the chair of a full or ordinary Professor at a university faculty."@en .
 		
 :ProgramsAndSpeeches rdf:type owl:Class ;
-  rdfs:subClassOf :Publication, :AcademicDocuments ;
+  rdfs:subClassOf :Publication, :AcademicDocument ;
   rdfs:label "Programme und Reden"@de, "Programs and Speeches"@en ;
 	rdfs:comment "Bezieht sich auf Hochschulschriften wie gedruckte Universitätsprogramme und Reden."@de, "Refers to university publications like printed university programs and speeches."@en .
 
@@ -432,7 +432,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Bezeichnet die Landesherrschaft eines Territoriums und bezieht sich hier auf den Amtssitz jener landesherrschaftlichen Organe, denen die Universitäten unterstellt sind."@de, "Refers to the authority by a ruler/rulership of a territory and means the territorial administration which deal with the universities."@en .
 
 :Textbook rdf:type owl:Class ;
-  rdfs:subClassOf :Publication, :AcademicDocuments ;
+  rdfs:subClassOf :Publication, :AcademicDocument ;
   rdfs:label "Lehrbuch"@de, "Textbook"@en ;
 	rdfs:comment "Bezeichnet ein Buch das Lehrinhalte eines Studiums didaktisch aufbereitet."@de, "Refers to books which offer a compilation of content in a certain field of interest."@en .
 		
@@ -777,7 +777,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Bezeichnet den oder die Personen, die während einer Disputation als Opponenten auftreten. Opponenten sind auf Titelblättern der gedruckten Disputationsschrift in der Regel nicht angegeben und konnten aus Lehrkräften sowie Studenten gleichermaßen bestehen."@de, "Refers to the persons who acted as opponents at a disputation. Opponents are rarely indicated in printed disputation papers aka dissertations and could consist of teachers as well as students."@en .	      
 
 :hasPraeses rdf:type owl:ObjectProperty ;
-  rdfs:domain :Dissertation ;
+  rdfs:domain :AcademicDocument ;
   rdfs:range :Person ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#praeses> ;
   rdfs:label "hat Praeses"@de, "has praeses"@en ;
@@ -790,7 +790,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Gibt an, ob ein Kandidat ein Empfehlungsschreiben hat."@de, "Refers to any given recommendation of a candidate."@en .
 
 :hasRespondent rdf:type owl:ObjectProperty ;
-  rdfs:domain :Diputation ;
+  rdfs:domain :Dissertation ;
   rdfs:range :Person ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#respondent> ;
   rdfs:label "hat Respondent"@de, "has respondent"@en ;
@@ -885,16 +885,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#familyParent> ;
   rdfs:label "Elternteil"@de, "parent"@en ;
 	rdfs:comment "Weist einen Professor als Elternteil aus."@de, "Depicts a professor as a parent."@en .
-	      
-:ppn rdf:type owl:ObjectProperty ;
-                   rdfs:domain :Dissertation ;
-				   rdfs:range rdfs:Resource ;
-                   rdfs:comment "The PICA Production Number (PPN) of a record."@en ,
-                                "Die PICA Produktionsnummer (PPN) eines Datensatzes."@de ;
-	           rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#ppn> ;
-                   rdfs:label "PICA Production Number (PPN)"@en ,
-                              "PICA Produktionsnummer (PPN)"@de ;
-                   owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
 	      
 :publisher rdf:type owl:ObjectProperty ;
   rdfs:subPropertyOf dc:creator;
