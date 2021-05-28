@@ -840,7 +840,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :isPartOfFaculty rdf:type owl:ObjectProperty ;
   rdfs:domain :Chair ;
   rdfs:range :Faculty ;
-  rdfs:label "ist Teil der Fakultät"de@, "is part of faculty"@en ;
+  rdfs:label "ist Teil der Fakultät"@de, "is part of faculty"@en ;
 	rdfs:comment "Bezieht sich auf Lehrstühle der einzelnen Fakultäten."@de, "Refers to chairs of the individual faculties."@en .
 	      
 :isPartOfUniversity rdf:type owl:ObjectProperty ;
