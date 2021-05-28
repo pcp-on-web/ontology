@@ -64,7 +64,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 #################################################################
 #		Classes
 #################################################################
-	
+
+:AcademicDocument rdf:type owl:Class ;
+  rdfs:subClassOf :Document ;
+  rdfs:label "Akademisches Dokument"@de, "Academic document"@en ;
+	rdfs:comment "Dokumente die in der professoralen Lehrpraxis relevant waren."@de, "Academic documents which are relevant for the professorial practice."@en .
+			
+		
 :AcademicOffice rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
   rdfs:label "Akademisches Amt"@de, "Academic office"@en ;
@@ -203,6 +209,10 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Family> ;
   rdfs:label "Familie"@de, "Family"@en ;
 	rdfs:comment "Dieses Konzept beschreibt die soziale Herkunft und Familienverhältnisse einer Person."@de, "This concept describes the social origin and the family relationship of a person."@en .
+
+:Gender rdf:type owl:Class ;
+  rdfs:label "Geschlecht"@de, "Gender"@en ;
+	rdfs:comment "Verweist auf das biologische Geschlecht oder die Geschlechtsidentität einer Person."@de, "Refers to sex or gender of a person."@en .				
 		
 :Graduation rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
@@ -544,13 +554,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                "weitere Informationen"@de ;
                     owl:versionInfo "0.1 initial creation - 28.06.2007"^^xsd:string ,
                                     "2.0 stable"^^xsd:string .
-
-:gender rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Person ;
-  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#gender> ;
-  rdfs:label "Geschlecht"@de, "Gender"@en ;
-	rdfs:comment "Verweist auf das biologische Geschlecht oder die Geschlechtsidentität einer Person."@de, "Refers to sex or gender of a person."@en .
-			    
+	    
 :gnd rdf:type owl:DatatypeProperty , owl:FunctionalProperty ;
   rdfs:domain :Person ;
   rdfs:range rdfs:Literal ;
@@ -746,7 +750,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Student ;
   rdfs:label "eingeschriebener Student"@de, "enrolled student"@en ;
 	rdfs:comment "Im Matrikelbuch eingeschriebener Student."@de, "Most likely latinized name of a student at the enrollment document of a university."@en .
-	        
+
+:female rdf:type owl:ObjectProperty ;
+  rdfs:domain :Person ;
+  rdfs:range :Gender ;
+  rdfs:label "weiblich"@de, "female"@en ;
+  	rdfs:comment "Verweist auf das biologische weibliche Geschlecht oder die weibliche Geschlechtsidentität einer Person."@de, "Refers to the female sex or female gender of a person."@en .
+	      
 :geoname rdf:type owl:ObjectProperty ;
   rdfs:domain rdfs:Resource ;
   rdfs:range rdfs:Resource ;
@@ -869,6 +879,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Ort eines Dokument"@de, "location of a document"@en ;
 	rdfs:comment "Bezieht sich auf den geografischen Ort eines Dokuments, z.B. Publikationsort."@de,
 		"Refers to the geographical location of a document, e.g. location of a publication."@en .	   
+
+:male rdf:type owl:ObjectProperty ;
+  rdfs:domain :Person ;
+  rdfs:range :Gender ;
+  rdfs:label "männlich"@de, "male"@en ;
+  	rdfs:comment "Verweist auf das biologische männliche Geschlecht oder die männliche Geschlechtsidentität einer Person."@de, "Refers to the male sex or male gender of a person."@en .	      
 	      
 :membershipSociety rdf:type owl:ObjectProperty ;
   rdfs:domain :Membership ;
