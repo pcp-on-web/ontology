@@ -559,18 +559,36 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "GND"@de, "GND"@en ;
   	rdfs:comment "GND Normadatei, inklusive ehemals genutzte PND."@de, "GND integrated authority file, including formerly used PND."@en .
 
-:hasPNDpraeses rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Report, :Dissertation ;
+:hasPndDedicatee rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Document ;
   rdfs:range rdfs:Literal ;
-  rdfs:label "has PND praeses"@de, "hat PND praeses"@en ;
-  	rdfs:comment "Die PND Nummer des in Rechenschaftsberichten angegebenen Praeses."@de, "The PND number of the praeses given in the reports."@en .
+  rdfs:label "has PND Widmungsempfänger"@en, "hat PND dedicatee"@de ;
+  	rdfs:comment "Die PND Nummer der in Dokumenten angegebenen Widmungsempfänger."@de, "The PND number of dedicatees given in documents."@en .			    			    
 			    
-:hasPNDrespondent rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Dissertation ;
+:hasPndOpponent rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Document ;
   rdfs:range rdfs:Literal ;
-  rdfs:label "has PND respondent"@de, "hat PND respondent"@en ;
-  	rdfs:comment "Die PND Nummer des in Dissertationen angegebenen Respondenten."@de, "The PND number of the respondent given in the reports."@en .			    
+  rdfs:label "has PND opponent"@en, "hat PND opponent"@de ;
+  	rdfs:comment "Die PND Nummer der in Dokumenten angegebenen Opponenten."@de, "The PND number of opponents given in documents."@en .			    
+			    
+:hasPndPraeses rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Document ;
+  rdfs:range rdfs:Literal ;
+  rdfs:label "has PND praeses"@en, "hat PND praeses"@de ;
+  	rdfs:comment "Die PND Nummer des in Dokumenten angegebenen Praeses."@de, "The PND number of the praeses given in documents."@en .
+			    
+:hasPndRespondent rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Document ;
+  rdfs:range rdfs:Literal ;
+  rdfs:label "has PND respondent"@en, "hat PND respondent"@de ;
+  	rdfs:comment "Die PND Nummer des in Dokumenten angegebenen Respondenten."@de, "The PND number of the respondent given in documents."@en .			    
 
+:hasPndWellWisher rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Document ;
+  rdfs:range rdfs:Literal ;
+  rdfs:label "has PND well-wisher"@en, "hat PND Gratulant"@de ;
+  	rdfs:comment "Die PND Nummer der in Dokumenten angegebenen Gratulanten."@de, "The PND number of well-wisher given in documents."@en .			    			    
+			    
 :hasText rdf:type owl:DatatypeProperty ;
   rdfs:domain :Report ;
   rdfs:range rdfs:Literal ;
@@ -627,7 +645,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                               "PID"@de ;
                    owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
 
-:reportBegin rdf:type owl:DatatypeProperty ;
+:reportBegins rdf:type owl:DatatypeProperty ;
     rdfs:domain :Report ;
       rdfs:range rdfs:Literal ;
       rdfs:comment "Das Startdatum eines Rechenschaftsberichts."@de ,
