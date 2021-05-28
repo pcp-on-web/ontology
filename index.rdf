@@ -401,7 +401,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Dieses Konzept bezieht sich auf einen Lebensabschnitt eines Professors."@de, "This concept refers to a stage of life of a professor."@en .
 		
 :Statutes rdf:type owl:Class ;
-  rdfs:subClassOf :University ;
+  rdfs:subClassOf :Document ;
   rdfs:label "Statuten"@de, "Statutes"@en ;
 	rdfs:comment "Die Verfassung einer Universität."@de, "University constitution."@en .
 
@@ -829,10 +829,10 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Bezieht sich auf Lehrstühle der einzelnen Fakultäten."@de, "Refers to chairs of the individual faculties."@en .
 	      
 :isPartOfUniversity rdf:type owl:ObjectProperty ;
-  rdfs:domain :Faculty ;
+  rdfs:domain :Faculty, :Statutes ;
   rdfs:range :University ;
   rdfs:label "ist Teil der Universität"@de, "is part of university"@en ;
-	rdfs:comment "Bezieht sich auf die Fakultäten an einer Universität"@de, "Refers to the faculties of a university."@en .	      
+	rdfs:comment "Bezieht sich auf konstituierende Bestandteile einer Universität."@de, "Refers to the constituent parts of a university."@en .	      
 	      
 :isVocated rdf:type owl:ObjectProperty ;
   rdfs:domain :Candidacy ;
