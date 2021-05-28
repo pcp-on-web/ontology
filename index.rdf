@@ -406,7 +406,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Dieses Konzept bezieht sich auf einen Lebensabschnitt eines Professors."@de, "This concept refers to a stage of life of a professor."@en .
 		
 :Statutes rdf:type owl:Class ;
-  rdfs:subClassOf :AcademicDocument ;
+  rdfs:subClassOf :AcademicDocuments ;
   rdfs:label "Statuten"@de, "Statutes"@en ;
 	rdfs:comment "Die Verfassung einer Universität."@de, "University constitution."@en .
 
