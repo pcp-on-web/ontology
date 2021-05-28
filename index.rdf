@@ -262,6 +262,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Ort"@de, "Location"@en ;
 	rdfs:comment "Bezieht sich auf den geografischen Ort für Lebensabschnitte einer Person, Orte von Körperschaften, Medien (Verlagsort, Druckort), Ämtern, Landesherrschaft usw."@de, "Refers to the geographical location of life stages of persons, corporate bodies, media (printing, publishing), offices, territories and others."@en .
 
+:Marriage rdf:type owl:Class ;
+  rdfs:subClassOf :StageOfLife ;
+  rdfs:label "Heirat"@de, "Marriage"@en ;
+	rdfs:comment "Bezieht sich auf die Heirat von Personen."@de , "Refers to the marriage of persons."@en .		
+		
 :Magister rdf:type owl:Class ;
   rdfs:subClassOf :Graduation ;
   rdfs:label "Magister"@de, "Magister"@en ;
@@ -629,13 +634,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                       "0.2 changed Domain from Professor to Person"^^xsd:string ,
                       "2.0 stable"^^xsd:string .
 	      
-:pid rdf:type owl:DatatypeProperty ;
-                   rdfs:domain :Person ;
+:idProf rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Professor ;
 				   rdfs:range rdfs:Literal ;
-                   rdfs:comment "Persons Identification number in the original database, including professors."@en ,
-                                "Personen Identifikationsnummer in der ursprünglichen Datenbank, inkl. Professoren."@de ;
-                   rdfs:label "PID"@en ,
-                              "PID"@de ;
+                   rdfs:comment "Professors Identification number in the original database."@en ,
+                                "Personen Identifikationsnummer in der ursprünglichen Datenbank."@de ;
+                   rdfs:label "IDProfLocal"@en ,
+                              "IDProfLocal"@de ;
                    owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
 
 :reportBegins rdf:type owl:DatatypeProperty ;
@@ -840,7 +845,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#hasPeriod> ;
   rdfs:label "hat Lebensabschnitt"@de, "has stage of life"@en ;
 	rdfs:comment "Lebensabschnitt eines Professors."@de, "Stage of life of a professor."@en .
-				     
+	      
 :isDoing rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
   rdfs:range :TeachingPractices ;
