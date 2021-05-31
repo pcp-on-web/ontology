@@ -866,6 +866,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "wird ernannt"@de, "is vocated"@en ;
 	rdfs:comment "Bezieht sich auf den von Universität und Landesherrschaft ausgewählten Kandidaten für eine Professur."@de, "Refers to the candidate for a professorship/or chair which had been negotiated by the university and the territorial authority."@en .
 
+:lectureIsOfType rdf:type owl:ObjectProperty ;
+  rdfs:domain :Lecture ;
+  rdfs:range :LectureType ;
+  rdfs:label "Vorlesung ist Typ"@de, "lecture is of type"@en ;
+	rdfs:comment "Verweist auf den spezifischen Typ einer Vorlesung."@de, "Refers to the specific type of a lecture."@en .	      
+	      
 :locationCorporation rdf:type owl:ObjectProperty ;
   rdfs:domain :Corporation ;
   rdfs:range :Location ;
