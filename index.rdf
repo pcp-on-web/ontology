@@ -773,7 +773,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Faculty ;
   rdfs:label "hat Fakultät"@de, "has faculty"@en ;
 	rdfs:comment "Verknüpft Dokumente mit Fakultät."@de, "Links documents to faculty."@en .	      
-	      
+
+:hasKeyword rdf:type owl:ObjectProperty ;
+  rdfs:domain :Documents ;
+  rdfs:range :Keyword ;
+  rdfs:label "hat Schlagwort"@de, "has keyword"@en ;
+	rdfs:comment "Verknüpft Dokumente mit Schlagwortangaben."@de, "Links documents to keyword specification."@en .
+	   
 :hasOpponent rdf:type owl:ObjectProperty ;
   rdfs:domain :Dissertation ;
   rdfs:range :Person ;
