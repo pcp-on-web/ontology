@@ -833,8 +833,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:domain :Dissertation ;
   rdfs:range :Subject ;
   rdfs:label "hat Fach"@de, "has Subject"@en ;
-    rdfs:comment "Ordnet der Dissertation ein Fachgebiet zu."@de,"Assigns a dissertation to a subject."@en .
-	      
+    rdfs:comment "Ordnet der Dissertation ein Fachgebiet zu."@de,"Assigns a dissertation to a subject."@en .	      
 	      
 :hasWell-wisher rdf:type owl:ObjectProperty ;
   rdfs:domain :Dissertation ;
