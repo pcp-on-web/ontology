@@ -468,7 +468,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 #################################################################
 	
 :academicYear rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Semester ;
+  rdfs:domain :Semester, :AcademicDocument ;
   rdfs:range xsd:gYear;
   rdfs:label "Academic Year"@en, "Akademisches Jahr"@de .
 
@@ -559,11 +559,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 ###  http://purl.org/pcp-on-web/ontology#furtherInformation
 :furtherInformation rdf:type owl:DatatypeProperty ,
                              owl:FunctionalProperty ;
-                    rdfs:domain :Person ;
+                    rdfs:domain :Person, :AcademicDocuments ;
                     rdfs:range rdfs:Literal ;
                     <http://ns.ontowiki.net/SysOnt/order> "340"^^xsd:string ;
-                    rdfs:label "further information"@en ,
-                               "weitere Informationen"@de ;
+                    rdfs:label "Miscellaneous/further information"@en ,
+                               "Sonstiges/weitere Informationen"@de ;
                     owl:versionInfo "0.1 initial creation - 28.06.2007"^^xsd:string ,
                                     "2.0 stable"^^xsd:string .
 	    
