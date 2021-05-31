@@ -572,7 +572,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range rdfs:Literal ;
   rdfs:label "GND"@de, "GND"@en ;
   	rdfs:comment "GND Normadatei, inklusive ehemals genutzte PND."@de, "GND integrated authority file, including formerly used PND."@en .
-	    
+
+:hasComment rdf:type owl:ObjectProperty ;	      
+  rdfs:domain :Office ;
+  rdfs:range xsd:Literal ;
+  rdfs:label "hat Kommentar"@de, "has comment"@en ;
+	rdfs:comment "Infos aus Kommentar in original Datenbank."@de, "Infos from comment in the original database."@en .
+			    
 :hasText rdf:type owl:DatatypeProperty ;
   rdfs:domain :Report ;
   rdfs:range rdfs:Literal ;
@@ -750,8 +756,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:domain :PrivateLibrary ;
   rdfs:range :AuctionCatalogue ;
   rdfs:label "hat Auktionskatalog"@de, "has auction catalogue"@en ;
-	dc:description "Verknüpft eine Privatbibliothek mit einem Auktionskatalog."@de, "Adds an auction catalogue to a private library."@en .	      
-
+	dc:description "Verknüpft eine Privatbibliothek mit einem Auktionskatalog."@de, "Adds an auction catalogue to a private library."@en .	      	      
+	      
 :hasContributor rdf:type owl:ObjectProperty ;	      
   rdfs:domain :Document ;
   rdfs:range :Corporation, :Person ;
