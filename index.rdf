@@ -68,7 +68,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :AcademicDocuments rdf:type owl:Class ;
   rdfs:subClassOf :Document ;
   rdfs:label "Akademische Dokumente"@de, "Academic Documents"@en ;
-	rdfs:comment "Bezieht sich auf Akademische Dokumente im engsten Sinne, die für die Lehrpraxis relevant waren und in Abgrenzung zu Publikationen wie Büchern, inklusive Textbüchern stehen."@de, "..."@en .				
+	rdfs:comment "Bezieht sich auf Akademische Dokumente im engsten Sinne, die für die Lehrpraxis relevant waren. Sie stehen allerdings in Abgrenzung zu Publikationen, wie Textbücher."@de, "..."@en .				
 		
 :AcademicOffice rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
@@ -705,13 +705,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:domain :Person ;
   rdfs:range :Person ;
   rdfs:label "Korrespondenz"@de, "correspondence"@en ;
-	rdfs:comment "Verweist auf die aus einem Dokument hervorgehende Korrespondenz zwischen Personen, z.B. über Editionen oder Nachlassplattformen wie KALLIOPE."@de, "Assigns to the correspondence between persons, e.g. via editions or heritage plattforms such as KALLIOPE."@en .
-
-:dedicatee rdf:type owl:ObjectProperty ;
-  rdfs:domain :Dissertation ;
-  rdfs:range :Person ;
-  rdfs:label "hat Widmungsempfänger"@de, "has dedicatee"@en ;
-	rdfs:comment "Bezeichnet den Widmunsgempfänger einer Publikation."@de, "Refers to the dedicatee of a publication."@en .	      
+	rdfs:comment "Verweist auf die aus einem Dokument hervorgehende Korrespondenz zwischen Personen, z.B. über Editionen oder Nachlassplattformen wie KALLIOPE."@de, "Assigns to the correspondence between persons, e.g. via editions or heritage plattforms such as KALLIOPE."@en .	      
 	      
 :disputationHasDissertation rdf:type owl:ObjectProperty ;
   rdfs:range :Dissertation ;
@@ -756,6 +750,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Corporation, :Person ;
   rdfs:label "hat Urheber"@de, "has creator"@en ;
 	rdfs:comment "Urheber eines Dokuments"@de, "Creator of a document."@en .	      
+
+:hasDedicatee rdf:type owl:ObjectProperty ;
+  rdfs:domain :Dissertation ;
+  rdfs:range :Person ;
+  rdfs:label "hat Widmungsempfänger"@de, "has dedicatee"@en ;
+	rdfs:comment "Bezeichnet den Widmunsgempfänger einer Publikation."@de, "Refers to the dedicatee of a publication."@en .
 	      
 :hasEnrollment rdf:type owl:ObjectProperty ;
   rdfs:domain :Student ;
@@ -777,7 +777,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Bezeichnet den oder die Personen, die während einer Disputation als Opponenten auftreten. Opponenten sind auf Titelblättern der gedruckten Disputationsschrift in der Regel nicht angegeben und konnten aus Lehrkräften sowie Studenten gleichermaßen bestehen."@de, "Refers to the persons who acted as opponents at a disputation. Opponents are rarely indicated in printed disputation papers aka dissertations and could consist of teachers as well as students."@en .	      
 
 :hasPraeses rdf:type owl:ObjectProperty ;
-  rdfs:domain :AcademicDocuments ;
+  rdfs:domain :Dissertation ;
   rdfs:range :Person ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#praeses> ;
   rdfs:label "hat Praeses"@de, "has praeses"@en ;
@@ -814,6 +814,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#hasPeriod> ;
   rdfs:label "hat Lebensabschnitt"@de, "has stage of life"@en ;
 	rdfs:comment "Lebensabschnitt eines Professors."@de, "Stage of life of a professor."@en .
+
+:hasWell-wisher rdf:type owl:ObjectProperty ;
+  rdfs:domain :Dissertation ;
+  rdfs:range :Person ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#wellWisher> ;
+  rdfs:label "hat Gratulant"@de, "has well-wisher"@en ;
+	rdfs:comment "Bezeichnet den Gratulanten einer Publikation, bspw. den Gratulanten eines Disputanten. Diese Gratulanten-Schriften befinden sich zumeist am Ende einer Dissertation."@de, "Refers to the well-wisher of a publication, e.g. the well-wisher to a disputant. These well-wishing writings are usually found at the end of a dissertation."@en .
 	      
 :isDoing rdf:type owl:ObjectProperty ;
   rdfs:domain :Professor ;
@@ -931,13 +938,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Professor ;
   rdfs:label "beruft"@de, "vocates"@en ;
 	rdfs:comment "Landesherrschaft beruft bzw. bestätigt und ernennt einen Professor."@de, "Territorial rulership vocates or confirms a Professor."@en .
-
-:well-wisher rdf:type owl:ObjectProperty ;
-  rdfs:domain :Dissertation ;
-  rdfs:range :Person ;
-  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#wellWisher> ;
-  rdfs:label "hat Gratulant"@de, "has well-wisher"@en ;
-	rdfs:comment "Bezeichnet den Gratulanten einer Publikation, bspw. den Gratulanten eines Disputanten. Diese Gratulanten-Schriften befinden sich zumeist am Ende einer Dissertation."@de, "Refers to the well-wisher of a publication, e.g. the well-wisher to a disputant. These well-wishing writings are usually found at the end of a dissertation."@en .
 
 	
 #####################################################################################################################################################################
