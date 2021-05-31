@@ -916,7 +916,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :wife rdf:type owl:ObjectProperty ;
   rdfs:domain :Family ;
   rdfs:range :Professor ;
-  rdfs:label "Ehefrau"@de, "Ehefrau"@en ;
+  rdfs:label "Ehefrau"@de, "wife"@en ;
 	rdfs:comment "Bezieht sich auf die Ehefrau eines Professors."@de, "Refers to the wife of a professor."@en .
 
 :tagged rdf:type owl:ObjectProperty ;
