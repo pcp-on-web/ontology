@@ -251,11 +251,10 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Privatdozent"@de, "Lecturer"@en ;
 	rdfs:comment "Bezeichnet Lehrkräfte ohne Professur, oft als PD bezeichnet. Graduierte Personen wie Magister oder Doktoren, die mit Lehrbefähigung (venia legendi/docendi) an der Universität lehrten, aber kein regelmäßiges Salär über die Korporation bzw. die Landesherrschaft erhielten. Stattdessen bekamen sie direkt von den Studenten Honorare für ihre Lehrpraxis."@de, "Refers to teachers without professorships but the permission to teach (venia legendi/docendi), often referred to as PD. Those were graduated persons, such as Magister or Doctors who did not receive a salary by the corporation or territory ruler but got paid directly by the students for their teaching practices."@en .
 			
-LectureType rdf:type owl:Class ;
+:LectureType rdf:type owl:Class ;
   rdfs:label "Vorlesungstyp"@de, "Lecturetype"@en ;
 	rdfs:comment "..."@de, "..."@en .
-		
-		
+				
 :Licentiatus rdf:type owl:Class ;
   rdfs:subClassOf :Graduation ;
   rdfs:label "Lizenziat"@de, "Licentiate"@en ;
