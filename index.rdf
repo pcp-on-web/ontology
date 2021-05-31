@@ -468,7 +468,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 #################################################################
 	
 :academicYear rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Semester, :AcademicDocument ;
+  rdfs:domain :Semester, :AcademicDocuments ;
   rdfs:range xsd:gYear;
   rdfs:label "Academic Year"@en, "Akademisches Jahr"@de .
 
