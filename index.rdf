@@ -414,7 +414,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :Person ;
   rdfs:label "Student"@de, "Student"@en ;
 	rdfs:comment "Bezeichnet einen an der Universität immatrikulierten Studenten."@de, "Refers to an enrolled student at a University."@en .
-		
+
+:Stubject rdf:type owl:Class ;
+  rdfs:label "Fach"@de, "Subject"@en ;
+	rdfs:comment "Bezieht sich auf das Fachgebiet eines Akademischen Dokuments, z.B. einer Dissertation."@de, "Refers to the subject of an academic document, such as dissertations."@en .
+			
 :SummerSemester rdf:type owl:Class ;
   rdfs:subClassOf :Semester ;
   owl:DisjoinUnionOf :WinterSemester;
@@ -815,6 +819,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "hat Lebensabschnitt"@de, "has stage of life"@en ;
 	rdfs:comment "Lebensabschnitt eines Professors."@de, "Stage of life of a professor."@en .
 
+:hasSubject rdf:type owl:ObjectProperty ;
+  rdfs:domain :Dissertation ;
+  rdfs:range :Subject ;
+  rdfs:label "hat Fach"@de, "has Subject"@en ;
+    rdfs:comment "Ordnet der Dissertation ein Fachgebiet zu."@de,"Assigns a dissertation to a subject."@en .
+	      
+	      
 :hasWell-wisher rdf:type owl:ObjectProperty ;
   rdfs:domain :Dissertation ;
   rdfs:range :Person ;
