@@ -516,7 +516,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Geburtsname"@de , "birthname"@en ;
   rdfs:comment "Geburtsname der Ehefrau eines Professoren."@de , "The birthname of the wife of a professor."@en.				     
 				     
-:chairFrom rdf:type owl:DatatypeProperty ;
+:chairBegin rdf:type owl:DatatypeProperty ;
       rdfs:domain :Chair ;
       rdfs:range rdfs:Literal ;
       rdfs:comment "Das Startdatum eines Lehrstuhls."@de ,
@@ -526,12 +526,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                  xsd:gMonthDay ,
                  xsd:gYear ,
                  xsd:gYearMonth"""@en ;
-      rdfs:label "chair from"@en ,
+      rdfs:label "chair begin"@en ,
                  "Lehrstuhlbeginn"@de ;
       owl:versionInfo "0.1 initial creation date:  24.05.2007"^^xsd:string ,
                       "2.0 stable other types added"^^xsd:string .
 				    
-:chairTo rdf:type owl:DatatypeProperty ;
+:chairEnd rdf:type owl:DatatypeProperty ;
     rdfs:domain :Chair ;
     rdfs:range rdfs:Literal ;
     rdfs:comment "Das Enddatum eines Lehrstuhls."@de ,
@@ -542,7 +542,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                xsd:gYear,
                xsd:gYearMonth"""@en ;
     rdfs:label "Lehrstuhlende"@de ,
-               "chair to"@en ;
+               "chair end"@en ;
     owl:versionInfo "0.1 initial creation date:  24.05.2007"^^xsd:string ,
                     "2.0 stable other types added"^^xsd:string .				     
 				     
