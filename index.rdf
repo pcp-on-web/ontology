@@ -930,6 +930,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#familyParent> ;
   rdfs:label "Elternteil"@de, "parent"@en ;
 	rdfs:comment "Weist einen Professor als Elternteil aus."@de, "Depicts a professor as a parent."@en .
+
+:professorshipHasChair rdf:type owl:ObjectProperty ;
+  rdfs:domain :Professorship ;
+  rdfs:range :Chair ;
+  rdfs:label "Professur hat Lehrstuhl"@de, "professorship has chair"@en ;
+	rdfs:comment "Weist einer Ordentlichen Professur einen Lehrstuhl zu."@de, "Assigns a full professorship to a chair at the faculty."@en .	      
 	      
 :publisher rdf:type owl:ObjectProperty ;
   rdfs:subPropertyOf dc:creator;
