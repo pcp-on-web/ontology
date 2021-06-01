@@ -498,8 +498,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                              owl:versionInfo "0.1 initial creation - 24.05.07"^^xsd:string ,
                                              "0.2 changed Domain from Professor to Person"^^xsd:string ,
                                              "2.0 under discussion"^^xsd:string .
-
-
+				     
 :date rdf:type owl:DatatypeProperty, owl:FunctionalProperty ;
   rdfs:domain :StageOfLife ;
   rdfs:range rdfs:Literal;
@@ -568,13 +567,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                     "2.0 stable"^^xsd:string .
 	    
 :gnd rdf:type owl:DatatypeProperty , owl:FunctionalProperty ;
-  rdfs:domain :Person ;
+  rdfs:domain :Person, :Corporation ;
   rdfs:range rdfs:Literal ;
   rdfs:label "GND"@de, "GND"@en ;
   	rdfs:comment "GND Normadatei, inklusive ehemals genutzte PND."@de, "GND integrated authority file, including formerly used PND."@en .
 
 :hasComment rdf:type owl:ObjectProperty ;	      
-  rdfs:domain :Office, :AcademicOffice ;
+  rdfs:domain :Office, :AcademicOffice, :Chair ;
   rdfs:range xsd:Literal ;
   rdfs:label "hat Kommentar"@de, "has comment"@en ;
 	rdfs:comment "Infos aus Kommentar in original Datenbank."@de, "Infos from comment in the original database."@en .
