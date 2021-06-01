@@ -463,6 +463,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Wintersemester"@de, "Winter Semester"@en ;
     rdfs:comment "Das halbjährige Wintersemester dauert von Oktober bis März."@de , "The biannual winter semester starts in October and ends in March."@en .		
 
+:Wife rdf:type owl:Class ;
+  rdfs:subClassOf :Person ;
+  rdfs:label "Ehefrau"@de, "Wife"@en ;
+	rdfs:comment "Bezieht sich auf die Ehefrau eines Professors."@de, "Refers to wife of a professor."@en .
+		
+		
 #################################################################
 #		Datatype Propertys		
 #################################################################
