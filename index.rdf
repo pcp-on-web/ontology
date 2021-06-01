@@ -424,7 +424,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Student"@de, "Student"@en ;
 	rdfs:comment "Bezeichnet einen an der Universität immatrikulierten Studenten."@de, "Refers to an enrolled student at a University."@en .
 
-:Stubject rdf:type owl:Class ;
+:Subject rdf:type owl:Class ;
   rdfs:label "Fach"@de, "Subject"@en ;
 	rdfs:comment "Bezieht sich auf das Fachgebiet eines Akademischen Dokuments, z.B. einer Dissertation."@de, "Refers to the subject of an academic document, such as dissertations."@en .
 			
