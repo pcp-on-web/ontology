@@ -498,6 +498,26 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                              owl:versionInfo "0.1 initial creation - 24.05.07"^^xsd:string ,
                                              "0.2 changed Domain from Professor to Person"^^xsd:string ,
                                              "2.0 under discussion"^^xsd:string .
+
+:chairFrom rdf:type owl:DatatypeProperty ;
+    rdfs:domain :Chair ;
+      rdfs:range rdfs:Literal xsd:gYear ;
+      rdfs:comment "Das Startjahr eines Lehrstuhls."@de ,
+                   "The year of the beginning of a chair."@en ;
+      rdfs:label "chair from"@en ,
+                 "Lehrstuhl von"@de ;
+      owl:versionInfo "0.1 initial creation date:  24.05.2007"^^xsd:string ,
+                      "2.0 stable other types added"^^xsd:string .
+	      
+:chairTo rdf:type owl:DatatypeProperty ;
+    rdfs:domain :Chair ;
+      rdfs:range rdfs:Literal xsd:gYear ;
+      rdfs:comment "Das Endjahr eines Lehrstuhls."@de ,
+                   "The year of the ending of a chair."@en ;
+      rdfs:label "chair to"@en ,
+                 "Lehrstuhl bis"@de ;
+      owl:versionInfo "0.1 initial creation date:  24.05.2007"^^xsd:string ,
+                      "2.0 stable other types added"^^xsd:string .				     
 				     
 :date rdf:type owl:DatatypeProperty, owl:FunctionalProperty ;
   rdfs:domain :StageOfLife ;
