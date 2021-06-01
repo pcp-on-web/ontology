@@ -785,7 +785,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Verweist auf eine Immatrikulation einer Person an einer Universität."@de, "Refers to the enrollment of a person at a university."@en .
 
 :hasFaculty rdf:type owl:ObjectProperty ;
-  rdfs:domain :AcademicDocuments ;
+  rdfs:domain :AcademicDocuments; AcademicOffice ;
   rdfs:range :Faculty ;
   rdfs:label "hat Fakultät"@de, "has faculty"@en ;
 	rdfs:comment "Verknüpft Dokumente mit Fakultät."@de, "Links documents to faculty."@en .	      
