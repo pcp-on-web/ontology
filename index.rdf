@@ -574,7 +574,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   	rdfs:comment "GND Normadatei, inklusive ehemals genutzte PND."@de, "GND integrated authority file, including formerly used PND."@en .
 
 :hasComment rdf:type owl:ObjectProperty ;	      
-  rdfs:domain :Office ;
+  rdfs:domain :Office, :AcademicOffice ;
   rdfs:range xsd:Literal ;
   rdfs:label "hat Kommentar"@de, "has comment"@en ;
 	rdfs:comment "Infos aus Kommentar in original Datenbank."@de, "Infos from comment in the original database."@en .
