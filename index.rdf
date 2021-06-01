@@ -498,6 +498,38 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                              owl:versionInfo "0.1 initial creation - 24.05.07"^^xsd:string ,
                                              "0.2 changed Domain from Professor to Person"^^xsd:string ,
                                              "2.0 under discussion"^^xsd:string .			     
+
+###  http://purl.org/pcp-on-web/ontology#from
+:chairFrom rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Chair ;
+      rdfs:range rdfs:Literal ;
+      rdfs:comment "Das Startdatum eines Lehrstuhls."@de ,
+                   """The date of the beginning of a Lehrstuhl from a valid datatype xsd:date ,
+                 xsd:gDay ,
+                 xsd:gMonth ,
+                 xsd:gMonthDay ,
+                 xsd:gYear ,
+                 xsd:gYearMonth"""@en ;
+      rdfs:label "chair from"@en ,
+                 "Lehrstuhlbeginn"@de ;
+      owl:versionInfo "0.1 initial creation date:  24.05.2007"^^xsd:string ,
+                      "2.0 stable other types added"^^xsd:string .
+				    
+###  http://purl.org/pcp-on-web/ontology#to
+:chairTo rdf:type owl:DatatypeProperty ;
+    rdfs:domain :Chair ;
+    rdfs:range rdfs:Literal ;
+    rdfs:comment "Das Enddatum eines Lehrstuhls."@de ,
+                 """The date of the ending of a chair from a valid datatype xsd:date ,
+               xsd:gDay,
+               xsd:gMonth,
+               xsd:gMonthDay,
+               xsd:gYear,
+               xsd:gYearMonth"""@en ;
+    rdfs:label "Lehrstuhlende"@de ,
+               "chair to"@en ;
+    owl:versionInfo "0.1 initial creation date:  24.05.2007"^^xsd:string ,
+                    "2.0 stable other types added"^^xsd:string .				     
 				     
 :date rdf:type owl:DatatypeProperty, owl:FunctionalProperty ;
   rdfs:domain :StageOfLife ;
