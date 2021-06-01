@@ -287,6 +287,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Amt"@de, "Office"@en ;
 	rdfs:comment "Bezieht sich auf nicht akademische Ämter bzw. Nebenberufe von Professoren außerhalb der Universität, z.B. als Ärzte, Räte oder Anwälte."@de , "Refers to non-academic offices resp. side professions of professors outside of the university, e.g. as physicians at court, lawyers or counselers."@en .
 
+:Origin rdf:type owl:Class ;
+  rdfs:subClassOf :Person ;
+  rdfs:label "Herkunft"@de, "Origin"@en ;
+	rdfs:comment "Bezeichnet die geografische Herkunft einer Person."@de, "Refers to the geographical origin of a person."@en .		
+		
 :Pamphlet rdf:type owl:Class ;
   rdfs:subClassOf :Publication ;
   rdfs:label "Streitschrift"@de, "Pamphlet"@en ;
@@ -505,7 +510,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                              "0.2 changed Domain from Professor to Person"^^xsd:string ,
                                              "2.0 under discussion"^^xsd:string .			     
 
-###  http://purl.org/pcp-on-web/ontology#from
+:birthname rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Wife ;
+  rdfs:range rdfs:Literal ;
+  rdfs:label "Geburtsname"@de , "birthname"@en ;
+  rdfs:comment "Geburtsname der Ehefrau eines Professoren."@de , "The birthname of the wife of a professor."@en.				     
+				     
 :chairFrom rdf:type owl:DatatypeProperty ;
       rdfs:domain :Chair ;
       rdfs:range rdfs:Literal ;
@@ -521,7 +531,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
       owl:versionInfo "0.1 initial creation date:  24.05.2007"^^xsd:string ,
                       "2.0 stable other types added"^^xsd:string .
 				    
-###  http://purl.org/pcp-on-web/ontology#to
 :chairTo rdf:type owl:DatatypeProperty ;
     rdfs:domain :Chair ;
     rdfs:range rdfs:Literal ;
@@ -652,8 +661,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
       rdfs:domain :Person ;
       rdfs:range rdfs:Literal ;
       <http://ns.ontowiki.net/SysOnt/order> "390"^^xsd:string ;
-      rdfs:comment "additional information that does not fit elsewhere"@en ,
-                   "zusätzliche Informationen die nirgends sonst eingetragen werden können"@de ;
+      rdfs:comment "Additional information from the original database that do not fit elsewhere."@en ,
+                   "Zusätzliche Informationen aus den original datenbanken, die nirgends sonst eingetragen werden können."@de ;
       rdfs:label "Vermerk, Hinweis"@de ,
                  "note"@en ;
       owl:versionInfo "0.1 initial creation - 24.05.2007"^^xsd:string ,
@@ -669,6 +678,16 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                               "IDProfLocal"@de ;
                    owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
 
+###  http://purl.org/pcp-on-web/ontology#surname
+:surname rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Person ;
+  rdfs:range rdfs:Literal ;
+  rdfs:label "Nachname"@de , "surname"@en ;
+  rdfs:comment "Nachname einer Person"@de , "The surname of a person"@en ;
+		         owl:versionInfo "0.1 initial creation date: 24.05.2007"^^xsd:string ,
+                         "2.0 stable"^^xsd:string ,
+                         "version 0.2  10.03.2008"^^xsd:string .	      
+	      
 :reportBegins rdf:type owl:DatatypeProperty ;
     rdfs:domain :Report ;
       rdfs:range rdfs:Literal ;
