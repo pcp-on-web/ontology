@@ -938,7 +938,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	      
 :isVocated rdf:type owl:ObjectProperty ;
   rdfs:domain :Candidacy ;
-  rdfs:range :Professor ;
+  rdfs:range :Professorship, :AssociateProfessor ;
   rdfs:label "wird ernannt"@de, "is vocated"@en ;
 	rdfs:comment "Bezieht sich auf den von Universität und Landesherrschaft ausgewählten Kandidaten für eine Professur."@de, "Refers to the candidate for a professorship/or chair which had been negotiated by the university and the territorial authority."@en .
 
