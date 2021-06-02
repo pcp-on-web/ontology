@@ -790,11 +790,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "weiblich"@de, "female"@en ;
   	rdfs:comment "Verweist auf das biologische weibliche Geschlecht oder die weibliche Geschlechtsidentität einer Person."@de, "Refers to the female sex or female gender of a person."@en .
 	      
-:geoname rdf:type owl:ObjectProperty ;
-  rdfs:domain rdfs:Resource ;
+:geonameLocation rdf:type owl:ObjectProperty ;
+  rdfs:domain rdfs:Location ;
   rdfs:range rdfs:Resource ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#geoname> ;
-  rdfs:label "Geoname"@en , "Geoname"@de ;
+  rdfs:label "Geoname location"@en , "Geoname Ort"@de ;
   	rdfs:comment "The Resource location's URL in http://geonames.org."@en ,"Die URL des Ressourcenstandorts in http://geonames.org."@de; owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
 
 :hasAuctionCatalogue rdf:type owl:ObjectProperty ;
