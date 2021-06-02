@@ -68,7 +68,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :AcademicDocuments rdf:type owl:Class ;
   rdfs:subClassOf :Document ;
   rdfs:label "Akademische Dokumente"@de, "Academic Documents"@en ;
-	rdfs:comment "Bezieht sich auf Akademische Dokumente im engsten Sinne, die für die Lehrpraxis relevant waren. Sie stehen allerdings in Abgrenzung zu Publikationen, wie Textbücher."@de, "..."@en .				
+	rdfs:comment "Bezieht sich auf Akademische Dokumente im engsten Sinne, die für die Organisation des Universitätsalltags relevant waren, wie Vorlesungsverzeichnisse oder Rechenschaftsberichte. Sie stehen allerdings in Abgrenzung zu Publikationen wie Textbücher, die zwar ebenfalls relevant für die Unterrichtspraxis waren, sich aber über den zeitgenössischen Publikationsmarkt an ein größeres Publikum aus Gelehrten und Gebildeten wendeten."@de, "Refers to academic documents in the narrowest sense. Documents that were relevant to the organisation of everyday university life, such as lecture catalogues or professorial reports. However, they are distinct from publications such as textbooks, which were also relevant to teaching practice, but addressed a larger audience of scholars and educated people via the contemporary publication market."@en .				
 		
 :AcademicOffice rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
