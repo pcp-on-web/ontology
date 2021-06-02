@@ -107,10 +107,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Kandidatur"@de, "Candidacy"@en ;
 	rdfs:comment "Bezieht sich auf die Kandidatur einer Person, die im Zuge der Besetzung einer Professur als Kandidat gehandelt wird. Diese Person kann ein Kandidat ohne Lehrstuhl sein, aber auch ein bereits amtierender Professor, der für einen anderen Lehrstuhl gehandelt wird."@de , "Refers to the candidacy of a person which is a candidate for a university chair/professorship. This person can be a candidate without a chair, but also an incumbent professor who is being traded for another chair."@en .
 		
-:Chair rdf:type owl:Class ;
-  rdfs:label "Lehrstuhl"@de, "Chair"@en ;
-	rdfs:comment "Bezeichnet einen Lehrstuhl an einer Universitätsfakultät, der ein spezifisches Fachgebiet umfasst und mit einer Professur besetzt ist."@de, "Designates a chair at a university faculty that covers a specific subject area and is occupied by a professorship."@en .
-
+:ChairProfessorship rdf:type owl:Class ;
+  rdfs:subClassOf :AcademicOffice ;
+  rdfs:label "Lehrstuhl/Professur"@de, "Chair/Professorship"@en ;
+	rdfs:comment "Bezeichnet den Lehrstuhl eines ordentlichen Professors an einer Universitätsfakultät, der einem spezifischen Fachgebiet zugeordnet ist."@de, "Designates a chair at a university faculty that covers a specific subject area and is occupied by a full or ordniary professor."@en .
+ 		
 :Collection rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
   rdfs:label "Sammlung"@de, "Collection"@en ;
@@ -332,12 +333,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :Family ;
   rdfs:label "Professorenfamilie"@de, "Professorial Family"@en ;
 	rdfs:comment "Bezieht sich auf Familien die generationenübegreifend auffallend häufig Professoren hervorbrachten. Diese Familien werde in der Forschung häufig mit Begriffen wie Gelehrtendynastie und Familienuniversität belegt."@de, "Refers to families that produced professors with a striking frequency across the generations. In research, these families are often referred to by terms such as scholarly dynasty and family university."@en . 
-		
-:Professorship rdf:type owl:Class ;
-  rdfs:subClassOf :AcademicOffice ;
-  rdfs:label "Professur"@de, "Professorship"@en ;
-	rdfs:comment "Bezeichnet den Lehrstuhl eines ordentlichen Professors an einer Universitätsfakultät, der einem Fachgebiet zugeordnet ist."@de, "Designates the chair of a full or ordinary Professor at a university faculty."@en .
-		
+			
 :ProgramsAndSpeeches rdf:type owl:Class ;
   rdfs:subClassOf :Publication, :AcademicDocuments ;
   rdfs:label "Programme und Reden"@de, "Programs and Speeches"@en ;
@@ -571,7 +567,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   	rdfs:comment "GND Normadatei, inklusive ehemals genutzte PND."@de, "GND integrated authority file, including formerly used PND."@en .
 
 :hasComment rdf:type owl:ObjectProperty ;	      
-  rdfs:domain :Office, :AcademicOffice, :Chair ;
+  rdfs:domain :Office, :AcademicOffice, :ChairProfessorship ;
   rdfs:range xsd:Literal ;
   rdfs:label "hat Kommentar"@de, "has comment"@en ;
 	rdfs:comment "Infos aus Kommentar in original Datenbank."@de, "Infos from comment in the original database."@en .
@@ -855,7 +851,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Bezieht sich auf Lehrpraktiken, die von einer Lehrkraft an einer Universität durchgeführt werden, z.B. Vorlesungen halten, Disputationen vorstehen oder Übungen geben."@de, "Refers to teaching practices which are done by a lecturer at a university, e.g. give lectures, preside over disputations or give excersizes."@en.
 
 :isPartOfFaculty rdf:type owl:ObjectProperty ;
-  rdfs:domain :Chair ;
+  rdfs:domain :ChairProfessorship ;
   rdfs:range :Faculty ;
   rdfs:label "ist Teil der Fakultät"@de, "is part of faculty"@en ;
 	rdfs:comment "Bezieht sich auf Lehrstühle der einzelnen Fakultäten."@de, "Refers to chairs of the individual faculties."@en .     
@@ -868,7 +864,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	      
 :isVocated rdf:type owl:ObjectProperty ;
   rdfs:domain :Candidacy ;
-  rdfs:range :Professorship, :AssociateProfessor ;
+  rdfs:range :ChairProfessorship, :AssociateProfessor ;
   rdfs:label "wird ernannt"@de, "is vocated"@en ;
 	rdfs:comment "Bezieht sich auf den von Universität und Landesherrschaft ausgewählten Kandidaten für eine Professur."@de, "Refers to the candidate for a professorship/or chair which had been negotiated by the university and the territorial authority."@en .
 
@@ -918,12 +914,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "besitzt"@de, "owns"@en ;
 	rdfs:comment "Verweist auf Sammlungen einer Lehrkraft, z.B. Privatbibliotheken, Münzen und anderweitige fachspezifische Sammlungen, die bspw. für eine Person im Berufungsverfahren auf eine Professur von Bedeutung gewesen sein könnten."@de, "Refers to a collection of a lecturer, like private libraries, coins and other subject specific collections, which could have been important for the vocation of a professorship."@en .
 
-:professorshipHasChair rdf:type owl:ObjectProperty ;
-  rdfs:domain :Professorship ;
-  rdfs:range :Chair ;
-  rdfs:label "Professur hat Lehrstuhl"@de, "professorship has chair"@en ;
-	rdfs:comment "Weist einer Ordentlichen Professur einen Lehrstuhl zu."@de, "Assigns a full professorship to a chair at the faculty."@en .	      
-	      
 :publisher rdf:type owl:ObjectProperty ;
   rdfs:subPropertyOf dc:creator;
   rdfs:domain :Document ;
