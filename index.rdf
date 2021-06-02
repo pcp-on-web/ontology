@@ -791,7 +791,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   	rdfs:comment "Verweist auf das biologische weibliche Geschlecht oder die weibliche Geschlechtsidentität einer Person."@de, "Refers to the female sex or female gender of a person."@en .
 	      
 :geonameLocation rdf:type owl:ObjectProperty ;
-  rdfs:domain rdfs:Location ;
+  rdfs:domain :Location ;
   rdfs:range rdfs:Resource ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#geoname> ;
   rdfs:label "Geoname location"@en , "Geoname Ort"@de ;
