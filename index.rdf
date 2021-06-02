@@ -285,12 +285,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :StageOfLife;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Office> ;
   rdfs:label "Amt"@de, "Office"@en ;
-	rdfs:comment "Bezieht sich auf nicht akademische Ämter bzw. Nebenberufe von Professoren außerhalb der Universität, z.B. als Ärzte, Räte oder Anwälte."@de , "Refers to non-academic offices resp. side professions of professors outside of the university, e.g. as physicians at court, lawyers or counselers."@en .
-
-:Origin rdf:type owl:Class ;
-  rdfs:subClassOf :StageOfLife ;
-  rdfs:label "Herkunft"@de, "Origin"@en ;
-	rdfs:comment "Bezeichnet die geografische Herkunft einer Person."@de, "Refers to the geographical origin of a person."@en .		
+	rdfs:comment "Bezieht sich auf nicht akademische Ämter bzw. Nebenberufe von Professoren außerhalb der Universität, z.B. als Ärzte, Räte oder Anwälte."@de , "Refers to non-academic offices resp. side professions of professors outside of the university, e.g. as physicians at court, lawyers or counselers."@en .		
 		
 :Pamphlet rdf:type owl:Class ;
   rdfs:subClassOf :Publication ;
@@ -855,7 +850,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 :hasOrigin rdf:type owl:ObjectProperty ;
   rdfs:domain :Person ;
-  rdfs:range :Origin ;
+  rdfs:range :Location ;
   rdfs:label "hat Herkunft"@de, "has origin"@en ;
 	rdfs:comment "Verweist auf die geografische Herkunft von Personen."@de, "Refers to the geographical origin of persons."@en .	      	      
 	      
