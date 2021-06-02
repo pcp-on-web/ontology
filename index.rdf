@@ -755,7 +755,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	      
 :child rdf:type owl:ObjectProperty ;
   rdfs:domain :Family ;  
-  rdfs:range :Professor ;
+  rdfs:range :Person ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#familyChild> ;
   rdfs:label "Kind"@de, "child"@en ;
 	rdfs:comment "Bezieht sich auf das Kind, Pflegekind, Adoptivkind eines Professors."@de, "Refers to the cild, foster child, adoptive child of a professor."@en .
@@ -984,7 +984,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 				     
 :parent rdf:type owl:ObjectProperty ;
   rdfs:domain :Family ;
-  rdfs:range :Professor ;
+  rdfs:range :Person ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#familyParent> ;
   rdfs:label "Elternteil"@de, "parent"@en ;
 	rdfs:comment "Weist einen Professor als Elternteil aus."@de, "Depicts a professor as a parent."@en .
@@ -1024,7 +1024,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	      
 :wife rdf:type owl:ObjectProperty ;
   rdfs:domain :Family ;
-  rdfs:range :Professor ;
+  rdfs:range :Person ;
   rdfs:label "Ehefrau"@de, "wife"@en ;
 	rdfs:comment "Bezieht sich auf die Ehefrau eines Professors."@de, "Refers to the wife of a professor."@en .
 
