@@ -269,11 +269,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :Graduation ;
   rdfs:label "Magister"@de, "Magister"@en ;
 	rdfs:comment "Bezeichnet den akademischen Grad eines Magister. Kürzel: Mag."@de , "Refers to the academic degree of a Magister. Abbreviation: Mag."@en .
-
-:Marriage rdf:type owl:Class ;
-  rdfs:subClassOf :StageOfLife ;
-  rdfs:label "Heirat"@de, "Marriage"@en ;
-	rdfs:comment "Bezieht sich auf die Heirat von Personen."@de , "Refers to the marriage of persons."@en .				
 		
 :Membership rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
@@ -737,7 +732,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                     "2.0 stable other types added"^^xsd:string .
 
 :weddingYear rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Marriage ;
+  rdfs:domain :Family ;
   rdfs:range xsd:gYear ;
   rdfs:label "wedding year"@en, "Heiratsjahr"@de .	      
 	      
