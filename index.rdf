@@ -246,10 +246,10 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "abgehaltene Vorlesung"@de, "Lecture done"@en ;
 	rdfs:comment "Bezieht sich auf Vorlesungen (lectiones) die von Professoren nachweislich durchgeführt wurden, z.B. nachgewiesen in Rechenschaftsberichten oder aktenkundliche Lektionslisten."@de, "Refers to lectures which were actually given by a professor and which can be proved to be given, e.g. by reports, lists or other archival material."@en .			
 		
-:Lecturer rdf:type owl:Class ;
+:PrivateLecturer rdf:type owl:Class ;
   rdfs:subClassOf :AcademicOffice ;
-  rdfs:label "Dozent"@de, "Lecturer"@en ;
-	rdfs:comment "Bezeichnet eine Lehrkraft ohne Professur. Graduierte Personen wie Magister oder Doktoren, die mit Lehrbefähigung (venia legendi/docendi) an der Universität lehrten, aber kein regelmäßiges Salär über die Korporation bzw. die Landesherrschaft erhielten. Stattdessen bekamen sie direkt von den Studenten Honorare für ihre Lehrpraxis, z. B. Privatdozenten."@de, "Refers to teachers without professorships but the permission to teach (venia legendi/docendi). Those were graduated persons, such as Magister or Doctors who did not receive a salary by the corporation or territory ruler but got paid directly by the students for their teaching practices, e. g. so-called Privatdozenten."@en .
+  rdfs:label "Privatdozent"@de, "Private Lecturer"@en ;
+	rdfs:comment "Bezeichnet eine Lehrkraft ohne Professur. Graduierte Personen wie Magister oder Doktoren, die mit Lehrbefähigung (venia legendi/docendi) an der Universität lehrten, aber kein regelmäßiges Salär über die Korporation bzw. die Landesherrschaft erhielten. Stattdessen bekamen sie direkt von den Studenten Honorare für ihre Lehrpraxis, z. B. Privatdozenten."@de, "Refers to teachers without professorships but the permission to teach (venia legendi/docendi). Those were graduated persons, such as Magister or Doctors who did not receive a salary by the corporation or territory ruler but got paid directly by the students for their teaching practices, e. g. so-called private lecturers (German: Privatdozenten)."@en .
 			
 :LectureType rdf:type owl:Class ;
   rdfs:label "Vorlesungstyp"@de, "Lecturetype"@en ;
