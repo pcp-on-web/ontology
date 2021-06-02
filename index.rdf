@@ -917,13 +917,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:domain :Chair ;
   rdfs:range :Faculty ;
   rdfs:label "ist Teil der Fakultät"@de, "is part of faculty"@en ;
-	rdfs:comment "Bezieht sich auf Lehrstühle der einzelnen Fakultäten."@de, "Refers to chairs of the individual faculties."@en .
-	      
-:isPartOfFamily rdf:type owl:ObjectProperty ;
-  rdfs:domain :Wife ;
-  rdfs:range :Family ;
-  rdfs:label "ist Teil der Familie"@de, "is part of family"@en ;
-	rdfs:comment "Weist die Person einer Ehefrau zu einer Familie zu."@de, "Assigns the person of a wife to a family."@en .	      
+	rdfs:comment "Bezieht sich auf Lehrstühle der einzelnen Fakultäten."@de, "Refers to chairs of the individual faculties."@en .     
 	      
 :isPartOfUniversity rdf:type owl:ObjectProperty ;
   rdfs:domain :Faculty, :Statutes ;
