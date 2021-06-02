@@ -321,12 +321,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Private Vorlesung"@de, "Private Lecture"@en ;
 	rdfs:comment "Bezieht sich auf private Vorlesungen (lectio privata, privatum, privatissimum), die ein Professor in einem kleinen Kreis von Studenten hält und die von den Studenten in der Regel an den Professor selbst bezahlt werden mussten."@de, "Refers to private lectures (lectio privata, privatum, privatissimum), given by a professor for a relatively small amount of students, which a 	student usually had to pay for directly to the Professor."@en .
 		
-:Professor rdf:type owl:Class ;
+:Lecturer rdf:type owl:Class ;
   rdfs:subClassOf :Person ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Professor> ;
-  rdfs:label "Professor"@de, "Professor"@en ;
-	rdfs:comment "Bezeichnet ordentliche Professoren an frühneuzeitlichen Universitäten im deutschsprachigen Raum des Heiligen Römischen Reichs, deren Karrierewege im Fokus des für die Ontologie maßgebenden Forschungsprojektes liegen."@de,
-		"Refers to full or ordinary professors at early modern universities in the German-speaking area of the Holy Roman Empire whose career paths are the focus of the research project relevant to the given ontology."@en .
+  rdfs:label "Hochschullehrer"@de, "Lecturer"@en ;
+	rdfs:comment "Bezeichnet Lehrkräfte an frühneuzeitlichen Universitäten im deutschsprachigen Raum des Heiligen Römischen Reichs, deren Karrierewege im Fokus des für die Ontologie maßgebenden Forschungsprojektes liegen."@de,
+		"Refers to university lecturer at early modern universities in the German-speaking area of the Holy Roman Empire whose career paths are the focus of the research project relevant to the given ontology."@en .
 
 :ProfessorialFamily rdf:type owl:Class ;
   rdfs:subClassOf :Family ;
@@ -632,7 +632,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   	rdfs:comment "Gibt Materialtyp und Materialname von Unterrichtsmaterialien an, die in Vorlesungsverzeichnissen unter Umständen mit angegeben sind."@de, "Indicates material type and material name of teaching materials that may be included in lecture catalogues."@en .			    
 	      
 :idProf rdf:type owl:DatatypeProperty ;
-                   rdfs:domain :Professor ;
+                   rdfs:domain :Lecturer ;
 				   rdfs:range rdfs:Literal ;
                    rdfs:comment "Professors Identification number in the original database."@en ,
                                 "Personen Identifikationsnummer in der ursprünglichen Datenbank."@de ;
@@ -892,11 +892,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
     rdfs:comment "Nennt Semester eines Studiums."@de,"Gives the semester of a university study."@en .
 
 :hasStageOfLife rdf:type owl:ObjectProperty ;
-  rdfs:domain :Professor ;
+  rdfs:domain :Lecturer ;
   rdfs:range :StageOfLife ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#hasPeriod> ;
   rdfs:label "hat Lebensabschnitt"@de, "has stage of life"@en ;
-	rdfs:comment "Lebensabschnitt eines Professors."@de, "Stage of life of a professor."@en .
+	rdfs:comment "Lebensabschnitt einer Lehrkraft."@de, "Stage of life of a lecturer."@en .
 
 :hasSubject rdf:type owl:ObjectProperty ;
   rdfs:domain :Dissertation ;
@@ -919,10 +919,10 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Bezieht sich auf den Professors als Ehemann."@de, "Refers to the professor as husband."@en .	      
 	      
 :isDoing rdf:type owl:ObjectProperty ;
-  rdfs:domain :Professor ;
+  rdfs:domain :Lecturer ;
   rdfs:range :TeachingPractices ;
   rdfs:label "hält oder führt durch"@de, "does or gives"@en ;
-	rdfs:comment "Bezieht sich auf Lehrpraktiken, die von einem Professor an einer Universität durchgeführt werden, z.B. Vorlesungen halten, Disputationen vorstehen oder Übungen geben."@de, "Refers to teaching practices which are done by a professor at a university, e.g. give lectures, preside over disputations or give excersizes."@en.
+	rdfs:comment "Bezieht sich auf Lehrpraktiken, die von einer Lehrkraft an einer Universität durchgeführt werden, z.B. Vorlesungen halten, Disputationen vorstehen oder Übungen geben."@de, "Refers to teaching practices which are done by a lecturer at a university, e.g. give lectures, preside over disputations or give excersizes."@en.
 
 :isPartOfFaculty rdf:type owl:ObjectProperty ;
   rdfs:domain :Chair ;
@@ -983,10 +983,10 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	"Refers to nomination lists which were handed in  to the territorial administration by the faculties in  order to choose and to vocate a  candidate for a university chair. Those lists can be found in relevant archives."@en .			     
 
 :owns rdf:type owl:ObjectProperty ;
-  rdfs:domain :Professor ;
+  rdfs:domain :Lecturer ;
   rdfs:range :Collection ;
   rdfs:label "besitzt"@de, "owns"@en ;
-	rdfs:comment "Verweist auf Sammlungen eines Professors, z.B. Privatbibliotheken, Münzen und anderweitige fachspezifische Sammlungen, die bspw. für eine Person im Berufungsverfahren auf eine Professur von Bedeutung gewesen sein könnten."@de, "Refers to a collection of a professor, like private libraries, coins and other subject specific collections, which could have been important for the vocation of a professorship."@en .
+	rdfs:comment "Verweist auf Sammlungen einer Lehrkraft, z.B. Privatbibliotheken, Münzen und anderweitige fachspezifische Sammlungen, die bspw. für eine Person im Berufungsverfahren auf eine Professur von Bedeutung gewesen sein könnten."@de, "Refers to a collection of a lecturer, like private libraries, coins and other subject specific collections, which could have been important for the vocation of a professorship."@en .
 
 :professorshipHasChair rdf:type owl:ObjectProperty ;
   rdfs:domain :Professorship ;
@@ -1016,10 +1016,10 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Fügt einem Lebensabschnitt einer Person einen geografischen Ort zu."@de, "Adds a geographical location to a stage of life of a person."@en .
 	      
 :student rdf:type owl:ObjectProperty ;
-  rdfs:domain :Professor ;
+  rdfs:domain :Lecturer ;
   rdfs:range :Student ;
   rdfs:label "ist Student"@de, "is student"@en ;
-	rdfs:comment "Weist einen Professor als Student aus."@de, "Refers to the Professor as a student."@en .
+	rdfs:comment "Weist eine Lehrkraft als Student aus."@de, "Refers to the lecturer as a student."@en .
 	      
 :hasWife rdf:type owl:ObjectProperty ;
   rdfs:subPropertyOf :hasParent ;
@@ -1037,9 +1037,9 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	      
 :vocates rdf:type owl:ObjectProperty ;
   rdfs:domain :Territory ;
-  rdfs:range :Professor ;
+  rdfs:range :Lecturer ;
   rdfs:label "beruft"@de, "vocates"@en ;
-	rdfs:comment "Landesherrschaft beruft bzw. bestätigt und ernennt einen Professor."@de, "Territorial rulership vocates or confirms a Professor."@en .
+	rdfs:comment "Landesherrschaft beruft bzw. bestätigt und ernennt eine Lehrkraft."@de, "Territorial rulership vocates or confirms a lecturer."@en .
 
 	
 #####################################################################################################################################################################
