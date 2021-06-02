@@ -931,7 +931,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Bezieht sich auf Lehrstühle der einzelnen Fakultäten."@de, "Refers to chairs of the individual faculties."@en .     
 	      
 :isPartOfUniversity rdf:type owl:ObjectProperty ;
-  rdfs:domain :Faculty, :Statutes ;
+  rdfs:domain :Faculty ;
   rdfs:range :University ;
   rdfs:label "ist Teil der Universität"@de, "is part of university"@en ;
 	rdfs:comment "Bezieht sich auf konstituierende Bestandteile einer Universität."@de, "Refers to the constituent parts of a university."@en .	      
