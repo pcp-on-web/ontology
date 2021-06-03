@@ -657,22 +657,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 #####################################################################################################################################################################
 #				     Object Properties				     
 #####################################################################################################################################################################    
-				     
-:author rdf:type owl:ObjectProperty ;
-  rdfs:subPropertyOf dc:creator;
-  rdfs:range :Person, :Corporation ;
-  rdfs:domain :Document ;
-  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#hasTutor>, <http://purl.org/pcp-on-web/ontology#author>, <http://purl.org/pcp-on-web/ontology#published>, <https://d-nb.info/standards/elementset/gnd#author> ;
-  rdfs:label "hat Autor"@de, "hat author"@en ;
-	rdfs:comment "Verweist auf die Autorenschaft eines Dokuments."@de, "Refers to the authorship of a document."@en .
-	      
-:hasChild rdf:type owl:ObjectProperty ;
-  rdfs:domain :Family ;  
-  rdfs:range :Person ;
-  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#familyChild> ;
-  rdfs:label "hat Kind"@de, "has child"@en ;
-	rdfs:comment "Bezieht sich auf das Kind, Pflegekind, Adoptivkind eines Professors."@de, "Refers to the cild, foster child, adoptive child of a professor."@en .
-
+				     	      
 :corporationDocument rdf:type owl:ObjectProperty ;
   rdfs:domain :Corporation ;
   rdfs:range :Document ;
@@ -716,12 +701,29 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :AuctionCatalogue ;
   rdfs:label "hat Auktionskatalog"@de, "has auction catalogue"@en ;
 	dc:description "Verknüpft eine Privatbibliothek mit einem Auktionskatalog."@de, "Adds an auction catalogue to a private library."@en .	      	      
-	      
-:hasContributor rdf:type owl:ObjectProperty ;	      
+
+:hasAuthor rdf:type owl:ObjectProperty ;
+  rdfs:subPropertyOf dc:creator;
+  rdfs:range :Person, :Corporation ;
   rdfs:domain :Document ;
-  rdfs:range :Corporation, :Person ;
-  rdfs:label "hat Beteiligung"@de, "has contributor"@en ;
-	rdfs:comment "Beteiligung an einem Dokument."@de, "Contributor of a document."@en .	      
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#hasTutor>, <http://purl.org/pcp-on-web/ontology#author>, <http://purl.org/pcp-on-web/ontology#published>, <https://d-nb.info/standards/elementset/gnd#author> ;
+  rdfs:label "hat Autor"@de, "hat author"@en ;
+	rdfs:comment "Verweist auf die Autorenschaft eines Dokuments."@de, "Refers to the authorship of a document."@en .
+	      
+:hasChild rdf:type owl:ObjectProperty ;
+  rdfs:domain :Family ;  
+  rdfs:range :Person ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#familyChild> ;
+  rdfs:label "hat Kind"@de, "has child"@en ;
+	rdfs:comment "Bezieht sich auf das Kind, Pflegekind, Adoptivkind eines Professors."@de, "Refers to the cild, foster child, adoptive child of a professor."@en .
+
+:hasContributor rdf:type owl:ObjectProperty ;
+  rdfs:subPropertyOf dc:contributor;
+  rdfs:range :Person, :Corporation ;
+  rdfs:domain :Document ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#hasTutor>, <http://purl.org/pcp-on-web/ontology#author>, <http://purl.org/pcp-on-web/ontology#published>, <https://d-nb.info/standards/elementset/gnd#author> ;
+  rdfs:label "hat Beteiligten"@de, "has contributor"@en ;
+	rdfs:comment "Verweist auf eine Entität, die am Entstehungsprozess eines Dokuments beteiligt ist."@de, "Refers to the contributor in the developement process of a document."@en .	        
 	      
 :hasCreator rdf:type owl:ObjectProperty ;
   rdfs:subPropertyOf dc:creator, :hasContributor ;
@@ -779,6 +781,14 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#praeses> ;
   rdfs:label "hat Praeses"@de, "has praeses"@en ;
 	rdfs:comment "Bezeichnet die Person, die während einer Disputation als Praeses auftritt und die Disputation leitet."@de, "Refers to the person who is the praeses - the head - of a disputation."@en .	      
+
+:hasPublisher rdf:type owl:ObjectProperty ;
+  rdfs:subPropertyOf dc:publisher;
+  rdfs:domain :Document ;
+  rdfs:range :Corporation, :Person ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#published> ;
+  rdfs:label "hat Herausgeber"@de, "has publisher"@en ;
+	rdfs:comment "Nennt Herausgeber eines Dokuments."@de, "Gives the publisher of a document."@en .	      
 	      
 :hasRecommendation rdf:type owl:ObjectProperty ;
   rdfs:domain :Candidacy ;
@@ -900,15 +910,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:domain :Lecturer ;
   rdfs:range :Collection ;
   rdfs:label "besitzt"@de, "owns"@en ;
-	rdfs:comment "Verweist auf Sammlungen einer Lehrkraft, z.B. Privatbibliotheken, Münzen und anderweitige fachspezifische Sammlungen, die bspw. für eine Person im Berufungsverfahren auf eine Professur von Bedeutung gewesen sein könnten."@de, "Refers to a collection of a lecturer, like private libraries, coins and other subject specific collections, which could have been important for the vocation of a professorship."@en .
-
-:publisher rdf:type owl:ObjectProperty ;
-  rdfs:subPropertyOf dc:creator;
-  rdfs:domain :Document ;
-  rdfs:range :Corporation, :Person ;
-  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#published> ;
-  rdfs:label "hat Herausgeber"@de, "has publisher"@en ;
-	rdfs:comment "Nennt Herausgeber eines Dokuments."@de, "Gives the publisher of a document."@en .	      
+	rdfs:comment "Verweist auf Sammlungen einer Lehrkraft, z.B. Privatbibliotheken, Münzen und anderweitige fachspezifische Sammlungen, die bspw. für eine Person im Berufungsverfahren auf eine Professur von Bedeutung gewesen sein könnten."@de, "Refers to a collection of a lecturer, like private libraries, coins and other subject specific collections, which could have been important for the vocation of a professorship."@en .      
 	      
 :relatedDocument rdf:type owl:ObjectProperty ;
   rdfs:domain :StageOfLife;
