@@ -123,10 +123,10 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Körperschaft"@de, "Corporation"@en ;
 	rdfs:comment "Bezeichnet eine Körperschaft, eine rechtsfähige Institution."@de, "Refers to a corporation or corporate body in the sense of a legal institution."@en .
 
-:Curriculum rdf:type owl:Class ;
+:LectureCatalogue rdf:type owl:Class ;
   rdfs:subClassOf :AcademicDocuments ;
-  rdfs:label "Lektionskatalog"@de, "Curriculum"@en ;
-	rdfs:comment "Lektions-/Vorlesungskatalog einer Universität."@de, "Curriculum or lecture catalogue of a university."@en .
+  rdfs:label "Vorlesungskatalog"@de, "Lecture Catalogue"@en ;
+	rdfs:comment "Vorlesungskatalog einer Universität."@de, "Lecture catalogue of a university."@en .
 	
 :Denomination rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
