@@ -246,6 +246,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :Lecture ;
   rdfs:label "abgehaltene Vorlesung"@de, "Lecture done"@en ;
 	rdfs:comment "Bezieht sich auf Vorlesungen (lectiones) die von Professoren nachweislich durchgeführt wurden, z.B. nachgewiesen in Rechenschaftsberichten oder aktenkundliche Lektionslisten."@de, "Refers to lectures which were actually given by a professor and which can be proved to be given, e.g. by reports, lists or other archival material."@en .			
+
+:Lecturer rdf:type owl:Class ;
+  rdfs:subClassOf :Person ;
+  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Professor> ;
+  rdfs:label "Hochschullehrer"@de, "Lecturer"@en ;
+	rdfs:comment "Bezeichnet Lehrkräfte an frühneuzeitlichen Universitäten im deutschsprachigen Raum des Heiligen Römischen Reichs deren Karrierewege im Fokus des für die Ontologie maßgebenden Forschungsprojektes liegen."@de,
+		"Refers to university lecturer at early modern universities in the German-speaking area of the Holy Roman Empire whose career paths are the focus of the research project relevant to the given ontology."@en .		
 		
 :PrivateLecturer rdf:type owl:Class ;
   rdfs:subClassOf :AcademicOffice ;
@@ -322,13 +329,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Private Vorlesung"@de, "Private Lecture"@en ;
 	rdfs:comment "Bezieht sich auf private Vorlesungen (lectio privata, privatum, privatissimum), die ein Professor in einem kleinen Kreis von Studenten hält und die von den Studenten in der Regel an den Professor selbst bezahlt werden mussten."@de, "Refers to private lectures (lectio privata, privatum, privatissimum), given by a professor for a relatively small amount of students, which a 	student usually had to pay for directly to the Professor."@en .
 		
-:Lecturer rdf:type owl:Class ;
-  rdfs:subClassOf :Person ;
-  rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Professor> ;
-  rdfs:label "Hochschullehrer"@de, "Lecturer"@en ;
-	rdfs:comment "Bezeichnet Lehrkräfte an frühneuzeitlichen Universitäten im deutschsprachigen Raum des Heiligen Römischen Reichs, deren Karrierewege im Fokus des für die Ontologie maßgebenden Forschungsprojektes liegen."@de,
-		"Refers to university lecturer at early modern universities in the German-speaking area of the Holy Roman Empire whose career paths are the focus of the research project relevant to the given ontology."@en .
-
 :ProfessorialFamily rdf:type owl:Class ;
   rdfs:subClassOf :Family ;
   rdfs:label "Professorenfamilie"@de, "Professorial Family"@en ;
