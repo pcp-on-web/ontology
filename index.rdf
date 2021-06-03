@@ -496,11 +496,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                              "0.2 changed Domain from Professor to Person"^^xsd:string ,
                                              "2.0 under discussion"^^xsd:string .			     
 
-:birthdate rdf:type owl:DatatypeProperty ;
+:dateOfBirth rdf:type owl:DatatypeProperty ;
   rdfs:domain :Person ;
   rdfs:range xsd:date, xsd:gDay, xsd:gMonth, xsd:gMonthDay, xsd:gYear, xsd:gYearMonth ;
-  rdfs:label "Geburtsdatum"@de , "birthdate"@en ;
-  	rdfs:comment "Geburtsdatum einer Person."@de , "The birthdate of a person."@en.
+  rdfs:label "Geburtsdatum"@de , "date of birth"@en ;
+  	rdfs:comment "Geburtsdatum einer Person."@de , "The date of birth of a person."@en.
 				     
 :dateOfDeath rdf:type owl:DatatypeProperty ;
   rdfs:domain :Person ;
