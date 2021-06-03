@@ -208,7 +208,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :StageOfLife ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Family> ;
   rdfs:label "Familie"@de, "Family"@en ;
-	rdfs:comment "Dieses Konzept beschreibt die soziale Herkunft und Familienverhältnisse einer Person."@de, "This concept describes the social origin and the family relationship of a person."@en .
+	rdfs:comment "Dieses Konzept beschreibt die Familienverhältnisse einer Person."@de, "This concept describes the family relations of a person."@en .
 
 :Gender rdf:type owl:Class ;
   rdfs:label "Geschlecht"@de, "Gender"@en ;
@@ -218,7 +218,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :StageOfLife ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Graduation> ;
   rdfs:label "Abschluss"@de, "Graduation"@en ;
-	rdfs:comment "Bezieht sich auf den Abschluss an einer Universität. Dieser kann durch eine Promotion zum Magister, Baccalaureus, Lizentiat, Doktor belegt sein, bspw. über eine pro gradu disputatio."@de, "Refers to a graduation at a university to the degrees of doctor, magister, baccalaureus, licentiate, e.g. proven via a pro gradu disputatio."@en .
+	rdfs:comment "Bezieht sich auf den Abschluss an einer Universität durch eine Promotion zum Magister, Baccalaureus, Lizentiat, Doktor, bspw. über eine pro gradu disputatio."@de, "Refers to a graduation at a university with the degrees of doctor, magister, baccalaureus, licentiate, e.g. proven via a pro gradu disputatio."@en .
 		
 :Honour rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
@@ -240,12 +240,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :TeachingPractices ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Lecture> ;
   rdfs:label "Vorlesung"@de, "Lecture"@en ;
-	rdfs:comment "Bezieht sich auf Vorlesungen bzw. Lektionen (lectiones), die von einem Professor im Rahmen der universitären Lehre in Vorlesungsverzeichnissen angekündigt wurden."@de, "Refers to lectures announced by a professor in the curriculum of a university."@en .
+	rdfs:comment "Bezieht sich auf Vorlesungen bzw. Lektionen (lectiones), die von einer Lehrkraft im Rahmen der universitären Lehre in Vorlesungsverzeichnissen angekündigt wurden."@de, "Refers to lectures announced by lecturers in the lecture catalogue of a university."@en .
 
 :LectureDone rdf:type owl:Class ;
   rdfs:subClassOf :Lecture ;
   rdfs:label "abgehaltene Vorlesung"@de, "Lecture done"@en ;
-	rdfs:comment "Bezieht sich auf Vorlesungen (lectiones) die von Professoren nachweislich durchgeführt wurden, z.B. nachgewiesen in Rechenschaftsberichten oder aktenkundliche Lektionslisten."@de, "Refers to lectures which were actually given by a professor and which can be proved to be given, e.g. by reports, lists or other archival material."@en .			
+	rdfs:comment "Bezieht sich auf Vorlesungen die von Lehrkräften nachweislich durchgeführt wurden, z.B. nachgewiesen in Rechenschaftsberichten oder aktenkundliche Lektionslisten."@de, "Refers to lectures which were actually given by a lecturer and which can be proved to be given, e.g. by reports, lists or other archival material."@en .			
 
 :Lecturer rdf:type owl:Class ;
   rdfs:subClassOf :Person ;
@@ -261,7 +261,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 			
 :LectureType rdf:type owl:Class ;
   rdfs:label "Vorlesungstyp"@de, "Lecturetype"@en ;
-	rdfs:comment "..."@de, "..."@en .
+	rdfs:comment "Verweist auf die unterschiedlichen Typen von Vorlesungen, die entweder privat, öffentlich "@de, "..."@en .
 				
 :Licentiatus rdf:type owl:Class ;
   rdfs:subClassOf :Graduation ;
