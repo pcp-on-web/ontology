@@ -315,8 +315,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :PrivateLibrary rdf:type owl:Class ;
   rdfs:subClassOf :Collection ;
   rdfs:label "Privatbibliothek"@de, "Private library"@en ;
-	dc:description "Verweist auf die Privatbibliothek einer Person und kann u.U. durch publizierte Auktionskataloge erschlossen werden."@de, 
-		"Refers to the private library of a person. Can be reconstructed by published auction catalogues."@en .		
+	dc:description "Verweist auf die Privatbibliothek einer Lehrkraft und kann u.U. durch publizierte Auktionskataloge erschlossen werden."@de, 
+		"Refers to the private library of a lecturer. Can be reconstructed by published auction catalogues."@en .		
 			
 :PrivateEducation rdf:type owl:Class ;
   rdfs:subClassOf :Education ;
@@ -327,7 +327,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :PrivateLecture rdf:type owl:Class ;
   rdfs:subClassOf :LectureType;
   rdfs:label "Private Vorlesung"@de, "Private Lecture"@en ;
-	rdfs:comment "Bezieht sich auf private Vorlesungen (lectio privata, privatum, privatissimum), die ein Professor in einem kleinen Kreis von Studenten hält und die von den Studenten in der Regel an den Professor selbst bezahlt werden mussten."@de, "Refers to private lectures (lectio privata, privatum, privatissimum), given by a professor for a relatively small amount of students, which a 	student usually had to pay for directly to the Professor."@en .
+	rdfs:comment "Bezieht sich auf private Vorlesungen (lectio privata, privatum, privatissimum), die eine Lehrkraft in einem kleinen Kreis von Studenten hält und die von den Studenten in der Regel an die Lehrkraft selbst bezahlt werden mussten."@de, "Refers to private lectures (lectio privata, privatum, privatissimum), given by a lecturer for a relatively small amount of students, which a student usually had to pay for directly to the lecturer."@en .
 		
 :ProfessorialFamily rdf:type owl:Class ;
   rdfs:subClassOf :Family ;
@@ -340,10 +340,10 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Bezieht sich auf Hochschulschriften wie gedruckte Universitätsprogramme und Reden."@de, "Refers to university publications like printed university programs and speeches."@en .
 
 :Publication rdf:type owl:Class ;
-  rdfs:subClassOf :Document ;	
+  rdfs:subClassOf :Document, dc:BibliographicResource ;	
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Publication> ;
   rdfs:label "Publikation"@de, "Publication"@en ;
-	rdfs:comment "Bezieht sich auf Publikationen."@de, "Refers to publications."@en .
+	rdfs:comment "Bezieht sich auf Publikationen wie Bücher, Periodika oder andere verzeichnete Medien."@de, "Refers to publications like boosk, periodicals or other documentary resources (see DC Terms description)."@en .
 
 :Publicist rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife;
