@@ -89,7 +89,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :AuctionCatalogue rdf:type owl:Class ;
   rdfs:subClassOf :Publication ;
   rdfs:label "Auktionskatalog"@de, "Auction catalogue"@en ;
-	dc:description "Bezieht sich auf Auktionskataloge von Professorenbibliotheken, die nach dem Tod von Professoren veräußert wurden. Diese Kataloge listen den zu veräußernden bibliothekarischen Nachlass, daneben oft auch Objektsammlungen oder Mobiliar des Verstorbenen."@de, "Refers to auction catalogues of professors' libraries sold after the death of professors. These catalogues list not only the left library estate to be sold, but often also object collections or furniture of the deceased."@en .		
+	dc:description "Bezieht sich auf Auktionskataloge von Gelehrtenbibliotheken. Diese Kataloge listen den zu veräußernden bibliothekarischen Bestand, daneben oft auch Objektsammlungen oder Mobiliar."@de, "Refers to auction catalogues of learned libraries. These catalogues list not only the library estate to be sold, but often also object collections or furniture."@en .		
 		
 :Baccalaureus rdf:type owl:Class ;
   rdfs:subClassOf :Graduation ;
@@ -162,12 +162,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf <http://purl.org/spar/fabio/Expression> ;
   rdfs:subClassOf <http://purl.org/dc/terms/BibliographicResource> ;
   rdfs:label "Dokument"@de, "Document"@en ;
-	rdfs:comment "Dokument unterschiedlicher Genres und Medien, die für die Lebensabschnitte eines Professors relevant sind."@de, "General Documents of different genres and media which are relevant for the stages of life of professors."@en .
+	rdfs:comment "Dokument unterschiedlicher Genres und Medien, die für die Lebensabschnitte einer Lehrkraft relevant sind."@de, "General Documents of different genres and media which are relevant for the stages of life of lecturers."@en .
 		
 :Education  rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
   rdfs:label "Bildungsweg"@de, "Education"@en ;
-	rdfs:comment "Beschreibt den Bildungsweg einer Person."@de , "Decribes the education of a person."@en .
+	rdfs:comment "Beschreibt den Bildungsweg einer Lehrkraft."@de , "Decribes the education of a lecturer."@en .
 
 :Enrollment rdf:type owl:Class ;
   rdfs:subClassOf :UniversityStudies ;
@@ -208,7 +208,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :StageOfLife ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Family> ;
   rdfs:label "Familie"@de, "Family"@en ;
-	rdfs:comment "Dieses Konzept beschreibt die Familienverhältnisse einer Person."@de, "This concept describes the family relations of a person."@en .
+	rdfs:comment "Dieses Konzept beschreibt die Familienverhältnisse einer Lehrkraft."@de, "This concept describes the family relations of a lecturer."@en .
 
 :Gender rdf:type owl:Class ;
   rdfs:label "Geschlecht"@de, "Gender"@en ;
@@ -261,7 +261,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 			
 :LectureType rdf:type owl:Class ;
   rdfs:label "Vorlesungstyp"@de, "Lecturetype"@en ;
-	rdfs:comment "Verweist auf die unterschiedlichen Typen von Vorlesungen, die entweder privat, öffentlich "@de, "..."@en .
+	rdfs:comment "Verweist auf die unterschiedlichen Typen von Vorlesungen, die entweder privat oder öffentlich durchgeführt wurden."@de, "Refers to the different types of lectures conducted either publicly or privately..."@en .
 				
 :Licentiatus rdf:type owl:Class ;
   rdfs:subClassOf :Graduation ;
@@ -271,7 +271,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :Location rdf:type owl:Class ;
   rdfs:subClassOf wgs84:SpatialThing;	
   rdfs:label "Ort"@de, "Location"@en ;
-	rdfs:comment "Bezieht sich auf den geografischen Ort für Lebensabschnitte einer Person, Orte von Körperschaften, Medien (Verlagsort, Druckort), Ämtern, Landesherrschaft usw."@de, "Refers to the geographical location of life stages of persons, corporate bodies, media (printing, publishing), offices, territories and others."@en .
+	rdfs:comment "Bezieht sich auf den geografischen Ort für Lebensabschnitte von Personen, insbesondere der Lehrkräfte, Orte von Körperschaften, Medien (Verlagsort, Druckort), Ämtern, Landesherrschaft usw."@de, "Refers to the geographical location of stages of life of persons, especially Lecturers, corporate bodies, media (printing, publishing), offices, territories and others."@en .
 	
 :Magister rdf:type owl:Class ;
   rdfs:subClassOf :Graduation ;
@@ -282,13 +282,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :StageOfLife ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Membership> ;
   rdfs:label "Mitgliedschaft"@de, "Membership"@en ;
-	rdfs:comment "Verweist auf Mitgliedschaften einer Person in soziokulturellen und/oder politischen Gesellschaften, Sozietäten und weiterer Institutionen; auch Studentenverbindungen."@de, "Refers to the membership of a person at sociocultural and/or political societies or further institutions; also fraternities."@en .
+	rdfs:comment "Verweist auf Mitgliedschaften von Lehrkräften in soziokulturellen und/oder politischen Gesellschaften, Sozietäten und weiterer Institutionen; auch Studentenverbindungen."@de, "Refers to the membership of lecturers at sociocultural and/or political societies or further institutions; also fraternities."@en .
 		
 :Office rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Office> ;
   rdfs:label "Amt"@de, "Office"@en ;
-	rdfs:comment "Bezieht sich auf nicht akademische Ämter bzw. Nebenberufe von Professoren außerhalb der Universität, z.B. als Ärzte, Räte oder Anwälte."@de , "Refers to non-academic offices resp. side professions of professors outside of the university, e.g. as physicians at court, lawyers or counselers."@en .		
+	rdfs:comment "Bezieht sich auf nicht akademische Ämter bzw. Nebenberufe von Lehrkräften außerhalb der Universität, z.B. als Ärzte, Räte oder Anwälte."@de , "Refers to non-academic offices resp. side professions of lecturers outside of the university, e.g. as physicians at court, lawyers or counselers."@en .		
 		
 :Pamphlet rdf:type owl:Class ;
   rdfs:subClassOf :Publication ;
