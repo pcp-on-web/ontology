@@ -419,7 +419,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :TeachingPractices rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
   rdfs:label "Lehrpraktiken"@de, "Teaching Practices"@en ;
-  	rdfs:comment "Beschreibt akademische Lehrpraktiken, die ein Professor an der Universität durchführt und welche durch Statuten, weitere Regularien und/oder durch Gewohnheit geregelt sind."@de, "Describes academic teaching practices which are regulated by the University's statutes or further regulations and/or customs."@en .
+  	rdfs:comment "Beschreibt akademische Lehrpraktiken, die eine Lehrkraft an der Universität durchführt und welche durch Statuten, weitere Regularien und/oder durch Gewohnheit geregelt sind."@de, "Describes academic teaching practices which are regulated by the University's statutes or further regulations and/or customs."@en .
 		
 :Territory rdf:type owl:Class ;
   rdfs:subClassOf :Corporation ;
@@ -442,7 +442,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :Education ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Study> ;
   rdfs:label "Studium"@de, "University studies"@en ;
-	rdfs:comment "Bezieht sich auf das Universitätsstudium einer Person."@de, "Refers to the university studies of a person."@en .
+	rdfs:comment "Bezieht sich auf das Universitätsstudium einer Lehrkraft."@de, "Refers to the university studies of a lecturer."@en .
 
 :WinterSemester rdf:type owl:Class ;
   rdfs:subClassOf :Semester ;
@@ -453,7 +453,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :Wife rdf:type owl:Class ;
   rdfs:subClassOf :Person ;
   rdfs:label "Ehefrau"@de, "Wife"@en ;
-	rdfs:comment "Bezieht sich auf die Ehefrau eines Professors."@de, "Refers to wife of a professor."@en .
+	rdfs:comment "Bezieht sich auf die Ehefrau einer Lehrkraft."@de, "Refers to wife of a lecturer."@en .
 		
 		
 #################################################################
@@ -508,7 +508,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:domain :Person ;
   rdfs:range rdfs:Literal ;
   rdfs:label "Geburtsname"@de , "birthname"@en ;
-  	rdfs:comment "Geburtsname der Ehefrau eines Professoren."@de , "The birthname of the wife of a professor."@en.				     
+  	rdfs:comment "Geburtsname einer Person."@de , "The birthname of a person."@en.				     
 				     
 :date rdf:type owl:DatatypeProperty, owl:FunctionalProperty ;
   rdfs:domain :StageOfLife ;
@@ -534,7 +534,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
           rdfs:range rdfs:Literal;
           rdfs:comment "Forename(s) of a person, seperated by space"@en ,
                        "Vorname(n) einer Person, getrennt mit Leerzeichen"@de ;
-          rdfs:label "Forename"@en ,
+          rdfs:label "forename"@en ,
                      "Vorname"@de ;
           owl:versionInfo "0.1 initial creation date: 18.05.2015"^^xsd:string .
 
@@ -551,7 +551,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                     rdfs:domain :Person, :AcademicDocuments ;
                     rdfs:range rdfs:Literal ;
                     <http://ns.ontowiki.net/SysOnt/order> "340"^^xsd:string ;
-                    rdfs:label "Miscellaneous/further information"@en ,
+                    rdfs:label "miscellaneous/further information"@en ,
                                "Sonstiges/weitere Informationen"@de ;
                     owl:versionInfo "0.1 initial creation - 28.06.2007"^^xsd:string ,
                                     "2.0 stable"^^xsd:string .
@@ -594,7 +594,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 				   rdfs:range rdfs:Literal ;
                    rdfs:comment "Latinized first name of a person."@en ,
                                 "Latinisierter  Vorname einer Person."@de ;
-                   rdfs:label "Latin First Name"@en ,
+                   rdfs:label "latin first name"@en ,
                               "Latinisierter Vorname"@de ;
                    owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
 
@@ -603,7 +603,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 				   rdfs:range rdfs:Literal ;
                    rdfs:comment "Latinized last name of a person."@en ,
                                 "Latinisierter Nachname einer Person."@de ;
-                  rdfs:label "Latin Last Name"@en ,
+                  rdfs:label "latin last name"@en ,
                               "Latein Name"@de ;
                    owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .
 			    
@@ -735,11 +735,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Bezeichnet den Widmunsgempfänger einer Publikation."@de, "Refers to the dedicatee of a publication."@en .
 	      
 :hasEnrollment rdf:type owl:ObjectProperty ;
-  rdfs:domain :Student ;
+  rdfs:domain :Person ;
   rdfs:range :Enrollment ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#hasEnrollment> ;  
   rdfs:label "hat Matrikel"@de, "has enrollment"@en ;
-	rdfs:comment "Verweist auf eine Immatrikulation einer Person an einer Universität."@de, "Refers to the enrollment of a person at a university."@en .
+	rdfs:comment "Verweist auf die Immatrikulation einer Person an einer Universität."@de, "Refers to the enrollment of a person at a university."@en .
 
 :hasFaculty rdf:type owl:ObjectProperty ;
   rdfs:domain :AcademicDocuments, :AcademicOffice ;
@@ -769,7 +769,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:domain :Family ;
   rdfs:range :Person ;
   rdfs:label "hat Elternteil"@de, "has parent"@en ;
-	rdfs:comment "Bezieht sich auf die Ehefrau eines Professors."@de, "Refers to the wife of a professor."@en .	      
+	rdfs:comment "Verweist auf personen, die als Eltern auftreten."@de, "Refers to persons who appear as parents."@en .	      
 	      
 :hasPraeses rdf:type owl:ObjectProperty ;
   rdfs:domain :Dissertation ;
@@ -797,7 +797,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Person ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#respondent> ;
   rdfs:label "hat Respondent"@de, "has respondent"@en ;
-	rdfs:comment "Bezeichnet die Person des Respondenten, der sich als Student der Disputation unterzieht."@de, "Refers to the person who as a student is undergoing the act of disputation, called respondent."@en .   	      
+	rdfs:comment "Bezeichnet die Person des Respondenten, der sich der Disputation unterzieht."@de, "Refers to the person who is undergoing the act of disputation, called respondent."@en .   	      
 	      
 :hasSchool rdf:type owl:ObjectProperty ;
   rdfs:domain :PrimaryEducation ;
@@ -835,13 +835,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subPropertyOf :hasParent ;
   rdfs:domain :Family ;
   rdfs:range :Person ;
-  rdfs:label "ist Ehemann"@de, "is husband"@en ;
-	rdfs:comment "Bezieht sich auf den Professors als Ehemann."@de, "Refers to the professor as husband."@en .	      
+  rdfs:label "hat Ehemann"@de, "has husband"@en ;
+	rdfs:comment "Bezieht sich auf Personen, die als Ehemann auftreten."@de, "Refers to persons who appear as husbands."@en .	      
 	      
 :isDoing rdf:type owl:ObjectProperty ;
   rdfs:domain :Lecturer ;
   rdfs:range :TeachingPractices ;
-  rdfs:label "hält oder führt durch"@de, "does or gives"@en ;
+  rdfs:label "führt durch"@de, "does"@en ;
 	rdfs:comment "Bezieht sich auf Lehrpraktiken, die von einer Lehrkraft an einer Universität durchgeführt werden, z.B. Vorlesungen halten, Disputationen vorstehen oder Übungen geben."@de, "Refers to teaching practices which are done by a lecturer at a university, e.g. give lectures, preside over disputations or give excersizes."@en.
 
 :isPartOfFaculty rdf:type owl:ObjectProperty ;
@@ -911,15 +911,15 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :relatedDocument rdf:type owl:ObjectProperty ;
   rdfs:domain :StageOfLife;
   rdfs:range :Document;
-  rdfs:label "Relevante Dokumente zu einem Lebensabschnitt"@de, "relevant documents of a stage of life"@en ;
-	rdfs:comment "Ordnet einem Lebensabschnitt Dokumente zu, z.B. "@de, ".."@en .	      
+  rdfs:label "Relevante Dokumente von einem Lebensabschnitt"@de, "relevant documents of a stage of life"@en ;
+	rdfs:comment "Ordnet einem Lebensabschnitt Dokumente zu, z.B. "@de, "Relevant documents of a stage of life."@en .	      
 	      	      
 :stageOfLifeLocation rdf:type owl:ObjectProperty ;
   rdfs:domain :StageOfLife ;
   rdfs:range :Location ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#periodPlace> ;
   rdfs:label "Ort Lebensabschnitt"@de, "location of stage of life"@en ;
-	rdfs:comment "Fügt einem Lebensabschnitt einer Person einen geografischen Ort zu."@de, "Adds a geographical location to a stage of life of a person."@en .
+	rdfs:comment "Fügt dem Lebensabschnitt einer Lehrkraft einen geografischen Ort zu."@de, "Adds a geographical location to a stage of life of a lecturer."@en .
 	      
 :student rdf:type owl:ObjectProperty ;
   rdfs:domain :Lecturer ;
@@ -932,7 +932,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:domain :Family ;
   rdfs:range :Person ;
   rdfs:label "hat Ehefrau"@de, "has wife"@en ;
-	rdfs:comment "Bezieht sich auf die Ehefrau eines Professors."@de, "Refers to the wife of a professor."@en .
+	rdfs:comment "Bezieht sich auf die Person, die als Ehefrau auftritt."@de, "Refers to the person who appears as a wife."@en .
 
 :tagged rdf:type owl:ObjectProperty ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#furtherInformation>, <http://purl.org/pcp-on-web/ontology#note>, <http://purl.org/pcp-on-web/ontology#keyword> ;
