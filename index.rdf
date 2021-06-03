@@ -68,7 +68,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :AcademicDocuments rdf:type owl:Class ;
   rdfs:subClassOf :Document ;
   rdfs:label "Akademische Dokumente"@de, "Academic Documents"@en ;
-	rdfs:comment "Bezieht sich auf Akademische Dokumente im engsten Sinne, die für die Organisation des Universitätsalltags relevant waren, wie Vorlesungsverzeichnisse oder Rechenschaftsberichte. Sie stehen allerdings in Abgrenzung zu Publikationen wie Textbücher, die zwar ebenfalls relevant für die Unterrichtspraxis waren, sich aber über den zeitgenössischen Publikationsmarkt an ein größeres Publikum aus Gelehrten und Gebildeten wendeten."@de, "Refers to academic documents in the narrowest sense. Documents that were relevant to the organisation of everyday university life, such as lecture catalogues or professorial reports. However, they are distinct from publications such as textbooks, which were also relevant to teaching practice, but addressed a larger audience of scholars and educated people via the contemporary publication market."@en .				
+	rdfs:comment "Bezieht sich auf Akademische Dokumente im engsten Sinne, die für die Organisation des Universitätsalltags einer Universität relevant waren, wie Vorlesungsverzeichnisse oder Rechenschaftsberichte. Sie stehen in Abgrenzung zu Publikationen wie Lehrbücher, die sich über das Publikum der eigenen Universität hinaus, und zwar über den zeitgenössischen Publikationsmarkt, an ein größeres Publikum aus Gelehrten und Gebildeten wendeten."@de, "Refers to academic documents in the narrowest sense. Documents that were relevant to the organisation of everyday university life, such as lecture catalogues or professorial reports. They are distinct from publications such as textbooks (teaching material), which addressed a larger audience of scholars and educated people via the contemporary publication market."@en .				
 		
 :AcademicOffice rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
@@ -89,12 +89,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :AuctionCatalogue rdf:type owl:Class ;
   rdfs:subClassOf :Publication ;
   rdfs:label "Auktionskatalog"@de, "Auction catalogue"@en ;
-	dc:description "Bezieht sich auf Auktionskataloge von Professorenbibliotheken, die nach dem Tod von Professoren veräußert wurden. Diese Kataloge listen manchmal nicht nur den zu veräußernden bibliothekarischen Nachlass, sondern oft auch Objektsammlungen oder Mobiliar des Verstorbenen."@de, "Refers to auction catalogues of professors' libraries sold after the death of professors. These catalogues sometimes list not only the library estate to be sold, but often also object collections or furniture of the deceased."@en .		
+	dc:description "Bezieht sich auf Auktionskataloge von Professorenbibliotheken, die nach dem Tod von Professoren veräußert wurden. Diese Kataloge listen den zu veräußernden bibliothekarischen Nachlass, daneben oft auch Objektsammlungen oder Mobiliar des Verstorbenen."@de, "Refers to auction catalogues of professors' libraries sold after the death of professors. These catalogues list not only the left library estate to be sold, but often also object collections or furniture of the deceased."@en .		
 		
 :Baccalaureus rdf:type owl:Class ;
   rdfs:subClassOf :Graduation ;
   rdfs:label "Baccalaureus"@de, "Baccalaureus"@en ;
-	rdfs:comment "Bezeichnet den akademischen Grad eines Baccalaren/Baccalaureus. Kürzel: Bacc."@de , "Refers to the academic degree of a bachelor/baccalaureus.  Abbreviation: Bacc."@en .
+	rdfs:comment "Bezeichnet den akademischen Grad eines Baccalaren/Baccalaureus. Kürzel: Bacc."@de , "Refers to the academic degree of a bachelor/baccalaureus. Abbreviation: Bacc."@en .
 		
 :Birth rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
