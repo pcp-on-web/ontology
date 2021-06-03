@@ -348,23 +348,23 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :Publicist rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife;
   rdfs:label "Publizist"@de, "Publicist"@en ;
-	rdfs:comment "Bezieht sich auf den Lebensabschnitt eines Professors als Publizist, d. h. als Autor oder Herausgeber auf dem zeitgenössischen Publikationsmarkt auftritt."@de, "Refers to the stage of a professor's life as a publicist, appearing as an author or editor on the contemporary publication market."@en .		
+	rdfs:comment "Bezieht sich auf den Lebensabschnitt einer Lehrkraft als Publizist, d. h. als Autor oder Herausgeber auf dem zeitgenössischen Publikationsmarkt."@de, "Refers to the stage of life of a lecturer as a publicist, appearing as an author or editor on the contemporary publication market."@en .		
 		
 :PublicLecture rdf:type owl:Class ;
   rdfs:subClassOf :LectureType ;
   rdfs:label "Öffentliche Vorlesung"@de, "Public Lecture"@en ;
-	rdfs:comment "Bezieht sich auf öffentliche Vorlesungen (lectio publica) von Professoren, die nicht extra vom Studenten bezahlt werden mussten."@de, 
-		"Refers to public lectures (lectio publica) of professors which had not to be payed extra by students."@en .
+	rdfs:comment "Bezieht sich auf öffentliche Vorlesungen (lectio publica) von Lehrkräften, die nicht extra vom Studenten bezahlt werden mussten."@de, 
+		"Refers to public lectures (lectio publica) of lecturers which had not to be payed extra by students."@en .
 		
 :Recommendation  rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
   rdfs:label "Empfehlung"@de, "Recommendation"@en ;
-  	rdfs:comment "Bezieht sich auf Empfehlungen, z.B. Empfehlungsschreiben, die in Bestallungsakten enthalten sind."@de , "Refers to recommendations, e.g. letters of recommendation which are part of vocation files."@en .
+  	rdfs:comment "Bezieht sich auf Empfehlungen, z.B. Empfehlungsschreiben, die ggfs. in Bestallungsakten enthalten sind."@de , "Refers to recommendations, e.g. letters of recommendation which are maybe part of vocation files."@en .
 
 :Report rdf:type owl:Class ;
   rdfs:subClassOf :AcademicDocuments ;
   rdfs:label "Rechenschaftsbericht"@de, "Report"@en ;
-	rdfs:comment "Rechenschaftsbericht den Dozenten in regelmäßigen Abständen bei der Universitätverwaltung und Landesverwaltung einreichten."@de,
+	rdfs:comment "Rechenschaftsbericht den Lehrkräfte in regelmäßigen Abständen bei der Universitätverwaltung und Landesverwaltung einreichten."@de,
 		"Means regular reports of lecturers about their curriculum to the university and territorial administration."@en .
 
 :Review rdf:type owl:Class ;
@@ -398,7 +398,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :StageOfLife rdf:type owl:Class ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#PeriodOfLife> ;
   rdfs:label "Lebensabschnitt"@de, "Stage of Life"@en ;
-	rdfs:comment "Dieses Konzept bezieht sich auf einen Lebensabschnitt eines Professors."@de, "This concept refers to a stage of life of a professor."@en .
+	rdfs:comment "Dieses Konzept bezieht sich auf Lebensabschnitte einer Lehrkraft."@de, "This concept refers to a stage of life of a lecturer."@en .
 		
 :Statutes rdf:type owl:Class ;
   rdfs:subClassOf :AcademicDocuments ;
@@ -409,11 +409,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :Person ;
   rdfs:label "Student"@de, "Student"@en ;
 	rdfs:comment "Bezeichnet einen an der Universität immatrikulierten Studenten."@de, "Refers to an enrolled student at a University."@en .
-
-:Subject rdf:type owl:Class ;
-  rdfs:label "Fach"@de, "Subject"@en ;
-	rdfs:comment "Bezieht sich auf das Fachgebiet eines Akademischen Dokuments, z.B. einer Dissertation."@de, "Refers to the subject of an academic document, such as dissertations."@en .
-			
+	
 :SummerSemester rdf:type owl:Class ;
   rdfs:subClassOf :Semester ;
   owl:DisjoinUnionOf :WinterSemester;
