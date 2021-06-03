@@ -579,7 +579,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   	rdfs:comment "Gibt den Text eines Rechenschaftsberichts an."@de, "Gives the text of a report."@en .			    
 
 :hasMaterial rdf:type owl:DatatypeProperty ;
-  rdfs:domain :Curriculum ;
+  rdfs:domain :LectureCatalogue ;
   rdfs:range rdfs:Literal ;
   rdfs:label "has teaching material"@en, "hat Unterrichtsmaterial"@de ;
   	rdfs:comment "Gibt Materialtyp und Materialname von Unterrichtsmaterialien an, die in Vorlesungsverzeichnissen unter Umständen mit angegeben sind."@de, "Indicates material type and material name of teaching materials that may be included in lecture catalogues."@en .			    
