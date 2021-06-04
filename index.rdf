@@ -627,6 +627,18 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Nachweis"@de , "proof"@en ;
   rdfs:comment "..."@de , "..."@en .	      
 	      
+:pictureLicense rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Picture ;
+  rdfs:range xsd:string ;
+  rdfs:label "Nachweis"@de , "proof"@en ;
+  rdfs:comment "..."@de , "..."@en .
+	      
+:pictureURL rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Picture ;
+  rdfs:range xsd:string ;
+  rdfs:label "Nachweis"@de , "proof"@en ;
+  rdfs:comment "..."@de , "..."@en .
+	      	      
 ###  http://purl.org/pcp-on-web/ontology#surname
 :surname rdf:type owl:DatatypeProperty ;
   rdfs:domain :Person ;
