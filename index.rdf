@@ -855,6 +855,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :University ;
   rdfs:label "ist Teil der Universität"@de, "is part of university"@en ;
 	rdfs:comment "Bezieht sich auf konstituierende Bestandteile einer Universität."@de, "Refers to the constituent parts of a university."@en .	      
+
+:isPublicist rdf:type owl:ObjectProperty ;
+  rdfs:domain :Publicist ;
+  rdfs:range :Publications ;
+  rdfs:label "ist Publizist"@de, "is publicist"@en ;
+	rdfs:comment "..."@de, "..."@en.	      
 	      
 :isVocated rdf:type owl:ObjectProperty ;
   rdfs:domain :Candidacy ;
