@@ -620,6 +620,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
       owl:versionInfo "0.1 initial creation - 24.05.2007"^^xsd:string ,
                       "0.2 changed Domain from Professor to Person"^^xsd:string ,
                       "2.0 stable"^^xsd:string .	      
+
+:proofResource rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Document ;
+  rdfs:range xsd:string ;
+  rdfs:label "Nachweis"@de , "proof"@en ;
+  rdfs:comment "..."@de , "..."@en .	      
 	      
 ###  http://purl.org/pcp-on-web/ontology#surname
 :surname rdf:type owl:DatatypeProperty ;
