@@ -580,13 +580,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "has teaching material"@en, "hat Unterrichtsmaterial"@de ;
   	rdfs:comment "Gibt Materialtyp und Materialname von Unterrichtsmaterialien an, die in Vorlesungsverzeichnissen unter Umständen mit angegeben sind."@de, "Indicates material type and material name of teaching materials that may be included in lecture catalogues."@en .			    
 	      
-:idProf rdf:type owl:DatatypeProperty ;
-                   rdfs:domain :Lecturer ;
+:idPerson rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Person ;
 				   rdfs:range rdfs:Literal ;
-                   rdfs:comment "Professors Identification number in the original database."@en ,
+                   rdfs:comment "Persons Identification number in the original database."@en ,
                                 "Personen Identifikationsnummer in der ursprünglichen Datenbank."@de ;
-                   rdfs:label "IDProfLocal"@en ,
-                              "IDProfLocal"@de ;
+                   rdfs:label "IDPersonLocal"@en ,
+                              "IDPersonLocal"@de ;
                    owl:versionInfo "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"^^xsd:string .			    			    
 			    
 :latinForename rdf:type owl:DatatypeProperty ;
