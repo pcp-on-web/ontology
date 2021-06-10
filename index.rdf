@@ -74,6 +74,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :StageOfLife ;
   rdfs:label "Akademisches Amt"@de, "Academic office"@en ;
 	rdfs:comment "Akademische Ämter wie Professor, Rektor, Prorektor, Kanzler, Dekan usw. ."@de, "Academic offices like professor, rector, prorector, chancellor, dean etc.."@en .
+
+:AlbumAmicorum rdf:type owl:Class ;
+  rdfs:subClassOf :Document ;
+  rdfs:label "Album Amicorum"@de, "Album Amicorum"@en ;
+	rdfs:comment "Bezeichnet Stammbücher..."@de, "German friendship books..."@en .		
 		
 :Article rdf:type owl:Class ;
   rdfs:subClassOf :Publication ;
@@ -557,7 +562,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
                                     "2.0 stable"^^xsd:string .
 	    
 :gnd rdf:type owl:DatatypeProperty , owl:FunctionalProperty ;
-  rdfs:domain :Person, :Corporation ;
+  rdfs:domain :Person, :Corporation, :Document ;
   rdfs:range rdfs:Literal ;
   rdfs:label "GND"@de, "GND"@en ;
   	rdfs:comment "GND Normadatei, inklusive ehemals genutzte PND."@de, "GND integrated authority file, including formerly used PND."@en .
