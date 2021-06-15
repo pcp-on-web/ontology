@@ -683,12 +683,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "hat Dokument"@de, "has Document"@en ;
 	rdfs:comment "Dokumente die mit Körperschaften und Institutionen in Verbindung stehen, z.B. Ernennungsurkunden ratifziert durch die Landesherrschaft."@de, "Documents related to corporations and institutions, e.g. deeds of appointment ratified by the sovereignty."@en .
 	      
-:correspondence rdf:type owl:ObjectProperty ;
+:corresponds rdf:type owl:ObjectProperty ;
   rdfs:subPropertyOf foaf:knows ;
   rdfs:domain :Person ;
   rdfs:range :Person ;
-  rdfs:label "Korrespondenz"@de, "correspondence"@en ;
-	rdfs:comment "Verweist auf die aus einem Dokument hervorgehende Korrespondenz zwischen Personen, z.B. über Editionen oder Nachlassplattformen wie KALLIOPE."@de, "Assigns to the correspondence between persons, e.g. via editions or heritage plattforms such as KALLIOPE."@en .	      
+  rdfs:label "korrespondiert"@de, "corresponds"@en ;
+	rdfs:comment "Verweist auf die aus einem Dokument hervorgehende Korrespondenz zwischen Personen, z.B. nachgewiesen über Editionen oder Nachlassplattformen wie KALLIOPE."@de, "Assigns to the correspondence between persons, e.g. proven via editions or heritage plattforms such as KALLIOPE."@en .	      
 	      
 :disputationHasDissertation rdf:type owl:ObjectProperty ;
   rdfs:range :Dissertation ;
@@ -768,7 +768,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:domain :AcademicDocuments, :AcademicOffice ;
   rdfs:range :Faculty ;
   rdfs:label "hat Fakultät"@de, "has faculty"@en ;
-	rdfs:comment "Verknüpft Dokumente und Ämter mit einer Fakultät."@de, "Links documents and offices to a faculty."@en .	      
+	rdfs:comment "Verknüpft Dokumente und Ämter mit einer Fakultät."@de, "Links documents and offices to a faculty."@en .	  
+	      
+:hasInscriber rdf:type owl:ObjectProperty ;
+  rdfs:domain :AlbumAmicorum ;
+  rdfs:range :Person ;
+  rdfs:label "hat Inskribent"@de, "has inscriber"@en ;
+	rdfs:comment "Bezeichnet den Inskribenten eines Stammbuchs."@de, "Designates the inscriber to a friendship book."@en .
 
 :hasKeyword rdf:type owl:ObjectProperty ;
   rdfs:domain :Document ;
