@@ -78,7 +78,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :AlbumAmicorum rdf:type owl:Class ;
   rdfs:subClassOf :Document ;
   rdfs:label "Album Amicorum"@de, "Album Amicorum"@en ;
-	rdfs:comment "Bezeichnet Stammbücher..."@de, "German friendship books..."@en .		
+	rdfs:comment "Bezeichnet Stammbücher, auch genannt Freundschaftsbücher in denen Autographen verschiedener Personen gesammelt wurden. Diese persönliche Grußtexte von bspw. Professoren wurden mitunter als Empfehlungsschreiben genutzt."@de, "Designates so called (German) friendship books, in which autographs of various persons were collected. These personal greetings from professors, for example, were sometimes used as letters of recommendation."@en .		
 		
 :Article rdf:type owl:Class ;
   rdfs:subClassOf :Publication ;
@@ -940,7 +940,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :relatedDocument rdf:type owl:ObjectProperty ;
   rdfs:domain :StageOfLife;
   rdfs:range :Document;
-  rdfs:label "Relevante Dokumente von einem Lebensabschnitt"@de, "relevant documents of a stage of life"@en ;
+  rdfs:label "Relevante Dokumente zu einem Lebensabschnitt"@de, "Relevant documents of a stage of life."@en ;
 	rdfs:comment "Ordnet einem Lebensabschnitt Dokumente zu, z.B. "@de, "Relevant documents of a stage of life."@en .	      
 	      	      
 :stageOfLifeLocation rdf:type owl:ObjectProperty ;
