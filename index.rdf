@@ -516,17 +516,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   	rdfs:comment "Geburtsname einer Person."@de , "The birthname of a person."@en.				     
 				     
 :date rdf:type owl:DatatypeProperty, owl:FunctionalProperty ;
-  rdfs:domain :StageOfLife ;
+  rdfs:domain :StageOfLife, :Document ;
   rdfs:range xsd:date, xsd:gDay, xsd:gMonth, xsd:gMonthDay, xsd:gYear, xsd:gYearMonth ;
   rdfs:label "Date"@en, "Datum"@de ;
   	rdfs:comment "Zeitangabe eines Lebensabschnitts."@de, "The date or timespan of a stage of life."@en .
 				     
-:docDate rdf:type owl:DatatypeProperty, owl:FunctionalProperty ;
-  rdfs:domain :Document ;
-  rdfs:range xsd:date, xsd:gDay, xsd:gMonth, xsd:gMonthDay, xsd:gYear, xsd:gYearMonth ;
-  rdfs:label "Date Document"@en, "Datum Dokument"@de ;
-  	rdfs:comment "Zeitangabe eines Dokuments, z.B. Veröffentlichungsjahr, Datum einer Disputation, Einschreibung in Matrikel, Reden und Programmen."@de, "The date of a document, like publishing years, date of a disputation, enrollement date of a student or publishing dates of speeches and programs etc."@en .
-
 :enrollmentName rdf:type owl:DatatypeProperty ;
   rdfs:domain :Enrollment ;
   rdfs:range xsd:string ;
