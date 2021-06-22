@@ -348,12 +348,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :Document, dc:BibliographicResource ;	
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Publication> ;
   rdfs:label "Publikation"@de, "Publication"@en ;
-	rdfs:comment "Bezieht sich auf Publikationen wie Bücher, Periodika oder andere verzeichnete Medien."@de, "Refers to publications like boosk, periodicals or other documentary resources (see DC Terms description)."@en .
+	rdfs:comment "Bezieht sich auf Publikationen wie Bücher, Periodika oder andere verzeichnete Medien."@de, "Refers to publications like books, periodicals or other documentary resources (see DC Terms description)."@en .
 
 :Publicist rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife;
   rdfs:label "Publizist"@de, "Publicist"@en ;
-	rdfs:comment "Bezieht sich auf den Lebensabschnitt einer Lehrkraft als Publizist, d. h. als Autor oder Herausgeber auf dem zeitgenössischen Publikationsmarkt."@de, "Refers to the stage of life of a lecturer as a publicist, appearing as an author or editor on the contemporary publication market."@en .		
+	rdfs:comment "Bezieht sich auf den Lebensabschnitt einer Lehrkraft als Publizist, d. h. als Autor, Herausgeber oder Mitarbeiter eines publizistischen Kollaborationsprojekts auf dem zeitgenössischen Publikationsmarkt."@de, "Refers to the stage of life of a lecturer as a publicist, appearing as an author, editor or collaborator in any publicistic collaboration project on the contemporary publication market."@en .		
 		
 :PublicLecture rdf:type owl:Class ;
   rdfs:subClassOf :LectureType ;
@@ -364,7 +364,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :Recommendation  rdf:type owl:Class ;
   rdfs:subClassOf :StageOfLife ;
   rdfs:label "Empfehlung"@de, "Recommendation"@en ;
-  	rdfs:comment "Bezieht sich auf Empfehlungen, z.B. Empfehlungsschreiben, die ggfs. in Bestallungsakten enthalten sind."@de , "Refers to recommendations, e.g. letters of recommendation which are maybe part of vocation files."@en .
+  	rdfs:comment "Bezieht sich auf Empfehlungen, z.B. Empfehlungsschreiben von Professoren, die ggfs. in Bestallungsakten enthalten sind."@de , "Refers to recommendations, e.g. letters of recommendation by professors which are maybe part of vocation files."@en .
 
 :Report rdf:type owl:Class ;
   rdfs:subClassOf :AcademicDocuments ;
