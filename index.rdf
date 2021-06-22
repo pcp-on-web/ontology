@@ -763,6 +763,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Faculty ;
   rdfs:label "hat Fakultät"@de, "has faculty"@en ;
 	rdfs:comment "Verknüpft Dokumente und Ämter mit einer Fakultät."@de, "Links documents and offices to a faculty."@en .	  
+
+:hasHusband rdf:type owl:ObjectProperty ;
+  rdfs:subPropertyOf :hasParent ;
+  rdfs:domain :Family ;
+  rdfs:range :Person ;
+  rdfs:label "hat Ehemann"@de, "has husband"@en ;
+	rdfs:comment "Bezieht sich auf Personen, die als Ehemann auftreten."@de, "Refers to persons who appear as husbands."@en .	      	      
 	      
 :hasInscriber rdf:type owl:ObjectProperty ;
   rdfs:domain :AlbumAmicorum ;
@@ -854,13 +861,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "hat Gratulant"@de, "has well-wisher"@en ;
 	rdfs:comment "Bezeichnet den Gratulanten einer Publikation, bspw. den Gratulanten eines Disputanten. Diese Gratulanten-Schriften befinden sich zumeist am Ende einer Dissertation."@de, "Refers to the well-wisher of a publication, e.g. the well-wisher to a disputant. These well-wishing writings are usually found at the end of a dissertation."@en .
 
-:hasHusband rdf:type owl:ObjectProperty ;
+:hasWife rdf:type owl:ObjectProperty ;
   rdfs:subPropertyOf :hasParent ;
   rdfs:domain :Family ;
   rdfs:range :Person ;
-  rdfs:label "hat Ehemann"@de, "has husband"@en ;
-	rdfs:comment "Bezieht sich auf Personen, die als Ehemann auftreten."@de, "Refers to persons who appear as husbands."@en .	      
-	      
+  rdfs:label "hat Ehefrau"@de, "has wife"@en ;
+	rdfs:comment "Bezieht sich auf die Person, die als Ehefrau auftritt."@de, "Refers to the person who appears as a wife."@en .
+	        
 :isDoing rdf:type owl:ObjectProperty ;
   rdfs:domain :Lecturer ;
   rdfs:range :TeachingPractices ;
@@ -962,13 +969,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "ist Student"@de, "is student"@en ;
 	rdfs:comment "Weist eine Lehrkraft als Student aus."@de, "Refers to the lecturer as a student."@en .
 	      
-:hasWife rdf:type owl:ObjectProperty ;
-  rdfs:subPropertyOf :hasParent ;
-  rdfs:domain :Family ;
-  rdfs:range :Person ;
-  rdfs:label "hat Ehefrau"@de, "has wife"@en ;
-	rdfs:comment "Bezieht sich auf die Person, die als Ehefrau auftritt."@de, "Refers to the person who appears as a wife."@en .
-
 :tagged rdf:type owl:ObjectProperty ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#furtherInformation>, <http://purl.org/pcp-on-web/ontology#note>, <http://purl.org/pcp-on-web/ontology#keyword> ;
   rdfs:domain owl:Thing ;
