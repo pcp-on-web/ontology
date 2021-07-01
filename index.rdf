@@ -84,7 +84,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subClassOf :Publication ;
   rdfs:subClassOf fabio:Article ;
   rdfs:label "Artikel"@de, "Article"@en ;
-	rdfs:comment "Artikel in Periodika wie Journalen, Zeitschriften, Zeitungen oder Magazinen."@de, "Articles published in periodicals like journals, newspapers or magazines."@en .
+	rdfs:comment "Artikel in Periodika wie Journale, Zeitschriften, Zeitungen oder Magazine."@de, "Articles published in periodicals like journals, newspapers or magazines."@en .
 		
 :AsscociateProfessor rdf:type owl:Class ;
   rdfs:subClassOf :AcademicOffice ;
