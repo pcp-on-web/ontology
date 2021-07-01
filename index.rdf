@@ -399,7 +399,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
     rdfs:comment "Bezieht sich auf die Lehrveranstaltung eines Seminars, in den Quellen wie im Fall Uni Helmstedt mit Seminarium bezeichnet."@de ,"Refers to the course of a seminar, referred to in the sources as Seminarium, as in the case of the University of Helmstedt."@en .	
 		
 :Societies rdf:type owl:Class ;
-  rdfs:subClassOf :Institution ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#AcademicSociety> ;
   rdfs:label "Gesellschaften"@de, "Societies"@en ;
 	rdfs:comment "Bezeichnet Gesellschaften, wie Gelehrtengesellschaften, die sich einer bestimmten Geistesströmung oder Disziplin widmeten und aus Gelehrten und Gebildeten bestand sowie zumeist regional begrenzt agierte. Mit Gesellschaften konnten auch literarische Salons oder Lesegesellschaften gemeint sein. Außerdem Sozietäten mit strukturierter Körperschaft und obrigkeitlicher Protégierung (z.B. Akademie der Wissenschaften in Berlin). Des Weiteren sind mit Gesellschaften unter Umständen auch Geheimgesellschaften wie Freimaurer oder Illuminaten gemeint."@de, "Refers to societies like Learned Societies, which usually dealt with a certain discipline or ideas and which gathered learned and educated people, mostly of regionaly importance. Societies could also refer to literary salons or reading societies. Furthermore, societies with structured corporate body and most commonly protection and financing by the territory ruler, like the Akademie der Wissenschaften in Berlin. Furthermore societies could also refer to secret societies like Freemasons or Illuminati."@en .
@@ -787,6 +786,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "hat Inskribent"@de, "has inscriber"@en ;
 	rdfs:comment "Bezeichnet den Inskribenten eines Stammbuchs."@de, "Designates the inscriber to a friendship book."@en .
 
+:hasInstution rdf:type owl:ObjectProperty ;
+  rdfs:domain :Societies ;
+  rdfs:range :Institution ;
+  rdfs:label "hat Institution"@de, "has institution"@en ;
+	rdfs:comment "Weist gelehrten Gesellschaften strukturierte Einrichtungen zu, z.B. Akademien der Wissenschaften."@de, "Assigns structured institutions to learned societies, e.g. Academies of Sciences."@en .	      
+	      
 :hasKeyword rdf:type owl:ObjectProperty ;
   rdfs:domain :Document ;
   rdfs:range :Keyword ;
