@@ -901,12 +901,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "ist Teil der Universität"@de, "is part of university"@en ;
 	rdfs:comment "Bezieht sich auf konstituierende Bestandteile einer Universität."@de, "Refers to the constituent parts of a university."@en .	      	      
 	      
-:isVocated rdf:type owl:ObjectProperty ;
-  rdfs:domain :Candidacy ;
-  rdfs:range :ChairProfessorship, :AssociateProfessor ;
-  rdfs:label "wird ernannt"@de, "is vocated"@en ;
-	rdfs:comment "Bezieht sich auf den von Universität und Landesherrschaft ausgewählten Kandidaten für eine Professur."@de, "Refers to the candidate for a professorship/or chair which had been negotiated by the university and the territorial authority."@en .
-
 :lectureIsOfType rdf:type owl:ObjectProperty ;
   rdfs:domain :Lecture ;
   rdfs:range :LectureType ;
@@ -987,9 +981,9 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	      
 :vocates rdf:type owl:ObjectProperty ;
   rdfs:domain :Territory ;
-  rdfs:range :Lecturer ;
+  rdfs:range : AcademicOffice ;
   rdfs:label "beruft"@de, "vocates"@en ;
-	rdfs:comment "Landesherrschaft beruft bzw. bestätigt und ernennt eine Lehrkraft."@de, "Territorial rulership vocates or confirms a lecturer."@en .
+	rdfs:comment "Landesherrschaft beruft bzw. bestätigt akademische Ämter."@de, "Territorial rulership vocates or confirms academic offices."@en .
 
 	
 #####################################################################################################################################################################
