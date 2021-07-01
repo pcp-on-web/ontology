@@ -694,6 +694,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Disputation hat Dissertation"@de, "disputation has dissertation"@en ;
 	rdfs:comment "Weist einer Disputation eine Dissertation zu."@de, "Assigns a disputation to a dissertation."@en .
 
+:genderqueer rdf:type owl:ObjectProperty ;
+  rdfs:domain :Person ;
+  rdfs:range :Gender ;
+  rdfs:label "divers"@de, "genderqueer"@en ;
+  	rdfs:comment "Verweist auf die nicht-binäre Geschlechtsidentität einer Person."@de, "Refers to the genderqueer identity of a person."@en .	      
+	      
 :enrollment rdf:type owl:ObjectProperty ;
   rdfs:domain :Enrollment ;
   rdfs:range :Student ;
@@ -818,7 +824,13 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:range :Corporation, :Person ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#published> ;
   rdfs:label "hat Herausgeber"@de, "has publisher"@en ;
-	rdfs:comment "Nennt Herausgeber eines Dokuments."@de, "Gives the publisher of a document."@en .	      
+	rdfs:comment "Nennt Herausgeber eines Dokuments."@de, "Gives the publisher of a document."@en .
+	      
+:hasPublication rdf:type owl:ObjectProperty ;
+  rdfs:domain :Publicist ;
+  rdfs:range :Publication ;
+  rdfs:label "hat Publikation"@de, "has publication"@en ;
+	rdfs:comment "Der Lebensabschnitt einer Person als Publizist, d.h. als Autor, Herausgeber oder Mitwirkender, hat Publikationen."@de, "..."@en.
 	      
 :hasRecommendation rdf:type owl:ObjectProperty ;
   rdfs:domain :Candidacy ;
@@ -882,13 +894,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:domain :Faculty ;
   rdfs:range :University ;
   rdfs:label "ist Teil der Universität"@de, "is part of university"@en ;
-	rdfs:comment "Bezieht sich auf konstituierende Bestandteile einer Universität."@de, "Refers to the constituent parts of a university."@en .	      
-
-:isPublicist rdf:type owl:ObjectProperty ;
-  rdfs:domain :Publicist ;
-  rdfs:range :Publication ;
-  rdfs:label "ist Publizist"@de, "is publicist"@en ;
-	rdfs:comment "..."@de, "..."@en.	      
+	rdfs:comment "Bezieht sich auf konstituierende Bestandteile einer Universität."@de, "Refers to the constituent parts of a university."@en .	      	      
 	      
 :isVocated rdf:type owl:ObjectProperty ;
   rdfs:domain :Candidacy ;
