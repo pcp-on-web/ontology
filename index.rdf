@@ -872,12 +872,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "hat Ehefrau"@de, "has wife"@en ;
 	rdfs:comment "Bezieht sich auf die Person, die als Ehefrau auftritt."@de, "Refers to the person who appears as a wife."@en .
 	        
-:isDoing rdf:type owl:ObjectProperty ;
-  rdfs:domain :Lecturer ;
-  rdfs:range :TeachingPractices ;
-  rdfs:label "führt durch"@de, "does"@en ;
-	rdfs:comment "Bezieht sich auf Lehrpraktiken, die von einer Lehrkraft an einer Universität durchgeführt werden, z.B. Vorlesungen halten, Disputationen vorstehen oder Übungen geben."@de, "Refers to teaching practices which are done by a lecturer at a university, e.g. give lectures, preside over disputations or give excersizes."@en.
-
 :isPartOfFaculty rdf:type owl:ObjectProperty ;
   rdfs:domain :ChairProfessorship ;
   rdfs:range :Faculty ;
