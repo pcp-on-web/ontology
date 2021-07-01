@@ -885,9 +885,15 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:subPropertyOf :hasParent ;
   rdfs:domain :Family ;
   rdfs:range :Person ;
-  rdfs:label "hat Ehefrau"@de, "has wife"@en ;
+  rdfs:label ""@de, "has wife"@en ;
 	rdfs:comment "Bezieht sich auf die Person, die als Ehefrau auftritt."@de, "Refers to the person who appears as a wife."@en .
-	        
+
+:isAttributedTo rdf:type owl:ObjectProperty ;
+  rdfs:domain :Person ;
+  rdfs:range :ProfessorialFamily ;
+  rdfs:label "wird zugeschrieben"@de, "is attributed to"@en ;
+	rdfs:comment "..."@de, "..."@en .	      	      	      
+	      
 :isPartOfFaculty rdf:type owl:ObjectProperty ;
   rdfs:domain :ChairProfessorship ;
   rdfs:range :Faculty ;
