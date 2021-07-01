@@ -938,12 +938,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Bezieht sich auf Nominierungslisten einer Fakultät, die an die Verwaltung der Landesherrschaft erging und aus denen ein Kandidat durch die Landesherrschaft bestätigt wurde. Diese Listen liegen zumeist in zuständigen Archiven vor."@de,
 	"Refers to nomination lists which were handed in  to the territorial administration by the faculties in  order to choose and to vocate a  candidate for a university chair. Those lists can be found in relevant archives."@en .			     
 
-:owns rdf:type owl:ObjectProperty ;
-  rdfs:domain :Lecturer ;
-  rdfs:range :Collection ;
-  rdfs:label "besitzt"@de, "owns"@en ;
-	rdfs:comment "Verweist auf Sammlungen einer Lehrkraft, z.B. Privatbibliotheken, Münzen und anderweitige fachspezifische Sammlungen, die bspw. für eine Person im Berufungsverfahren auf eine Professur von Bedeutung gewesen sein könnten."@de, "Refers to a collection of a lecturer, like private libraries, coins and other subject specific collections, which could have been important for the vocation of a professorship."@en .      
-	
 :owner rdf:type owl:ObjectProperty ;
   rdfs:domain :AlbumAmicorum ;
   rdfs:range :Person ;
