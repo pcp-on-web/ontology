@@ -1,10 +1,10 @@
 # The PCP-on-Web Ontology
 
 # Abstract
-<div class="en">
+EN: <div class="en">
 The PCP-on-Web Model defines the research model for the research projekt Early Modern Professorial Career Patterns Methodological research on online databases of academic history.
 </div>
-<div class="de">
+DE: <div class="de">
 Das PCP-on-Web-Modell definiert das Vakabular für das Forschungsprojekt Professorale Karrieremuster der Frühen Neuzeit - Entwicklung einer wissenschaftlichen Methode zur Forschung auf online verfügbaren und verteilten Forschungsdatenbanken der Universitätsgeschichte. 
 </div>
 
