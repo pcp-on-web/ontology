@@ -340,7 +340,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 		
 :ProfessorialFamily rdf:type owl:Class ;
   rdfs:label "Professorenfamilie"@de, "Professorial Family"@en ;
-	rdfs:comment "Bezieht sich auf Familien die generationenübegreifend auffallend häufig Professoren hervorbrachten. Diese Familien werde in der Forschung häufig mit Begriffen wie Gelehrtendynastie und Familienuniversität belegt."@de, "Refers to families that produced professors with a striking frequency across the generations. In research, these families are often referred to by terms such as scholarly dynasty and family university."@en . 
+	rdfs:comment "Bezieht sich auf Familien die generationenübegreifend auffallend häufig Professoren hervorbrachten. Diese Familien werden in der Forschung häufig mit Begriffen wie Gelehrtendynastie und Familienuniversität belegt und in manchen Datenquellen oftmals auch so ausgewiesen, bspw. unter Miscelaneous, notes etc. ."@de, "Refers to families that produced professors with a striking frequency across the generations. In research, these families are often referred to by terms such as scholarly dynasty and family university."@en . 
 			
 :ProgramsAndSpeeches rdf:type owl:Class ;
   rdfs:subClassOf :Publication, :AcademicDocuments ;
