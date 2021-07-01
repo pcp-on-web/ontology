@@ -937,7 +937,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	"Refers to nomination lists which were handed in  to the territorial administration by the faculties in  order to choose and to vocate a  candidate for a university chair. Those lists can be found in relevant archives."@en .			     
 
 :owns rdf:type owl:ObjectProperty ;
-  rdfs:domain :StageOfLife ;
+  rdfs:domain :Ownership ;
   rdfs:range :Collection ;
   rdfs:label "besitzt"@de, "owns"@en ;
 	rdfs:comment "..."@de, "..."@en .      	      
