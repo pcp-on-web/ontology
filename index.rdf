@@ -118,7 +118,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Bezeichnet den Lehrstuhl eines ordentlichen Professors an einer Universitätsfakultät, der einem spezifischen Fachgebiet zugeordnet ist."@de, "Designates a chair at a university faculty that covers a specific subject area and is occupied by a full or ordinary professor."@en .
  		
 :Collection rdf:type owl:Class ;
-  rdfs:subClassOf :StageOfLife ;
   rdfs:label "Sammlung"@de, "Collection"@en ;
 	rdfs:comment "Objekt-Sammlungen eines Professors, z.B. Privatbibliotheken, Naturalien- und Instrumentensammlungen, Kunstsammlungen etc."@de, "Object-collections of a professor, e.g. private libraries, naturalia or further scholarly devices, as well as art collections."@en .
 		
@@ -294,7 +293,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Office> ;
   rdfs:label "Amt"@de, "Office"@en ;
 	rdfs:comment "Bezieht sich auf nicht akademische Ämter bzw. Nebenberufe von Lehrkräften außerhalb der Universität, z.B. als Ärzte, Räte oder Anwälte."@de , "Refers to non-academic offices resp. side professions of lecturers outside of the university, e.g. as physicians at court, lawyers or counselers."@en .		
-		
+
+:Ownership rdf:type owl:Class ;
+  rdfs:subClassOf :StageOfLife ;
+  rdfs:label "Besitz"@de, "Ownership"@en ;
+	rdfs:comment "Objekt-Sammlungen eines Professors, z.B. Privatbibliotheken, Naturalien- und Instrumentensammlungen, Kunstsammlungen etc."@de, "Object-collections of a professor, e.g. private libraries, naturalia or further scholarly devices, as well as art collections."@en .
+				
 :Pamphlet rdf:type owl:Class ;
   rdfs:subClassOf :Publication ;
   rdfs:label "Streitschrift"@de, "Pamphlet"@en ;
@@ -938,6 +942,12 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Bezieht sich auf Nominierungslisten einer Fakultät, die an die Verwaltung der Landesherrschaft erging und aus denen ein Kandidat durch die Landesherrschaft bestätigt wurde. Diese Listen liegen zumeist in zuständigen Archiven vor."@de,
 	"Refers to nomination lists which were handed in  to the territorial administration by the faculties in  order to choose and to vocate a  candidate for a university chair. Those lists can be found in relevant archives."@en .			     
 
+:owns rdf:type owl:ObjectProperty ;
+  rdfs:domain :StageOfLife ;
+  rdfs:range :Collection ;
+  rdfs:label "besitzt"@de, "owns"@en ;
+	rdfs:comment "..."@de, "..."@en .      	      
+	      
 :owner rdf:type owl:ObjectProperty ;
   rdfs:domain :AlbumAmicorum ;
   rdfs:range :Person ;
