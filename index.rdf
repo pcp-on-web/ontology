@@ -981,7 +981,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	      
 :vocates rdf:type owl:ObjectProperty ;
   rdfs:domain :Territory ;
-  rdfs:range : AcademicOffice ;
+  rdfs:range :AcademicOffice ;
   rdfs:label "beruft"@de, "vocates"@en ;
 	rdfs:comment "Landesherrschaft beruft bzw. bestätigt akademische Ämter."@de, "Territorial rulership vocates or confirms academic offices."@en .
 
