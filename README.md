@@ -1,7 +1,7 @@
 # The PCP-on-Web Ontology
 
 # Abstract
-<div class="en" style=":before {content:'EN: ';}">
+<div class="en">
 The PCP-on-Web Model defines the research model for the research projekt Early Modern Professorial Career Patterns Methodological research on online databases of academic history.
 </div>
 <div class="de">
@@ -35,4 +35,3 @@ The project is funded by Deutsche Forschungsgemeinschaft (DFG) - Project-number:
 Das Projekt ist gefördert durch die Deutsche Forschungsgemeinschaft (DFG) - Projektnummer: 317044652
 </div>
 
-<style>.de:before {content:"DE: ";} .en:before {content:"EN: ";}</style>
