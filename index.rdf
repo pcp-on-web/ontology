@@ -339,7 +339,6 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Bezieht sich auf private Vorlesungen (lectio privata, privatum, privatissimum), die eine Lehrkraft in einem kleinen Kreis von Studenten hält und die von den Studenten in der Regel an die Lehrkraft selbst bezahlt werden mussten."@de, "Refers to private lectures (lectio privata, privatum, privatissimum), given by a lecturer for a relatively small amount of students, which a student usually had to pay for directly to the lecturer."@en .
 		
 :ProfessorialFamily rdf:type owl:Class ;
-  rdfs:subClassOf :Family ;
   rdfs:label "Professorenfamilie"@de, "Professorial Family"@en ;
 	rdfs:comment "Bezieht sich auf Familien die generationenübegreifend auffallend häufig Professoren hervorbrachten. Diese Familien werde in der Forschung häufig mit Begriffen wie Gelehrtendynastie und Familienuniversität belegt."@de, "Refers to families that produced professors with a striking frequency across the generations. In research, these families are often referred to by terms such as scholarly dynasty and family university."@en . 
 			
