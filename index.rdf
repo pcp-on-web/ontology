@@ -20,7 +20,7 @@
 	dc:title "Professorale Karrieremuster der Frühen Neuzeit - Version 0.1 (pcp-on-web)"@de,
   	"Early Modern Professorial Career Patterns - Version 0.1 (pcp-on-web)"@en;
 	dc:license "http://creativecommons.org/licenses/by/4.0/" ;
-	dc:modified "2021-02-03";
+	dc:modified "2021-07-02";
 	<http://purl.org/vocab/vann/changes> <https://github.com/pcp-on-web/ontology/commits/master/index.rdf> ;
 	<http://purl.org/vocab/vann/preferredNamespacePrefix> "pcp" ;
 	<http://purl.org/vocab/vann/preferredNamespaceUri> "http://pcp-on-web.de/ontology#" ;
@@ -29,7 +29,7 @@
 	dc:description "The PCP-on-Web Model defines the research model for the research projekt Early Modern Professorial Career Patterns Methodological research on online databases of academic history.";
 	rdfs:label "Professorale Karrieremuster der Frühen Neuzeit - Version 0.1 (pcp-on-web)"@de,
   	"Early Modern Professorial Career Patterns - Version 0.1 (pcp-on-web)"@en;
-  	owl:versionInfo "Version 0.1 (inital) - 2021-02-03 - Jennifer Blanke";
+  	owl:versionInfo "Version 0.1 (inital) - 2021-02-03 - Jennifer Blanke"; "Version 0.2 (inital stable) - 2021-07-02 - Jennifer Blanke, Thomas Riechert";
   	dc:creator "Jennifer Blanke, Edgard Marx, Thomas Riechert" ;
   	<http://xmlns.com/foaf/0.1/maker> <http://pcp-on-web.de/team/JenniferBlanke> , <http://pcp-on-web.de/team/EdgardMarx> , <http://pcp-on-web.de/team/ThomasRiechert>.
 
