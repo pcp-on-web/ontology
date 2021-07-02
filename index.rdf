@@ -26,8 +26,8 @@
 	<http://purl.org/vocab/vann/preferredNamespaceUri> "http://pcp-on-web.de/ontology#" ;
 	<http://usefulinc.com/ns/doap#homepage> <https://pcp-on-web.de/project/> ;
   <http://usefulinc.com/ns/doap#maintainer> <https://pcp-on-web.de/team/JenniferBlanke>, <https://pcp-on-web.de/team/ThomasRiechert> ;
-	dc:description "he PCP-on-Web Model defines the vocabulary for the research project Early Modern Professorial Career Patterns - Methodological research on online databases of academic history."@en,
-	  "he PCP-on-Web Model defines the vocabulary for the research project Early Modern Professorial Career Patterns - Methodological research on online databases of academic history."@de;
+	dc:description "The PCP-on-Web Model defines the vocabulary for the research project Early Modern Professorial Career Patterns - Methodological research on online databases of academic history."@en,
+	  "Das PCP-on-Web-Modell definiert das Vokabular für das Forschungsprojekt Professorale Karrieremuster der Frühen Neuzeit - Entwicklung einer wissenschaftlichen Methode zur Forschung auf online verfügbaren und verteilten Forschungsdatenbanken der Universitätsgeschichte.."@de;
 	rdfs:label "Professorale Karrieremuster der Frühen Neuzeit - Version 0.2 (pcp-on-web)"@de,
   	"Early Modern Professorial Career Patterns - Version 0.2 (pcp-on-web)"@en;
   	owl:versionInfo "Version 0.1 (initial) - 2021-02-03 - Jennifer Blanke", "Version 0.2 (initial stable) - 2021-07-02 - Jennifer Blanke, Thomas Riechert";
