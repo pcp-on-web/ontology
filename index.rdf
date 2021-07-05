@@ -119,7 +119,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
  		
 :Collection rdf:type owl:Class ;
   rdfs:label "Sammlung"@de, "Collection"@en ;
-	rdfs:comment "Objekt-Sammlungen eines Professors, z.B. Privatbibliotheken, Naturalien- und Instrumentensammlungen, Kunstsammlungen etc."@de, "Object-collections of a professor, e.g. private libraries, naturalia or further scholarly devices, as well as art collections."@en .
+	rdfs:comment "Objekt-Sammlungen eines Professors,d ie für den Unterricht relevant waren, z.B. Privatbibliotheken, Naturalien- und Instrumentensammlungen, Kunstsammlungen etc. ."@de, "Object-collections of a professor, relevant for teaching or research e.g. private libraries, naturalia or further scholarly devices, as well as art collections."@en .
 		
 :Corporation rdf:type owl:Class ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#Body> ;
@@ -955,7 +955,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:domain :Ownership ;
   rdfs:range :Collection ;
   rdfs:label "besitzt"@de, "owns"@en ;
-	rdfs:comment "Verweist auf den Besitzstand einer Objektsammlung."@de, "..."@en .      	      
+	rdfs:comment "Verweist auf den Besitzstand einer Objektsammlung relevant für den Unterricht."@de, "Refers to the ownership of a teaching or research collection."@en .      	      
 	      
 :owner rdf:type owl:ObjectProperty ;
   rdfs:domain :AlbumAmicorum ;
