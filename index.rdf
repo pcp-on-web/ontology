@@ -897,7 +897,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:domain :Person ;
   rdfs:range :FamilyDynasty ;
   rdfs:label "wird zugeschrieben"@de, "is attributed to"@en ;
-	rdfs:comment "..."@de, "..."@en .	      	      	      
+	rdfs:comment "Verweist auf Personen, oder konkret Lehrkräfte, die in den Daten einer Familiendynastie zugeordnet werden."@de, "Refer to persons, or specifically lecturers, who are assigned to a family dynasty in the data."@en .	      	      	      
 	      
 :isPartOfFaculty rdf:type owl:ObjectProperty ;
   rdfs:domain :ChairProfessorship ;
