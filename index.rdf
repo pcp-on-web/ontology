@@ -895,7 +895,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 
 :isAttributedTo rdf:type owl:ObjectProperty ;
   rdfs:domain :Person ;
-  rdfs:range :ProfessorialFamily ;
+  rdfs:range :FamilyDynasty ;
   rdfs:label "wird zugeschrieben"@de, "is attributed to"@en ;
 	rdfs:comment "..."@de, "..."@en .	      	      	      
 	      
