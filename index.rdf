@@ -380,6 +380,11 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Rezension"@de, "Review"@en ;
 	rdfs:comment "Bezeichnet die Rezension in einer Rezensionszeitschrift."@de, "Refers to a review published in a review journal."@en .
 
+:Salary rdf:type owl:Class ;
+  rdfs:subClassOf :StageOfLife ;
+  rdfs:label "Salär"@de, "Salary"@en ;
+	rdfs:comment "Bezieht sich auf das Einkommen einer Lehrkraft - in Bearbeitung."@de, "Refers to the salary of a lecturer - in progress."@en .		
+		
 :School rdf:type owl:Class ;
   rdfs:subClassOf :Institution ;
   rdfs:derivedFrom <http://purl.org/pcp-on-web/ontology#School> ;
