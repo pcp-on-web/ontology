@@ -372,8 +372,8 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :Report rdf:type owl:Class ;
   rdfs:subClassOf :AcademicDocuments ;
   rdfs:label "Rechenschaftsbericht"@de, "Report"@en ;
-	rdfs:comment "Rechenschaftsbericht den Lehrkräfte in regelmäßigen Abständen bei der Universitätverwaltung und Landesverwaltung einreichten."@de,
-		"Means regular reports of lecturers about their curriculum to the university and territorial administration."@en .
+	rdfs:comment "Rechenschaftsbericht den Lehrkräfte in regelmäßigen Abständen bei der Universitätverwaltung und Landesverwaltung einreichten, mancherorts auch als Professorenzettel bezeichnet."@de,
+		"Means regular reports of lecturers about their curriculum to the university and territorial administration, some places also referred to as Professorenzettel (professor's notes)."@en .
 
 :Review rdf:type owl:Class ;
   rdfs:subClassOf :Publication ;
@@ -955,7 +955,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:domain :Ownership ;
   rdfs:range :Collection ;
   rdfs:label "besitzt"@de, "owns"@en ;
-	rdfs:comment "..."@de, "..."@en .      	      
+	rdfs:comment "Verweist auf den Besitzstand einer Objektsammlung."@de, "..."@en .      	      
 	      
 :owner rdf:type owl:ObjectProperty ;
   rdfs:domain :AlbumAmicorum ;
