@@ -1,4 +1,5 @@
-# The PCP-on-Web Ontology
+# EN: Early Modern Professorial Career Patterns - Version 0.2 (pcp-on-web)
+# DE: Professorale Karrieremuster der Frühen Neuzeit - Version 0.2 (pcp-on-web)
 
 # Abstract
 **EN:** 
