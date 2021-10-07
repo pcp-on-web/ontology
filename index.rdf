@@ -214,9 +214,9 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Familie"@de, "Family"@en ;
 	rdfs:comment "Dieses Konzept beschreibt die Familienverhältnisse einer Lehrkraft."@de, "This concept describes the family relations of a lecturer."@en .
 
-:Universityfamily rdf:type owl:Class ;
-  rdfs:label "Universitätsfamilie"@de, "Universityfamily"@en ;
-	rdfs:comment "Bezieht sich auf Familien die generationenübegreifend auffallend häufig Professoren hervorbrachten. Diese Familien werden in der Forschung häufig mit Begriffen wie Universitätsfamilie oder Gelehrtendynastie und Familienuniversität belegt und in manchen Datenquellen oftmals auch so ausgewiesen, bspw. unter Miscelaneous, notes etc. ."@de, "Refers to families that produced professors with a striking frequency across the generations. In research, these families are often referred to by terms such as universityfamily or scholarly dynasty and family university."@en . 		
+:Family University rdf:type owl:Class ;
+  rdfs:label "Familienuniversität"@de, "Familyuniversity"@en ;
+	rdfs:comment "Bezieht sich auf Universitäten an denen generationenübegreifend auffallend häufig Professoren aus ein und derselben Familie hervorgingen. Diese Familien werden in der Forschung häufig mit Begriffen wie Universitätsfamilie oder Gelehrtendynastie benannt und in den Datenquellen oftmals auch so ausgewiesen, bspw. unter Miscelaneous, notes etc. ."@de, "Refers to universities that were shaped by generations of professors from one family. In research, these families are often referred to by terms such as university family or scholarly dynasty."@en . 		
 		
 :Gender rdf:type owl:Class ;
   rdfs:label "Geschlecht"@de, "Gender"@en ;
