@@ -635,14 +635,14 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 :pictureLicense rdf:type owl:DatatypeProperty ;
   rdfs:domain :Picture ;
   rdfs:range xsd:string ;
-  rdfs:label "Nachweis"@de , "proof"@en ;
-  rdfs:comment "..."@de , "..."@en .
+  rdfs:label "Lizenz des Bildes."@de , "Licence of the Picture."@en ;
+  rdfs:comment "Beinhaltet Lizenzinformationen zum Bildes."@de , "Provides Licence information of the Picture."@en .
 	      
 :pictureURL rdf:type owl:DatatypeProperty ;
   rdfs:domain :Picture ;
   rdfs:range xsd:string ;
-  rdfs:label "Nachweis"@de , "proof"@en ;
-  rdfs:comment "..."@de , "..."@en .
+  rdfs:label "URL des Bildes."@de , "URL of the Picture."@en ;
+  rdfs:comment "Beinhaltet die URL des Bildes."@de , "Provides an URL of the Picture."@en .
 	      	      
 ###  http://purl.org/pcp-on-web/ontology#surname
 :surname rdf:type owl:DatatypeProperty ;
