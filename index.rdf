@@ -86,7 +86,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
   rdfs:label "Artikel"@de, "Article"@en ;
 	rdfs:comment "Artikel in Periodika wie Journale, Zeitschriften, Zeitungen oder Magazine."@de, "Articles published in periodicals like journals, newspapers or magazines."@en .
 		
-:AsscociateProfessor rdf:type owl:Class ;
+:AssociateProfessor rdf:type owl:Class ;
   rdfs:subClassOf :AcademicOffice ;
   rdfs:label "Außerordentlicher Professor"@de, "Associate Professor"@en ;
 	rdfs:comment "Bezeichnet einen Professor, der eine außerordentliche Professur (aO) inne hat. Diese Professoren lehrten ohne Lehrstuhl. Die außerordentliche Professur war aber in der Regel mit Expektanz auf einen vakant werdenden Lehrstuhl verknüpft."@de, "Associate professors who taught without holding a chair. The associate professorship, however, was usually linked to an expectation of a chair that would become vacant."@en .	
