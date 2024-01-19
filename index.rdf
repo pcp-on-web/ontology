@@ -959,7 +959,7 @@ xsd:gYearMonth rdf:type rdfs:Datatype .
 	rdfs:comment "Verweist auf den Stammbuchhalter eines Stammbuchs."@de, "Refers to the owner of a friendship book."@en .      	      
 	      
 :relatedDocument rdf:type owl:ObjectProperty ;
-  rdfs:domain :StageOfLife, :Person
+  rdfs:domain :StageOfLife, :Person;
   rdfs:range :Document;
   rdfs:label "Relevante Dokumente zu einem Lebensabschnitt oder einer Person allgemein"@de, "Relevant documents of a stage of life or a person in general."@en ;
 	rdfs:comment "Ordnet einem Lebensabschnitt oder einer Person Dokumente zu, z.B. Bilder"@de, "Relevant documents of a stage of life or persons e.g. pictures."@en .	      
