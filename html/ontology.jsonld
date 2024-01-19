@@ -1,0 +1,3522 @@
+[ {
+  "@id" : "http://creativecommons.org/ns#attributionName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://ns.ontowiki.net/SysOnt/order",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://creativecommons.org/ns#attributionName" : [ {
+    "@value" : "AKSW"
+  }, {
+    "@value" : "HAB"
+  }, {
+    "@value" : "HTWK"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Jennifer Blanke, Edgard Marx, Thomas Riechert"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "The PCP-on-Web Model defines the vocabulary for the research project Early Modern Professorial Career Patterns - Methodological research on online databases of academic history."
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "http://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "2021-07-02"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Early Modern Professorial Career Patterns - Version 0.2 (pcp-on-web)"
+  }, {
+    "@language" : "de",
+    "@value" : "Professorale Karrieremuster der Frühen Neuzeit - Version 0.2 (pcp-on-web)"
+  } ],
+  "http://purl.org/vocab/vann/changes" : [ {
+    "@id" : "https://github.com/pcp-on-web/ontology/commits/master/index.rdf"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "pcp"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "http://pcp-on-web.de/ontology#"
+  } ],
+  "http://usefulinc.com/ns/doap#homepage" : [ {
+    "@id" : "https://pcp-on-web.de/project/"
+  } ],
+  "http://usefulinc.com/ns/doap#maintainer" : [ {
+    "@id" : "https://pcp-on-web.de/team/JenniferBlanke"
+  }, {
+    "@id" : "https://pcp-on-web.de/team/ThomasRiechert"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Early Modern Professorial Career Patterns - Version 0.2 (pcp-on-web)"
+  }, {
+    "@language" : "de",
+    "@value" : "Professorale Karrieremuster der Frühen Neuzeit - Version 0.2 (pcp-on-web)"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "Version 0.1 (initial) - 2021-02-03 - Jennifer Blanke"
+  }, {
+    "@value" : "Version 0.2 (initial stable) - 2021-07-02 - Jennifer Blanke, Thomas Riechert"
+  } ],
+  "http://xmlns.com/foaf/0.1/maker" : [ {
+    "@id" : "http://pcp-on-web.de/team/EdgardMarx"
+  }, {
+    "@id" : "http://pcp-on-web.de/team/JenniferBlanke"
+  }, {
+    "@id" : "http://pcp-on-web.de/team/ThomasRiechert"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#AcademicDocuments",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezieht sich auf Akademische Dokumente im engsten Sinne, die für die Organisation des Universitätsalltags relevant waren, wie Vorlesungsverzeichnisse oder Rechenschaftsberichte. Sie stehen in Abgrenzung zu Publikationen wie Lehrbücher, die sich über das Publikum der eigenen Universität hinaus, und zwar über den zeitgenössischen Publikationsmarkt, an ein größeres Publikum aus Gelehrten und Gebildeten wendeten."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to academic documents in the narrowest sense. Documents that were relevant to the organisation of everyday university life, such as lecture catalogues or professorial reports. They are distinct from publications such as textbooks (teaching material), which addressed a larger audience of scholars and educated people via the contemporary publication market."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Academic Documents"
+  }, {
+    "@language" : "de",
+    "@value" : "Akademische Dokumente"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Document"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#AcademicOffice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Academic offices like professor, rector, prorector, chancellor, dean etc.."
+  }, {
+    "@language" : "de",
+    "@value" : "Akademische Ämter wie Professor, Rektor, Prorektor, Kanzler, Dekan usw. ."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Academic office"
+  }, {
+    "@language" : "de",
+    "@value" : "Akademisches Amt"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#StageOfLife"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#AlbumAmicorum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezeichnet Stammbücher, auch genannt Freundschaftsbücher in denen Autographen verschiedener Personen gesammelt wurden. Diese persönliche Grußtexte von bspw. Professoren wurden mitunter als Empfehlungsschreiben genutzt."
+  }, {
+    "@language" : "en",
+    "@value" : "Designates so called (German) friendship books, in which autographs of various persons were collected. These personal greetings from professors, for example, were sometimes used as letters of recommendation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Album Amicorum"
+  }, {
+    "@language" : "en",
+    "@value" : "Album Amicorum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Document"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Article",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Articles published in periodicals like journals, newspapers or magazines."
+  }, {
+    "@language" : "de",
+    "@value" : "Artikel in Periodika wie Journale, Zeitschriften, Zeitungen oder Magazine."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Article"
+  }, {
+    "@language" : "de",
+    "@value" : "Artikel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Publication"
+  }, {
+    "@id" : "http://purl.org/spar/fabio/Article"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#AssociateProfessor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Associate professors who taught without holding a chair. The associate professorship, however, was usually linked to an expectation of a chair that would become vacant."
+  }, {
+    "@language" : "de",
+    "@value" : "Bezeichnet einen Professor, der eine außerordentliche Professur (aO) inne hat. Diese Professoren lehrten ohne Lehrstuhl. Die außerordentliche Professur war aber in der Regel mit Expektanz auf einen vakant werdenden Lehrstuhl verknüpft."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Associate Professor"
+  }, {
+    "@language" : "de",
+    "@value" : "Außerordentlicher Professor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#AcademicOffice"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#AuctionCatalogue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "de",
+    "@value" : "Bezieht sich auf Auktionskataloge von Gelehrtenbibliotheken. Diese Kataloge listen den zu veräußernden bibliothekarischen Bestand, daneben oft auch Objektsammlungen oder Mobiliar."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to auction catalogues of learned libraries. These catalogues list not only the library estate to be sold, but often also object collections or furniture."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Auction catalogue"
+  }, {
+    "@language" : "de",
+    "@value" : "Auktionskatalog"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Publication"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Baccalaureus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezeichnet den akademischen Grad eines Baccalaren/Baccalaureus. Kürzel: Bacc."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to the academic degree of a bachelor/baccalaureus. Abbreviation: Bacc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Baccalaureus"
+  }, {
+    "@language" : "en",
+    "@value" : "Baccalaureus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Graduation"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Birth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Birthdate or the period of birth of a person."
+  }, {
+    "@language" : "de",
+    "@value" : "Geburtsdatum oder Zeitraum einer Person."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Birth"
+  }, {
+    "@language" : "de",
+    "@value" : "Geburt"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#StageOfLife"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Candidacy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezieht sich auf die Kandidatur einer Person, die im Zuge der Besetzung einer Professur als Kandidat gehandelt wird. Diese Person kann ein Kandidat ohne Lehrstuhl sein, aber auch ein bereits amtierender Professor, der für einen anderen Lehrstuhl gehandelt wird."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to the candidacy of a person which is a candidate for a university chair/professorship. This person can be a candidate without a chair, but also an incumbent professor who is being traded for another chair."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Candidacy"
+  }, {
+    "@language" : "de",
+    "@value" : "Kandidatur"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#StageOfLife"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#ChairProfessorship",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezeichnet den Lehrstuhl eines ordentlichen Professors an einer Universitätsfakultät, der einem spezifischen Fachgebiet zugeordnet ist."
+  }, {
+    "@language" : "en",
+    "@value" : "Designates a chair at a university faculty that covers a specific subject area and is occupied by a full or ordinary professor."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Chair/Professorship"
+  }, {
+    "@language" : "de",
+    "@value" : "Lehrstuhl/Professur"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#AcademicOffice"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Collection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Object-collections of a professor, relevant for teaching or research e.g. private libraries, naturalia or further scholarly devices, as well as art collections."
+  }, {
+    "@language" : "de",
+    "@value" : "Objekt-Sammlungen eines Professors,d ie für den Unterricht relevant waren, z.B. Privatbibliotheken, Naturalien- und Instrumentensammlungen, Kunstsammlungen etc. ."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Collection"
+  }, {
+    "@language" : "de",
+    "@value" : "Sammlung"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Corporation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezeichnet eine Körperschaft, eine rechtsfähige Institution."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to a corporation or corporate body in the sense of a legal institution."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Corporation"
+  }, {
+    "@language" : "de",
+    "@value" : "Körperschaft"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/dc/terms/Agent"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Death",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Day of death or the period of death of a person."
+  }, {
+    "@language" : "de",
+    "@value" : "Sterbedatum oder Zeitraum des Todes einer Person."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Death"
+  }, {
+    "@language" : "de",
+    "@value" : "Tod"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#StageOfLife"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Denomination",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Religionszugehörigkeit oder Glaubenbekenntnis einer Person."
+  }, {
+    "@language" : "en",
+    "@value" : "The religious denomination of a person."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Denomination"
+  }, {
+    "@language" : "de",
+    "@value" : "Konfession"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#StageOfLife"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Disputation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezieht sich auf die Disputationspraxis, dem wissenschaftlichen Streitgespräch. Es diente dem Zweck der Übung, der Graduierung oder Lehrbefähigung (venia legendi) und verwies als Inauguraldisputation pro loco auf die Erlangung einer Professur. Die Dissertation ist das gedruckte Medium der Dispuation."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to the practice of disputation, a scientific debate which had the purpose of practising curricula, to obtain academic titles and the right to teach and give lectures (venia legendi). It also refers to inaugural disputations of newly vocated professors. The printed medium of a disputation is the dissertation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Disputation"
+  }, {
+    "@language" : "en",
+    "@value" : "Disputation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#TeachingPractices"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Dissertation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezeichnet das gedruckte Medium der Disputation. Die Dissertation ist im frühneuzeitlichen Kontext dieser Domäne als Werbeschrift für die Disputation zu betrachten, die in Kürze jene relevanten Thesen zusammenfasste, welche während der Disputation verhandelt wurden."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to the printed media of a disputation. In the early modern context of this domain it functioned as advertisement of the disputation as practice which briefly summoned the thesises of the given topic."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Dissertation"
+  }, {
+    "@language" : "en",
+    "@value" : "Dissertation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#AcademicDocuments"
+  }, {
+    "@id" : "http://pcp-on-web.de/ontology#Publication"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Doctor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezeichnet den akademischen Grad eines Doktoren. Kürzel: Dr."
+  }, {
+    "@language" : "en",
+    "@value" : "Describes the academic degree of a doctor. Abbreviation: Dr."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Doctor"
+  }, {
+    "@language" : "en",
+    "@value" : "Doctor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Graduation"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Document",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Dokument unterschiedlicher Genres und Medien, die für die Lebensabschnitte einer Lehrkraft relevant sind."
+  }, {
+    "@language" : "en",
+    "@value" : "General Documents of different genres and media which are relevant for the stages of life of lecturers."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Document"
+  }, {
+    "@language" : "de",
+    "@value" : "Dokument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/dc/terms/BibliographicResource"
+  }, {
+    "@id" : "http://purl.org/spar/fabio/Expression"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Education",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Beschreibt den Bildungsweg einer Lehrkraft."
+  }, {
+    "@language" : "en",
+    "@value" : "Decribes the education of a lecturer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Bildungsweg"
+  }, {
+    "@language" : "en",
+    "@value" : "Education"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#StageOfLife"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Enrollment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezieht sich auf die Einschreibung einer Person in das Universitätsverzeichnis, die (Universitäts-)Matrikel."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to the enrollment of a person into the universities' directory, the (university) 'Matrikel'."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Enrollment"
+  }, {
+    "@language" : "de",
+    "@value" : "Immatrikulation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#UniversityStudies"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Exercise",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezieht sich auf die Lehr- und Lernpraktik einer Übung."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to the teaching and learning practice of an exercise."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Exercise"
+  }, {
+    "@language" : "de",
+    "@value" : "Übung"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#TeachingPractices"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Faculty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezieht sich auf eine körperschaftlich organisierte und auf ein Fachgebiet begrenzte Lehr- und Verwaltungseinheit einer Volluniversität, im frühneuzeitlichen Kontext: Artistenfakultät (facultas artium), später Philosophische Fak., Theologie, Jurisprudenz, Medizin."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to corporated university divisions with specific subject areas, which are in an Early Modern context: facultas artium, later Philosophical fac., Theology, Jurisprudence, Medicine."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Faculty"
+  }, {
+    "@language" : "de",
+    "@value" : "Fakultät"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#FacultyOfLaw",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezeichnet die Juristische Fakultät an einer Universität."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to the Faculty of Law at Universities."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Faculty of Law"
+  }, {
+    "@language" : "de",
+    "@value" : "Juristische Fakultät"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Faculty"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#FacultyOfMedicine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezeichnet die Medzinische Fakultät an einer Universität."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to the Faculty of Medicine at Universities."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Faculty of Medicine"
+  }, {
+    "@language" : "de",
+    "@value" : "Medizinische Fakultät"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Faculty"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#FacultyOfPhilosophy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezeichnet die Artesfakultät, die sich im Untersuchungszeitraum zu einer Philosophischen Fakultät entwickelte und an der propädeutisches Wissen für das weitergehende Studium an den übrigen höheren Fakultäten einer Volluniversität vermittelt wurde."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to the facultats artium which developed into a faculty of philosophy throughout the period of interest and at which propaedeutic knowledge was taught for further studies at one of the higher faculties of a full university."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Faculty of Philosophy"
+  }, {
+    "@language" : "de",
+    "@value" : "Philosophische Fakultät"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Faculty"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#FacultyOfTheology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezeichnet die Theologische Fakultät an einer Universität."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to the Faculty of Theology at Universities."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Faculty of Theology"
+  }, {
+    "@language" : "de",
+    "@value" : "Theologische Fakultät"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Faculty"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Family",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Dieses Konzept beschreibt die Familienverhältnisse einer Lehrkraft."
+  }, {
+    "@language" : "en",
+    "@value" : "This concept describes the family relations of a lecturer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Familie"
+  }, {
+    "@language" : "en",
+    "@value" : "Family"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#StageOfLife"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#FamilyDynasty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Gender",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Refers to sex or gender of a person."
+  }, {
+    "@language" : "de",
+    "@value" : "Verweist auf das biologische Geschlecht oder die Geschlechtsidentität einer Person."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Gender"
+  }, {
+    "@language" : "de",
+    "@value" : "Geschlecht"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Graduation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezieht sich auf den Abschluss an einer Universität durch eine Promotion zum Magister, Baccalaureus, Lizentiat, Doktor, bspw. über eine pro gradu disputatio."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to a graduation at a university with the degrees of doctor, magister, baccalaureus, licentiate, e.g. proven via a pro gradu disputatio."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Abschluss"
+  }, {
+    "@language" : "en",
+    "@value" : "Graduation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#StageOfLife"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Honour",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Dieses Konzept beschreibt eine Ehrung, wie wissenschaftliche Auszeichnungen oder Preise."
+  }, {
+    "@language" : "en",
+    "@value" : "This concept describes an honour, such as scientific awards or prizes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Ehrung"
+  }, {
+    "@language" : "en",
+    "@value" : "Honour"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#StageOfLife"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Institution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "In Abgrenzung zur Körperschaft ist die Institution hier eine Einrichtung ohne Rechtscharakter."
+  }, {
+    "@language" : "en",
+    "@value" : "In distinction to a coropration refers this concept to institutions without legal power."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Institution"
+  }, {
+    "@language" : "en",
+    "@value" : "Institution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Corporation"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Keyword",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Additional information given under keyword or commentary in the original databases and which can be varied in content."
+  }, {
+    "@language" : "de",
+    "@value" : "Zusätzliche Informationen, die in den Datenbanken unter Schlagworten und Kommentarfunktionen verborgen sind und ganz unterschiedlicher Natur sein können."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Keyword"
+  }, {
+    "@language" : "de",
+    "@value" : "Schlagwort"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Lecture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezieht sich auf Vorlesungen bzw. Lektionen (lectiones), die von einer Lehrkraft im Rahmen der universitären Lehre in Vorlesungsverzeichnissen angekündigt wurden."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to lectures announced by lecturers in the lecture catalogue of a university."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Lecture"
+  }, {
+    "@language" : "de",
+    "@value" : "Vorlesung"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#TeachingPractices"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#LectureCatalogue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Lecture catalogue of a university."
+  }, {
+    "@language" : "de",
+    "@value" : "Vorlesungskatalog einer Universität."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Lecture Catalogue"
+  }, {
+    "@language" : "de",
+    "@value" : "Vorlesungskatalog"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#AcademicDocuments"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#LectureDone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezieht sich auf Vorlesungen die von Lehrkräften nachweislich durchgeführt wurden, z.B. nachgewiesen in Rechenschaftsberichten oder aktenkundliche Lektionslisten."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to lectures which were actually given by a lecturer and which can be proved to be given, e.g. by reports, lists or other archival material."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Lecture done"
+  }, {
+    "@language" : "de",
+    "@value" : "abgehaltene Vorlesung"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Lecture"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#LectureType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Refers to the different types of lectures conducted either publicly or privately..."
+  }, {
+    "@language" : "de",
+    "@value" : "Verweist auf die unterschiedlichen Typen von Vorlesungen, die entweder privat oder öffentlich durchgeführt wurden."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Lecturetype"
+  }, {
+    "@language" : "de",
+    "@value" : "Vorlesungstyp"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Lecturer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezeichnet Lehrkräfte an frühneuzeitlichen Universitäten im deutschsprachigen Raum des Heiligen Römischen Reichs deren Karrierewege im Fokus des für die Ontologie maßgebenden Forschungsprojektes liegen."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to university lecturer at early modern universities in the German-speaking area of the Holy Roman Empire whose career paths are the focus of the research project relevant to the given ontology."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Hochschullehrer"
+  }, {
+    "@language" : "en",
+    "@value" : "Lecturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Person"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Licentiatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezeichnet den akademischen Grad eines Lizenziaten, eines Baccalaren mit Lehrbefugnis. Zugleich einen Doktor der evang. Theologie (bis 1947 an deutschen Hochschulen). Kürzel: lic."
+  }, {
+    "@language" : "en",
+    "@value" : "Describes the academic degree of a Licentiate, which means a bachelor/baccalaureus with the right to teach. Also the academic title of a doctor of Evangelic theology (valid until 1947 in Germany). Abbreviation: lic."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Licentiate"
+  }, {
+    "@language" : "de",
+    "@value" : "Lizenziat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Graduation"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezieht sich auf den geografischen Ort für Lebensabschnitte von Personen, insbesondere der Lehrkräfte, Orte von Körperschaften, Medien (Verlagsort, Druckort), Ämtern, Landesherrschaft usw."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to the geographical location of stages of life of persons, especially Lecturers, corporate bodies, media (printing, publishing), offices, territories and others."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Location"
+  }, {
+    "@language" : "de",
+    "@value" : "Ort"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Magister",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezeichnet den akademischen Grad eines Magister. Kürzel: Mag."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to the academic degree of a Magister. Abbreviation: Mag."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Magister"
+  }, {
+    "@language" : "en",
+    "@value" : "Magister"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Graduation"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Membership",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Refers to the membership of lecturers at sociocultural and/or political societies or further institutions; also fraternities."
+  }, {
+    "@language" : "de",
+    "@value" : "Verweist auf Mitgliedschaften von Lehrkräften in soziokulturellen und/oder politischen Gesellschaften, Sozietäten und weiterer Institutionen; auch Studentenverbindungen."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Membership"
+  }, {
+    "@language" : "de",
+    "@value" : "Mitgliedschaft"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#StageOfLife"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Office",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezieht sich auf nicht akademische Ämter bzw. Nebenberufe von Lehrkräften außerhalb der Universität, z.B. als Ärzte, Räte oder Anwälte."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to non-academic offices resp. side professions of lecturers outside of the university, e.g. as physicians at court, lawyers or counselers."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Amt"
+  }, {
+    "@language" : "en",
+    "@value" : "Office"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#StageOfLife"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Ownership",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Object-collections of a professor, e.g. private libraries, naturalia or further scholarly devices, as well as art collections."
+  }, {
+    "@language" : "de",
+    "@value" : "Objekt-Sammlungen eines Professors, z.B. Privatbibliotheken, Naturalien- und Instrumentensammlungen, Kunstsammlungen etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Besitz"
+  }, {
+    "@language" : "en",
+    "@value" : "Ownership"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#StageOfLife"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Pamphlet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezeichnet eine Streitschrift."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to a pamphlet."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Pamphlet"
+  }, {
+    "@language" : "de",
+    "@value" : "Streitschrift"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Publication"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#label" : [ {
+    "@language" : "de",
+    "@value" : "Person"
+  }, {
+    "@language" : "en",
+    "@value" : "Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezeichnet eine Person."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to a person."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/dc/terms/Agent"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Picture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Dieses Konzept beschreibt das Bild einer Person."
+  }, {
+    "@language" : "en",
+    "@value" : "This concept describes the picture of a person."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Bild"
+  }, {
+    "@language" : "en",
+    "@value" : "Picture"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Document"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#PrimaryEducation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezieht sich auf die diversen vormodernen Schulformen und pädagogischen Bildungsangebote im Vorfeld eines Universitätsbesuchs im Territorium des Heiligen Römischen Reichs Deutscher Nation, z.B. Elementarschulen, Lateinschulen, Gymnasien, Klosterschulen, Pfarrschulen etc."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to the diverse early modern educational and pedagogical formas and institutions of primary education within the Holy Roman Empire."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Primary education"
+  }, {
+    "@language" : "de",
+    "@value" : "Primäre Bildung"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Education"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#PrivateEducation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Private education by family members or a different private teacher."
+  }, {
+    "@language" : "de",
+    "@value" : "Privatunterricht im Familienverband oder durch einen Privatlehrer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Private education"
+  }, {
+    "@language" : "de",
+    "@value" : "Privatunterricht"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Education"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#PrivateLecture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezieht sich auf private Vorlesungen (lectio privata, privatum, privatissimum), die eine Lehrkraft in einem kleinen Kreis von Studenten hält und die von den Studenten in der Regel an die Lehrkraft selbst bezahlt werden mussten."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to private lectures (lectio privata, privatum, privatissimum), given by a lecturer for a relatively small amount of students, which a student usually had to pay for directly to the lecturer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Private Lecture"
+  }, {
+    "@language" : "de",
+    "@value" : "Private Vorlesung"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#LectureType"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#PrivateLecturer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezeichnet eine Lehrkraft ohne Professur. Zumeist graduierte Personen wie Magister oder Doktoren, die mit Lehrbefähigung (venia legendi/docendi) und mit Zustimmung der Fakultäten an der Universität lehrten, aber kein regelmäßiges Salär über die Korporation bzw. die Landesherrschaft erhielten. Stattdessen bekamen sie direkt von den Studenten Honorare für ihre Lehrpraxis, z. B. Privatdozenten, Sprachlehrer, Hofmeister. Ihre Lehrangebote wurden an das Schwarze Brett angeschlagen und tauchen nur selten in den Vorlesungsverzeichnissen auf."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to teachers without professorships but the permission by the faculties to teach (venia legendi/docendi). Those were mostly graduated persons, such as Magister or Doctors who did not receive a salary by the corporation or territory ruler but got paid directly by the students for their teaching practices, e. g. so-called private lecturers (German: Privatdozenten)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Privatdozent"
+  }, {
+    "@language" : "en",
+    "@value" : "Private Lecturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#AcademicOffice"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#PrivateLibrary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Refers to the private library of a lecturer. Can be reconstructed by published auction catalogues."
+  }, {
+    "@language" : "de",
+    "@value" : "Verweist auf die Privatbibliothek einer Lehrkraft und kann u.U. durch publizierte Auktionskataloge erschlossen werden."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Privatbibliothek"
+  }, {
+    "@language" : "en",
+    "@value" : "Private library"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Collection"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#ProgramsAndSpeeches",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezieht sich auf Hochschulschriften wie gedruckte Universitätsprogramme und Reden."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to university publications like printed university programs and speeches."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Programme und Reden"
+  }, {
+    "@language" : "en",
+    "@value" : "Programs and Speeches"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#AcademicDocuments"
+  }, {
+    "@id" : "http://pcp-on-web.de/ontology#Publication"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#PublicLecture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezieht sich auf öffentliche Vorlesungen (lectio publica) von Lehrkräften, die nicht extra vom Studenten bezahlt werden mussten."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to public lectures (lectio publica) of lecturers which had not to be payed extra by students."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Public Lecture"
+  }, {
+    "@language" : "de",
+    "@value" : "Öffentliche Vorlesung"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#LectureType"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Publication",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezieht sich auf Publikationen wie Bücher, Periodika oder andere verzeichnete Medien."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to publications like books, periodicals or other documentary resources (see DC Terms description)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Publication"
+  }, {
+    "@language" : "de",
+    "@value" : "Publikation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Document"
+  }, {
+    "@id" : "http://purl.org/dc/terms/BibliographicResource"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Publicist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezieht sich auf den Lebensabschnitt einer Lehrkraft als Publizist, d. h. als Autor, Herausgeber oder Mitarbeiter eines publizistischen Kollaborationsprojekts auf dem zeitgenössischen Publikationsmarkt."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to the stage of life of a lecturer as a publicist, appearing as an author, editor or collaborator in any publicistic collaboration project on the contemporary publication market."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Publicist"
+  }, {
+    "@language" : "de",
+    "@value" : "Publizist"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#StageOfLife"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Recommendation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezieht sich auf Empfehlungen, z.B. Empfehlungsschreiben von Professoren, die ggfs. in Bestallungsakten enthalten sind."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to recommendations, e.g. letters of recommendation by professors which are maybe part of vocation files."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Empfehlung"
+  }, {
+    "@language" : "en",
+    "@value" : "Recommendation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#StageOfLife"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Report",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Means regular reports of lecturers about their curriculum to the university and territorial administration, some places also referred to as Professorenzettel (professor's notes)."
+  }, {
+    "@language" : "de",
+    "@value" : "Rechenschaftsbericht den Lehrkräfte in regelmäßigen Abständen bei der Universitätverwaltung und Landesverwaltung einreichten, mancherorts auch als Professorenzettel bezeichnet."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Rechenschaftsbericht"
+  }, {
+    "@language" : "en",
+    "@value" : "Report"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#AcademicDocuments"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Review",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezeichnet die Rezension in einer Rezensionszeitschrift."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to a review published in a review journal."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Review"
+  }, {
+    "@language" : "de",
+    "@value" : "Rezension"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Publication"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Salary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezieht sich auf das Einkommen einer Lehrkraft - in Bearbeitung."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to the salary of a lecturer - in progress."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Salary"
+  }, {
+    "@language" : "de",
+    "@value" : "Salär"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#StageOfLife"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#School",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezeichnet Schulen für die primäre Bildung."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to schools for primary education."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "School"
+  }, {
+    "@language" : "de",
+    "@value" : "Schule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Institution"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Semester",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Abschnitt des Akademischen Jahrs. Es besteht aus einem Sommer- und einem Wintersemester."
+  }, {
+    "@language" : "en",
+    "@value" : "Part of an academic year. It consists of a summer- and a wintersemester"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Semester"
+  }, {
+    "@language" : "en",
+    "@value" : "Semester"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#University"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Seminar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezieht sich auf die Lehrveranstaltung eines Seminars, in den Quellen wie im Fall Uni Helmstedt mit Seminarium bezeichnet."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to the course of a seminar, referred to in the sources as Seminarium, as in the case of the University of Helmstedt."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Seminar"
+  }, {
+    "@language" : "en",
+    "@value" : "Seminar"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#TeachingPractices"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Societies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezeichnet Gesellschaften, wie Gelehrtengesellschaften, die sich einer bestimmten Geistesströmung oder Disziplin widmeten und aus Gelehrten und Gebildeten bestand sowie zumeist regional begrenzt agierte. Mit Gesellschaften konnten auch literarische Salons oder Lesegesellschaften gemeint sein. Außerdem Sozietäten mit strukturierter Körperschaft und obrigkeitlicher Protégierung (z.B. Akademie der Wissenschaften in Berlin). Des Weiteren sind mit Gesellschaften unter Umständen auch Geheimgesellschaften wie Freimaurer oder Illuminaten gemeint."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to societies like Learned Societies, which usually dealt with a certain discipline or ideas and which gathered learned and educated people, mostly of regionaly importance. Societies could also refer to literary salons or reading societies. Furthermore, societies with structured corporate body and most commonly protection and financing by the territory ruler, like the Akademie der Wissenschaften in Berlin. Furthermore societies could also refer to secret societies like Freemasons or Illuminati."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Gesellschaften"
+  }, {
+    "@language" : "en",
+    "@value" : "Societies"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#StageOfLife",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Dieses Konzept bezieht sich auf Lebensabschnitte einer Lehrkraft."
+  }, {
+    "@language" : "en",
+    "@value" : "This concept refers to a stage of life of a lecturer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Lebensabschnitt"
+  }, {
+    "@language" : "en",
+    "@value" : "Stage of Life"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Statutes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Die Verfassung einer Universität."
+  }, {
+    "@language" : "en",
+    "@value" : "University constitution."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Statuten"
+  }, {
+    "@language" : "en",
+    "@value" : "Statutes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#AcademicDocuments"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Student",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezeichnet einen an der Universität immatrikulierten Studenten."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to an enrolled student at a University."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Student"
+  }, {
+    "@language" : "en",
+    "@value" : "Student"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Person"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Subject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#SummerSemester",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Das halbjährige Sommersemester dauert von April bis September."
+  }, {
+    "@language" : "en",
+    "@value" : "The biannual summer semester starts in April and ends in September."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Sommersemester"
+  }, {
+    "@language" : "en",
+    "@value" : "Summer Semester"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Semester"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#TeachingPractices",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Beschreibt akademische Lehrpraktiken, die eine Lehrkraft an der Universität durchführt und welche durch Statuten, weitere Regularien und/oder durch Gewohnheit geregelt sind."
+  }, {
+    "@language" : "en",
+    "@value" : "Describes academic teaching practices which are regulated by the University's statutes or further regulations and/or customs."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Lehrpraktiken"
+  }, {
+    "@language" : "en",
+    "@value" : "Teaching Practices"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#StageOfLife"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Territory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezeichnet die Landesherrschaft eines Territoriums und bezieht sich hier auf den Amtssitz jener landesherrschaftlichen Organe, denen die Universitäten unterstellt sind."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to the authority by a ruler/rulership of a territory and means the territorial administration which deal with the universities."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Landesherrschaft"
+  }, {
+    "@language" : "en",
+    "@value" : "Territory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Corporation"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Textbook",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezeichnet ein Buch das Lehrinhalte eines Studiums didaktisch aufbereitet."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to books which offer a compilation of content in a certain field of interest."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Lehrbuch"
+  }, {
+    "@language" : "en",
+    "@value" : "Textbook"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#AcademicDocuments"
+  }, {
+    "@id" : "http://pcp-on-web.de/ontology#Publication"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#University",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezeichnet eine Lehr-, Bildungs- und Forschungskorporation die dazu priviligiert ist, akademische Grade zu verleihen."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to education and research corporations which own the privilige to award academic degrees."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "University"
+  }, {
+    "@language" : "de",
+    "@value" : "Universität"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Corporation"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#UniversityStudies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezieht sich auf das Universitätsstudium einer Lehrkraft."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to the university studies of a lecturer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Studium"
+  }, {
+    "@language" : "en",
+    "@value" : "University studies"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Education"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#Wife",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezieht sich auf die Ehefrau einer Lehrkraft."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to wife of a lecturer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Ehefrau"
+  }, {
+    "@language" : "en",
+    "@value" : "Wife"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Person"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#WinterSemester",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Das halbjährige Wintersemester dauert von Oktober bis März."
+  }, {
+    "@language" : "en",
+    "@value" : "The biannual winter semester starts in October and ends in March."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Winter Semester"
+  }, {
+    "@language" : "de",
+    "@value" : "Wintersemester"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Semester"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#academicYear",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#AcademicDocuments"
+  }, {
+    "@id" : "http://pcp-on-web.de/ontology#Semester"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Academic Year"
+  }, {
+    "@language" : "de",
+    "@value" : "Akademisches Jahr"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gYear"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#additionToSurname",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Additions to the surname can be of, etc."
+  }, {
+    "@language" : "de",
+    "@value" : "Namenszusätze sind zum Beispiel von, zu, etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Namenszusatz"
+  }, {
+    "@language" : "en",
+    "@value" : "additions to surname"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "0.2 changed Domain from Professor to Person 0.1 initial creation - 24.05.07"
+  }, {
+    "@value" : "2.0 stable"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#alternativeWritingOfSurname",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://ns.ontowiki.net/SysOnt/order" : [ {
+    "@value" : "20"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bsp: Meier, Meyer, Maier"
+  }, {
+    "@language" : "en",
+    "@value" : "For Example Meier, Meyer, Maier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "alternative Namensschreibweisen"
+  }, {
+    "@language" : "en",
+    "@value" : "alternative writings of the surname"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "0.1 initial creation - 24.05.07"
+  }, {
+    "@value" : "0.2 changed Domain from Professor to Person"
+  }, {
+    "@value" : "2.0 under discussion"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#birthname",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Geburtsname einer Person."
+  }, {
+    "@language" : "en",
+    "@value" : "The birthname of a person."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Geburtsname"
+  }, {
+    "@language" : "en",
+    "@value" : "birthname"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#corporationDocument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Documents related to corporations and institutions, e.g. deeds of appointment ratified by the sovereignty."
+  }, {
+    "@language" : "de",
+    "@value" : "Dokumente die mit Körperschaften und Institutionen in Verbindung stehen, z.B. Ernennungsurkunden ratifziert durch die Landesherrschaft."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Corporation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Document"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Dokument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Document"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#corresponds",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Assigns to the correspondence between persons, e.g. proven via editions or heritage plattforms such as KALLIOPE."
+  }, {
+    "@language" : "de",
+    "@value" : "Verweist auf die aus einem Dokument hervorgehende Korrespondenz zwischen Personen, z.B. nachgewiesen über Editionen oder Nachlassplattformen wie KALLIOPE."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "corresponds"
+  }, {
+    "@language" : "de",
+    "@value" : "korrespondiert"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/knows"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The date or timespan of a stage of life."
+  }, {
+    "@language" : "de",
+    "@value" : "Zeitangabe eines Lebensabschnitts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Document"
+  }, {
+    "@id" : "http://pcp-on-web.de/ontology#StageOfLife"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Date"
+  }, {
+    "@language" : "de",
+    "@value" : "Datum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gDay"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gMonth"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gMonthDay"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gYear"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gYearMonth"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#dateOfBirth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Geburtsdatum einer Person."
+  }, {
+    "@language" : "en",
+    "@value" : "The date of birth of a person."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Geburtsdatum"
+  }, {
+    "@language" : "en",
+    "@value" : "date of birth"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gDay"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gMonth"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gMonthDay"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gYear"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gYearMonth"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#dateOfDeath",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Sterbedatum einer Person."
+  }, {
+    "@language" : "en",
+    "@value" : "The date of death of a person."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Sterbedatum"
+  }, {
+    "@language" : "en",
+    "@value" : "date of death"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gDay"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gMonth"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gMonthDay"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gYear"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gYearMonth"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#derivedFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Wird für das Alignment genutzt."
+  }, {
+    "@language" : "en",
+    "@value" : "Wird für das Alignment genutzt."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has been derived from"
+  }, {
+    "@language" : "de",
+    "@value" : "ist abgeleitet von"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#disputationHasDissertation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Assigns a disputation to a dissertation."
+  }, {
+    "@language" : "de",
+    "@value" : "Weist einer Disputation eine Dissertation zu."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Disputation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Disputation hat Dissertation"
+  }, {
+    "@language" : "en",
+    "@value" : "disputation has dissertation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Dissertation"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#enrollment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Im Matrikelbuch eingeschriebener Student."
+  }, {
+    "@language" : "en",
+    "@value" : "Most likely latinized name of a student at the enrollment document of a university."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Enrollment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "eingeschriebener Student"
+  }, {
+    "@language" : "en",
+    "@value" : "enrolled student"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Student"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#enrollmentName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Most likely latinized name of a student at the enrollment document of a university."
+  }, {
+    "@language" : "de",
+    "@value" : "Zumeist latinisierter Name eines Studenten im Matrikelbuch einer Universität."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Enrollment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Name in Matrikel"
+  }, {
+    "@language" : "en",
+    "@value" : "name in enrollment document"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#female",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Refers to the female sex or female gender of a person."
+  }, {
+    "@language" : "de",
+    "@value" : "Verweist auf das biologische weibliche Geschlecht oder die weibliche Geschlechtsidentität einer Person."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "female"
+  }, {
+    "@language" : "de",
+    "@value" : "weiblich"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Gender"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#forename",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Forename(s) of a person, seperated by space"
+  }, {
+    "@language" : "de",
+    "@value" : "Vorname(n) einer Person, getrennt mit Leerzeichen"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Vorname"
+  }, {
+    "@language" : "en",
+    "@value" : "forename"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "0.1 initial creation date: 18.05.2015"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#from",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Das Startdatum eines Lebensabschnitts"
+  }, {
+    "@language" : "en",
+    "@value" : "The date of the beginning of a stage of life."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#StageOfLife"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "from"
+  }, {
+    "@language" : "de",
+    "@value" : "von"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gDay"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gMonth"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gMonthDay"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gYear"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gYearMonth"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#furtherInformation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://ns.ontowiki.net/SysOnt/order" : [ {
+    "@value" : "340"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#AcademicDocuments"
+  }, {
+    "@id" : "http://pcp-on-web.de/ontology#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Sonstiges/weitere Informationen"
+  }, {
+    "@language" : "en",
+    "@value" : "miscellaneous/further information"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "0.1 initial creation - 28.06.2007"
+  }, {
+    "@value" : "2.0 stable"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#genderqueer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Refers to the genderqueer identity of a person."
+  }, {
+    "@language" : "de",
+    "@value" : "Verweist auf die nicht-binäre Geschlechtsidentität einer Person."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "divers"
+  }, {
+    "@language" : "en",
+    "@value" : "genderqueer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Gender"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#geonameLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Die URL des Ressourcenstandorts in http://geonames.org."
+  }, {
+    "@language" : "en",
+    "@value" : "The Resource location's URL in http://geonames.org."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Geoname Ort"
+  }, {
+    "@language" : "en",
+    "@value" : "Geoname location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#gnd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "GND Normadatei, inklusive ehemals genutzte PND."
+  }, {
+    "@language" : "en",
+    "@value" : "GND integrated authority file, including formerly used PND."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Corporation"
+  }, {
+    "@id" : "http://pcp-on-web.de/ontology#Document"
+  }, {
+    "@id" : "http://pcp-on-web.de/ontology#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "GND"
+  }, {
+    "@language" : "en",
+    "@value" : "GND"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#hasAuctionCatalogue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Adds an auction catalogue to a private library."
+  }, {
+    "@language" : "de",
+    "@value" : "Verknüpft eine Privatbibliothek mit einem Auktionskatalog."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#PrivateLibrary"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has auction catalogue"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Auktionskatalog"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#AuctionCatalogue"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#hasAuthor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Refers to the authorship of a document."
+  }, {
+    "@language" : "de",
+    "@value" : "Verweist auf die Autorenschaft eines Dokuments."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Document"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "hat Autor"
+  }, {
+    "@language" : "en",
+    "@value" : "hat author"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Corporation"
+  }, {
+    "@id" : "http://pcp-on-web.de/ontology#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/terms/creator"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#hasChild",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezieht sich auf das Kind, Pflegekind, Adoptivkind eines Professors."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to the cild, foster child, adoptive child of a professor."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Family"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has child"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Kind"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Person"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#hasComment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Infos aus Kommentar in original Datenbank."
+  }, {
+    "@language" : "en",
+    "@value" : "Infos from comment in the original database."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#AcademicOffice"
+  }, {
+    "@id" : "http://pcp-on-web.de/ontology#ChairProfessorship"
+  }, {
+    "@id" : "http://pcp-on-web.de/ontology#Office"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has comment"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Kommentar"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#Literal"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#hasContributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Refers to the contributor in the developement process of a document."
+  }, {
+    "@language" : "de",
+    "@value" : "Verweist auf eine Entität, die am Entstehungsprozess eines Dokuments beteiligt ist."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Document"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has contributor"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Beteiligten"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Corporation"
+  }, {
+    "@id" : "http://pcp-on-web.de/ontology#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/terms/contributor"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#hasCreator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Creator of a document."
+  }, {
+    "@language" : "de",
+    "@value" : "Urheber eines Dokuments"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Document"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has creator"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Urheber"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Corporation"
+  }, {
+    "@id" : "http://pcp-on-web.de/ontology#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#hasContributor"
+  }, {
+    "@id" : "http://purl.org/dc/terms/creator"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#hasDedicatee",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezeichnet den Widmunsgempfänger einer Publikation."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to the dedicatee of a publication."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Dissertation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has dedicatee"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Widmungsempfänger"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Person"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#hasEnrollment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Refers to the enrollment of a person at a university."
+  }, {
+    "@language" : "de",
+    "@value" : "Verweist auf die Immatrikulation einer Person an einer Universität."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has enrollment"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Matrikel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Enrollment"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#hasFaculty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Links documents and offices to a faculty."
+  }, {
+    "@language" : "de",
+    "@value" : "Verknüpft Dokumente und Ämter mit einer Fakultät."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#AcademicDocuments"
+  }, {
+    "@id" : "http://pcp-on-web.de/ontology#AcademicOffice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has faculty"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Fakultät"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Faculty"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#hasHusband",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezieht sich auf Personen, die als Ehemann auftreten."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to persons who appear as husbands."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Family"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has husband"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Ehemann"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#hasParent"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#hasInscriber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezeichnet den Inskribenten eines Stammbuchs."
+  }, {
+    "@language" : "en",
+    "@value" : "Designates the inscriber to a friendship book."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#AlbumAmicorum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has inscriber"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Inskribent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Person"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#hasInstution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Assigns structured institutions to learned societies, e.g. Academies of Sciences."
+  }, {
+    "@language" : "de",
+    "@value" : "Weist gelehrten Gesellschaften strukturierte Einrichtungen zu, z.B. Akademien der Wissenschaften."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Societies"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has institution"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Institution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Institution"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#hasKeyword",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Links documents to keyword specification."
+  }, {
+    "@language" : "de",
+    "@value" : "Verknüpft Dokumente mit Schlagwortangaben."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Document"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has keyword"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Schlagwort"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Keyword"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#hasMaterial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Gibt Materialtyp und Materialname von Unterrichtsmaterialien an, die in Vorlesungsverzeichnissen unter Umständen mit angegeben sind."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates material type and material name of teaching materials that may be included in lecture catalogues."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#LectureCatalogue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has teaching material"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Unterrichtsmaterial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#hasOpponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezeichnet den oder die Personen, die während einer Disputation als Opponenten auftreten. Opponenten sind auf Titelblättern der gedruckten Disputationsschrift in der Regel nicht angegeben und konnten aus Lehrkräften sowie Studenten gleichermaßen bestehen."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to the persons who acted as opponents at a disputation. Opponents are rarely indicated in printed disputation papers aka dissertations and could consist of teachers as well as students."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Dissertation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has opponent"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Opponent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Person"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#hasOrigin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Refers to the geographical origin of persons."
+  }, {
+    "@language" : "de",
+    "@value" : "Verweist auf die geografische Herkunft von Personen."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has origin"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Herkunft"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Location"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#hasParent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Refers to persons who appear as parents."
+  }, {
+    "@language" : "de",
+    "@value" : "Verweist auf personen, die als Eltern auftreten."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Family"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has parent"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Elternteil"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Person"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#hasPraeses",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezeichnet die Person, die während einer Disputation als Praeses auftritt und die Disputation leitet."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to the person who is the praeses - the head - of a disputation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Dissertation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has praeses"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Praeses"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Person"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#hasPublication",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "..."
+  }, {
+    "@language" : "de",
+    "@value" : "Der Lebensabschnitt einer Person als Publizist, d.h. als Autor, Herausgeber oder Mitwirkender, hat Publikationen."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Publicist"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has publication"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Publikation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Publication"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#hasPublisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Gives the publisher of a document."
+  }, {
+    "@language" : "de",
+    "@value" : "Nennt Herausgeber eines Dokuments."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Document"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has publisher"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Herausgeber"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Corporation"
+  }, {
+    "@id" : "http://pcp-on-web.de/ontology#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/terms/publisher"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#hasRecommendation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Gibt an, ob ein Kandidat ein Empfehlungsschreiben hat."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to any given recommendation of a candidate."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Candidacy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has recommendation"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Empfehlung"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Recommendation"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#hasRespondent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezeichnet die Person des Respondenten, der sich der Disputation unterzieht."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to the person who is undergoing the act of disputation, called respondent."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Dissertation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has respondent"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Respondent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Person"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#hasSchool",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Refers to the institution of primary education."
+  }, {
+    "@language" : "de",
+    "@value" : "Verweist auf die Institution an der primäre Bildung erworben wurde."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#PrimaryEducation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has school"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Schule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#School"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#hasSemester",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Gives the semester of a university study."
+  }, {
+    "@language" : "de",
+    "@value" : "Nennt Semester eines Studiums."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#TeachingPractices"
+  }, {
+    "@id" : "http://pcp-on-web.de/ontology#UniversityStudies"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Semester"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Semester"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Semester"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#hasStageOfLife",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Lebensabschnitt einer Lehrkraft."
+  }, {
+    "@language" : "en",
+    "@value" : "Stage of life of a lecturer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Lecturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has stage of life"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Lebensabschnitt"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#StageOfLife"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#hasSubject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Assigns a dissertation to a subject."
+  }, {
+    "@language" : "de",
+    "@value" : "Ordnet der Dissertation ein Fachgebiet zu."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Dissertation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has Subject"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Fach"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Subject"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#hasText",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Gibt den Text eines Rechenschaftsberichts an."
+  }, {
+    "@language" : "en",
+    "@value" : "Gives the text of a report."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Report"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has text"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Text"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#hasWell-wisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezeichnet den Gratulanten einer Publikation, bspw. den Gratulanten eines Disputanten. Diese Gratulanten-Schriften befinden sich zumeist am Ende einer Dissertation."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to the well-wisher of a publication, e.g. the well-wisher to a disputant. These well-wishing writings are usually found at the end of a dissertation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Dissertation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has well-wisher"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Gratulant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Person"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#hasWife",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezieht sich auf die Person, die als Ehefrau auftritt."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to the person who appears as a wife."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Family"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : ""
+  }, {
+    "@language" : "en",
+    "@value" : "has wife"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#hasParent"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#idPerson",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Personen Identifikationsnummer in der ursprünglichen Datenbank."
+  }, {
+    "@language" : "en",
+    "@value" : "Persons Identification number in the original database."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "IDPersonLocal"
+  }, {
+    "@language" : "en",
+    "@value" : "IDPersonLocal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#isAttributedTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Refer to persons, or specifically lecturers, who are assigned to a family dynasty in the data."
+  }, {
+    "@language" : "de",
+    "@value" : "Verweist auf Personen, oder konkret Lehrkräfte, die in den Daten einer Familiendynastie zugeordnet werden."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is attributed to"
+  }, {
+    "@language" : "de",
+    "@value" : "wird zugeschrieben"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#FamilyDynasty"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#isPartOfFaculty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezieht sich auf Lehrstühle der einzelnen Fakultäten."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to chairs of the individual faculties."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#ChairProfessorship"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is part of faculty"
+  }, {
+    "@language" : "de",
+    "@value" : "ist Teil der Fakultät"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Faculty"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#isPartOfUniversity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezieht sich auf konstituierende Bestandteile einer Universität."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to the constituent parts of a university."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Faculty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is part of university"
+  }, {
+    "@language" : "de",
+    "@value" : "ist Teil der Universität"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#University"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#latinForename",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Latinisierter  Vorname einer Person."
+  }, {
+    "@language" : "en",
+    "@value" : "Latinized first name of a person."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Latinisierter Vorname"
+  }, {
+    "@language" : "en",
+    "@value" : "latin first name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#latinSurname",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Latinisierter Nachname einer Person."
+  }, {
+    "@language" : "en",
+    "@value" : "Latinized last name of a person."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Latein Name"
+  }, {
+    "@language" : "en",
+    "@value" : "latin last name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#lectureIsOfType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Refers to the specific type of a lecture."
+  }, {
+    "@language" : "de",
+    "@value" : "Verweist auf den spezifischen Typ einer Vorlesung."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Lecture"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Vorlesung ist Typ"
+  }, {
+    "@language" : "en",
+    "@value" : "lecture is of type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#LectureType"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#locationCorporation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezieht sich auf den geografischen Ort einer Körperschaft."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to the geographical location of a corporation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Corporation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Ort einer Körperschaft"
+  }, {
+    "@language" : "en",
+    "@value" : "location of a corporation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Location"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#locationDocument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezieht sich auf den geografischen Ort eines Dokuments, z.B. Publikationsort."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to the geographical location of a document, e.g. location of a publication."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Document"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Ort eines Dokument"
+  }, {
+    "@language" : "en",
+    "@value" : "location of a document"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Location"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#male",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Refers to the male sex or male gender of a person."
+  }, {
+    "@language" : "de",
+    "@value" : "Verweist auf das biologische männliche Geschlecht oder die männliche Geschlechtsidentität einer Person."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "male"
+  }, {
+    "@language" : "de",
+    "@value" : "männlich"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Gender"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#membershipSociety",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Adds the membership to an institution."
+  }, {
+    "@language" : "de",
+    "@value" : "Weist die Mitgliedschaft einer Institution zu."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Membership"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Mitgliedschaft hat Institution"
+  }, {
+    "@language" : "en",
+    "@value" : "membership has institution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Societies"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#nominates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Bezieht sich auf Nominierungslisten einer Fakultät, die an die Verwaltung der Landesherrschaft erging und aus denen ein Kandidat durch die Landesherrschaft bestätigt wurde. Diese Listen liegen zumeist in zuständigen Archiven vor."
+  }, {
+    "@language" : "en",
+    "@value" : "Refers to nomination lists which were handed in  to the territorial administration by the faculties in  order to choose and to vocate a  candidate for a university chair. Those lists can be found in relevant archives."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Faculty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "nominates"
+  }, {
+    "@language" : "de",
+    "@value" : "nominiert"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Candidacy"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#note",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://ns.ontowiki.net/SysOnt/order" : [ {
+    "@value" : "390"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Additional information from the original database that do not fit elsewhere."
+  }, {
+    "@language" : "de",
+    "@value" : "Zusätzliche Informationen aus den original Datenbanken, die nirgends sonst eingetragen werden können."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Vermerk, Hinweis"
+  }, {
+    "@language" : "en",
+    "@value" : "note"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "0.1 initial creation - 24.05.2007"
+  }, {
+    "@value" : "0.2 changed Domain from Professor to Person"
+  }, {
+    "@value" : "2.0 stable"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#owner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Refers to the owner of a friendship book."
+  }, {
+    "@language" : "de",
+    "@value" : "Verweist auf den Stammbuchhalter eines Stammbuchs."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#AlbumAmicorum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Stammbuchhalter"
+  }, {
+    "@language" : "en",
+    "@value" : "owner"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Person"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#owns",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Refers to the ownership of a teaching or research collection."
+  }, {
+    "@language" : "de",
+    "@value" : "Verweist auf den Besitzstand einer Objektsammlung relevant für den Unterricht."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Ownership"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "besitzt"
+  }, {
+    "@language" : "en",
+    "@value" : "owns"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Collection"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#pictureLicense",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Beinhaltet Lizenzinformationen zum Bildes."
+  }, {
+    "@language" : "en",
+    "@value" : "Provides Licence information of the Picture."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Picture"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Licence of the Picture."
+  }, {
+    "@language" : "de",
+    "@value" : "Lizenz des Bildes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#pictureURL",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Beinhaltet die URL des Bildes."
+  }, {
+    "@language" : "en",
+    "@value" : "Provides an URL of the Picture."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Picture"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "URL des Bildes."
+  }, {
+    "@language" : "en",
+    "@value" : "URL of the Picture."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#proofResource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "..."
+  }, {
+    "@language" : "en",
+    "@value" : "..."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Document"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Nachweis"
+  }, {
+    "@language" : "en",
+    "@value" : "proof"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#relatedDocument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Ordnet einem Lebensabschnitt oder einer Person Dokumente zu, z.B. Bilder"
+  }, {
+    "@language" : "en",
+    "@value" : "Relevant documents of a stage of life or persons e.g. pictures."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Person"
+  }, {
+    "@id" : "http://pcp-on-web.de/ontology#StageOfLife"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Relevant documents of a stage of life or a person in general."
+  }, {
+    "@language" : "de",
+    "@value" : "Relevante Dokumente zu einem Lebensabschnitt oder einer Person allgemein"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Document"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#stageOfLifeLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Adds a geographical location to a stage of life of a lecturer."
+  }, {
+    "@language" : "de",
+    "@value" : "Fügt dem Lebensabschnitt einer Lehrkraft einen geografischen Ort zu."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#StageOfLife"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Ort Lebensabschnitt"
+  }, {
+    "@language" : "en",
+    "@value" : "location of stage of life"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Location"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#student",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Refers to the lecturer as a student."
+  }, {
+    "@language" : "de",
+    "@value" : "Weist eine Lehrkraft als Student aus."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Lecturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is student"
+  }, {
+    "@language" : "de",
+    "@value" : "ist Student"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Student"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#surname",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Nachname einer Person"
+  }, {
+    "@language" : "en",
+    "@value" : "The surname of a person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Nachname"
+  }, {
+    "@language" : "en",
+    "@value" : "surname"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "0.1 initial creation date: 24.05.2007"
+  }, {
+    "@value" : "2.0 stable"
+  }, {
+    "@value" : "version 0.2  10.03.2008"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#tagged",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Gibt Informationen, die unspezifisch in Datenbanken unter Schlagworten, Kommentaren oder Notizen verborgen sind."
+  }, {
+    "@language" : "en",
+    "@value" : "Gives information that is unspecifically hidden in databases under keywords, comments or notes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "markiert"
+  }, {
+    "@language" : "en",
+    "@value" : "tagged"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Keyword"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Gives the title of a document."
+  }, {
+    "@language" : "de",
+    "@value" : "Nennt den Titel eines Dokuments."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Document"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Titel eines Dokuments"
+  }, {
+    "@language" : "en",
+    "@value" : "title of a document"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/terms/title"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#to",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Das Enddatum eines Lebensabschnitts"
+  }, {
+    "@language" : "en",
+    "@value" : "The date of the ending of a stage of life."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#StageOfLife"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "bis"
+  }, {
+    "@language" : "en",
+    "@value" : "to"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gDay"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gMonth"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gMonthDay"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gYear"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gYearMonth"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#vocates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Landesherrschaft beruft bzw. bestätigt akademische Ämter."
+  }, {
+    "@language" : "en",
+    "@value" : "Territorial rulership vocates or confirms academic offices."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Territory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "beruft"
+  }, {
+    "@language" : "en",
+    "@value" : "vocates"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#AcademicOffice"
+  } ]
+}, {
+  "@id" : "http://pcp-on-web.de/ontology#weddingYear",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://pcp-on-web.de/ontology#Family"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Heiratsjahr"
+  }, {
+    "@language" : "en",
+    "@value" : "wedding year"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gYear"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/BibliographicResource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://purl.org/spar/fabio/Article",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/spar/fabio/Expression",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/changes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://usefulinc.com/ns/doap#homepage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://usefulinc.com/ns/doap#maintainer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#label",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#Literal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#gDay",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#gMonth",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#gMonthDay",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#gYear",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#literal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/knows",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/maker",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

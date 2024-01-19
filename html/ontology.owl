@@ -1,0 +1,2465 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://pcp-on-web.de/ontology#"
+     xml:base="http://pcp-on-web.de/ontology"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:doap="http://usefulinc.com/ns/doap#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:SysOnt="http://ns.ontowiki.net/SysOnt/">
+    <owl:Ontology rdf:about="http://pcp-on-web.de/ontology#">
+        <ns:attributionName>AKSW</ns:attributionName>
+        <ns:attributionName>HAB</ns:attributionName>
+        <ns:attributionName>HTWK</ns:attributionName>
+        <terms:creator>Jennifer Blanke, Edgard Marx, Thomas Riechert</terms:creator>
+        <terms:description>The PCP-on-Web Model defines the vocabulary for the research project Early Modern Professorial Career Patterns - Methodological research on online databases of academic history.</terms:description>
+        <terms:license>http://creativecommons.org/licenses/by/4.0/</terms:license>
+        <terms:modified>2021-07-02</terms:modified>
+        <vann:changes rdf:resource="https://github.com/pcp-on-web/ontology/commits/master/index.rdf"/>
+        <vann:preferredNamespacePrefix>pcp</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://pcp-on-web.de/ontology#</vann:preferredNamespaceUri>
+        <doap:homepage rdf:resource="https://pcp-on-web.de/project/"/>
+        <doap:maintainer rdf:resource="https://pcp-on-web.de/team/JenniferBlanke"/>
+        <doap:maintainer rdf:resource="https://pcp-on-web.de/team/ThomasRiechert"/>
+        <rdfs:label xml:lang="en">Early Modern Professorial Career Patterns - Version 0.2 (pcp-on-web)</rdfs:label>
+        <rdfs:label xml:lang="de">Professorale Karrieremuster der Frühen Neuzeit - Version 0.2 (pcp-on-web)</rdfs:label>
+        <owl:versionInfo>Version 0.1 (initial) - 2021-02-03 - Jennifer Blanke</owl:versionInfo>
+        <owl:versionInfo>Version 0.2 (initial stable) - 2021-07-02 - Jennifer Blanke, Thomas Riechert</owl:versionInfo>
+        <foaf:maker rdf:resource="http://pcp-on-web.de/team/EdgardMarx"/>
+        <foaf:maker rdf:resource="http://pcp-on-web.de/team/JenniferBlanke"/>
+        <foaf:maker rdf:resource="http://pcp-on-web.de/team/ThomasRiechert"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://creativecommons.org/ns#attributionName -->
+
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#attributionName"/>
+    
+
+
+    <!-- http://ns.ontowiki.net/SysOnt/order -->
+
+
+    <owl:AnnotationProperty rdf:about="http://ns.ontowiki.net/SysOnt/order"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/changes -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/changes"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://usefulinc.com/ns/doap#homepage -->
+
+
+    <owl:AnnotationProperty rdf:about="http://usefulinc.com/ns/doap#homepage"/>
+    
+
+
+    <!-- http://usefulinc.com/ns/doap#maintainer -->
+
+
+    <owl:AnnotationProperty rdf:about="http://usefulinc.com/ns/doap#maintainer"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#label -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#label"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/maker -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/maker"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gDay -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gDay"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gMonth -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gMonth"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gMonthDay -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gMonthDay"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gYear -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gYear"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gYearMonth -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gYearMonth"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#corporationDocument -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#corporationDocument">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Corporation"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Document"/>
+        <rdfs:comment xml:lang="en">Documents related to corporations and institutions, e.g. deeds of appointment ratified by the sovereignty.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Dokumente die mit Körperschaften und Institutionen in Verbindung stehen, z.B. Ernennungsurkunden ratifziert durch die Landesherrschaft.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Document</rdfs:label>
+        <rdfs:label xml:lang="de">hat Dokument</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#corresponds -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#corresponds">
+        <rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/knows"/>
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Person"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Person"/>
+        <rdfs:comment xml:lang="en">Assigns to the correspondence between persons, e.g. proven via editions or heritage plattforms such as KALLIOPE.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Verweist auf die aus einem Dokument hervorgehende Korrespondenz zwischen Personen, z.B. nachgewiesen über Editionen oder Nachlassplattformen wie KALLIOPE.</rdfs:comment>
+        <rdfs:label xml:lang="en">corresponds</rdfs:label>
+        <rdfs:label xml:lang="de">korrespondiert</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#derivedFrom -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#derivedFrom">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="de">Wird für das Alignment genutzt.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Wird für das Alignment genutzt.</rdfs:comment>
+        <rdfs:label xml:lang="en">has been derived from</rdfs:label>
+        <rdfs:label xml:lang="de">ist abgeleitet von</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#disputationHasDissertation -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#disputationHasDissertation">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Disputation"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Dissertation"/>
+        <rdfs:comment xml:lang="en">Assigns a disputation to a dissertation.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Weist einer Disputation eine Dissertation zu.</rdfs:comment>
+        <rdfs:label xml:lang="de">Disputation hat Dissertation</rdfs:label>
+        <rdfs:label xml:lang="en">disputation has dissertation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#enrollment -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#enrollment">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Enrollment"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Student"/>
+        <rdfs:comment xml:lang="de">Im Matrikelbuch eingeschriebener Student.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Most likely latinized name of a student at the enrollment document of a university.</rdfs:comment>
+        <rdfs:label xml:lang="de">eingeschriebener Student</rdfs:label>
+        <rdfs:label xml:lang="en">enrolled student</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#female -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#female">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Person"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Gender"/>
+        <rdfs:comment xml:lang="en">Refers to the female sex or female gender of a person.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Verweist auf das biologische weibliche Geschlecht oder die weibliche Geschlechtsidentität einer Person.</rdfs:comment>
+        <rdfs:label xml:lang="en">female</rdfs:label>
+        <rdfs:label xml:lang="de">weiblich</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#genderqueer -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#genderqueer">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Person"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Gender"/>
+        <rdfs:comment xml:lang="en">Refers to the genderqueer identity of a person.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Verweist auf die nicht-binäre Geschlechtsidentität einer Person.</rdfs:comment>
+        <rdfs:label xml:lang="de">divers</rdfs:label>
+        <rdfs:label xml:lang="en">genderqueer</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#geonameLocation -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#geonameLocation">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:comment xml:lang="de">Die URL des Ressourcenstandorts in http://geonames.org.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The Resource location&apos;s URL in http://geonames.org.</rdfs:comment>
+        <rdfs:label xml:lang="de">Geoname Ort</rdfs:label>
+        <rdfs:label xml:lang="en">Geoname location</rdfs:label>
+        <owl:versionInfo>PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#hasAuctionCatalogue -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#hasAuctionCatalogue">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#PrivateLibrary"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#AuctionCatalogue"/>
+        <terms:description xml:lang="en">Adds an auction catalogue to a private library.</terms:description>
+        <terms:description xml:lang="de">Verknüpft eine Privatbibliothek mit einem Auktionskatalog.</terms:description>
+        <rdfs:label xml:lang="en">has auction catalogue</rdfs:label>
+        <rdfs:label xml:lang="de">hat Auktionskatalog</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#hasAuthor -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#hasAuthor">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/creator"/>
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Document"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Corporation"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Person"/>
+        <rdfs:comment xml:lang="en">Refers to the authorship of a document.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Verweist auf die Autorenschaft eines Dokuments.</rdfs:comment>
+        <rdfs:label xml:lang="de">hat Autor</rdfs:label>
+        <rdfs:label xml:lang="en">hat author</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#hasChild -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#hasChild">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Family"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Person"/>
+        <rdfs:comment xml:lang="de">Bezieht sich auf das Kind, Pflegekind, Adoptivkind eines Professors.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to the cild, foster child, adoptive child of a professor.</rdfs:comment>
+        <rdfs:label xml:lang="en">has child</rdfs:label>
+        <rdfs:label xml:lang="de">hat Kind</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#hasComment -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#hasComment">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#AcademicOffice"/>
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#ChairProfessorship"/>
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Office"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#Literal"/>
+        <rdfs:comment xml:lang="de">Infos aus Kommentar in original Datenbank.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Infos from comment in the original database.</rdfs:comment>
+        <rdfs:label xml:lang="en">has comment</rdfs:label>
+        <rdfs:label xml:lang="de">hat Kommentar</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#hasContributor -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#hasContributor">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Document"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Corporation"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Person"/>
+        <rdfs:comment xml:lang="en">Refers to the contributor in the developement process of a document.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Verweist auf eine Entität, die am Entstehungsprozess eines Dokuments beteiligt ist.</rdfs:comment>
+        <rdfs:label xml:lang="en">has contributor</rdfs:label>
+        <rdfs:label xml:lang="de">hat Beteiligten</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#hasCreator -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#hasCreator">
+        <rdfs:subPropertyOf rdf:resource="http://pcp-on-web.de/ontology#hasContributor"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/creator"/>
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Document"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Corporation"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Person"/>
+        <rdfs:comment xml:lang="en">Creator of a document.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Urheber eines Dokuments</rdfs:comment>
+        <rdfs:label xml:lang="en">has creator</rdfs:label>
+        <rdfs:label xml:lang="de">hat Urheber</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#hasDedicatee -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#hasDedicatee">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Dissertation"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Person"/>
+        <rdfs:comment xml:lang="de">Bezeichnet den Widmunsgempfänger einer Publikation.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to the dedicatee of a publication.</rdfs:comment>
+        <rdfs:label xml:lang="en">has dedicatee</rdfs:label>
+        <rdfs:label xml:lang="de">hat Widmungsempfänger</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#hasEnrollment -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#hasEnrollment">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Person"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Enrollment"/>
+        <rdfs:comment xml:lang="en">Refers to the enrollment of a person at a university.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Verweist auf die Immatrikulation einer Person an einer Universität.</rdfs:comment>
+        <rdfs:label xml:lang="en">has enrollment</rdfs:label>
+        <rdfs:label xml:lang="de">hat Matrikel</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#hasFaculty -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#hasFaculty">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#AcademicDocuments"/>
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#AcademicOffice"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Faculty"/>
+        <rdfs:comment xml:lang="en">Links documents and offices to a faculty.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Verknüpft Dokumente und Ämter mit einer Fakultät.</rdfs:comment>
+        <rdfs:label xml:lang="en">has faculty</rdfs:label>
+        <rdfs:label xml:lang="de">hat Fakultät</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#hasHusband -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#hasHusband">
+        <rdfs:subPropertyOf rdf:resource="http://pcp-on-web.de/ontology#hasParent"/>
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Family"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Person"/>
+        <rdfs:comment xml:lang="de">Bezieht sich auf Personen, die als Ehemann auftreten.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to persons who appear as husbands.</rdfs:comment>
+        <rdfs:label xml:lang="en">has husband</rdfs:label>
+        <rdfs:label xml:lang="de">hat Ehemann</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#hasInscriber -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#hasInscriber">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#AlbumAmicorum"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Person"/>
+        <rdfs:comment xml:lang="de">Bezeichnet den Inskribenten eines Stammbuchs.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Designates the inscriber to a friendship book.</rdfs:comment>
+        <rdfs:label xml:lang="en">has inscriber</rdfs:label>
+        <rdfs:label xml:lang="de">hat Inskribent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#hasInstution -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#hasInstution">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Societies"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Institution"/>
+        <rdfs:comment xml:lang="en">Assigns structured institutions to learned societies, e.g. Academies of Sciences.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Weist gelehrten Gesellschaften strukturierte Einrichtungen zu, z.B. Akademien der Wissenschaften.</rdfs:comment>
+        <rdfs:label xml:lang="en">has institution</rdfs:label>
+        <rdfs:label xml:lang="de">hat Institution</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#hasKeyword -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#hasKeyword">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Document"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Keyword"/>
+        <rdfs:comment xml:lang="en">Links documents to keyword specification.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Verknüpft Dokumente mit Schlagwortangaben.</rdfs:comment>
+        <rdfs:label xml:lang="en">has keyword</rdfs:label>
+        <rdfs:label xml:lang="de">hat Schlagwort</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#hasOpponent -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#hasOpponent">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Dissertation"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Person"/>
+        <rdfs:comment xml:lang="de">Bezeichnet den oder die Personen, die während einer Disputation als Opponenten auftreten. Opponenten sind auf Titelblättern der gedruckten Disputationsschrift in der Regel nicht angegeben und konnten aus Lehrkräften sowie Studenten gleichermaßen bestehen.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to the persons who acted as opponents at a disputation. Opponents are rarely indicated in printed disputation papers aka dissertations and could consist of teachers as well as students.</rdfs:comment>
+        <rdfs:label xml:lang="en">has opponent</rdfs:label>
+        <rdfs:label xml:lang="de">hat Opponent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#hasOrigin -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#hasOrigin">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Person"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Location"/>
+        <rdfs:comment xml:lang="en">Refers to the geographical origin of persons.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Verweist auf die geografische Herkunft von Personen.</rdfs:comment>
+        <rdfs:label xml:lang="en">has origin</rdfs:label>
+        <rdfs:label xml:lang="de">hat Herkunft</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#hasParent -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#hasParent">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Family"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Person"/>
+        <rdfs:comment xml:lang="en">Refers to persons who appear as parents.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Verweist auf personen, die als Eltern auftreten.</rdfs:comment>
+        <rdfs:label xml:lang="en">has parent</rdfs:label>
+        <rdfs:label xml:lang="de">hat Elternteil</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#hasPraeses -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#hasPraeses">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Dissertation"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Person"/>
+        <rdfs:comment xml:lang="de">Bezeichnet die Person, die während einer Disputation als Praeses auftritt und die Disputation leitet.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to the person who is the praeses - the head - of a disputation.</rdfs:comment>
+        <rdfs:label xml:lang="en">has praeses</rdfs:label>
+        <rdfs:label xml:lang="de">hat Praeses</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#hasPublication -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#hasPublication">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Publicist"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Publication"/>
+        <rdfs:comment xml:lang="en">...</rdfs:comment>
+        <rdfs:comment xml:lang="de">Der Lebensabschnitt einer Person als Publizist, d.h. als Autor, Herausgeber oder Mitwirkender, hat Publikationen.</rdfs:comment>
+        <rdfs:label xml:lang="en">has publication</rdfs:label>
+        <rdfs:label xml:lang="de">hat Publikation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#hasPublisher -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#hasPublisher">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/publisher"/>
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Document"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Corporation"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Person"/>
+        <rdfs:comment xml:lang="en">Gives the publisher of a document.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Nennt Herausgeber eines Dokuments.</rdfs:comment>
+        <rdfs:label xml:lang="en">has publisher</rdfs:label>
+        <rdfs:label xml:lang="de">hat Herausgeber</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#hasRecommendation -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#hasRecommendation">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Candidacy"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Recommendation"/>
+        <rdfs:comment xml:lang="de">Gibt an, ob ein Kandidat ein Empfehlungsschreiben hat.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to any given recommendation of a candidate.</rdfs:comment>
+        <rdfs:label xml:lang="en">has recommendation</rdfs:label>
+        <rdfs:label xml:lang="de">hat Empfehlung</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#hasRespondent -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#hasRespondent">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Dissertation"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Person"/>
+        <rdfs:comment xml:lang="de">Bezeichnet die Person des Respondenten, der sich der Disputation unterzieht.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to the person who is undergoing the act of disputation, called respondent.</rdfs:comment>
+        <rdfs:label xml:lang="en">has respondent</rdfs:label>
+        <rdfs:label xml:lang="de">hat Respondent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#hasSchool -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#hasSchool">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#PrimaryEducation"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#School"/>
+        <rdfs:comment xml:lang="en">Refers to the institution of primary education.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Verweist auf die Institution an der primäre Bildung erworben wurde.</rdfs:comment>
+        <rdfs:label xml:lang="en">has school</rdfs:label>
+        <rdfs:label xml:lang="de">hat Schule</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#hasSemester -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#hasSemester">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#TeachingPractices"/>
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#UniversityStudies"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Semester"/>
+        <rdfs:comment xml:lang="en">Gives the semester of a university study.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Nennt Semester eines Studiums.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Semester</rdfs:label>
+        <rdfs:label xml:lang="de">hat Semester</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#hasStageOfLife -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#hasStageOfLife">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Lecturer"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#StageOfLife"/>
+        <rdfs:comment xml:lang="de">Lebensabschnitt einer Lehrkraft.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Stage of life of a lecturer.</rdfs:comment>
+        <rdfs:label xml:lang="en">has stage of life</rdfs:label>
+        <rdfs:label xml:lang="de">hat Lebensabschnitt</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#hasSubject -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#hasSubject">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Dissertation"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Subject"/>
+        <rdfs:comment xml:lang="en">Assigns a dissertation to a subject.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Ordnet der Dissertation ein Fachgebiet zu.</rdfs:comment>
+        <rdfs:label xml:lang="en">has Subject</rdfs:label>
+        <rdfs:label xml:lang="de">hat Fach</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#hasWell-wisher -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#hasWell-wisher">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Dissertation"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Person"/>
+        <rdfs:comment xml:lang="de">Bezeichnet den Gratulanten einer Publikation, bspw. den Gratulanten eines Disputanten. Diese Gratulanten-Schriften befinden sich zumeist am Ende einer Dissertation.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to the well-wisher of a publication, e.g. the well-wisher to a disputant. These well-wishing writings are usually found at the end of a dissertation.</rdfs:comment>
+        <rdfs:label xml:lang="en">has well-wisher</rdfs:label>
+        <rdfs:label xml:lang="de">hat Gratulant</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#hasWife -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#hasWife">
+        <rdfs:subPropertyOf rdf:resource="http://pcp-on-web.de/ontology#hasParent"/>
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Family"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Person"/>
+        <rdfs:comment xml:lang="de">Bezieht sich auf die Person, die als Ehefrau auftritt.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to the person who appears as a wife.</rdfs:comment>
+        <rdfs:label xml:lang="de"></rdfs:label>
+        <rdfs:label xml:lang="en">has wife</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#isAttributedTo -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#isAttributedTo">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Person"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#FamilyDynasty"/>
+        <rdfs:comment xml:lang="en">Refer to persons, or specifically lecturers, who are assigned to a family dynasty in the data.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Verweist auf Personen, oder konkret Lehrkräfte, die in den Daten einer Familiendynastie zugeordnet werden.</rdfs:comment>
+        <rdfs:label xml:lang="en">is attributed to</rdfs:label>
+        <rdfs:label xml:lang="de">wird zugeschrieben</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#isPartOfFaculty -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#isPartOfFaculty">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#ChairProfessorship"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Faculty"/>
+        <rdfs:comment xml:lang="de">Bezieht sich auf Lehrstühle der einzelnen Fakultäten.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to chairs of the individual faculties.</rdfs:comment>
+        <rdfs:label xml:lang="en">is part of faculty</rdfs:label>
+        <rdfs:label xml:lang="de">ist Teil der Fakultät</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#isPartOfUniversity -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#isPartOfUniversity">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Faculty"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#University"/>
+        <rdfs:comment xml:lang="de">Bezieht sich auf konstituierende Bestandteile einer Universität.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to the constituent parts of a university.</rdfs:comment>
+        <rdfs:label xml:lang="en">is part of university</rdfs:label>
+        <rdfs:label xml:lang="de">ist Teil der Universität</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#lectureIsOfType -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#lectureIsOfType">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Lecture"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#LectureType"/>
+        <rdfs:comment xml:lang="en">Refers to the specific type of a lecture.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Verweist auf den spezifischen Typ einer Vorlesung.</rdfs:comment>
+        <rdfs:label xml:lang="de">Vorlesung ist Typ</rdfs:label>
+        <rdfs:label xml:lang="en">lecture is of type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#locationCorporation -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#locationCorporation">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Corporation"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Location"/>
+        <rdfs:comment xml:lang="de">Bezieht sich auf den geografischen Ort einer Körperschaft.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to the geographical location of a corporation.</rdfs:comment>
+        <rdfs:label xml:lang="de">Ort einer Körperschaft</rdfs:label>
+        <rdfs:label xml:lang="en">location of a corporation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#locationDocument -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#locationDocument">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Document"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Location"/>
+        <rdfs:comment xml:lang="de">Bezieht sich auf den geografischen Ort eines Dokuments, z.B. Publikationsort.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to the geographical location of a document, e.g. location of a publication.</rdfs:comment>
+        <rdfs:label xml:lang="de">Ort eines Dokument</rdfs:label>
+        <rdfs:label xml:lang="en">location of a document</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#male -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#male">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Person"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Gender"/>
+        <rdfs:comment xml:lang="en">Refers to the male sex or male gender of a person.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Verweist auf das biologische männliche Geschlecht oder die männliche Geschlechtsidentität einer Person.</rdfs:comment>
+        <rdfs:label xml:lang="en">male</rdfs:label>
+        <rdfs:label xml:lang="de">männlich</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#membershipSociety -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#membershipSociety">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Membership"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Societies"/>
+        <rdfs:comment xml:lang="en">Adds the membership to an institution.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Weist die Mitgliedschaft einer Institution zu.</rdfs:comment>
+        <rdfs:label xml:lang="de">Mitgliedschaft hat Institution</rdfs:label>
+        <rdfs:label xml:lang="en">membership has institution</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#nominates -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#nominates">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Faculty"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Candidacy"/>
+        <rdfs:comment xml:lang="de">Bezieht sich auf Nominierungslisten einer Fakultät, die an die Verwaltung der Landesherrschaft erging und aus denen ein Kandidat durch die Landesherrschaft bestätigt wurde. Diese Listen liegen zumeist in zuständigen Archiven vor.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to nomination lists which were handed in  to the territorial administration by the faculties in  order to choose and to vocate a  candidate for a university chair. Those lists can be found in relevant archives.</rdfs:comment>
+        <rdfs:label xml:lang="en">nominates</rdfs:label>
+        <rdfs:label xml:lang="de">nominiert</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#owner -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#owner">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#AlbumAmicorum"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Person"/>
+        <rdfs:comment xml:lang="en">Refers to the owner of a friendship book.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Verweist auf den Stammbuchhalter eines Stammbuchs.</rdfs:comment>
+        <rdfs:label xml:lang="de">Stammbuchhalter</rdfs:label>
+        <rdfs:label xml:lang="en">owner</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#owns -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#owns">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Ownership"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Collection"/>
+        <rdfs:comment xml:lang="en">Refers to the ownership of a teaching or research collection.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Verweist auf den Besitzstand einer Objektsammlung relevant für den Unterricht.</rdfs:comment>
+        <rdfs:label xml:lang="de">besitzt</rdfs:label>
+        <rdfs:label xml:lang="en">owns</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#relatedDocument -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#relatedDocument">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Person"/>
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#StageOfLife"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Document"/>
+        <rdfs:comment xml:lang="de">Ordnet einem Lebensabschnitt oder einer Person Dokumente zu, z.B. Bilder</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relevant documents of a stage of life or persons e.g. pictures.</rdfs:comment>
+        <rdfs:label xml:lang="en">Relevant documents of a stage of life or a person in general.</rdfs:label>
+        <rdfs:label xml:lang="de">Relevante Dokumente zu einem Lebensabschnitt oder einer Person allgemein</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#stageOfLifeLocation -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#stageOfLifeLocation">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#StageOfLife"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Location"/>
+        <rdfs:comment xml:lang="en">Adds a geographical location to a stage of life of a lecturer.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Fügt dem Lebensabschnitt einer Lehrkraft einen geografischen Ort zu.</rdfs:comment>
+        <rdfs:label xml:lang="de">Ort Lebensabschnitt</rdfs:label>
+        <rdfs:label xml:lang="en">location of stage of life</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#student -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#student">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Lecturer"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Student"/>
+        <rdfs:comment xml:lang="en">Refers to the lecturer as a student.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Weist eine Lehrkraft als Student aus.</rdfs:comment>
+        <rdfs:label xml:lang="en">is student</rdfs:label>
+        <rdfs:label xml:lang="de">ist Student</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#tagged -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#tagged">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#Keyword"/>
+        <rdfs:comment xml:lang="de">Gibt Informationen, die unspezifisch in Datenbanken unter Schlagworten, Kommentaren oder Notizen verborgen sind.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Gives information that is unspecifically hidden in databases under keywords, comments or notes.</rdfs:comment>
+        <rdfs:label xml:lang="de">markiert</rdfs:label>
+        <rdfs:label xml:lang="en">tagged</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#title -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#title">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Document"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#literal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#vocates -->
+
+
+    <owl:ObjectProperty rdf:about="http://pcp-on-web.de/ontology#vocates">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Territory"/>
+        <rdfs:range rdf:resource="http://pcp-on-web.de/ontology#AcademicOffice"/>
+        <rdfs:comment xml:lang="de">Landesherrschaft beruft bzw. bestätigt akademische Ämter.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Territorial rulership vocates or confirms academic offices.</rdfs:comment>
+        <rdfs:label xml:lang="de">beruft</rdfs:label>
+        <rdfs:label xml:lang="en">vocates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/knows -->
+
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/knows"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#academicYear -->
+
+
+    <owl:DatatypeProperty rdf:about="http://pcp-on-web.de/ontology#academicYear">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#AcademicDocuments"/>
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Semester"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+        <rdfs:label xml:lang="en">Academic Year</rdfs:label>
+        <rdfs:label xml:lang="de">Akademisches Jahr</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#additionToSurname -->
+
+
+    <owl:DatatypeProperty rdf:about="http://pcp-on-web.de/ontology#additionToSurname">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Additions to the surname can be of, etc.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Namenszusätze sind zum Beispiel von, zu, etc.</rdfs:comment>
+        <rdfs:label xml:lang="de">Namenszusatz</rdfs:label>
+        <rdfs:label xml:lang="en">additions to surname</rdfs:label>
+        <owl:versionInfo>0.2 changed Domain from Professor to Person 0.1 initial creation - 24.05.07</owl:versionInfo>
+        <owl:versionInfo>2.0 stable</owl:versionInfo>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#alternativeWritingOfSurname -->
+
+
+    <owl:DatatypeProperty rdf:about="http://pcp-on-web.de/ontology#alternativeWritingOfSurname">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <SysOnt:order>20</SysOnt:order>
+        <rdfs:comment xml:lang="de">Bsp: Meier, Meyer, Maier</rdfs:comment>
+        <rdfs:comment xml:lang="en">For Example Meier, Meyer, Maier</rdfs:comment>
+        <rdfs:label xml:lang="de">alternative Namensschreibweisen</rdfs:label>
+        <rdfs:label xml:lang="en">alternative writings of the surname</rdfs:label>
+        <owl:versionInfo>0.1 initial creation - 24.05.07</owl:versionInfo>
+        <owl:versionInfo>0.2 changed Domain from Professor to Person</owl:versionInfo>
+        <owl:versionInfo>2.0 under discussion</owl:versionInfo>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#birthname -->
+
+
+    <owl:DatatypeProperty rdf:about="http://pcp-on-web.de/ontology#birthname">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="de">Geburtsname einer Person.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The birthname of a person.</rdfs:comment>
+        <rdfs:label xml:lang="de">Geburtsname</rdfs:label>
+        <rdfs:label xml:lang="en">birthname</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#date -->
+
+
+    <owl:DatatypeProperty rdf:about="http://pcp-on-web.de/ontology#date">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Document"/>
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#StageOfLife"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gDay"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gMonth"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gMonthDay"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYearMonth"/>
+        <rdfs:comment xml:lang="en">The date or timespan of a stage of life.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Zeitangabe eines Lebensabschnitts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Date</rdfs:label>
+        <rdfs:label xml:lang="de">Datum</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#dateOfBirth -->
+
+
+    <owl:DatatypeProperty rdf:about="http://pcp-on-web.de/ontology#dateOfBirth">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gDay"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gMonth"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gMonthDay"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYearMonth"/>
+        <rdfs:comment xml:lang="de">Geburtsdatum einer Person.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The date of birth of a person.</rdfs:comment>
+        <rdfs:label xml:lang="de">Geburtsdatum</rdfs:label>
+        <rdfs:label xml:lang="en">date of birth</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#dateOfDeath -->
+
+
+    <owl:DatatypeProperty rdf:about="http://pcp-on-web.de/ontology#dateOfDeath">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gDay"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gMonth"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gMonthDay"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYearMonth"/>
+        <rdfs:comment xml:lang="de">Sterbedatum einer Person.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The date of death of a person.</rdfs:comment>
+        <rdfs:label xml:lang="de">Sterbedatum</rdfs:label>
+        <rdfs:label xml:lang="en">date of death</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#enrollmentName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://pcp-on-web.de/ontology#enrollmentName">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Enrollment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Most likely latinized name of a student at the enrollment document of a university.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Zumeist latinisierter Name eines Studenten im Matrikelbuch einer Universität.</rdfs:comment>
+        <rdfs:label xml:lang="de">Name in Matrikel</rdfs:label>
+        <rdfs:label xml:lang="en">name in enrollment document</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#forename -->
+
+
+    <owl:DatatypeProperty rdf:about="http://pcp-on-web.de/ontology#forename">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Forename(s) of a person, seperated by space</rdfs:comment>
+        <rdfs:comment xml:lang="de">Vorname(n) einer Person, getrennt mit Leerzeichen</rdfs:comment>
+        <rdfs:label xml:lang="de">Vorname</rdfs:label>
+        <rdfs:label xml:lang="en">forename</rdfs:label>
+        <owl:versionInfo>0.1 initial creation date: 18.05.2015</owl:versionInfo>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#from -->
+
+
+    <owl:DatatypeProperty rdf:about="http://pcp-on-web.de/ontology#from">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#StageOfLife"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gDay"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gMonth"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gMonthDay"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYearMonth"/>
+        <rdfs:comment xml:lang="de">Das Startdatum eines Lebensabschnitts</rdfs:comment>
+        <rdfs:comment xml:lang="en">The date of the beginning of a stage of life.</rdfs:comment>
+        <rdfs:label xml:lang="en">from</rdfs:label>
+        <rdfs:label xml:lang="de">von</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#furtherInformation -->
+
+
+    <owl:DatatypeProperty rdf:about="http://pcp-on-web.de/ontology#furtherInformation">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#AcademicDocuments"/>
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <SysOnt:order>340</SysOnt:order>
+        <rdfs:label xml:lang="de">Sonstiges/weitere Informationen</rdfs:label>
+        <rdfs:label xml:lang="en">miscellaneous/further information</rdfs:label>
+        <owl:versionInfo>0.1 initial creation - 28.06.2007</owl:versionInfo>
+        <owl:versionInfo>2.0 stable</owl:versionInfo>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#gnd -->
+
+
+    <owl:DatatypeProperty rdf:about="http://pcp-on-web.de/ontology#gnd">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Corporation"/>
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Document"/>
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="de">GND Normadatei, inklusive ehemals genutzte PND.</rdfs:comment>
+        <rdfs:comment xml:lang="en">GND integrated authority file, including formerly used PND.</rdfs:comment>
+        <rdfs:label xml:lang="de">GND</rdfs:label>
+        <rdfs:label xml:lang="en">GND</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#hasMaterial -->
+
+
+    <owl:DatatypeProperty rdf:about="http://pcp-on-web.de/ontology#hasMaterial">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#LectureCatalogue"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="de">Gibt Materialtyp und Materialname von Unterrichtsmaterialien an, die in Vorlesungsverzeichnissen unter Umständen mit angegeben sind.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates material type and material name of teaching materials that may be included in lecture catalogues.</rdfs:comment>
+        <rdfs:label xml:lang="en">has teaching material</rdfs:label>
+        <rdfs:label xml:lang="de">hat Unterrichtsmaterial</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#hasText -->
+
+
+    <owl:DatatypeProperty rdf:about="http://pcp-on-web.de/ontology#hasText">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Report"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="de">Gibt den Text eines Rechenschaftsberichts an.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Gives the text of a report.</rdfs:comment>
+        <rdfs:label xml:lang="en">has text</rdfs:label>
+        <rdfs:label xml:lang="de">hat Text</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#idPerson -->
+
+
+    <owl:DatatypeProperty rdf:about="http://pcp-on-web.de/ontology#idPerson">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="de">Personen Identifikationsnummer in der ursprünglichen Datenbank.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Persons Identification number in the original database.</rdfs:comment>
+        <rdfs:label xml:lang="de">IDPersonLocal</rdfs:label>
+        <rdfs:label xml:lang="en">IDPersonLocal</rdfs:label>
+        <owl:versionInfo>PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18</owl:versionInfo>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#latinForename -->
+
+
+    <owl:DatatypeProperty rdf:about="http://pcp-on-web.de/ontology#latinForename">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="de">Latinisierter  Vorname einer Person.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Latinized first name of a person.</rdfs:comment>
+        <rdfs:label xml:lang="de">Latinisierter Vorname</rdfs:label>
+        <rdfs:label xml:lang="en">latin first name</rdfs:label>
+        <owl:versionInfo>PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18</owl:versionInfo>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#latinSurname -->
+
+
+    <owl:DatatypeProperty rdf:about="http://pcp-on-web.de/ontology#latinSurname">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="de">Latinisierter Nachname einer Person.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Latinized last name of a person.</rdfs:comment>
+        <rdfs:label xml:lang="de">Latein Name</rdfs:label>
+        <rdfs:label xml:lang="en">latin last name</rdfs:label>
+        <owl:versionInfo>PCP-on-Web 1 including property from merging Helmstedt data - 27.06.18</owl:versionInfo>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#note -->
+
+
+    <owl:DatatypeProperty rdf:about="http://pcp-on-web.de/ontology#note">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <SysOnt:order>390</SysOnt:order>
+        <rdfs:comment xml:lang="en">Additional information from the original database that do not fit elsewhere.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Zusätzliche Informationen aus den original Datenbanken, die nirgends sonst eingetragen werden können.</rdfs:comment>
+        <rdfs:label xml:lang="de">Vermerk, Hinweis</rdfs:label>
+        <rdfs:label xml:lang="en">note</rdfs:label>
+        <owl:versionInfo>0.1 initial creation - 24.05.2007</owl:versionInfo>
+        <owl:versionInfo>0.2 changed Domain from Professor to Person</owl:versionInfo>
+        <owl:versionInfo>2.0 stable</owl:versionInfo>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#pictureLicense -->
+
+
+    <owl:DatatypeProperty rdf:about="http://pcp-on-web.de/ontology#pictureLicense">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Picture"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="de">Beinhaltet Lizenzinformationen zum Bildes.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Provides Licence information of the Picture.</rdfs:comment>
+        <rdfs:label xml:lang="en">Licence of the Picture.</rdfs:label>
+        <rdfs:label xml:lang="de">Lizenz des Bildes.</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#pictureURL -->
+
+
+    <owl:DatatypeProperty rdf:about="http://pcp-on-web.de/ontology#pictureURL">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Picture"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="de">Beinhaltet die URL des Bildes.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Provides an URL of the Picture.</rdfs:comment>
+        <rdfs:label xml:lang="de">URL des Bildes.</rdfs:label>
+        <rdfs:label xml:lang="en">URL of the Picture.</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#proofResource -->
+
+
+    <owl:DatatypeProperty rdf:about="http://pcp-on-web.de/ontology#proofResource">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Document"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="de">...</rdfs:comment>
+        <rdfs:comment xml:lang="en">...</rdfs:comment>
+        <rdfs:label xml:lang="de">Nachweis</rdfs:label>
+        <rdfs:label xml:lang="en">proof</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#surname -->
+
+
+    <owl:DatatypeProperty rdf:about="http://pcp-on-web.de/ontology#surname">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="de">Nachname einer Person</rdfs:comment>
+        <rdfs:comment xml:lang="en">The surname of a person</rdfs:comment>
+        <rdfs:label xml:lang="de">Nachname</rdfs:label>
+        <rdfs:label xml:lang="en">surname</rdfs:label>
+        <owl:versionInfo>0.1 initial creation date: 24.05.2007</owl:versionInfo>
+        <owl:versionInfo>2.0 stable</owl:versionInfo>
+        <owl:versionInfo>version 0.2  10.03.2008</owl:versionInfo>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#title -->
+
+
+    <owl:DatatypeProperty rdf:about="http://pcp-on-web.de/ontology#title">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/title"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#to -->
+
+
+    <owl:DatatypeProperty rdf:about="http://pcp-on-web.de/ontology#to">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#StageOfLife"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gDay"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gMonth"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gMonthDay"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYearMonth"/>
+        <rdfs:comment xml:lang="de">Das Enddatum eines Lebensabschnitts</rdfs:comment>
+        <rdfs:comment xml:lang="en">The date of the ending of a stage of life.</rdfs:comment>
+        <rdfs:label xml:lang="de">bis</rdfs:label>
+        <rdfs:label xml:lang="en">to</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#weddingYear -->
+
+
+    <owl:DatatypeProperty rdf:about="http://pcp-on-web.de/ontology#weddingYear">
+        <rdfs:domain rdf:resource="http://pcp-on-web.de/ontology#Family"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+        <rdfs:label xml:lang="de">Heiratsjahr</rdfs:label>
+        <rdfs:label xml:lang="en">wedding year</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#AcademicDocuments -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#AcademicDocuments">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#Document"/>
+        <rdfs:comment xml:lang="de">Bezieht sich auf Akademische Dokumente im engsten Sinne, die für die Organisation des Universitätsalltags relevant waren, wie Vorlesungsverzeichnisse oder Rechenschaftsberichte. Sie stehen in Abgrenzung zu Publikationen wie Lehrbücher, die sich über das Publikum der eigenen Universität hinaus, und zwar über den zeitgenössischen Publikationsmarkt, an ein größeres Publikum aus Gelehrten und Gebildeten wendeten.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to academic documents in the narrowest sense. Documents that were relevant to the organisation of everyday university life, such as lecture catalogues or professorial reports. They are distinct from publications such as textbooks (teaching material), which addressed a larger audience of scholars and educated people via the contemporary publication market.</rdfs:comment>
+        <rdfs:label xml:lang="en">Academic Documents</rdfs:label>
+        <rdfs:label xml:lang="de">Akademische Dokumente</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#AcademicOffice -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#AcademicOffice">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#StageOfLife"/>
+        <rdfs:comment xml:lang="en">Academic offices like professor, rector, prorector, chancellor, dean etc..</rdfs:comment>
+        <rdfs:comment xml:lang="de">Akademische Ämter wie Professor, Rektor, Prorektor, Kanzler, Dekan usw. .</rdfs:comment>
+        <rdfs:label xml:lang="en">Academic office</rdfs:label>
+        <rdfs:label xml:lang="de">Akademisches Amt</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#AlbumAmicorum -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#AlbumAmicorum">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#Document"/>
+        <rdfs:comment xml:lang="de">Bezeichnet Stammbücher, auch genannt Freundschaftsbücher in denen Autographen verschiedener Personen gesammelt wurden. Diese persönliche Grußtexte von bspw. Professoren wurden mitunter als Empfehlungsschreiben genutzt.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Designates so called (German) friendship books, in which autographs of various persons were collected. These personal greetings from professors, for example, were sometimes used as letters of recommendation.</rdfs:comment>
+        <rdfs:label xml:lang="de">Album Amicorum</rdfs:label>
+        <rdfs:label xml:lang="en">Album Amicorum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Article -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Article">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#Publication"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Article"/>
+        <rdfs:comment xml:lang="en">Articles published in periodicals like journals, newspapers or magazines.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Artikel in Periodika wie Journale, Zeitschriften, Zeitungen oder Magazine.</rdfs:comment>
+        <rdfs:label xml:lang="en">Article</rdfs:label>
+        <rdfs:label xml:lang="de">Artikel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#AssociateProfessor -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#AssociateProfessor">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#AcademicOffice"/>
+        <rdfs:comment xml:lang="en">Associate professors who taught without holding a chair. The associate professorship, however, was usually linked to an expectation of a chair that would become vacant.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Bezeichnet einen Professor, der eine außerordentliche Professur (aO) inne hat. Diese Professoren lehrten ohne Lehrstuhl. Die außerordentliche Professur war aber in der Regel mit Expektanz auf einen vakant werdenden Lehrstuhl verknüpft.</rdfs:comment>
+        <rdfs:label xml:lang="en">Associate Professor</rdfs:label>
+        <rdfs:label xml:lang="de">Außerordentlicher Professor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#AuctionCatalogue -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#AuctionCatalogue">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#Publication"/>
+        <terms:description xml:lang="de">Bezieht sich auf Auktionskataloge von Gelehrtenbibliotheken. Diese Kataloge listen den zu veräußernden bibliothekarischen Bestand, daneben oft auch Objektsammlungen oder Mobiliar.</terms:description>
+        <terms:description xml:lang="en">Refers to auction catalogues of learned libraries. These catalogues list not only the library estate to be sold, but often also object collections or furniture.</terms:description>
+        <rdfs:label xml:lang="en">Auction catalogue</rdfs:label>
+        <rdfs:label xml:lang="de">Auktionskatalog</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Baccalaureus -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Baccalaureus">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#Graduation"/>
+        <rdfs:comment xml:lang="de">Bezeichnet den akademischen Grad eines Baccalaren/Baccalaureus. Kürzel: Bacc.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to the academic degree of a bachelor/baccalaureus. Abbreviation: Bacc.</rdfs:comment>
+        <rdfs:label xml:lang="de">Baccalaureus</rdfs:label>
+        <rdfs:label xml:lang="en">Baccalaureus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Birth -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Birth">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#StageOfLife"/>
+        <rdfs:comment xml:lang="en">Birthdate or the period of birth of a person.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Geburtsdatum oder Zeitraum einer Person.</rdfs:comment>
+        <rdfs:label xml:lang="en">Birth</rdfs:label>
+        <rdfs:label xml:lang="de">Geburt</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Candidacy -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Candidacy">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#StageOfLife"/>
+        <rdfs:comment xml:lang="de">Bezieht sich auf die Kandidatur einer Person, die im Zuge der Besetzung einer Professur als Kandidat gehandelt wird. Diese Person kann ein Kandidat ohne Lehrstuhl sein, aber auch ein bereits amtierender Professor, der für einen anderen Lehrstuhl gehandelt wird.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to the candidacy of a person which is a candidate for a university chair/professorship. This person can be a candidate without a chair, but also an incumbent professor who is being traded for another chair.</rdfs:comment>
+        <rdfs:label xml:lang="en">Candidacy</rdfs:label>
+        <rdfs:label xml:lang="de">Kandidatur</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#ChairProfessorship -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#ChairProfessorship">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#AcademicOffice"/>
+        <rdfs:comment xml:lang="de">Bezeichnet den Lehrstuhl eines ordentlichen Professors an einer Universitätsfakultät, der einem spezifischen Fachgebiet zugeordnet ist.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Designates a chair at a university faculty that covers a specific subject area and is occupied by a full or ordinary professor.</rdfs:comment>
+        <rdfs:label xml:lang="en">Chair/Professorship</rdfs:label>
+        <rdfs:label xml:lang="de">Lehrstuhl/Professur</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Collection -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Collection">
+        <rdfs:comment xml:lang="en">Object-collections of a professor, relevant for teaching or research e.g. private libraries, naturalia or further scholarly devices, as well as art collections.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Objekt-Sammlungen eines Professors,d ie für den Unterricht relevant waren, z.B. Privatbibliotheken, Naturalien- und Instrumentensammlungen, Kunstsammlungen etc. .</rdfs:comment>
+        <rdfs:label xml:lang="en">Collection</rdfs:label>
+        <rdfs:label xml:lang="de">Sammlung</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Corporation -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Corporation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Agent"/>
+        <rdfs:comment xml:lang="de">Bezeichnet eine Körperschaft, eine rechtsfähige Institution.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to a corporation or corporate body in the sense of a legal institution.</rdfs:comment>
+        <rdfs:label xml:lang="en">Corporation</rdfs:label>
+        <rdfs:label xml:lang="de">Körperschaft</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Death -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Death">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#StageOfLife"/>
+        <rdfs:comment xml:lang="en">Day of death or the period of death of a person.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Sterbedatum oder Zeitraum des Todes einer Person.</rdfs:comment>
+        <rdfs:label xml:lang="en">Death</rdfs:label>
+        <rdfs:label xml:lang="de">Tod</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Denomination -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Denomination">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#StageOfLife"/>
+        <rdfs:comment xml:lang="de">Religionszugehörigkeit oder Glaubenbekenntnis einer Person.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The religious denomination of a person.</rdfs:comment>
+        <rdfs:label xml:lang="en">Denomination</rdfs:label>
+        <rdfs:label xml:lang="de">Konfession</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Disputation -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Disputation">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#TeachingPractices"/>
+        <rdfs:comment xml:lang="de">Bezieht sich auf die Disputationspraxis, dem wissenschaftlichen Streitgespräch. Es diente dem Zweck der Übung, der Graduierung oder Lehrbefähigung (venia legendi) und verwies als Inauguraldisputation pro loco auf die Erlangung einer Professur. Die Dissertation ist das gedruckte Medium der Dispuation.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to the practice of disputation, a scientific debate which had the purpose of practising curricula, to obtain academic titles and the right to teach and give lectures (venia legendi). It also refers to inaugural disputations of newly vocated professors. The printed medium of a disputation is the dissertation.</rdfs:comment>
+        <rdfs:label xml:lang="de">Disputation</rdfs:label>
+        <rdfs:label xml:lang="en">Disputation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Dissertation -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Dissertation">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#AcademicDocuments"/>
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#Publication"/>
+        <rdfs:comment xml:lang="de">Bezeichnet das gedruckte Medium der Disputation. Die Dissertation ist im frühneuzeitlichen Kontext dieser Domäne als Werbeschrift für die Disputation zu betrachten, die in Kürze jene relevanten Thesen zusammenfasste, welche während der Disputation verhandelt wurden.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to the printed media of a disputation. In the early modern context of this domain it functioned as advertisement of the disputation as practice which briefly summoned the thesises of the given topic.</rdfs:comment>
+        <rdfs:label xml:lang="de">Dissertation</rdfs:label>
+        <rdfs:label xml:lang="en">Dissertation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Doctor -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Doctor">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#Graduation"/>
+        <rdfs:comment xml:lang="de">Bezeichnet den akademischen Grad eines Doktoren. Kürzel: Dr.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Describes the academic degree of a doctor. Abbreviation: Dr.</rdfs:comment>
+        <rdfs:label xml:lang="de">Doctor</rdfs:label>
+        <rdfs:label xml:lang="en">Doctor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Document -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Document">
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/spar/fabio/Expression"/>
+        <rdfs:comment xml:lang="de">Dokument unterschiedlicher Genres und Medien, die für die Lebensabschnitte einer Lehrkraft relevant sind.</rdfs:comment>
+        <rdfs:comment xml:lang="en">General Documents of different genres and media which are relevant for the stages of life of lecturers.</rdfs:comment>
+        <rdfs:label xml:lang="en">Document</rdfs:label>
+        <rdfs:label xml:lang="de">Dokument</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Education -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Education">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#StageOfLife"/>
+        <rdfs:comment xml:lang="de">Beschreibt den Bildungsweg einer Lehrkraft.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Decribes the education of a lecturer.</rdfs:comment>
+        <rdfs:label xml:lang="de">Bildungsweg</rdfs:label>
+        <rdfs:label xml:lang="en">Education</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Enrollment -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Enrollment">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#UniversityStudies"/>
+        <rdfs:comment xml:lang="de">Bezieht sich auf die Einschreibung einer Person in das Universitätsverzeichnis, die (Universitäts-)Matrikel.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to the enrollment of a person into the universities&apos; directory, the (university) &apos;Matrikel&apos;.</rdfs:comment>
+        <rdfs:label xml:lang="en">Enrollment</rdfs:label>
+        <rdfs:label xml:lang="de">Immatrikulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Exercise -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Exercise">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#TeachingPractices"/>
+        <rdfs:comment xml:lang="de">Bezieht sich auf die Lehr- und Lernpraktik einer Übung.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to the teaching and learning practice of an exercise.</rdfs:comment>
+        <rdfs:label xml:lang="en">Exercise</rdfs:label>
+        <rdfs:label xml:lang="de">Übung</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Faculty -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Faculty">
+        <rdfs:comment xml:lang="de">Bezieht sich auf eine körperschaftlich organisierte und auf ein Fachgebiet begrenzte Lehr- und Verwaltungseinheit einer Volluniversität, im frühneuzeitlichen Kontext: Artistenfakultät (facultas artium), später Philosophische Fak., Theologie, Jurisprudenz, Medizin.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to corporated university divisions with specific subject areas, which are in an Early Modern context: facultas artium, later Philosophical fac., Theology, Jurisprudence, Medicine.</rdfs:comment>
+        <rdfs:label xml:lang="en">Faculty</rdfs:label>
+        <rdfs:label xml:lang="de">Fakultät</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#FacultyOfLaw -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#FacultyOfLaw">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#Faculty"/>
+        <rdfs:comment xml:lang="de">Bezeichnet die Juristische Fakultät an einer Universität.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to the Faculty of Law at Universities.</rdfs:comment>
+        <rdfs:label xml:lang="en">Faculty of Law</rdfs:label>
+        <rdfs:label xml:lang="de">Juristische Fakultät</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#FacultyOfMedicine -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#FacultyOfMedicine">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#Faculty"/>
+        <rdfs:comment xml:lang="de">Bezeichnet die Medzinische Fakultät an einer Universität.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to the Faculty of Medicine at Universities.</rdfs:comment>
+        <rdfs:label xml:lang="en">Faculty of Medicine</rdfs:label>
+        <rdfs:label xml:lang="de">Medizinische Fakultät</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#FacultyOfPhilosophy -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#FacultyOfPhilosophy">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#Faculty"/>
+        <rdfs:comment xml:lang="de">Bezeichnet die Artesfakultät, die sich im Untersuchungszeitraum zu einer Philosophischen Fakultät entwickelte und an der propädeutisches Wissen für das weitergehende Studium an den übrigen höheren Fakultäten einer Volluniversität vermittelt wurde.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to the facultats artium which developed into a faculty of philosophy throughout the period of interest and at which propaedeutic knowledge was taught for further studies at one of the higher faculties of a full university.</rdfs:comment>
+        <rdfs:label xml:lang="en">Faculty of Philosophy</rdfs:label>
+        <rdfs:label xml:lang="de">Philosophische Fakultät</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#FacultyOfTheology -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#FacultyOfTheology">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#Faculty"/>
+        <rdfs:comment xml:lang="de">Bezeichnet die Theologische Fakultät an einer Universität.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to the Faculty of Theology at Universities.</rdfs:comment>
+        <rdfs:label xml:lang="en">Faculty of Theology</rdfs:label>
+        <rdfs:label xml:lang="de">Theologische Fakultät</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Family -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Family">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#StageOfLife"/>
+        <rdfs:comment xml:lang="de">Dieses Konzept beschreibt die Familienverhältnisse einer Lehrkraft.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This concept describes the family relations of a lecturer.</rdfs:comment>
+        <rdfs:label xml:lang="de">Familie</rdfs:label>
+        <rdfs:label xml:lang="en">Family</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#FamilyDynasty -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#FamilyDynasty"/>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Gender -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Gender">
+        <rdfs:comment xml:lang="en">Refers to sex or gender of a person.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Verweist auf das biologische Geschlecht oder die Geschlechtsidentität einer Person.</rdfs:comment>
+        <rdfs:label xml:lang="en">Gender</rdfs:label>
+        <rdfs:label xml:lang="de">Geschlecht</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Graduation -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Graduation">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#StageOfLife"/>
+        <rdfs:comment xml:lang="de">Bezieht sich auf den Abschluss an einer Universität durch eine Promotion zum Magister, Baccalaureus, Lizentiat, Doktor, bspw. über eine pro gradu disputatio.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to a graduation at a university with the degrees of doctor, magister, baccalaureus, licentiate, e.g. proven via a pro gradu disputatio.</rdfs:comment>
+        <rdfs:label xml:lang="de">Abschluss</rdfs:label>
+        <rdfs:label xml:lang="en">Graduation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Honour -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Honour">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#StageOfLife"/>
+        <rdfs:comment xml:lang="de">Dieses Konzept beschreibt eine Ehrung, wie wissenschaftliche Auszeichnungen oder Preise.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This concept describes an honour, such as scientific awards or prizes.</rdfs:comment>
+        <rdfs:label xml:lang="de">Ehrung</rdfs:label>
+        <rdfs:label xml:lang="en">Honour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Institution -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Institution">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#Corporation"/>
+        <rdfs:comment xml:lang="de">In Abgrenzung zur Körperschaft ist die Institution hier eine Einrichtung ohne Rechtscharakter.</rdfs:comment>
+        <rdfs:comment xml:lang="en">In distinction to a coropration refers this concept to institutions without legal power.</rdfs:comment>
+        <rdfs:label xml:lang="de">Institution</rdfs:label>
+        <rdfs:label xml:lang="en">Institution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Keyword -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Keyword">
+        <rdfs:comment xml:lang="en">Additional information given under keyword or commentary in the original databases and which can be varied in content.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Zusätzliche Informationen, die in den Datenbanken unter Schlagworten und Kommentarfunktionen verborgen sind und ganz unterschiedlicher Natur sein können.</rdfs:comment>
+        <rdfs:label xml:lang="en">Keyword</rdfs:label>
+        <rdfs:label xml:lang="de">Schlagwort</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Lecture -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Lecture">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#TeachingPractices"/>
+        <rdfs:comment xml:lang="de">Bezieht sich auf Vorlesungen bzw. Lektionen (lectiones), die von einer Lehrkraft im Rahmen der universitären Lehre in Vorlesungsverzeichnissen angekündigt wurden.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to lectures announced by lecturers in the lecture catalogue of a university.</rdfs:comment>
+        <rdfs:label xml:lang="en">Lecture</rdfs:label>
+        <rdfs:label xml:lang="de">Vorlesung</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#LectureCatalogue -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#LectureCatalogue">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#AcademicDocuments"/>
+        <rdfs:comment xml:lang="en">Lecture catalogue of a university.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Vorlesungskatalog einer Universität.</rdfs:comment>
+        <rdfs:label xml:lang="en">Lecture Catalogue</rdfs:label>
+        <rdfs:label xml:lang="de">Vorlesungskatalog</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#LectureDone -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#LectureDone">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#Lecture"/>
+        <rdfs:comment xml:lang="de">Bezieht sich auf Vorlesungen die von Lehrkräften nachweislich durchgeführt wurden, z.B. nachgewiesen in Rechenschaftsberichten oder aktenkundliche Lektionslisten.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to lectures which were actually given by a lecturer and which can be proved to be given, e.g. by reports, lists or other archival material.</rdfs:comment>
+        <rdfs:label xml:lang="en">Lecture done</rdfs:label>
+        <rdfs:label xml:lang="de">abgehaltene Vorlesung</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#LectureType -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#LectureType">
+        <rdfs:comment xml:lang="en">Refers to the different types of lectures conducted either publicly or privately...</rdfs:comment>
+        <rdfs:comment xml:lang="de">Verweist auf die unterschiedlichen Typen von Vorlesungen, die entweder privat oder öffentlich durchgeführt wurden.</rdfs:comment>
+        <rdfs:label xml:lang="en">Lecturetype</rdfs:label>
+        <rdfs:label xml:lang="de">Vorlesungstyp</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Lecturer -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Lecturer">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#Person"/>
+        <rdfs:comment xml:lang="de">Bezeichnet Lehrkräfte an frühneuzeitlichen Universitäten im deutschsprachigen Raum des Heiligen Römischen Reichs deren Karrierewege im Fokus des für die Ontologie maßgebenden Forschungsprojektes liegen.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to university lecturer at early modern universities in the German-speaking area of the Holy Roman Empire whose career paths are the focus of the research project relevant to the given ontology.</rdfs:comment>
+        <rdfs:label xml:lang="de">Hochschullehrer</rdfs:label>
+        <rdfs:label xml:lang="en">Lecturer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Licentiatus -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Licentiatus">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#Graduation"/>
+        <rdfs:comment xml:lang="de">Bezeichnet den akademischen Grad eines Lizenziaten, eines Baccalaren mit Lehrbefugnis. Zugleich einen Doktor der evang. Theologie (bis 1947 an deutschen Hochschulen). Kürzel: lic.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Describes the academic degree of a Licentiate, which means a bachelor/baccalaureus with the right to teach. Also the academic title of a doctor of Evangelic theology (valid until 1947 in Germany). Abbreviation: lic.</rdfs:comment>
+        <rdfs:label xml:lang="en">Licentiate</rdfs:label>
+        <rdfs:label xml:lang="de">Lizenziat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Location -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Location">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:comment xml:lang="de">Bezieht sich auf den geografischen Ort für Lebensabschnitte von Personen, insbesondere der Lehrkräfte, Orte von Körperschaften, Medien (Verlagsort, Druckort), Ämtern, Landesherrschaft usw.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to the geographical location of stages of life of persons, especially Lecturers, corporate bodies, media (printing, publishing), offices, territories and others.</rdfs:comment>
+        <rdfs:label xml:lang="en">Location</rdfs:label>
+        <rdfs:label xml:lang="de">Ort</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Magister -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Magister">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#Graduation"/>
+        <rdfs:comment xml:lang="de">Bezeichnet den akademischen Grad eines Magister. Kürzel: Mag.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to the academic degree of a Magister. Abbreviation: Mag.</rdfs:comment>
+        <rdfs:label xml:lang="de">Magister</rdfs:label>
+        <rdfs:label xml:lang="en">Magister</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Membership -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Membership">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#StageOfLife"/>
+        <rdfs:comment xml:lang="en">Refers to the membership of lecturers at sociocultural and/or political societies or further institutions; also fraternities.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Verweist auf Mitgliedschaften von Lehrkräften in soziokulturellen und/oder politischen Gesellschaften, Sozietäten und weiterer Institutionen; auch Studentenverbindungen.</rdfs:comment>
+        <rdfs:label xml:lang="en">Membership</rdfs:label>
+        <rdfs:label xml:lang="de">Mitgliedschaft</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Office -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Office">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#StageOfLife"/>
+        <rdfs:comment xml:lang="de">Bezieht sich auf nicht akademische Ämter bzw. Nebenberufe von Lehrkräften außerhalb der Universität, z.B. als Ärzte, Räte oder Anwälte.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to non-academic offices resp. side professions of lecturers outside of the university, e.g. as physicians at court, lawyers or counselers.</rdfs:comment>
+        <rdfs:label xml:lang="de">Amt</rdfs:label>
+        <rdfs:label xml:lang="en">Office</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Ownership -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Ownership">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#StageOfLife"/>
+        <rdfs:comment xml:lang="en">Object-collections of a professor, e.g. private libraries, naturalia or further scholarly devices, as well as art collections.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Objekt-Sammlungen eines Professors, z.B. Privatbibliotheken, Naturalien- und Instrumentensammlungen, Kunstsammlungen etc.</rdfs:comment>
+        <rdfs:label xml:lang="de">Besitz</rdfs:label>
+        <rdfs:label xml:lang="en">Ownership</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Pamphlet -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Pamphlet">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#Publication"/>
+        <rdfs:comment xml:lang="de">Bezeichnet eine Streitschrift.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to a pamphlet.</rdfs:comment>
+        <rdfs:label xml:lang="en">Pamphlet</rdfs:label>
+        <rdfs:label xml:lang="de">Streitschrift</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Person -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Person">
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Agent"/>
+        <rdf:label xml:lang="de">Person</rdf:label>
+        <rdf:label xml:lang="en">Person</rdf:label>
+        <rdfs:comment xml:lang="de">Bezeichnet eine Person.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to a person.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Picture -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Picture">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#Document"/>
+        <rdfs:comment xml:lang="de">Dieses Konzept beschreibt das Bild einer Person.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This concept describes the picture of a person.</rdfs:comment>
+        <rdfs:label xml:lang="de">Bild</rdfs:label>
+        <rdfs:label xml:lang="en">Picture</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#PrimaryEducation -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#PrimaryEducation">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#Education"/>
+        <rdfs:comment xml:lang="de">Bezieht sich auf die diversen vormodernen Schulformen und pädagogischen Bildungsangebote im Vorfeld eines Universitätsbesuchs im Territorium des Heiligen Römischen Reichs Deutscher Nation, z.B. Elementarschulen, Lateinschulen, Gymnasien, Klosterschulen, Pfarrschulen etc.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to the diverse early modern educational and pedagogical formas and institutions of primary education within the Holy Roman Empire.</rdfs:comment>
+        <rdfs:label xml:lang="en">Primary education</rdfs:label>
+        <rdfs:label xml:lang="de">Primäre Bildung</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#PrivateEducation -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#PrivateEducation">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#Education"/>
+        <rdfs:comment xml:lang="en">Private education by family members or a different private teacher.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Privatunterricht im Familienverband oder durch einen Privatlehrer.</rdfs:comment>
+        <rdfs:label xml:lang="en">Private education</rdfs:label>
+        <rdfs:label xml:lang="de">Privatunterricht</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#PrivateLecture -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#PrivateLecture">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#LectureType"/>
+        <rdfs:comment xml:lang="de">Bezieht sich auf private Vorlesungen (lectio privata, privatum, privatissimum), die eine Lehrkraft in einem kleinen Kreis von Studenten hält und die von den Studenten in der Regel an die Lehrkraft selbst bezahlt werden mussten.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to private lectures (lectio privata, privatum, privatissimum), given by a lecturer for a relatively small amount of students, which a student usually had to pay for directly to the lecturer.</rdfs:comment>
+        <rdfs:label xml:lang="en">Private Lecture</rdfs:label>
+        <rdfs:label xml:lang="de">Private Vorlesung</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#PrivateLecturer -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#PrivateLecturer">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#AcademicOffice"/>
+        <rdfs:comment xml:lang="de">Bezeichnet eine Lehrkraft ohne Professur. Zumeist graduierte Personen wie Magister oder Doktoren, die mit Lehrbefähigung (venia legendi/docendi) und mit Zustimmung der Fakultäten an der Universität lehrten, aber kein regelmäßiges Salär über die Korporation bzw. die Landesherrschaft erhielten. Stattdessen bekamen sie direkt von den Studenten Honorare für ihre Lehrpraxis, z. B. Privatdozenten, Sprachlehrer, Hofmeister. Ihre Lehrangebote wurden an das Schwarze Brett angeschlagen und tauchen nur selten in den Vorlesungsverzeichnissen auf.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to teachers without professorships but the permission by the faculties to teach (venia legendi/docendi). Those were mostly graduated persons, such as Magister or Doctors who did not receive a salary by the corporation or territory ruler but got paid directly by the students for their teaching practices, e. g. so-called private lecturers (German: Privatdozenten).</rdfs:comment>
+        <rdfs:label xml:lang="de">Privatdozent</rdfs:label>
+        <rdfs:label xml:lang="en">Private Lecturer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#PrivateLibrary -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#PrivateLibrary">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#Collection"/>
+        <terms:description xml:lang="en">Refers to the private library of a lecturer. Can be reconstructed by published auction catalogues.</terms:description>
+        <terms:description xml:lang="de">Verweist auf die Privatbibliothek einer Lehrkraft und kann u.U. durch publizierte Auktionskataloge erschlossen werden.</terms:description>
+        <rdfs:label xml:lang="de">Privatbibliothek</rdfs:label>
+        <rdfs:label xml:lang="en">Private library</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#ProgramsAndSpeeches -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#ProgramsAndSpeeches">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#AcademicDocuments"/>
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#Publication"/>
+        <rdfs:comment xml:lang="de">Bezieht sich auf Hochschulschriften wie gedruckte Universitätsprogramme und Reden.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to university publications like printed university programs and speeches.</rdfs:comment>
+        <rdfs:label xml:lang="de">Programme und Reden</rdfs:label>
+        <rdfs:label xml:lang="en">Programs and Speeches</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#PublicLecture -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#PublicLecture">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#LectureType"/>
+        <rdfs:comment xml:lang="de">Bezieht sich auf öffentliche Vorlesungen (lectio publica) von Lehrkräften, die nicht extra vom Studenten bezahlt werden mussten.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to public lectures (lectio publica) of lecturers which had not to be payed extra by students.</rdfs:comment>
+        <rdfs:label xml:lang="en">Public Lecture</rdfs:label>
+        <rdfs:label xml:lang="de">Öffentliche Vorlesung</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Publication -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Publication">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#Document"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+        <rdfs:comment xml:lang="de">Bezieht sich auf Publikationen wie Bücher, Periodika oder andere verzeichnete Medien.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to publications like books, periodicals or other documentary resources (see DC Terms description).</rdfs:comment>
+        <rdfs:label xml:lang="en">Publication</rdfs:label>
+        <rdfs:label xml:lang="de">Publikation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Publicist -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Publicist">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#StageOfLife"/>
+        <rdfs:comment xml:lang="de">Bezieht sich auf den Lebensabschnitt einer Lehrkraft als Publizist, d. h. als Autor, Herausgeber oder Mitarbeiter eines publizistischen Kollaborationsprojekts auf dem zeitgenössischen Publikationsmarkt.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to the stage of life of a lecturer as a publicist, appearing as an author, editor or collaborator in any publicistic collaboration project on the contemporary publication market.</rdfs:comment>
+        <rdfs:label xml:lang="en">Publicist</rdfs:label>
+        <rdfs:label xml:lang="de">Publizist</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Recommendation -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Recommendation">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#StageOfLife"/>
+        <rdfs:comment xml:lang="de">Bezieht sich auf Empfehlungen, z.B. Empfehlungsschreiben von Professoren, die ggfs. in Bestallungsakten enthalten sind.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to recommendations, e.g. letters of recommendation by professors which are maybe part of vocation files.</rdfs:comment>
+        <rdfs:label xml:lang="de">Empfehlung</rdfs:label>
+        <rdfs:label xml:lang="en">Recommendation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Report -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Report">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#AcademicDocuments"/>
+        <rdfs:comment xml:lang="en">Means regular reports of lecturers about their curriculum to the university and territorial administration, some places also referred to as Professorenzettel (professor&apos;s notes).</rdfs:comment>
+        <rdfs:comment xml:lang="de">Rechenschaftsbericht den Lehrkräfte in regelmäßigen Abständen bei der Universitätverwaltung und Landesverwaltung einreichten, mancherorts auch als Professorenzettel bezeichnet.</rdfs:comment>
+        <rdfs:label xml:lang="de">Rechenschaftsbericht</rdfs:label>
+        <rdfs:label xml:lang="en">Report</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Review -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Review">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#Publication"/>
+        <rdfs:comment xml:lang="de">Bezeichnet die Rezension in einer Rezensionszeitschrift.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to a review published in a review journal.</rdfs:comment>
+        <rdfs:label xml:lang="en">Review</rdfs:label>
+        <rdfs:label xml:lang="de">Rezension</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Salary -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Salary">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#StageOfLife"/>
+        <rdfs:comment xml:lang="de">Bezieht sich auf das Einkommen einer Lehrkraft - in Bearbeitung.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to the salary of a lecturer - in progress.</rdfs:comment>
+        <rdfs:label xml:lang="en">Salary</rdfs:label>
+        <rdfs:label xml:lang="de">Salär</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#School -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#School">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#Institution"/>
+        <rdfs:comment xml:lang="de">Bezeichnet Schulen für die primäre Bildung.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to schools for primary education.</rdfs:comment>
+        <rdfs:label xml:lang="en">School</rdfs:label>
+        <rdfs:label xml:lang="de">Schule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Semester -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Semester">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#University"/>
+        <rdfs:comment xml:lang="de">Abschnitt des Akademischen Jahrs. Es besteht aus einem Sommer- und einem Wintersemester.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Part of an academic year. It consists of a summer- and a wintersemester</rdfs:comment>
+        <rdfs:label xml:lang="de">Semester</rdfs:label>
+        <rdfs:label xml:lang="en">Semester</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Seminar -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Seminar">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#TeachingPractices"/>
+        <rdfs:comment xml:lang="de">Bezieht sich auf die Lehrveranstaltung eines Seminars, in den Quellen wie im Fall Uni Helmstedt mit Seminarium bezeichnet.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to the course of a seminar, referred to in the sources as Seminarium, as in the case of the University of Helmstedt.</rdfs:comment>
+        <rdfs:label xml:lang="de">Seminar</rdfs:label>
+        <rdfs:label xml:lang="en">Seminar</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Societies -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Societies">
+        <rdfs:comment xml:lang="de">Bezeichnet Gesellschaften, wie Gelehrtengesellschaften, die sich einer bestimmten Geistesströmung oder Disziplin widmeten und aus Gelehrten und Gebildeten bestand sowie zumeist regional begrenzt agierte. Mit Gesellschaften konnten auch literarische Salons oder Lesegesellschaften gemeint sein. Außerdem Sozietäten mit strukturierter Körperschaft und obrigkeitlicher Protégierung (z.B. Akademie der Wissenschaften in Berlin). Des Weiteren sind mit Gesellschaften unter Umständen auch Geheimgesellschaften wie Freimaurer oder Illuminaten gemeint.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to societies like Learned Societies, which usually dealt with a certain discipline or ideas and which gathered learned and educated people, mostly of regionaly importance. Societies could also refer to literary salons or reading societies. Furthermore, societies with structured corporate body and most commonly protection and financing by the territory ruler, like the Akademie der Wissenschaften in Berlin. Furthermore societies could also refer to secret societies like Freemasons or Illuminati.</rdfs:comment>
+        <rdfs:label xml:lang="de">Gesellschaften</rdfs:label>
+        <rdfs:label xml:lang="en">Societies</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#StageOfLife -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#StageOfLife">
+        <rdfs:comment xml:lang="de">Dieses Konzept bezieht sich auf Lebensabschnitte einer Lehrkraft.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This concept refers to a stage of life of a lecturer.</rdfs:comment>
+        <rdfs:label xml:lang="de">Lebensabschnitt</rdfs:label>
+        <rdfs:label xml:lang="en">Stage of Life</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Statutes -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Statutes">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#AcademicDocuments"/>
+        <rdfs:comment xml:lang="de">Die Verfassung einer Universität.</rdfs:comment>
+        <rdfs:comment xml:lang="en">University constitution.</rdfs:comment>
+        <rdfs:label xml:lang="de">Statuten</rdfs:label>
+        <rdfs:label xml:lang="en">Statutes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Student -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Student">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#Person"/>
+        <rdfs:comment xml:lang="de">Bezeichnet einen an der Universität immatrikulierten Studenten.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to an enrolled student at a University.</rdfs:comment>
+        <rdfs:label xml:lang="de">Student</rdfs:label>
+        <rdfs:label xml:lang="en">Student</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Subject -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Subject"/>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#SummerSemester -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#SummerSemester">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#Semester"/>
+        <rdfs:comment xml:lang="de">Das halbjährige Sommersemester dauert von April bis September.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The biannual summer semester starts in April and ends in September.</rdfs:comment>
+        <rdfs:label xml:lang="de">Sommersemester</rdfs:label>
+        <rdfs:label xml:lang="en">Summer Semester</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#TeachingPractices -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#TeachingPractices">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#StageOfLife"/>
+        <rdfs:comment xml:lang="de">Beschreibt akademische Lehrpraktiken, die eine Lehrkraft an der Universität durchführt und welche durch Statuten, weitere Regularien und/oder durch Gewohnheit geregelt sind.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Describes academic teaching practices which are regulated by the University&apos;s statutes or further regulations and/or customs.</rdfs:comment>
+        <rdfs:label xml:lang="de">Lehrpraktiken</rdfs:label>
+        <rdfs:label xml:lang="en">Teaching Practices</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Territory -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Territory">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#Corporation"/>
+        <rdfs:comment xml:lang="de">Bezeichnet die Landesherrschaft eines Territoriums und bezieht sich hier auf den Amtssitz jener landesherrschaftlichen Organe, denen die Universitäten unterstellt sind.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to the authority by a ruler/rulership of a territory and means the territorial administration which deal with the universities.</rdfs:comment>
+        <rdfs:label xml:lang="de">Landesherrschaft</rdfs:label>
+        <rdfs:label xml:lang="en">Territory</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Textbook -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Textbook">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#AcademicDocuments"/>
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#Publication"/>
+        <rdfs:comment xml:lang="de">Bezeichnet ein Buch das Lehrinhalte eines Studiums didaktisch aufbereitet.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to books which offer a compilation of content in a certain field of interest.</rdfs:comment>
+        <rdfs:label xml:lang="de">Lehrbuch</rdfs:label>
+        <rdfs:label xml:lang="en">Textbook</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#University -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#University">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#Corporation"/>
+        <rdfs:comment xml:lang="de">Bezeichnet eine Lehr-, Bildungs- und Forschungskorporation die dazu priviligiert ist, akademische Grade zu verleihen.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to education and research corporations which own the privilige to award academic degrees.</rdfs:comment>
+        <rdfs:label xml:lang="en">University</rdfs:label>
+        <rdfs:label xml:lang="de">Universität</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#UniversityStudies -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#UniversityStudies">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#Education"/>
+        <rdfs:comment xml:lang="de">Bezieht sich auf das Universitätsstudium einer Lehrkraft.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to the university studies of a lecturer.</rdfs:comment>
+        <rdfs:label xml:lang="de">Studium</rdfs:label>
+        <rdfs:label xml:lang="en">University studies</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#Wife -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#Wife">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#Person"/>
+        <rdfs:comment xml:lang="de">Bezieht sich auf die Ehefrau einer Lehrkraft.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Refers to wife of a lecturer.</rdfs:comment>
+        <rdfs:label xml:lang="de">Ehefrau</rdfs:label>
+        <rdfs:label xml:lang="en">Wife</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pcp-on-web.de/ontology#WinterSemester -->
+
+
+    <owl:Class rdf:about="http://pcp-on-web.de/ontology#WinterSemester">
+        <rdfs:subClassOf rdf:resource="http://pcp-on-web.de/ontology#Semester"/>
+        <rdfs:comment xml:lang="de">Das halbjährige Wintersemester dauert von Oktober bis März.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The biannual winter semester starts in October and ends in March.</rdfs:comment>
+        <rdfs:label xml:lang="en">Winter Semester</rdfs:label>
+        <rdfs:label xml:lang="de">Wintersemester</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/Agent -->
+
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/Agent"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/BibliographicResource -->
+
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/BibliographicResource"/>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Article -->
+
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Article"/>
+    
+
+
+    <!-- http://purl.org/spar/fabio/Expression -->
+
+
+    <owl:Class rdf:about="http://purl.org/spar/fabio/Expression"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Resource -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#Literal -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#Literal"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#literal -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#literal"/>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://pcp-on-web.de/ontology# -->
+
+
+    <owl:NamedIndividual rdf:about="http://pcp-on-web.de/ontology#">
+        <terms:title xml:lang="en">Early Modern Professorial Career Patterns - Version 0.2 (pcp-on-web)</terms:title>
+        <terms:title xml:lang="de">Professorale Karrieremuster der Frühen Neuzeit - Version 0.2 (pcp-on-web)</terms:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://pcp-on-web.de/ontology#title">
+        <rdfs:comment xml:lang="en">Gives the title of a document.</rdfs:comment>
+        <rdfs:comment xml:lang="de">Nennt den Titel eines Dokuments.</rdfs:comment>
+        <rdfs:label xml:lang="de">Titel eines Dokuments</rdfs:label>
+        <rdfs:label xml:lang="en">title of a document</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
