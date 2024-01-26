@@ -135,7 +135,7 @@
     "id" : "58",
     "type" : "owl:Class"
   }, {
-    "id" : "59",
+    "id" : "60",
     "type" : "owl:Class"
   }, {
     "id" : "61",
@@ -159,10 +159,10 @@
     "id" : "84",
     "type" : "owl:Class"
   }, {
-    "id" : "78",
+    "id" : "87",
     "type" : "owl:Class"
   }, {
-    "id" : "87",
+    "id" : "78",
     "type" : "owl:Class"
   }, {
     "id" : "7",
@@ -195,10 +195,10 @@
     "id" : "15",
     "type" : "owl:Class"
   }, {
-    "id" : "60",
+    "id" : "135",
     "type" : "owl:Class"
   }, {
-    "id" : "137",
+    "id" : "59",
     "type" : "owl:Class"
   }, {
     "id" : "43",
@@ -348,10 +348,10 @@
     "id" : "75",
     "type" : "owl:Class"
   }, {
-    "id" : "177",
+    "id" : "144",
     "type" : "owl:Class"
   }, {
-    "id" : "144",
+    "id" : "177",
     "type" : "owl:Class"
   }, {
     "id" : "240",
@@ -420,7 +420,7 @@
     "id" : "252",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "113",
+    "id" : "111",
     "type" : "owl:Class"
   }, {
     "id" : "226",
@@ -438,7 +438,7 @@
     "id" : "106",
     "type" : "owl:Class"
   }, {
-    "id" : "117",
+    "id" : "113",
     "type" : "owl:Class"
   }, {
     "id" : "115",
@@ -501,7 +501,7 @@
     "id" : "258",
     "type" : "owl:Class"
   }, {
-    "id" : "111",
+    "id" : "117",
     "type" : "rdfs:Literal"
   }, {
     "id" : "204",
@@ -513,7 +513,7 @@
     "id" : "159",
     "type" : "owl:Class"
   }, {
-    "id" : "135",
+    "id" : "136",
     "type" : "owl:Class"
   }, {
     "id" : "51",
@@ -531,7 +531,7 @@
     "id" : "282",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "136",
+    "id" : "137",
     "type" : "owl:Class"
   }, {
     "id" : "267",
@@ -664,21 +664,6 @@
     "id" : "13",
     "superClasses" : [ "5" ]
   }, {
-    "iri" : "http://pcp-on-web.de/ontology#Office",
-    "baseIri" : "http://pcp-on-web.de/ontology",
-    "instances" : 0,
-    "label" : {
-      "de" : "Amt",
-      "IRI-based" : "Office",
-      "en" : "Office"
-    },
-    "comment" : {
-      "de" : "Bezieht sich auf nicht akademische ?mter bzw. Nebenberufe von Lehrkr?ften au?erhalb der Universit?t, z.B. als ?rzte, R?te oder Anw?lte.",
-      "en" : "Refers to non-academic offices resp. side professions of lecturers outside of the university, e.g. as physicians at court, lawyers or counselers."
-    },
-    "id" : "58",
-    "superClasses" : [ "5" ]
-  }, {
     "iri" : "http://pcp-on-web.de/ontology#FacultyOfTheology",
     "baseIri" : "http://pcp-on-web.de/ontology",
     "instances" : 0,
@@ -691,8 +676,23 @@
       "de" : "Bezeichnet die Theologische Fakult?t an einer Universit?t.",
       "en" : "Refers to the Faculty of Theology at Universities."
     },
-    "id" : "59",
-    "superClasses" : [ "60" ]
+    "id" : "58",
+    "superClasses" : [ "59" ]
+  }, {
+    "iri" : "http://pcp-on-web.de/ontology#Office",
+    "baseIri" : "http://pcp-on-web.de/ontology",
+    "instances" : 0,
+    "label" : {
+      "de" : "Amt",
+      "IRI-based" : "Office",
+      "en" : "Office"
+    },
+    "comment" : {
+      "de" : "Bezieht sich auf nicht akademische ?mter bzw. Nebenberufe von Lehrkr?ften au?erhalb der Universit?t, z.B. als ?rzte, R?te oder Anw?lte.",
+      "en" : "Refers to non-academic offices resp. side professions of lecturers outside of the university, e.g. as physicians at court, lawyers or counselers."
+    },
+    "id" : "60",
+    "superClasses" : [ "5" ]
   }, {
     "iri" : "http://pcp-on-web.de/ontology#Honour",
     "baseIri" : "http://pcp-on-web.de/ontology",
@@ -766,7 +766,7 @@
       "en" : "Refers to the facultats artium which developed into a faculty of philosophy throughout the period of interest and at which propaedeutic knowledge was taught for further studies at one of the higher faculties of a full university."
     },
     "id" : "81",
-    "superClasses" : [ "60" ]
+    "superClasses" : [ "59" ]
   }, {
     "iri" : "http://pcp-on-web.de/ontology#Territory",
     "baseIri" : "http://pcp-on-web.de/ontology",
@@ -798,16 +798,6 @@
     "id" : "84",
     "superClasses" : [ "83" ]
   }, {
-    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing",
-    "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "SpatialThing"
-    },
-    "subClasses" : [ "77" ],
-    "attributes" : [ "external" ],
-    "id" : "78"
-  }, {
     "iri" : "http://pcp-on-web.de/ontology#Salary",
     "baseIri" : "http://pcp-on-web.de/ontology",
     "instances" : 0,
@@ -822,6 +812,16 @@
     },
     "id" : "87",
     "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing",
+    "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SpatialThing"
+    },
+    "subClasses" : [ "77" ],
+    "attributes" : [ "external" ],
+    "id" : "78"
   }, {
     "iri" : "http://pcp-on-web.de/ontology#Denomination",
     "baseIri" : "http://pcp-on-web.de/ontology",
@@ -975,21 +975,6 @@
     "id" : "15",
     "superClasses" : [ "5" ]
   }, {
-    "iri" : "http://pcp-on-web.de/ontology#Faculty",
-    "baseIri" : "http://pcp-on-web.de/ontology",
-    "instances" : 0,
-    "label" : {
-      "de" : "Fakult?t",
-      "IRI-based" : "Faculty",
-      "en" : "Faculty"
-    },
-    "subClasses" : [ "59", "135", "136", "81" ],
-    "comment" : {
-      "de" : "Bezieht sich auf eine k?rperschaftlich organisierte und auf ein Fachgebiet begrenzte Lehr- und Verwaltungseinheit einer Volluniversit?t, im fr?hneuzeitlichen Kontext: Artistenfakult?t (facultas artium), sp?ter Philosophische Fak., Theologie, Jurisprudenz, Medizin.",
-      "en" : "Refers to corporated university divisions with specific subject areas, which are in an Early Modern context: facultas artium, later Philosophical fac., Theology, Jurisprudence, Medicine."
-    },
-    "id" : "60"
-  }, {
     "iri" : "http://purl.org/dc/terms/Agent",
     "baseIri" : "http://purl.org/dc/terms",
     "instances" : 0,
@@ -998,7 +983,22 @@
     },
     "subClasses" : [ "38", "51" ],
     "attributes" : [ "external" ],
-    "id" : "137"
+    "id" : "135"
+  }, {
+    "iri" : "http://pcp-on-web.de/ontology#Faculty",
+    "baseIri" : "http://pcp-on-web.de/ontology",
+    "instances" : 0,
+    "label" : {
+      "de" : "Fakult?t",
+      "IRI-based" : "Faculty",
+      "en" : "Faculty"
+    },
+    "subClasses" : [ "58", "136", "137", "81" ],
+    "comment" : {
+      "de" : "Bezieht sich auf eine k?rperschaftlich organisierte und auf ein Fachgebiet begrenzte Lehr- und Verwaltungseinheit einer Volluniversit?t, im fr?hneuzeitlichen Kontext: Artistenfakult?t (facultas artium), sp?ter Philosophische Fak., Theologie, Jurisprudenz, Medizin.",
+      "en" : "Refers to corporated university divisions with specific subject areas, which are in an Early Modern context: facultas artium, later Philosophical fac., Theology, Jurisprudence, Medicine."
+    },
+    "id" : "59"
   }, {
     "iri" : "http://pcp-on-web.de/ontology#Document",
     "baseIri" : "http://pcp-on-web.de/ontology",
@@ -1179,46 +1179,46 @@
     "id" : "19",
     "superClasses" : [ "5" ]
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#gYear",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "206",
-    "label" : {
-      "IRI-based" : "gYear"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#gMonthDay",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "208",
-    "label" : {
-      "IRI-based" : "gMonthDay"
-    }
-  }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#date",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "209",
+    "id" : "206",
     "label" : {
       "IRI-based" : "date"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#gDay",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "210",
-    "label" : {
-      "IRI-based" : "gDay"
-    }
-  }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#gMonth",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "213",
+    "id" : "208",
     "label" : {
       "IRI-based" : "gMonth"
     }
   }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#gYear",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "209",
+    "label" : {
+      "IRI-based" : "gYear"
+    }
+  }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "210",
+    "label" : {
+      "IRI-based" : "gYearMonth"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#gMonthDay",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "213",
+    "label" : {
+      "IRI-based" : "gMonthDay"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#gDay",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "214",
     "label" : {
-      "IRI-based" : "gYearMonth"
+      "IRI-based" : "gDay"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#gYear",
@@ -1228,11 +1228,11 @@
       "IRI-based" : "gYear"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#gMonthDay",
+    "iri" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "216",
     "label" : {
-      "IRI-based" : "gMonthDay"
+      "IRI-based" : "gYearMonth"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
@@ -1264,7 +1264,7 @@
       "en" : "Refers to a corporation or corporate body in the sense of a legal institution."
     },
     "id" : "38",
-    "superClasses" : [ "137" ]
+    "superClasses" : [ "135" ]
   }, {
     "iri" : "http://pcp-on-web.de/ontology#Exercise",
     "baseIri" : "http://pcp-on-web.de/ontology",
@@ -1326,25 +1326,25 @@
     "id" : "47",
     "superClasses" : [ "11" ]
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#gDay",
+    "iri" : "http://www.w3.org/2001/XMLSchema#gMonthDay",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "224",
     "label" : {
-      "IRI-based" : "gDay"
+      "IRI-based" : "gMonthDay"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#gMonth",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "227",
+    "label" : {
+      "IRI-based" : "gMonth"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#date",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "227",
-    "label" : {
-      "IRI-based" : "date"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "228",
     "label" : {
-      "IRI-based" : "gYearMonth"
+      "IRI-based" : "date"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#gDay",
@@ -1361,25 +1361,25 @@
       "IRI-based" : "gYearMonth"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#gMonth",
+    "iri" : "http://www.w3.org/2001/XMLSchema#gDay",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "231",
     "label" : {
-      "IRI-based" : "gMonth"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#gMonth",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "232",
-    "label" : {
-      "IRI-based" : "gMonth"
+      "IRI-based" : "gDay"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#gMonthDay",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "233",
+    "id" : "232",
     "label" : {
       "IRI-based" : "gMonthDay"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "233",
+    "label" : {
+      "IRI-based" : "date"
     }
   }, {
     "iri" : "http://pcp-on-web.de/ontology#Statutes",
@@ -1407,11 +1407,11 @@
     "attributes" : [ "external" ],
     "id" : "44"
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "iri" : "http://www.w3.org/2001/XMLSchema#gMonth",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "234",
     "label" : {
-      "IRI-based" : "date"
+      "IRI-based" : "gMonth"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#gYear",
@@ -1527,21 +1527,6 @@
     "id" : "75",
     "superClasses" : [ "51" ]
   }, {
-    "iri" : "http://pcp-on-web.de/ontology#WinterSemester",
-    "baseIri" : "http://pcp-on-web.de/ontology",
-    "instances" : 0,
-    "label" : {
-      "de" : "Wintersemester",
-      "IRI-based" : "WinterSemester",
-      "en" : "Winter Semester"
-    },
-    "comment" : {
-      "de" : "Das halbj?hrige Wintersemester dauert von Oktober bis M?rz.",
-      "en" : "The biannual winter semester starts in October and ends in March."
-    },
-    "id" : "177",
-    "superClasses" : [ "66" ]
-  }, {
     "iri" : "http://pcp-on-web.de/ontology#Baccalaureus",
     "baseIri" : "http://pcp-on-web.de/ontology",
     "instances" : 0,
@@ -1557,11 +1542,26 @@
     "id" : "144",
     "superClasses" : [ "142" ]
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#gMonthDay",
+    "iri" : "http://pcp-on-web.de/ontology#WinterSemester",
+    "baseIri" : "http://pcp-on-web.de/ontology",
+    "instances" : 0,
+    "label" : {
+      "de" : "Wintersemester",
+      "IRI-based" : "WinterSemester",
+      "en" : "Winter Semester"
+    },
+    "comment" : {
+      "de" : "Das halbj?hrige Wintersemester dauert von Oktober bis M?rz.",
+      "en" : "The biannual winter semester starts in October and ends in March."
+    },
+    "id" : "177",
+    "superClasses" : [ "66" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#gYear",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "240",
     "label" : {
-      "IRI-based" : "gMonthDay"
+      "IRI-based" : "gYear"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
@@ -1585,25 +1585,25 @@
       "IRI-based" : "gYear"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#gYear",
+    "iri" : "http://www.w3.org/2001/XMLSchema#gMonthDay",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "243",
     "label" : {
-      "IRI-based" : "gYear"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#gDay",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "244",
-    "label" : {
-      "IRI-based" : "gDay"
+      "IRI-based" : "gMonthDay"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#gMonth",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "245",
+    "id" : "244",
     "label" : {
       "IRI-based" : "gMonth"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#gDay",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "245",
+    "label" : {
+      "IRI-based" : "gDay"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#date",
@@ -1636,7 +1636,7 @@
       "IRI-based" : "StageOfLife",
       "en" : "Stage of Life"
     },
-    "subClasses" : [ "4", "7", "9", "11", "13", "15", "17", "19", "58", "193", "142", "83", "180", "125", "61", "87" ],
+    "subClasses" : [ "4", "7", "9", "11", "13", "15", "17", "19", "60", "193", "142", "83", "180", "125", "61", "87" ],
     "comment" : {
       "de" : "Dieses Konzept bezieht sich auf Lebensabschnitte einer Lehrkraft.",
       "en" : "This concept refers to a stage of life of a lecturer."
@@ -1758,7 +1758,7 @@
       "IRI-based" : "Resource"
     },
     "attributes" : [ "external" ],
-    "id" : "113"
+    "id" : "111"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
@@ -1794,7 +1794,7 @@
     "superClasses" : [ "43" ]
   }, {
     "instances" : 0,
-    "union" : [ "58", "83", "174" ],
+    "union" : [ "60", "83", "174" ],
     "attributes" : [ "union", "anonymous" ],
     "id" : "102"
   }, {
@@ -1825,7 +1825,7 @@
       "de" : "Verweist auf das biologische Geschlecht oder die Geschlechtsidentit?t einer Person.",
       "en" : "Refers to sex or gender of a person."
     },
-    "id" : "117"
+    "id" : "113"
   }, {
     "iri" : "http://pcp-on-web.de/ontology#Student",
     "baseIri" : "http://pcp-on-web.de/ontology",
@@ -1990,7 +1990,7 @@
     "id" : "258"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "111",
+    "id" : "117",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -2033,8 +2033,8 @@
       "de" : "Bezeichnet die Medzinische Fakult?t an einer Universit?t.",
       "en" : "Refers to the Faculty of Medicine at Universities."
     },
-    "id" : "135",
-    "superClasses" : [ "60" ]
+    "id" : "136",
+    "superClasses" : [ "59" ]
   }, {
     "iri" : "http://pcp-on-web.de/ontology#Person",
     "baseIri" : "http://pcp-on-web.de/ontology",
@@ -2050,7 +2050,7 @@
       "en" : "Refers to a person."
     },
     "id" : "51",
-    "superClasses" : [ "137" ]
+    "superClasses" : [ "135" ]
   }, {
     "iri" : "http://pcp-on-web.de/ontology#Textbook",
     "baseIri" : "http://pcp-on-web.de/ontology",
@@ -2109,28 +2109,28 @@
       "de" : "Bezeichnet die Juristische Fakult?t an einer Universit?t.",
       "en" : "Refers to the Faculty of Law at Universities."
     },
-    "id" : "136",
-    "superClasses" : [ "60" ]
+    "id" : "137",
+    "superClasses" : [ "59" ]
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
+    "iri" : "http://www.w3.org/2001/XMLSchema#gMonth",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "267",
     "label" : {
-      "IRI-based" : "gYearMonth"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#gMonthDay",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "268",
-    "label" : {
-      "IRI-based" : "gMonthDay"
+      "IRI-based" : "gMonth"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#gDay",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "269",
+    "id" : "268",
     "label" : {
       "IRI-based" : "gDay"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#gMonthDay",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "269",
+    "label" : {
+      "IRI-based" : "gMonthDay"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#date",
@@ -2140,18 +2140,18 @@
       "IRI-based" : "date"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#gMonth",
+    "iri" : "http://www.w3.org/2001/XMLSchema#gYear",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "271",
     "label" : {
-      "IRI-based" : "gMonth"
+      "IRI-based" : "gYear"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#gYear",
+    "iri" : "http://www.w3.org/2001/XMLSchema#gYearMonth",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "272",
     "label" : {
-      "IRI-based" : "gYear"
+      "IRI-based" : "gYearMonth"
     }
   }, {
     "iri" : "http://pcp-on-web.de/ontology#Ownership",
@@ -2393,7 +2393,7 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "110",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "112",
     "type" : "owl:objectProperty"
@@ -2402,7 +2402,7 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "116",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "119",
     "type" : "owl:objectProperty"
@@ -2801,7 +2801,7 @@
       "de" : "GND Normadatei, inklusive ehemals genutzte PND.",
       "en" : "GND integrated authority file, including formerly used PND."
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "22"
   }, {
     "range" : "11",
@@ -2915,7 +2915,7 @@
   }, {
     "iri" : "http://pcp-on-web.de/ontology#hasFaculty",
     "baseIri" : "http://pcp-on-web.de/ontology",
-    "range" : "60",
+    "range" : "59",
     "label" : {
       "de" : "hat Fakult?t",
       "IRI-based" : "hasFaculty",
@@ -3016,7 +3016,7 @@
     },
     "domain" : "89",
     "subproperty" : [ "90" ],
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "88"
   }, {
     "iri" : "http://pcp-on-web.de/ontology#alternativeWritingOfSurname",
@@ -3026,17 +3026,17 @@
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
+        "value" : "0.2 changed Domain from Professor to Person",
+        "type" : "label"
+      }, {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
         "value" : "2.0 under discussion",
         "type" : "label"
       }, {
         "identifier" : "versionInfo",
         "language" : "undefined",
         "value" : "0.1 initial creation - 24.05.07",
-        "type" : "label"
-      }, {
-        "identifier" : "versionInfo",
-        "language" : "undefined",
-        "value" : "0.2 changed Domain from Professor to Person",
         "type" : "label"
       } ],
       "order" : [ {
@@ -3056,7 +3056,7 @@
       "de" : "Bsp: Meier, Meyer, Maier",
       "en" : "For Example Meier, Meyer, Maier"
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "91"
   }, {
     "iri" : "http://pcp-on-web.de/ontology#corporationDocument",
@@ -3135,7 +3135,7 @@
       "en" : "miscellaneous/further information"
     },
     "domain" : "99",
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "98"
   }, {
     "iri" : "http://pcp-on-web.de/ontology#hasComment",
@@ -3170,19 +3170,9 @@
     "attributes" : [ "object" ],
     "id" : "108"
   }, {
-    "iri" : "http://purl.org/dc/terms/title",
-    "baseIri" : "http://purl.org/dc/terms",
-    "range" : "111",
-    "label" : {
-      "IRI-based" : "title"
-    },
-    "domain" : "89",
-    "attributes" : [ "datatype", "external" ],
-    "id" : "110"
-  }, {
     "iri" : "http://pcp-on-web.de/ontology#geonameLocation",
     "baseIri" : "http://pcp-on-web.de/ontology",
-    "range" : "113",
+    "range" : "111",
     "annotations" : {
       "versionInfo" : [ {
         "identifier" : "versionInfo",
@@ -3200,6 +3190,22 @@
     "comment" : {
       "de" : "Die URL des Ressourcenstandorts in http://geonames.org.",
       "en" : "The Resource location's URL in http://geonames.org."
+    },
+    "attributes" : [ "object" ],
+    "id" : "110"
+  }, {
+    "iri" : "http://pcp-on-web.de/ontology#genderqueer",
+    "baseIri" : "http://pcp-on-web.de/ontology",
+    "range" : "113",
+    "label" : {
+      "de" : "divers",
+      "IRI-based" : "genderqueer",
+      "en" : "genderqueer"
+    },
+    "domain" : "51",
+    "comment" : {
+      "de" : "Verweist auf die nicht-bin?re Geschlechtsidentit?t einer Person.",
+      "en" : "Refers to the genderqueer identity of a person."
     },
     "attributes" : [ "object" ],
     "id" : "112"
@@ -3220,20 +3226,14 @@
     "attributes" : [ "object" ],
     "id" : "114"
   }, {
-    "iri" : "http://pcp-on-web.de/ontology#genderqueer",
-    "baseIri" : "http://pcp-on-web.de/ontology",
+    "iri" : "http://purl.org/dc/terms/title",
+    "baseIri" : "http://purl.org/dc/terms",
     "range" : "117",
     "label" : {
-      "de" : "divers",
-      "IRI-based" : "genderqueer",
-      "en" : "genderqueer"
+      "IRI-based" : "title"
     },
-    "domain" : "51",
-    "comment" : {
-      "de" : "Verweist auf die nicht-bin?re Geschlechtsidentit?t einer Person.",
-      "en" : "Refers to the genderqueer identity of a person."
-    },
-    "attributes" : [ "object" ],
+    "domain" : "89",
+    "attributes" : [ "datatype", "external" ],
     "id" : "116"
   }, {
     "iri" : "http://pcp-on-web.de/ontology#hasOpponent",
@@ -3464,7 +3464,7 @@
     },
     "domain" : "89",
     "subproperty" : [ "162" ],
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "161"
   }, {
     "iri" : "http://pcp-on-web.de/ontology#dateOfBirth",
@@ -3620,7 +3620,7 @@
     "id" : "190"
   }, {
     "range" : "5",
-    "domain" : "58",
+    "domain" : "60",
     "attributes" : [ "anonymous", "object" ],
     "id" : "191"
   }, {
@@ -3665,12 +3665,12 @@
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
-        "value" : "0.2 changed Domain from Professor to Person 0.1 initial creation - 24.05.07",
+        "value" : "2.0 stable",
         "type" : "label"
       }, {
         "identifier" : "versionInfo",
         "language" : "undefined",
-        "value" : "2.0 stable",
+        "value" : "0.2 changed Domain from Professor to Person 0.1 initial creation - 24.05.07",
         "type" : "label"
       } ]
     },
@@ -3684,7 +3684,7 @@
       "de" : "Namenszus?tze sind zum Beispiel von, zu, etc.",
       "en" : "Additions to the surname can be of, etc."
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "197"
   }, {
     "iri" : "http://pcp-on-web.de/ontology#owns",
@@ -3748,7 +3748,7 @@
       "de" : "Zeitangabe eines Lebensabschnitts.",
       "en" : "The date or timespan of a stage of life."
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "202"
   }, {
     "iri" : "http://pcp-on-web.de/ontology#hasInscriber",
@@ -3769,7 +3769,7 @@
   }, {
     "iri" : "http://pcp-on-web.de/ontology#female",
     "baseIri" : "http://pcp-on-web.de/ontology",
-    "range" : "117",
+    "range" : "113",
     "label" : {
       "de" : "weiblich",
       "IRI-based" : "female",
@@ -3824,7 +3824,7 @@
     },
     "domain" : "218",
     "subproperty" : [ "219" ],
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "217"
   }, {
     "iri" : "http://pcp-on-web.de/ontology#corresponds",
@@ -3954,12 +3954,12 @@
       }, {
         "identifier" : "versionInfo",
         "language" : "undefined",
-        "value" : "0.2 changed Domain from Professor to Person",
+        "value" : "2.0 stable",
         "type" : "label"
       }, {
         "identifier" : "versionInfo",
         "language" : "undefined",
-        "value" : "2.0 stable",
+        "value" : "0.2 changed Domain from Professor to Person",
         "type" : "label"
       } ],
       "order" : [ {
@@ -3979,7 +3979,7 @@
       "de" : "Zus?tzliche Informationen aus den original Datenbanken, die nirgends sonst eingetragen werden k?nnen.",
       "en" : "Additional information from the original database that do not fit elsewhere."
     },
-    "attributes" : [ "functional", "datatype" ],
+    "attributes" : [ "datatype", "functional" ],
     "id" : "238"
   }, {
     "iri" : "http://pcp-on-web.de/ontology#hasWife",
@@ -4032,7 +4032,7 @@
   }, {
     "iri" : "http://pcp-on-web.de/ontology#male",
     "baseIri" : "http://pcp-on-web.de/ontology",
-    "range" : "117",
+    "range" : "113",
     "label" : {
       "de" : "m?nnlich",
       "IRI-based" : "male",
@@ -4103,7 +4103,7 @@
       "IRI-based" : "nominates",
       "en" : "nominates"
     },
-    "domain" : "60",
+    "domain" : "59",
     "comment" : {
       "de" : "Bezieht sich auf Nominierungslisten einer Fakult?t, die an die Verwaltung der Landesherrschaft erging und aus denen ein Kandidat durch die Landesherrschaft best?tigt wurde. Diese Listen liegen zumeist in zust?ndigen Archiven vor.",
       "en" : "Refers to nomination lists which were handed in  to the territorial administration by the faculties in  order to choose and to vocate a  candidate for a university chair. Those lists can be found in relevant archives."
@@ -4295,13 +4295,13 @@
     "attributes" : [ "datatype" ],
     "id" : "286"
   }, {
-    "range" : "137",
-    "domain" : "51",
+    "range" : "59",
+    "domain" : "81",
     "attributes" : [ "anonymous", "object" ],
     "id" : "287"
   }, {
-    "range" : "137",
-    "domain" : "38",
+    "range" : "59",
+    "domain" : "137",
     "attributes" : [ "anonymous", "object" ],
     "id" : "288"
   }, {
@@ -4315,25 +4315,41 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "290"
   }, {
-    "range" : "60",
-    "domain" : "135",
+    "range" : "135",
+    "domain" : "51",
     "attributes" : [ "anonymous", "object" ],
     "id" : "291"
   }, {
-    "range" : "60",
-    "domain" : "59",
+    "range" : "135",
+    "domain" : "38",
     "attributes" : [ "anonymous", "object" ],
     "id" : "292"
   }, {
-    "range" : "60",
-    "domain" : "81",
+    "range" : "59",
+    "domain" : "136",
     "attributes" : [ "anonymous", "object" ],
     "id" : "293"
   }, {
-    "range" : "60",
-    "domain" : "136",
+    "range" : "59",
+    "domain" : "58",
     "attributes" : [ "anonymous", "object" ],
     "id" : "294"
+  }, {
+    "iri" : "http://pcp-on-web.de/ontology#isPartOfUniversity",
+    "baseIri" : "http://pcp-on-web.de/ontology",
+    "range" : "41",
+    "label" : {
+      "de" : "ist Teil der Universit?t",
+      "IRI-based" : "isPartOfUniversity",
+      "en" : "is part of university"
+    },
+    "domain" : "59",
+    "comment" : {
+      "de" : "Bezieht sich auf konstituierende Bestandteile einer Universit?t.",
+      "en" : "Refers to the constituent parts of a university."
+    },
+    "attributes" : [ "object" ],
+    "id" : "295"
   }, {
     "iri" : "http://pcp-on-web.de/ontology#membershipSociety",
     "baseIri" : "http://pcp-on-web.de/ontology",
@@ -4347,22 +4363,6 @@
     "comment" : {
       "de" : "Weist die Mitgliedschaft einer Institution zu.",
       "en" : "Adds the membership to an institution."
-    },
-    "attributes" : [ "object" ],
-    "id" : "295"
-  }, {
-    "iri" : "http://pcp-on-web.de/ontology#isPartOfUniversity",
-    "baseIri" : "http://pcp-on-web.de/ontology",
-    "range" : "41",
-    "label" : {
-      "de" : "ist Teil der Universit?t",
-      "IRI-based" : "isPartOfUniversity",
-      "en" : "is part of university"
-    },
-    "domain" : "60",
-    "comment" : {
-      "de" : "Bezieht sich auf konstituierende Bestandteile einer Universit?t.",
-      "en" : "Refers to the constituent parts of a university."
     },
     "attributes" : [ "object" ],
     "id" : "296"
@@ -4379,7 +4379,7 @@
   }, {
     "iri" : "http://pcp-on-web.de/ontology#isPartOfFaculty",
     "baseIri" : "http://pcp-on-web.de/ontology",
-    "range" : "60",
+    "range" : "59",
     "label" : {
       "de" : "ist Teil der Fakult?t",
       "IRI-based" : "isPartOfFaculty",
@@ -4433,7 +4433,7 @@
     },
     "domain" : "89",
     "subproperty" : [ "127", "283" ],
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "168"
   }, {
     "iri" : "http://pcp-on-web.de/ontology#latinSurname",
